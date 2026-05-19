@@ -1,0 +1,160 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXContractTransactionView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXContractTransactionView.swift	(rejected hunks)
+@@ -224,7 +224,7 @@ class EXContractTransactionView: UIView {
+     lazy var bottomView : UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeNav.bg
++        view.backgroundColor = UIColor.ThemeNav.bg
+         return view
+     }()
+     lazy var headerView = EXSwapHeaderView()
+@@ -312,7 +312,7 @@ class EXContractTransactionView: UIView {
+                     guard let mySelf = self else {return}
+                     mySelf.submitOrder(order: order, password: nil)
+                 }
+-                EXSAlert.showAlert(alertView: alert)
++                EXAlert.showAlert(alertView: alert)
+                 
+             } else {
+                 submitOrder(order: order, password: nil)
+@@ -344,7 +344,7 @@ class EXContractTransactionView: UIView {
+ //                    guard let mySelf = self else {return}
+ //                    mySelf.submitOrder(order: order, password: nil)
+ //                }
+-//                EXSAlert.showAlert(alertView: closeAlert)
++//                EXAlert.showAlert(alertView: closeAlert)
+ //            } else {
+ //                submitOrder(order: order, password: nil)
+ //            }
+@@ -355,12 +355,12 @@ class EXContractTransactionView: UIView {
+ 
+         let attributes: [NSAttributedString.Key: Any] = [
+             .font: UIFont.ThemeFont.BodyRegular,
+-            .foregroundColor: UIColor.exs_ThemeLabel.colorMedium,
++            .foregroundColor: UIColor.ThemeLabel.colorMedium,
+         ]
+         let attr = NSMutableAttributedString.init(string: message, attributes: attributes)
+         let nsString = NSString(string: message)
+         let qtyR = nsString.range(of: qty)
+-        attr.addAttribute(.foregroundColor, value: UIColor.exs_ThemeState.warning, range:qtyR)
++        attr.addAttribute(.foregroundColor, value: UIColor.ThemeState.warning, range:qtyR)
+         return attr
+     }
+     func getClosePositionAlertAttr(price:String,unit:String,qty:String,volumeUnit:String,swap:String,side:String) -> NSMutableAttributedString {
+@@ -368,14 +368,14 @@ class EXContractTransactionView: UIView {
+         
+         let attributes: [NSAttributedString.Key: Any] = [
+             .font: UIFont.ThemeFont.BodyRegular,
+-            .foregroundColor: UIColor.exs_ThemeLabel.colorMedium,
++            .foregroundColor: UIColor.ThemeLabel.colorMedium,
+         ]
+         let attr = NSMutableAttributedString.init(string: message, attributes: attributes)
+         let nsString = NSString(string: message)
+         let priceR = nsString.range(of: price)
+         let qtyR = nsString.range(of: qty)
+-        attr.addAttribute(.foregroundColor, value: UIColor.exs_ThemeState.warning, range:priceR)
+-        attr.addAttribute(.foregroundColor, value: UIColor.exs_ThemeState.warning, range:qtyR)
++        attr.addAttribute(.foregroundColor, value: UIColor.ThemeState.warning, range:priceR)
++        attr.addAttribute(.foregroundColor, value: UIColor.ThemeState.warning, range:qtyR)
+         return attr
+     }
+     
+@@ -383,7 +383,7 @@ class EXContractTransactionView: UIView {
+         
+         EXContractNetwork.creatOrder(order: order) { [weak self] in
+             guard let mySelf = self else {return}
+-            EXSAlert.showSuccess(msg: "cp_extra_text109".ex_localized())
++            EXAlert.showSuccess(msg: "cp_extra_text109".ex_localized())
+             mySelf.handleSubmitSuccess()
+         } failure: { (_) in
+             
+@@ -457,7 +457,7 @@ extension EXContractTransactionView {
+                 strong.closeAllPosition()
+             }
+         }
+-        EXSAlert.showAlert(alertView: alert)
++        EXAlert.showAlert(alertView: alert)
+     }
+     //仅显示当前合约
+     func reloadCurrentPostion(){
+@@ -486,7 +486,7 @@ extension EXContractTransactionView {
+             strong.requestPositionData(new: true)
+             //一键全平只平 当前持仓
+            // strong.requestTransactionData(instrument_id:strong.itemModel?.instrument_id ?? 0)
+-            EXSAlert.dismissEndDelay {
++            EXAlert.dismissEnd {
+                 EXAlert.showSuccess(msg: "cp_extra_text109".ex_localized())
+             }
+         } onError: { (error) in
+@@ -574,7 +574,7 @@ extension EXContractTransactionView {
+         EXContractNetwork.cancelOrder(contractId: order.instrument_id, orderId: order.oid,isConditionOrder: transactionPriceType == .plan) {
+             
+             print(order.oid)
+-            EXSAlert.showSuccess(msg: "cp_content_text3".ex_localized())
++            EXAlert.showSuccess(msg: "cp_content_text3".ex_localized())
+             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+                 
+                 self.requestTransactionData(instrument_id: self.itemModel?.instrument_id ?? 0)
+@@ -583,7 +583,7 @@ extension EXContractTransactionView {
+             
+         } failure: { (error) in
+             
+-            EXSAlert.showFail(msg: "cp_content_text4".ex_localized())
++            EXAlert.showFail(msg: "cp_content_text4".ex_localized())
+         }
+     }
+     
+@@ -705,7 +705,7 @@ extension EXContractTransactionView : UITableViewDelegate, UITableViewDataSource
+                 mySelf.handleCancelOrder(orderModel)
+ //                    }
+ //                }
+-//                EXSAlert.showAlert(alertView: alert)
++//                EXAlert.showAlert(alertView: alert)
+             }
+             return cell
+         } else if self.transactionPriceType == .plan {
+@@ -726,7 +726,7 @@ extension EXContractTransactionView : UITableViewDelegate, UITableViewDataSource
+                         mySelf.handleCancelOrder(orderModel)
+ //                    }
+ //                }
+-//                EXSAlert.showAlert(alertView: alert)
++//                EXAlert.showAlert(alertView: alert)
+             }
+             return cell
+         }
+@@ -769,7 +769,7 @@ class EXSwapTransactionSectionHeaderView : UIView {
+         style.titleFont = UIFont.ThemeFont.BodyMedium
+         style.indicatorWidth = 48
+         style.indicatorHeight = 2
+-        style.titleHighLightColor = UIColor.ThemeLabel.colorHighlight
++     //   style.titleHighLightColor = UIColor.ThemeLabel.colorHighlight
+ 
+         view.style = style
+         view.setSelected(atIdx: 0)
+@@ -797,7 +797,7 @@ class EXSwapTransactionSectionHeaderView : UIView {
+         let ctl = UIControl()
+         let imageView = UIImageView(image: UIImage.exs_themeImageNamed(imageName: "contract_order"))
+         imageView.contentMode = .scaleAspectFit
+-        let label = UILabel(text: "cp_order_text4".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .center)
++        let label = UILabel(text: "cp_order_text4".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .center)
+         ctl.exs_addSubViews([imageView, label])
+         
+         label.snp.makeConstraints { (make) in
+@@ -817,7 +817,7 @@ class EXSwapTransactionSectionHeaderView : UIView {
+     }()
+     lazy var lineView:UIView = {
+         let v = UIView()
+-        v.backgroundColor = UIColor.exs_ThemeView.bgGap
++        v.backgroundColor = UIColor.ThemeView.bgGap
+         return v
+     }()
+     func resetNumber() {
+@@ -827,7 +827,7 @@ class EXSwapTransactionSectionHeaderView : UIView {
+     }
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+-        backgroundColor = UIColor.exs_ThemeView.bg
++        backgroundColor = UIColor.ThemeView.bg
+         exs_addSubViews([selectionTitleBar, allTransactionButton,showAllView,lineView])
+         self.initLayout()
+     }

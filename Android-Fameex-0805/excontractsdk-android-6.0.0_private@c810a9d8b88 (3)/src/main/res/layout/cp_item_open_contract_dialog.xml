@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="524dp"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@drawable/cp_bg_item_dialog_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/textstyle_dm_18_bold_color1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dp_6"
+                android:text="@string/cp_content_text18"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/sp_16" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomBtn"
+            android:layout_below="@+id/rl_title"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/tv_vontract_info"
+                style="@style/textstyle_dr_12_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/dp_6"
+                android:text="@string/cp_extra_text117" />
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottomBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/tv_confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:background="@drawable/bg_select_button_blue"
+                android:text="@string/cp_overview_text66"
+                android:textColor="@color/text_4"
+                android:textAllCaps="false"
+                style="@style/textstyle_dm_14_color1"
+                />
+
+            <TextView
+                android:id="@+id/tv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cp_overview_text44"
+                android:textColor="@color/main_color"
+                android:layout_below="@id/tv_confirm_btn"
+                style="@style/textstyle_dm_14_color1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_12"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXChangeMarginAmountVc.swift b/Chainup/Framework/EXSwapSDK/Vc/EXChangeMarginAmountVc.swift	(rejected hunks)
+@@ -35,20 +35,20 @@ class EXChangeMarginAmountVc: EXSNavCustomVC {
+     
+     lazy var headerView : UIView = {
+         let view = UIView()
+-        view.backgroundColor = UIColor.exs_ThemeNav.bg
++        view.backgroundColor = UIColor.ThemeNav.bg
+         return view
+     }()
+     
+     /// 当前保证金
+     lazy var currentDepositLabel: UILabel = {
+         let text = String(format: "%@(%@)", "cp_extra_text165".ex_localized(),positionModel?.ex_contractInfo?.quote_coin ?? "USDT")
+-        let label = UILabel(text: text, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++        let label = UILabel(text: text, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .left)
+         label.numberOfLines = 0
+         return label
+     }()
+     lazy var currentDepositPrice: UILabel = {
+         let text = "--"
+-        let label = UILabel(text: text, font: UIFont.ThemeFont.BodyBold, textColor: UIColor.exs_ThemeState.warning, alignment: .left)
++        let label = UILabel(text: text, font: UIFont.ThemeFont.BodyBold, textColor: UIColor.ThemeState.warning, alignment: .left)
+         label.numberOfLines = 0
+         return label
+     }()
+@@ -56,13 +56,13 @@ class EXChangeMarginAmountVc: EXSNavCustomVC {
+     /// 调整后强平价格
+     lazy var forceLabel: UILabel = {
+         let text = "cp_extra_text166".ex_localized()
+-        let label = UILabel(text: text, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++        let label = UILabel(text: text, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .left)
+         label.numberOfLines = 0
+         return label
+     }()
+     lazy var forcePrice: UILabel = {
+         let text = "--"
+-        let label = UILabel(text: text, font: UIFont.ThemeFont.BodyBold, textColor: UIColor.exs_ThemeState.warning, alignment: .left)
++        let label = UILabel(text: text, font: UIFont.ThemeFont.BodyBold, textColor: UIColor.ThemeState.warning, alignment: .left)
+         label.numberOfLines = 0
+         return label
+     }()
+@@ -70,13 +70,13 @@ class EXChangeMarginAmountVc: EXSNavCustomVC {
+     /// 调整后杠杆
+     lazy var levelLabel: UILabel = {
+         let text = "cp_order_text27".ex_localized()
+-        let label = UILabel(text: text, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .right)
++        let label = UILabel(text: text, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .right)
+         label.numberOfLines = 0
+         return label
+     }()
+     lazy var level: UILabel = {
+         let text = "--"
+-        let label = UILabel(text: text, font: UIFont.ThemeFont.BodyBold, textColor: UIColor.exs_ThemeState.warning, alignment: .right)
++        let label = UILabel(text: text, font: UIFont.ThemeFont.BodyBold, textColor: UIColor.ThemeState.warning, alignment: .right)
+         label.numberOfLines = 0
+         return label
+     }()
+@@ -96,7 +96,7 @@ class EXChangeMarginAmountVc: EXSNavCustomVC {
+             if let str = event.element{
+                 if str.greaterThan(mySelf.most_qty){
+                     input.input.text = self?.most_qty
+-                    EXSAlert.showFail(msg: self?.depositLabel.text ?? "")
++                    EXAlert.showFail(msg: self?.depositLabel.text ?? "")
+                 }
+             }
+         }.disposed(by: self.exs_disposeBag)
+@@ -110,7 +110,7 @@ class EXChangeMarginAmountVc: EXSNavCustomVC {
+     lazy var depositLabel: UILabel = {
+         let text = String(format:"%@ 0 %@","cp_str_margin_range".ex_localized(),positionModel?.ex_contractInfo?.margin_coin ?? "USDT")
+         
+-        let label = UILabel(text: text, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++        let label = UILabel(text: text, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .left)
+         label.numberOfLines = 0
+         return label
+     }()
+@@ -238,11 +238,11 @@ extension EXChangeMarginAmountVc {
+                     self.level.text = "--"
+                 }
+                 confirmButton.isUserInteractionEnabled = false
+-                confirmButton.color = UIColor.exs_ThemeBtn.disable
++                confirmButton.color = UIColor.ThemeBtn.disable
+                 return
+             }
+             confirmButton.isUserInteractionEnabled = true
+-            confirmButton.color = UIColor.exs_ThemeBtn.highlight
++            confirmButton.color = UIColor.ThemeBtn.highlight
+             if let position = EXSwapPositionModel.mj_object(withKeyValues: self.positionModel?.mj_keyValues()) {
+                 
+                 position.ex_contractInfo = self.positionModel?.ex_contractInfo
+@@ -269,7 +269,7 @@ extension EXChangeMarginAmountVc {
+             var im = self.positionModel!.im
+             im = im.toValuePrecision(withContract: positionModel!.instrument_id)
+             if self.depositInput.input.text == "" {
+-                EXSAlert.showFail(msg: "redpacket_send_inputAmount".ex_localized())
++                EXAlert.showFail(msg: "redpacket_send_inputAmount".ex_localized())
+                 return
+             }
+             

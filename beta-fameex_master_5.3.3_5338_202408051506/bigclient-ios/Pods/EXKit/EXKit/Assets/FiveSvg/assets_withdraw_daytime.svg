@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>xxxhdpi/assets_withdraw</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-217.000000, -250.000000)">
+            <g id="assets_withdraw" transform="translate(217.000000, 250.000000)">
+                <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+                <g id="分组" transform="translate(3.119786, 3.000000)" stroke="#A0A2AA" stroke-width="2">
+                    <path d="M17.9271709,16.9265762 C17.9271709,17.4791894 17.4791894,17.9271709 16.9265762,17.9271709 L2,17.9271709 C0.8954305,17.9271709 1.3527075e-16,17.0317404 0,15.9271709 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 L16.9289674,0 C17.4802599,4.93657483e-16 17.9271709,0.446910933 17.9271709,0.998203508 L17.9271709,0.998203508 L17.9271709,0.998203508" id="路径"></path>
+                </g>
+                <g id="分组" transform="translate(8.882353, 8.882353)" fill="#2B61FF" fill-rule="nonzero">
+                    <polygon id="Path-2-Copy-4" transform="translate(6.407067, 3.085962) scale(-1, 1) translate(-6.407067, -3.085962) " points="12.814134 3.70146842 12.814134 6.17192388 0 6.17192388 7.25054466 0 7.25054466 3.70146842"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSwapKLineDetailVC.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSwapKLineDetailVC.swift	(rejected hunks)
+@@ -689,7 +689,7 @@ extension EXSwapKLineDetailVC {
+             view.vc = self
+             if let img = self.view.screenShotwithFrame(CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)) {
+                 view.setImg(img)
+-                EXSAlert.showCenterView(view: view)
++                EXAlert.showCenterView(view: view)
+ //                view.show(self)
+             }
+         }else{

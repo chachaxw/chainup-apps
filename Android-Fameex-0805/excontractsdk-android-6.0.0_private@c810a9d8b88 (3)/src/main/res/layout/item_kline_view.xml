@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yjkj.chainup.kline.view.CpKLineChartView
+        android:id="@+id/mklineView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:nestedScrollingEnabled="false"
+        app:kc_background_color="@color/main_bg_color"
+        app:kc_grid_line_color="@color/contract_kline_grid_line"
+        app:kc_marker_value_color="@color/chart_max_min"
+        app:kc_selector_background_color="@color/marker_bg"
+        app:kc_text_color="@color/text_color" />
+</RelativeLayout>

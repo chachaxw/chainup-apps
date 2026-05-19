@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Network/EXContractNetwork.swift b/Chainup/Framework/EXSwapSDK/Network/EXContractNetwork.swift	(rejected hunks)
+@@ -260,7 +260,7 @@ typealias SLContractNetworkSuccess = (()->())
+                         message! += "，" + messages[1]
+                     }
+                     failure(true)
+-                    EXSAlert.showFail(msg: message ?? "")
++                    EXAlert.showFail(msg: message ?? "")
+                 }else {
+                     
+                     success()

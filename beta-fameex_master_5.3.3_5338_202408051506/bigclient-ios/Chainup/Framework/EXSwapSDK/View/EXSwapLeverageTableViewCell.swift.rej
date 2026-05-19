@@ -1,0 +1,33 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapLeverageTableViewCell.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapLeverageTableViewCell.swift	(rejected hunks)
+@@ -20,19 +20,19 @@ class EXSwapLeverageTableViewCell: UITableViewCell {
+     }
+     lazy var lineView: UIView = {
+         let line = UIView()
+-        line.backgroundColor = UIColor.exs_ThemeView.seperator
++        line.backgroundColor = UIColor.ThemeView.seperator
+         line.ext_UseAutoLayout()
+         return line
+     }()
+     lazy var maxCoinTipLabel:UILabel = {
+-        let label = UILabel(text: "", font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++        let label = UILabel(text: "", font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .left)
+         label.numberOfLines = 0
+         return label
+     }()
+     
+     lazy var leverageInputTitle: UILabel = {
+         let label = UILabel.init()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         label.text = "cp_content_text17".ex_localized()
+         return label
+@@ -83,7 +83,7 @@ class EXSwapLeverageTableViewCell: UITableViewCell {
+     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+         super.init(style: style, reuseIdentifier: reuseIdentifier)
+         layoutCustomViews()
+-        backgroundColor = UIColor.exs_ThemeView.bg
++        backgroundColor = UIColor.ThemeView.bg
+ 
+         leverageInput.minusBtn.addTarget(self, action: #selector(stepChangeAction(sender:)), for: .touchUpInside)
+         leverageInput.plusBtn.addTarget(self, action: #selector(stepChangeAction(sender:)), for: .touchUpInside)

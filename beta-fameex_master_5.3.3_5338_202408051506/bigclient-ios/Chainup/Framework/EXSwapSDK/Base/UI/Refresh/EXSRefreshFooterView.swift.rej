@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/Refresh/EXSRefreshFooterView.swift b/Chainup/Framework/EXSwapSDK/Base/UI/Refresh/EXSRefreshFooterView.swift	(rejected hunks)
+@@ -39,7 +39,7 @@ class EXSRefreshFooterView: MJRefreshBackFooter {
+         container.addSubview(titleLabel)
+         container.addSubview(logo)
+         logo.image = UIImage.init(named: "refresh")
+-        titleLabel.textColor = UIColor.exs_ThemeLabel.colorMedium
++        titleLabel.textColor = UIColor.ThemeLabel.colorMedium
+         titleLabel.bodyRegular()
+     }
+     

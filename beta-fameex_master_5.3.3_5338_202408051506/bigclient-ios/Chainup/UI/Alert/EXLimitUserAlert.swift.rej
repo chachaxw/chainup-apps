@@ -1,0 +1,10 @@
+diff a/Chainup/UI/Alert/EXLimitUserAlert.swift b/Chainup/UI/Alert/EXLimitUserAlert.swift	(rejected hunks)
+@@ -84,7 +84,7 @@ class EXLimitUserAlert: UIView {
+     
+     override init(frame: CGRect) {
+         super.init(frame:.zero)
+-        self.backgroundColor = .clear
++        self.backgroundColor = UIColor.ThemeView.alertBg
+         setupView()
+         bindViewModel()
+     }

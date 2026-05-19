@@ -1,0 +1,67 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSwapPlanTransactionCell.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSwapPlanTransactionCell.swift	(rejected hunks)
+@@ -43,22 +43,22 @@ class EXSwapPlanTransactionCell: UITableViewCell {
+     
+     /// 合约名称
+     lazy var nameLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorBlack, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     /// 创建时间
+     lazy var timeLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     /// 撤单
+     lazy var cancelButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_order_text68".ex_localized(), titleFont: UIFont.ThemeFont.BodyBold, titleColor: UIColor.exs_ThemeBtn.highlight)
+-        button.backgroundColor = UIColor.exs_ThemeNav.bg
++        let button = UIButton(buttonType: .custom, title: "cp_order_text68".ex_localized(), titleFont: UIFont.ThemeFont.BodyBold, titleColor: UIColor.ThemeBtn.highlight)
++        button.backgroundColor = UIColor.ThemeNav.bg
+         button.layer.cornerRadius = 1.5
+         button.ext_UseAutoLayout()
+         button.ext_SetAddTarget(self, #selector(clickCancelButton))
+@@ -66,9 +66,9 @@ class EXSwapPlanTransactionCell: UITableViewCell {
+     }()
+     /// 合约类型
+     lazy var triggerTypeLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+-        label.backgroundColor = UIColor.exs_ThemeNav.bg
++        label.backgroundColor = UIColor.ThemeNav.bg
+         label.layer.cornerRadius = 2
+         label.layer.masksToBounds = true
+         return label
+@@ -76,7 +76,7 @@ class EXSwapPlanTransactionCell: UITableViewCell {
+     
+     /// 历史委托 - 订单状态
+     lazy var orderTypeLabel: UILabel = {
+-        let label = UILabel(text: "cp_content_text7".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .right)
++        let label = UILabel(text: "cp_content_text7".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .right)
+         label.isHidden = true
+         return label
+     }()
+@@ -138,7 +138,7 @@ class EXSwapPlanTransactionCell: UITableViewCell {
+     lazy var horLineView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.seperator
++        view.backgroundColor = UIColor.ThemeView.seperator
+         return view
+     }()
+     ///只减仓
+@@ -385,7 +385,7 @@ extension EXSwapPlanTransactionCell {
+         }
+         let alert = EXSNormalAlert()
+         alert.configSigleAlert(title: "", message: tempOrderModel.memoDisplay)
+-        EXSAlert.showAlert(alertView: alert)
++        EXAlert.showAlert(alertView: alert)
+     }
+ }
+ //买入平空

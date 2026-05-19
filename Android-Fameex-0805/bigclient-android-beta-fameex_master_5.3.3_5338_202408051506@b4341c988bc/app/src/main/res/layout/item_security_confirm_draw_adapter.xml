@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_new_dialog"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_security_verification_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_15"
+            android:text="@string/confirm_withdraw"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:text="@string/common_text_btnCancel"
+            android:textColor="@color/normal_text_color"
+            android:textSize="@dimen/sp_14" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_confirm_layout"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_14"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_withdraw_text_moneyWithoutFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/normal_text_color"
+            android:text="@string/withdraw_text_moneyWithoutFee"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_real_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            tools:text="0.00"
+            android:textColor="@color/main_blue"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_pwd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_28"
+        android:layout_marginRight="@dimen/dp_15"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.yjkj.chainup.wedegit.GridTextView
+            android:id="@+id/gt_draw_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentView=""
+            app:titleView="@string/withdraw_text_address" />
+
+
+        <com.yjkj.chainup.wedegit.GridDrawTextView
+            android:id="@+id/gt_draw_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            app:contentView=""
+            app:titleView="@string/withdraw_text_remark" />
+
+        <com.yjkj.chainup.wedegit.GridTextView
+            android:id="@+id/gt_draw_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            app:contentView=""
+            app:titleView="@string/link_name" />
+
+        <View
+            android:id="@+id/v_line_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/new_edit_line_color" />
+    </LinearLayout>
+
+    <com.yjkj.chainup.wedegit.GridTextView
+        android:id="@+id/gt_draw_symbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_15"
+        app:contentView=""
+        app:titleView="@string/common_text_coinsymbol" />
+
+    <com.yjkj.chainup.wedegit.GridTextView
+        android:id="@+id/gt_draw_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_15"
+        app:contentView=""
+        app:titleView="@string/charge_text_volume" />
+
+    <com.yjkj.chainup.wedegit.GridTextView
+        android:id="@+id/gt_draw_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_15"
+        app:contentView=""
+        app:titleView="@string/withdraw_text_fee" />
+
+
+    <TextView
+        android:id="@+id/gt_draw_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_28"
+        android:layout_marginRight="@dimen/dp_15"
+        style="@style/textStyle_text_nor_12"
+        android:text="@string/withdraw_confirm_tip" />
+
+
+
+    <Button
+        android:id="@+id/tv_confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:text="@string/common_text_btnConfirm"
+        android:background="@drawable/bg_btn_option_selector"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold" />
+
+</LinearLayout>

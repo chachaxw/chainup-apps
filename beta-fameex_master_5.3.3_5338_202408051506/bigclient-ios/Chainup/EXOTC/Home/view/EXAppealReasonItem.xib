@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXAppealReasonItem" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="checkbox" destination="sDi-kL-9Ul" id="mJ6-BP-lKc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDi-kL-9Ul" customClass="EXCheckBox" customModule="EXKit" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="9" width="358" height="14"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sDi-kL-9Ul" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="br2-44-tMJ"/>
+                <constraint firstItem="sDi-kL-9Ul" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dpD-UT-D8U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sDi-kL-9Ul" secondAttribute="trailing" id="ePn-7e-7u8"/>
+                <constraint firstItem="sDi-kL-9Ul" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="9" id="nAa-gC-ujA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sDi-kL-9Ul" secondAttribute="bottom" constant="9" id="xHA-vO-8xQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="118.40000000000001" y="-111.54422788605699"/>
+        </view>
+    </objects>
+</document>

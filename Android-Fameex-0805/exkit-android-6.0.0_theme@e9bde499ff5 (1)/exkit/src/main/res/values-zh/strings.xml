@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kk_string_load_retry">刷新</string>
+    <string name="kk_string_net_error_message">加载失败，请检查网络或刷新重试</string>
+    <string name="kk_string_empty_data_message">暂无数据</string>
+    <string name="kk_guide_3">我知道了</string>
+    <string name="kk_common_text_btnCancel">取消</string>
+    <string name="kk_common_text_btnConfirm">确认</string>
+</resources>

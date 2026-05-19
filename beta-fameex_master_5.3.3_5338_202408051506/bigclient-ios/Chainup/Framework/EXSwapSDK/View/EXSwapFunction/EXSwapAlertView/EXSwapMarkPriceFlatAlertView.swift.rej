@@ -1,0 +1,69 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapAlertView/EXSwapMarkPriceFlatAlertView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapAlertView/EXSwapMarkPriceFlatAlertView.swift	(rejected hunks)
+@@ -33,21 +33,21 @@ class EXSwapMarkPriceFlatAlertView: UIView {
+         }
+     }
+ 
+-    private lazy var titleLabel: UILabel = UILabel(text: "cp_order_text46".ex_localized(), font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++    private lazy var titleLabel: UILabel = UILabel(text: "cp_order_text46".ex_localized(), font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
+     private lazy var tipsLabel: UILabel = UILabel(text: "", font: UIFont.ThemeFont.SecondaryBold, textColor: UIColor.red, alignment: .left)
+-    private lazy var messageLabel: UILabel = UILabel(text: nil, font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++    private lazy var messageLabel: UILabel = UILabel(text: nil, font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .left)
+     private lazy var confirmView: EXSwapAlertConfirmView = {
+         let view = EXSwapAlertConfirmView()
+-        view.backgroundColor = UIColor.exs_ThemeView.bgTab
++        view.backgroundColor = UIColor.ThemeView.bgTab
+         return view
+     }()
+     private lazy var cancelButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_overview_text56".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.exs_ThemeLabel.colorMedium)
++        let button = UIButton(buttonType: .custom, title: "cp_overview_text56".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.ThemeLabel.colorMedium)
+         button.ext_SetAddTarget(self, #selector(clickCancelButton))
+         return button
+     }()
+     private lazy var confirmButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_calculator_text16".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.exs_ThemeBtn.highlight)
++        let button = UIButton(buttonType: .custom, title: "cp_calculator_text16".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.ThemeBtn.highlight)
+         button.ext_SetAddTarget(self, #selector(clickConfirmButton))
+         return button
+     }()
+@@ -57,7 +57,7 @@ class EXSwapMarkPriceFlatAlertView: UIView {
+         super.init(frame: frame)
+         
+         self.layer.cornerRadius = 1.5
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         self.messageLabel.numberOfLines = 0
+         self.exs_addSubViews([titleLabel, tipsLabel,messageLabel, confirmView, cancelButton, confirmButton])
+         
+@@ -149,14 +149,14 @@ class EXSwapMarkPriceFlatAlertView: UIView {
+     // MARK: - Click Events
+     
+     @objc func clickCancelButton() {
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     
+     @objc func clickConfirmButton() {
+         
+         let strongSelf = self
+         
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+         strongSelf.confirmCallback?()
+     }
+ }
+@@ -164,10 +164,10 @@ class EXSwapMarkPriceFlatAlertView: UIView {
+ 
+ class EXSwapAlertConfirmView: UIView {
+     lazy var typeLabel: UILabel = UILabel(text: "-", font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemekLine.up, alignment: .left)
+-    lazy var nameLabel: UILabel = UILabel(text: "-", font: UIFont.ThemeFont.BodyBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
+-    lazy var volumeLeftLabel: UILabel = UILabel(text: "cp_order_text59".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .right)
+-    lazy var volumeLabel: UILabel = UILabel(text: "-", font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .center)
+-    lazy var volumeRightLabel: UILabel = UILabel(text: "cp_overview_text9".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .right)
++    lazy var nameLabel: UILabel = UILabel(text: "-", font: UIFont.ThemeFont.BodyBold, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
++    lazy var volumeLeftLabel: UILabel = UILabel(text: "cp_order_text59".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .right)
++    lazy var volumeLabel: UILabel = UILabel(text: "-", font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorLite, alignment: .center)
++    lazy var volumeRightLabel: UILabel = UILabel(text: "cp_overview_text9".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .right)
+     
+     override init(frame: CGRect) {
+         super.init(frame: frame)

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXHorizontalTopLeft" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="changeLabel" destination="yhJ-1Z-qKa" id="sef-OQ-o0f"/>
+                <outlet property="priceLabel" destination="jv9-Yu-Dli" id="HCO-Z1-g9Q"/>
+                <outlet property="rmbLabel" destination="WwX-da-FN0" id="bik-IZ-os6"/>
+                <outlet property="symbolLabel" destination="YEr-e1-30J" id="z5S-Q3-981"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="251" horizontalCompressionResistancePriority="754" text="--/--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEr-e1-30J">
+                    <rect key="frame" x="0.0" y="30" width="36" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorLite"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jv9-Yu-Dli">
+                    <rect key="frame" x="41" y="30" width="15.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwX-da-FN0">
+                    <rect key="frame" x="76.5" y="30" width="15.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorLite"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-1Z-qKa">
+                    <rect key="frame" x="61.5" y="34" width="10" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorMedium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YEr-e1-30J" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2K4-II-D3K"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WwX-da-FN0" secondAttribute="trailing" id="AAm-L3-dsO"/>
+                <constraint firstItem="WwX-da-FN0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZrD-s6-8Tk"/>
+                <constraint firstItem="WwX-da-FN0" firstAttribute="leading" secondItem="yhJ-1Z-qKa" secondAttribute="trailing" constant="5" id="cGM-rR-sey"/>
+                <constraint firstItem="YEr-e1-30J" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jN8-kR-SH2"/>
+                <constraint firstItem="yhJ-1Z-qKa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kQE-Gy-Jzy"/>
+                <constraint firstItem="jv9-Yu-Dli" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mjF-bX-pPZ"/>
+                <constraint firstItem="yhJ-1Z-qKa" firstAttribute="leading" secondItem="jv9-Yu-Dli" secondAttribute="trailing" constant="5" id="nYv-Mw-DJp"/>
+                <constraint firstItem="jv9-Yu-Dli" firstAttribute="leading" secondItem="YEr-e1-30J" secondAttribute="trailing" constant="5" id="vzH-ks-cmA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="nav.bg"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="130" y="-355"/>
+        </view>
+    </objects>
+</document>

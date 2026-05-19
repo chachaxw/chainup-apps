@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/symbol_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00%"
+        android:background="@color/text_color_2_15"
+        android:paddingHorizontal="@dimen/dp_4"
+        android:paddingVertical="@dimen/dp_2"
+        android:layout_centerVertical="true"
+        style="@style/textstyle_dm_12_color1"
+        android:textColor="@color/text_color_2"
+        />
+</LinearLayout>
+

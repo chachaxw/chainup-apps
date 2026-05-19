@@ -1,0 +1,33 @@
+diff a/Chainup/EXCOINS/Market/MarketDetail/view/KlineDetailHeader/EXKlineTickerHeader.swift b/Chainup/EXCOINS/Market/MarketDetail/view/KlineDetailHeader/EXKlineTickerHeader.swift	(rejected hunks)
+@@ -154,7 +154,7 @@ class EXKlineTickerHeader: UIView {
+             make.right.equalTo(rateLabel.snp.left).offset(-8)
+         }
+         rateLabel.snp.makeConstraints { (make) in
+-            make.centerY.equalTo(rmbLabel.snp_centerY)
++            make.centerY.equalTo(rmbLabel.snp.centerY)
+             make.left.equalTo(rmbLabel.snp.right).offset(8)
+             make.right.lessThanOrEqualTo(rightBg.snp.left).offset(-5)
+         }
+@@ -192,19 +192,19 @@ class EXKlineTickerHeader: UIView {
+         hLabel.snp.makeConstraints { (make) in
+             make.right.equalToSuperview()
+             make.left.equalTo(centerGap.snp.right)
+-            make.centerY.equalTo(hTitleLabel.snp_centerY)
++            make.centerY.equalTo(hTitleLabel.snp.centerY)
+         }
+         
+         lLabel.snp.makeConstraints { (make) in
+             make.right.equalToSuperview()
+             make.left.equalTo(centerGap.snp.right)
+-            make.centerY.equalTo(lTitleLabel.snp_centerY)
++            make.centerY.equalTo(lTitleLabel.snp.centerY)
+         }
+         
+         vLabel.snp.makeConstraints { (make) in
+             make.right.equalToSuperview()
+             make.left.equalTo(centerGap.snp.right)
+-            make.centerY.equalTo(vTitleLabel.snp_centerY)
++            make.centerY.equalTo(vTitleLabel.snp.centerY)
+         }
+     }
+ }

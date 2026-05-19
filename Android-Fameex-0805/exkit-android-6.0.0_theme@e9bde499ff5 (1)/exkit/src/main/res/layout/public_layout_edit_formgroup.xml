@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/textstyle_dm_12_color2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:text="Quantity" />
+
+    <LinearLayout
+        android:id="@+id/ll_et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_prev_action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <com.chainup.kit.views.base.BaseEditTextKit
+            android:id="@+id/bet_text"
+            style="@style/BaseEditTextKitStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            app:kk_isHasBackground="false" />
+        <!--action-->
+        <LinearLayout
+            android:id="@+id/ll_action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_6"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_action1"
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp_2"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/dp_10"
+                android:text="USDT" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_12"
+                android:background="@color/fill_5"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_action2"
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/dp_10"
+                android:text="All"
+                android:textColor="@color/main_color" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

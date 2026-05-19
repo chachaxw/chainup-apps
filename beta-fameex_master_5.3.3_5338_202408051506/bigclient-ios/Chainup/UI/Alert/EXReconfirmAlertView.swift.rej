@@ -1,0 +1,9 @@
+diff a/Chainup/UI/Alert/EXReconfirmAlertView.swift b/Chainup/UI/Alert/EXReconfirmAlertView.swift	(rejected hunks)
+@@ -27,6 +27,7 @@ class EXReconfirmAlertView: NibBaseView {
+             self?.updateBtnEnabled(isCheck)
+         }
+         positiveBtn.isEnabled = false
++        self.backgroundColor = UIColor.ThemeView.alertBg
+     }
+     
+     func updateBtnEnabled(_ isEnable:Bool) {

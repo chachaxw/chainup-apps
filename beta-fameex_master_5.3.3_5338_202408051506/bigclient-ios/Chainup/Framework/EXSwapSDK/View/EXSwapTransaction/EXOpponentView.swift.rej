@@ -1,0 +1,78 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXOpponentView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXOpponentView.swift	(rejected hunks)
+@@ -14,7 +14,7 @@ class EXOpponentView: UIView {
+     lazy var priceTextField : EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.setPlaceHolder(placeHolder: "cp_overview_text6".ex_localized())
+         textField.unitLabel.text = ""
+         textField.layer.cornerRadius = 4
+@@ -28,7 +28,7 @@ class EXOpponentView: UIView {
+         let btn = EXSDirectionButton()
+         btn.ext_UseAutoLayout()
+         btn.layer.borderWidth = 0.5
+-        btn.layer.borderColor = UIColor.exs_ThemeView.border.cgColor
++        btn.layer.borderColor = UIColor.ThemeView.border.cgColor
+         btn.layer.cornerRadius = 4
+         btn.titleLabel.font = UIFont.ThemeFont.BodyRegular
+         btn.titleLabel.text = opponentPriceArr.first?.introduce
+@@ -42,13 +42,13 @@ class EXOpponentView: UIView {
+     var opponentPriceArr:[EXOpponentPriceType] = [.one,.two,.three]
+     var executeType:EXOpponentPriceType = .none
+     lazy var executeBtn : UIButton = {
+-        let btn = UIButton(buttonType: .custom, title: "cp_overview_text7".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.exs_ThemeLabel.colorMedium)
++        let btn = UIButton(buttonType: .custom, title: "cp_overview_text7".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.ThemeLabel.colorMedium)
+         btn.ext_UseAutoLayout()
+         btn.ext_SetAddTarget(self, #selector(clickExecuteBtn))
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .selected)
++        btn.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .selected)
+         
+         btn.layer.borderWidth = 0.5
+-        btn.layer.borderColor = UIColor.exs_ThemeView.border.cgColor
++        btn.layer.borderColor = UIColor.ThemeView.border.cgColor
+         btn.layer.cornerRadius = 4
+      
+         return btn
+@@ -60,8 +60,8 @@ class EXOpponentView: UIView {
+         for type in opponentPriceArr {
+             let model = EXSBouncedModel()
+             model.name = type.introduce
+-            model.selectedColor = (self.executeType == type) ? UIColor.exs_ThemeView.bgTab : UIColor.exs_ThemeView.bg
+-            model.titleColor = (self.executeType == type) ? UIColor.exs_ThemeView.highlight : UIColor.exs_ThemeLabel.colorLite
++            model.selectedColor = (self.executeType == type) ? UIColor.ThemeView.bgTab : UIColor.ThemeView.bg
++            model.titleColor = (self.executeType == type) ? UIColor.ThemeView.highlight : UIColor.ThemeLabel.colorLite
+             
+             models.append(model)
+         }
+@@ -71,7 +71,7 @@ class EXOpponentView: UIView {
+     @objc func clicktypeButton(sender:UIButton) {
+         self.endEditing(true)
+         let popover = EXPopover(options: EXPopover.commonTradePopOption, showHandler: nil, dismissHandler: nil)
+-        popover.popoverColor = UIColor.exs_ThemeView.bg
++        popover.popoverColor = UIColor.ThemeView.bg
+         let models = orderWaysModel()
+         let width = self.typeBtn.sg_width
+         let view = EXSBouncedView.init(frame: CGRect(x: 0, y: 0, width:width, height: CGFloat(models.count * 36)))
+@@ -114,7 +114,7 @@ class EXOpponentView: UIView {
+ //        sheet.configButtonTitles(buttons: opponentPriceArr.map({ (item) -> String in
+ //            return item.introduce
+ //        }),selectedIdx: idx)
+-//        EXSAlert.showSheet(sheetView: sheet)
++//        EXAlert.showSheet(sheetView: sheet)
+ //    }
+ 
+     @objc func clickExecuteBtn() {
+@@ -124,10 +124,10 @@ class EXOpponentView: UIView {
+         
+         if executeBtn.isSelected {
+             executeType = .one
+-            executeBtn.layer.borderColor = UIColor.exs_ThemeLabel.colorHighlight.cgColor
++            executeBtn.layer.borderColor = UIColor.ThemeLabel.colorHighlight.cgColor
+         }else {
+             executeType = .none
+-            executeBtn.layer.borderColor = UIColor.exs_ThemeView.border.cgColor
++            executeBtn.layer.borderColor = UIColor.ThemeView.border.cgColor
+         }
+         
+         changeExecuteTypeBlock?()

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.chainup.contract.view.CustomSwipeRefreshLayout
+    android:id="@+id/swipeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.chainup.kit.views.PublicHeaderKit
+            android:id="@+id/mHeaderKit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            app:filterTitleVisible="true"
+            app:isShowRightBtn="true"
+            app:isShowSubRightBtn="true"
+            app:rightBtnRes="@mipmap/public_icon_more"
+            app:subRightBtnRes="@mipmap/public_icon_details" />
+        <View
+            android:id="@+id/top_border"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color"
+            android:layout_below="@id/mHeaderKit"
+            android:visibility="gone"
+            />
+
+        <com.chainup.contract.view.CustomCoordinatorLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_border"
+
+            android:orientation="vertical">
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbarlayout"
+                android:layout_width="match_parent"
+                app:layout_behavior="com.chainup.contract.view.AppBarLayoutBehavior"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/main.collapsing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    app:layout_scrollFlags="enterAlwaysCollapsed|scroll"
+                    >
+                    <LinearLayout
+                        android:id="@+id/ll_collapsing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <!-- announcement -->
+                        <ViewStub
+                            android:id="@+id/vs_announcement"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout="@layout/layout_announcement"
+                            android:inflatedId="@id/cl_view"
+                            android:layout_marginBottom="@dimen/dp_8"
+                            />
+                        <!-- 这个地方是k线-->
+                        <LinearLayout
+                            android:id="@+id/mklineView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <!-- 这个地方是KTimeTab -->
+                            <!-- 这个地方是k线 -->
+                        </LinearLayout>
+<!--                        <com.chainup.contract.view.trade.CpNHorizontalDepthLayout-->
+<!--                            android:id="@+id/v_horizontal_depth"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            />-->
+
+                    </LinearLayout>
+
+
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                <LinearLayout
+                    android:id="@+id/community_container_tab_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="bottom"
+                    android:background="@color/bg_card_color">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_tab_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+
+                        android:background="@color/bg_card_color">
+
+                        <com.flyco.tablayout.SlidingTabLayout
+                            android:id="@+id/tab_order"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@id/ll_all_entrust_order"
+                            android:paddingLeft="@dimen/dp_6"
+                            app:tl_indicator_color="@color/main_color"
+                            app:tl_indicator_corner_radius="0dp"
+                            app:tl_indicator_height="@dimen/dp_4"
+                            app:tl_indicator_width="@dimen/dp_22"
+                            app:tl_indicator_width_equal_title="false"
+                            app:tl_tab_padding="@dimen/dp_10"
+                            app:tl_textBold="BOTH"
+                            app:tl_textSelectColor="@color/text_color_1"
+                            app:tl_textSize="@dimen/sp_16"
+                            app:tl_textUnSelectColor="@color/text_color_2"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/ll_all_entrust_order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingHorizontal="@dimen/dp_16"
+                            android:paddingVertical="@dimen/dp_12"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/public_icon_order" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/tabbar_divide_color" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_order"
+                android:layout_width="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_height="wrap_content">
+            </androidx.viewpager.widget.ViewPager>
+
+        </com.chainup.contract.view.CustomCoordinatorLayout>
+
+
+        <FrameLayout
+            android:id="@+id/bottom_klineView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fl_skeleton"
+            />
+    </RelativeLayout>
+
+</com.chainup.contract.view.CustomSwipeRefreshLayout>

@@ -1,0 +1,10 @@
+diff a/Chainup/EXAssets/Home/view/EXContractAssetInfoCell.swift b/Chainup/EXAssets/Home/view/EXContractAssetInfoCell.swift	(rejected hunks)
+@@ -37,7 +37,7 @@ class EXContractAssetInfoCell: UITableViewCell {
+         view.clickMiddleBtnBlock = { [weak self] in
+             let alert = EXSNormalAlert()
+             alert.configSigleAlert(title: "common_text_tip".localized(), message: "contract_equalit_equitytips".localized() )
+-            EXSAlert.showAlert(alertView: alert)
++            EXAlert.showAlert(alertView: alert)
+         }
+         return view
+     }()

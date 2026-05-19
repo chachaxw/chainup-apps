@@ -1,0 +1,28 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSNavCustomView.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSNavCustomView.swift	(rejected hunks)
+@@ -19,7 +19,7 @@ class EXSNavCustomView: UIView {
+     lazy var backView : UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.bg
++        view.backgroundColor = UIColor.ThemeView.bg
+         return view
+     }()
+     
+@@ -27,7 +27,7 @@ class EXSNavCustomView: UIView {
+     lazy var middleTitle : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorLite
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.font = UIFont.ThemeFont.H3Bold
+         return label
+     }()
+@@ -45,7 +45,7 @@ class EXSNavCustomView: UIView {
+         let btn = UIButton()
+         btn.ext_UseAutoLayout()
+         btn.addTarget(self, action: #selector(clickPopBtn), for: UIControl.Event.touchUpInside)
+-        btn.ext_SetTitle("cp_overview_text56".ex_localized(), 14, UIColor.exs_ThemeLabel.colorMedium, .normal)
++        btn.ext_SetTitle("cp_overview_text56".ex_localized(), 14, UIColor.ThemeLabel.colorMedium, .normal)
+         btn.layoutIfNeeded()
+         btn.isHidden = true
+         return btn

@@ -1,0 +1,461 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXContractMakeOrderView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXContractMakeOrderView.swift	(rejected hunks)
+@@ -83,7 +83,7 @@ class EXContractMakeOrderView: UIView {
+         let btnBuy = UIButton.init(type: .custom)
+         btnBuy.titleLabel?.font = UIFont.ThemeFont.BodyMedium
+         btnBuy.setTitle("cp_overview_text1".ex_localized(), for: .normal)
+-        btnBuy.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        btnBuy.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         btnBuy.setTitleColor(UIColor.white, for: .selected)
+         btnBuy.setBackgroundImage(UIImage.exs_themeImageNamed(imageName: "coins_exchange_buy_grey"), for: .normal)
+ 
+@@ -98,7 +98,7 @@ class EXContractMakeOrderView: UIView {
+         let btnSell = UIButton.init(type: .custom)
+         btnSell.titleLabel?.font = UIFont.ThemeFont.BodyMedium
+         btnSell.setTitle("cp_overview_text2".ex_localized(), for: .normal)
+-        btnSell.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        btnSell.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         btnSell.setTitleColor(UIColor.white, for: .selected)
+         btnSell.isSelected = false
+         btnSell.setBackgroundImage(UIImage.exs_themeImageNamed(imageName: "coins_exchange_sell_grey"), for: .normal)
+@@ -114,7 +114,7 @@ class EXContractMakeOrderView: UIView {
+         let btn = EXSDirectionButton()
+         btn.ext_UseAutoLayout()
+         btn.layer.borderWidth = 0.5
+-        btn.layer.borderColor = UIColor.exs_ThemeView.border.cgColor
++        btn.layer.borderColor = UIColor.ThemeView.border.cgColor
+         btn.layer.cornerRadius = 4
+         btn.addTarget(self, action: #selector(clickOrderTypeBtn(sender:)), for: UIControl.Event.touchUpInside)
+         btn.titleLabel.font = UIFont.ThemeFont.BodyRegular
+@@ -140,7 +140,7 @@ class EXContractMakeOrderView: UIView {
+         btn.clearColors()
+         //        btn.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0)
+         btn.setFont(UIFont.ThemeFont.SecondaryMedium)
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        btn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         btn.ext_SetImages([UIImage.exs_themeImageNamed(imageName: "contract_checkbox_default"),UIImage.exs_themeImageNamed(imageName: "contract_checkbox_Focus")], controlStates: [.normal,.selected])
+         btn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -3, bottom: 0, right: 3)
+         btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 3, bottom: 0, right: -3)
+@@ -163,7 +163,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var triggerTextField : EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.unitLabel.text = ""
+         textField.maxLenth = 9
+         textField.layer.cornerRadius = 4
+@@ -182,7 +182,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var performTextField : EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.setPlaceHolder(placeHolder: "cp_overview_text30".ex_localized())
+         textField.unitLabel.isHidden = true
+         textField.textfieldValueChangeBlock = {[weak self]str in
+@@ -202,13 +202,13 @@ class EXContractMakeOrderView: UIView {
+     
+     /// 执行市价
+     lazy var marketPerformBtn : UIButton = {
+-        let btn = UIButton(buttonType: .custom, title: "cp_overview_text53".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.exs_ThemeLabel.colorMedium)
++        let btn = UIButton(buttonType: .custom, title: "cp_overview_text53".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.ThemeLabel.colorMedium)
+         btn.ext_UseAutoLayout()
+         btn.ext_SetAddTarget(self, #selector(clickPlanMarketBtn))
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .selected)
++        btn.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .selected)
+         btn.layer.masksToBounds = true
+         btn.layer.borderWidth = 0.5
+-        btn.layer.borderColor = UIColor.exs_ThemeView.border.cgColor
++        btn.layer.borderColor = UIColor.ThemeView.border.cgColor
+         
+         btn.layer.cornerRadius = 4
+      
+@@ -216,8 +216,8 @@ class EXContractMakeOrderView: UIView {
+     }()
+     /// 计划市价
+     lazy var marketLabel : UILabel = {
+-        let label = UILabel(text: "  " + "cp_extra_text132".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorDark, alignment: .left)
+-        label.backgroundColor = UIColor.exs_ThemeNav.bg
++        let label = UILabel(text: "  " + "cp_extra_text132".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorDark, alignment: .left)
++        label.backgroundColor = UIColor.ThemeNav.bg
+         label.layer.cornerRadius = 4
+         label.layer.masksToBounds = true
+         label.isHidden = true
+@@ -229,10 +229,10 @@ class EXContractMakeOrderView: UIView {
+         btn.ext_UseAutoLayout()
+         btn.ext_SetAddTarget(self, selector)
+         btn.setTitle(title, for: .normal)
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for:.selected)
++        btn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
++        btn.setTitleColor(UIColor.ThemeLabel.colorHighlight, for:.selected)
+         btn.layer.borderWidth = 0.5
+-        btn.layer.borderColor = UIColor.exs_ThemeView.border.cgColor
++        btn.layer.borderColor = UIColor.ThemeView.border.cgColor
+         btn.titleLabel?.font = UIFont.ThemeFont.SecondaryRegular
+         return btn
+     }
+@@ -300,7 +300,7 @@ class EXContractMakeOrderView: UIView {
+ //    lazy var volumeTextField : EXSBorderField = {
+ //        let textField = EXSBorderField()
+ //        textField.ext_UseAutoLayout()
+-//        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++//        textField.input.textColor = UIColor.ThemeLabel.colorLite
+ //        textField.setPlaceHolder(placeHolder: "newCharge_text_volume".ex_localized())
+ //        textField.unitLabel.text = "cp_overview_text9".ex_localized()
+ //        textField.textfieldValueChangeBlock = {[weak self]str in
+@@ -338,7 +338,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var entrustLabel : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         label.text = "≈ ￥--"
+         return label
+@@ -349,7 +349,7 @@ class EXContractMakeOrderView: UIView {
+         textField.topView.snp_updateConstraints { (make) in
+             make.height.equalTo(36)
+         }
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         
+         textField.input.keyboardType = UIKeyboardType.decimalPad
+         textField.decimal = "2"//精度
+@@ -406,7 +406,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var canOpenMoreLabel : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         label.attributedText = self.getOpenMore(price: "-", volume: makeOrderViewModel?.volumeUnit ?? "-")
+         return label
+@@ -426,7 +426,7 @@ class EXContractMakeOrderView: UIView {
+         })
+         //        btn.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0)
+         btn.setFont(UIFont.ThemeFont.BodyRegular)
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        btn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         btn.ext_SetImages([UIImage.exs_themeImageNamed(imageName: "contract_checkbox_default"),UIImage.exs_themeImageNamed(imageName: "contract_checkbox_Focus")], controlStates: [.normal,.selected])
+         btn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -3, bottom: 0, right: 3)
+         btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 3, bottom: 0, right: -3)
+@@ -437,7 +437,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var stopProfitPriceField:EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.setPlaceHolder(placeHolder: "cp_extra_text65".ex_localized())
+         textField.unitLabel.text = ""
+         textField.textfieldValueChangeBlock = {[weak self]str in
+@@ -466,7 +466,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var stopLossPriceField:EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.setPlaceHolder(placeHolder: "cp_extra_text64".ex_localized())
+         textField.unitLabel.text = ""
+         textField.textfieldValueChangeBlock = {[weak self]str in
+@@ -496,7 +496,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var canOpenShortLabel : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         label.attributedText = getOpenEmpty(price: "-", volume: makeOrderViewModel?.volumeUnit ?? "-")
+         label.isHidden = true
+@@ -506,13 +506,13 @@ class EXContractMakeOrderView: UIView {
+     lazy var marketPriceLabel : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.backgroundColor = UIColor.exs_ThemeNav.bg
++        label.backgroundColor = UIColor.ThemeNav.bg
+         label.text = "   " + "cp_extra_text132".ex_localized()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+          label.font = UIFont.ThemeFont.BodyRegular
+         label.layer.cornerRadius = 4
+         label.layer.borderWidth = 0.5
+-        label.layer.borderColor = UIColor.exs_ThemeView.seperator.cgColor
++        label.layer.borderColor = UIColor.ThemeView.seperator.cgColor
+         label.isHidden = true
+         label.textAlignment = .left
+         return label
+@@ -558,7 +558,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var availableLabel : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         label.attributedText = getAvailable(price: "--", volume: "")
+         return label
+@@ -575,7 +575,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var canCloseMoreLabel : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         label.attributedText = self.getCloseMore(price: "-", volume: makeOrderViewModel?.volumeUnit ?? "-")
+         return label
+@@ -584,7 +584,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var canCloseShortLabel : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         label.attributedText = getCloseEmpty(price: "-", volume: makeOrderViewModel?.volumeUnit ?? "-")
+         return label
+@@ -593,7 +593,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var holdLongLabel : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         label.text = String(format:"cp_content_text8".ex_localized(),"-",makeOrderViewModel?.volumeUnit ?? "-")
+         label.textAlignment = .right
+@@ -603,7 +603,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var holdShortLabel : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         label.text = String(format:"cp_content_text8".ex_localized(),"-",makeOrderViewModel?.volumeUnit ?? "-")
+         label.textAlignment = .right
+@@ -614,7 +614,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var canMoreCostLabel:UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         label.attributedText = self.getMayBeCost(cost: "--")
+         return label
+@@ -623,7 +623,7 @@ class EXContractMakeOrderView: UIView {
+     lazy var canShortCostLabel:UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         label.attributedText = self.getMayBeCost(cost: "--")
+         label.isHidden = true
+@@ -632,7 +632,7 @@ class EXContractMakeOrderView: UIView {
+     }()
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         stopPLButtonContentView.addSubview(stopPLButton)
+         stopPLFieldContentView.exs_addSubViews([stopLossPriceField,stopProfitPriceField])
+         stopPLModuleContainerView.addArrangedSubview(stopPLButtonContentView)
+@@ -1232,8 +1232,8 @@ extension EXContractMakeOrderView {
+ 
+                 DispatchQueue.global().async {
+                     
+-                    let buyAttrString = NSMutableAttributedString().exs_add(string: "cp_overview_text13".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.white, NSAttributedString.Key.font : UIFont.ThemeFont.BodyBold])
+-                    let sellAttrString = NSMutableAttributedString().exs_add(string: "cp_overview_text14".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.white, NSAttributedString.Key.font : UIFont.ThemeFont.BodyBold])
++                    let buyAttrString = NSMutableAttributedString().exs_add(string: "cp_overview_text13".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.white, NSAttributedString.Key.font : UIFont.ThemeFont.BodyBold])
++                    let sellAttrString = NSMutableAttributedString().exs_add(string: "cp_overview_text14".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.white, NSAttributedString.Key.font : UIFont.ThemeFont.BodyBold])
+                     self.setupBuyAndSellBtn(buyAttrString: buyAttrString, sellAttrString: sellAttrString)
+                 }
+             }
+@@ -1243,8 +1243,8 @@ extension EXContractMakeOrderView {
+                 
+                 DispatchQueue.global().async {
+                     
+-                    let buyAttrString = NSMutableAttributedString().exs_add(string: "cp_extra_text4".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.white, NSAttributedString.Key.font : UIFont.ThemeFont.BodyBold])
+-                    let sellAttrString = NSMutableAttributedString().exs_add(string:"cp_extra_text5".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.white, NSAttributedString.Key.font : UIFont.ThemeFont.BodyBold])
++                    let buyAttrString = NSMutableAttributedString().exs_add(string: "cp_extra_text4".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.white, NSAttributedString.Key.font : UIFont.ThemeFont.BodyBold])
++                    let sellAttrString = NSMutableAttributedString().exs_add(string:"cp_extra_text5".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.white, NSAttributedString.Key.font : UIFont.ThemeFont.BodyBold])
+                     self.setupBuyAndSellBtn(buyAttrString: buyAttrString, sellAttrString: sellAttrString)
+                 }
+             }
+@@ -1581,13 +1581,13 @@ extension EXContractMakeOrderView {
+             marketLabel.isHidden = false
+             performTextField.input.isUserInteractionEnabled = false
+             performPriceType = .marketPlan
+-            btn.layer.borderColor = UIColor.exs_ThemeLabel.colorHighlight.cgColor
++            btn.layer.borderColor = UIColor.ThemeLabel.colorHighlight.cgColor
+ 
+         } else {
+             marketLabel.isHidden = true
+             performTextField.input.isUserInteractionEnabled = true
+             performPriceType = .limitPlan
+-            btn.layer.borderColor = UIColor.exs_ThemeView.border.cgColor
++            btn.layer.borderColor = UIColor.ThemeView.border.cgColor
+         }
+         
+         defineOrderType = .planOrder(isMarket: btn.isSelected)
+@@ -1643,18 +1643,18 @@ extension EXContractMakeOrderView {
+             
+             if !opponentView.executeBtn.isSelected,
+                (priceTextField.input.text == nil || (priceTextField.input.text ?? "0").lessThanOrEqual(BTZERO)) {
+-                EXSAlert.showFail(msg: "cp_tip_text1".ex_localized())
++                EXAlert.showFail(msg: "cp_tip_text1".ex_localized())
+                 return false
+             }
+         
+         case  .planOrder:
+             if triggerTextField.input.text == nil || (triggerTextField.input.text ?? "0").lessThanOrEqual(BTZERO) {
+-                EXSAlert.showFail(msg:  "cp_tip_text2".ex_localized())
++                EXAlert.showFail(msg:  "cp_tip_text2".ex_localized())
+                 return false
+             }
+             if performPriceType == .limitPlan {
+                 if performTextField.input.text == nil || (performTextField.input.text ?? "0").lessThanOrEqual(BTZERO) {
+-                    EXSAlert.showFail(msg:  "newContract_tips_input_performPrice".ex_localized())
++                    EXAlert.showFail(msg:  "newContract_tips_input_performPrice".ex_localized())
+                     return false
+                 }
+             }
+@@ -1665,10 +1665,10 @@ extension EXContractMakeOrderView {
+         if volumeTextField.input.text == nil || (volumeTextField.input.text ?? "0").lessThanOrEqual(BTZERO) {
+             
+             if shouldVolumeFieldUseQuoteCoinCalculate() {
+-                EXSAlert.showFail(msg: "cp_content_text9".ex_localized())
++                EXAlert.showFail(msg: "cp_content_text9".ex_localized())
+             }else {
+                 
+-                EXSAlert.showFail(msg:  "cp_extra_text34".ex_localized())
++                EXAlert.showFail(msg:  "cp_extra_text34".ex_localized())
+             }
+             return false
+         }
+@@ -1739,26 +1739,26 @@ extension EXContractMakeOrderView {
+             if shouldVolumeFieldUseQuoteCoinCalculate() {
+                 
+                 if (order?.qty ?? "0").greaterThan(validModel.maxMarketMoney) {
+-                    EXSAlert.showFail(msg: "cp_tip_text8".ex_localized() + "\(validModel.maxMarketMoney)" + marginCoin + "！")
++                    EXAlert.showFail(msg: "cp_tip_text8".ex_localized() + "\(validModel.maxMarketMoney)" + marginCoin + "！")
+                     return false
+                 }
+                 if (order?.qty ?? "0").lessThan(validModel.minOrderMoney) {
+-                    EXSAlert.showFail(msg: String(format:"cp_content_text10".ex_localized(),"\(validModel.minOrderMoney)\(marginCoin)"))
++                    EXAlert.showFail(msg: String(format:"cp_content_text10".ex_localized(),"\(validModel.minOrderMoney)\(marginCoin)"))
+                     return false
+                 }
+                 
+                 if (order?.freezAssets ?? "0").greaterThan(makeOrderViewModel?.canUseAmount ?? "0") {
+                     
+-                    EXSAlert.showFail(msg:  "cp_content_text11".ex_localized())
++                    EXAlert.showFail(msg:  "cp_content_text11".ex_localized())
+                 }
+             }else {
+                 if let o = order, validateLimitPriceDeviationRatioFailure(btn, order: o, itemM: itemM, validModel: validModel) {
+-                    EXSAlert.showFail(msg: "cp_content_text12".ex_localized())
++                    EXAlert.showFail(msg: "cp_content_text12".ex_localized())
+                     return false
+                 }
+                 
+                 if (order?.qty ?? "0").greaterThan(validModel.maxLimitVolume) {
+-                    EXSAlert.showFail(msg: String(format:"cp_tip_text6".ex_localized() , "\(validModel.maxLimitVolume)"))
++                    EXAlert.showFail(msg: String(format:"cp_tip_text6".ex_localized() , "\(validModel.maxLimitVolume)"))
+                     return false
+                 }
+                 switch defineOrderType {
+@@ -1767,14 +1767,14 @@ extension EXContractMakeOrderView {
+                        opponentView.executeBtn.isSelected,
+                        o.px.isEmpty {
+                         
+-                        EXSAlert.showFail(msg: "cp_overview_text50".ex_localized())
++                        EXAlert.showFail(msg: "cp_overview_text50".ex_localized())
+                         return false
+                     }
+                 default:break
+                 }
+                 
+                 if (order?.qty ?? "0").lessThan(validModel.minOrderVolume) {
+-                    EXSAlert.showFail(msg: String(format:"cp_content_text13".ex_localized(),"\(validModel.minOrderVolume)"))
++                    EXAlert.showFail(msg: String(format:"cp_content_text13".ex_localized(),"\(validModel.minOrderVolume)"))
+                     return false
+                 }
+             }
+@@ -1845,12 +1845,12 @@ extension EXContractMakeOrderView {
+                     if !shouldVolumeFieldUseQuoteCoinCalculate(),
+                        qty.greaterThan(makeOrderViewModel?.canOpenMore ?? "0") {
+                         
+-                        EXSAlert.showFail(msg: "cp_extra_text168".ex_localized())
++                        EXAlert.showFail(msg: "cp_extra_text168".ex_localized())
+                         
+                         return
+                     }
+                     if stopPLButton.isSelected && (o.stopLossTrigger.isEmpty && o.takerProfitTrigger.isEmpty) {
+-                        EXSAlert.showFail(msg: "cp_overview_text41".ex_localized())
++                        EXAlert.showFail(msg: "cp_overview_text41".ex_localized())
+                         return
+                     }
+                 }
+@@ -1862,7 +1862,7 @@ extension EXContractMakeOrderView {
+                 }
+ 
+                 if (qty ?? "0").greaterThan(makeOrderViewModel?.canCloseShort ?? "0") {
+-                    EXSAlert.showFail(msg:  "cp_order_text39".ex_localized())
++                    EXAlert.showFail(msg:  "cp_order_text39".ex_localized())
+                     return
+                 }
+                 
+@@ -1879,7 +1879,7 @@ extension EXContractMakeOrderView {
+                 if !shouldVolumeFieldUseQuoteCoinCalculate(),
+                    (qty ?? "0").greaterThan(makeOrderViewModel?.canOpenShort ?? "0") {
+                     
+-                    EXSAlert.showFail(msg:  "cp_extra_text168".ex_localized())
++                    EXAlert.showFail(msg:  "cp_extra_text168".ex_localized())
+                     return
+                 }
+                 
+@@ -1891,7 +1891,7 @@ extension EXContractMakeOrderView {
+                 }
+ 
+                 if (qty ?? "0").greaterThan(makeOrderViewModel?.canCloseMore ?? "0") {
+-                    EXSAlert.showFail(msg:  "cp_order_text39".ex_localized())
++                    EXAlert.showFail(msg:  "cp_order_text39".ex_localized())
+                     return
+                 }
+                 
+@@ -1938,10 +1938,10 @@ extension EXContractMakeOrderView {
+                 isSelect = true
+             }
+             
+-            model.selectedColor = isSelect ? UIColor.exs_ThemeView.bgTab : UIColor.exs_ThemeView.bg
++            model.selectedColor = isSelect ? UIColor.ThemeView.bgTab : UIColor.ThemeView.bg
+            
+-            model.titleColor = isSelect ? UIColor.exs_ThemeView.highlight : UIColor.exs_ThemeLabel.colorLite
+-            model.bgColor = isSelect ? UIColor.exs_ThemeView.bgIconh : UIColor.exs_ThemeView.bg
++            model.titleColor = isSelect ? UIColor.ThemeView.highlight : UIColor.ThemeLabel.colorLite
++            model.bgColor = isSelect ? UIColor.ThemeView.bgIconh : UIColor.ThemeView.bg
+             models.append(model)
+         }
+         
+@@ -1951,7 +1951,7 @@ extension EXContractMakeOrderView {
+     @objc func clickOrderTypeBtn(sender:UIButton) {
+         self.endEditing(true)
+         let popover = EXPopover(options: EXPopover.commonTradePopOption, showHandler: nil, dismissHandler: nil)
+-        popover.popoverColor = UIColor.exs_ThemeView.bg
++        popover.popoverColor = UIColor.ThemeView.bg
+         let models = orderWaysModel()
+         let width = self.orderTypeBtn.sg_width
+         let view = EXSBouncedView.init(frame: CGRect(x: 0, y: 0, width:width, height: CGFloat(models.count * 36)))
+@@ -2030,13 +2030,13 @@ extension EXContractMakeOrderView {
+     func getAttr(title:String,fullStr:String) -> NSMutableAttributedString {
+         let attributes: [NSAttributedString.Key: Any] = [
+             .font: UIFont.ThemeFont.SecondaryRegular,
+-            .foregroundColor: UIColor.exs_ThemeLabel.colorMedium,
++            .foregroundColor: UIColor.ThemeLabel.colorMedium,
+         ]
+         
+         let attr = NSMutableAttributedString.init(string: fullStr, attributes: attributes)
+         let nsString = NSString(string: fullStr)
+         let titleRange = nsString.range(of: title)
+-        attr.addAttribute(.foregroundColor, value: UIColor.exs_ThemeLabel.colorMedium, range:titleRange)
++        attr.addAttribute(.foregroundColor, value: UIColor.ThemeLabel.colorMedium, range:titleRange)
+         return attr
+     }
+ }

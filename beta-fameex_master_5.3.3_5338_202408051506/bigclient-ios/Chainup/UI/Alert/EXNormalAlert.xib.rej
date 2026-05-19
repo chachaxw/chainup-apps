@@ -1,0 +1,40 @@
+diff a/Chainup/UI/Alert/EXNormalAlert.xib b/Chainup/UI/Alert/EXNormalAlert.xib	(rejected hunks)
+@@ -1,9 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
++<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+     <device id="retina4_7" orientation="portrait" appearance="light"/>
+     <dependencies>
+         <deployment identifier="iOS"/>
+-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
++        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+     </dependencies>
+@@ -46,7 +46,7 @@
+                                 <constraint firstAttribute="height" constant="56" id="vFl-ia-jIY"/>
+                             </constraints>
+                             <userDefinedRuntimeAttributes>
+-                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
++                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.alertBg"/>
+                             </userDefinedRuntimeAttributes>
+                         </view>
+                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoL-wu-nDF">
+@@ -67,7 +67,7 @@
+                                 <constraint firstItem="fHI-OK-tw5" firstAttribute="top" secondItem="hoL-wu-nDF" secondAttribute="top" id="qAy-sk-Jv1"/>
+                             </constraints>
+                             <userDefinedRuntimeAttributes>
+-                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
++                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.alertBg"/>
+                             </userDefinedRuntimeAttributes>
+                         </view>
+                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFn-td-VA6">
+@@ -132,7 +132,7 @@
+             </constraints>
+             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+             <userDefinedRuntimeAttributes>
+-                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
++                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.alertBg"/>
+                 <userDefinedRuntimeAttribute type="number" keyPath="corneradius">
+                     <real key="value" value="8"/>
+                 </userDefinedRuntimeAttribute>

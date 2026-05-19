@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_select_position"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cp_bg_item_new_dialog"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:paddingVertical="@dimen/dp_20"
+    android:paddingHorizontal="@dimen/dp_16"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_18"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            style="@style/textstyle_dm_16_color1"
+            android:text="@string/cp_margin_mode"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/cancelBtn"
+            style="@style/textstyle_dr_14_color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/cp_overview_text56" />
+    </RelativeLayout>
+
+<!--    黄色提醒-->
+    <TextView
+        android:id="@+id/tv_no_switch_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cp_contract_setting_text7"
+        android:textColor="@color/text_yellow_color"
+        style="@style/textstyle_dr_12_color2"
+        />
+
+<!--    全仓逐仓按钮选择-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tv_tab_full"
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:background="@drawable/bg_margin_mode_selector"
+            android:text="@string/cp_contract_setting_text1"
+            android:textAllCaps="false"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/tv_tab_gradually"
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_margin_mode_selector"
+            android:text="@string/cp_contract_setting_text2"
+            android:textAllCaps="false"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+<!--    下拉提示 箭头-->
+    <LinearLayout
+        android:id="@+id/ll_show_position_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cp_content_text6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/cp_content_text6"
+            style="@style/textstyle_dm_14_color2"
+            />
+
+        <ImageView
+            android:id="@+id/img_show_position_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/public_arrow_down"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+<!--    隐藏的解释语-->
+    <LinearLayout
+        android:id="@+id/ll_position_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cp_contract_setting_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/cp_contract_setting_text3"
+            style="@style/textstyle_dr_14_color2"
+            android:lineHeight="@dimen/dp_20"
+            />
+
+        <TextView
+            android:id="@+id/tv_cp_contract_setting_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/cp_contract_setting_text4"
+            style="@style/textstyle_dr_14_color2"
+            android:lineHeight="@dimen/dp_20"
+            />
+    </LinearLayout>
+
+<!--    确认按钮-->
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/confirmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_32"
+        style="@style/textstyle_dm_14_color1"
+        android:text="@string/cp_calculator_text16"
+        android:gravity="center"
+        app:stv_corner="@dimen/dp_4"
+        app:stv_solid="@color/main_color"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

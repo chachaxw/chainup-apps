@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EXPosNumberLockCell" rowHeight="131" id="KGk-i7-Jjw" customClass="EXPosNumberLockCell" customModule="Chainup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUz-Kg-e1H">
+                        <rect key="frame" x="15" y="15" width="225" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorMedium"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cf-SJ-26P">
+                        <rect key="frame" x="240" y="15" width="225" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorMedium"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wx5-6w-YIn">
+                        <rect key="frame" x="15" y="35" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorLite"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhQ-Jd-zXU">
+                        <rect key="frame" x="245" y="33" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorLite"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3W-fj-Ewg">
+                        <rect key="frame" x="20" y="33" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorLite"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGj-uz-PHN">
+                        <rect key="frame" x="240" y="35" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorLite"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="V3W-fj-Ewg" firstAttribute="bottom" secondItem="wx5-6w-YIn" secondAttribute="bottom" constant="-2" id="0lL-zN-IB0"/>
+                    <constraint firstItem="8Cf-SJ-26P" firstAttribute="leading" secondItem="MUz-Kg-e1H" secondAttribute="trailing" id="9FD-Co-aMP"/>
+                    <constraint firstItem="8Cf-SJ-26P" firstAttribute="width" secondItem="MUz-Kg-e1H" secondAttribute="width" id="CRs-ak-vRf"/>
+                    <constraint firstItem="BGj-uz-PHN" firstAttribute="centerY" secondItem="wx5-6w-YIn" secondAttribute="centerY" id="HYR-Yc-3Ah"/>
+                    <constraint firstAttribute="bottom" secondItem="wx5-6w-YIn" secondAttribute="bottom" priority="250" constant="15" id="Ija-xP-M6h"/>
+                    <constraint firstItem="8Cf-SJ-26P" firstAttribute="centerY" secondItem="MUz-Kg-e1H" secondAttribute="centerY" id="Ps6-sM-imi"/>
+                    <constraint firstItem="wx5-6w-YIn" firstAttribute="top" secondItem="MUz-Kg-e1H" secondAttribute="bottom" constant="20" id="SXh-1t-TTp"/>
+                    <constraint firstItem="wx5-6w-YIn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="TkH-ic-Sbg"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OhQ-Jd-zXU" secondAttribute="trailing" constant="15" id="bcw-DP-Nka"/>
+                    <constraint firstItem="OhQ-Jd-zXU" firstAttribute="bottom" secondItem="BGj-uz-PHN" secondAttribute="bottom" constant="-2" id="dl8-Sc-ju9"/>
+                    <constraint firstItem="V3W-fj-Ewg" firstAttribute="leading" secondItem="wx5-6w-YIn" secondAttribute="trailing" constant="5" id="lmK-cj-Vgt"/>
+                    <constraint firstItem="BGj-uz-PHN" firstAttribute="leading" secondItem="8Cf-SJ-26P" secondAttribute="leading" id="mfq-HW-Xwp"/>
+                    <constraint firstItem="OhQ-Jd-zXU" firstAttribute="leading" secondItem="BGj-uz-PHN" secondAttribute="trailing" constant="5" id="r2m-qh-euI"/>
+                    <constraint firstItem="MUz-Kg-e1H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="sf4-PM-VeY"/>
+                    <constraint firstItem="MUz-Kg-e1H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="u1X-4h-6qD"/>
+                    <constraint firstAttribute="trailing" secondItem="8Cf-SJ-26P" secondAttribute="trailing" constant="15" id="xm7-Hw-7AA"/>
+                    <constraint firstItem="BGj-uz-PHN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="V3W-fj-Ewg" secondAttribute="trailing" constant="10" id="zDn-1W-n8h"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="numbe" destination="wx5-6w-YIn" id="eNc-Yc-Hvm"/>
+                <outlet property="secNumbe" destination="BGj-uz-PHN" id="pHc-se-v2I"/>
+                <outlet property="secTitle" destination="8Cf-SJ-26P" id="cQu-RQ-tgm"/>
+                <outlet property="secunit" destination="OhQ-Jd-zXU" id="yxh-aH-9oK"/>
+                <outlet property="title" destination="MUz-Kg-e1H" id="ZWU-Qn-Qp7"/>
+                <outlet property="unit" destination="V3W-fj-Ewg" id="tow-sl-mSx"/>
+            </connections>
+            <point key="canvasLocation" x="748" y="97"/>
+        </tableViewCell>
+    </objects>
+</document>

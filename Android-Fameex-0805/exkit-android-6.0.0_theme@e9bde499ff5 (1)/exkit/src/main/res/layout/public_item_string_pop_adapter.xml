@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingHorizontal="@dimen/dp_12"
+    android:background="@drawable/bg_item_press_fill4_selector"
+    >
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_36"
+        android:gravity="center"
+        android:text="限价单"
+        android:maxLines="1"
+        android:ellipsize="end"
+        style="@style/textstyle_dm_14_color1"
+        />
+
+    <ImageView
+        android:id="@+id/ic_tip"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:src="@mipmap/public_instructions"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="7dp"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

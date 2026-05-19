@@ -1,0 +1,12 @@
+diff a/Chainup/EXAssets/Home/vc/ExLeverage/EXLeverageReturnVc.swift b/Chainup/EXAssets/Home/vc/ExLeverage/EXLeverageReturnVc.swift	(rejected hunks)
+@@ -105,8 +105,8 @@ class EXLeverageReturnVc: BaseVC,NavigationPlugin{
+             if totalMoney.isEqualValue("0"),showAlert {
+                 let normalAlert = EXNormalAlert()
+                 let att = NSMutableAttributedString.init(string:String.init(format: "leverage_notEnught_prompt".localized(), currentCoinName.aliasCoinMapName()))
+-                att.addAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16),NSAttributedString.Key.foregroundColor:UIColor.ThemeLabel.colorLite], range: att.yy_rangeOfAll())
+-                att.addAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16),NSAttributedString.Key.foregroundColor:UIColor.ThemeState.warning], range: (att.string as NSString) .range(of: currentCoinName.aliasCoinMapName()))
++                att.addAttributes([NSAttributedString.Key.font: UIFont.ThemeFont.HeadRegular,NSAttributedString.Key.foregroundColor:UIColor.ThemeLabel.colorLite], range: att.yy_rangeOfAll())
++                att.addAttributes([NSAttributedString.Key.font: UIFont.ThemeFont.HeadRegular,NSAttributedString.Key.foregroundColor:UIColor.ThemeState.warning], range: (att.string as NSString) .range(of: currentCoinName.aliasCoinMapName()))
+                 normalAlert.configAttributeAlert(title:nil, message: att, passiveBtnTitle: "common_text_btnCancel".localized(), positiveBtnTitle: "assets_action_transfer".localized())
+                 normalAlert.alertCallback = {[weak self] tag in
+                     guard let mySelf = self else {

@@ -1,0 +1,13 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/TextField/EXSTextFieldStyle.swift b/Chainup/Framework/EXSwapSDK/Base/UI/TextField/EXSTextFieldStyle.swift	(rejected hunks)
+@@ -32,9 +32,9 @@ class EXSTextFieldStyle: NSObject {
+     
+     func showHilights(on:Bool,effectView:UIView,borderHighlight:Bool) {
+         if borderHighlight {
+-            effectView.layer.borderColor = on ? UIColor.exs_ThemeView.highlight.cgColor : UIColor.exs_ThemeView.border.cgColor
++            effectView.layer.borderColor = on ? UIColor.ThemeView.highlight.cgColor : UIColor.ThemeView.border.cgColor
+         }else {
+-            effectView.backgroundColor = on ? UIColor.exs_ThemeView.highlight : UIColor.ThemeTextField.seperator
++            effectView.backgroundColor = on ? UIColor.ThemeView.highlight : UIColor.ThemeTextField.seperator
+         }
+     }
+ 

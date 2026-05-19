@@ -1,0 +1,28 @@
+diff a/Chainup/EXCOINS/Leverage&Exchange/view/TradeCommonOrderArea.swift b/Chainup/EXCOINS/Leverage&Exchange/view/TradeCommonOrderArea.swift	(rejected hunks)
+@@ -199,7 +199,7 @@ class TradeCommonOrderArea:EXTradeAreaBase {
+                 make.right.equalTo(volumeField.snp.right)
+                 make.width.equalTo(CGFloat.leastNonzeroMagnitude)
+                 make.height.equalTo(30)
+-                make.centerY.equalTo(availableTitle.snp_centerY)
++                make.centerY.equalTo(availableTitle.snp.centerY)
+             }
+         }else {
+             transferBtn.isHidden = false
+@@ -207,7 +207,7 @@ class TradeCommonOrderArea:EXTradeAreaBase {
+                 make.right.equalTo(volumeField.snp.right)
+                 make.width.equalTo(20)
+                 make.height.equalTo(30)
+-                make.centerY.equalTo(availableTitle.snp_centerY)
++                make.centerY.equalTo(availableTitle.snp.centerY)
+             }
+         }
+ 
+@@ -230,7 +230,7 @@ class TradeCommonOrderArea:EXTradeAreaBase {
+         }
+         
+         availableValue.snp.makeConstraints { (make) in
+-            make.centerY.equalTo(availableTitle.snp_centerY)
++            make.centerY.equalTo(availableTitle.snp.centerY)
+             make.right.equalTo(transferBtn.snp.left)
+             make.left.equalTo(availableTitle.snp.right).offset(10)
+         }

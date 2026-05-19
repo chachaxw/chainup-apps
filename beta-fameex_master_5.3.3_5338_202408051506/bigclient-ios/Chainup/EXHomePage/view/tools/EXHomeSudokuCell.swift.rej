@@ -1,0 +1,11 @@
+diff a/Chainup/EXHomePage/view/tools/EXHomeSudokuCell.swift b/Chainup/EXHomePage/view/tools/EXHomeSudokuCell.swift	(rejected hunks)
+@@ -162,8 +162,7 @@ extension EXHomeSudokuCell : UICollectionViewDelegate,UICollectionViewDataSource
+         let cell : EXHomeFuncCC = collectionView.dequeueReusableCell(withReuseIdentifier: "EXHomeFuncCC", for: indexPath) as! EXHomeFuncCC
+         if isMoreCellIdx(idxPath: indexPath) {
+             cell.nameLabel.text =  "common_action_showMore".localized()
+-            cell.imgV.image = nil
+-            cell.imgV.backgroundColor = UIColor.red
++            cell.imgV.image = UIImage.themeImageNamed(imageName: "kingkong_more")
+         }else {
+             cell.bindCell(entity)
+         }

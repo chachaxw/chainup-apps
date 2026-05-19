@@ -1,0 +1,16 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/EXKit
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Blueprints" "${PODS_CONFIGURATION_BUILD_DIR}/DZNEmptyDataSet" "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift" "${PODS_CONFIGURATION_BUILD_DIR}/JXSegmentedView" "${PODS_CONFIGURATION_BUILD_DIR}/MJExtension" "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh" "${PODS_CONFIGURATION_BUILD_DIR}/Reachability" "${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa" "${PODS_CONFIGURATION_BUILD_DIR}/RxRelay" "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift" "${PODS_CONFIGURATION_BUILD_DIR}/SKPhotoBrowser" "${PODS_CONFIGURATION_BUILD_DIR}/SkeletonView" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftDraw" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftEntryKit" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftEventBus" "${PODS_CONFIGURATION_BUILD_DIR}/YYCache" "${PODS_CONFIGURATION_BUILD_DIR}/YYImage" "${PODS_CONFIGURATION_BUILD_DIR}/YYText" "${PODS_CONFIGURATION_BUILD_DIR}/YYWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
+OTHER_LDFLAGS = $(inherited) -framework "Accelerate" -framework "AssetsLibrary" -framework "Blueprints" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreText" -framework "DZNEmptyDataSet" -framework "Foundation" -framework "IQKeyboardManagerSwift" -framework "ImageIO" -framework "JXSegmentedView" -framework "Lottie" -framework "MJExtension" -framework "MJRefresh" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Reachability" -framework "RxCocoa" -framework "RxSwift" -framework "SKPhotoBrowser" -framework "SkeletonView" -framework "SnapKit" -framework "SwiftDraw" -framework "SwiftEntryKit" -framework "SwiftEventBus" -framework "SystemConfiguration" -framework "UIKit" -framework "YYCache" -framework "YYText" -framework "YYWebImage"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_DEVELOPMENT_LANGUAGE = ${DEVELOPMENT_LANGUAGE}
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/EXKit
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

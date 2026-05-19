@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSwapProfitRecordVc.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSwapProfitRecordVc.swift	(rejected hunks)
+@@ -58,7 +58,7 @@ class EXSwapProfitRecordVc: UIViewController {
+     
+     lazy var sectionHeaderView: UIView = {
+         let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 46))
+-        view.backgroundColor = UIColor.exs_ThemeNav.bg
++        view.backgroundColor = UIColor.ThemeNav.bg
+         view.addSubview(self.screeningView)
+         return view
+     }()

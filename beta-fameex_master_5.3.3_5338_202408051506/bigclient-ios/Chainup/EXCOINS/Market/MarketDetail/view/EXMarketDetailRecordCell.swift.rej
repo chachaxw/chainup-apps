@@ -1,0 +1,11 @@
+diff a/Chainup/EXCOINS/Market/MarketDetail/view/EXMarketDetailRecordCell.swift b/Chainup/EXCOINS/Market/MarketDetail/view/EXMarketDetailRecordCell.swift	(rejected hunks)
+@@ -21,6 +21,9 @@ class EXMarketDetailRecordCell: UITableViewCell {
+         leftLabel.font = UIFont.ThemeFont.SecondaryRegular
+         middleLabel.font = UIFont.ThemeFont.SecondaryRegular
+         rightLabel.font = UIFont.ThemeFont.SecondaryRegular
++        leftLabel.textColor = UIColor.ThemekLine.labcolorDark
++        middleLabel.textColor = UIColor.ThemekLine.labcolorDark
++        rightLabel.textColor = UIColor.ThemekLine.labcolorDark
+         // Initialization code
+     }
+     

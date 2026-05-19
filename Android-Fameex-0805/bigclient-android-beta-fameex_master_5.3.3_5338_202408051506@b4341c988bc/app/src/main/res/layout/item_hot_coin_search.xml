@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/tv_title"
+    android:text="BTC"
+    android:gravity="center"
+    android:background="@drawable/bg_btn_hot_coin_select"
+    style="@style/textStyle_value_82_14"
+    android:layout_marginEnd="@dimen/dp_8"
+    android:layout_marginBottom="@dimen/dp_4"
+    android:paddingStart="@dimen/dp_8"
+    android:paddingEnd="@dimen/dp_8"
+    android:paddingTop="@dimen/dp_2"
+    android:paddingBottom="@dimen/dp_2"
+    android:layout_height="@dimen/dp_22">
+</TextView>

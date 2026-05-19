@@ -1,0 +1,38 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXShorizontalThreeLabelView.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXShorizontalThreeLabelView.swift	(rejected hunks)
+@@ -19,7 +19,7 @@ class EXShorizontalThreeLabelView: UIView {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+         
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         
+         switch user {
+             
+@@ -38,7 +38,7 @@ class EXShorizontalThreeLabelView: UIView {
+     
+     init(user:EXShorizontalThreeLabelViewUser) {
+         super.init(frame: CGRect.zero)
+-        backgroundColor = UIColor.exs_ThemeView.bg
++        backgroundColor = UIColor.ThemeView.bg
+ 
+         firstLabel = getLabel(user:user)
+         secondLabel = getLabel(user:user)
+@@ -98,15 +98,15 @@ class EXShorizontalThreeLabelView: UIView {
+     
+         if highlight.0 {
+             
+-            firstLabel.textColor = UIColor.exs_ThemeLabel.colorLite
++            firstLabel.textColor = UIColor.ThemeLabel.colorLite
+         }
+         
+         if highlight.1 {
+-            secondLabel.textColor = UIColor.exs_ThemeLabel.colorLite
++            secondLabel.textColor = UIColor.ThemeLabel.colorLite
+         }
+         
+         if highlight.2 {
+-            thirdLabel.textColor = UIColor.exs_ThemeLabel.colorLite
++            thirdLabel.textColor = UIColor.ThemeLabel.colorLite
+         }
+     }
+     

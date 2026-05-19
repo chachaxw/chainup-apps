@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/cp_bg_trade_market_tip" />
+    <item
+        android:drawable="@drawable/ic_public_unselecteds"
+        android:height="@dimen/dp_24"
+        android:width="@dimen/dp_24"
+        android:gravity="right"
+        />
+</layer-list>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SkeletonActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_header_kit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="标签" />
+
+    <com.qmuiteam.qmui.layout.QMUILinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:qmui_topDividerColor="@color/line_color"
+        app:qmui_topDividerHeight="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:background="@color/main_color" />
+
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="个人中心"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:kk_tag_state="Unauthrzed"
+                app:kk_tag_title_text="Unauthrzed"
+                app:kk_tag_type="person" />
+
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:kk_tag_state="Review"
+                app:kk_tag_title_text="Review"
+                app:kk_tag_type="person" />
+
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:kk_tag_state="Certified"
+                app:kk_tag_title_text="Certified"
+                app:kk_tag_type="person" />
+
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:kk_tag_state="NotThrough"
+                app:kk_tag_title_text="NotThrough"
+                app:kk_tag_type="person" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:background="@color/main_color" />
+
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="涨跌幅"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:kk_tag_title_text="-9.21%"
+                app:kk_tag_type="rise" />
+
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:kk_tag_title_text="-9.21%"
+                app:kk_tag_type="fall" />
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:kk_tag_title_text="-10000.21%"
+                app:kk_tag_type="fall" />
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:kk_tag_title_text="-9.21%"
+                app:kk_tag_type="rise_zero" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:background="@color/main_color" />
+
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="币种标签"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:kk_tag_title_text="以太坊升级"
+                app:kk_tag_type="defi" />
+
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:kk_tag_title_text="Defi"
+                app:kk_tag_type="defi" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:background="@color/main_color" />
+
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="杠杆标签"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:kk_tag_title_text="125X"
+                app:kk_tag_type="level" />
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:kk_tag_title_text="5X"
+                app:kk_tag_type="level" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:background="@color/main_color" />
+
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="填充标签"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:kk_tag_title_text="DOT"
+                app:kk_tag_type="fill" />
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:kk_tag_title_text="ETH"
+                app:kk_tag_type="fill" />
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:kk_tag_title_text="BTC"
+                app:kk_tag_type="fill" />
+
+            <com.chainup.kit.views.KKTagKit
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:kk_tag_title_text="ERC20"
+                app:kk_tag_type="tag_convention"
+                />
+            <com.chainup.kit.views.KKTagKit
+                android:id="@+id/tk_convention_disable"
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:kk_tag_title_text="ERC20"
+                app:kk_tag_type="tag_convention"
+                android:enabled="false"
+                />
+        </LinearLayout>
+
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+
+</LinearLayout>

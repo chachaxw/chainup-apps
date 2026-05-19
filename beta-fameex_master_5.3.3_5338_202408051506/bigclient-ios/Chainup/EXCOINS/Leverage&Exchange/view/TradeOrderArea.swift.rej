@@ -1,0 +1,12 @@
+diff a/Chainup/EXCOINS/Leverage&Exchange/view/TradeOrderArea.swift b/Chainup/EXCOINS/Leverage&Exchange/view/TradeOrderArea.swift	(rejected hunks)
+@@ -82,8 +82,8 @@ class TradeOrderArea :EXTradeAreaBase {
+         self.addSubview(orderCommonArea)
+         
+         orderCommonArea.orderCreateBtn.addTarget(self, action: #selector(createBtnTapped), for: .touchUpInside)
+-        orderCommonArea.snp_makeConstraints { (make) in
+-            make.top.equalTo(orderTypeBtn.snp_bottom).offset(12)
++        orderCommonArea.snp.makeConstraints { (make) in
++            make.top.equalTo(orderTypeBtn.snp.bottom).offset(12)
+             make.left.right.equalToSuperview()
+             make.bottom.equalToSuperview()
+         }

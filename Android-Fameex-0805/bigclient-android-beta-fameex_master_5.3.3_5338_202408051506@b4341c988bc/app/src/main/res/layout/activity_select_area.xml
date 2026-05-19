@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_corner12_fill2"
+    tools:context=".new_version.activity.SelectAreaActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_security_verification_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:text="@string/select_area"
+            style="@style/textstyle_dm_16_color1"
+            />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:text="@string/common_text_btnCancel"
+            style="@style/textstyle_dm_14_color2"
+            />
+
+
+    </RelativeLayout>
+
+    <com.chainup.kit.views.base.BaseEditTextKit
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        style="@style/etstyle_baseSearch"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginTop="@dimen/dp_16"
+        android:paddingVertical="0dp"
+        android:hint="@string/select_area"
+        android:layout_below="@id/rl_security_verification_layout"
+        android:layout_marginBottom="@dimen/dp_16"
+        />
+
+
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/v_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:contextClickable="true"
+        android:hint="@string/otc_choose_contry"
+        android:textColor="#ff838ca7"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+
+    <include
+        android:id="@+id/ly_search"
+        layout="@layout/widget_search_bar"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/et_search" />
+
+
+    <com.yjkj.chainup.wedegit.MySideBar
+        android:id="@+id/area_side_bar"
+        android:layout_width="12dp"
+        android:layout_height="420dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginRight="@dimen/dp_5"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

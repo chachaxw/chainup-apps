@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/public_bg_dialog_topcorner12"
+    android:layout_gravity="bottom"
+    android:paddingHorizontal="@dimen/dp_16">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/public_dialog_header_layout"
+        />
+    <com.chainup.kit.views.base.BaseEditTextKit
+        android:id="@+id/edt_input"
+        android:layout_below="@+id/header"
+        style="@style/BaseEditTextKitStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/dp_13"
+        android:layout_marginTop="@dimen/dp_8"
+        android:hint="Please input"
+        android:layout_marginBottom="28dp"
+        android:inputType="text" />
+
+    <com.chainup.kit.views.KKButtonKit
+        android:id="@+id/tv_btn"
+        android:layout_below="@+id/edt_input"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

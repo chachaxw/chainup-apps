@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXTradingWithInfoView" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="infoView" destination="CN4-7N-POf" id="9jY-uY-uAv"/>
+                <outlet property="stacks" destination="jkI-vk-rFH" id="iPt-kA-pZz"/>
+                <outlet property="userAvatarView" destination="ngU-oP-jEs" id="kCt-id-3FI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5rA-I0-dZT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbM-bN-hfP">
+                    <rect key="frame" x="0.0" y="15" width="375" height="26"/>
+                    <subviews>
+                        <stackView verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jkI-vk-rFH">
+                            <rect key="frame" x="327" y="5" width="21" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="LdT-nv-nse"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                            </userDefinedRuntimeAttributes>
+                        </stackView>
+                        <view verifyAmbiguity="ignoreSizes" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngU-oP-jEs" customClass="EXAvatarView" customModule="Chainup" customModuleProvider="target">
+                            <rect key="frame" x="18" y="0.0" width="82" height="26"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="qT6-21-DXm"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ngU-oP-jEs" firstAttribute="centerY" secondItem="VbM-bN-hfP" secondAttribute="centerY" id="8Ed-Fx-KDY"/>
+                        <constraint firstItem="jkI-vk-rFH" firstAttribute="centerY" secondItem="VbM-bN-hfP" secondAttribute="centerY" id="SwN-HP-u8H"/>
+                        <constraint firstItem="ngU-oP-jEs" firstAttribute="leading" secondItem="VbM-bN-hfP" secondAttribute="leading" constant="15" id="nb6-6f-TGD"/>
+                        <constraint firstAttribute="trailing" secondItem="jkI-vk-rFH" secondAttribute="trailing" constant="15" id="tDA-tE-owp"/>
+                        <constraint firstAttribute="height" constant="26" id="usJ-DG-31z"/>
+                        <constraint firstItem="jkI-vk-rFH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ngU-oP-jEs" secondAttribute="trailing" constant="5" id="v4g-M3-h3p"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CN4-7N-POf" customClass="EXThreeColumnView" customModule="Chainup" customModuleProvider="target">
+                    <rect key="frame" x="15" y="58" width="345" height="32"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="JaC-9v-3El"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VbM-bN-hfP" firstAttribute="leading" secondItem="5rA-I0-dZT" secondAttribute="leading" id="BFl-VT-obS"/>
+                <constraint firstAttribute="trailing" secondItem="CN4-7N-POf" secondAttribute="trailing" constant="15" id="BRy-6A-pkF"/>
+                <constraint firstAttribute="bottom" secondItem="CN4-7N-POf" secondAttribute="bottom" constant="20" id="R87-DM-oSu"/>
+                <constraint firstItem="VbM-bN-hfP" firstAttribute="top" secondItem="5rA-I0-dZT" secondAttribute="top" constant="15" id="cp0-FS-jag"/>
+                <constraint firstItem="CN4-7N-POf" firstAttribute="leading" secondItem="5rA-I0-dZT" secondAttribute="leading" constant="15" id="hYc-Oq-0L6"/>
+                <constraint firstAttribute="trailing" secondItem="VbM-bN-hfP" secondAttribute="trailing" id="mvH-4q-bLH"/>
+                <constraint firstAttribute="height" constant="110" id="uzM-YP-0Yr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="9j9-B9-wAS"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="127.2" y="-320.23988005997006"/>
+        </view>
+    </objects>
+</document>

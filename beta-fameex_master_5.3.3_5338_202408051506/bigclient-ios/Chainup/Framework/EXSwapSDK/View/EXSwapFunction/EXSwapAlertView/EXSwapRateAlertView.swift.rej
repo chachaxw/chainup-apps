@@ -1,0 +1,28 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapAlertView/EXSwapRateAlertView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapAlertView/EXSwapRateAlertView.swift	(rejected hunks)
+@@ -31,7 +31,7 @@ class EXSwapRateAlertView: UIView {
+     }()
+     private lazy var confirmButton: UIButton = {
+         let button = UIButton(buttonType: .custom, title: "cp_extra_text28".ex_localized(), titleFont: UIFont.ThemeFont.HeadBold, titleColor: UIColor.white)
+-        button.ext_setBackgroundColor(backgroundColor: UIColor.exs_ThemeBtn.highlight, state: .normal)
++        button.ext_setBackgroundColor(backgroundColor: UIColor.ThemeBtn.highlight, state: .normal)
+         button.layer.cornerRadius = 4
+         button.layer.masksToBounds = true
+         button.ext_SetAddTarget(self, #selector(clickConfirmButton))
+@@ -39,7 +39,7 @@ class EXSwapRateAlertView: UIView {
+     }()
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         self.layer.cornerRadius = 4
+ 
+         exs_addSubViews([firstView,secondView,thirdView,confirmButton])
+@@ -67,7 +67,7 @@ class EXSwapRateAlertView: UIView {
+     }
+     @objc func clickConfirmButton() {
+        
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     func config(first:String) {
+         

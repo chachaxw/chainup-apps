@@ -1,0 +1,120 @@
+name: chainup_flutter_ex
+description: This is an exchange project
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  library_kline:
+    path: library_kline
+
+  cupertino_icons: ^1.0.2
+  # GetX状态管理框架
+  get: 4.6.1
+  # 本地存储
+  get_storage: ^2.0.3
+  iconly: ^1.0.1
+  # json转换
+  json_annotation: ^4.7.0
+  # 网络请求库 https://github.com/flutterchina/dio
+  dio: ^4.0.1
+  # 网络请求框架
+  retrofit: '>=3.0.0 <4.0.0'
+  # 网络检测 https://pub.flutter-io.cn/packages/connectivity
+  connectivity: 3.0.6
+  # 网络响应日志打印框架
+  pretty_dio_logger: ^1.2.0-beta-1
+  #  事件总线--EventBus
+  event_bus: ^2.0.0
+  # 上拉刷新、下拉加载
+  pull_to_refresh: ^2.0.0
+  # 加密
+  crypto: ^3.0.1
+  #web_socket
+  web_socket_channel: ^2.1.0
+  #编解码
+  archive: ^3.3.1
+  # 设备信息
+  device_info_plus: ^4.0.0
+  # 获取应用版本信息
+  package_info: ^2.0.2
+  # 键盘
+  keyboard_actions: "3.4.5"
+  # 骨架屏
+  shimmer: ^2.0.0
+  # Toast
+  fluttertoast: 8.1.2
+  # 屏幕适配
+  flutter_screenutil: ^5.0.0
+  # 网络图片
+  cached_network_image: ^3.2.0
+  # SVG 矢量图
+  flutter_svg: ^1.0.0
+  kumi_popup_window: ^2.0.0-nullsafety
+  container_tab_indicator: ^0.3.0
+  intl: ^0.18.1
+  decimal: ^2.3.3
+  #k线图
+  fl_chart: ^0.64.0
+  #下拉菜单
+  dropdown_button2: ^2.3.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: '>2.3.0 <4.0.0'
+  retrofit_generator: '>=4.0.0 <5.0.0'
+  json_serializable: '>4.4.0'
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/
+    - images/dark/
+    - images/light/
+    - images/svg/
+
+  fonts:
+    - family: DINPro-Bold
+      fonts:
+        - asset: fonts/DINPro-Bold.otf
+          weight: 700
+
+    - family: DINPro-Medium
+      fonts:
+        - asset: fonts/DINPro-Medium.otf
+          weight: 600
+
+    - family: DINPro-Regular
+      fonts:
+        - asset: fonts/DINPro-Regular.otf
+          weight: 400
+
+
+    - family: HarmonyOS_Sans_SC_Bold
+      fonts:
+        - asset: fonts/HarmonyOS_Sans_SC_Bold.ttf
+          weight: 700
+
+    - family: HarmonyOS_Sans_SC_Medium
+      fonts:
+        - asset: fonts/HarmonyOS_Sans_SC_Medium.ttf
+          weight: 600
+
+    - family: HarmonyOS_Sans_SC_Regular
+      fonts:
+        - asset: fonts/HarmonyOS_Sans_SC_Regular.ttf
+          weight: 400
+
+
+  module:
+    androidX: true
+    androidPackage: com.chainup.ex.chainup_flutter_ex
+    iosBundleIdentifier: com.chainup.ex.chainupFlutterEx

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXContactAlert" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtn" destination="woL-Bl-ayt" id="Yp0-bz-6yW"/>
+                <outlet property="containerBg" destination="M6B-Ud-7sK" id="o0k-sK-lod"/>
+                <outlet property="contractEmail" destination="8mu-FY-vf8" id="qAD-eK-Z7k"/>
+                <outlet property="contractPhone" destination="Cnd-9T-upr" id="uCA-cb-FhU"/>
+                <outlet property="titleLabel" destination="orf-zB-KxJ" id="2Sl-bh-OQo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orf-zB-KxJ">
+                    <rect key="frame" x="20" y="20" width="374" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M6B-Ud-7sK">
+                    <rect key="frame" x="20" y="53.5" width="374" height="52"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cnd-9T-upr" customClass="EXContactRowView" customModule="Chainup" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="26"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="bPx-9g-DDo"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8mu-FY-vf8" customClass="EXContactRowView" customModule="Chainup" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="26" width="374" height="26"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="7Sp-mz-IV7"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woL-Bl-ayt">
+                    <rect key="frame" x="348" y="118" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="cancelAlert:" destination="-1" eventType="touchUpInside" id="qfx-jO-Shu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="M6B-Ud-7sK" secondAttribute="bottom" constant="60.5" id="0CL-IT-Yzf"/>
+                <constraint firstItem="orf-zB-KxJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="4zi-3x-bkc"/>
+                <constraint firstItem="M6B-Ud-7sK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Jd0-c3-T24"/>
+                <constraint firstItem="orf-zB-KxJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="M15-a9-IqY"/>
+                <constraint firstAttribute="trailing" secondItem="woL-Bl-ayt" secondAttribute="trailing" constant="20" id="POD-Oq-gpd"/>
+                <constraint firstAttribute="trailing" secondItem="M6B-Ud-7sK" secondAttribute="trailing" constant="20" id="b4Q-lA-zJr"/>
+                <constraint firstAttribute="trailing" secondItem="orf-zB-KxJ" secondAttribute="trailing" constant="20" id="hgm-D0-cqQ"/>
+                <constraint firstAttribute="bottom" secondItem="woL-Bl-ayt" secondAttribute="bottom" constant="18" id="nl8-xj-oLZ"/>
+                <constraint firstItem="M6B-Ud-7sK" firstAttribute="top" secondItem="orf-zB-KxJ" secondAttribute="bottom" constant="14" id="pfG-XS-hY5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="56.521739130434788" y="-102.45535714285714"/>
+        </view>
+    </objects>
+</document>

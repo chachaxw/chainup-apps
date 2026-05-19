@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXSCoTopIconBtn" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="gq9-f4-fzi" id="ELn-67-sFp"/>
+                <outlet property="topIcon" destination="Ytg-mF-OFY" id="SCH-J7-Dx5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="259"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIC-ma-Q8W">
+                    <rect key="frame" x="128.66666666666666" y="108.33333333333333" width="31" height="42.333333333333329"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ytg-mF-OFY">
+                            <rect key="frame" x="3.3333333333333428" y="0.0" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="4iq-YD-8wI"/>
+                                <constraint firstAttribute="height" constant="24" id="Czp-DF-gUD"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq9-f4-fzi">
+                            <rect key="frame" x="0.0" y="28.000000000000011" width="31" height="14.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorMedium"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gq9-f4-fzi" firstAttribute="leading" secondItem="PIC-ma-Q8W" secondAttribute="leading" id="3sO-wb-y9V"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ytg-mF-OFY" secondAttribute="trailing" id="Bef-EQ-JDr"/>
+                        <constraint firstAttribute="trailing" secondItem="gq9-f4-fzi" secondAttribute="trailing" id="CZU-Xi-jzO"/>
+                        <constraint firstItem="Ytg-mF-OFY" firstAttribute="top" secondItem="PIC-ma-Q8W" secondAttribute="top" id="Gfn-VO-lt7"/>
+                        <constraint firstItem="Ytg-mF-OFY" firstAttribute="centerX" secondItem="PIC-ma-Q8W" secondAttribute="centerX" id="Jb7-0d-6hp"/>
+                        <constraint firstItem="gq9-f4-fzi" firstAttribute="top" secondItem="Ytg-mF-OFY" secondAttribute="bottom" constant="4" id="Ofb-Q9-D35"/>
+                        <constraint firstAttribute="bottom" secondItem="gq9-f4-fzi" secondAttribute="bottom" id="qTe-eN-z8f"/>
+                        <constraint firstItem="Ytg-mF-OFY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PIC-ma-Q8W" secondAttribute="leading" id="sJS-8T-AZI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="PIC-ma-Q8W" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Vsh-ec-Pup"/>
+                <constraint firstItem="PIC-ma-Q8W" firstAttribute="width" relation="lessThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="width" id="W5d-6n-Fdg"/>
+                <constraint firstItem="PIC-ma-Q8W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qYy-nk-pz0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="KY1-Mk-c2U" appends="YES" id="FVR-gD-skP"/>
+            </connections>
+            <point key="canvasLocation" x="62.399999999999999" y="-29.23538230884558"/>
+        </view>
+        <tapGestureRecognizer id="KY1-Mk-c2U">
+            <connections>
+                <action selector="tapAction:" destination="-1" id="INU-NS-SJe"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

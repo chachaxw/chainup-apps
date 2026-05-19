@@ -1,0 +1,55 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapHeaderView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapHeaderView.swift	(rejected hunks)
+@@ -14,7 +14,7 @@ class EXSwapHeaderRateCell:UIView {
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+         let label = UILabel()
+-        label.textColor = UIColor.exs_ThemeLabel.colorLite
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.font = UIFont.ThemeFont.SecondaryMedium
+         addSubview(label)
+         label.snp.makeConstraints { (make) in
+@@ -80,8 +80,8 @@ class EXSwapHeaderView: EXSNibBaseView {
+     }
+     
+     fileprivate func setupBtn() {
+-        rateBtn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
+-        availableAssetBtn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        rateBtn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
++        availableAssetBtn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         availableAssetBtn.setImage(UIImage.exs_themeImageNamed(imageName: "transfer"), for: .normal)
+         rateBtn.setImage(UIImage.exs_themeImageNamed(imageName: "contract_instructions"), for: .normal)
+         rateBtn.setTitle("cp_overview_text26".ex_localized(), for: .normal)
+@@ -100,7 +100,7 @@ class EXSwapHeaderView: EXSNibBaseView {
+         rateLabel.text = rateText
+     }
+     func headerBgColor() -> UIColor {
+-        return UIColor.exs_ThemeView.bgMenu
++        return  UIColor.ThemeTab.bg //UIColor.ThemeTab.bg
+     }
+     
+     fileprivate func setupBgView() {
+@@ -130,7 +130,7 @@ class EXSwapHeaderView: EXSNibBaseView {
+         }
+         secondButton.text(content: "1X")
+         setupBgView()
+-        backgroundColor = UIColor.exs_ThemeView.bg
++        backgroundColor = UIColor.ThemeView.bg
+         firstButton.rx.controlEvent(.touchUpInside).subscribe { (_) in
+             
+             if let shouldClick = self.firstButtonWillClick?(),shouldClick {
+@@ -161,13 +161,13 @@ class EXSwapHeaderView: EXSNibBaseView {
+     
+     private func setButton(btn:EXSDirectionButton) {
+         btn.titleLabel.font = UIFont.ThemeFont.BodyMedium
+-        btn.titleLabel.textColor = UIColor.exs_ThemeLabel.colorMedium
++        btn.titleLabel.textColor = UIColor.ThemeLabel.colorMedium
+         btn.backgroundColor =  UIColor.clear
+         btn.container.backgroundColor = UIColor.clear
+     }
+     private func setLabel(label:UILabel) {
+         label.font = UIFont.ThemeFont.SecondaryMedium
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+     }
+     func bindNoticeRateText(firstText:String, secondText:String) {
+         

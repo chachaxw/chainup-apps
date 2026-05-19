@@ -1,0 +1,60 @@
+diff a/Chainup/TABBAR/TabbarController.swift b/Chainup/TABBAR/TabbarController.swift	(rejected hunks)
+@@ -20,16 +24,16 @@ class TabbarController: CYLTabBarController {
+         customizeTabbar()
+         feedback.prepare()
+         // 接受task的通知
+-        self.delegate = self 
++        self.delegate = self
+         NotificationCenter.default.addObserver(forName: SessionManager.didCompleteNotification, object: nil, queue: nil) { (notification) in
+             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()) {
+                 self.updateiconIfNeeded()
+             }
+         }
+-    
+-        #if DEBUG
++        
++#if DEBUG
+         return
+-        #endif
++#endif
+         EXAppConfigManager.sharedInstance.limitVisit.subscribe(onNext: { visit in
+             guard visit.visitStatus == .forbid else {
+                 return
+@@ -66,23 +70,23 @@ class TabbarController: CYLTabBarController {
+             UITabBarItem.appearance().setTitleTextAttributes(selectedTitle, for: .selected)
+             UITabBar.appearance().backgroundImage = UIImage.getImageWithColor(color: UIColor.ThemeView.bgTab, size: CGSize(width: SCREEN_WIDTH, height: TABBAR_HEIGHT))
+             UITabBar.appearance().shadowImage = UIImage.getImageWithColor(color: UIColor.ThemeView.seperator, size: CGSize(width: SCREEN_WIDTH, height: 0.5))
+-
++            
+         }
+-
++        
+     }
+     
+-//    func handleRedPoint() {
+-//        //临时加,后续加逻辑
+-//        if EXAppConfigManager.sharedInstance.didOpenContract(),
+-//           EXAppConfigManager.sharedInstance.getContractVersion() == .new {
+-//            let index = getVCIndex(EXContractVc())
+-//            let vc = self.viewControllers[index]
+-//            vc.cyl_badgeBackgroundColor = UIColor.ThemeState.fail
+-//            vc.cyl_badge.borderW = 1
+-//            vc.cyl_badge.layer.borderColor = UIColor.white.cgColor
+-//            vc.cyl_showBadge()
+-//        }
+-//    }
++    //    func handleRedPoint() {
++    //        //临时加,后续加逻辑
++    //        if EXAppConfigManager.sharedInstance.didOpenContract(),
++    //           EXAppConfigManager.sharedInstance.getContractVersion() == .new {
++    //            let index = getVCIndex(EXContractVc())
++    //            let vc = self.viewControllers[index]
++    //            vc.cyl_badgeBackgroundColor = UIColor.ThemeState.fail
++    //            vc.cyl_badge.borderW = 1
++    //            vc.cyl_badge.layer.borderColor = UIColor.white.cgColor
++    //            vc.cyl_showBadge()
++    //        }
++    //    }
+     
+     open override func viewWillAppear(_ animated: Bool) {
+         super.viewWillAppear(animated)

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="toast_success">#CC006654</color>
+    <color name="toast_error">#CC753036</color>
+    <color name="certification_color_apl10">#1AE9A92A</color>
+
+    <color name="app_des_acc_tip_color">@color/text_color_2</color>
+    <color name="text_main_color_kline_night">#2B61FF</color>
+</resources>

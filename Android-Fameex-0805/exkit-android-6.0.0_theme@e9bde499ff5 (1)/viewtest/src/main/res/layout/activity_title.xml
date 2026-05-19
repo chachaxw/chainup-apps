@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SkeletonActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_header_kit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="导航栏" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@color/main_bg_color"
+        android:layout_height="match_parent">
+    <com.qmuiteam.qmui.layout.QMUILinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="50dp"
+        app:qmui_topDividerColor="@color/line_color"
+        app:qmui_topDividerHeight="1dp">
+
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:layout_marginLeft="16dp"
+            android:text="左侧返回"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+
+        <com.chainup.kit.views.PublicHeaderKit
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"/>
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:layout_marginLeft="16dp"
+            android:text="中间文字"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+
+        <com.chainup.kit.views.PublicHeaderKit
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            app:isShowLeftBtn="false"
+            app:title="Title" />
+
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:layout_marginLeft="16dp"
+            android:text="右侧关闭"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+
+        <com.chainup.kit.views.PublicHeaderKit
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            app:rightBtnRes="@mipmap/public_close"
+            app:isShowRightBtn="true"
+            app:isShowLeftBtn="false"/>
+
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:layout_marginLeft="16dp"
+            android:text="左侧返回中间文字"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+
+        <com.chainup.kit.views.PublicHeaderKit
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            app:title="Title" />
+
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:layout_marginLeft="16dp"
+            android:text="左侧返回中间图标文字"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+
+        <com.chainup.kit.views.PublicHeaderKit
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            app:titleRes="@mipmap/icon_btc"
+            app:title="BTC" />
+
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:layout_marginLeft="16dp"
+            android:text="左侧返回中间下拉"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+
+        <com.chainup.kit.views.PublicHeaderKit
+            android:id="@+id/mHeaderKit1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            app:isShowTitleDown="true"
+            app:title="Title" />
+ <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:layout_marginLeft="16dp"
+            android:text="左侧返回右侧图标"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <com.chainup.kit.views.PublicHeaderKit
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            app:rightBtnRes="@mipmap/public_close"
+            app:isShowRightBtn="true"/>
+ <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:layout_marginLeft="16dp"
+            android:text="右侧图标动态隐藏"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <com.chainup.kit.views.PublicHeaderKit
+            android:id="@+id/mHeaderKit8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            app:rightBtnRes="@mipmap/public_close"
+            app:isShowRightBtn="true"/>
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:layout_marginLeft="16dp"
+            android:text="左侧返回右侧俩图标"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <com.chainup.kit.views.PublicHeaderKit
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            app:rightBtnRes="@drawable/ic_baseline_markunread_mailbox_24"
+            app:subRightBtnRes="@drawable/ic_baseline_api_24"
+            app:isShowRightBtn="true"
+            app:isShowSubRightBtn="true" />
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:layout_marginLeft="16dp"
+            android:text="交易-左侧图标文字涨跌右侧两图标"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <com.chainup.kit.views.PublicHeaderKit
+            android:id="@+id/mHeaderKit3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            app:filterTitleVisible="true"
+            app:isShowLeftBtn="false"
+            app:rightBtnRes="@mipmap/public_icon_more"
+            app:subRightBtnRes="@mipmap/public_icon_details"
+            app:isShowRightBtn="true"
+            app:isShowSubRightBtn="true"
+            app:isShowChgTag="true"
+            />
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:layout_marginLeft="16dp"
+            android:text="交易-左侧图标文字涨跌标签右侧两图标"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <com.chainup.kit.views.PublicHeaderKit
+            android:id="@+id/mHeaderKit4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            app:filterTitleVisible="true"
+            app:isShowLeftBtn="false"
+            app:rightBtnRes="@mipmap/public_icon_more"
+            app:subRightBtnRes="@mipmap/public_icon_details"
+            app:isShowRightBtn="true"
+            app:isShowSubRightBtn="true"
+            app:isShowChgTag="true"
+            app:isShowCoinTypeTag="true"
+            />
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:layout_marginLeft="16dp"
+            android:text="交易-左侧返回图标文字右侧仨图标"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <com.chainup.kit.views.PublicHeaderKit
+            android:id="@+id/mHeaderKit5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            app:filterTitleVisible="true"
+            app:rightBtnRes="@mipmap/public_icon_share"
+            app:subRightBtnRes="@mipmap/public_notfavorited"
+            app:isShowRightBtn="true"
+            app:isShowSubRightBtn="true"
+            />
+
+        <com.chainup.kit.views.PublicHeaderKit
+            android:id="@+id/mHeaderKit6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            app:filterTitleVisible="false"
+            app:rightBtnText="我的奖励"
+            app:isShowRightBtn="true"
+            app:rightBtnType="text"
+            app:rightBtnTextColor="@color/main_green"
+            app:title="123"
+            />
+
+        <com.chainup.kit.views.PublicHeaderKit
+            android:id="@+id/mHeaderKit7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            app:isShowRightBtn="false"
+            />
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

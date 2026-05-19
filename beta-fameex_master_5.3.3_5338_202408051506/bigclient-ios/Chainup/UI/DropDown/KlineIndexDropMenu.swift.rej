@@ -1,0 +1,15 @@
+diff a/Chainup/UI/DropDown/KlineIndexDropMenu.swift b/Chainup/UI/DropDown/KlineIndexDropMenu.swift	(rejected hunks)
+@@ -78,11 +78,11 @@ class KlineIndexDropMenu: UIView {
+         
+         mainContainer.snp.makeConstraints { (make) in
+             make.left.equalTo(mainLabel.snp.right).offset(14)
+-            make.centerY.equalTo(mainLabel.snp_centerY)
++            make.centerY.equalTo(mainLabel.snp.centerY)
+         }
+         subContainer.snp.makeConstraints { (make) in
+             make.left.equalTo(mainContainer.snp.left)
+-            make.centerY.equalTo(subLabel.snp_centerY)
++            make.centerY.equalTo(subLabel.snp.centerY)
+         }
+         
+         let mainMenus:[String] = ["MA","BOLL"]

@@ -1,0 +1,200 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSwapMarketPriceView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSwapMarketPriceView.swift	(rejected hunks)
+@@ -7,6 +7,7 @@
+ //
+ 
+ import UIKit
++import EXKit
+ let exs_proportion_width1 : CGFloat = 130 / 375 * EXSCREEN_WIDTH
+ ///价格五档列表
+ class EXSwapMarketPriceView: UIView {
+@@ -293,7 +294,7 @@ class EXSwapMarketPriceView: UIView {
+             case .defaultPan:// 默认盘口
+                 self?.depthCount = mySelf.maximumDataCount / 2
+                 self?.middleTCRow = mySelf.maximumDataCount / 2
+-                if EXSKLineManager.isGreen() == true{
++                if EXKLineManager.isGreen() == true{
+                     self?.footView.dishBtn.setImage(UIImage.exs_themeImageNamed(imageName: "defaultpankou"), for: .normal)
+                 } else {
+                     self?.footView.dishBtn.setImage(UIImage.exs_themeImageNamed(imageName: "default_reversepankou"), for: .normal)
+@@ -301,7 +302,7 @@ class EXSwapMarketPriceView: UIView {
+             case .buy: // 买
+                 self?.depthCount = mySelf.maximumDataCount
+                 self?.middleTCRow = 0
+-                if EXSKLineManager.isGreen() == true{
++                if EXKLineManager.isGreen() == true{
+                     self?.footView.dishBtn.setImage(UIImage.exs_themeImageNamed(imageName: "buy"), for: .normal)
+                 }else{
+                     self?.footView.dishBtn.setImage(UIImage.exs_themeImageNamed(imageName: "sell"), for: .normal)
+@@ -309,7 +310,7 @@ class EXSwapMarketPriceView: UIView {
+             case .sell: // 卖
+                 self?.depthCount = mySelf.maximumDataCount
+                 self?.middleTCRow = mySelf.maximumDataCount
+-                if EXSKLineManager.isGreen() == true{
++                if EXKLineManager.isGreen() == true{
+                     self?.footView.dishBtn.setImage(UIImage.exs_themeImageNamed(imageName: "sell"), for: .normal)
+                 }else{
+                     self?.footView.dishBtn.setImage(UIImage.exs_themeImageNamed(imageName: "buy"), for: .normal)
+@@ -400,7 +401,7 @@ class EXSwapMarketPriceView: UIView {
+             sheet.configButtonTitles(buttons: depths, selectedIdx: idx)
+         }
+ 
+-        EXSAlert.showSheet(sheetView: sheet)
++        EXAlert.showSheet(sheetView: sheet)
+     }
+ }
+ 
+@@ -413,7 +414,7 @@ class EXSwapMarketPriceHeaderView : UIView{
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+         label.font = UIFont.ThemeFont.MinimumRegular
+-        label.textColor = UIColor.exs_ThemeLabel.colorDark
++        label.textColor = UIColor.ThemeLabel.colorDark
+         return label
+     }()
+     
+@@ -422,7 +423,7 @@ class EXSwapMarketPriceHeaderView : UIView{
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+         label.font = UIFont.ThemeFont.MinimumRegular
+-        label.textColor = UIColor.exs_ThemeLabel.colorDark
++        label.textColor = UIColor.ThemeLabel.colorDark
+         label.textAlignment = .right
+         label.text = "cp_overview_text8".ex_localized() + "(" + "cp_overview_text9".ex_localized() + ")"
+         return label
+@@ -430,7 +431,7 @@ class EXSwapMarketPriceHeaderView : UIView{
+     
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         exs_addSubViews([priceLabel,volumLabel])
+         priceLabel.snp.makeConstraints { (make) in
+             make.left.equalToSuperview()
+@@ -469,7 +470,7 @@ class EXSwapMarketPriceFooterView : UIView{
+     
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         exs_addSubViews([dishBtn, precisionBtn])
+         dishBtn.snp.makeConstraints { (make) in
+             make.top.equalToSuperview().offset(8)
+@@ -520,7 +521,7 @@ class EXSwapMarketPriceFooterView : UIView{
+     lazy var markPriceDescLabel : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         label.text = "cp_overview_text20".ex_localized()
+         return label
+@@ -531,7 +532,7 @@ class EXSwapMarketPriceFooterView : UIView{
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+         label.textAlignment = .right
+-        label.textColor = UIColor.exs_ThemeLabel.colorLite
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         return label
+     }()
+@@ -548,7 +549,7 @@ class EXSwapMarketPriceFooterView : UIView{
+     lazy var indicatorsLabel : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         label.text = "cp_overview_text21".ex_localized()
+         label.isUserInteractionEnabled = true
+@@ -562,7 +563,7 @@ class EXSwapMarketPriceFooterView : UIView{
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+         label.textAlignment = .right
+-        label.textColor = UIColor.exs_ThemeLabel.colorLite
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         return label
+     }()
+@@ -581,7 +582,7 @@ class EXSwapMarketPriceFooterView : UIView{
+     lazy var dishBtn : UIButton = {
+         let btn = UIButton()
+         btn.ext_UseAutoLayout()
+-        if EXSKLineManager.isGreen() == true{
++        if EXKLineManager.isGreen() == true{
+             btn.setImage(UIImage.exs_themeImageNamed(imageName: "defaultpankou"), for: .normal)
+         }else{
+             btn.setImage(UIImage.exs_themeImageNamed(imageName: "default_reversepankou"), for: .normal)
+@@ -595,8 +596,8 @@ class EXSwapMarketPriceFooterView : UIView{
+         let btn = EXSDirectionButton()
+         btn.ext_UseAutoLayout()
+         btn.titleLabel.font = UIFont.ThemeFont.SecondaryRegular
+-        btn.titleLabel.textColor = UIColor.exs_ThemeLabel.colorMedium
+-        btn.layer.borderColor = UIColor.exs_ThemeView.seperator.cgColor
++        btn.titleLabel.textColor = UIColor.ThemeLabel.colorMedium
++        btn.layer.borderColor = UIColor.ThemeView.seperator.cgColor
+         btn.layer.borderWidth = 0.5
+         btn.layer.cornerRadius = 4
+         btn.setAlighment(margin: .marginRight)
+@@ -647,7 +648,7 @@ class EXSwapMarketPriceFooterView : UIView{
+             idx = 2
+         }
+         sheet.configButtonTitles(buttons:  arr,selectedIdx: idx)
+-        EXSAlert.showSheet(sheetView: sheet)
++        EXAlert.showSheet(sheetView: sheet)
+     }
+   
+     //    // 点击
+@@ -655,7 +656,7 @@ class EXSwapMarketPriceFooterView : UIView{
+         let alert = EXSNormalAlert()
+         alert.configSigleAlert(title: "cp_overview_text21".ex_localized(), message: "newContract_text_idnexPrice_tips".ex_localized())
+         //展示
+-        EXSAlert.showAlert(alertView: alert)
++        EXAlert.showAlert(alertView: alert)
+     }
+     
+     // 点击标记价格
+@@ -664,7 +665,7 @@ class EXSwapMarketPriceFooterView : UIView{
+         let alert = EXSNormalAlert()
+         alert.configSigleAlert(title: "cp_overview_text20".ex_localized(), message: "cp_extra_text158".ex_localized())
+         //展示
+-        EXSAlert.showAlert(alertView: alert)
++        EXAlert.showAlert(alertView: alert)
+     }
+     
+     func reloadView(){
+@@ -697,7 +698,7 @@ class EXSwapMarketPriceTC: UITableViewCell {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+         label.font = UIFont.ThemeFont.SecondaryRegular
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.textAlignment = .right
+         label.layoutIfNeeded()
+         return label
+@@ -787,7 +788,7 @@ class EXSwapMarketPriceTC: UITableViewCell {
+         }else{
+             DispatchQueue.main.asyncAfter(deadline: .now()+0.1, execute:
+             {
+-                self.contentView.backgroundColor = UIColor.exs_ThemeView.bg
++                self.contentView.backgroundColor = UIColor.ThemeView.bg
+             })
+         }
+     }
+@@ -834,7 +835,7 @@ class EXSwapMarketPriceMiddleTC : UITableViewCell{
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+         label.textAlignment = .right
+-        label.textColor = UIColor.exs_ThemeLabel.colorDark
++        label.textColor = UIColor.ThemeLabel.colorDark
+         label.font = UIFont.ThemeFont.MinimumRegular
+         return label
+     }()
+@@ -903,7 +904,7 @@ class EXSwapMarketPriceMiddleTC : UITableViewCell{
+     @objc func clickMarketPriceBtn() {
+        
+         //展示
+-        EXSAlert.showAlert(alertView: priceAlert)
++        EXAlert.showAlert(alertView: priceAlert)
+     }
+ }
+ 

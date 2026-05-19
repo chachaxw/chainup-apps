@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.yjkj.chainup.new_version.activity.CoinMapActivity">
+
+    <LinearLayout
+        style="@style/base_style_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_search_height_32"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_6"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.chainup.kit.views.base.BaseEditTextKit
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingVertical="0dp"
+            style="@style/etstyle_baseSearch"
+            app:kk_et_fillColor="@color/special_3"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/textStyle_high_14"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:text="@string/common_text_btnCancel" />
+
+    </LinearLayout>
+
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/dp_half"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:background="@color/line_color" />-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_coinmap"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_quick_search_coin" />
+</LinearLayout>

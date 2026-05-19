@@ -1,0 +1,19 @@
+diff a/Chainup/Framework/EXSwapSDK/Utility/EXSTableViewExt.swift b/Chainup/Framework/EXSwapSDK/Utility/EXSTableViewExt.swift	(rejected hunks)
+@@ -10,7 +10,7 @@ import UIKit
+ 
+ extension UITableView{
+     
+-    func ext_SetTableView(_ delegate : Any ,_ dataSource : Any ,_ backgroundColor : UIColor = UIColor.exs_ThemeView.bg , _ sepStyle :UITableViewCell.SeparatorStyle  = .none){
++    func ext_SetTableView(_ delegate : Any ,_ dataSource : Any ,_ backgroundColor : UIColor = UIColor.ThemeView.bg , _ sepStyle :UITableViewCell.SeparatorStyle  = .none){
+         self.delegate = delegate as? UITableViewDelegate
+         self.dataSource = dataSource as? UITableViewDataSource
+         self.backgroundColor = backgroundColor
+@@ -26,7 +26,7 @@ extension UITableView{
+ }
+ 
+ extension UITableViewCell{
+-    func ext_SetCell(_ backgroundColor : UIColor = UIColor.exs_ThemeView.bg , selStyle : UITableViewCell.SelectionStyle = .none){
++    func ext_SetCell(_ backgroundColor : UIColor = UIColor.ThemeView.bg , selStyle : UITableViewCell.SelectionStyle = .none){
+         self.contentView.backgroundColor = backgroundColor
+         self.selectionStyle = selStyle
+     }

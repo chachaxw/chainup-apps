@@ -1,0 +1,74 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSChangeLevelSheet.swift b/Chainup/Framework/EXSwapSDK/View/EXSChangeLevelSheet.swift	(rejected hunks)
+@@ -20,12 +20,12 @@ class EXSChangeLevelSheet: UIView {
+     var clickConfirmButtonBlock : ((String)->())?
+     /// 标题
+     let titleLabel: UILabel = {
+-        let label = UILabel(text: "cp_contract_setting_text8".ex_localized(), font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++        let label = UILabel(text: "cp_contract_setting_text8".ex_localized(), font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
+         return label
+     }()
+     /// 取消
+     lazy var cancelButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_overview_text44".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.exs_ThemeLabel.colorMedium)
++        let button = UIButton(buttonType: .custom, title: "cp_overview_text44".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.ThemeLabel.colorMedium)
+         button.ext_SetAddTarget(self, #selector(clickCancelButton))
+         return button
+     }()
+@@ -35,25 +35,25 @@ class EXSChangeLevelSheet: UIView {
+         return v
+     }()
+     lazy var maxCoinTipDescLabel:UILabel = {
+-        let label = UILabel(text: "cp_overview_text43".ex_localized(), font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++        let label = UILabel(text: "cp_overview_text43".ex_localized(), font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .left)
+         return label
+     }()
+     lazy var maxCoinTipValueLabel:UILabel = {
+-        let label = UILabel(text: "--", font: UIFont.ThemeFont.HeadRegular, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++        let label = UILabel(text: "--", font: UIFont.ThemeFont.HeadRegular, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
+         return label
+     }()
+     lazy var canOpenVolValueLabel:UILabel = {
+-        let label = UILabel(text: "--", font: UIFont.ThemeFont.HeadRegular, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++        let label = UILabel(text: "--", font: UIFont.ThemeFont.HeadRegular, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
+         return label
+     }()
+     lazy var canOpenVolDescLabel:UILabel = {
+-        let label = UILabel(text: "cp_overview_text46".ex_localized(), font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++        let label = UILabel(text: "cp_overview_text46".ex_localized(), font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .left)
+         return label
+     }()
+     /// 提示
+     lazy var tipLabel: UILabel = {
+         let text = "cp_contract_setting_text9".ex_localized()
+-        let label = UILabel(text: text, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.exs_ThemeState.fail, alignment: .left)
++        let label = UILabel(text: text, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.ThemeState.fail, alignment: .left)
+         label.isHidden = true
+         return label
+     }()
+@@ -114,7 +114,7 @@ class EXSChangeLevelSheet: UIView {
+     lazy var horLineView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = UIColor.ThemeView.bgGap
+         return view
+     }()
+     fileprivate func initLayout() {
+@@ -186,7 +186,7 @@ class EXSChangeLevelSheet: UIView {
+         attainableMaxLevel = maxLevel
+         userMaxLevel = availableLevel
+         exs_roundCorners(corners: [.topLeft, .topRight], radius: 10)
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         
+         containerV.exs_addSubViews([maxCoinTipDescLabel,maxCoinTipValueLabel,canOpenVolDescLabel,canOpenVolValueLabel])
+         
+@@ -200,7 +200,7 @@ class EXSChangeLevelSheet: UIView {
+     }
+     /// 点击取消
+     @objc func clickCancelButton() {
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     @objc func stepChangeAction(sender:UIButton) {
+         if sender == leverageInput.minusBtn {

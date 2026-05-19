@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_28"
+    android:background="@drawable/bg_item_level10"
+    android:paddingHorizontal="@dimen/dp_12">
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/dp_12"
+        android:textColor="@color/main_color"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/level_dot_agent"
+        android:drawablePadding="@dimen/dp_6"
+        />
+
+    <TextView
+        android:id="@+id/tv_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/dp_12"
+        android:textColor="@color/text_color_1"
+        />
+</RelativeLayout>

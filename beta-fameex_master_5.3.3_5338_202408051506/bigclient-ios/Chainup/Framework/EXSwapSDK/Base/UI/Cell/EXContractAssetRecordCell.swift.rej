@@ -1,0 +1,46 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/Cell/EXContractAssetRecordCell.swift b/Chainup/Framework/EXSwapSDK/Base/UI/Cell/EXContractAssetRecordCell.swift	(rejected hunks)
+@@ -16,7 +16,7 @@ class EXContractAssetRecordCell: UITableViewCell {
+     lazy var horLineView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.seperator
++        view.backgroundColor = UIColor.ThemeView.seperator
+         return view
+     }()
+     func setCell(leftTop:String, leftBottom:String, rightTop:String, rightBottom:String) {
+@@ -37,13 +37,13 @@ class EXContractAssetRecordCell: UITableViewCell {
+     func getModel() -> EXSTwoByTwoItemModel {
+         
+         let modelB = EXSTwoByTwoItemModel()
+-        modelB.ltitleColor = UIColor.exs_ThemeLabel.colorLite
+-        modelB.rtitleColor = UIColor.exs_ThemeLabel.colorLite
++        modelB.ltitleColor = UIColor.ThemeLabel.colorLite
++        modelB.rtitleColor = UIColor.ThemeLabel.colorLite
+         
+         modelB.lcontentFont = self.themeHNFont(size: 12)
+-        modelB.lcontentColor = UIColor.exs_ThemeLabel.colorMedium
++        modelB.lcontentColor = UIColor.ThemeLabel.colorMedium
+         modelB.rcontentFont = self.themeHNFont(size: 12)
+-        modelB.rcontentColor = UIColor.exs_ThemeLabel.colorMedium
++        modelB.rcontentColor = UIColor.ThemeLabel.colorMedium
+         modelB.rightAlignment = .right
+         
+         return modelB
+@@ -52,7 +52,7 @@ class EXContractAssetRecordCell: UITableViewCell {
+     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+         super.init(style: style, reuseIdentifier: reuseIdentifier)
+         self.selectionStyle = .none
+-        contentView.backgroundColor = UIColor.exs_ThemeView.bg
++        contentView.backgroundColor = UIColor.ThemeView.bg
+         contentView.exs_addSubViews([twoByTwoView,horLineView])
+ 
+         dataModel = getModel()
+@@ -77,7 +77,7 @@ class EXContractAssetRecordCell: UITableViewCell {
+     
+     func addTwoByTwoView(_ item:EXSTwoByTwoItemModel) {
+         
+-        twoByTwoView.backgroundColor = UIColor.exs_ThemeView.bg
++        twoByTwoView.backgroundColor = UIColor.ThemeView.bg
+         twoByTwoView.leftBottomLabel.font = item.lcontentFont
+         twoByTwoView.rightBottomLabel.font = item.rcontentFont
+         twoByTwoView.leftTopLabel.font = self.themeHNFont(size: 14)

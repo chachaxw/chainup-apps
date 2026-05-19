@@ -1,0 +1,123 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXContractVc.swift b/Chainup/Framework/EXSwapSDK/Vc/EXContractVc.swift	(rejected hunks)
+@@ -420,7 +420,7 @@ class EXContractVc: EXSNavCustomVC {
+                     self?.gotokyc()
+                 }
+             }
+-            EXSAlert.showAlert(alertView: alert)
++            EXAlert.showAlert(alertView: alert)
+             return
+         case .pending: //审核中
+                 tipMsg = "cp_extra_text185"
+@@ -433,7 +433,7 @@ class EXContractVc: EXSNavCustomVC {
+     func alertShow(msg: String){
+         let alert = EXSNormalAlert()
+         alert.configSigleAlert(title: "cp_extra_text27".ex_localized(), message: msg.ex_localized())
+-        EXSAlert.showAlert(alertView: alert)
++        EXAlert.showAlert(alertView: alert)
+     }
+     func confirmOpenSwap() {
+         let token = EXSwapPlatformSDK.shared.activeAccount?.token ?? ""
+@@ -452,7 +452,7 @@ class EXContractVc: EXSNavCustomVC {
+                 let msg = (kycForce ?? false) ? "cp_extra_text188" : "cp_extra_text188"
+                 let alert = EXSNormalAlert()
+                 alert.configSigleAlert(title: "cp_extra_text27".ex_localized(), message: msg.ex_localized())
+-                EXSAlert.showAlert(alertView: alert)
++                EXAlert.showAlert(alertView: alert)
+                 return
+             }
+             self.confirmOpenSwap()
+@@ -472,7 +472,7 @@ class EXContractVc: EXSNavCustomVC {
+             let msg = (kycForce ?? false) ? "cp_extra_text185" : "cp_extra_text185"
+             let alert = EXSNormalAlert()
+             alert.configSigleAlert(title: "cp_extra_text27".ex_localized(), message: msg.ex_localized())
+-            EXSAlert.showAlert(alertView: alert)
++            EXAlert.showAlert(alertView: alert)
+             return
+         case .reject://失败去认证
+             
+@@ -489,7 +489,7 @@ class EXContractVc: EXSNavCustomVC {
+                     }
+                 }
+                 
+-                EXSAlert.showAlert(alertView: alert)
++                EXAlert.showAlert(alertView: alert)
+                 return
+             }
+             
+@@ -500,7 +500,7 @@ class EXContractVc: EXSNavCustomVC {
+                     goKyc()
+                 }
+             }
+-            EXSAlert.showAlert(alertView: alert)
++            EXAlert.showAlert(alertView: alert)
+             return
+         case .newbie:
+             let msg = (kycForce ?? false) ? "cp_extra_text183" : "cp_extra_text183"
+@@ -514,12 +514,12 @@ class EXContractVc: EXSNavCustomVC {
+                 }
+             }
+             
+-            EXSAlert.showAlert(alertView: alert)
++            EXAlert.showAlert(alertView: alert)
+             return
+         case .notGet:
+             let alert = EXSNormalAlert()
+             alert.configSigleAlert(title: "cp_extra_text186".ex_localized(), message: "")
+-            EXSAlert.showAlert(alertView: alert)
++            EXAlert.showAlert(alertView: alert)
+             return
+         case .none :break
+         }
+@@ -594,7 +594,7 @@ class EXContractVc: EXSNavCustomVC {
+     // 点击更多按钮
+     @objc func clickMoreBtn(sender:UIButton){
+         let popover = EXPopover(options: EXPopover.commonTradePopOption, showHandler: nil, dismissHandler: nil)
+-        popover.popoverColor = UIColor.exs_ThemeView.bg
++        popover.popoverColor = UIColor.ThemeView.bg
+        let models = getmodels()
+        
+         let view = EXSBouncedView.init(frame: CGRect(x: 0, y: 0, width:120, height: CGFloat(models.count * 50)))
+@@ -715,7 +715,7 @@ class EXContractVc: EXSNavCustomVC {
+         label.ext_UseAutoLayout()
+         label.isUserInteractionEnabled = true
+         label.font = UIFont.ThemeFont.H3Bold
+-        label.textColor = UIColor.exs_ThemeLabel.colorBlack
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.text = "--"
+         return label
+     }()
+@@ -778,9 +778,9 @@ class EXContractVc: EXSNavCustomVC {
+                         
+                         let alert = EXSNormalAlert()
+                         alert.msgLabel.textAlignment = .center
+-                        alert.msgLabel.textColor = UIColor.exs_ThemeLabel.colorLite
++                        alert.msgLabel.textColor = UIColor.ThemeLabel.colorLite
+                         alert.configSigleAlert(title: "", message: "cp_contract_setting_text11".ex_localized(),sigleBtnTitle:"cp_extra_text28".ex_localized())
+-                        EXSAlert.showAlert(alertView: alert)
++                        EXAlert.showAlert(alertView: alert)
+                         
+                     }else {
+                         let sheet = EXSChangeLevelSheet(frame:  CGRect(x: 0, y: 0, width: self.view.frame.width, height: 360), minLevel: self.currentUserConfig.minLevel, maxLevel: self.currentUserConfig.maxLevel,availableLevel: self.currentUserConfig.userMaxLevel)
+@@ -801,11 +801,11 @@ class EXContractVc: EXSNavCustomVC {
+                                 
+                                 if success {
+                                     self?.updateUserConfig(instrumentId: self?.currentItemModel?.instrument_id ?? 0)
+-                                    EXSAlert.dismiss()
++                                    EXAlert.dismiss()
+                                 }
+                             }
+                         }
+-                        EXSAlert.showSheet(sheetView: sheet)
++                        EXAlert.showSheet(sheetView: sheet)
+                     }
+                 }
+                 
+@@ -815,7 +815,7 @@ class EXContractVc: EXSNavCustomVC {
+         }
+         view.rateBtn.rx.tap.subscribe { (_) in
+             
+-            EXSAlert.showAlert(alertView: self.rateAlertView)
++            EXAlert.showAlert(alertView: self.rateAlertView)
+         }.disposed(by: self.exs_disposeBag)
+         view.availableAssetBtn.rx.tap.subscribe { (_) in
+             self.toTransfer()

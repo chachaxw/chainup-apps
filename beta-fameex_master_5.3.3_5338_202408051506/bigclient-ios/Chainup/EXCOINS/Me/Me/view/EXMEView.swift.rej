@@ -1,0 +1,18 @@
+diff a/Chainup/EXCOINS/Me/Me/view/EXMEView.swift b/Chainup/EXCOINS/Me/Me/view/EXMEView.swift	(rejected hunks)
+@@ -7,6 +7,7 @@
+ //
+ 
+ import UIKit
++import EXKit
+ 
+ class EXMEView: UIView {
+ 
+@@ -74,7 +75,7 @@ class EXMEView: UIView {
+             tableViewNameDatas.insert(("personal_text_onlineservice".localized(), "personal_onlineservice"), at: 4)
+         }
+         
+-        if BasicParameter.isOverSeasVersion() == false {
++        if EXKitStanders.isOverSeasVersion() == false {
+             if let hosts = EXNetworkDoctor.sharedManager.hosts,hosts.count > 0 {
+                 tableViewNameDatas.append(("customSetting_action_changeHost".localized(), "personal_multilink"))
+             }

@@ -1,0 +1,19 @@
+diff a/Chainup/EXHomePage/view/ranking/EXRankingCollectionItem.swift b/Chainup/EXHomePage/view/ranking/EXRankingCollectionItem.swift	(rejected hunks)
+@@ -127,7 +129,7 @@ extension EXRankingCollectionItem : UITableViewDelegate,UITableViewDataSource {
+     
+     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+         let view = EXHomeSectionView()
+-        view.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 22)
++        view.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: EXHomePageHeightHelper.rankingHeader)
+         let model = EXHomeSectionEntity()
+         if self.rankModel.key == "deal" {
+             model.leftname = "home_action_coinNameTitle".localized()
+@@ -143,7 +145,7 @@ extension EXRankingCollectionItem : UITableViewDelegate,UITableViewDataSource {
+     }
+     
+     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+-        return 22
++        return EXHomePageHeightHelper.rankingHeader
+     }
+     
+     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

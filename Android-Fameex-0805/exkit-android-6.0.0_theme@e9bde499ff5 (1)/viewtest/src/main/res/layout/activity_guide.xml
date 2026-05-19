@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".GuideActivity">
+    <com.chainup.kit.views.KKButtonKit
+        android:id="@+id/btn_guide"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        app:kk_buttonText="靠右对齐"
+        android:layout_marginLeft="@dimen/dp_50"
+        />
+
+    <com.chainup.kit.views.KKButtonKit
+        android:id="@+id/btn_guide2"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        app:kk_buttonText="靠左对齐"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_below="@+id/btn_guide"
+        android:layout_marginTop="@dimen/dp_20"
+        />
+
+    <com.chainup.kit.views.KKButtonKit
+        android:id="@+id/btn_guide3"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        app:kk_buttonText="靠下对齐"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_below="@+id/btn_guide2"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.chainup.kit.views.KKButtonKit
+        android:id="@+id/btn_guide4"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        app:kk_buttonText="居中向右对齐"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_below="@+id/btn_guide3"
+        android:layout_marginTop="20dp"
+        />
+
+    <com.chainup.kit.views.KKButtonKit
+        android:id="@+id/btn_guide5"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        app:kk_buttonText="居中向左对齐"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_below="@+id/btn_guide4"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

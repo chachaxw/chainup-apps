@@ -1,0 +1,117 @@
+diff a/Chainup/Framework/EXSwapSDK/Tools/YDMenu/YDMenu.swift b/Chainup/Framework/EXSwapSDK/Tools/YDMenu/YDMenu.swift	(rejected hunks)
+@@ -51,16 +51,17 @@ class YDMenu: UIView {
+     }
+     lazy var selectedView : UIView = {
+         let v = UIView()
+-        v.backgroundColor = UIColor.exs_ThemeView.bg
++        v.backgroundColor = UIColor.ThemeView.bg
+         return v
+     }()
+-    var textColor: UIColor = UIColor.exs_ThemeLabel.colorBlack
+-    var cellBgColor = UIColor.exs_ThemeView.bgIconh
+-    var selectedTextColor = UIColor.exs_ThemeBtn.highlight
++    
++    var textColor: UIColor = UIColor.ThemeLabel.colorLite
++    var cellBgColor = UIColor.ThemeView.bgIconh
++    var selectedTextColor = UIColor.ThemeBtn.highlight
+     var detailTextColor: UIColor = UIColor(red: 51/255.0, green: 51/255.0, blue: 51/255.0, alpha: 1)
+     var indicatorColor = UIColor(red: 51/255.0, green: 51/255.0, blue: 51/255.0, alpha: 1)
+     var detailTextFontSize: CGFloat = 12
+-    var separatorColor = UIColor.exs_ThemeView.bgGap
++    var separatorColor = UIColor.ThemeView.bgGap
+     var titleFontSize:CGFloat = 14
+     var fontSize:CGFloat = 16
+     var tableViewHeight: CGFloat = 240
+@@ -94,7 +95,7 @@ class YDMenu: UIView {
+         view.dataSource = self;
+         view.delegate = self;
+         view.rowHeight = cellHeight
+-        view.backgroundColor = UIColor.exs_ThemeView.bgMenu
++        view.backgroundColor = UIColor.ThemeTab.bg
+         view.separatorColor = UIColor.clear
+         return view
+     }()
+@@ -105,7 +106,7 @@ class YDMenu: UIView {
+         view.delegate = self;
+         view.rowHeight = cellHeight
+         view.separatorColor = UIColor.clear
+-        view.backgroundColor = UIColor.exs_ThemeView.bg
++        view.backgroundColor = UIColor.ThemeView.bg
+         return view
+     }()
+     
+@@ -124,7 +125,7 @@ class YDMenu: UIView {
+         
+         super.init(frame: CGRect(x: origin.x, y: origin.y, width: kScreenWidth, height: height))
+         
+-        backgroundColor = UIColor.exs_ThemeView.bg
++        backgroundColor = UIColor.ThemeView.bg
+         addSubview(bottomLine)
+         
+         let menuTap = UITapGestureRecognizer(target: self, action: #selector(menuTapped))
+@@ -141,7 +142,7 @@ class YDMenu: UIView {
+         
+         super.init(frame: CGRect(x: origin.x, y: origin.y, width: kScreenWidth, height: height))
+         
+-        backgroundColor = UIColor.exs_ThemeView.bg
++        backgroundColor = UIColor.ThemeView.bg
+         addSubview(bottomLine)
+         
+         let menuTap = UITapGestureRecognizer(target: self, action: #selector(menuTapped))
+@@ -243,7 +244,7 @@ class YDMenu: UIView {
+             
+             // backgroundLayer
+             let backgroundLayerPosition = CGPoint(x: (index + 0.5) * backgroundLayerWidth, y: menuHeight * 0.5)
+-            let backgroundLayer = creatBackgroundLayer(position: backgroundLayerPosition, backgroundColor: UIColor.exs_ThemeView.bg)
++            let backgroundLayer = creatBackgroundLayer(position: backgroundLayerPosition, backgroundColor: UIColor.ThemeView.bg)
+             layer.addSublayer(backgroundLayer)
+             currentBgLayers.append(backgroundLayer)
+             
+@@ -262,7 +263,7 @@ class YDMenu: UIView {
+             // indicatorLayer
+             let textSize = calculateStringSize(titleStr)
+             let indicatorLayerPosition = CGPoint(x: titleLayerPosition.x + (textSize.width / 2) + 5, y: menuHeight / 2 + 1)
+-            let indicatorLayer = creatIndicatorView(position: indicatorLayerPosition, color: UIColor.exs_ThemeView.bgGap)
++            let indicatorLayer = creatIndicatorView(position: indicatorLayerPosition, color: UIColor.ThemeView.bgGap)
+             
+             self.addSubview(indicatorLayer)
+             currentIndicatorLayers.append(indicatorLayer)
+@@ -394,9 +395,9 @@ extension YDMenu: UITableViewDataSource, UITableViewDelegate {
+         
+         cell.selectedBackgroundView = selectedView
+         if currentSelectedColumn == 0 {
+-            cell.backgroundColor = UIColor.exs_ThemeView.bgMenu
++            cell.backgroundColor = UIColor.ThemeTab.bg
+         }else {
+-            cell.backgroundColor = UIColor.exs_ThemeView.bg
++            cell.backgroundColor = UIColor.ThemeView.bg
+         }
+         cell.textLabel?.textAlignment = textAligment
+         
+@@ -459,7 +460,7 @@ extension YDMenu: UITableViewDataSource, UITableViewDelegate {
+                 }
+ 
+                 cell.accessoryType = .none
+-                cell.backgroundColor = UIColor.exs_ThemeView.bg
++                cell.backgroundColor = UIColor.ThemeView.bg
+             }
+             
+         }
+@@ -551,7 +552,7 @@ private extension YDMenu {
+             ///默认
+             textAligment = .left
+             isSingleColumn = false
+-            leftTableView.backgroundColor = UIColor.exs_ThemeView.bgMenu
++            leftTableView.backgroundColor = UIColor.ThemeTab.bg
+             //判断是不是
+             // 载入数据
+             leftTableView.reloadData()
+@@ -561,7 +562,7 @@ private extension YDMenu {
+             }else{
+                 //单列的处理无二级菜单
+                 textAligment = .center
+-                leftTableView.backgroundColor = UIColor.exs_ThemeView.bg
++                leftTableView.backgroundColor = UIColor.ThemeView.bg
+                 isSingleColumn = true
+                 
+             }

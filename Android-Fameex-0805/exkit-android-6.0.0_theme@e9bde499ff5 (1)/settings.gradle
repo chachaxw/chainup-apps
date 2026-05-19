@@ -1,0 +1,14 @@
+include ':exkit'
+rootProject.name = "Exkit"
+
+//setBinding(new Binding([gradle: this]))
+//evaluate(new File(
+//        settingsDir.parentFile,
+//        'exflutterplugin/.android/include_flutter.groovy'
+//))
+//
+//
+//include ':exflutterplugin'
+//project(':exflutterplugin').projectDir = new File('../exflutterplugin')
+
+include ':viewtest'

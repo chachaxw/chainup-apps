@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.chainup.kit.views.PublicHeaderKit
+            android:id="@+id/ly_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            app:title="@string/leverage_borrowRecord_detail" />
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_layout">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:itemCount="20"
+                tools:listitem="@layout/item_currency_lending_records_adapter" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+
+    <!--过滤-->
+    <com.yjkj.chainup.new_version.view.ScreeningPopupWindowView
+        android:id="@+id/spw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_top_layout"
+        android:layout_marginTop="@dimen/dp_50"
+        android:visibility="gone" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

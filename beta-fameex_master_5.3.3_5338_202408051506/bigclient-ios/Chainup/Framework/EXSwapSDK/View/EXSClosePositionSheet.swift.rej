@@ -1,0 +1,159 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSClosePositionSheet.swift b/Chainup/Framework/EXSwapSDK/View/EXSClosePositionSheet.swift	(rejected hunks)
+@@ -41,14 +41,14 @@ class EXSClosePositionSheet: UIView {
+     lazy var marketPriceLabel : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.backgroundColor = UIColor.exs_ThemeNav.bg
++        label.backgroundColor = UIColor.ThemeNav.bg
+         label.text = "   " + "cp_extra_text132".ex_localized()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+          label.font = UIFont.ThemeFont.BodyRegular
+         label.layer.cornerRadius = 4
+         label.layer.masksToBounds = true
+         label.layer.borderWidth = 0.5
+-        label.layer.borderColor = UIColor.exs_ThemeView.seperator.cgColor
++        label.layer.borderColor = UIColor.ThemeView.seperator.cgColor
+         label.isHidden = true
+         label.textAlignment = .left
+         return label
+@@ -57,7 +57,7 @@ class EXSClosePositionSheet: UIView {
+     lazy var horLineView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = UIColor.ThemeView.bgGap
+         return view
+     }()
+     /// 多 空 类型
+@@ -69,28 +69,28 @@ class EXSClosePositionSheet: UIView {
+     
+     /// 合约名称
+     lazy var nameLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     /// 合约类型
+     lazy var contractTypeLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.exs_ThemeLabel.colorHighlight, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.ThemeLabel.colorHighlight, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+-        label.backgroundColor = UIColor.exs_ThemeLabel.colorHighlight.withAlphaComponent(0.15)
++        label.backgroundColor = UIColor.ThemeLabel.colorHighlight.withAlphaComponent(0.15)
+         label.layer.cornerRadius = 2
+         label.layer.masksToBounds = true
+         return label
+     }()
+     /// 标题
+     let titleLabel: UILabel = {
+-        let label = UILabel(text: "cp_overview_text2".ex_localized(), font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++        let label = UILabel(text: "cp_overview_text2".ex_localized(), font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
+         return label
+     }()
+     /// 取消
+     lazy var cancelButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_overview_text44".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.exs_ThemeLabel.colorMedium)
++        let button = UIButton(buttonType: .custom, title: "cp_overview_text44".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.ThemeLabel.colorMedium)
+         button.ext_SetAddTarget(self, #selector(clickCancelButton))
+         return button
+     }()
+@@ -98,7 +98,7 @@ class EXSClosePositionSheet: UIView {
+     lazy var priceInput : EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.setPlaceHolder(placeHolder: "cp_overview_text6".ex_localized())
+         textField.unitLabel.text = ""
+         textField.layer.cornerRadius = 4
+@@ -112,7 +112,7 @@ class EXSClosePositionSheet: UIView {
+     lazy var volumeTextField : EXSPersentageField = {
+         let textField = EXSPersentageField()
+ 
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         
+         textField.input.keyboardType = UIKeyboardType.decimalPad
+         
+@@ -152,9 +152,9 @@ class EXSClosePositionSheet: UIView {
+         let button = UIButton()
+         button.setTitle("cp_overview_text53".ex_localized(), for: .normal)
+         button.titleLabel?.font = UIFont.ThemeFont.BodyMedium
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorDark, for: .normal)
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .selected)
+-        button.layer.borderColor = UIColor.exs_ThemeLabel.colorDark.cgColor
++        button.setTitleColor(UIColor.ThemeLabel.colorDark, for: .normal)
++        button.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .selected)
++        button.layer.borderColor = UIColor.ThemeLabel.colorDark.cgColor
+         button.addTarget(self, action: #selector(clickMarketPriceButton), for: .touchUpInside)
+         
+         button.layer.borderWidth = 0.5
+@@ -166,9 +166,9 @@ class EXSClosePositionSheet: UIView {
+         let button = UIButton()
+         button.setTitle(EXSwapMarketOrderPriceType.sameSideOptimal.introduce, for: .normal)
+         button.titleLabel?.font = UIFont.ThemeFont.BodyMedium
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorDark, for: .normal)
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .selected)
+-        button.layer.borderColor = UIColor.exs_ThemeLabel.colorDark.cgColor
++        button.setTitleColor(UIColor.ThemeLabel.colorDark, for: .normal)
++        button.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .selected)
++        button.layer.borderColor = UIColor.ThemeLabel.colorDark.cgColor
+         button.addTarget(self, action: #selector(clickMarketPriceButton), for: .touchUpInside)
+         
+         button.layer.borderWidth = 0.5
+@@ -180,9 +180,9 @@ class EXSClosePositionSheet: UIView {
+         let button = UIButton()
+         button.setTitle(EXSwapMarketOrderPriceType.oppositeSideOptimal.introduce, for: .normal)
+         button.titleLabel?.font = UIFont.ThemeFont.BodyMedium
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorDark, for: .normal)
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .selected)
+-        button.layer.borderColor = UIColor.exs_ThemeLabel.colorDark.cgColor
++        button.setTitleColor(UIColor.ThemeLabel.colorDark, for: .normal)
++        button.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .selected)
++        button.layer.borderColor = UIColor.ThemeLabel.colorDark.cgColor
+         button.addTarget(self, action: #selector(clickMarketPriceButton), for: .touchUpInside)
+         
+         button.layer.borderWidth = 0.5
+@@ -201,7 +201,7 @@ class EXSClosePositionSheet: UIView {
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+         
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         self.addSubview(volumeTextField)
+         self.exs_addSubViews([contractTypeLabel,nameLabel,dealTypeLabel])
+         self.exs_addSubViews([titleLabel, cancelButton, priceInput,  closePositionButton,horLineView])
+@@ -290,7 +290,7 @@ class EXSClosePositionSheet: UIView {
+ extension EXSClosePositionSheet {
+     /// 点击取消
+     @objc func clickCancelButton() {
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     
+     func unselectOtherButton(sender:UIButton) {
+@@ -322,17 +322,17 @@ extension EXSClosePositionSheet {
+     func unselectButton(sender:UIButton) {
+        
+         sender.isSelected = false
+-        sender.layer.borderColor = UIColor.exs_ThemeLabel.colorDark.cgColor
++        sender.layer.borderColor = UIColor.ThemeLabel.colorDark.cgColor
+     }
+     /// 点击市价平
+     @objc func clickMarketPriceButton(sender:UIButton) {
+         sender.isSelected = !sender.isSelected
+-        sender.layer.borderColor = UIColor.exs_ThemeBtn.highlight.cgColor
++        sender.layer.borderColor = UIColor.ThemeBtn.highlight.cgColor
+         if sender.isSelected {
+-            sender.layer.borderColor = UIColor.exs_ThemeBtn.highlight.cgColor
++            sender.layer.borderColor = UIColor.ThemeBtn.highlight.cgColor
+ 
+         }else {
+-            sender.layer.borderColor = UIColor.exs_ThemeLabel.colorDark.cgColor
++            sender.layer.borderColor = UIColor.ThemeLabel.colorDark.cgColor
+         }
+         self.unselectOtherButton(sender: sender)
+         changePriceType(sender: sender)

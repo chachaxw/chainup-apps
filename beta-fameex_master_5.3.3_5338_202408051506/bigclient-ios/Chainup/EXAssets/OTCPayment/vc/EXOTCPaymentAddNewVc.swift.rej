@@ -1,0 +1,37 @@
+diff a/Chainup/EXAssets/OTCPayment/vc/EXOTCPaymentAddNewVc.swift b/Chainup/EXAssets/OTCPayment/vc/EXOTCPaymentAddNewVc.swift	(rejected hunks)
+@@ -104,7 +104,7 @@ class EXOTCPaymentAddNewVc: BaseVC,StoryBoardLoadable,NavigationPlugin,EXNavigat
+                     let commonUploader = EXPaymentUploadView()
+                     commonUploader.setTitle(fieldItem.fieldTitle)
+                     self.containers.addArrangedSubview(commonUploader)
+-                    commonUploader.snp_makeConstraints { make in
++                    commonUploader.snp.makeConstraints { make in
+                         make.height.equalTo(154)
+                     }
+                     if fieldItem.fieldRequired == "1" {
+@@ -142,7 +142,7 @@ class EXOTCPaymentAddNewVc: BaseVC,StoryBoardLoadable,NavigationPlugin,EXNavigat
+                     }
+                     self.containers.addArrangedSubview(commonInput)
+      
+-                    commonInput.snp_makeConstraints { make in
++                    commonInput.snp.makeConstraints { make in
+                         make.height.equalTo(72)
+                     }
+                     if fieldItem.fieldValue.count > 0 {
+@@ -159,7 +159,7 @@ class EXOTCPaymentAddNewVc: BaseVC,StoryBoardLoadable,NavigationPlugin,EXNavigat
+                 }else if fieldItem.fieldType == "2" {
+                     let commonInput = EXCommonExpandInputView()
+                     self.containers.addArrangedSubview(commonInput)
+-                    commonInput.snp_makeConstraints { make in
++                    commonInput.snp.makeConstraints { make in
+                         make.height.equalTo(commonInput.normal_height)
+                     }
+                     commonInput.titleLabel.text = fieldItem.fieldTitle
+@@ -180,7 +180,7 @@ class EXOTCPaymentAddNewVc: BaseVC,StoryBoardLoadable,NavigationPlugin,EXNavigat
+                     commonInput.setTitle(fieldItem.fieldTitle)
+                     commonInput.setPlaceHolder(fieldItem.fieldPrompt)
+                     self.containers.addArrangedSubview(commonInput)
+-                    commonInput.snp_makeConstraints { make in
++                    commonInput.snp.makeConstraints { make in
+                         make.height.equalTo(72)
+                     }
+                     if fieldItem.fieldRequired == "1" {

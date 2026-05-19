@@ -1,0 +1,51 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/NAVBAR/EXSNavigationPlugin.swift b/Chainup/Framework/EXSwapSDK/Base/UI/NAVBAR/EXSNavigationPlugin.swift	(rejected hunks)
+@@ -29,7 +29,7 @@ class EXSNavigation: EXSNavCustomView {
+     
+     var isLastNavigationStyle:Bool = false {
+         didSet {
+-            self.backView.backgroundColor = isLastNavigationStyle ? UIColor.exs_ThemeView.bg : UIColor.exs_ThemeNav.bg
++            self.backView.backgroundColor = isLastNavigationStyle ? UIColor.ThemeView.bg : UIColor.ThemeNav.bg
+         }
+     }
+ 
+@@ -83,7 +83,7 @@ class EXSNavigation: EXSNavCustomView {
+     required init(style:Int = 0,
+                   title:String = "",
+                   font:CGFloat = 18.0,
+-                  color:UIColor = UIColor.exs_ThemeLabel.colorLite,
++                  color:UIColor = UIColor.ThemeLabel.colorLite,
+                   affectScroll:UIScrollView?,
+                   presenter: (UIViewController & EXSNavigationPlugin)!,
+                   useLargeTitleNavigation:Bool = true,
+@@ -153,7 +153,7 @@ class EXSNavigation: EXSNavCustomView {
+     
+     func configRightItems(_ itemtitles:[String],
+                           isImageName:Bool = true,
+-                          btnColor:UIColor = UIColor.exs_ThemeLabel.colorMedium) {
++                          btnColor:UIColor = UIColor.ThemeLabel.colorMedium) {
+         for item in rightItems {
+             item.removeFromSuperview()
+         }
+@@ -215,7 +215,7 @@ class EXSNavigation: EXSNavCustomView {
+         self.backView.backgroundColor = UIColor.clear
+         self.popBtn.setImage(nil, for: .normal)
+         self.popBtn.setTitle("cp_overview_text56".ex_localized(), for: .normal)
+-        self.popBtn.setTitleColor(UIColor.exs_ThemeLabel.white, for: .normal)
++        self.popBtn.setTitleColor(UIColor.ThemeLabel.white, for: .normal)
+         popBtn.titleLabel?.font = UIFont.ThemeFont.BodyMedium
+         popBtn.snp.remakeConstraints { (make) in
+             make.left.equalToSuperview().offset(15)
+@@ -223,11 +223,11 @@ class EXSNavigation: EXSNavCustomView {
+             make.height.equalTo(16)
+         }
+         for btn in rightItems {
+-            btn.setTitleColor(UIColor.exs_ThemeLabel.white, for: .normal)
++            btn.setTitleColor(UIColor.ThemeLabel.white, for: .normal)
+         }
+     }
+     
+-    func updateLeftBtn(title:String = "",icon:String = "",titleColor:UIColor = UIColor.exs_ThemeLabel.colorLite) {
++    func updateLeftBtn(title:String = "",icon:String = "",titleColor:UIColor = UIColor.ThemeLabel.colorLite) {
+         if title.count > 0 {
+             self.popBtn.titleLabel?.font = UIFont.ThemeFont.BodyMedium
+             self.popBtn.setImage(nil, for: .normal)

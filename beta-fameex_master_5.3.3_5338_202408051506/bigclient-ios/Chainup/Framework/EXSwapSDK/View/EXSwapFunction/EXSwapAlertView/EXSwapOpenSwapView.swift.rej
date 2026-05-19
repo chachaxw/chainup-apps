@@ -1,0 +1,62 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapAlertView/EXSwapOpenSwapView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapAlertView/EXSwapOpenSwapView.swift	(rejected hunks)
+@@ -15,13 +15,13 @@ class EXSwapOpenSwapView: UIView {
+     
+     lazy var mainView : UIView = {
+         let view = UIView()
+-        view.backgroundColor = UIColor.exs_ThemeView.bg
++        view.backgroundColor = UIColor.ThemeView.bg
+         self.addSubview(view)
+         return view
+     }()
+     /// 取消
+     lazy var cancelButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_overview_text44".ex_localized(), titleFont: UIFont.ThemeFont.SecondaryRegular, titleColor: UIColor.exs_ThemeLabel.colorMedium)
++        let button = UIButton(buttonType: .custom, title: "cp_overview_text44".ex_localized(), titleFont: UIFont.ThemeFont.SecondaryRegular, titleColor: UIColor.ThemeLabel.colorMedium)
+         button.ext_SetAddTarget(self, #selector(clickCancelButton))
+         return button
+     }()
+@@ -29,7 +29,7 @@ class EXSwapOpenSwapView: UIView {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+         label.textAlignment = .center
+-        label.textColor = UIColor.exs_ThemeLabel.colorLite
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.font = UIFont.ThemeFont.HeadBold
+         label.text = "cp_content_text18".ex_localized()
+         return label
+@@ -39,14 +39,14 @@ class EXSwapOpenSwapView: UIView {
+         let textView = UITextView(frame: CGRect.init(x: 20, y: 57, width: self.frame.width - 64 - 40, height: 423))
+         textView.ext_UseAutoLayout()
+         
+-        textView.backgroundColor = UIColor.exs_ThemeView.bg;
+-        textView.textColor = UIColor.exs_ThemeLabel.colorLite
++        textView.backgroundColor = UIColor.ThemeView.bg;
++        textView.textColor = UIColor.ThemeLabel.colorLite
+         textView.isScrollEnabled = true
+         let message = NSMutableAttributedString(string: "cp_extra_text117".ex_localized())
+         let para = NSMutableParagraphStyle()
+         para.lineSpacing = 5
+         para.paragraphSpacing = 20
+-        message.addAttribute(.foregroundColor, value: UIColor.exs_ThemeLabel.colorMedium, range: NSRange(location: 0, length: message.length))
++        message.addAttribute(.foregroundColor, value: UIColor.ThemeLabel.colorMedium, range: NSRange(location: 0, length: message.length))
+         message.addAttribute(.font, value: UIFont.ThemeFont.BodyRegular, range: NSRange(location: 0, length: message.length))
+         message.addAttribute(.paragraphStyle, value: para, range: NSRange(location: 0, length: message.length))
+         textView.attributedText = message
+@@ -62,7 +62,7 @@ class EXSwapOpenSwapView: UIView {
+         btn.titleLabel?.numberOfLines = 2
+         btn.ext_SetAddTarget(self, #selector(clickOpenContractBtn))
+         btn.setTitle("cp_extra_text150".ex_localized(), for: .normal)
+-        btn.color = UIColor.exs_ThemeBtn.highlight
++        btn.color = UIColor.ThemeBtn.highlight
+         return btn
+     }()
+     
+@@ -100,7 +100,7 @@ class EXSwapOpenSwapView: UIView {
+     
+     override init(frame: CGRect) {
+         super.init(frame: CGRect.init(x: 0, y: 0, width: EXSCREEN_WIDTH, height: EXS_SCREEN_HEIGHT))
+-        self.backgroundColor = UIColor.exs_ThemeView.mask
++        self.backgroundColor = UIColor.ThemeView.mask
+         var height = 554
+         if (554 + EX_NavStatusBarHeight) > EXS_SCREEN_HEIGHT {
+             height = Int(EXS_SCREEN_HEIGHT - EX_NavStatusBarHeight)

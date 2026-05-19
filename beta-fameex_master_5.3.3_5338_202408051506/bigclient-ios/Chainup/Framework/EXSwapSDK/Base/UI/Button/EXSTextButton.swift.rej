@@ -1,0 +1,26 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/Button/EXSTextButton.swift b/Chainup/Framework/EXSwapSDK/Base/UI/Button/EXSTextButton.swift	(rejected hunks)
+@@ -12,7 +12,7 @@ class EXSTextButton: EXSButton {
+     
+     var bgLayer = CAShapeLayer.init()
+     var markLayer = CAShapeLayer.init()
+-    var highlightColor:UIColor = UIColor.exs_ThemeView.highlight
++    var highlightColor:UIColor = UIColor.ThemeView.highlight
+     var unCheckColor:UIColor = UIColor.clear
+     var checkstrokeColor:UIColor = UIColor.white
+     var uncheckstrokeColor:UIColor = UIColor.clear
+@@ -30,13 +30,13 @@ class EXSTextButton: EXSButton {
+         }
+     }
+     
+-    var normalTextColor:UIColor = UIColor.exs_ThemeLabel.colorMedium {
++    var normalTextColor:UIColor = UIColor.ThemeLabel.colorMedium {
+         didSet {
+             self.setTitleColor(normalTextColor, for: .normal)
+         }
+     }
+     
+-    var highlighTextColor:UIColor = UIColor.exs_ThemeLabel.colorLite {
++    var highlighTextColor:UIColor = UIColor.ThemeLabel.colorLite {
+         didSet {
+             self.setTitleColor(highlighTextColor, for: .highlighted)
+             self.setTitleColor(highlighTextColor, for: .selected)

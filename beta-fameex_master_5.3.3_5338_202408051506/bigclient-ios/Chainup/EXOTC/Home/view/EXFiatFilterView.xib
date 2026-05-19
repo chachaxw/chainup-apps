@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXFiatFilterView" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="3R2-nY-QhG" id="spB-VR-Ype"/>
+                <outlet property="selectLabel" destination="Yux-yW-e4r" id="pbI-rf-WBW"/>
+                <outlet property="titleLabel" destination="uSl-DS-jlb" id="A33-hi-JY8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3R2-nY-QhG">
+                    <rect key="frame" x="0.0" y="30" width="414" height="355"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSl-DS-jlb">
+                    <rect key="frame" x="15" y="15" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorMedium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yux-yW-e4r">
+                    <rect key="frame" x="399" y="15" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="view.highlight"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uSl-DS-jlb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="5VX-KK-Jdh"/>
+                <constraint firstItem="Yux-yW-e4r" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uSl-DS-jlb" secondAttribute="trailing" constant="5" id="5xc-BL-Pid"/>
+                <constraint firstItem="3R2-nY-QhG" firstAttribute="top" secondItem="uSl-DS-jlb" secondAttribute="bottom" constant="15" id="Dum-Ee-1fQ"/>
+                <constraint firstAttribute="trailing" secondItem="Yux-yW-e4r" secondAttribute="trailing" constant="15" id="GFQ-1T-G6X"/>
+                <constraint firstItem="3R2-nY-QhG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QzQ-Gr-umU"/>
+                <constraint firstAttribute="bottom" secondItem="3R2-nY-QhG" secondAttribute="bottom" constant="15" id="YFw-Fu-E5D"/>
+                <constraint firstAttribute="trailing" secondItem="3R2-nY-QhG" secondAttribute="trailing" id="faR-5m-Vsq"/>
+                <constraint firstItem="Yux-yW-e4r" firstAttribute="centerY" secondItem="uSl-DS-jlb" secondAttribute="centerY" id="glp-xM-cY6"/>
+                <constraint firstItem="uSl-DS-jlb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="yTl-tO-2CF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-233" y="-100"/>
+        </view>
+    </objects>
+</document>

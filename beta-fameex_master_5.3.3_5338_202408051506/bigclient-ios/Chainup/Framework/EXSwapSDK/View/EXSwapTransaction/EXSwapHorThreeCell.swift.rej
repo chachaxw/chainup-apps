@@ -1,0 +1,20 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSwapHorThreeCell.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSwapHorThreeCell.swift	(rejected hunks)
+@@ -38,15 +38,15 @@ class EXSwapHorThreeCell: UITableViewCell {
+     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+         super.init(style: style, reuseIdentifier: reuseIdentifier)
+         self.contentView.exs_addSubViews([leftView, middleView, rightView])
+-        self.leftView.snp_makeConstraints { (make) in
++        self.leftView.snp.makeConstraints { (make) in
+             make.left.equalTo(15)
+             make.top.equalToSuperview()
+         }
+-        self.middleView.snp_makeConstraints { (make) in
++        self.middleView.snp.makeConstraints { (make) in
+             make.top.height.equalTo(self.leftView)
+             make.centerX.equalToSuperview()
+         }
+-        self.rightView.snp_makeConstraints { (make) in
++        self.rightView.snp.makeConstraints { (make) in
+             make.right.equalTo(-15)
+             make.top.height.equalTo(self.leftView)
+         }

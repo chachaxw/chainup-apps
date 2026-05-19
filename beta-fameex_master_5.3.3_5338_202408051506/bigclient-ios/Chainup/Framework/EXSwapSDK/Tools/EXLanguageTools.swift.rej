@@ -1,0 +1,18 @@
+diff a/Chainup/Framework/EXSwapSDK/Tools/EXLanguageTools.swift b/Chainup/Framework/EXSwapSDK/Tools/EXLanguageTools.swift	(rejected hunks)
+@@ -195,7 +195,6 @@ let EXS_AppleLanguages = "AppleLanguages"
+         }
+         
+         self.tryDownloadCurrentLan()
+-        self.changeLan(lan: langeuage)
+     }
+     static func getDownloadLanKey() ->String{
+         return "swap_dl_\(LanguageHandler.phoneLanguage)"
+@@ -285,8 +284,3 @@ extension EXLanguageTools {
+     }
+ }
+ 
+-extension EXLanguageTools {
+-    func changeLan(lan:String) {
+-        EXPushMsgHandler.shared.changeLan(lan: lan)
+-    }
+-}

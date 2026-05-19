@@ -1,0 +1,137 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSNormalAlert.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSNormalAlert.swift	(rejected hunks)
+@@ -32,20 +32,20 @@ class EXSNormalAlert: EXSNibBaseView {
+     
+     override func onCreate() {
+         titleLabel.headBold()
+-        titleLabel.textColor = UIColor.exs_ThemeLabel.colorLite
+-        msgLabel.textColor = UIColor.exs_ThemeLabel.colorMedium
++        titleLabel.textColor = UIColor.ThemeLabel.colorLite
++        msgLabel.textColor = UIColor.ThemeLabel.colorMedium
+         passiveBtn.clearColors()
+         positiveBtn.clearColors()
+         passiveBtn.layer.borderWidth = 0.5
+-        passiveBtn.layer.borderColor = UIColor.exs_ThemeLabel.colorHighlight.cgColor
++        passiveBtn.layer.borderColor = UIColor.ThemeLabel.colorHighlight.cgColor
+         passiveBtn.layer.cornerRadius = 4
+-        passiveBtn.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .normal)
++        passiveBtn.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .normal)
+         
+-        positiveBtn.backgroundColor = UIColor.exs_ThemeLabel.colorHighlight
++        positiveBtn.backgroundColor = UIColor.ThemeLabel.colorHighlight
+         positiveBtn.setTitleColor(UIColor.white, for: .normal)
+         positiveBtn.layer.cornerRadius = 4
+         positiveBtn.layer.masksToBounds = true
+-        marginView.backgroundColor = UIColor.exs_ThemeView.bg
++        marginView.backgroundColor = UIColor.ThemeView.bg
+     } 
+     
+     func configSigleAlert(title:String?,
+@@ -109,7 +109,7 @@ class EXSNormalAlert: EXSNibBaseView {
+             messageView.isHidden = true
+         }
+         msgLabel.attributedText = message
+-        passiveBtn.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .normal)
++        passiveBtn.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .normal)
+         if passiveBtnTitle.isEmpty {
+             passiveBtn.isHidden = true
+             marginView.isHidden = true
+@@ -123,14 +123,14 @@ class EXSNormalAlert: EXSNibBaseView {
+         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.4) {
+             self.alertCallback?(0)
+         }
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     
+     @IBAction func passtiveAction(_ sender: EXSButton) {
+         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.4) {
+             self.alertCallback?(1)
+         }
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     
+ }
+@@ -144,7 +144,7 @@ extension EXSNormalAlert{
+         let alert = EXSNormalAlert()
+         let content = model.liqPositionMsg.replacingOccurrences(of: "\\n", with: "\n")
+         alert.configSigleAlert(title: title.ex_localized(), message: content)
+-        EXSAlert.showAlert(alertView: alert)
++        EXAlert.showAlert(alertView: alert)
+     }
+ }
+ 
+@@ -160,14 +160,14 @@ class EXNormalNewAlert: EXView{
+     lazy var container: UIStackView = {
+         let view = UIStackView()
+         view.axis = .vertical
+-        view.backgroundColor = UIColor.exs_ThemeView.bg
++        view.backgroundColor = UIColor.ThemeView.bg
+         view.distribution = .fill
+         return view
+     }()
+     ///标题
+     lazy var titleContainer = UIView()
+     lazy var titleLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.left)
+         label.numberOfLines = 0
+         label.ext_UseAutoLayout()
+         return label
+@@ -175,7 +175,7 @@ class EXNormalNewAlert: EXView{
+     ///内容
+     lazy var contentContainer = UIView()
+     lazy var contentLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
+         label.numberOfLines = 0
+         label.ext_UseAutoLayout()
+         return label
+@@ -188,10 +188,10 @@ class EXNormalNewAlert: EXView{
+         btn.extUseAutoLayout()
+         btn.extSetCornerRadius(4)
+         btn.clearColors()
+-        btn.backgroundColor = UIColor.exs_ThemeView.bg
++        btn.backgroundColor = UIColor.ThemeView.bg
+ 
+         btn.setTitle("".localized(), for: .normal)
+-        btn.setTitleColor(UIColor.exs_ThemeBtn.highlight, for:.normal)
++        btn.setTitleColor(UIColor.ThemeBtn.highlight, for:.normal)
+         btn.layer.borderWidth = 1
+         btn.layer.borderColor = UIColor.ThemeBtn.highlight.cgColor
+         btn.titleLabel?.font = UIFont.ThemeFont.HeadBold
+@@ -203,7 +203,7 @@ class EXNormalNewAlert: EXView{
+         let btn = EXSButton()
+         btn.extUseAutoLayout()
+         btn.extSetCornerRadius(4)
+-        btn.backgroundColor = UIColor.exs_ThemeView.bg
++        btn.backgroundColor = UIColor.ThemeView.bg
+         btn.setTitleColor(UIColor.white, for:.normal)
+         btn.setTitle("".localized(), for: .normal)
+         btn.titleLabel?.font = UIFont.ThemeFont.HeadBold
+@@ -212,7 +212,7 @@ class EXNormalNewAlert: EXView{
+     }()
+     
+     override func setupView() {
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         self.addSubview(container)
+         container.snp.makeConstraints { make in
+             make.edges.equalToSuperview()
+@@ -228,14 +228,14 @@ class EXNormalNewAlert: EXView{
+     }
+ 
+     @objc func cancel(){
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+ 
+     @objc func sure(){
+         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.2) {
+             self.alertCallback?(0)
+         }
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+ 
+ 

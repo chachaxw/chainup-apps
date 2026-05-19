@@ -1,0 +1,141 @@
+PODS:
+  - Blueprints (0.13.1)
+  - DZNEmptyDataSet (1.8.1)
+  - EXKit (1.4.1):
+    - EXKit/Analytics (= 1.4.1)
+    - EXKit/Foundation (= 1.4.1)
+    - EXKit/Images (= 1.4.1)
+    - EXKit/Logger (= 1.4.1)
+    - EXKit/Theme (= 1.4.1)
+    - EXKit/UI (= 1.4.1)
+  - EXKit/Analytics (1.4.1):
+    - EXKit/Foundation (= 1.4.1)
+    - Reachability (>= 3.2)
+  - EXKit/Foundation (1.4.1):
+    - EXKit/Theme (= 1.4.1)
+    - IQKeyboardManagerSwift (>= 6.5.0)
+    - MJExtension (= 3.0.15.1)
+    - RxCocoa (>= 6.5.0)
+    - RxSwift (>= 6.5.0)
+    - SKPhotoBrowser (>= 7.0.0)
+    - SnapKit (>= 5.6.0)
+    - SwiftEntryKit (>= 2.0.0)
+    - SwiftEventBus (>= 5.0.0)
+    - YYText (>= 1.0.7)
+    - YYWebImage (>= 1.0.5)
+  - EXKit/Images (1.4.1)
+  - EXKit/Logger (1.4.1):
+    - EXKit/Foundation (= 1.4.1)
+  - EXKit/Theme (1.4.1):
+    - EXKit/Theme/Core (= 1.4.1)
+    - EXKit/Theme/Deprecated (= 1.4.1)
+  - EXKit/Theme/Core (1.4.1):
+    - SwiftDraw (>= 0.14.0)
+  - EXKit/Theme/Deprecated (1.4.1):
+    - EXKit/Theme/Core (= 1.4.1)
+  - EXKit/UI (1.4.1):
+    - Blueprints (>= 0.13.1)
+    - DZNEmptyDataSet (>= 1.8.1)
+    - EXKit/Foundation (= 1.4.1)
+    - JXSegmentedView (>= 1.3.0)
+    - lottie-ios (~> 4.2.0)
+    - MJRefresh (= 3.1.15.7)
+    - SkeletonView (~> 1.30.4)
+  - EXLookin (1.2.0):
+    - EXKit/Theme (>= 1.2.0)
+    - LookinServer/Swift (>= 1.1.4)
+  - IQKeyboardManagerSwift (6.5.12)
+  - JXSegmentedView (1.3.0)
+  - LookinServer/Core (1.2.4)
+  - LookinServer/Swift (1.2.4):
+    - LookinServer/Core
+  - lottie-ios (4.2.0)
+  - MJExtension (3.0.15.1)
+  - MJRefresh (3.1.15.7)
+  - Reachability (3.2)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SkeletonView (1.30.4)
+  - SKPhotoBrowser (7.1.0)
+  - SnapKit (5.6.0)
+  - SwiftDraw (0.14.0)
+  - SwiftEntryKit (2.0.0)
+  - SwiftEventBus (5.0.0)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYText (1.0.7)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - EXKit (from `../`)
+  - EXLookin (from `../`)
+  - LookinServer/Swift (>= 1.2.4)
+
+SPEC REPOS:
+  trunk:
+    - Blueprints
+    - DZNEmptyDataSet
+    - IQKeyboardManagerSwift
+    - JXSegmentedView
+    - LookinServer
+    - lottie-ios
+    - MJExtension
+    - MJRefresh
+    - Reachability
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SkeletonView
+    - SKPhotoBrowser
+    - SnapKit
+    - SwiftDraw
+    - SwiftEntryKit
+    - SwiftEventBus
+    - YYCache
+    - YYImage
+    - YYText
+    - YYWebImage
+
+EXTERNAL SOURCES:
+  EXKit:
+    :path: "../"
+  EXLookin:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Blueprints: ddd6ab1e455c98471aaef2fdd0b09b5f9b53af5b
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  EXKit: 3d3a46e3776f617fe46b654f9662b37a9c5b06bc
+  EXLookin: c8e55e345fb6d4f361b85d03f50cfa725c8edd8b
+  IQKeyboardManagerSwift: 371b08cb39664fb56030f5345c815a4ffc74bbc0
+  JXSegmentedView: fec0d335355b6e019c494fe2e030bde8a36d2df6
+  LookinServer: 00c7588043ed8e7ab64ce55b9fb747e51371ad06
+  lottie-ios: 809ecf2d460ed650a6aed7aa88b2ec45fab4779c
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
+  SKPhotoBrowser: cd95b95a6f352fc2a50992721299f75ead77f9ab
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftDraw: 549a5984edd090de40e2906948fdb27347500f4e
+  SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
+  SwiftEventBus: b30f617a6aca5a9336464b4d3f5931034762f2d5
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+
+PODFILE CHECKSUM: 2de681b9c63937a7443b764b9614dedead94d934
+
+COCOAPODS: 1.12.1

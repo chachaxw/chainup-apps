@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/v_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_card_color">
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_layout"
+        app:title="@string/otc_text_myOrder"
+        app:rightBtnRes="@mipmap/screening"
+        app:isShowRightBtn="true"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"/>
+
+
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_card_color"
+        android:layout_below="@+id/title_layout">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_order_otc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_new_quick_otc_order" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    <com.yjkj.chainup.new_version.view.ScreeningPopupWindowView
+        android:id="@+id/spw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_top_layout"
+        android:visibility="gone"
+        app:screen_type="OTCORDER" />
+</RelativeLayout>

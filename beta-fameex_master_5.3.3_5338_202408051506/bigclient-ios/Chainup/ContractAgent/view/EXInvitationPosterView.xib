@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EXInvitationPosterView" customModule="Chainup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="587" height="496"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享您的专属海报" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNh-T0-6hC">
+                    <rect key="frame" x="15" y="15" width="139" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WC-VQ-AHU">
+                    <rect key="frame" x="541" y="10.5" width="31" height="30"/>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="cancelAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="r2S-nC-K2b"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYC-cx-vHf" customClass="EXButton" customModule="EXKit">
+                    <rect key="frame" x="16" y="418" width="555" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="2vA-d1-QQp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="保存图片">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="saveAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="jKt-PE-Sxk"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="463" placeholderIntrinsicHeight="194" translatesAutoresizingMaskIntoConstraints="NO" id="73R-ZT-c4l">
+                    <rect key="frame" x="16" y="55.5" width="555" height="318.5"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="73R-ZT-c4l" firstAttribute="top" secondItem="fNh-T0-6hC" secondAttribute="bottom" constant="20" id="46S-gu-pDh"/>
+                <constraint firstItem="fNh-T0-6hC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="BA2-6z-QR9"/>
+                <constraint firstAttribute="trailing" secondItem="cYC-cx-vHf" secondAttribute="trailing" constant="16" id="DhM-0q-WLk"/>
+                <constraint firstItem="cYC-cx-vHf" firstAttribute="top" secondItem="73R-ZT-c4l" secondAttribute="bottom" constant="44" id="Oge-Zi-ofs"/>
+                <constraint firstItem="fNh-T0-6hC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="SPD-tF-Fhl"/>
+                <constraint firstItem="7WC-VQ-AHU" firstAttribute="centerY" secondItem="fNh-T0-6hC" secondAttribute="centerY" id="UOm-fC-RXV"/>
+                <constraint firstItem="73R-ZT-c4l" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cGh-yY-6zI"/>
+                <constraint firstAttribute="trailing" secondItem="7WC-VQ-AHU" secondAttribute="trailing" constant="15" id="ft2-vl-UbQ"/>
+                <constraint firstItem="73R-ZT-c4l" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="gbg-fB-Pg3"/>
+                <constraint firstAttribute="bottom" secondItem="cYC-cx-vHf" secondAttribute="bottom" constant="34" id="go0-dd-rtG"/>
+                <constraint firstItem="cYC-cx-vHf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="pnT-Cn-sbC"/>
+                <constraint firstAttribute="trailing" secondItem="73R-ZT-c4l" secondAttribute="trailing" constant="16" id="v5E-zu-kIy"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="7WC-VQ-AHU" id="5Q1-4l-K2O"/>
+                <outlet property="posterContainerView" destination="73R-ZT-c4l" id="Oxc-2z-4FB"/>
+                <outlet property="saveButton" destination="cYC-cx-vHf" id="dWP-v6-xWu"/>
+                <outlet property="titleLabel" destination="fNh-T0-6hC" id="m1H-6t-9AK"/>
+            </connections>
+            <point key="canvasLocation" x="-15" y="96"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,18 @@
+diff a/Chainup/Framework/EXSwapSDK/Utility/EXSThemeImages.swift b/Chainup/Framework/EXSwapSDK/Utility/EXSThemeImages.swift	(rejected hunks)
+@@ -7,14 +7,13 @@
+ //
+ 
+ import UIKit
+-import SwiftTheme
+-
++import EXKit
+ extension UIImage {
+     
+     static func exs_themeImageNamed(imageName:String) -> UIImage {    
+         if let localBundle = Bundle.exs_localBundle() {
+             let scale = Int(UIScreen.main.scale)
+-            if EXSThemeManager.isNight() {
++            if EXThemeManager.isNight() {
+                var imgPath = localBundle.path(forResource:"images/night/" + imageName + "_night@\(scale)x", ofType: "png")
+                 if imgPath == nil {
+                     imgPath = localBundle.path(forResource:"images/day/" + imageName + "@\(scale)x", ofType: "png")

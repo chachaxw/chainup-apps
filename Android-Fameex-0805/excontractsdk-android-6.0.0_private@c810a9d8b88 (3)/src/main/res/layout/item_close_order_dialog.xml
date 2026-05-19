@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/cp_bg_item_dialog_bg">
+
+        <LinearLayout
+            android:id="@+id/tv_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/main_red"
+                android:textStyle="bold"
+                android:text="买入平空"
+                android:visibility="visible"
+                style="@style/textstyle_dm_18_bold_color1"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_contract_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    style="@style/textstyle_dm_12_color1"
+                    android:text="BTC/USDT"
+                    android:visibility="visible" />
+
+                <com.coorchice.library.SuperTextView
+                    android:id="@+id/tv_open_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@id/tv_contract_name"
+                    android:paddingHorizontal="@dimen/dp_4"
+                    android:textColor="@color/main_color"
+                    tools:text="全仓20X"
+                    app:stv_solid="@color/main_blue_15"
+                    style="@style/textstyle_dm_12_color1"
+                    app:stv_corner="@dimen/dp_2"
+                    />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/ll_price"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/textstyle_dm_12_color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cp_order_text42" />
+                <TextView
+                    android:id="@+id/tv_price_value"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="市价"
+                    style="@style/textstyle_dm_12_color1"
+                    />
+
+            </RelativeLayout>
+        <!--触发价格-->
+        <RelativeLayout
+            android:id="@+id/ll_trigger_price"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_trigger_price_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/cp_overview_text29"
+                style="@style/textstyle_dm_12_color2"
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_trigger_price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="0"
+                style="@style/textstyle_dm_12_color1"
+                />
+        </RelativeLayout>
+        <!--委托价格-->
+        <RelativeLayout
+            android:id="@+id/ll_commission_price"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_commission_price_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/cp_overview_text30"
+                style="@style/textstyle_dm_12_color2"
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_commission_price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="0"
+                style="@style/textstyle_dm_12_color1"
+                />
+        </RelativeLayout>
+        <!--数量-->
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_number_label"
+                style="@style/textstyle_dm_12_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/cp_order_text43" />
+
+            <TextView
+                android:id="@+id/tv_number_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0"
+                style="@style/textstyle_dm_12_color1"
+                />
+        </RelativeLayout>
+
+        <!--成本-->
+        <RelativeLayout
+            android:id="@+id/ll_cost"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_cost_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/cp_overview_text11"
+                style="@style/textstyle_dm_12_color2"
+                />
+
+            <TextView
+                android:id="@+id/tv_cost_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                style="@style/textstyle_dm_12_color1"
+                />
+
+
+        </RelativeLayout>
+<!--止盈触发价-->
+        <RelativeLayout
+            android:id="@+id/ll_stop_profit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/cp_overview_text15"
+                style="@style/textstyle_dm_12_color2"
+                />
+
+            <TextView
+                android:id="@+id/tv_stop_profit_entrust_price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                style="@style/textstyle_dm_12_color1"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                />
+
+
+        </RelativeLayout>
+<!--止损触发价-->
+        <RelativeLayout
+            android:id="@+id/ll_stop_loss"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/cp_overview_text16"
+                style="@style/textstyle_dm_12_color2"
+                />
+
+            <TextView
+                android:id="@+id/tv_stop_loss_trigger_price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                style="@style/textstyle_dm_12_color1"
+                android:text="0"
+                />
+
+
+        </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/ll_not_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <CheckBox
+                    android:id="@+id/cb_not_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/cp_trade_check_selector"
+                    android:checked="false" />
+
+                <TextView
+                    android:id="@+id/tv_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cp_overview_text31"
+                    android:layout_marginLeft="9dp"
+                    style="@style/textstyle_dm_12_color2"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_below="@+id/tv_content_layout"
+            android:orientation="horizontal">
+
+            <com.coorchice.library.SuperTextView
+                android:id="@+id/tv_cancel_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/dp_44"
+                android:layout_below="@+id/tv_content_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="@dimen/dp_16"
+                app:stv_solid="@color/card_bg_color_2"
+                app:stv_corner="@dimen/dp_4"
+                android:textColor="@color/text_color_1"
+                android:text="@string/cp_overview_text56"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                style="@style/textstyle_dm_14_color1"
+                />
+
+            <Button
+                android:id="@+id/tv_confirm_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/dp_44"
+                android:layout_below="@+id/tv_content_layout"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_select_button_blue"
+                android:textColor="@color/white"
+                android:text="@string/cp_calculator_text29"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                style="@style/textstyle_dm_14_color1"
+                />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

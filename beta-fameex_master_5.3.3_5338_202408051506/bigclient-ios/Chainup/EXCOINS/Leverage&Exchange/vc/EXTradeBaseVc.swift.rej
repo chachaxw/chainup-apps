@@ -1,0 +1,9 @@
+diff a/Chainup/EXCOINS/Leverage&Exchange/vc/EXTradeBaseVc.swift b/Chainup/EXCOINS/Leverage&Exchange/vc/EXTradeBaseVc.swift	(rejected hunks)
+@@ -9,6 +9,7 @@
+ import UIKit
+ import RxSwift
+ import RxCocoa
++import EXKit
+ 
+ class EXTradeBaseVc: BaseVC {
+     

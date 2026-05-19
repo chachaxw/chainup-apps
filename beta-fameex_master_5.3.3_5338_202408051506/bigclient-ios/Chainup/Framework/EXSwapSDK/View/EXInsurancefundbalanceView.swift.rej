@@ -1,0 +1,26 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXInsurancefundbalanceView.swift b/Chainup/Framework/EXSwapSDK/View/EXInsurancefundbalanceView.swift	(rejected hunks)
+@@ -44,13 +44,13 @@ class EXInsurancefundbalanceView: UIView {
+         let titleLabel = UILabel()
+         titleLabel.text = "USDT " + "cp_contract_data_text21".ex_localized()
+         titleLabel.font = self.themeHNFont(size: 12)
+-        titleLabel.textColor =  UIColor.exs_ThemeLabel.colorMedium
++        titleLabel.textColor =  UIColor.ThemeLabel.colorMedium
+         titleLabel.textAlignment = .center
+         self.addSubview(titleLabel)
+         coinTitleLabel = titleLabel
+         let numLabel = UILabel()
+         numLabel.text = "0"
+-        numLabel.textColor = UIColor.exs_ThemeLabel.colorBlack
++        numLabel.textColor = UIColor.ThemeLabel.colorLite
+         numLabel.font = self.themeHNFont(size: 20)
+         numLabel.textAlignment = .center
+         self.addSubview(numLabel)
+@@ -58,7 +58,7 @@ class EXInsurancefundbalanceView: UIView {
+         
+         let coinLabel = UILabel()
+         coinLabel.text = "USDT"
+-        coinLabel.textColor = UIColor.exs_ThemeLabel.colorBlack
++        coinLabel.textColor = UIColor.ThemeLabel.colorLite
+         coinLabel.font = self.themeHNFont(size: 12)
+         coinLabel.textAlignment = .center
+         self.addSubview(coinLabel)

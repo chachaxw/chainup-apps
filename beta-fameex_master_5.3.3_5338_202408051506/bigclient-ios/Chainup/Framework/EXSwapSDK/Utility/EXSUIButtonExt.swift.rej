@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Utility/EXSUIButtonExt.swift b/Chainup/Framework/EXSwapSDK/Utility/EXSUIButtonExt.swift	(rejected hunks)
+@@ -57,7 +57,7 @@ extension UIButton {
+      - parameter backgroundColor:   背景色 默认白色 可不传
+      - parameter tag:   tag值 默认0 可不传
+      */
+-    public final func ext_SetTitles(_ titles : [String] , titleColors : [UIColor] , controlStates : [UIControl.State] , target : AnyObject  , selector : Selector , fontSize : CGFloat = 18.0 , backgroundColor : UIColor = UIColor.exs_ThemeLabel.colorLite , tag : Int = 0  ){
++    public final func ext_SetTitles(_ titles : [String] , titleColors : [UIColor] , controlStates : [UIControl.State] , target : AnyObject  , selector : Selector , fontSize : CGFloat = 18.0 , backgroundColor : UIColor = UIColor.ThemeLabel.colorLite , tag : Int = 0  ){
+         
+         self.backgroundColor = backgroundColor
+         self.tag = tag

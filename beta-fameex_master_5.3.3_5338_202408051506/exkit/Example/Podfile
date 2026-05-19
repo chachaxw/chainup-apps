@@ -1,0 +1,25 @@
+source 'https://cdn.cocoapods.org/'
+source 'ssh://git@stash.dw2nn.com:7999/app/exrepo.git'
+
+use_frameworks!
+
+platform :ios, '12.0'
+
+target 'EXKit_Example' do
+  pod 'EXKit', :path => '../'
+  pod 'EXLookin', :configurations => ['Debug'], :path => '../'
+  pod 'LookinServer/Swift', '>= 1.2.4'
+
+  target 'EXKit_Tests' do
+    inherit! :search_paths
+  end
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+    end
+  end
+end
+

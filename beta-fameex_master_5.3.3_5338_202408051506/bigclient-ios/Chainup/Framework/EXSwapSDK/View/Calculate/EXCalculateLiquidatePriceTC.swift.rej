@@ -1,0 +1,29 @@
+diff a/Chainup/Framework/EXSwapSDK/View/Calculate/EXCalculateLiquidatePriceTC.swift b/Chainup/Framework/EXSwapSDK/View/Calculate/EXCalculateLiquidatePriceTC.swift	(rejected hunks)
+@@ -43,7 +43,7 @@ class EXCalculateLiquidatePriceTC: UITableViewCell {
+     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+         super.init(style: style, reuseIdentifier: reuseIdentifier)
+         self.selectionStyle = .none
+-        contentView.backgroundColor = UIColor.exs_ThemeView.bg
++        contentView.backgroundColor = UIColor.ThemeView.bg
+ 
+         contentView.exs_addSubViews([openPriceField,positionVolume,depositValueField])
+         openPriceField.snp.makeConstraints { (make) in
+@@ -77,15 +77,15 @@ class EXCalculateLiquidatePriceTC: UITableViewCell {
+     }
+     func validate() -> Bool {
+         if (openPriceField.input.text?.count == 0) {
+-            EXSAlert.showFail(msg:"cp_content_text31".ex_localized() + (openPriceField.titleLabel.text ?? ""))
++            EXAlert.showFail(msg:"cp_content_text31".ex_localized() + (openPriceField.titleLabel.text ?? ""))
+             return false
+         }
+         if (positionVolume.input.text?.count == 0) {
+-            EXSAlert.showFail(msg:"cp_content_text31".ex_localized() + (positionVolume.titleLabel.text ?? ""))
++            EXAlert.showFail(msg:"cp_content_text31".ex_localized() + (positionVolume.titleLabel.text ?? ""))
+             return false
+         }
+         if (depositValueField.input.text?.count == 0) {
+-            EXSAlert.showFail(msg:"cp_content_text31".ex_localized() + (depositValueField.titleLabel.text ?? ""))
++            EXAlert.showFail(msg:"cp_content_text31".ex_localized() + (depositValueField.titleLabel.text ?? ""))
+             return false
+         }
+         return true

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_card_color"
+    android:paddingTop="@dimen/dp_15"
+    android:paddingHorizontal="@dimen/dp_15">
+
+    <TextView
+        android:id="@+id/tv_title_pay_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_green"
+        android:textSize="@dimen/sp_16"
+        tools:text="Buy"
+        style="@style/textStyle_dm"
+        />
+
+    <TextView
+        android:id="@+id/tv_payment_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_title_pay_type"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginLeft="@dimen/dp_5"
+        tools:text="BTC"
+        style="@style/textStyle_dm"
+        />
+
+    <TextView
+        android:id="@+id/tv_pay_time"
+        style="@style/textStyle_dr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_payment_coin"
+        android:layout_alignBottom="@id/tv_payment_coin"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_toRightOf="@+id/tv_payment_coin"
+        android:gravity="center_vertical"
+        android:textColor="@color/normal_text_color"
+        android:textSize="@dimen/sp_12"
+        tools:text="02/02 12:00"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_status"
+        style="@style/textStyle_dr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/normal_text_color"
+        android:textSize="@dimen/sp_12"
+        tools:text="Pending payment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title_pay_type"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_15"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quick_buy_coin_text2"
+
+                    style="@style/orderStyle_title"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_9"
+                    style="@style/orderStyle_value"
+                    tools:text="49494" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_otc_amount_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/quick_buy_coin_text3"
+                    style="@style/orderStyle_title"/>
+
+                <TextView
+                    android:id="@+id/tv_otc_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_9"
+                    style="@style/orderStyle_value"
+                    tools:text="494" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_total_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quick_buy_coin_text4"
+                    style="@style/orderStyle_title"/>
+
+                <TextView
+                    android:id="@+id/tv_total_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_9"
+                    style="@style/orderStyle_value"
+                    tools:text="49494" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_id_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quick_buy_coin_text5"
+                    style="@style/orderStyle_title"/>
+
+                <TextView
+                    android:id="@+id/tv_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/orderStyle_value"
+                    android:layout_marginTop="@dimen/dp_9"
+                    tools:text="9fd98ffd-0da6-4bc8-9faf-fb6c49b9b123" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_realName_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quick_buy_coin_text6"
+                    style="@style/orderStyle_title" />
+
+                <TextView
+                    android:id="@+id/tv_realName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/orderStyle_value"
+                    android:layout_marginTop="@dimen/dp_9"
+                    tools:text="Simplex" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_half"
+        android:background="@color/line_color"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_alignParentBottom="true"
+
+        />
+
+</RelativeLayout>

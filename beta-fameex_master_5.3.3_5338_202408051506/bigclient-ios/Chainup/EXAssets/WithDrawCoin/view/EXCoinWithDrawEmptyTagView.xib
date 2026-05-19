@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXCoinWithDrawEmptyTagView" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="tagView" destination="Oja-yc-A2v" id="VBy-4c-BkF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWB-pE-57D">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+            <subviews>
+                <view verifyAmbiguity="ignoreSizes" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oja-yc-A2v" customClass="EXTextField" customModule="EXKit">
+                    <rect key="frame" x="15" y="0.0" width="345" height="48"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="UGz-CR-CdD"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Oja-yc-A2v" secondAttribute="trailing" constant="15" id="28B-me-0PH"/>
+                <constraint firstItem="UGz-CR-CdD" firstAttribute="bottom" secondItem="Oja-yc-A2v" secondAttribute="bottom" id="DsU-Gc-jMW"/>
+                <constraint firstAttribute="height" constant="74" id="G8j-Vl-EOD"/>
+                <constraint firstItem="Oja-yc-A2v" firstAttribute="leading" secondItem="TWB-pE-57D" secondAttribute="leading" constant="15" id="M16-Zr-OPU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-172" y="118"/>
+        </view>
+    </objects>
+</document>

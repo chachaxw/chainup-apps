@@ -1,0 +1,22 @@
+diff a/Chainup/EXCOINS/Market/MarketDetail/view/KlineDetailHeader/EXKlineETFHeader.swift b/Chainup/EXCOINS/Market/MarketDetail/view/KlineDetailHeader/EXKlineETFHeader.swift	(rejected hunks)
+@@ -82,17 +82,17 @@ class EXKlineETFHeader: UIView {
+         
+         fundingRate.snp.makeConstraints { (make) in
+             make.left.equalTo(fundingTitle.snp.right).offset(8)
+-            make.centerY.equalTo(fundingTitle.snp_centerY)
++            make.centerY.equalTo(fundingTitle.snp.centerY)
+         }
+         
+         netValueTitle.snp.makeConstraints { (make) in
+             make.right.equalTo(netValue.snp.left).offset(-8)
+-            make.centerY.equalTo(fundingTitle.snp_centerY)
++            make.centerY.equalTo(fundingTitle.snp.centerY)
+         }
+         
+         netValue.snp.makeConstraints { (make) in
+             make.right.equalToSuperview().offset(-10)
+-            make.centerY.equalTo(fundingTitle.snp_centerY)
++            make.centerY.equalTo(fundingTitle.snp.centerY)
+         }
+         iconImg.image = UIImage.themeImageNamed(imageName:"quotes_fundingrate")
+     }

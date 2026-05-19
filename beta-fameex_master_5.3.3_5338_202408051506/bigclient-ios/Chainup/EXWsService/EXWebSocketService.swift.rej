@@ -1,0 +1,10 @@
+diff a/Chainup/EXWsService/EXWebSocketService.swift b/Chainup/EXWsService/EXWebSocketService.swift	(rejected hunks)
+@@ -197,7 +197,7 @@ public class EXMarketService:EXWsServiceProtocol {
+     public func connectServer() {
+         self.setupWebSocket(url: EXNetworkDoctor.sharedManager.getKlineWs())
+         // 监听网络状态
+-        SwiftEventBus.onBackgroundThread(self, name: EXEventBusConst.onNetworkConnected) { (result) in
++        SwiftEventBus.onBackgroundThread(self, name: EXReachabilityKey.onNetworkConnected) { (result) in
+             self.handleNetworkingConnected()
+         }
+         debugPrint("连接ws地址=",EXNetworkDoctor.sharedManager.getKlineWs())

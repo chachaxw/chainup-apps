@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXPhotoUploadView" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="iconView" destination="8Py-l9-EO7" id="ycA-6X-sir"/>
+                <outlet property="tapBtn" destination="8MW-3l-NeG" id="cmA-Df-93V"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Py-l9-EO7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MW-3l-NeG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="didTapped:" destination="-1" eventType="touchUpInside" id="LZi-ah-MEG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8MW-3l-NeG" secondAttribute="bottom" id="7YN-1Y-o1b"/>
+                <constraint firstItem="8MW-3l-NeG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8Be-zu-J71"/>
+                <constraint firstAttribute="trailing" secondItem="8MW-3l-NeG" secondAttribute="trailing" id="H3y-WF-xRg"/>
+                <constraint firstItem="8Py-l9-EO7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JLu-1f-W59"/>
+                <constraint firstItem="8Py-l9-EO7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QAA-Ve-ssM"/>
+                <constraint firstAttribute="trailing" secondItem="8Py-l9-EO7" secondAttribute="trailing" id="qYP-By-aDG"/>
+                <constraint firstItem="8MW-3l-NeG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ub7-lv-rK7"/>
+                <constraint firstAttribute="bottom" secondItem="8Py-l9-EO7" secondAttribute="bottom" id="wNU-kM-Mws"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="17" y="155"/>
+        </view>
+    </objects>
+</document>

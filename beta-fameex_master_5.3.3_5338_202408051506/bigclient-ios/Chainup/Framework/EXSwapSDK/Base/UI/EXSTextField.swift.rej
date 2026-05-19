@@ -1,0 +1,26 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSTextField.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSTextField.swift	(rejected hunks)
+@@ -57,12 +57,12 @@ class EXSTextField: EXSBaseField {
+     override func onCreate() {
+         super.onCreate()
+         titleLabel.secondaryRegular()
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
+-        input.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
++        input.backgroundColor = UIColor.ThemeView.bg
+         self.titleMode(enabled: false)
+         self.privacyMode(enabled: false)
+         extraLabel.font = UIFont.ThemeFont.SecondaryRegular
+-        extraLabel.textColor = UIColor.exs_ThemeLabel.colorMedium
++        extraLabel.textColor = UIColor.ThemeLabel.colorMedium
+         
+         privacyBtn.setImage(UIImage.exs_themeImageNamed(imageName: "visible"), for: .normal)
+         privacyBtn.setImage(UIImage.exs_themeImageNamed(imageName: "hide"), for: .selected)
+@@ -81,7 +81,7 @@ class EXSTextField: EXSBaseField {
+     }
+     
+     override func setPlaceHolder(placeHolder: String , font : CGFloat = 14) {
+-        input.exs_setPlaceHolderAtt(placeHolder, color: UIColor.exs_ThemeLabel.colorDark, font: font)
++        input.exs_setPlaceHolderAtt(placeHolder, color: UIColor.ThemeLabel.colorDark, font: font)
+     }
+ 
+     override func setText(text: String) {

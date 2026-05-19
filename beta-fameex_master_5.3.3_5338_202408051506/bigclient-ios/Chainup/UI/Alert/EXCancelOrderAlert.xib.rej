@@ -1,0 +1,44 @@
+diff a/Chainup/UI/Alert/EXCancelOrderAlert.xib b/Chainup/UI/Alert/EXCancelOrderAlert.xib	(rejected hunks)
+@@ -1,9 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
++<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+     <device id="retina4_7" orientation="portrait" appearance="light"/>
+     <dependencies>
+         <deployment identifier="iOS"/>
+-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
++        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+     </dependencies>
+@@ -79,7 +79,7 @@
+                         <constraint firstItem="bIO-v0-Yd3" firstAttribute="height" secondItem="f9S-Q7-m0u" secondAttribute="height" id="jGI-Wp-vuh"/>
+                     </constraints>
+                     <userDefinedRuntimeAttributes>
+-                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
++                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.alertBg"/>
+                     </userDefinedRuntimeAttributes>
+                 </view>
+             </subviews>
+@@ -102,7 +102,7 @@
+             </constraints>
+             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+             <userDefinedRuntimeAttributes>
+-                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
++                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.alertBg"/>
+                 <userDefinedRuntimeAttribute type="number" keyPath="corneradius">
+                     <real key="value" value="8"/>
+                 </userDefinedRuntimeAttribute>
+@@ -112,10 +112,10 @@
+     </objects>
+     <designables>
+         <designable name="bIO-v0-Yd3">
+-            <size key="intrinsicContentSize" width="49" height="21"/>
++            <size key="intrinsicContentSize" width="54" height="34"/>
+         </designable>
+         <designable name="f9S-Q7-m0u">
+-            <size key="intrinsicContentSize" width="49" height="21"/>
++            <size key="intrinsicContentSize" width="54" height="34"/>
+         </designable>
+     </designables>
+ </document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dp_16">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="this is title"
+            android:layout_alignParentLeft="true"
+            style="@style/textstyle_dm_16_color1"
+            />
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textstyle_dm_14_color2"
+            tools:text="Cancel"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_warn_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Please select the mainnet that is consistent with the withdrawal platform for deposit, otherwise your funds may be lost"
+        style="@style/textstyle_dr_12_color2"
+        android:visibility="gone"
+        android:textColor="@color/text_yellow_color"
+        android:layout_marginBottom="@dimen/dp_12"
+        />
+</LinearLayout>
+

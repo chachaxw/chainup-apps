@@ -1,0 +1,596 @@
+package com.yjkj.chainup.new_version.activity.login
+
+import android.os.Bundle
+import androidx.core.hardware.fingerprint.FingerprintManagerCompat
+import android.text.TextUtils
+import android.util.Log
+import android.view.KeyEvent
+import android.view.View
+import android.widget.TextView
+import com.alibaba.android.arouter.facade.annotation.Route
+import com.chainup.kit.views.PublicHeaderKit
+import com.google.gson.Gson
+import com.jaeger.library.StatusBarUtil
+import com.yjkj.chainup.R
+import com.yjkj.chainup.app.AppConstant
+import com.yjkj.chainup.base.NBaseActivity
+import com.yjkj.chainup.bean.RegStep2Bean
+import com.yjkj.chainup.db.service.UserDataService
+import com.yjkj.chainup.extra_service.arouter.ArouterUtil
+import com.yjkj.chainup.manager.ActivityManager
+import com.yjkj.chainup.manager.LanguageUtil
+import com.yjkj.chainup.manager.LoginManager
+import com.yjkj.chainup.net.HttpClient
+import com.yjkj.chainup.net_new.rxjava.NDisposableObserver
+import com.yjkj.chainup.new_version.activity.FindPwd2verifyActivity
+import com.yjkj.chainup.new_version.view.ComVerifyView
+import com.yjkj.chainup.new_version.view.CommonlyUsedButton
+import com.yjkj.chainup.util.*
+import com.yjkj.chainup.wedegit.VerificationCodeView
+import io.reactivex.Observable
+import io.reactivex.Observer
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.Disposable
+import io.reactivex.schedulers.Schedulers
+import kotlinx.android.synthetic.main.activity_new_version_phone_verification.*
+import org.json.JSONObject
+import java.util.concurrent.TimeUnit
+
+/**
+ * @Author lianshangljl
+ * @Date 2023/3/13-10:26 AM
+ * @Email buptjinlong@163.com
+ *@description Mobile phone or email verification or Google verification
+ */
+@Route(path = "/login/newphoneverificationactivity")
+class NewPhoneVerificationActivity : NBaseActivity(), VerificationCodeView.OnCodeFinishListener {
+    override fun setContentView(): Int {
+        return R.layout.activity_new_version_phone_verification
+    }
+
+    var countTotalTime = 90
+
+
+    var verifyType = ComVerifyView.GOOGLE
+
+    /**
+     *Security verification defaults to Google
+     *  Google 0
+     *Mobile 1
+     *Mailbox 2
+     */
+    var statusPosition = 0
+
+    var isLogin = 0
+
+    /**
+     *Account
+     */
+    var account = ""
+
+    /**
+     *Verification code
+     */
+    var code = ""
+
+    /**
+     * token
+     */
+    var token = ""
+
+    /**
+     *Country code
+     */
+    var countryCode = "86"
+
+    /**
+     *Fingerprint
+     */
+    lateinit var fingerprintManager: FingerprintManagerCompat
+    var quicktoken = ""
+
+    companion object {
+        const val GOOGLE_VERIFY = 0
+
+        const val MOBiLE_VERIFY = 1
+
+        const val EMAIL_VERIFY = 2
+
+        const val FINDPWDSTEP2_TYPE = 1
+        const val CONFIRMLOGIN_TYPE = 2
+        const val LOGININFORMATION_TYPE = 3
+        const val GETUSERINFO_TYPE = 4
+        const val CHECKLOCALPWD_TYPE = 5
+        const val REG4STEP2_TYPE = 6
+        const val GETTOKEN4PWD_TYPE = 7
+
+
+        const val SEND_POSITION = "send_position"
+        const val SEND_ISLOGIN = "send_islogin"
+        const val SEND_ACCOUNT = "send_account"
+        const val SEND_TOKEN = "send_token"
+        const val SEND_COUNTRYCODE = "send_countryCode"
+
+        /**
+         *@param account account
+         *@param position 0 Google verification 1 is mobile verification 2 is email verification
+         *@param isLogin is login 0 is login 1 is registration 2 is security verification (forgotten password) 3 is password reset
+         *@param countryCode Country Code
+         */
+
+    }
+
+
+    fun getData() {
+        if (intent != null) {
+            statusPosition = intent.getIntExtra(SEND_POSITION, 0)
+            isLogin = intent.getIntExtra(SEND_ISLOGIN, 0)
+            account = intent.getStringExtra(SEND_ACCOUNT) ?: ""
+            token = intent.getStringExtra(SEND_TOKEN) ?: ""
+            countryCode = intent.getStringExtra(SEND_COUNTRYCODE) ?: ""
+        }
+    }
+
+    override fun onInit(savedInstanceState: Bundle?) {
+        super.onInit(savedInstanceState)
+        setTextContent()
+        initView()
+        verificationcodeview?.setFocusable()
+    }
+
+
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            UserDataService.getInstance().clearToken()
+        }
+        return super.onKeyDown(keyCode, event)
+    }
+
+    fun setTextContent() {
+        tv_send_verification_code?.text = LanguageUtil.getString(this, "login_tip_didSendCode")
+        tv_resend_code?.text = "login_action_resendCode".tr(this)
+        tv_paste?.text = "common_action_paste".tr(this)
+        tv_paste.setTextColor(ColorUtil.getColor(R.color.main_color))
+    }
+
+    override fun initView() {
+        fingerprintManager = FingerprintManagerCompat.from(this)
+        getData()
+        setOnClick()
+
+        verificationcodeview.setOnCodeFinishListener(this)
+
+        when (statusPosition) {
+
+            GOOGLE_VERIFY -> {
+                tv_top_title?.text = LanguageUtil.getString(mActivity, "safety_text_googleAuth")
+                tv_resend_code?.visibility = View.GONE
+                tv_paste?.visibility = View.VISIBLE
+                tv_send_verification_code.setText(LanguageUtil.getString(this, "please_check_with_google_auth"))
+            }
+
+
+            MOBiLE_VERIFY -> {
+                tv_send_verification_code.setText(LanguageUtil.getString(this, "phone_didSendCode_to") + " " + StringUtil.midleReplaceStar(account))
+                tv_top_title?.text = LanguageUtil.getString(mActivity, "personal_tip_inputPhoneCode")
+                verifyType = ComVerifyView.MOBILE
+                when (isLogin) {
+                    0 -> {
+                        sendVerify(ComVerifyView.MOBILE, token4last = token)
+                    }
+
+                    1 -> {
+                        sendCode(ComVerifyView.MOBILE, account, countryCode)
+                    }
+                }
+            }
+
+            EMAIL_VERIFY -> {
+                tv_top_title.text = LanguageUtil.getString(mActivity, "personal_tip_inputMailCode")
+                tv_send_verification_code.setText(LanguageUtil.getString(this, "mail_didSendCode_to") + " " + StringUtil.midleReplaceStar(account))
+                verifyType = ComVerifyView.EMAIL
+                when (isLogin) {
+                    0 -> {
+                        sendVerify(ComVerifyView.EMAIL, token4last = token)
+                    }
+                    1 -> {
+                        sendCode(ComVerifyView.EMAIL, account, countryCode)
+                    }
+                }
+
+            }
+        }
+    }
+
+    fun setOnClick() {
+        title_layout.listener = object : PublicHeaderKit.IOnBackClickListener {
+            override fun onBack(): Boolean {
+                UserDataService.getInstance().clearToken()
+                return super.onBack()
+            }
+        }
+
+
+        tv_resend_code.setOnClickListener {
+            when (verifyType) {
+
+                ComVerifyView.MOBILE -> {
+                    if (isLogin == 1) {
+                        sendCode(ComVerifyView.MOBILE, account, countryCode)
+                    } else {
+                        sendMobileVerifyCode(tv_resend_code)
+                    }
+
+                }
+
+                ComVerifyView.EMAIL -> {
+                    if (isLogin == 1) {
+                        sendCode(ComVerifyView.EMAIL, account, countryCode)
+                    } else {
+                        sendEmailVerifyCode(tv_resend_code)
+                    }
+                }
+            }
+        }
+
+        tv_paste.setOnClickListener {
+            var content = ClipboardUtil.paste(this)
+            if("".equals(content) || content.length<6 || !StringUtil.isNumeric(content)) return@setOnClickListener
+            verificationcodeview?.setFillCode(content)
+        }
+
+    }
+
+    fun setLoginStatus(code: String) {
+        when (isLogin) {
+            0 -> {
+                addDisposable(getMainModel().confirmLogin(code, getType(statusPosition).toString(), token, consumer = MyNDisposableObserver(CONFIRMLOGIN_TYPE)))
+            }
+            1 -> {
+                addDisposable(getMainModel().reg4Step2(account, code, consumer = MyNDisposableObserver(REG4STEP2_TYPE)))
+
+            }
+            2 -> {
+                addDisposable(getMainModel().findPwdStep2(token, code, "", "", "", "", "", consumer = MyNDisposableObserver(FINDPWDSTEP2_TYPE)))
+            }
+            else -> {
+                val bundle = Bundle()
+                bundle.putString("account_num", account)
+                bundle.putInt("index_status", 0)
+                bundle.putString("index_token", token)
+                bundle.putString("index_number_code", "")
+                bundle.putString("param", "")
+                ArouterUtil.navigation("/login/newsetpasswordactivity", bundle)
+            }
+        }
+
+    }
+
+    inner class MyNDisposableObserver(type: Int) : NDisposableObserver(this, true) {
+        var reqType = type
+
+        override fun onResponseSuccess(jsonObject: JSONObject) {
+            var json = jsonObject.optJSONObject("data")
+            when (reqType) {
+                FINDPWDSTEP2_TYPE -> {
+                    var isCertificateNumber = json?.optString("isCertificateNumber") ?: "0"
+                    var isGoogleAuth = json?.optString("isGoogleAuth") ?: "0"
+                    if (isCertificateNumber == "0" && isGoogleAuth == "0") {
+                        /**
+                         *Directly jump to the 'Reset Password' interface
+                         */
+                        val bundle = Bundle()
+                        bundle.putString("account_num", account)
+                        bundle.putInt("index_status", 1)
+                        bundle.putString("index_token", token)
+                        bundle.putString("index_number_code", "")
+                        bundle.putString("param", "")
+                        ArouterUtil.navigation("/login/newsetpasswordactivity", bundle)
+                    } else {
+                        /**
+                         *Verify Google, ID
+                         */
+                        FindPwd2verifyActivity.enter2(token, isCertificateNumber.toInt(), isGoogleAuth.toInt(), account)
+                    }
+                    finish()
+                }
+                CONFIRMLOGIN_TYPE -> {
+                    /**
+                     * {"code":"0","msg":"suc","data":null}
+                     */
+                    UserDataService.getInstance().saveToken(token)
+                    HttpClient.instance.setToken(token)
+                    getMainModel().saveUserInfo()
+                    addDisposable(getMainModel().getUserInfo(MyNDisposableObserver(GETUSERINFO_TYPE)))
+                    quicktoken = json?.optString("quicktoken") ?: ""
+                    UserDataService.getInstance().saveQuickToken(quicktoken)
+                    val loginAreaCodeCache = LoginManager.getInstance().loginAreaCodeCache
+                    if(!"".equals(loginAreaCodeCache)) LoginManager.getInstance().saveSelectCountryCode(loginAreaCodeCache)
+                    /**
+                     *Login successful
+                     */
+
+                    DisplayUtil.showSnackBar(window?.decorView, LanguageUtil.getString(mActivity, "login_tip_loginsuccess"), isSuc = true)
+
+                    ArouterUtil.refreshWebview()
+                    KeyBoardUtils.closeKeyBoard(this@NewPhoneVerificationActivity)
+                    ActivityManager.popAllActFromStack()
+                    finish()
+                }
+                LOGININFORMATION_TYPE -> {
+
+                }
+                GETUSERINFO_TYPE -> {
+                    getUserInfo(json)
+                }
+                CHECKLOCALPWD_TYPE -> {
+
+                }
+                REG4STEP2_TYPE -> {
+                    var numberCode = getType(statusPosition).toString()
+                    val bundle = Bundle()
+                    bundle.putString("account_num", account)
+                    bundle.putInt("index_status", 0)
+                    bundle.putString("index_token", "")
+                    bundle.putString("index_number_code", numberCode)
+                    bundle.putSerializable("param", Gson().fromJson(json.toString(), RegStep2Bean::class.java))
+                    ArouterUtil.navigation("/login/newsetpasswordactivity", bundle)
+                    finish()
+                }
+                GETTOKEN4PWD_TYPE -> {
+
+                }
+            }
+
+
+        }
+
+        override fun onResponseFailure(code: Int, msg: String?) {
+            super.onResponseFailure(code, msg)
+            verificationcodeview.setEmpty()
+        }
+
+    }
+
+
+    fun getType(index: Int): Int {
+        var type = 1
+        when (index) {
+            0 -> {
+                type = 1
+            }
+            1 -> {
+                type = 2
+            }
+            2 -> {
+                type = 3
+            }
+        }
+        return type
+    }
+
+    /**
+     *Obtain user information
+     */
+    private fun getUserInfo(data: JSONObject?) {
+        if (data == null) return
+
+        var gesturePwd = data.optString("gesturePwd") ?: ""
+
+        UserDataService.getInstance().saveData(data)
+
+        var focusView = this.currentFocus
+
+        /**
+         *Determine if a gesture password has been set
+         */
+        if (!TextUtils.isEmpty(gesturePwd) && TextUtils.isEmpty(UserDataService.getInstance().gesturePass)) {
+            UserDataService.getInstance().saveGesturePass(gesturePwd)
+            SoftKeyboardUtil.hideSoftKeyboard(focusView)
+            finish()
+            return
+        } else if (!TextUtils.isEmpty(gesturePwd) || !TextUtils.isEmpty(UserDataService.getInstance().gesturePass)) {
+            SoftKeyboardUtil.hideSoftKeyboard(focusView)
+            finish()
+            return
+        }
+
+
+        /**
+         *Determine if fingerprint is supported
+         */
+        if (fingerprintManager.isHardwareDetected) {
+            /**
+             *Determine whether to input fingerprints
+             */
+            if (fingerprintManager.hasEnrolledFingerprints()) {
+                if (LoginManager.getInstance().fingerprint == 1) {
+                    SoftKeyboardUtil.hideSoftKeyboard(focusView)
+                    finish()
+                    return
+                }
+
+                enter2GUdeGesture(2)
+            } else {
+                quickLogin()
+            }
+        } else {
+            quickLogin()
+        }
+
+
+    }
+
+    private fun enter2GUdeGesture(type: Int, handPwd: String = "") {
+        SoftKeyboardUtil.hideSoftKeyboard(mActivity?.currentFocus)
+
+        var bundle = Bundle()
+        bundle.putInt("guidegesturetype", type)
+        bundle.putString("guidegesturehandpwd", handPwd)
+        ArouterUtil.navigation("/login/guidegesturepwdactivity", bundle)
+        finish()
+    }
+
+    fun quickLogin() {
+        var bundle = Bundle()
+        bundle.putInt("SET_TYPE", 0)
+        bundle.putBoolean("SET_STATUS", false)
+        bundle.putBoolean("SET_LOGINANDSET", true)
+        bundle.putString("SET_TOKEN", "")
+        ArouterUtil.navigation("/login/gesturespasswordactivity", bundle)
+    }
+
+    fun sendVerify(verifyType: Int, accountValidation: Boolean = false, accountContent: String = "", token4last: String = "") {
+        if (!TextUtils.isEmpty(token4last)) {
+            token = token4last
+        }
+        when (verifyType) {
+            ComVerifyView.GOOGLE -> {
+//                ClipboardUtil.paste(et_input_code)
+            }
+
+            ComVerifyView.MOBILE -> {
+                sendMobileVerifyCode(tv_resend_code)
+            }
+
+            ComVerifyView.EMAIL -> {
+                sendEmailVerifyCode(tv_resend_code)
+
+            }
+
+        }
+    }
+
+    fun sendCode(type: Int, account: String, countryCode: String) {
+        this.countryCode = countryCode
+        when (type) {
+            ComVerifyView.MOBILE -> {
+                sendMobileVerifyCodeAccount(tv_resend_code, countryCode, account)
+            }
+            ComVerifyView.EMAIL -> {
+                sendEmailVerifyCodeAccount(tv_resend_code, account)
+            }
+        }
+    }
+
+    private fun sendMobileVerifyCode(view: TextView) {
+        val smsType = AppConstant.MOBILE_LOGIN
+        sendSms(smsType, view, "", token, "")
+
+    }
+
+    private fun sendEmailVerifyCode(view: TextView) {
+        val smsType = AppConstant.EMAIL_LOGIN
+        sendSms(smsType, view, "", token, "")
+    }
+
+    private fun sendMobileVerifyCodeAccount(view: TextView, countryCode: String, account: String) {
+        val smsType = AppConstant.REGISTER_MOBILE
+        sendSms(smsType, view, countryCode, "", account)
+    }
+
+    /**b
+     *Email verification code
+     */
+    private fun sendEmailVerifyCodeAccount(view: TextView, account: String) {
+        val smsType = AppConstant.REGISTER_EMAIL
+        sendSms(smsType, view, "", "", account)
+    }
+
+    override fun onComplete(view: View?, content: String?) {
+        LogUtil.e("onComplete", content.toString())
+        if (content?.length == 6) {
+            setLoginStatus(content.toString())
+        }
+    }
+
+    override fun onTextChange(view: View?, content: String?) {
+
+    }
+
+    private fun sendSmsByType(type: Int, countryCode: String?,
+                              token: String?, account: String?): Observable<Boolean> {
+        return Observable.just(type).flatMap {
+            if (it == AppConstant.MOBILE_LOGIN) {
+                HttpClient.instance.sendMobileCode(otype = it, token = token!!)
+            } else if (it == AppConstant.EMAIL_LOGIN) {
+                HttpClient.instance.sendEmailCode(otype = it, token = token!!)
+            } else if (it == AppConstant.REGISTER_MOBILE && !countryCode.isNullOrEmpty()) {
+                HttpClient.instance.sendMobileCode(countryCode, account!!, it)
+            } else {
+                // REGISTER_EMAIL
+                HttpClient.instance.sendEmailCode(account!!, it)
+            }
+        }.map {
+            error = it.msg
+            it.isSuccess
+        }.compose(RxUtil.applySchedulersToObservable())
+    }
+
+    private fun smsResult(type: Int, view: TextView, isSuccess: Boolean = false) {
+        if (isSuccess) {
+            view.text = LanguageUtil.getString(this@NewPhoneVerificationActivity, when (type) {
+                AppConstant.EMAIL_LOGIN -> "get_code"
+                else -> "login_action_resendCode"
+            })
+            view.isClickable = true
+            view.setTextColor(ColorUtil.getColor(R.color.main_blue))
+        } else {
+            view.isClickable = true
+            view.setTextColor(ColorUtil.getColor(R.color.main_blue))
+            NToastUtil.showTopToastNet(this, false, error)
+        }
+    }
+
+    private fun smsResultTime(view: TextView, t: Long) {
+        view.text = "(${(countTotalTime - t.toInt()).toString() + "s"}) " +
+                LanguageUtil.getString(this@NewPhoneVerificationActivity, "login_action_resendCode")
+        view.setTextColor(ColorUtil.getColor(R.color.normal_text_color))
+    }
+
+    private var error: String = ""
+    private fun sendSms(smsType: Int, view: TextView, countryCode: String?,
+                        token: String?, account: String?) {
+        view.isClickable = false
+        sendSmsByType(smsType, countryCode, token, account)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe({
+                    if (it) {
+                        Observable.interval(1, TimeUnit.SECONDS)
+                                .observeOn(AndroidSchedulers.mainThread())
+                                .subscribe(object : Observer<Long> {
+                                    var disposable: Disposable? = null
+                                    override fun onComplete() {
+                                    }
+
+                                    override fun onError(e: Throwable) {
+                                        Log.d("-----------", "onError ${e.message}")
+                                    }
+
+                                    override fun onSubscribe(d: Disposable) {
+                                        disposable = d
+                                    }
+
+                                    override fun onNext(t: Long) {
+                                        smsResultTime(view, t)
+                                        if (t.toInt() == countTotalTime) {
+                                            smsResult(smsType, view, true)
+                                            disposable?.dispose()
+                                        }
+                                    }
+                                })
+                    } else {
+                        //Sending failed
+                        smsResult(smsType, view)
+                    }
+                    //Success
+                }, {
+                    //Network anomaly
+                    it.printStackTrace()
+                    smsResult(smsType, view)
+                })
+    }
+
+}
+

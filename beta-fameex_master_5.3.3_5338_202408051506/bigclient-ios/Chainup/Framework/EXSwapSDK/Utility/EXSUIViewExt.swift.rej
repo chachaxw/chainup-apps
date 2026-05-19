@@ -1,0 +1,32 @@
+diff a/Chainup/Framework/EXSwapSDK/Utility/EXSUIViewExt.swift b/Chainup/Framework/EXSwapSDK/Utility/EXSUIViewExt.swift	(rejected hunks)
+@@ -98,12 +98,12 @@ extension UIView {
+         set {
+             guard let newValue = newValue else { return }
+             if newValue == kline_up_key {
+-                let isGreen = EXSKLineManager.isGreen()
++                let isGreen = EXKLineManager.isGreen()
+                 if !isGreen {
+                     self.theme_backgroundColor = ThemeColorPicker .pickerWithKeyPath(kline_down_key)
+                 }
+             }else if newValue == kline_down_key {
+-                let isGreen = EXSKLineManager.isGreen()
++                let isGreen = EXKLineManager.isGreen()
+                 if !isGreen {
+                     self.theme_backgroundColor = ThemeColorPicker .pickerWithKeyPath(kline_up_key)
+                 }
+@@ -168,13 +168,13 @@ extension UIView {
+ extension UITextField{
+     
+     //设置placeHolder的富文本
+-    func exs_setPlaceHolderAtt(_ str : String , color : UIColor = UIColor.exs_ThemeLabel.colorDark , font : CGFloat = 14){
++    func exs_setPlaceHolderAtt(_ str : String , color : UIColor = UIColor.ThemeLabel.colorDark , font : CGFloat = 14){
+ //        let placeHolderAtt = NSMutableAttributedString().add(string: str, attrDic: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: font) , NSAttributedString.Key.foregroundColor : color])
+ //        self.attributedPlaceholder = placeHolderAtt
+         exs_setPlaceHolderAtt(str, color: color, font: font, weight: .regular)
+     }
+     
+-    func exs_setPlaceHolderAtt(_ str : String , color : UIColor = UIColor.exs_ThemeLabel.colorDark , font : CGFloat = 14, weight: UIFont.Weight){
++    func exs_setPlaceHolderAtt(_ str : String , color : UIColor = UIColor.ThemeLabel.colorDark , font : CGFloat = 14, weight: UIFont.Weight){
+         let placeHolderAtt = NSMutableAttributedString().exs_add(string: str, attrDic: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: font, weight: weight), NSAttributedString.Key.foregroundColor : color])
+         self.attributedPlaceholder = placeHolderAtt
+     }

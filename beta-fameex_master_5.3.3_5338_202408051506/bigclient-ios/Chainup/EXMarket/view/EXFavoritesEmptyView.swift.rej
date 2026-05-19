@@ -1,0 +1,17 @@
+diff a/Chainup/EXMarket/view/EXFavoritesEmptyView.swift b/Chainup/EXMarket/view/EXFavoritesEmptyView.swift	(rejected hunks)
+@@ -37,10 +37,14 @@ class EXFavoritesEmptyView: UIView {
+         iconImgView.snp.makeConstraints { (make) in
+             make.centerX.equalToSuperview()
+             make.top.equalToSuperview()
++            make.height.width.equalTo(80)
+         }
+         actionBtn.snp.makeConstraints { (make) in
+             make.centerX.equalToSuperview()
+-            make.bottom.equalToSuperview()
++            make.top.equalTo(iconImgView.snp.bottom).offset(12)
++           // make.bottom.equalToSuperview()
++            make.height.equalTo(18)
++            make.width.equalTo(110)
+         }
+         
+     }

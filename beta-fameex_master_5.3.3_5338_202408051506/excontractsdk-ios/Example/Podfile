@@ -1,0 +1,49 @@
+use_frameworks!
+
+platform :ios, '12.0'
+source "ssh://git@stash.dw2nn.com:7999/app/exrepo.git"
+source "https://cdn.cocoapods.org/"
+
+target 'Swap_Example' do
+  pod 'EXKit', :git => "ssh://git@stash.dw2nn.com:7999/app/exkit.git", :commit=>'9220e55f44cb7dc598a8256b1cb6f75be5c5299f' # 1.4.1/release
+  pod 'EXFlutterKLineKit', :path => "/Users/chaiweidong/Desktop/cwd_work/EXFlutterKlineKit"
+  pod 'Swap', :path => '../'
+  pod 'Starscream' , '3.1.1'
+  pod 'HandyJSON','5.0.2'
+  pod 'Alamofire' , '5.0'
+  pod 'YYImage' , '1.0.4'
+  pod 'YYText' , '1.0.7'
+  pod 'YYWebImage' , '1.0.5'
+  pod 'RxSwift' , '6.5.0'
+  pod 'RxCocoa' , '6.5.0'
+  pod 'DeepDiff', '2.3.1'
+  pod 'SnapKit', '5.6.0'
+  pod 'YYImage' , '1.0.4'
+  pod 'YYText' , '1.0.7'
+  pod 'YYWebImage' , '1.0.5'
+  pod 'SwiftEntryKit', '2.0.0'
+  pod 'SwiftEventBus','5.0.0'
+  pod 'MJRefresh', '3.1.15.7'
+  pod 'Moya/RxSwift', '15.0.0'
+  pod 'MJExtension','3.0.15.1'
+  pod 'DZNEmptyDataSet','1.8.1'
+  pod 'Reusable',  '4.1.2'
+  
+  target 'Swap_Tests' do
+    inherit! :search_paths
+  end
+end
+
+pre_install do |installer|
+  Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+end
+
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      end
+    end
+  end
+end

@@ -1,0 +1,99 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSpeedClosePositionSheet.swift b/Chainup/Framework/EXSwapSDK/View/EXSpeedClosePositionSheet.swift	(rejected hunks)
+@@ -21,33 +21,33 @@ class EXSpeedClosePositionSheet: UIView {
+     
+     /// 合约名称
+     lazy var nameLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     /// 合约类型
+     lazy var contractTypeLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.exs_ThemeLabel.colorHighlight, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.ThemeLabel.colorHighlight, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+-        label.backgroundColor = UIColor.exs_ThemeLabel.colorHighlight.withAlphaComponent(0.15)
++        label.backgroundColor = UIColor.ThemeLabel.colorHighlight.withAlphaComponent(0.15)
+         label.layer.cornerRadius = 2
+         label.layer.masksToBounds = true
+         return label
+     }()
+     /// 标题
+     let titleLabel: UILabel = {
+-        let label = UILabel(text: "cp_order_text18".ex_localized(), font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++        let label = UILabel(text: "cp_order_text18".ex_localized(), font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
+         return label
+     }()
+     /// 取消
+     lazy var cancelButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_overview_text44".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.exs_ThemeLabel.colorMedium)
++        let button = UIButton(buttonType: .custom, title: "cp_overview_text44".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.ThemeLabel.colorMedium)
+         button.ext_SetAddTarget(self, #selector(clickCancelButton))
+         return button
+     }()
+     let tipLabel: UILabel = {
+-        let label = UILabel(text: "cp_order_text49".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++        let label = UILabel(text: "cp_order_text49".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .left)
+         return label
+     }()
+     /// 价格
+@@ -59,10 +59,10 @@ class EXSpeedClosePositionSheet: UIView {
+         input.titleLabel.bodyRegular()
+         input.setTitle(title: "cp_overview_text6".ex_localized())
+         input.setPlaceHolder(placeHolder:"   " + "cp_order_text48".ex_localized())
+-        input.input.layer.borderColor = UIColor.exs_ThemeView.border.cgColor
++        input.input.layer.borderColor = UIColor.ThemeView.border.cgColor
+         input.input.layer.borderWidth = 0.5
+         input.input.layer.cornerRadius = 4
+-        input.input.backgroundColor = UIColor.exs_ThemeView.bgIconh
++        input.input.backgroundColor = UIColor.ThemeView.bgIconh
+         input.input.isEnabled = false
+         return input
+     }()
+@@ -74,10 +74,10 @@ class EXSpeedClosePositionSheet: UIView {
+         input.titleLabel.bodyRegular()
+         input.setTitle(title: "cp_overview_text8".ex_localized())
+         input.setExtraText("cp_overview_text9".ex_localized())
+-        input.input.layer.borderColor = UIColor.exs_ThemeView.border.cgColor
++        input.input.layer.borderColor = UIColor.ThemeView.border.cgColor
+         input.input.layer.borderWidth = 0.5
+         input.input.layer.cornerRadius = 4
+-        input.input.backgroundColor = UIColor.exs_ThemeView.bgIconh
++        input.input.backgroundColor = UIColor.ThemeView.bgIconh
+         input.input.isEnabled = false
+         return input
+     }()
+@@ -85,7 +85,7 @@ class EXSpeedClosePositionSheet: UIView {
+     lazy var horLineView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = UIColor.ThemeView.bgGap
+         return view
+     }()
+     /// 平仓
+@@ -98,7 +98,7 @@ class EXSpeedClosePositionSheet: UIView {
+     }()
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         exs_roundCorners(corners: [.topLeft, .topRight], radius: 10)
+         
+         exs_addSubViews([titleLabel,cancelButton,horLineView])
+@@ -183,11 +183,11 @@ class EXSpeedClosePositionSheet: UIView {
+     }
+     /// 点击取消
+     @objc func clickCancelButton() {
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     /// 点击平仓
+     @objc func clickClosePositionButton() {
+-//        EXSAlert.dismissSheet()
++//        EXAlert.dismissSheet()
+ 
+         self.closePositionCallback?()
+       print("clickClosePositionButton")

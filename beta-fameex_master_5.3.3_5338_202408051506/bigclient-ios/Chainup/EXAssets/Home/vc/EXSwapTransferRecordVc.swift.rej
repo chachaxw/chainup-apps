@@ -1,0 +1,10 @@
+diff a/Chainup/EXAssets/Home/vc/EXSwapTransferRecordVc.swift b/Chainup/EXAssets/Home/vc/EXSwapTransferRecordVc.swift	(rejected hunks)
+@@ -139,7 +139,7 @@ extension EXSwapTransferRecordVc {
+             EXContractNetwork.queryUserHasOpenAccount { (hasOpen) in
+ 
+                 if !hasOpen {
+-                    EXSAlert.showFail(msg: "cp_overview_text61".localized())
++                    EXAlert.showFail(msg: "cp_overview_text61".localized())
+ 
+                     self.endRefresh()
+                     return

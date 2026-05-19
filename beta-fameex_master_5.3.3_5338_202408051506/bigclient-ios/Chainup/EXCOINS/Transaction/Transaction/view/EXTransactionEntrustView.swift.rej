@@ -1,0 +1,19 @@
+diff a/Chainup/EXCOINS/Transaction/Transaction/view/EXTransactionEntrustView.swift b/Chainup/EXCOINS/Transaction/Transaction/view/EXTransactionEntrustView.swift	(rejected hunks)
+@@ -138,7 +138,7 @@ class EXTransactionEntrustView: UIView {
+         allCoinPairBg.addSubViews([allPairTitle,allPairSwitch,cancelAllBtn])
+         allCoinPairBg.snp.makeConstraints { make in
+             make.height.equalTo(40)
+-            make.top.equalTo(menuBg.snp_bottom)
++            make.top.equalTo(menuBg.snp.bottom)
+             make.left.equalToSuperview()
+             make.right.equalToSuperview()
+         }
+@@ -148,7 +148,7 @@ class EXTransactionEntrustView: UIView {
+             make.centerY.equalToSuperview()
+         }
+         allPairSwitch.snp.makeConstraints { (make) in
+-            make.left.equalTo(allPairTitle.snp_right).offset(6)
++            make.left.equalTo(allPairTitle.snp.right).offset(6)
+             make.centerY.equalToSuperview()
+         }
+         

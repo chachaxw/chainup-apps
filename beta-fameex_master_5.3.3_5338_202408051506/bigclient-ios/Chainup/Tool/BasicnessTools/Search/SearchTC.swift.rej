@@ -1,0 +1,10 @@
+diff a/Chainup/Tool/BasicnessTools/Search/SearchTC.swift b/Chainup/Tool/BasicnessTools/Search/SearchTC.swift	(rejected hunks)
+@@ -96,7 +96,7 @@ class SearchAddTC : SearchTC{
+ //        btn.extSetCornerRadius(2)
+         btn.extSetAddTarget(self, #selector(clickAddBtn))
+         btn.setImage(UIImage.themeImageNamed(imageName: "quotes_notfavorited"), for: .normal)
+-        btn.setImage(UIImage.themeImageNamed(imageName: "quotes_favorited"), for:.selected)
++        btn.setImage(UIImage.themeImageNamed(imageName: "quotes_favorites"), for:.selected)
+ //        btn.extSetTitle(LanguageTools.getString(key: "add"), 13, UIColor.ThemeView.bg, .normal)
+ //        btn.extSetTitle(LanguageTools.getString(key: "cancel"), 13, UIColor.ThemeLabel.colorLite,.selected)
+         return btn

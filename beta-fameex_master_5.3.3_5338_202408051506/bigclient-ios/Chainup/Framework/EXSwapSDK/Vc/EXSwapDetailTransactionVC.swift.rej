@@ -1,0 +1,51 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSwapDetailTransactionVC.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSwapDetailTransactionVC.swift	(rejected hunks)
+@@ -43,7 +43,7 @@ class EXSwapDetailTransactionVC : EXSNavCustomVC {
+         if  shouldShowMemoDesc(), let memoDisplay = self.orderModel?.memoDisplay {
+             
+             let view = UIView()
+-            view.backgroundColor = UIColor.exs_ThemeNav.bg
++            view.backgroundColor = UIColor.ThemeNav.bg
+             let btn = UIButton(buttonType: .custom, image: UIImage.init(named: "assets_safetyadvice"))
+             btn.setTitle(" " + memoDisplay, for: .normal)
+             btn.setTitleColor(UIColor.extColorWithHex("3078ff"), for: .normal)
+@@ -224,11 +224,11 @@ extension EXSwapDetailTransactionVC : UITableViewDelegate, UITableViewDataSource
+         if isStopPLSection(section: indexPath.section) {
+             if indexPath.row == 0 {
+                 let cell = UITableViewCell.init(style: .value1, reuseIdentifier: "")
+-                cell.backgroundColor = UIColor.exs_ThemeView.bg
++                cell.backgroundColor = UIColor.ThemeView.bg
+                 let label = UILabel()
+                 cell.addSubview(label)
+                 label.font = UIFont.ThemeFont.SecondaryRegular
+-                label.textColor = UIColor.exs_ThemeLabel.colorMedium
++                label.textColor = UIColor.ThemeLabel.colorMedium
+                 label.text = "时间"
+                 label.snp.makeConstraints({ (make) in
+                     make.leading.equalTo(16)
+@@ -279,7 +279,7 @@ extension EXSwapDetailTransactionVC : UITableViewDelegate, UITableViewDataSource
+     }
+     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+         let view = UIView()
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
+        
+         view.exs_addSubViews([label])
+        
+@@ -289,7 +289,7 @@ extension EXSwapDetailTransactionVC : UITableViewDelegate, UITableViewDataSource
+         }
+         /// 横线
+         let horLineView = UIView()
+-        horLineView.backgroundColor = UIColor.exs_ThemeView.bgGap
++        horLineView.backgroundColor = UIColor.ThemeView.bgGap
+         
+         view.addSubview(horLineView)
+         horLineView.snp.makeConstraints { (make) in
+@@ -335,7 +335,7 @@ class EXSwapDetailTitleView : UIView {
+     }()
+     /// 合约名称
+     lazy var nameLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
+         return label
+     }()
+     /// 成交均价

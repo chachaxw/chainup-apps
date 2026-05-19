@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EXChargeHistoryCell" id="KGk-i7-Jjw" customClass="EXChargeHistoryCell" customModule="Chainup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ezp-2D-xWs">
+                        <rect key="frame" x="15" y="0.0" width="384" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023/01/15 15:00:34" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyg-f7-3MU">
+                                <rect key="frame" x="0.0" y="0.0" width="161.33333333333334" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorMedium"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7k-Zw-VbL">
+                                <rect key="frame" x="161.33333333333334" y="0.0" width="142.00000000000003" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorLite"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已完成" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ta-27-UWR">
+                                <rect key="frame" x="303.33333333333331" y="0.0" width="80.666666666666686" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorMedium"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="s7k-Zw-VbL" firstAttribute="width" secondItem="Ezp-2D-xWs" secondAttribute="width" multiplier="0.37" id="aIo-eH-1Ju"/>
+                            <constraint firstItem="Wyg-f7-3MU" firstAttribute="width" secondItem="Ezp-2D-xWs" secondAttribute="width" multiplier="0.42" id="jpV-tD-keV"/>
+                            <constraint firstItem="7ta-27-UWR" firstAttribute="width" secondItem="Ezp-2D-xWs" secondAttribute="width" multiplier="0.21" id="zUe-vo-QRG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                        </userDefinedRuntimeAttributes>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20R-pJ-qo7">
+                        <rect key="frame" x="15" y="49.666666666666664" width="399" height="0.3333333333333357"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="XID-oL-eWE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.seperator"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ezp-2D-xWs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CqO-e0-rqG"/>
+                    <constraint firstAttribute="trailing" secondItem="Ezp-2D-xWs" secondAttribute="trailing" constant="15" id="G34-vI-MDH"/>
+                    <constraint firstAttribute="bottom" secondItem="20R-pJ-qo7" secondAttribute="bottom" id="IOr-Na-4dA"/>
+                    <constraint firstAttribute="trailing" secondItem="20R-pJ-qo7" secondAttribute="trailing" id="olp-sQ-kMY"/>
+                    <constraint firstItem="Ezp-2D-xWs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="uAn-Qc-ZQk"/>
+                    <constraint firstItem="20R-pJ-qo7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="x2D-dT-Abt"/>
+                    <constraint firstAttribute="bottom" secondItem="Ezp-2D-xWs" secondAttribute="bottom" id="xit-WL-0AC"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="Wyg-f7-3MU" id="WDS-Dg-sKX"/>
+                <outlet property="stateLabel" destination="7ta-27-UWR" id="xAv-Et-Bfy"/>
+                <outlet property="volumeLabel" destination="s7k-Zw-VbL" id="TmH-1E-fHu"/>
+            </connections>
+            <point key="canvasLocation" x="100.00000000000001" y="-67.663043478260875"/>
+        </tableViewCell>
+    </objects>
+</document>

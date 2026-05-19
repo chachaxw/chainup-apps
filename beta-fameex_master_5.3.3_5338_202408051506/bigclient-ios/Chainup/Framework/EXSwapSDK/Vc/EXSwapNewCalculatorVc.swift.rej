@@ -1,0 +1,18 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSwapNewCalculatorVc.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSwapNewCalculatorVc.swift	(rejected hunks)
+@@ -33,7 +34,7 @@ class EXSwapNewCalculatorVc: ContentBaseViewController {
+             make.trailing.equalToSuperview()
+             make.centerY.equalTo(navCustomView.popBtn).offset(3)
+             make.height.equalTo(35)
+-            make.leading.equalTo(100)
++            make.width.equalTo(150)
+         }
+     }
+    
+@@ -46,7 +47,6 @@ class EXSwapNewCalculatorVc: ContentBaseViewController {
+        
+         listContainerView.frame = CGRect(x: 0, y: 50, width: view.bounds.size.width, height: view.bounds.size.height - 50)
+         contractMenuBtn.selectedAtIndex(viewModel.currentSelectMenuIndex)
+-        contractMenuBtn.selectedAtIndex(viewModel.currentSelectMenuIndex)
+         self.setDatasourceTitles(["cp_calculator_text2".ex_localized(), "cp_calculator_text4".ex_localized(), "cp_calculator_text3".ex_localized()])
+ 
+         controllers.append(profitVc)

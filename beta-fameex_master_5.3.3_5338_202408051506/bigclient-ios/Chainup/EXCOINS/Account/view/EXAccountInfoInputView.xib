@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXAccountInfoInputView" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="TDf-Eb-18R" id="YE4-ZS-n7S"/>
+                <outlet property="arrowImageView" destination="m6z-NL-4GV" id="EUP-k6-tPs"/>
+                <outlet property="bg" destination="iN0-l3-epB" id="jtd-j3-6gi"/>
+                <outlet property="bg1" destination="Zfh-0e-d6G" id="7fS-4i-WAv"/>
+                <outlet property="clearButton" destination="9G9-8c-NTy" id="yW4-yN-OLS"/>
+                <outlet property="codeLabel" destination="5zO-3G-H10" id="muh-oA-7Pi"/>
+                <outlet property="countryLabel" destination="2EX-AD-jwy" id="YVh-Lk-IE2"/>
+                <outlet property="eyebutton" destination="5Y1-sW-0RI" id="hdC-pd-vUw"/>
+                <outlet property="hintLine" destination="Zfh-0e-d6G" id="7F8-vA-SHW"/>
+                <outlet property="inputTextField" destination="hSY-hQ-uz1" id="xDv-yg-9SZ"/>
+                <outlet property="leftSelectView" destination="Ny2-Ny-nJq" id="jPm-dg-ZoS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="546" height="173"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9r-99-uI5">
+                    <rect key="frame" x="0.0" y="0.0" width="546" height="173"/>
+                    <subviews>
+                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ny2-Ny-nJq">
+                            <rect key="frame" x="-24" y="0.0" width="24" height="173"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EX-AD-jwy" userLabel="countryLabel">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="173"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zO-3G-H10" userLabel="codeLabel">
+                                    <rect key="frame" x="8" y="0.0" width="0.0" height="173"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m6z-NL-4GV">
+                                    <rect key="frame" x="16" y="0.0" width="0.0" height="173"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8M-nx-OM1">
+                                    <rect key="frame" x="24" y="0.0" width="0.0" height="173"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" id="89i-xM-kWI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hSY-hQ-uz1">
+                            <rect key="frame" x="0.0" y="0.0" width="546" height="173"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleC" value="label.colorLite"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="751" horizontalCompressionResistancePriority="751" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="eXs-pb-fwG">
+                            <rect key="frame" x="546" y="0.0" width="0.0" height="173"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a07-Nk-m7X">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="173"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" id="Fly-Ws-Y6B"/>
+                                    </constraints>
+                                </view>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G9-8c-NTy" userLabel="Clear">
+                                    <rect key="frame" x="0.0" y="0.0" width="20" height="173"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="64r-PT-CRc"/>
+                                    </constraints>
+                                    <state key="normal" image="delete_daytime"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeIcon" value="login_del"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Y1-sW-0RI" userLabel="Eye">
+                                    <rect key="frame" x="0.0" y="0.0" width="20" height="173"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="smf-bL-Jpt"/>
+                                    </constraints>
+                                    <state key="normal" image="visible_daytime"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeIcon" value="hide"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDf-Eb-18R">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="173"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfh-0e-d6G">
+                    <rect key="frame" x="0.0" y="172" width="546" height="1"/>
+                    <color key="backgroundColor" red="0.92941176470588238" green="0.93725490196078431" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="lPd-qw-e8J"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="textfield.seperator"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="V9r-99-uI5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NVA-LH-6wZ"/>
+                <constraint firstItem="V9r-99-uI5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QAz-cM-d5V"/>
+                <constraint firstAttribute="trailing" secondItem="V9r-99-uI5" secondAttribute="trailing" id="V4g-xw-qJO"/>
+                <constraint firstAttribute="bottom" secondItem="V9r-99-uI5" secondAttribute="bottom" id="hmE-xx-oZG"/>
+                <constraint firstAttribute="trailing" secondItem="Zfh-0e-d6G" secondAttribute="trailing" id="m3N-bb-qYD"/>
+                <constraint firstAttribute="bottom" secondItem="Zfh-0e-d6G" secondAttribute="bottom" id="tLw-5f-7F0"/>
+                <constraint firstItem="Zfh-0e-d6G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uhP-cu-uVe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-172.46376811594203" y="252.79017857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete_daytime" width="14" height="14"/>
+        <image name="visible_daytime" width="16" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

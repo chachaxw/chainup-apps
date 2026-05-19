@@ -1,0 +1,118 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapAlertView/EXSwapCarculateAlertView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapAlertView/EXSwapCarculateAlertView.swift	(rejected hunks)
+@@ -16,7 +16,7 @@ class EXSwapCarculateAlertView: UIView {
+     init(frame: CGRect ,type: Int) {
+         super.init(frame: frame)
+         self.type = type
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         self.layer.cornerRadius = 4
+         if type == 0 {
+             exs_addSubViews([titleLabel,
+@@ -169,7 +169,7 @@ class EXSwapCarculateAlertView: UIView {
+     }
+         
+     @objc func dismiss(){
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     
+     required init?(coder: NSCoder) {
+@@ -178,7 +178,7 @@ class EXSwapCarculateAlertView: UIView {
+     
+     lazy var mainView : UIView = {
+         let view = UIView()
+-        view.backgroundColor = UIColor.exs_ThemeView.bg
++        view.backgroundColor = UIColor.ThemeView.bg
+         self.addSubview(view)
+         return view
+     }()
+@@ -186,69 +186,69 @@ class EXSwapCarculateAlertView: UIView {
+     lazy var titleLabel : UILabel = {
+         let label = UILabel(text: "cp_calculator_text12".ex_localized(),
+                             font: UIFont.ThemeFont.HeadBold,
+-                            textColor: UIColor.exs_ThemeLabel.colorLite,
++                            textColor: UIColor.ThemeLabel.colorLite,
+                             alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     lazy var depositLabel : UILabel = {
+-        let label = UILabel(text: "cp_calculator_text13".ex_localized(), font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
++        let label = UILabel(text: "cp_calculator_text13".ex_localized(), font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     lazy var positionLabel : UILabel = {
+-        let label = UILabel(text: "cp_content_text21".ex_localized(), font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
++        let label = UILabel(text: "cp_content_text21".ex_localized(), font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     lazy var resultLabel : UILabel = {
+-        let label = UILabel(text: "cp_calculator_text14".ex_localized(), font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
++        let label = UILabel(text: "cp_calculator_text14".ex_localized(), font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     lazy var resultLabel2 : UILabel = {
+-        let label = UILabel(text: "cp_calculator_text15".ex_localized(), font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
++        let label = UILabel(text: "cp_calculator_text15".ex_localized(), font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     lazy var depositNumber : UILabel = {
+-        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: NSTextAlignment.right)
++        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.right)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     lazy var positionNumber : UILabel = {
+-        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: NSTextAlignment.right)
++        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.right)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     lazy var unit1 : UILabel = {
+-        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: NSTextAlignment.right)
++        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.right)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     lazy var resultNum1 : UILabel = {
+-        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: NSTextAlignment.right)
++        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.right)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     lazy var resultNum2 : UILabel = {
+-        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: NSTextAlignment.right)
++        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyMedium, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.right)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+ 
+     private lazy var confirm: UIButton = {
+         let button = UIButton(buttonType: .custom, title: "cp_extra_text28".ex_localized(), titleFont: UIFont.ThemeFont.HeadBold, titleColor: UIColor.white)
+-        button.ext_setBackgroundColor(backgroundColor: UIColor.exs_ThemeBtn.highlight, state: .normal)
++        button.ext_setBackgroundColor(backgroundColor: UIColor.ThemeBtn.highlight, state: .normal)
+         button.layer.cornerRadius = 4
+         button.layer.masksToBounds = true
+         button.ext_SetAddTarget(self, #selector(clickConfirm))
+@@ -257,7 +257,7 @@ class EXSwapCarculateAlertView: UIView {
+     
+     
+     @objc func clickConfirm(_ btn : UIButton){
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     
+     // MARK:- interface

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_facetoface_layout"
+        android:layout_width="315dp"
+        android:layout_height="416dp">
+
+        <ImageView
+            android:id="@+id/iv_face_toface_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/facetoface_bg" />
+        <TextView
+            android:id="@+id/tv_invite_poster_tips"
+            android:layout_width="wrap_content"
+            android:text="@string/invite_poster_tips"
+            style="@style/textstyle_dm_10_color1"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginTop="58dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeStepGranularity="1sp"
+            android:maxLines="2"/>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_face_to_face"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tv_invite_poster_tips"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            app:riv_corner_radius="@dimen/dp_6"
+          />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_shut_down"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_35"
+        android:src="@drawable/shutdown" />
+
+</LinearLayout>

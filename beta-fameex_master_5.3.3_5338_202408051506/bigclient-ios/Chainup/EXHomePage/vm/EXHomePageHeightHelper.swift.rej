@@ -1,0 +1,10 @@
+diff a/Chainup/EXHomePage/vm/EXHomePageHeightHelper.swift b/Chainup/EXHomePage/vm/EXHomePageHeightHelper.swift	(rejected hunks)
+@@ -9,7 +9,7 @@
+ import UIKit
+ 
+ class EXHomePageHeightHelper: NSObject {
+-    static let rankingH:CGFloat = 48.0
++    static let rankingH:CGFloat = 56.0
+     static let rankingMenu:CGFloat = 44.0
+     static let rankingHeader:CGFloat = 22.0
+ 

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_marker_item"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_10"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless">
+
+    <LinearLayout
+        android:id="@+id/ll_main_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_10"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <View
+            android:layout_width="@dimen/dp_3"
+            android:layout_height="@dimen/dp_20"
+            android:background="@color/main_blue" />
+
+        <TextView
+            android:id="@+id/ll_title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:text="@string/common_text_halveZone"
+            android:textColor="@color/normal_text_color"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        app:layout_constraintTop_toBottomOf="@+id/ll_main_area"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_coin_name"
+                style="@style/textStyle_title_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="LTC" />
+
+            <TextView
+                android:id="@+id/tv_market_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_2"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_coin_name"
+                app:layout_constraintLeft_toRightOf="@id/tv_coin_name"
+                style="@style/textstyle_dm_12_color2"
+                tools:text="/ETH" />
+
+            <com.yjkj.chainup.new_version.view.CustomTagView
+                android:id="@+id/ctv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5" />
+        </LinearLayout>
+        <!--24H交易量-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_market_collect"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:visibility="visible"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_public_favorites_small" />
+            <TextView
+                android:id="@+id/tv_volume"
+                style="@style/textstyle_dr_12_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="24H量 0.0"
+                tools:text="24H量 12345789299" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tv_rose"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_close_price"
+                style="@style/textStyle_title_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:singleLine="true"
+                tools:text="5734.580000" />
+
+            <TextView
+                android:id="@+id/tv_close_price_rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                style="@style/textstyle_dr_12_color2"
+                tools:text="¥3.14" />
+        </RelativeLayout>
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/tv_rose"
+            style="@style/textStyle_while_14"
+            android:layout_width="@dimen/dp_78"
+            android:layout_height="@dimen/dp_32"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="28dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingLeft="@dimen/dp_2"
+            android:paddingRight="@dimen/dp_2"
+            android:textStyle="normal"
+            app:stv_corner="@dimen/dp_4"
+            tools:text="-16.68%" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

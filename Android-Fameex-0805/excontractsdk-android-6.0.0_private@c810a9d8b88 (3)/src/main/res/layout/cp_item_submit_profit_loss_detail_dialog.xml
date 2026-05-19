@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:layout_marginRight="@dimen/dp_20"
+    android:background="@drawable/cp_bg_item_dialog_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/tv_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="@string/cp_extra_text66"
+                android:visibility="visible"
+                style="@style/textstyle_dm_18_bold_color1"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_profit_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="市价止盈"
+                    style="@style/textstyle_dm_14_color1"
+                    />
+                <TextView
+                    android:id="@+id/tv_profit_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="当市场价格到达 {止盈触发价} ，系统将为你提交一个市价单：{数量}{张/币}@市价，市价单的成交价格完全取决于当时的盘口，大仓位请分批止盈！"
+                    style="@style/textstyle_dr_12_color2"
+                    />
+
+                <View
+                    android:id="@+id/tv_profit_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/line_color"
+                    android:layout_marginTop="@dimen/dp_12"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_loss_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="市价止损"
+                    android:layout_marginTop="@dimen/dp_16"
+                    style="@style/textstyle_dm_14_color1"
+                    />
+                <TextView
+                    android:id="@+id/tv_loss_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="当市场价格到达 {止盈触发价} ，系统将为你提交一个市价单：{数量}{张/币}@市价，市价单的成交价格完全取决于当时的盘口，大仓位请分批止盈！"
+                    style="@style/textstyle_dr_12_color2"
+                    />
+
+                <View
+                    android:id="@+id/tv_loss_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/line_color"
+                    android:layout_marginTop="@dimen/dp_12"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_not_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginTop="16dp">
+
+                    <CheckBox
+                        android:id="@+id/cb_not_again"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/cp_trade_check_selector"
+                        android:checked="false" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cp_overview_text57"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        style="@style/textstyle_dm_12_color2"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:orientation="vertical"
+            android:layout_below="@+id/tv_content_layout"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_below="@+id/tv_content_layout"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_select_button_blue"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="@string/cp_calculator_text29"
+                style="@style/textstyle_dm_14_color1"
+                />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cp_overview_text56"
+                android:textColor="@color/main_color"
+                android:layout_below="@id/tv_confirm_btn"
+                style="@style/textstyle_dm_14_color1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_12"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

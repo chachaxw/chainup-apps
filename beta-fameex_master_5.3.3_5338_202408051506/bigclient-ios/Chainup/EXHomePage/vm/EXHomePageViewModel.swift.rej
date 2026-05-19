@@ -1,0 +1,10 @@
+diff a/Chainup/EXHomePage/vm/EXHomePageViewModel.swift b/Chainup/EXHomePage/vm/EXHomePageViewModel.swift	(rejected hunks)
+@@ -69,7 +69,7 @@ struct EXHomePageViewModel {
+                 if homePageModel.noticeInfoList.count > 0 {
+                     rowTypes.append(.notice)
+                 }else {
+-//                    rowTypes.append(.gap)
++                    rowTypes.append(.gap)
+                 }
+ 
+                 if homePageModel.cmsAppDataList.count > 0 {

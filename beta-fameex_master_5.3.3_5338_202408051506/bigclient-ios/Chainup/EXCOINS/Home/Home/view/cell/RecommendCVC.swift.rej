@@ -1,0 +1,28 @@
+diff a/Chainup/EXCOINS/Home/Home/view/cell/RecommendCVC.swift b/Chainup/EXCOINS/Home/Home/view/cell/RecommendCVC.swift	(rejected hunks)
+@@ -22,7 +22,7 @@ class RecommendCVC: UICollectionViewCell {
+         label.extUseAutoLayout()
+         label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+         label.textColor = UIColor.ThemeLabel.colorLite
+-        label.font = UIFont.ThemeFont.MinimumRegular
++        label.font = UIFont.ThemeFont.SecondaryRegular
+         return label
+     }()
+     
+@@ -39,7 +39,7 @@ class RecommendCVC: UICollectionViewCell {
+         let label = UILabel()
+         label.extUseAutoLayout()
+         label.text = "--"
+-        label.font = UIFont.ThemeFont.MinimumRegular
++        label.font = UIFont.ThemeFont.SecondaryRegular
+         label.textColor = UIColor.ThemeLabel.colorMedium
+         return label
+     }()
+@@ -51,7 +51,7 @@ class RecommendCVC: UICollectionViewCell {
+         label.layoutIfNeeded()
+         label.text = "--"
+         label.textAlignment = .right
+-        label.font = UIFont.ThemeFont.MinimumRegular
++        label.font = UIFont.ThemeFont.SecondaryRegular
+         label.textColor = UIColor.ThemeLabel.colorMedium
+         return label
+     }()

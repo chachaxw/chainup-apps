@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXDatePicker" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtn" destination="COv-my-LKA" id="ZM0-P7-phi"/>
+                <outlet property="confirmBtn" destination="8h7-5x-3zW" id="oJr-kv-QGO"/>
+                <outlet property="datePickerView" destination="69u-Hc-yHY" id="kIn-Og-djT"/>
+                <outlet property="iphonexBottom" destination="Spd-GC-1DM" id="FP2-1C-FjK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="338"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="69u-Hc-yHY">
+                    <rect key="frame" x="0.0" y="44" width="375" height="260"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="260" id="Rvc-fX-I5z"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                    </userDefinedRuntimeAttributes>
+                </datePicker>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-TW-RnU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h7-5x-3zW">
+                            <rect key="frame" x="306" y="5" width="54" height="34"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="confirmBtnAction:" destination="-1" eventType="touchUpInside" id="xJp-nL-A1Y"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COv-my-LKA">
+                            <rect key="frame" x="15" y="5" width="54" height="34"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="btnCancelAction:" destination="-1" eventType="touchUpInside" id="LmH-HV-FKd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="COv-my-LKA" firstAttribute="leading" secondItem="fXR-TW-RnU" secondAttribute="leading" constant="15" id="6Qp-tv-BZ8"/>
+                        <constraint firstAttribute="trailing" secondItem="8h7-5x-3zW" secondAttribute="trailing" constant="15" id="Aub-9Q-6Fk"/>
+                        <constraint firstAttribute="height" constant="44" id="MwB-WW-y5m"/>
+                        <constraint firstItem="8h7-5x-3zW" firstAttribute="centerY" secondItem="fXR-TW-RnU" secondAttribute="centerY" id="RiY-fE-agk"/>
+                        <constraint firstItem="COv-my-LKA" firstAttribute="centerY" secondItem="fXR-TW-RnU" secondAttribute="centerY" id="iEn-Ve-6KG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CD8-mU-XH2">
+                    <rect key="frame" x="0.0" y="304" width="375" height="34"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Spd-GC-1DM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CD8-mU-XH2" secondAttribute="bottom" id="BbO-Zu-gEC"/>
+                <constraint firstItem="69u-Hc-yHY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CDa-k3-dUc"/>
+                <constraint firstItem="CD8-mU-XH2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Dho-DO-iGw"/>
+                <constraint firstItem="fXR-TW-RnU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KSz-ld-hzz"/>
+                <constraint firstItem="69u-Hc-yHY" firstAttribute="top" secondItem="fXR-TW-RnU" secondAttribute="bottom" id="L29-8V-f1E"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fXR-TW-RnU" secondAttribute="trailing" id="VfY-XH-Dwe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CD8-mU-XH2" secondAttribute="trailing" id="dYF-0V-vtQ"/>
+                <constraint firstItem="CD8-mU-XH2" firstAttribute="top" secondItem="69u-Hc-yHY" secondAttribute="bottom" id="kzp-NP-cDX"/>
+                <constraint firstAttribute="trailing" secondItem="69u-Hc-yHY" secondAttribute="trailing" id="lcI-V9-kTq"/>
+                <constraint firstItem="fXR-TW-RnU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mEl-pl-B96"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="4" y="145.72713643178412"/>
+        </view>
+    </objects>
+</document>

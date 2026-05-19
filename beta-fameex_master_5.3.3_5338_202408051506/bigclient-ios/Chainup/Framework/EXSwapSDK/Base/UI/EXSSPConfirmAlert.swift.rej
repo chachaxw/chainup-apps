@@ -1,0 +1,57 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSSPConfirmAlert.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSSPConfirmAlert.swift	(rejected hunks)
+@@ -26,28 +26,28 @@ class EXSSPConfirmAlert:EXSNibBaseView {
+     override func onCreate() {
+         super.onCreate()
+         
+-        titleLabel.textColor = UIColor.exs_ThemeLabel.colorLite
++        titleLabel.textColor = UIColor.ThemeLabel.colorLite
+         titleLabel.font = UIFont.ThemeFont.HeadMedium
+         titleLabel.text = "cp_extra_text66".ex_localized()
+         setRemindBtn.setImage(UIImage.exs_themeImageNamed(imageName: "contract_checkbox_default"), for: .normal)
+         
+         setRemindBtn.setImage(UIImage.exs_themeImageNamed(imageName: "Checkbox_Focus"), for: .selected)
+         setRemindBtn.setTitle("  " + "cp_overview_text57".ex_localized(), for: .normal)
+-        setRemindBtn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        setRemindBtn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         setRemindBtn.ext_SetAddTarget(self, #selector(clickNextComfirmButton))
+-        firstTitleLabel.textColor = UIColor.exs_ThemeLabel.colorLite
+-        firstMsgLabel.textColor = UIColor.exs_ThemeLabel.colorMedium
+-        secondTitleLabel.textColor = UIColor.exs_ThemeLabel.colorLite
+-        secondMsgLabel.textColor = UIColor.exs_ThemeLabel.colorMedium
+-        rightButton.backgroundColor = UIColor.exs_ThemeLabel.colorHighlight
++        firstTitleLabel.textColor = UIColor.ThemeLabel.colorLite
++        firstMsgLabel.textColor = UIColor.ThemeLabel.colorMedium
++        secondTitleLabel.textColor = UIColor.ThemeLabel.colorLite
++        secondMsgLabel.textColor = UIColor.ThemeLabel.colorMedium
++        rightButton.backgroundColor = UIColor.ThemeLabel.colorHighlight
+         rightButton.setTitleColor(UIColor.white, for: .normal)
+         rightButton.layer.cornerRadius = 4
+         rightButton.layer.masksToBounds = true
+         
+         leftButton.layer.borderWidth = 0.5
+-        leftButton.layer.borderColor = UIColor.exs_ThemeLabel.colorHighlight.cgColor
++        leftButton.layer.borderColor = UIColor.ThemeLabel.colorHighlight.cgColor
+         leftButton.layer.cornerRadius = 4
+-        leftButton.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .normal)
++        leftButton.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .normal)
+         
+         leftButton.setTitle("cp_overview_text56".ex_localized(), for: .normal)
+         rightButton.setTitle("cp_calculator_text16".ex_localized(), for: .normal)
+@@ -57,7 +57,7 @@ class EXSSPConfirmAlert:EXSNibBaseView {
+     }
+     
+     @IBAction func clickCancel(_ sender: Any) {
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     var confimModelCallBack:(() -> ())?
+ 
+@@ -66,7 +66,7 @@ class EXSSPConfirmAlert:EXSNibBaseView {
+         if setRemindBtn.isSelected {
+             EXStoreData.setTPSLComfirmSwapAlertStatus(false)
+         }
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+         self.confimModelCallBack?()
+     }
+     

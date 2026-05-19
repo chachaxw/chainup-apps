@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Network/Models/EXContractDefine.swift b/Chainup/Framework/EXSwapSDK/Network/Models/EXContractDefine.swift	(rejected hunks)
+@@ -18,7 +18,7 @@ extension String {
+      
+      let attributes: [NSAttributedString.Key: Any] = [
+          .font: UIFont.ThemeFont.BodyMedium,
+-         .foregroundColor: UIColor.exs_ThemeLabel.colorMedium,
++         .foregroundColor: UIColor.ThemeLabel.colorMedium,
+      ]
+      
+      使用如下

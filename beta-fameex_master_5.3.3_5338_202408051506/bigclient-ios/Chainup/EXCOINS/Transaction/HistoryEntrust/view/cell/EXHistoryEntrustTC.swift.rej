@@ -1,0 +1,10 @@
+diff a/Chainup/EXCOINS/Transaction/HistoryEntrust/view/cell/EXHistoryEntrustTC.swift b/Chainup/EXCOINS/Transaction/HistoryEntrust/view/cell/EXHistoryEntrustTC.swift	(rejected hunks)
+@@ -140,7 +140,7 @@ class EXHistoryEntrustTC: UITableViewCell {
+             make.left.equalToSuperview()
+             make.top.equalToSuperview()
+             make.right.equalTo(nameLabel.snp.right)
+-            make.bottom.equalTo(volumView.snp_top)
++            make.bottom.equalTo(volumView.snp.top)
+         }
+         
+         timeLabel.snp.makeConstraints { (make) in

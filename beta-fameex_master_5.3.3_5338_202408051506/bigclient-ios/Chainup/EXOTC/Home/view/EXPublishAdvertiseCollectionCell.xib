@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EXPublishAdvertiseCollectionCell" customModule="Chainup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="104"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KVu-5y-wqo">
+                        <rect key="frame" x="0.0" y="44.5" width="50" height="15"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHK-ah-tc5">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="15"/>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agW-FH-GmZ" userLabel="imageBtn">
+                                <rect key="frame" x="35" y="0.0" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="ATd-zS-86b"/>
+                                    <constraint firstAttribute="height" constant="15" id="l7E-z4-LhL"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="KVu-5y-wqo" firstAttribute="width" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="width" id="Zzb-PE-TtB"/>
+                <constraint firstItem="KVu-5y-wqo" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="w3W-7M-Gqt"/>
+            </constraints>
+            <size key="customSize" width="600" height="104"/>
+            <connections>
+                <outlet property="backView" destination="KVu-5y-wqo" id="FNO-Wo-y5A"/>
+                <outlet property="chooseBtn" destination="hHK-ah-tc5" id="x2q-9v-otg"/>
+                <outlet property="imageBtn" destination="agW-FH-GmZ" id="Bgg-XO-niJ"/>
+            </connections>
+            <point key="canvasLocation" x="95.652173913043484" y="120.53571428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

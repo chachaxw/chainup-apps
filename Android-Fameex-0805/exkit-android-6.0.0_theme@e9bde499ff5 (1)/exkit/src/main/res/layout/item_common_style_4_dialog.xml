@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--style = 4-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="312dp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/dialog_bg_color"
+    app:cardCornerRadius="@dimen/dp_12">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/tv_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_24">
+            <ImageView
+                android:id="@+id/iv_ilus"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                tools:src="@mipmap/ic_launcher"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_horizontal"
+                style="@style/textstyle_dm_16_bold_color1"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_20"
+                tools:text="温馨提示" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:gravity="start"
+                android:lineSpacingExtra="3dp"
+                style="@style/textstyle_dr_14_color2"
+                tools:text="这是文案这是文案这是文案这是文案这是文案这是文案这是文案这是文案这是文案这是文案这是文案" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_content_layout"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/tv_confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_8"
+                />
+
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/tv_cancel_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                app:kk_buttonStyle="other"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

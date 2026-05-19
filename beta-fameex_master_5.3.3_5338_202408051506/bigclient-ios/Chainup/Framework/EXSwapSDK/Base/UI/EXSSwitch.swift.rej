@@ -1,0 +1,25 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSSwitch.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSSwitch.swift	(rejected hunks)
+@@ -10,10 +10,10 @@ import UIKit
+ 
+ class EXSSwitch: UIControl {
+     
+-    var bgOffColor:UIColor = UIColor.exs_ThemeView.bgIconh50
+-    var bgOnColor:UIColor = UIColor.exs_ThemeView.highlight25
+-    var switchOnColor:UIColor = UIColor.exs_ThemeLabel.colorHighlight
+-    var switchOffColor:UIColor = UIColor.exs_ThemeView.bgIconh
++    var bgOffColor:UIColor = UIColor.ThemeView.bgIconh50
++    var bgOnColor:UIColor = UIColor.ThemeView.highlight25
++    var switchOnColor:UIColor = UIColor.ThemeLabel.colorHighlight
++    var switchOffColor:UIColor = UIColor.ThemeView.bgIconh
+     var isOn:Bool = false
+     var bgLayer:CAShapeLayer = CAShapeLayer()
+     var trackLayer:CAShapeLayer = CAShapeLayer()
+@@ -44,7 +44,7 @@ class EXSSwitch: UIControl {
+         let bgPath = UIBezierPath.init(roundedRect: bgLayer.bounds, cornerRadius: 0).cgPath
+         bgLayer.path = bgPath
+         bgLayer.setValue(false, forKey: "isOn")
+-        bgLayer.fillColor = UIColor.exs_ThemeView.bg.cgColor
++        bgLayer.fillColor = UIColor.ThemeView.bg.cgColor
+         self.layer .addSublayer(bgLayer)
+         
+         let height = self.bounds.size.height

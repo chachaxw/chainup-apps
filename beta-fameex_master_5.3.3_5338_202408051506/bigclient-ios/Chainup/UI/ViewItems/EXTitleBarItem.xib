@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXTitleBarItem" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="btnItem" destination="0qH-dY-JT4" id="hk7-i0-rJV"/>
+                <outlet property="indicator" destination="D3i-VY-4YH" id="7Rj-29-XN5"/>
+                <outlet property="indicatorHeight" destination="0nN-I1-hx2" id="jjc-wa-7FO"/>
+                <outlet property="indicatorWidth" destination="Q9X-ki-jrm" id="uJm-gb-jFS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="63"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qH-dY-JT4" customClass="EXFlatBtn" customModule="EXKit">
+                    <rect key="frame" x="0.0" y="14.5" width="325" height="34"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3i-VY-4YH">
+                    <rect key="frame" x="138.5" y="60" width="48" height="3"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="0nN-I1-hx2"/>
+                        <constraint firstAttribute="width" constant="48" id="Q9X-ki-jrm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="D3i-VY-4YH" secondAttribute="bottom" id="8ot-EM-F7s"/>
+                <constraint firstItem="0qH-dY-JT4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KVE-R1-j7S"/>
+                <constraint firstItem="0qH-dY-JT4" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="aYl-sq-YSM"/>
+                <constraint firstItem="D3i-VY-4YH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bdF-QK-5hQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0qH-dY-JT4" secondAttribute="trailing" id="qp7-lj-ef6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-0.80000000000000004" y="-225.33733133433284"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="0qH-dY-JT4">
+            <size key="intrinsicContentSize" width="54" height="34"/>
+        </designable>
+    </designables>
+</document>

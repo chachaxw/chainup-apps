@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/cp_bg_item_new_dialog"
+    >
+
+    <LinearLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dp_14"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        >
+
+        <EditText
+
+            android:id="@+id/mSearch"
+            android:layout_width="0dp"
+            android:drawableLeft="@mipmap/public_search"
+            android:drawablePadding="@dimen/dp_8"
+            android:layout_height="@dimen/dp_32"
+            android:layout_weight="1"
+            android:background="@drawable/public_bg_search_coin"
+            android:layout_marginRight="@dimen/dp_16"
+            android:paddingHorizontal="@dimen/dp_16"
+            android:hint="@string/cp_search_bar_hint_coin"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            style="@style/textstyle_dm_12_color1"
+            android:textColorHint="@color/hint_color"
+            />
+
+        <TextView
+            android:id="@+id/bd_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cp_overview_text56"
+            style="@style/textstyle_dm_14_color2"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/mTypeTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        style="@style/ToolbarType_bar_home_tab"
+        android:layout_below="@id/searchBar"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mSearchVp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mTypeTab"
+        />
+</RelativeLayout>

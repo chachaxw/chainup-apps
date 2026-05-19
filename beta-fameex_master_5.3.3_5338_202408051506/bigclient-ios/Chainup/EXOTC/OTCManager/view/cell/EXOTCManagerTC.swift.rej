@@ -1,0 +1,10 @@
+diff a/Chainup/EXOTC/OTCManager/view/cell/EXOTCManagerTC.swift b/Chainup/EXOTC/OTCManager/view/cell/EXOTCManagerTC.swift	(rejected hunks)
+@@ -268,7 +268,7 @@ class EXOTCManagerIconView : UIView {
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+         self.addSubview(container)
+-        container.snp_makeConstraints { make in
++        container.snp.makeConstraints { make in
+             make.left.equalToSuperview()
+             make.top.equalToSuperview()
+             make.bottom.equalToSuperview()

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_card_color"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_16">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_contract_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/tv_side"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_5"
+                android:text="卖"
+                android:textSize="@dimen/sp_16"
+                tools:textColor="@color/main_red"
+                style="@style/textstyle_dm"
+                />
+
+            <TextView
+                android:id="@+id/tv_coin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="LTC/USDT"
+                style="@style/textstyle_dm_16_color1"
+                />
+        </LinearLayout>
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/tv_order_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp_4"
+            android:text="Maker"
+            style="@style/contract_tag_style"
+            app:layout_constraintStart_toStartOf="@+id/ll_contract_info"
+            app:layout_constraintTop_toBottomOf="@+id/ll_contract_info"
+            />
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/tv_only_reduce_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="@string/cp_order_text54"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_order_type"
+            style="@style/contract_tag_style"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/textstyle_dr_12_color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="2017-10-10 18:18"
+            app:layout_constraintBottom_toBottomOf="@+id/ll_contract_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ll_contract_info" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_14"
+        android:orientation="horizontal">
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="@dimen/dp_72"
+            android:layout_height="@dimen/dp_32"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/cp_order_text68"
+            app:stv_solid="@color/card_bg_color_2"
+            app:stv_corner="@dimen/dp_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/textstyle_dm_14_color1"
+            />
+
+        <!--触发价格-->
+        <LinearLayout
+            android:id="@+id/jiage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/tv_cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/sjcjl"
+            >
+
+            <TextView
+                android:id="@+id/tv_price_title"
+                style="@style/textstyle_dr_12_color2"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/cp_overview_text29" />
+
+            <TextView
+                android:id="@+id/tv_trigger_price"
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="0.014450" />
+
+        </LinearLayout>
+
+
+
+        <!--order price 委托价格-->
+        <LinearLayout
+            android:id="@+id/sjcjl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/tv_cancel"
+            app:layout_constraintStart_toStartOf="@+id/jiage"
+            app:layout_constraintTop_toBottomOf="@+id/jiage"
+            android:layout_marginTop="@dimen/dp_10"
+            >
+
+            <TextView
+                android:id="@+id/tv_cp_overview_text30"
+                style="@style/textstyle_dr_12_color2"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/cp_overview_text30" />
+
+            <TextView
+                android:id="@+id/tv_entrust_price"
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_16"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="--" />
+
+        </LinearLayout>
+
+
+        <!--数量-->
+        <LinearLayout
+            android:id="@+id/shuliang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/tv_cancel"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintStart_toStartOf="@+id/sjcjl"
+            app:layout_constraintTop_toBottomOf="@id/sjcjl">
+
+            <TextView
+                android:id="@+id/tv_entrust_amount_key"
+                style="@style/textstyle_dr_12_color2"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="委托数量(张)" />
+
+            <TextView
+                android:id="@+id/tv_entrust_amount_value"
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="0.014450" />
+
+        </LinearLayout>
+
+
+
+
+        <!--到期时间-->
+        <LinearLayout
+            android:id="@+id/expir"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintEnd_toStartOf="@+id/tv_cancel"
+            app:layout_constraintStart_toStartOf="@+id/shuliang"
+            app:layout_constraintTop_toBottomOf="@+id/shuliang">
+
+            <TextView
+                android:id="@+id/tv_cp_order_text67"
+                style="@style/textstyle_dr_12_color2"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/cp_order_text67" />
+
+            <TextView
+                android:id="@+id/tv_expiration_date"
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="--" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_half"
+        android:background="@color/line_color"
+        android:layout_marginTop="@dimen/dp_16"
+        />
+
+</LinearLayout>

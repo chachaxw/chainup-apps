@@ -1,0 +1,75 @@
+ext {
+    change = [
+            applicationId:"com.chainup.exchange.fameex",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            baseUrl:"https://appapi.f4mes.com/",
+            socketAddress:"wss://ws.f4mes.com/kline-api/ws",
+            otcBaseUrl:"https://otcappapi.f4mes.com/",
+            otcSocketAddress:"wss://ws2.f4mes.com/chatServer/",
+            contractUrl:"https://futuresappapi.f4mes.com/",
+            contractUrl:"https://futuresappapi.f4mes.com/",
+            contractSocketAddress:"wss://futuresws.f4mes.com/kline-api/ws",
+            redPackageUrl:"http://dev5redpacket.f4mes.com/app-redPacket-api/",
+            httpHostUrlContractV2:"https://futuresappapi.f4mes.com/",
+            wssHostContractV2:"wss://futuresws.f4mes.com/kline-api/ws",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            keyAlias:"beta-fameex",
+            storePassword:"123456",
+            homeViewStatus:"1",
+            homePageStyle:"1",
+            splashBg:"#0e1a43",
+            appswitchsaas:"0",
+            keyPassword:"123456",
+
+            buglyId:"3c87d4fe16",
+            exChainupBundleVersion:"5335",
+            homepageService:"0",
+            umAppKey:"fameex",
+            versionCode:5338,
+            versionName:"master_5.3.3",
+            sobotAppKey:"72f598f55a1d4eb6975e33145676c34b",
+            pushAppId:"null",
+            pushAppKey:"null",
+            pushAppSecret:"null",
+            appoverseas:"1",
+            googlePlayOpen:"0",
+            appDarkTheme:"0",
+            appCompanyID:"",
+            ZendeskKey:"eyJzZXR0aW5nc191cmwiOiJodHRwczovL2JpdGJyZXguemVuZGVzay5jb20vbW9iaWxlX3Nka19hcGkvc2V0dGluZ3MvMDFINlJBQ1M1UVpTNDNZUTFaSlhYVEo0MVMuanNvbiJ9",
+    ]
+
+}

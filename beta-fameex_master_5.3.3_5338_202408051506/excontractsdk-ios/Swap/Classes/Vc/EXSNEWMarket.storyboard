@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swap Market Detail Holzontal Vc-->
+        <scene sceneID="xCa-10-1aC">
+            <objects>
+                <viewController storyboardIdentifier="EXSwapMarketDetailHolzontalVc" id="IF4-iu-lRi" customClass="EXSwapMarketDetailHolzontalVc" customModule="Swap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ddz-QR-0Ie">
+                        <rect key="frame" x="0.0" y="0.0" width="668" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2v-Eo-pg2">
+                                <rect key="frame" x="0.0" y="0.0" width="668" height="44"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cit-kt-F07" userLabel="line">
+                                        <rect key="frame" x="0.0" y="43" width="634" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="r8D-Vs-IfW"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewseperator"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjI-Ya-mlR">
+                                        <rect key="frame" x="586" y="0.0" width="54" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="54" id="6DS-du-UEJ"/>
+                                            <constraint firstAttribute="height" constant="44" id="7RW-kv-Drx"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="close:" destination="IF4-iu-lRi" eventType="touchUpInside" id="XQu-BQ-Rmr"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hQP-tq-00A">
+                                        <rect key="frame" x="15" y="0.0" width="571" height="43"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mam-Ev-0cp" customClass="EXCOHorizontalTopLeft" customModule="Swap" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="571" height="43"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="MTN-tS-eWn"/>
+                                    <constraint firstAttribute="trailing" secondItem="CjI-Ya-mlR" secondAttribute="trailing" constant="28" id="O6f-Fi-YeX"/>
+                                    <constraint firstItem="cit-kt-F07" firstAttribute="top" secondItem="hQP-tq-00A" secondAttribute="bottom" id="Yaj-d5-Fj5"/>
+                                    <constraint firstItem="hQP-tq-00A" firstAttribute="leading" secondItem="x2v-Eo-pg2" secondAttribute="leading" constant="15" id="hhO-L2-4z9"/>
+                                    <constraint firstAttribute="bottom" secondItem="cit-kt-F07" secondAttribute="bottom" id="ied-Og-EWL"/>
+                                    <constraint firstItem="CjI-Ya-mlR" firstAttribute="leading" secondItem="hQP-tq-00A" secondAttribute="trailing" id="rUP-sZ-N8a"/>
+                                    <constraint firstItem="hQP-tq-00A" firstAttribute="top" secondItem="x2v-Eo-pg2" secondAttribute="top" id="vkh-ss-kb6"/>
+                                    <constraint firstAttribute="bottom" secondItem="CjI-Ya-mlR" secondAttribute="bottom" id="yMU-l2-q0O"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.navbg"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hdu-wa-avn">
+                                <rect key="frame" x="575" y="66.5" width="50" height="268.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MXJ-CV-9pp">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.5" height="331"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="0.5" id="LbD-5n-xag"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewseperator"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYX-mE-BmE" customClass="EXCOHorizontalMainMenu" customModule="Swap" customModuleProvider="target">
+                                        <rect key="frame" x="0.5" y="0.0" width="49.5" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="B8f-tk-utw"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPS-DH-s3Z">
+                                        <rect key="frame" x="0.0" y="100" width="50" height="0.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="poz-ce-ZMQ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewseperator"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="255" horizontalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="kP7-69-wlA" customClass="EXCOHorizonAssistantMenu" customModule="Swap" customModuleProvider="target">
+                                        <rect key="frame" x="0.5" y="100.5" width="49.5" height="168"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstItem="QPS-DH-s3Z" firstAttribute="top" secondItem="oYX-mE-BmE" secondAttribute="bottom" id="2tL-kj-CxL"/>
+                                    <constraint firstAttribute="trailing" secondItem="kP7-69-wlA" secondAttribute="trailing" id="Ckb-7A-qw1"/>
+                                    <constraint firstAttribute="bottom" secondItem="kP7-69-wlA" secondAttribute="bottom" id="EcG-cu-Ich"/>
+                                    <constraint firstItem="QPS-DH-s3Z" firstAttribute="leading" secondItem="Hdu-wa-avn" secondAttribute="leading" id="Ep8-S3-9mG"/>
+                                    <constraint firstAttribute="bottom" secondItem="MXJ-CV-9pp" secondAttribute="bottom" id="KKx-I2-IjW"/>
+                                    <constraint firstItem="oYX-mE-BmE" firstAttribute="leading" secondItem="MXJ-CV-9pp" secondAttribute="trailing" id="LKK-UE-gA4"/>
+                                    <constraint firstAttribute="width" constant="50" id="Wnh-tw-NQ8"/>
+                                    <constraint firstItem="MXJ-CV-9pp" firstAttribute="leading" secondItem="Hdu-wa-avn" secondAttribute="leading" id="fS9-Ce-DLa"/>
+                                    <constraint firstItem="kP7-69-wlA" firstAttribute="leading" secondItem="MXJ-CV-9pp" secondAttribute="trailing" id="gev-Bt-7SP"/>
+                                    <constraint firstAttribute="trailing" secondItem="oYX-mE-BmE" secondAttribute="trailing" id="lMl-xI-lXH"/>
+                                    <constraint firstItem="kP7-69-wlA" firstAttribute="top" secondItem="QPS-DH-s3Z" secondAttribute="bottom" id="lUC-qm-XjX"/>
+                                    <constraint firstAttribute="trailing" secondItem="QPS-DH-s3Z" secondAttribute="trailing" id="swS-nc-zRq"/>
+                                    <constraint firstItem="oYX-mE-BmE" firstAttribute="top" secondItem="Hdu-wa-avn" secondAttribute="top" id="zD2-YE-bc8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="260" horizontalCompressionResistancePriority="760" translatesAutoresizingMaskIntoConstraints="NO" id="6Ea-e0-ljE" userLabel="leftSafeArea">
+                                <rect key="frame" x="0.0" y="44" width="34" height="331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="tUK-pA-wJi"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="260" horizontalCompressionResistancePriority="760" translatesAutoresizingMaskIntoConstraints="NO" id="CHO-G7-F80" userLabel="rightSafeArea">
+                                <rect key="frame" x="653" y="44" width="15" height="331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="IVC-ob-KDt"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="253" horizontalCompressionResistancePriority="753" translatesAutoresizingMaskIntoConstraints="NO" id="gq7-Ni-v1Z" customClass="EXCOKLineView" customModule="Swap" customModuleProvider="target">
+                                <rect key="frame" x="34" y="66.5" width="541" height="269.5"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuT-k5-z9h" customClass="EXCOHorizonlIndexContainer" customModule="Swap" customModuleProvider="target">
+                                <rect key="frame" x="34" y="44" width="541" height="22.5"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22.5" id="A0B-wW-6yY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cNY-lS-TSN"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CHO-G7-F80" firstAttribute="top" secondItem="x2v-Eo-pg2" secondAttribute="bottom" id="5uL-bg-cdE"/>
+                            <constraint firstItem="Hdu-wa-avn" firstAttribute="leading" secondItem="KuT-k5-z9h" secondAttribute="trailing" id="7yi-gQ-uAV"/>
+                            <constraint firstAttribute="trailing" secondItem="x2v-Eo-pg2" secondAttribute="trailing" id="8pN-LL-0xv"/>
+                            <constraint firstItem="CHO-G7-F80" firstAttribute="trailing" secondItem="ddz-QR-0Ie" secondAttribute="trailing" id="8xc-Oy-96k"/>
+                            <constraint firstItem="6Ea-e0-ljE" firstAttribute="bottom" secondItem="ddz-QR-0Ie" secondAttribute="bottom" id="Akr-kt-FSu"/>
+                            <constraint firstItem="cNY-lS-TSN" firstAttribute="bottom" secondItem="Hdu-wa-avn" secondAttribute="bottom" constant="6" id="D7G-dn-ymT"/>
+                            <constraint firstItem="CHO-G7-F80" firstAttribute="leading" secondItem="Hdu-wa-avn" secondAttribute="trailing" constant="28" id="Ew1-Dg-ATm"/>
+                            <constraint firstItem="6Ea-e0-ljE" firstAttribute="top" secondItem="x2v-Eo-pg2" secondAttribute="bottom" id="FVt-dm-6Js"/>
+                            <constraint firstItem="KuT-k5-z9h" firstAttribute="leading" secondItem="6Ea-e0-ljE" secondAttribute="trailing" id="NjI-k0-8LN"/>
+                            <constraint firstAttribute="bottom" secondItem="CHO-G7-F80" secondAttribute="bottom" id="Vre-bT-TvI"/>
+                            <constraint firstItem="gq7-Ni-v1Z" firstAttribute="leading" secondItem="6Ea-e0-ljE" secondAttribute="trailing" id="Zih-Mt-JYR"/>
+                            <constraint firstItem="Hdu-wa-avn" firstAttribute="leading" secondItem="gq7-Ni-v1Z" secondAttribute="trailing" id="aDv-pn-a3N"/>
+                            <constraint firstItem="6Ea-e0-ljE" firstAttribute="leading" secondItem="ddz-QR-0Ie" secondAttribute="leading" id="buN-RL-ufp"/>
+                            <constraint firstItem="x2v-Eo-pg2" firstAttribute="top" secondItem="ddz-QR-0Ie" secondAttribute="top" id="nPU-dZ-JwT"/>
+                            <constraint firstItem="cNY-lS-TSN" firstAttribute="bottom" secondItem="gq7-Ni-v1Z" secondAttribute="bottom" constant="5" id="tBW-8h-jKI"/>
+                            <constraint firstItem="x2v-Eo-pg2" firstAttribute="leading" secondItem="ddz-QR-0Ie" secondAttribute="leading" id="vQp-Sp-kuA"/>
+                            <constraint firstItem="KuT-k5-z9h" firstAttribute="top" secondItem="x2v-Eo-pg2" secondAttribute="bottom" id="vai-XU-ErP"/>
+                            <constraint firstItem="Hdu-wa-avn" firstAttribute="top" secondItem="x2v-Eo-pg2" secondAttribute="bottom" constant="22.5" id="wDG-9k-Ayn"/>
+                            <constraint firstItem="gq7-Ni-v1Z" firstAttribute="top" secondItem="KuT-k5-z9h" secondAttribute="bottom" id="zkv-J3-BSR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="667"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="668" height="375"/>
+                    <connections>
+                        <outlet property="assistantMenu" destination="kP7-69-wlA" id="KwA-UZ-88L"/>
+                        <outlet property="closeBtn" destination="CjI-Ya-mlR" id="yDn-1V-W0p"/>
+                        <outlet property="indexFooterView" destination="KuT-k5-z9h" id="eKE-hg-6FM"/>
+                        <outlet property="klineView" destination="gq7-Ni-v1Z" id="g7a-gq-h95"/>
+                        <outlet property="leftSafeAreaWidth" destination="tUK-pA-wJi" id="bO6-U8-7U1"/>
+                        <outlet property="mainMenu" destination="oYX-mE-BmE" id="X4U-RR-VqB"/>
+                        <outlet property="rightSafeAreaWidth" destination="IVC-ob-KDt" id="esz-nV-cwF"/>
+                        <outlet property="topLeftConstraint" destination="hhO-L2-4z9" id="zSV-zN-B4L"/>
+                        <outlet property="topLeftHeader" destination="Mam-Ev-0cp" id="Z76-Ad-ehJ"/>
+                        <outlet property="topbgView" destination="x2v-Eo-pg2" id="jSX-6x-uwk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="teV-te-Dps" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-352.17391304347831" y="-526.00446428571422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

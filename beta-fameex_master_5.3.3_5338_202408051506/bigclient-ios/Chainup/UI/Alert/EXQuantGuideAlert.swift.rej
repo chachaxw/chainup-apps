@@ -1,0 +1,10 @@
+diff a/Chainup/UI/Alert/EXQuantGuideAlert.swift b/Chainup/UI/Alert/EXQuantGuideAlert.swift	(rejected hunks)
+@@ -32,7 +32,7 @@ class EXQuantGuideAlert: NibBaseView {
+         
+ 
+         bgScroll.backgroundColor = UIColor.ThemeView.bg
+-        self.backgroundColor = UIColor.ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.alertBg
+     }
+     
+     override func layoutSubviews() {

@@ -1,0 +1,78 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXLeverageSliderView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXLeverageSliderView.swift	(rejected hunks)
+@@ -63,11 +63,11 @@ class EXLeverageSliderView: UIControl {
+     private lazy var sliderMaskView: UIStackView = {
+         let view = UIStackView()
+         let normalView = UIView()
+-        normalView.backgroundColor = UIColor.exs_ThemeView.border
++        normalView.backgroundColor = UIColor.ThemeView.border
+         let unavailView = UIView()
+-        unavailView.backgroundColor = UIColor.exs_ThemeView.bgGap
++        unavailView.backgroundColor = UIColor.ThemeView.bgGap
+         let selectView = UIView()
+-        selectView.backgroundColor = UIColor.exs_ThemeBtn.highlight
++        selectView.backgroundColor = UIColor.ThemeBtn.highlight
+         view.exs_addSubViews([normalView ,selectView,unavailView])
+         let section = (Float(maxLevel) - Float(minLevel))
+ 
+@@ -129,7 +129,7 @@ class EXLeverageSliderView: UIControl {
+             } else {
+                 text = String(format: "%dx", margin*index+Int(minLevel))
+             }
+-            let label = UILabel(text: text, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .center)
++            let label = UILabel(text: text, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .center)
+             self.sliderMaskView.addSubview(label)
+             label.snp.remakeConstraints { (make) in
+                 make.centerX.equalTo(button)
+@@ -186,7 +186,7 @@ class EXLeverageSliderView: UIControl {
+             } else {
+                 text = String(format: "%dx", margin*index+Int(minLevel))
+             }
+-            let label = UILabel(text: text, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .center)
++            let label = UILabel(text: text, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .center)
+             self.sliderMaskView.addSubview(label)
+             label.snp.remakeConstraints { (make) in
+                 make.centerX.equalTo(button)
+@@ -322,7 +322,7 @@ class EXLeverageField: UIView {
+     lazy var input : UITextField = {
+        let textField = UITextField()
+         textField.keyboardType = UIKeyboardType.numberPad
+-        textField.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.textColor = UIColor.ThemeLabel.colorLite
+         textField.font = UIFont.ThemeFont.HeadMedium
+         textField.textAlignment = .center
+         return textField
+@@ -350,9 +350,9 @@ class EXLeverageField: UIView {
+     }
+     
+     func initLayout() {
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         self.layer.borderWidth = 0.5
+-        self.layer.borderColor = UIColor.exs_ThemeView.border.cgColor
++        self.layer.borderColor = UIColor.ThemeView.border.cgColor
+         self.exs_addSubViews([input,minusBtn,plusBtn])
+ 
+         self.input.snp.makeConstraints { (make) in
+@@ -384,19 +384,19 @@ class EXLeverageField: UIView {
+         leftLine.move(to: CGPoint(x: width - 44, y: 0))
+         leftLine.addLine(to: CGPoint(x: width - 44, y: height))
+         leftLine.lineWidth = 0.5
+-        UIColor.exs_ThemeView.border .setStroke()
++        UIColor.ThemeView.border .setStroke()
+         leftLine.stroke()
+         let rightLine = UIBezierPath()
+         rightLine.move(to: CGPoint(x: 44, y: 0))
+         rightLine.addLine(to: CGPoint(x: 44, y: height))
+         rightLine.lineWidth = 0.5
+-        UIColor.exs_ThemeView.border .setStroke()
++        UIColor.ThemeView.border .setStroke()
+         rightLine.stroke()
+     }
+     
+     override func layoutSubviews() {
+         super.layoutSubviews()
+-//        drawLineOfDashByCAShapeLayer(lineView: self.line, lineLength: 3, lineSpacing: 2, lineColor: UIColor.exs_ThemeView.seperator, isHorizonal: true)
++//        drawLineOfDashByCAShapeLayer(lineView: self.line, lineLength: 3, lineSpacing: 2, lineColor: UIColor.ThemeView.seperator, isHorizonal: true)
+     }
+     
+     /**

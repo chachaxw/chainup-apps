@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card_color"
+    android:orientation="vertical">
+    
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/mHeaderKit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="@string/cp_order_text85"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_list_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:paddingVertical="@dimen/dp_6"
+                android:visibility="visible"
+                android:background="@drawable/bg_yellow_hint_msg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dp_12"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_8"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="@dimen/dp_10"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/public_point"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_order_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text_yellow_color"
+                    android:textSize="12sp"
+                    tools:text="仓位发生强平，未成交委托被系统撤销" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_contract_name"
+                    style="@style/textstyle_dm_20_color1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LTC/USDT"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_20"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已完成"
+                    android:layout_gravity="center"
+                    style="@style/textstyle_dr_12_color2"
+                    android:layout_marginTop="@dimen/dp_4"
+                    />
+                <TextView
+                    android:id="@+id/tv_liq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动减仓"
+                    android:layout_gravity="center"
+                    style="@style/textstyle_dr_14_color1"
+                    android:layout_marginTop="7dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_default_color"
+                    android:layout_marginTop="@dimen/dp_32"
+                    android:paddingHorizontal="@dimen/dp_12"
+                    android:paddingVertical="@dimen/dp_8"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/ll_contract_info"
+                        android:layout_width="wrap_content"
+                        style="@style/contract_entrust_detail_pview_style"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_cp_order_direction_label"
+                            style="@style/contract_entrust_detail_label_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cp_order_direction_label" />
+
+                        <TextView
+                            android:id="@+id/tv_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="卖"
+                            tools:textColor="@color/main_red"
+                            style="@style/contract_entrust_detail_value_style"
+                            />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/ll_liq"
+                        android:layout_width="wrap_content"
+                        style="@style/contract_entrust_detail_pview_style"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_liq_label"
+                            style="@style/contract_entrust_detail_label_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cp_calculator_text20" />
+
+                        <TextView
+                            android:id="@+id/tv_liq_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            style="@style/contract_entrust_detail_value_style"
+                            />
+                    </RelativeLayout>
+
+
+                    <!--价格-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        style="@style/contract_entrust_detail_pview_style"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_price_title"
+                            style="@style/contract_entrust_detail_label_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cp_order_text79" />
+
+                        <TextView
+                            android:id="@+id/tv_entrust_price"
+                            style="@style/contract_entrust_detail_value_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--/--" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        style="@style/contract_entrust_detail_pview_style"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_entrust_amount_key"
+                            style="@style/contract_entrust_detail_label_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="委托数量(张)" />
+
+                        <TextView
+                            android:id="@+id/tv_entrust_amount"
+                            style="@style/contract_entrust_detail_value_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--/--" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        style="@style/contract_entrust_detail_pview_style"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_pl_price_key"
+                            style="@style/contract_entrust_detail_label_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="盈亏(USDT)" />
+
+                        <TextView
+                            android:id="@+id/tv_pl_price"
+                            style="@style/contract_entrust_detail_value_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        style="@style/contract_entrust_detail_pview_style"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_cp_position_text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cp_position_text2"
+                            style="@style/contract_entrust_detail_label_style"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_fee_value"
+                            style="@style/contract_entrust_detail_value_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        style="@style/contract_entrust_detail_pview_style"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_cp_order_text93"
+                            style="@style/contract_entrust_detail_label_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cp_order_text93" />
+
+                        <TextView
+                            android:id="@+id/tv_order_type"
+                            style="@style/contract_entrust_detail_value_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        style="@style/contract_entrust_detail_pview_style"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_time_label"
+                            style="@style/contract_entrust_detail_label_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cp_order_time_label" />
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/contract_entrust_detail_value_style"
+                            android:text="--"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        style="@style/contract_entrust_detail_pview_style"
+                        >
+
+                        <TextView
+                            style="@style/contract_entrust_detail_label_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_alignParentRight="true">
+                            <TextView
+                                android:id="@+id/tv_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/contract_entrust_detail_value_style"
+                                android:text="--"
+                                />
+                            <ImageView
+                                android:id="@+id/iv_copy"
+                                android:layout_width="@dimen/dp_16"
+                                android:layout_height="@dimen/dp_16"
+                                android:src="@mipmap/public_ic_copy"
+                                android:scaleType="fitCenter"
+                                android:layout_marginLeft="@dimen/dp_8"
+                                android:layout_gravity="center_vertical"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+                <!--        tp/sl-->
+                <LinearLayout
+                    android:id="@+id/ll_stop_profit_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/dp_32"
+                    android:paddingHorizontal="@dimen/dp_16"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_cp_overview_text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cp_overview_text12"
+                        style="@style/textstyle_dm_16_color1"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_stop_profit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:background="@drawable/bg_default_color"
+                    android:paddingHorizontal="@dimen/dp_12"
+                    android:paddingVertical="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_10"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        style="@style/contract_entrust_detail_pview_style">
+
+                        <TextView
+                            android:id="@+id/tv_cp_overview_text15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cp_overview_text15"
+                            style="@style/contract_entrust_detail_label_style"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_stop_profit_trigger_price_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            style="@style/contract_entrust_detail_value_style"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        style="@style/contract_entrust_detail_pview_style"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_cp_order_text91"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cp_order_text91"
+                            style="@style/contract_entrust_detail_label_style"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_stop_profit_entrust_price_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            style="@style/contract_entrust_detail_value_style"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        style="@style/contract_entrust_detail_pview_style"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_cp_order_text87"
+                            style="@style/contract_entrust_detail_label_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cp_order_text87" />
+
+                        <TextView
+                            android:id="@+id/tv_stop_profit_state_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            style="@style/contract_entrust_detail_value_style"
+                            />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        style="@style/contract_entrust_detail_pview_style"
+                        android:layout_marginTop="@dimen/dp_20"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_cp_overview_text16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cp_overview_text16"
+                            style="@style/contract_entrust_detail_label_style"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_stop_loss_trigger_price_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            style="@style/contract_entrust_detail_value_style"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        style="@style/contract_entrust_detail_pview_style"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_cp_order_text37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cp_order_text37"
+                            style="@style/contract_entrust_detail_label_style"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_loss_profit_entrust_price_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            style="@style/contract_entrust_detail_value_style"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        style="@style/contract_entrust_detail_pview_style"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_cp_order_text86"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cp_order_text87"
+                            style="@style/contract_entrust_detail_label_style"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_loss_profit_state_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            style="@style/contract_entrust_detail_value_style"
+                            />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_cp_order_text123"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="@dimen/dp_32"
+                    android:text="@string/cp_order_text86"
+                    style="@style/textstyle_dm_16_color1"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_record_pview_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_11"
+                android:orientation="vertical"
+                android:background="@drawable/bg_default_color"
+                android:layout_marginBottom="@dimen/dp_16"
+                >
+                <LinearLayout
+                    android:id="@+id/ll_record_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_deal_price_key"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/cp_extra_text31"
+                        style="@style/textstyle_dr_12_color2"
+                        android:layout_marginRight="@dimen/dp_10"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_trades_volume_key"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/cp_extra_text8"
+                        style="@style/textstyle_dr_12_color2"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_fee_key"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text="@string/cp_position_text2"
+                        style="@style/textstyle_dr_12_color2"
+                        />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:layout_marginBottom="@dimen/dp_12">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/ll_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:itemCount="5"
+                        tools:listitem="@layout/cp_item_deal_order"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--背景浅蓝 圆角4-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/special_2"/>
+    <corners android:radius="@dimen/dp_4"/>
+
+</shape>

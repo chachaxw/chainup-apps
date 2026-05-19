@@ -1,0 +1,12 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSwapListBaseViewController.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSwapListBaseViewController.swift	(rejected hunks)
+@@ -17,8 +17,8 @@ class ContentBaseViewController: EXSNavCustomVC {
+         //配置数据源
+         let dataSource = EXTitltleLabelBottomAlighDateSoure()
+         dataSource.isTitleColorGradientEnabled = true
+-        dataSource.titleSelectedColor = UIColor.exs_ThemeLabel.colorBlack
+-        dataSource.titleNormalColor = UIColor.exs_ThemeLabel.colorMedium
++        dataSource.titleSelectedColor = UIColor.ThemeLabel.colorLite
++        dataSource.titleNormalColor = UIColor.ThemeLabel.colorMedium
+         dataSource.isTitleZoomEnabled = true
+         dataSource.isItemSpacingAverageEnabled = false
+         dataSource.titleNormalFont = UIFont.ThemeFont.HeadMedium

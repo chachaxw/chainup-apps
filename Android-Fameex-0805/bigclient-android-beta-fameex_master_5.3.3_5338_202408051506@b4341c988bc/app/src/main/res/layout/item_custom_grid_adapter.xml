@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card_color"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ns_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_custom_price_range_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="16dp"
+                android:text="@string/quant_price_section"
+                style="@style/textstyle_dm_12_color2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:orientation="horizontal">
+                <com.chainup.kit.views.KKEditFormGroupKit
+                    android:id="@+id/rd_check_surplus"
+                    style="@style/etstyle_baseFormGroup"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_marginRight="@dimen/dp_8"
+                    app:kk_hint="@string/quant_low_price"
+                    app:kk_action1="USDT"
+                    app:kk_input_type="numberDecimal"
+                    />
+                <com.chainup.kit.views.KKEditFormGroupKit
+                    android:id="@+id/ed_stop_loss"
+                    style="@style/etstyle_baseFormGroup"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_marginRight="@dimen/dp_8"
+                    app:kk_hint="@string/quant_high_price"
+                    app:kk_action1="USDT"
+                    />
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_check_surplus_layout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/dp_44"-->
+<!--                    android:layout_marginLeft="@dimen/dp_16"-->
+<!--                    android:layout_marginRight="@dimen/dp_8"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/bg_grid_gray"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <EditText-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="0.65"-->
+<!--                        android:background="@null"-->
+<!--                        android:ellipsize="end"-->
+<!--                        android:focusableInTouchMode="true"-->
+<!--                        android:hint="@string/quant_low_price"-->
+<!--                        android:imeOptions="actionDone"-->
+<!--                        android:inputType="numberDecimal"-->
+<!--                        android:paddingLeft="@dimen/dp_10"-->
+<!--                        android:paddingRight="@dimen/dp_10"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:textColor="@color/text_color"-->
+<!--                        android:textColorHint="@color/hint_color"-->
+<!--                        android:textCursorDrawable="@drawable/et_cursor_color"-->
+<!--                        style="@style/textstyle_dm_14_color1"/>-->
+
+<!--                    <com.coorchice.library.SuperTextView-->
+<!--                        android:id="@+id/st_check_surplus"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center_vertical|right"-->
+<!--                        android:paddingRight="@dimen/dp_10"-->
+<!--                        style="@style/textstyle_dm_12_color1"-->
+<!--                        tools:text="USDT" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_stop_loss_layout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/dp_44"-->
+<!--                    android:layout_marginRight="@dimen/dp_16"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/bg_grid_gray"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/ed_stop_loss"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="0.65"-->
+<!--                        android:background="@null"-->
+<!--                        android:ellipsize="end"-->
+<!--                        android:focusableInTouchMode="true"-->
+<!--                        android:hint="@string/quant_high_price"-->
+<!--                        android:imeOptions="actionDone"-->
+<!--                        android:inputType="numberDecimal"-->
+<!--                        android:paddingLeft="@dimen/dp_10"-->
+<!--                        android:paddingRight="@dimen/dp_10"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:textColor="@color/text_color"-->
+<!--                        android:textColorHint="@color/hint_color"-->
+<!--                        android:textCursorDrawable="@drawable/et_cursor_color"-->
+<!--                        style="@style/textstyle_dm_14_color1"/>-->
+
+<!--                    <com.coorchice.library.SuperTextView-->
+<!--                        android:id="@+id/st_stop_loss"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center_vertical|right"-->
+<!--                        android:paddingRight="@dimen/dp_10"-->
+<!--                        style="@style/textstyle_dm_12_color1"-->
+<!--                        tools:text="USDT" />-->
+<!--                </LinearLayout>-->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_grid_number_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="@string/quant_grid_amount"
+                style="@style/textstyle_dm_12_color2"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_16"
+                android:orientation="horizontal">
+                <com.chainup.kit.views.KKEditFormGroupKit
+                    android:id="@+id/ed_custom_grid_num"
+                    style="@style/etstyle_baseFormGroup"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/dp_44"
+                    app:kk_hint="2-100"
+                    app:kk_input_type="number"
+                    />
+                <TextView
+                    android:id="@+id/tv_arithmetic_grid"
+                    android:layout_width="wrap_content"
+                    android:minWidth="81dp"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:background="@drawable/bg_grid"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="@dimen/dp_8"
+                    android:text="@string/quant_grid_line_type1"
+                    style="@style/textstyle_dm_14_color1"
+                    android:textColor="@color/text_4"/>
+
+                <TextView
+                    android:id="@+id/tv_geometric_grid"
+                    android:layout_width="wrap_content"
+                    android:minWidth="81dp"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:background="@drawable/bg_grid_gray"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="@dimen/dp_8"
+                    android:text="@string/quant_grid_line_type2"
+                    style="@style/textstyle_dm_14_color1"/>
+            </LinearLayout>
+
+            <com.yjkj.chainup.wedegit.GridTextView
+                android:id="@+id/gt_division_profits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                app:contentSize="12sp"
+                app:contentView=""
+                app:titleView="@string/quant_every_profit" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_23"
+                android:layout_marginRight="@dimen/dp_16">
+
+                <TextView
+                    android:id="@+id/tv_investment_assets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quant_quote_amount"
+                    style="@style/textstyle_dm_12_color2"/>
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:id="@+id/switch_fingerprint_pwd"
+                    android:layout_width="26dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:status="false" />
+
+                <TextView
+                    android:id="@+id/tv_used_btc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_6"
+                    android:layout_toLeftOf="@+id/switch_fingerprint_pwd"
+                    android:text="@string/quant_use_own_base"
+                    style="@style/textstyle_dm_12_color2"/>
+            </RelativeLayout>
+            <com.chainup.kit.views.KKEditFormGroupKit
+                android:id="@+id/et_volume_investment"
+                style="@style/etstyle_baseFormGroup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                app:kk_hint="@string/quant_quote_amount"
+                app:kk_action1="USDT"
+                app:kk_input_type="numberDecimal"
+                />
+
+
+           <include layout="@layout/item_grid_tips_profit"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="@dimen/dp_8"
+                android:orientation="horizontal">
+                <com.chainup.kit.views.KKEditFormGroupKit
+                    android:id="@+id/rd_check_surplus_check_full"
+                    style="@style/etstyle_baseFormGroup"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_marginRight="@dimen/dp_8"
+                    app:kk_hint="@string/quant_low_price"
+                    app:kk_action1="USDT"
+                    app:kk_input_type="numberDecimal"
+                    />
+                <com.chainup.kit.views.KKEditFormGroupKit
+                    android:id="@+id/ed_stop_loss_check_full"
+                    style="@style/etstyle_baseFormGroup"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_marginRight="@dimen/dp_8"
+                    app:kk_hint="@string/quant_high_price"
+                    app:kk_action1="USDT"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cl_available_balance_str"
+                    style="@style/textstyle_dm_12_color2"/>
+
+                <TextView
+                    android:id="@+id/tv_balance_str"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:text=""
+                    style="@style/textstyle_dm_12_color1"/>
+            </LinearLayout>
+
+
+            <com.yjkj.chainup.new_version.view.CommonlyUsedButton
+                android:id="@+id/btn_begin_grid_custom"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_20"
+                app:bgColor="@color/main_blue"
+                app:bottonTextContent="@string/quant_start_trade"
+                app:buttonTextColor="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:visibility="gone"
+                android:background="@color/bg_color" />
+
+            <include layout="@layout/trade_grid_history_tools" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:minHeight="@dimen/dp_150"
+                android:nestedScrollingEnabled="false"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

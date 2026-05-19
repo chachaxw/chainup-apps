@@ -1,0 +1,116 @@
+diff a/Chainup/UI/TextField/EXPersentageField.swift b/Chainup/UI/TextField/EXPersentageField.swift	(rejected hunks)
+@@ -37,8 +37,7 @@ class EXPersentageField: EXBaseField {
+     
+     var highLightColor:UIColor = UIColor.ThemeView.highlight {
+         didSet {
+-            bgView.highLightColor = highLightColor
+-            volumeColor = highLightColor
++            style.highlightColor = highLightColor
+         }
+     }
+ 
+@@ -49,11 +48,15 @@ class EXPersentageField: EXBaseField {
+ 
+     override func onCreate() {
+         super.onCreate()
+-        self.handleHighlight()
++//        self.handleHighlight()
+         self.presenter.configWithTextField(input: input)
+         for btn in steps {
+             btn.titleLabel?.font = UIFont.ThemeFont.SecondaryMedium
+         }
++        self.layer.cornerRadius = 4
++        self.layer.borderWidth = 0.5
++        style.bindHighlight(textField: input, effectView: self,isBorder: true)
++        self.layer.borderColor = UIColor.ThemeView.border.cgColor
+     }
+     
+     override func setPlaceHolder(placeHolder: String,font : CGFloat = 14) {
+@@ -64,21 +67,21 @@ class EXPersentageField: EXBaseField {
+         input.text = text
+     }
+     
+-    private func handleHighlight(){
+-        input.rx.controlEvent(.editingDidBegin)
+-            .subscribe(onNext:{[weak self] _ in
+-                self?.showHilights(on: true)
+-            }).disposed(by: disposebg)
+-        input.rx.controlEvent(.editingDidEnd)
+-            .subscribe(onNext:{[weak self] _ in
+-                self?.showHilights(on: false)
+-            }).disposed(by: disposebg)
+-        input.rx.text.orEmpty.asObservable()
+-            .distinctUntilChanged()
+-            .subscribe(onNext:{[weak self] _ in
+-                self?.emptyPersentage()
+-            }).disposed(by: disposebg)
+-    }
++//    private func handleHighlight(){
++//        input.rx.controlEvent(UIControlEvents.editingDidBegin)
++//            .subscribe(onNext:{[weak self] _ in
++//                self?.showHilights(on: true)
++//            }).disposed(by: disposebg)
++//        input.rx.controlEvent(UIControlEvents.editingDidEnd)
++//            .subscribe(onNext:{[weak self] _ in
++//                self?.showHilights(on: false)
++//            }).disposed(by: disposebg)
++//        input.rx.text.orEmpty.asObservable()
++//            .distinctUntilChanged()
++//            .subscribe(onNext:{[weak self] _ in
++//                self?.emptyPersentage()
++//            }).disposed(by: disposebg)
++//    }
+     
+     func emptyPersentage() {
+         for btn in steps {
+@@ -88,9 +91,9 @@ class EXPersentageField: EXBaseField {
+         bottomView.selectIdx = -1
+     }
+     
+-    func showHilights(on:Bool) {
+-        bgView.highlightMode = on
+-    }
++//    func showHilights(on:Bool) {
++//        bgView.highlightMode = on
++//    }
+     
+     func getPersent(_ byTag:Int) -> String? {
+         let arr = ["0.25","0.5","0.75","1"]
+@@ -147,36 +150,6 @@ extension EXPersentageField :ExTextFieldProtocol {
+ }
+ 
+ class EXPersentBg:UIView {
+-    
+-    var highLightColor:UIColor = UIColor.ThemeView.highlight
+-    
+-    var highlightMode :Bool = false {
+-        didSet {
+-            self.setNeedsDisplay()
+-        }
+-    }
+-    
+-    override func draw(_ rect: CGRect) {
+-        let path = UIBezierPath.init(roundedRect: rect, byRoundingCorners:[.topRight, .topLeft,.bottomLeft,.bottomRight],
+-                                     cornerRadii: CGSize(width: 2, height: 2))
+-        path.lineWidth = 0.5
+-        if highlightMode {
+-            highLightColor .setStroke()
+-        }else {
+-            UIColor.ThemeView.border .setStroke()
+-        }
+-        path.stroke()
+-    }
+-}
+ 
+-//extension EXPersentageField : EXTextFieldConfigurable {
+-//    
+-//    var baseField: UITextField {
+-//        return self.input
+-//    }
+-//    
+-//    var baseHighlight: UIView {
+-//        return UIView()
+-//    }
+-//}
++}
+ 

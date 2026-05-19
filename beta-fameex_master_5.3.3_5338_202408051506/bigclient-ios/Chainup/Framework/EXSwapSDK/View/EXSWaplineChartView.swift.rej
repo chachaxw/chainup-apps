@@ -1,0 +1,32 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSWaplineChartView.swift b/Chainup/Framework/EXSwapSDK/View/EXSWaplineChartView.swift	(rejected hunks)
+@@ -35,18 +35,18 @@ class EXSWaplineChartView: UIView {
+         //设置X轴坐标字体大小
+         chartView.x_Font = UIFont.systemFont(ofSize: 10)
+         //设置X轴坐标字体颜色
+-        chartView.x_Color =  UIColor.exs_ThemeLabel.colorMedium// UIColor.exs_ThemeLabel.colorLite
++        chartView.x_Color =  UIColor.ThemeLabel.colorMedium// UIColor.ThemeLabel.colorLite
+         //设置Y轴坐标字体大小
+         chartView.y_Font = UIFont.systemFont(ofSize: 10)
+         //设置Y轴坐标字体颜色
+-        chartView.y_Color = UIColor.exs_ThemeLabel.colorMedium
++        chartView.y_Color = UIColor.ThemeLabel.colorMedium
+         //设置X轴数据间隔
+         chartView.xmargin = 50;
+         //设置背景颜色
+         chartView.backgroundColor = .clear
+         //是否根据折线数据浮动泡泡
+         //chartView.isFloating = YES;
+-        chartView.backgroundColor = UIColor.exs_ThemeView.bg
++        chartView.backgroundColor = UIColor.ThemeView.bg
+         //折线图所有颜色
+         chartView.leftColorStrArr = ["#3078FF"]
+         
+@@ -58,7 +58,7 @@ class EXSWaplineChartView: UIView {
+         //设置折现效果
+         chartView.lineLayerStyle = .none
+         chartView.lineWidth = 2.5
+-        chartView.drawDashLineColor = UIColor.exs_ThemeView.bgGap
++        chartView.drawDashLineColor = UIColor.ThemeView.bgGap
+         //渐变效果的颜色组
+         chartView.colors = [
+             UIColor.extColorWithHex("#3078FF"),

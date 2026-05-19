@@ -1,0 +1,96 @@
+diff a/Chainup/EXCOINS/Me/SetLanguage/view/EXSetLanguageV.swift b/Chainup/EXCOINS/Me/SetLanguage/view/EXSetLanguageV.swift	(rejected hunks)
+@@ -9,15 +9,21 @@
+ import UIKit
+ import EXKit
+ let landownloadSucess = "landownloadSucess"
++let landownloadFail = "landownloadFail"
++
+ class EXSetLanguageV: UIView {
+-  
+-    var language : AppConfigLan?
+ 
+     var dataArray:[AppCfgLanListItem] = []
++    
++    var currentLan:AppCfgLanListItem = AppCfgLanListItem()
++    
+     deinit{
+         NotificationCenter.default.removeObserver(self,name: NSNotification.Name(rawValue:landownloadSucess),
+         object: nil)
++        NotificationCenter.default.removeObserver(self,name: NSNotification.Name(rawValue:landownloadFail),
++        object: nil)
+     }
++    
+     lazy var tableView : UITableView = {
+         let tableView = UITableView()
+         tableView.extUseAutoLayout()
+@@ -37,14 +43,17 @@ class EXSetLanguageV: UIView {
+    
+     func setData(){
+ 
+-        
+         NotificationCenter.default.addObserver(self,
+                                                selector: #selector(reload_app),
+                                                name: NSNotification.Name(rawValue:landownloadSucess ),
+                                                object: nil)
+-        language = EXAppConfigManager.sharedInstance.getLanConfig()
+         
+-        dataArray = language?.lanList ?? []
++        NotificationCenter.default.addObserver(self,
++                                               selector: #selector(handleError),
++                                               name: NSNotification.Name(rawValue:landownloadFail ),
++                                               object: nil)
++        
++        dataArray = EXAppConfigManager.sharedInstance.getLanListAll()
+         //逻辑修正 显示和选中的都按 配置的语言列表来处理
+         let curItem = LanguageTools.shareInstance.selectedLan
+         if curItem.id.count > 0  { //切换过语言有记录
+@@ -86,22 +95,37 @@ extension EXSetLanguageV : UITableViewDelegate,UITableViewDataSource{
+     
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         //记录选中的语言
+-        LanguageTools.shareInstance.selectedLan = dataArray[indexPath.row]
+-        EXLanguageTools.shareInstance.setLanguage(langeuage: dataArray[indexPath.row].id)
+-        //需要下载，下载完成刷新app
+-        LanguageHandler.shareInstance.setLanguage(langeuage: dataArray[indexPath.row].id)
+-        tableView.reloadData()
+-        
+-//        OTCPublicInfo.sharedInstance.getData()
+-//        ContractPublicInfoManager.manager.requestContractPublicInfo()
+-        EXAppConfigManager.sharedInstance.fetchAppConfig()
+-        EXAppMarketManager.sharedInstance.fetchMarket()
+-        
+-        reload_app()// 不需要下载直接加载
++        let lanItem = dataArray[indexPath.row]
++        if LanguageTools.shareInstance.selectedLan.id == lanItem.id {
++            return
++        }
++        self.currentLan = lanItem
++        //合约老逻辑
++        EXLanguageTools.shareInstance.setLanguage(langeuage: lanItem.id)
++
++        //saas 逻辑,如果是下载,完成后再切语言
++        if LanguageTools.shareInstance.isOnlineLanSupported(lanId: lanItem.id).count > 0 {
++            //需要下载，下载完成刷新app
++            self.showLoading1()
++            LanguageTools.shareInstance.tryDownloadCurrentLan(lanID: lanItem.id)
++        }else {
++            //直接使用本地语言包
++            LanguageHandler.shareInstance.setLanguage(langeuage:lanItem.id)
++            reload_app()// 不需要下载直接加载
++            //应该没用,先注释
++//            EXAppConfigManager.sharedInstance.fetchAppConfig()
++//            EXAppMarketManager.sharedInstance.fetchMarket()
++        }
+     }
+     
++    @objc func handleError() {
++        self.hideLoading1()
++    }
+     
+     @objc func reload_app(){
++        //当前的直接切,在线的下载后切.
++        LanguageTools.shareInstance.selectedLan = currentLan
++        LanguageTools.shareInstance.changeLan(lan: currentLan.id.replacingOccurrences(of: "-", with: "_"))
+         let window = UIApplication.shared.keyWindow
+         let nav = AppDelegate().initNavBarV()
+         window?.rootViewController = nav

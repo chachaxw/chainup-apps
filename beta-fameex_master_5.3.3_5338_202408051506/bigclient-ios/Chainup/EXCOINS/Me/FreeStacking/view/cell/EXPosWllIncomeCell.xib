@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EXPosWllIncomeCell" rowHeight="111" id="KGk-i7-Jjw" customClass="EXPosWllIncomeCell" customModule="Chainup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="402" height="110.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2日预计收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yp3-Vm-ho8">
+                        <rect key="frame" x="15" y="15" width="69" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorMedium"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7h-7G-AcO">
+                        <rect key="frame" x="370.5" y="15" width="16.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorMedium"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3N-u2-agE">
+                        <rect key="frame" x="326.5" y="12" width="39" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorLite"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yp3-Vm-ho8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="27w-tX-WbO"/>
+                    <constraint firstItem="P3N-u2-agE" firstAttribute="centerY" secondItem="yp3-Vm-ho8" secondAttribute="centerY" id="CRi-Be-Qfd"/>
+                    <constraint firstAttribute="bottom" secondItem="yp3-Vm-ho8" secondAttribute="bottom" priority="250" constant="15" id="Tsz-m0-iH2"/>
+                    <constraint firstItem="N7h-7G-AcO" firstAttribute="leading" secondItem="P3N-u2-agE" secondAttribute="trailing" constant="5" id="X9x-Lc-Hnj"/>
+                    <constraint firstAttribute="trailing" secondItem="N7h-7G-AcO" secondAttribute="trailing" constant="15" id="lNw-aM-nqS"/>
+                    <constraint firstItem="yp3-Vm-ho8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="rBS-hF-E3e"/>
+                    <constraint firstItem="P3N-u2-agE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yp3-Vm-ho8" secondAttribute="trailing" constant="20" id="w4r-cg-XRz"/>
+                    <constraint firstItem="N7h-7G-AcO" firstAttribute="bottom" secondItem="yp3-Vm-ho8" secondAttribute="bottom" id="zRu-G9-Iq1"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="content" destination="P3N-u2-agE" id="T6d-cc-RSM"/>
+                <outlet property="title" destination="yp3-Vm-ho8" id="w5A-Fn-Oe8"/>
+                <outlet property="unit" destination="N7h-7G-AcO" id="9Ip-Q2-uAD"/>
+            </connections>
+            <point key="canvasLocation" x="197.10144927536234" y="106.80803571428571"/>
+        </tableViewCell>
+    </objects>
+</document>

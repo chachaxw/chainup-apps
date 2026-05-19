@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40"
+    >
+    <FrameLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        />
+
+    <com.yjkj.chainup.new_version.view.CustomizeEditText
+        android:id="@+id/et_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/common_tip_inputPhoneOrMail"
+        android:maxLines="1"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/hint_color"
+        android:textCursorDrawable="@drawable/et_cursor_color"
+        android:importantForAutofill="no"
+        android:textSize="@dimen/sp_16"
+        android:layout_toRightOf="@id/rl_layout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+
+        />
+    <View
+        android:id="@+id/v_bottom_line"
+        style="@style/common_horizon_line_style"
+        android:layout_width="match_parent"
+        android:background="@color/line_color"
+        android:layout_alignParentBottom="true"
+
+        />
+</RelativeLayout>

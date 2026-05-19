@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SkeletonActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_header_kit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="Switch开关" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/card_bg_color_1">
+
+        <com.qmuiteam.qmui.layout.QMUILinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="50dp"
+            app:qmui_topDividerColor="@color/line_color"
+            app:qmui_topDividerHeight="1dp">
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="小的-主题颜色"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:layout_width="26dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="12dp"
+                    app:status="false" />
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:layout_width="26dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="12dp"
+                    app:status="false" />
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:id="@+id/s_btn"
+                    android:layout_width="26dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="12dp"
+                    app:status="true" />
+
+
+            </LinearLayout>
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="小的-更换颜色"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:layout_width="26dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="12dp"
+                    app:switch_on_color="@color/main_red"
+                    app:status="false" />
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:layout_width="26dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="12dp"
+                    app:switch_on_color="@color/main_red"
+                    app:status="false" />
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:layout_width="26dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="12dp"
+                    app:switch_on_color="@color/main_red"
+                    app:status="true" />
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:layout_width="26dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="12dp"
+                    app:switch_on_color="@color/main_red"
+                    app:status="true" />
+
+            </LinearLayout>
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="大的-主题颜色"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:layout_width="34dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="12dp"
+                    app:status="false" />
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:layout_width="34dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="12dp"
+                    app:status="false" />
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:layout_width="34dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="12dp"
+                    app:status="true" />
+
+
+            </LinearLayout>
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="大的-更换颜色"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:layout_width="34dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="12dp"
+                    app:status="false" />
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:layout_width="34dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="12dp"
+                    app:status="false" />
+
+                <com.chainup.kit.views.SwitchButtonView
+                    android:layout_width="34dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="12dp"
+                    app:switch_on_color="@color/main_red"
+                    app:status="true" />
+                <com.chainup.kit.views.SwitchButtonView
+                    android:layout_width="34dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="12dp"
+                    app:switch_on_color="@color/main_red"
+                    app:status="true" />
+
+
+            </LinearLayout>
+
+
+        </com.qmuiteam.qmui.layout.QMUILinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,24 @@
+diff a/Chainup/Framework/EXSwapSDK/View/Calculate/EXCalculateClosePriceTC.swift b/Chainup/Framework/EXSwapSDK/View/Calculate/EXCalculateClosePriceTC.swift	(rejected hunks)
+@@ -38,7 +38,7 @@ class EXCalculateClosePriceTC: UITableViewCell {
+     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+         super.init(style: style, reuseIdentifier: reuseIdentifier)
+         self.selectionStyle = .none
+-        contentView.backgroundColor = UIColor.exs_ThemeView.bg
++        contentView.backgroundColor = UIColor.ThemeView.bg
+         contentView.exs_addSubViews([openPriceField,RIOField])
+         openPriceField.snp.makeConstraints { (make) in
+             make.top.equalToSuperview().offset(20)
+@@ -63,11 +63,11 @@ class EXCalculateClosePriceTC: UITableViewCell {
+     }
+     func validate() -> Bool {
+         if (openPriceField.input.text?.count == 0) {
+-            EXSAlert.showFail(msg:"cp_content_text31".ex_localized() + (openPriceField.titleLabel.text ?? ""))
++            EXAlert.showFail(msg:"cp_content_text31".ex_localized() + (openPriceField.titleLabel.text ?? ""))
+             return false
+         }
+         if (RIOField.input.text?.count == 0) {
+-            EXSAlert.showFail(msg:"cp_content_text31".ex_localized() + (RIOField.titleLabel.text ?? ""))
++            EXAlert.showFail(msg:"cp_content_text31".ex_localized() + (RIOField.titleLabel.text ?? ""))
+             return false
+         }
+         return true

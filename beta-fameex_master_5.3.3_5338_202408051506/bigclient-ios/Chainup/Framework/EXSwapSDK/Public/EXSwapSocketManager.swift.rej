@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Public/EXSwapSocketManager.swift b/Chainup/Framework/EXSwapSDK/Public/EXSwapSocketManager.swift	(rejected hunks)
+@@ -55,7 +55,7 @@ import Starscream
+                 if let s = mySelf.currentItemModel?.ex_contractInfo?.wsSymbol(), !channel.contains("\(s)_") {
+                     #if DEBUG
+                     
+-//                    EXSAlert.showWarning(msg: "\(channel)没有取消订阅")
++//                    EXAlert.showWarning(msg: "\(channel)没有取消订阅")
+                     #endif
+                     return
+                 }

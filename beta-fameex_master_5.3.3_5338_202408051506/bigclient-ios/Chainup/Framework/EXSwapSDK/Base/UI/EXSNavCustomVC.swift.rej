@@ -1,0 +1,28 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSNavCustomVC.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSNavCustomVC.swift	(rejected hunks)
+@@ -22,7 +22,7 @@ enum EXSNavType {
+     var lastVC = false
+     {
+         didSet{
+-            navCustomView.backView.backgroundColor = UIColor.exs_ThemeView.bg
++            navCustomView.backView.backgroundColor = UIColor.ThemeView.bg
+         }
+     }
+     
+@@ -121,7 +121,7 @@ enum EXSNavType {
+         super.viewDidLoad()
+         setNavCustomV()
+         // Do any additional setup after loading the view.
+-        contentView.backgroundColor = UIColor.exs_ThemeView.bg
++        contentView.backgroundColor = UIColor.ThemeView.bg
+         setNavLeft()
+     }
+     
+@@ -200,7 +200,7 @@ enum EXSNavType {
+ //    }
+     
+     //MARK:设置title
+-    public func setTitle(_ title : String , color : UIColor = UIColor.exs_ThemeLabel.colorLite , font : CGFloat = 18){
++    public func setTitle(_ title : String , color : UIColor = UIColor.ThemeLabel.colorLite , font : CGFloat = 18){
+         navCustomView.middleTitle.text = title
+     }
+     

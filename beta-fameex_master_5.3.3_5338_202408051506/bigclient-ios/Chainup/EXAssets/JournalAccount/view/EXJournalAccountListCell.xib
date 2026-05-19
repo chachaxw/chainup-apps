@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="EXJournalAccountListCell" customModule="Chainup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgE-ob-cLG">
+                        <rect key="frame" x="15" y="15" width="41.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorLite"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuc-XS-Evo">
+                        <rect key="frame" x="15" y="104.5" width="305" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="YuU-Tl-b84"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.seperator"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tft-8w-TH1">
+                        <rect key="frame" x="61.5" y="18" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="0Ck-cy-Ulg"/>
+                            <constraint firstAttribute="width" constant="14" id="kMf-Ck-OC0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeIcon" value="public_hint"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="onAttectionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="poU-GP-Ngc"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Tft-8w-TH1" firstAttribute="centerY" secondItem="TgE-ob-cLG" secondAttribute="centerY" id="Dg2-hU-ICb"/>
+                    <constraint firstItem="TgE-ob-cLG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Ggo-yP-jpt"/>
+                    <constraint firstAttribute="trailing" secondItem="cuc-XS-Evo" secondAttribute="trailing" id="GpX-K3-DQZ"/>
+                    <constraint firstItem="TgE-ob-cLG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="NO8-Tc-mBo"/>
+                    <constraint firstItem="cuc-XS-Evo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Nt3-8F-vHz"/>
+                    <constraint firstItem="Tft-8w-TH1" firstAttribute="leading" secondItem="TgE-ob-cLG" secondAttribute="trailing" constant="5" id="epW-Eg-4WL"/>
+                    <constraint firstAttribute="bottom" secondItem="cuc-XS-Evo" secondAttribute="bottom" id="fnR-7A-tUW"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="attentionButton" destination="Tft-8w-TH1" id="fD9-kg-xhG"/>
+                <outlet property="titleLabel" destination="TgE-ob-cLG" id="f1I-vh-F1l"/>
+            </connections>
+            <point key="canvasLocation" x="-150.40000000000001" y="-25.637181409295355"/>
+        </tableViewCell>
+    </objects>
+</document>

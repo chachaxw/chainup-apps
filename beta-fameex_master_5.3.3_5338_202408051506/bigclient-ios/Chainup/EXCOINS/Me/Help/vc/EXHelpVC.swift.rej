@@ -1,0 +1,9 @@
+diff a/Chainup/EXCOINS/Me/Help/vc/EXHelpVC.swift b/Chainup/EXCOINS/Me/Help/vc/EXHelpVC.swift	(rejected hunks)
+@@ -7,6 +7,7 @@
+ //
+ 
+ import UIKit
++import EXKit 
+ 
+ class EXHelpVC: NavCustomVC,EXEmptyDataSetable {
+     

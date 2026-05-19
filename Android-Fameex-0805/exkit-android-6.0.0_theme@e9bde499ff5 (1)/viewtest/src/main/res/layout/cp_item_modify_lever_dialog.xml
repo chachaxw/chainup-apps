@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/public_bg_dialog_topcorner12"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_16">
+
+    <TextView
+        android:id="@+id/tv_level_user_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        style="@style/textstyle_dr_12_color2"
+        android:layout_marginTop="@dimen/dp_8"
+        android:visibility="visible"
+        />
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_8"
+        style="@style/textstyle_dm_14_color1"
+        />
+
+    <com.chainup.kit.views.KKEditFormGroupKit
+        style="@style/etstyle_baseFormGroup"
+        android:id="@+id/edit_loss_price"
+        android:paddingHorizontal="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:kk_input_type="numberDecimal"
+        app:kk_hint="触发价"
+        app:kk_action1="USDT" />
+
+    <View
+        android:id="@+id/seek_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/dp_32"
+        />
+
+    <TextView
+        android:id="@+id/tv_level_tip"
+        android:layout_width="match_parent"
+        android:text="@string/app_name"
+        android:gravity="left"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/warning_1"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_height="wrap_content"
+        style="@style/textstyle_dr"
+        android:visibility="invisible"
+        android:layout_marginBottom="@dimen/dp_24"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_par"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@color/main_1"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可滑动区域"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_level_hight_tip"
+        android:layout_width="match_parent"
+        android:text="杠杆倍数过高，当前持仓最高支持杠杆 60X"
+        android:gravity="left"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/warning_1"
+        android:layout_marginTop="@dimen/dp_46"
+        android:layout_height="56dp"
+        style="@style/textstyle_dr"
+        android:maxLines="4"
+        android:ellipsize="end"
+        />
+
+    <com.chainup.kit.views.KKButtonKit
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_16"
+        app:kk_buttonText="KKButtonKit"
+        />
+
+</LinearLayout>

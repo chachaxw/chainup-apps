@@ -1,0 +1,25 @@
+diff a/Chainup/EXOTC/Home/view/EXOTCOrderInfoCell.swift b/Chainup/EXOTC/Home/view/EXOTCOrderInfoCell.swift	(rejected hunks)
+@@ -47,8 +47,8 @@ class EXOTCOrderInfoCell: UITableViewCell {
+         orderValue.textColor = model.valueColor
+         if model.actionType == .none {
+             actionBtn.isHidden = true
+-            orderValue.snp_remakeConstraints { make in
+-                make.left.greaterThanOrEqualTo(orderTitle.snp_right).offset(16)
++            orderValue.snp.remakeConstraints { make in
++                make.left.greaterThanOrEqualTo(orderTitle.snp.right).offset(16)
+                 make.right.equalToSuperview().offset(-16)
+                 make.top.equalToSuperview().offset(14)
+                 make.bottom.equalToSuperview().offset(-14)
+@@ -62,9 +62,9 @@ class EXOTCOrderInfoCell: UITableViewCell {
+             }else if model.actionType == .actionContact {
+                 actionBtn.setImage(UIImage.themeImageNamed(imageName: "fiat_contactnumber"), for: .normal)
+             }
+-            orderValue.snp_remakeConstraints { make in
+-                make.left.greaterThanOrEqualTo(orderTitle.snp_right).offset(16)
+-                make.right.equalTo(actionBtn.snp_left).offset(-5)
++            orderValue.snp.remakeConstraints { make in
++                make.left.greaterThanOrEqualTo(orderTitle.snp.right).offset(16)
++                make.right.equalTo(actionBtn.snp.left).offset(-5)
+                 make.top.equalToSuperview().offset(14)
+                 make.bottom.equalToSuperview().offset(-14)
+             }

@@ -1,0 +1,10 @@
+diff a/Chainup/EXCOINS/Transaction/Transaction/view/EXTransactionDetailView.swift b/Chainup/EXCOINS/Transaction/Transaction/view/EXTransactionDetailView.swift	(rejected hunks)
+@@ -508,7 +508,7 @@ extension EXTransactionTradingV{
+             tradingBtn.setTitle(sellTitle, for: .normal)
+         }
+         downTextField.emptyPersentage()
+-        downTextField.color = tradingBtn.color
++        downTextField.volumeColor = tradingBtn.color
+         reloadView()
+     }
+     

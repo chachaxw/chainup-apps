@@ -1,0 +1,415 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="BaseAppTheme" parent="QMUI.NoActionBar">
+        <item name="qmui_alpha_pressed">0.2</item>
+        <item name="qmui_alpha_disabled">0.2</item>
+    </style>
+    <style name="BaseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustResize</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="SheetDialogTheme" parent="BaseDialog">
+        <item name="android:windowIsFloating">false</item>
+    </style>
+    <style name="CommonDialogTheme" parent="BaseDialog">
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+    <style name="OptionalCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/optional_checkbox_selected_selector</item>
+    </style>
+
+    <style name="like_checkbox_style_coins">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">@drawable/checkbox_style</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+
+
+    <style name="textstyle_dm">
+        <item name="android:fontFamily">@font/harmony_medium</item>
+    </style>
+
+    <style name="textstyle_db">
+        <item name="android:fontFamily">@font/harmony_bold</item>
+    </style>
+
+    <style name="textstyle_db_14" parent="textstyle_db">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="textstyle_dr">
+        <item name="android:fontFamily">@font/harmony_regular</item>
+    </style>
+
+    <style name="textstyle_dm_16_bold_color1" parent="textstyle_dm">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+    <style name="textstyle_dm_14_bold_color1" parent="textstyle_dm">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+
+    <style name="textstyle_dm_14_bold_color_while" parent="textstyle_dm_14_bold_color1">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textstyle_dm_14_color_bule" parent="textstyle_dm_14_color1">
+        <item name="android:textColor">@color/main_color</item>
+    </style>
+
+    <style name="textstyle_dm_14_bold_color_bule" parent="textstyle_dm_14_bold_color1">
+        <item name="android:textColor">@color/main_color</item>
+    </style>
+
+    <style name="textstyle_dm_12_bold_color_bule" parent="textstyle_dm_14_bold_color1">
+        <item name="android:textColor">@color/main_color</item>
+    </style>
+    <style name="textstyle_dm_18_bold_color1" parent="textstyle_db">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+    <style name="textstyle_dm_16_color1" parent="textstyle_dm">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+    <style name="textstyle_dm_18_color1" parent="textstyle_dm">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+    <style name="textstyle_dm_16_color2" parent="textstyle_dm">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_color_2</item>
+    </style>
+    <style name="textstyle_dm_14_color1" parent="textstyle_dm">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+    <style name="textstyle_dm_14_color2" parent="textstyle_dm">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color_2</item>
+    </style>
+    <style name="textstyle_dm_12_bold_color1" parent="textstyle_dm">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+    <style name="textstyle_dm_12_color1" parent="textstyle_dm">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+    <style name="textstyle_dm_12_color2" parent="textstyle_dm">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_color_2</item>
+    </style>
+    <style name="textstyle_dm_12_color3" parent="textstyle_dm">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_color_3</item>
+    </style>
+    <style name="textstyle_dr_12_color3" parent="textstyle_dr">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_color_3</item>
+    </style>
+    <style name="textstyle_dr_12_color2" parent="textstyle_dr">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_color_2</item>
+    </style>
+
+    <style name="textstyle_dm_10_color1" parent="textstyle_dm">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+    <style name="textstyle_dm_10_color2" parent="textstyle_dm">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_color_2</item>
+    </style>
+    <style name="textstyle_dm_10_color3" parent="textstyle_dm">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_color_3</item>
+    </style>
+
+    <style name="textstyle_db_12_color2" parent="textstyle_db">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_color_2</item>
+    </style>
+
+    <style name="textstyle_dr_10_color2" parent="textstyle_dr">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_color_2</item>
+    </style>
+    <style name="textstyle_dr_10_color1" parent="textstyle_dr">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+    <style name="textstyle_dr_10_color3" parent="textstyle_dr">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_color_3</item>
+    </style>
+
+
+
+    <style name="OptionalCheck2Theme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/optional_checkbox_2_style</item>
+    </style>
+
+    <style name="textstyle_dr_14_color2" parent="textstyle_dr_10_color2">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="textstyle_dr_14_color1" parent="textstyle_dr_14_color2">
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+
+    <style name="textstyle_dm_20_bold_color1" parent="textstyle_dm_20_color1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textstyle_dm_20_color1" parent="textstyle_dm">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+
+
+    <style name="textstyle_dr_mult_12_color2" parent="textstyle_dr">
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="textstyle_btn_12_color1" parent="textstyle_dm_12_color1">
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+    </style>
+
+
+
+    <style name="textstyle_btn_16_color1" parent="textstyle_dm_16_color1">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless</item>
+    </style>
+
+
+    <style name="textstyle_btn_14_color1" parent="textstyle_dm_14_color1">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="textstyle_btn_16_color_while" parent="textstyle_btn_16_color1">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textstyle_btn_14_color_while" parent="textstyle_btn_14_color1">
+        <item name="android:textColor">@color/text_4</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="textstyle_btn_12_color_while" parent="textstyle_dm_12_color1">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textstyle_btn_16_color_blue" parent="textstyle_btn_16_color1">
+        <item name="android:textColor">@color/main_blue</item>
+    </style>
+
+    <style name="textstyle_dm_12_yellow" parent="textstyle_dm_12_color1">
+        <item name="android:textColor">@color/text_yellow_color</item>
+    </style>
+
+    <style name="BaseEditTextKitStyle" parent="textstyle_dm">
+        <item name="android:layout_height">@dimen/dp_44</item>
+        <item name="android:layout_width">343dp</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:paddingHorizontal">@dimen/dp_16</item>
+        <item name="android:gravity">center_vertical</item>
+<!--        <item name="android:paddingVertical">@dimen/dp_13</item>-->
+        <item name="android:hint">Hint</item>
+        <item name="kk_et_fillColor">@color/special_2</item>
+    </style>
+
+    <style name="etstyle_baseSearch" parent="BaseEditTextKitStyle">
+        <item name="android:layout_height">@dimen/dp_36</item>
+        <item name="kk_isSearch">true</item>
+        <item name="android:paddingHorizontal">@dimen/dp_10</item>
+        <item name="android:paddingVertical">@dimen/dp_10</item>
+        <item name="android:hint">BaseEditTextKit Search Hint</item>
+        <item name="kk_et_fillColor">@color/fill_3</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="etstyle_baseEtNumber" parent="BaseEditTextKitStyle">
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:layout_width">192dp</item>
+        <item name="kk_isSearch">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingHorizontal">@dimen/dp_10</item>
+<!--        <item name="android:paddingVertical">@dimen/dp_11</item>-->
+        <item name="android:hint">Hint</item>
+    </style>
+
+    <style name="etstyle_baseFormGroup">
+        <item name="kk_efg_fillColor">@color/special_2</item>
+    </style>
+
+    <style name="IndicatorSeekBarStyle">
+        <item name="isb_progress">0</item>
+        <item name="isb_seek_smoothly">true</item>
+        <item name="isb_show_tick_marks_type">oval</item>
+        <item name="isb_indicator_color">@color/main_color</item>
+        <item name="isb_tick_texts_color">@color/main_color</item>
+        <item name="isb_show_tick_texts">false</item>
+        <item name="isb_thumb_adjust_auto">false</item>
+        <item name="isb_ticks_count">5</item>
+        <item name="isb_track_background_color">@color/card_bg_color_2</item>
+        <item name="isb_tick_marks_drawable">@drawable/public_bg_tick_marks_selector</item>
+        <item name="isb_thumb_drawable">@drawable/ic_contract_leverage_slider</item>
+        <item name="isb_thumb_size">@dimen/dp_16</item>
+        <item name="isb_min">1</item>
+        <item name="isb_track_progress_color">@color/main_color</item>
+        <item name="android:layout_marginLeft">-10dp</item>
+        <item name="android:layout_marginRight">-10dp</item>
+        <item name="isb_indicator_top_content_layout">@layout/public_layout_indicatorseekbar_top_content</item>
+    </style>
+
+    <style name="public_slidingtab_layout_style">
+        <item name="tl_tab_vertical_gravity">Bottom</item>
+        <item name="tl_tab_padding">@dimen/dp_16</item>
+        <item name="tl_indicator_height">@dimen/dp_4</item>
+        <item name="tl_indicator_color">@color/main_color</item>
+        <item name="tl_indicator_width">@dimen/dp_24</item>
+        <item name="tl_textSelectColor">@color/text_color_1</item>
+        <item name="tl_textUnSelectColor">@color/text_color_2</item>
+        <item name="tl_textUnSelectSize">@dimen/sp_14</item>
+        <item name="tl_textSelectSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="public_commontab_layout_style">
+        <item name="tl_indicator_height">@dimen/dp_24</item>
+        <item name="tl_indicator_margin_top">0.5dp</item>
+        <item name="tl_indicator_color">@color/card_bg_color_2</item>
+        <item name="tl_tab_gravity">Center</item>
+        <item name="tl_textSelectColor">@color/text_color_1</item>
+        <item name="tl_textUnSelectColor">@color/text_color_2</item>
+        <item name="tl_textUnSelectSize">@dimen/sp_14</item>
+        <item name="tl_textSelectSize">@dimen/sp_14</item>
+        <item name="tl_tab_vertical_gravity">Center</item>
+        <item name="tl_indicator_style">BLOCK</item>
+        <item name="tl_iconVisible">false</item>
+        <item name="tl_indicator_corner_radius">@dimen/dp_4</item>
+
+    </style>
+
+    <style name="public_commontab_bline_style" parent="public_commontab_layout_style">
+        <item name="tl_tab_vertical_gravity">Bottom</item>
+        <item name="tl_tab_padding">@dimen/dp_16</item>
+        <item name="tl_indicator_height">@dimen/dp_4</item>
+        <item name="tl_indicator_color">@color/main_color</item>
+        <item name="tl_indicator_width">@dimen/dp_24</item>
+        <item name="tl_textSelectColor">@color/text_color_1</item>
+        <item name="tl_textUnSelectColor">@color/text_color_2</item>
+        <item name="tl_textUnSelectSize">@dimen/sp_14</item>
+        <item name="tl_textSelectSize">@dimen/sp_14</item>
+        <item name="tl_indicator_style">NORMAL</item>
+        <item name="tl_indicator_corner_radius">0dp</item>
+    </style>
+    <style name="public_commontab_bline_16_style" parent="public_commontab_layout_style">
+        <item name="tl_tab_vertical_gravity">Bottom</item>
+        <item name="tl_tab_padding">@dimen/dp_16</item>
+        <item name="tl_indicator_height">@dimen/dp_4</item>
+        <item name="tl_indicator_color">@color/main_color</item>
+        <item name="tl_indicator_width">@dimen/dp_24</item>
+        <item name="tl_textSelectColor">@color/text_color_1</item>
+        <item name="tl_textUnSelectColor">@color/text_color_2</item>
+        <item name="tl_textUnSelectSize">@dimen/sp_16</item>
+        <item name="tl_textSelectSize">@dimen/sp_16</item>
+        <item name="tl_indicator_style">NORMAL</item>
+        <item name="tl_indicator_corner_radius">0dp</item>
+    </style>
+    <style name="public_commontab_bline_14_style" parent="public_commontab_layout_style">
+        <item name="tl_tab_vertical_gravity">Bottom</item>
+        <item name="tl_tab_padding">@dimen/dp_16</item>
+        <item name="tl_indicator_height">@dimen/dp_4</item>
+        <item name="tl_indicator_color">@color/main_color</item>
+        <item name="tl_indicator_width">@dimen/dp_24</item>
+        <item name="tl_textSelectColor">@color/text_color_1</item>
+        <item name="tl_textUnSelectColor">@color/text_color_2</item>
+        <item name="tl_textUnSelectSize">@dimen/sp_14</item>
+        <item name="tl_textSelectSize">@dimen/sp_14</item>
+        <item name="tl_indicator_style">NORMAL</item>
+        <item name="tl_indicator_corner_radius">0dp</item>
+    </style>
+
+    <style name="public_toolbartype_riches">
+        <item name="tl_textSelectColor">@color/main_blue</item>
+        <item name="tl_textUnSelectColor">@color/text_color_2</item>
+        <item name="tl_indicator_color">@color/card_bg_color_2</item>
+        <item name="tl_textSize">@dimen/sp_14</item>
+        <item name="tl_textBold">SELECT</item>
+        <item name="tl_indicator_corner_radius">@dimen/dp_4</item>
+        <item name="tl_indicator_style">BLOCK</item>
+        <item name="tl_iconVisible">false</item>
+
+    </style>
+    <style name="public_toolbartype_bar_home_tab" parent="@style/public_toolbartype_riches">
+        <item name="android:paddingLeft">@dimen/dp_8</item>
+        <item name="android:paddingRight">@dimen/dp_8</item>
+        <item name="tl_tab_padding">@dimen/dp_10</item>
+        <item name="tl_indicator_margin_left">@dimen/dp_4</item>
+        <item name="tl_indicator_margin_right">@dimen/dp_4</item>
+        <item name="tl_textSelectColor">@color/text_color_1</item>
+        <item name="tl_textBold">NONE</item>
+    </style>
+
+
+    <style name="NoBackGroundDialog" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="textstyle_dr_12_color_bule" parent="textstyle_dr_12_color2">
+        <item name="android:textColor">@color/main_color</item>
+    </style>
+
+    <style name="textstyle_dr_12_color1" parent="textstyle_dr">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_color_1</item>
+    </style>
+
+    <style name="DialogActivity" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+
+    <style name="etstyle_asset_baseSearch">
+        <item name="android:layout_height">@dimen/dp_28</item>
+        <item name="kk_isSearch">true</item>
+        <item name="android:paddingLeft">@dimen/dp_8</item>
+        <item name="android:paddingRight">@dimen/dp_8</item>
+        <item name="android:hint">BaseEditTextKit Search Hint</item>
+        <item name="kk_et_fillColor">@color/search_bg_color</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+</resources>

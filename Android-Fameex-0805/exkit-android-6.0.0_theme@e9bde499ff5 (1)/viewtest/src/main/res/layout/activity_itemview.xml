@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SkeletonActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_header_kit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="ItemView" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/card_bg_color_1">
+
+        <com.qmuiteam.qmui.layout.QMUILinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="50dp"
+            app:qmui_topDividerColor="@color/line_color"
+            app:qmui_topDividerHeight="1dp">
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="左边文字"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="邀请好友"
+                app:kk_item_show_line="true"
+                app:kk_accessory_type="chevron"/> <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="左边icon-文字"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="邀请好友"
+                app:kk_item_title_icon="@mipmap/contract_transfers"
+                app:kk_item_show_line="true"
+                app:kk_accessory_type="chevron"/>
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="左边icon-文字-右边文字"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="合约单位"
+                app:kk_item_value_text="币"
+                app:kk_item_title_icon="@mipmap/contract_transfers"
+                app:kk_item_show_line="true"
+                app:kk_accessory_type="chevron"/>
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="左边icon-文字-右边文字-提示点"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="检查更新"
+                app:kk_item_value_text="V6.0"
+                app:kk_item_show_red="true"
+                app:kk_item_title_icon="@mipmap/contract_transfers"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="左边icon-文字-右边开关"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="下单确认"
+                app:kk_item_show_line="true"
+                app:kk_accessory_type="switcher"/>
+        </com.qmuiteam.qmui.layout.QMUILinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

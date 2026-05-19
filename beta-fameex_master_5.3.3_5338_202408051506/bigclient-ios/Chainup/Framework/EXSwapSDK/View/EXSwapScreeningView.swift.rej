@@ -1,0 +1,28 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapScreeningView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapScreeningView.swift	(rejected hunks)
+@@ -219,7 +219,7 @@ extension EXSwapScreeningView {
+             mySelf.nameButton.checked(check: false)
+         }
+         sheet.configButtonTitles(buttons: self.swapNameArray, selectedIdx: self.swapNameIndex)
+-        EXSAlert.showSheet(sheetView: sheet)
++        EXAlert.showSheet(sheetView: sheet)
+     }
+     
+     /// 点击限价类型
+@@ -236,7 +236,7 @@ extension EXSwapScreeningView {
+             mySelf.limitPriceButton.checked(check: false)
+         }
+         sheet.configButtonTitles(buttons: self.priceTypeArray, selectedIdx: self.priceTypeIndex)
+-        EXSAlert.showSheet(sheetView: sheet)
++        EXAlert.showSheet(sheetView: sheet)
+     }
+     
+     /// 点击交易方向
+@@ -253,7 +253,7 @@ extension EXSwapScreeningView {
+             mySelf.orderTypeButton.checked(check: false)
+         }
+         sheet.configButtonTitles(buttons: self.orderTypeArray, selectedIdx: self.orderTypeIndex)
+-        EXSAlert.showSheet(sheetView: sheet)
++        EXAlert.showSheet(sheetView: sheet)
+     }
+     
+     private func valueChanged() {

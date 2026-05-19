@@ -1,0 +1,16 @@
+diff a/Chainup/Assets.xcassets/5.0/common/night/norecords_night.imageset/Contents.json b/Chainup/Assets.xcassets/5.0/common/night/norecords_night.imageset/Contents.json	(rejected hunks)
+@@ -5,12 +5,12 @@
+       "scale" : "1x"
+     },
+     {
+-      "filename" : "thedefault_night@2x.png",
++      "filename" : "public_nocontentyet@2x.png",
+       "idiom" : "universal",
+       "scale" : "2x"
+     },
+     {
+-      "filename" : "thedefault_night@3x.png",
++      "filename" : "public_nocontentyet@3x.png",
+       "idiom" : "universal",
+       "scale" : "3x"
+     }

@@ -1,0 +1,6 @@
+framework module Pods_Chainup {
+  umbrella header "Pods-Chainup-umbrella.h"
+
+  export *
+  module * { export * }
+}

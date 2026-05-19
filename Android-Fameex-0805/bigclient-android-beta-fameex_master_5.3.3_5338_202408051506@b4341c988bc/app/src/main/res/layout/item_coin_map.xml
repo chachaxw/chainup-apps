@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_56">
+    <!--币种图标-->
+    <TextView
+        android:id="@+id/tv_sort"
+        style="@style/textStyle_text_2_16_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:visibility="visible"
+        tools:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_coin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_coin" />
+
+    <!--币种-->
+    <TextView
+        android:id="@+id/tv_coin"
+        style="@style/textStyle_title_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/tv_sort"
+        app:layout_goneMarginLeft="@dimen/dp_16"
+        app:layout_constraintBottom_toBottomOf="@+id/balance"
+        app:layout_constraintStart_toEndOf="@+id/tv_sort"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/dp_5"
+        tools:text="LTC" />
+    <!--市场-->
+    <TextView
+        android:id="@+id/tv_market"
+        style="@style/textStyle_value_82_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|bottom"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_coin"
+        app:layout_constraintStart_toEndOf="@+id/tv_coin"
+        app:layout_constraintTop_toTopOf="@+id/tv_coin"
+        tools:text="/BTC" />
+
+    <!--添加币对-->
+    <!--android:background="@drawable/bg_msg_focus"-->
+
+    <LinearLayout
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|end"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ib_add"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="@dimen/dp_16"
+        >
+
+        <TextView
+            android:id="@+id/tv_close_price"
+            style="@style/textStyle_title_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="5734.580000" />
+
+        <TextView
+            android:id="@+id/tv_rose"
+            style="@style/textstyle_dr_12_color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="----" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ib_add"
+        style="@style/base_style_padd_16_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@mipmap/public_notfavorited"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/balance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/balance" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

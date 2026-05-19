@@ -1,0 +1,16 @@
+diff a/Chainup/Assets.xcassets/4.0/common/default_reversepankou_night.imageset/Contents.json b/Chainup/Assets.xcassets/4.0/common/default_reversepankou_night.imageset/Contents.json	(rejected hunks)
+@@ -5,12 +5,12 @@
+       "scale" : "1x"
+     },
+     {
+-      "filename" : "default_reversepankou_night@2x.png",
++      "filename" : "coins_handicap_greenred_night@2x.png",
+       "idiom" : "universal",
+       "scale" : "2x"
+     },
+     {
+-      "filename" : "default_reversepankou_night@3x.png",
++      "filename" : "coins_handicap_greenred_night@3x.png",
+       "idiom" : "universal",
+       "scale" : "3x"
+     }

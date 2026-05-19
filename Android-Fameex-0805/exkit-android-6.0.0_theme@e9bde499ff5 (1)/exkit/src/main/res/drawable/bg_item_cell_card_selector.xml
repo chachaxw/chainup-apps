@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:radius="@dimen/dp_4" />
+                    <solid android:color="@color/special_2" />
+                    <stroke android:width="@dimen/dp_2" android:color="@color/main_color" />
+                </shape>
+            </item>
+            <item
+                android:drawable="@drawable/ic_public_selecteds"
+                android:width="@dimen/dp_24"
+                android:height="@dimen/dp_24"
+                android:gravity="right|top"
+                />
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/special_2" />
+                    <corners android:radius="@dimen/dp_4" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

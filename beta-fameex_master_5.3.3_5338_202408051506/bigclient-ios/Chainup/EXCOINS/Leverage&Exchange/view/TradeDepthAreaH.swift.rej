@@ -1,0 +1,10 @@
+diff a/Chainup/EXCOINS/Leverage&Exchange/view/TradeDepthAreaH.swift b/Chainup/EXCOINS/Leverage&Exchange/view/TradeDepthAreaH.swift	(rejected hunks)
+@@ -163,7 +163,7 @@ class TradeDepthTicker:UIView {
+         
+         newWorthBtn.snp.makeConstraints { (make) in
+             make.left.equalTo(netWorth.snp.right)
+-            make.centerY.equalTo(netWorth.snp_centerY)
++            make.centerY.equalTo(netWorth.snp.centerY)
+             make.width.height.equalTo(16)
+         }
+         

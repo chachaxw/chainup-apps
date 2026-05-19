@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ani_translate_from_bottom_to_top">
+        <item name="android:windowEnterAnimation">@anim/kk_ani_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/kk_ani_slide_out_bottom</item>
+    </style>
+    <style name="ani_translate_from_top_to_bottom">
+        <item name="android:windowEnterAnimation">@anim/kk_ani_slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/kk_ani_slide_out_up</item>
+    </style>
+
+    <style name="ani_popwindow_center">
+        <item name="android:windowEnterAnimation">@anim/kk_ani_popwindow_pivot_center_enter</item>
+        <item name="android:windowExitAnimation">@anim/kk_ani_popwindow_pivot_center_exit</item>
+    </style>
+
+    <style name="ani_popwindow_top">
+        <item name="android:windowEnterAnimation">@anim/kk_ani_popwindow_pivot_top_enter</item>
+        <item name="android:windowExitAnimation">@anim/kk_ani_popwindow_pivot_top_exit</item>
+    </style>
+
+    <style name="ani_popwindow_top_right">
+        <item name="android:windowEnterAnimation">@anim/kk_ani_popwindow_pivot_topright_enter</item>
+        <item name="android:windowExitAnimation">@anim/kk_ani_popwindow_pivot_topright_exit</item>
+    </style>
+
+</resources>

@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSDrawerVC.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSDrawerVC.swift	(rejected hunks)
+@@ -20,7 +20,7 @@ class EXSDrawerVC: EXSBaseVC {
+     lazy var backView : UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.mask
++        view.backgroundColor = UIColor.ThemeView.mask
+         let tap = UITapGestureRecognizer.init(target: self, action: #selector(pullAnimation))
+         view.addGestureRecognizer(tap)
+         return view

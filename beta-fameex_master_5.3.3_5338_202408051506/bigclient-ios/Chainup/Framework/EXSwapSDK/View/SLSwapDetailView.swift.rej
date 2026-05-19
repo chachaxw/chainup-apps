@@ -1,0 +1,37 @@
+diff a/Chainup/Framework/EXSwapSDK/View/SLSwapDetailView.swift b/Chainup/Framework/EXSwapSDK/View/SLSwapDetailView.swift	(rejected hunks)
+@@ -22,7 +22,7 @@ class SLSwapHorDetailView : UIView {
+     lazy var leftLabel: UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.BodyRegular
+         return label
+     }()
+@@ -39,7 +39,7 @@ class SLSwapHorDetailView : UIView {
+     lazy var rightLabel: UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorLite
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.font = UIFont.ThemeFont.BodyMedium
+         label.textAlignment = .right
+         return label
+@@ -128,7 +128,7 @@ class SLSwapVerDetailView : UIView {
+     lazy var topLabel: UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         return label
+     }()
+@@ -145,7 +145,7 @@ class SLSwapVerDetailView : UIView {
+     lazy var bottomLabel: UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorBlack
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.font = UIFont.ThemeFont.BodyRegular
+         return label
+     }()

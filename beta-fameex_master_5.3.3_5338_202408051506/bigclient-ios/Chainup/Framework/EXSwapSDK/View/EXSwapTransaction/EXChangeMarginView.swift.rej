@@ -1,0 +1,97 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXChangeMarginView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXChangeMarginView.swift	(rejected hunks)
+@@ -6,7 +6,7 @@
+ //
+ 
+ import UIKit
+-
++import EXKit
+ class EXChangeMarginView: UIView {
+ 
+     var currentID:Int64 = 0
+@@ -46,11 +46,11 @@ class EXChangeMarginView: UIView {
+         let button = UIButton()
+         button.setTitle("cp_contract_setting_text2".ex_localized(), for: .normal)
+         button.titleLabel?.font = UIFont.ThemeFont.BodyBold
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .selected)
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        button.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .selected)
++        button.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         button.addTarget(self, action: #selector(clickPositionTypeButton), for: .touchUpInside)
+-        button.ext_setBackgroundColor(backgroundColor: UIColor.exs_ThemeBtn.disableP, state: .disabled)
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorDark, for: .disabled)
++        button.ext_setBackgroundColor(backgroundColor: UIColor.ThemeBtn.disable, state: .disabled)
++        button.setTitleColor(UIColor.ThemeLabel.colorDark, for: .disabled)
+         button.layer.borderWidth = 0.5
+         button.layer.cornerRadius = 4
+         button.layer.masksToBounds = true
+@@ -63,10 +63,10 @@ class EXChangeMarginView: UIView {
+         let button = UIButton()
+         button.setTitle("cp_contract_setting_text1".ex_localized(), for: .normal)
+         button.titleLabel?.font = UIFont.ThemeFont.BodyBold
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorDark, for: .disabled)
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .selected)
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
+-        button.ext_setBackgroundColor(backgroundColor: UIColor.exs_ThemeBtn.disableP, state: .disabled)
++        button.setTitleColor(UIColor.ThemeLabel.colorDark, for: .disabled)
++        button.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .selected)
++        button.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
++        button.ext_setBackgroundColor(backgroundColor: UIColor.ThemeBtn.disable, state: .disabled)
+ 
+         button.layer.borderWidth = 0.5
+         button.layer.cornerRadius = 4
+@@ -76,19 +76,19 @@ class EXChangeMarginView: UIView {
+     }()
+     func changeUIForCurrentSelectButton(sender : UIButton) {
+         
+-        sender.layer.borderColor = UIColor.exs_ThemeLabel.colorHighlight.cgColor
++        sender.layer.borderColor = UIColor.ThemeLabel.colorHighlight.cgColor
+ 
+         if sender == self.fixedButton {
+-            if self.crossButton.isEnabled || EXSThemeManager.isNight() {
+-                self.crossButton.layer.borderColor = UIColor.exs_ThemeView.border.cgColor
++            if self.crossButton.isEnabled || EXThemeManager.isNight() {
++                self.crossButton.layer.borderColor = UIColor.ThemeView.border.cgColor
+             }else {
+                 self.crossButton.layer.borderColor = UIColor.clear.cgColor
+             }
+             self.fixedButton.isSelected = true
+             self.crossButton.isSelected = false
+         } else {
+-            if self.fixedButton.isEnabled || EXSThemeManager.isNight() {
+-                self.fixedButton.layer.borderColor = UIColor.exs_ThemeView.border.cgColor
++            if self.fixedButton.isEnabled || EXThemeManager.isNight() {
++                self.fixedButton.layer.borderColor = UIColor.ThemeView.border.cgColor
+             }else {
+                 self.fixedButton.layer.borderColor = UIColor.clear.cgColor
+             }
+@@ -123,7 +123,7 @@ class EXChangeMarginView: UIView {
+     
+     lazy var tipLabel: UILabel = {
+         let text = "cp_contract_setting_text3".ex_localized() + "\n\n" + "cp_contract_setting_text4".ex_localized()
+-        let label = UILabel(text: text, font: UIFont.systemFont(ofSize: 14), textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++        let label = UILabel(text: text, font: UIFont.systemFont(ofSize: 14), textColor: UIColor.ThemeLabel.colorMedium, alignment: .left)
+         label.numberOfLines = 0
+         label.isHidden = true
+         return label
+@@ -156,7 +156,7 @@ class EXChangeMarginView: UIView {
+         let retBtn = UIButton(type: .custom)
+         
+         retBtn.setTitle("cp_content_text6".ex_localized(), for: .normal)
+-        retBtn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        retBtn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         retBtn.titleLabel?.font = UIFont.ThemeFont.SecondaryRegular
+         retBtn.setImage(UIImage.exs_themeImageNamed(imageName: "contract_positions_thedropdown"), for: .normal)
+         retBtn.rx.tap.subscribe { (_) in
+@@ -181,10 +181,10 @@ class EXChangeMarginView: UIView {
+    
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+-        backgroundColor = UIColor.exs_ThemeView.bg
++        backgroundColor = UIColor.ThemeView.bg
+         
+         let marginView1 = UIView()
+-        marginView1.backgroundColor = UIColor.exs_ThemeView.bg
++        marginView1.backgroundColor = UIColor.ThemeView.bg
+         self.addSubview(marginView1)
+         marginView1.snp.makeConstraints { (make) in
+             make.top.left.right.equalToSuperview()

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SkeletonActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_header_kit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="对话框" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@color/main_bg_color"
+        android:layout_height="match_parent">
+    <com.qmuiteam.qmui.layout.QMUILinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:qmui_topDividerColor="@color/line_color"
+        app:qmui_topDividerHeight="1dp">
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:text="确认操作弹窗"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="只有标题" />
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="带标题+描述" />
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="谨慎确认操作+带图标" />
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:text="告知类弹窗"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="普通告知弹窗" />
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="谨慎告知弹窗+带图标" />
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:text="操作引导弹窗"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="带标题+描述" />
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="带标题+描述（需重点突出）" />
+
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:text="带插图的弹窗"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"/>
+
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="带插图+描述（需重点突出）" />
+
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:text="带输入框的弹窗"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"/>
+
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_9"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="带1个输入框的弹窗，点击确认回调" />
+
+
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

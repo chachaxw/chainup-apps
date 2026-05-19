@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card_color"
+    android:fitsSystemWindows="true">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/v_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/register_action_setPassword" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_header">
+        <LinearLayout
+            android:id="@+id/ll_tip"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@color/text_yellow_10_color"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/public_point"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/tv_sub_title"
+                style="@style/textstyle_dm_12_color1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/password_reset_tips"
+                android:textColor="@color/text_yellow_color" />
+        </LinearLayout>
+
+        <com.chainup.kit.views.KKEditFormGroupKit
+            android:id="@+id/cet_pwd_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/ll_tip"
+            app:kk_input_type="textPassword"
+            app:kk_hint="@string/password_input_rule_tips"
+            app:kk_title="@string/personal_text_newPwd"
+            android:layout_marginTop="@dimen/dp_34"
+            />
+
+        <com.chainup.kit.views.KKEditFormGroupKit
+            android:id="@+id/cet_pwd_again_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/cet_pwd_view"
+            app:kk_hint="@string/register_tip_repeatPassword"
+            app:kk_title="@string/personal_text_confirmPwd"
+            app:kk_input_type="textPassword"
+            android:layout_marginTop="@dimen/dp_28"
+            />
+
+        <com.chainup.kit.views.KKEditFormGroupKit
+            android:id="@+id/cet_pwd_invite_code_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/cet_pwd_again_view"
+            app:kk_hint="@string/invite_code_hint"
+            app:kk_title="@string/register_text_inviteCode"
+            android:layout_marginTop="@dimen/dp_28"
+            />
+
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/cubtn_view"
+            style="@style/NewVersionCommonlyUsedButtonStyle"
+            android:layout_below="@+id/cet_pwd_invite_code_view"
+            android:layout_marginTop="@dimen/dp_28"
+            app:kk_buttonText="@string/common_text_btnConfirm"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cubtn_view"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_28"
+            android:text="@string/register_tip_agreement"
+            style="@style/textstyle_dr_12_color1"
+            />
+
+        <TextView
+            android:id="@+id/tv_terms_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cubtn_view"
+            android:layout_marginTop="@dimen/dp_28"
+            android:layout_toRightOf="@+id/tv_info"
+            android:text="@string/register_action_agreement"
+            style="@style/textstyle_dr_12_color1"
+            android:textColor="@color/main_blue"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

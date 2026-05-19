@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.coorchice.library.SuperTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stv_tip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingVertical="@dimen/dp_12"
+    android:paddingHorizontal="@dimen/dp_16"
+    app:stv_corner="@dimen/dp_4"
+    app:stv_solid="@color/fill_3"
+    tools:text="@string/rewardCenter_text22"
+    style="@style/textstyle_dr_14_color2"
+    android:lineSpacingExtra="1.8dp"
+    android:layout_marginHorizontal="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_17"
+    />

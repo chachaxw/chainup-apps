@@ -1,0 +1,10 @@
+diff a/Chainup/zh-Hant.lproj/Localizable.strings b/Chainup/zh-Hant.lproj/Localizable.strings	(rejected hunks)
+@@ -1862,7 +1862,7 @@
+ "sumsub_verification_cryptoRequirementsTitle"="要求";
+ 
+ "earnings_yesterday_title"="昨日盈亏";
+-"earnings_yesterday_instruction"="昨日盈亏 = 昨日24点现货账户资产（24:00:00 UTC+8） - 昨日0点的现货账户资产（00:00:00 UTC+8） - 昨日的净充值和净划入";
++"earnings_yesterday_instruction"="昨日盈亏 = 昨日24点现货账户资产（24:00:00 UTC+8）- 昨日0点的现货账户资产（00:00:00 UTC+8）- 昨日的净充值和净划入";
+ 
+ "sumsub_tob_verification_navtitle"="企业认证";
+ "kyc_verification_legal"="权益";

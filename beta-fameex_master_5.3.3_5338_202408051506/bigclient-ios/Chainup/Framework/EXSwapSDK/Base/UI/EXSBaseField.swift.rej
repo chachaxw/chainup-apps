@@ -1,0 +1,26 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSBaseField.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSBaseField.swift	(rejected hunks)
+@@ -49,7 +49,7 @@ class EXSBaseField: EXSNibBaseView {
+ //    
+     
+     override func onCreate() {
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         self.rxhasError.asObservable()
+         .subscribe(onNext: { [weak self] error in
+             guard self != nil else { return }
+@@ -72,12 +72,12 @@ class EXSBaseField: EXSNibBaseView {
+ //        guard let txtField = textField else {return}
+ //        guard let effectsView = effectView else {return}
+ //        if isBorder {
+-//            effectsView.layer.borderColor = UIColor.exs_ThemeState.fail.cgColor
++//            effectsView.layer.borderColor = UIColor.ThemeState.fail.cgColor
+ //        }else {
+-//            effectsView.backgroundColor = UIColor.exs_ThemeState.fail
++//            effectsView.backgroundColor = UIColor.ThemeState.fail
+ //        }
+ //        if let placeHolder = txtField.placeholder {
+-//            txtField.setPlaceHolderAtt(placeHolder,color:UIColor.exs_ThemeState.fail)
++//            txtField.setPlaceHolderAtt(placeHolder,color:UIColor.ThemeState.fail)
+ //        }
+ //    }
+ }

@@ -1,0 +1,17 @@
+diff a/Chainup/EXCOINS/Me/Set/view/EXSetView.swift b/Chainup/EXCOINS/Me/Set/view/EXSetView.swift	(rejected hunks)
+@@ -109,11 +109,12 @@ class EXSetView: UIView {
+             entity.action = rowActions()[idx]
+             switch str{
+             case LanguageTools.getString(key: "customSetting_action_language"):
+-                let curItem = LanguageTools.shareInstance.selectedLan
+-                if curItem.name.count > 0 {
++//                let curItem = LanguageTools.shareInstance.selectedLan
++                
++                if let curItem = EXAppConfigManager.sharedInstance.getLanItem(lanId: LanguageHandler.phoneLanguage) {
+                     entity.rightName = curItem.name
+                 }else{
+-                     entity.rightName =    "noun_language".localized()
++                    entity.rightName = "noun_language".localized()
+                 }
+                 
+             case LanguageTools.getString(key: "customSetting_action_kline"):

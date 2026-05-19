@@ -1,0 +1,10 @@
+diff a/Chainup/EXCOINS/Transaction/Transaction/view/cell/EXTransactionDrawerTC.swift b/Chainup/EXCOINS/Transaction/Transaction/view/cell/EXTransactionDrawerTC.swift	(rejected hunks)
+@@ -95,7 +95,7 @@ class EXTransactionDrawerTC: UITableViewCell {
+         
+         rateLabel.snp.makeConstraints { (make) in
+             make.right.equalToSuperview().offset(-15)
+-            make.top.equalTo(priceLabel.snp_bottom)
++            make.top.equalTo(priceLabel.snp.bottom)
+             make.height.equalTo(12)
+         }
+         

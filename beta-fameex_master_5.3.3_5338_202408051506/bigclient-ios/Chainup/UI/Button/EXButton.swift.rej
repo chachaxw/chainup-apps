@@ -1,0 +1,10 @@
+diff a/Chainup/UI/Button/EXButton.swift b/Chainup/UI/Button/EXButton.swift	(rejected hunks)
+@@ -216,7 +216,7 @@ enum EXButtonColor{
+     public static var highlightedGreenColor = UIColor.extColorWithHex("26C0A4")
+     public static var redColor              = UIColor.extColorWithHex("D1425E")
+     public static var highlightedRedColor   = UIColor.extColorWithHex("D75E75")
+-    public static var blueColor             = UIColor.extColorWithHex("3078FF")
++    public static var blueColor             = UIColor.extColorWithHex("2B61FF")
+     public static var highlightedBlueColor  = UIColor.extColorWithHex("4E8CFF")
+ }
+ 

@@ -1,0 +1,112 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXChangeMarginAmountSheet.swift b/Chainup/Framework/EXSwapSDK/View/EXChangeMarginAmountSheet.swift	(rejected hunks)
+@@ -54,21 +54,21 @@ class EXChangeMarginAmountSheet: UIView {
+         }
+     }
+     lazy var addButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_order_text20".ex_localized(), titleFont: UIFont.ThemeFont.HeadMedium, titleColor: UIColor.exs_ThemeLabel.colorMedium)
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorLite, for: .selected)
++        let button = UIButton(buttonType: .custom, title: "cp_order_text20".ex_localized(), titleFont: UIFont.ThemeFont.HeadMedium, titleColor: UIColor.ThemeLabel.colorMedium)
++        button.setTitleColor(UIColor.ThemeLabel.colorLite, for: .selected)
+         button.ext_SetAddTarget(self, #selector(clickAddButton))
+         return button
+     }()
+     
+     lazy var decreaseButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_order_text21".ex_localized(), titleFont: UIFont.ThemeFont.HeadMedium, titleColor: UIColor.exs_ThemeLabel.colorMedium)
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorLite, for: .selected)
++        let button = UIButton(buttonType: .custom, title: "cp_order_text21".ex_localized(), titleFont: UIFont.ThemeFont.HeadMedium, titleColor: UIColor.ThemeLabel.colorMedium)
++        button.setTitleColor(UIColor.ThemeLabel.colorLite, for: .selected)
+         button.ext_SetAddTarget(self, #selector(clickDecreaseButton))
+         return button
+     }()
+     /// 取消
+     lazy var cancelButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_overview_text44".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.exs_ThemeLabel.colorMedium)
++        let button = UIButton(buttonType: .custom, title: "cp_overview_text44".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.ThemeLabel.colorMedium)
+         button.ext_SetAddTarget(self, #selector(clickCancelButton))
+         return button
+     }()
+@@ -76,7 +76,7 @@ class EXChangeMarginAmountSheet: UIView {
+     lazy var volumeTextField : EXSPersentageField = {
+         let textField = EXSPersentageField()
+ 
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         
+         textField.input.keyboardType = UIKeyboardType.decimalPad
+         textField.decimal = "2"//精度
+@@ -108,7 +108,7 @@ class EXChangeMarginAmountSheet: UIView {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+         label.text = "cp_overview_text19".ex_localized()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.SecondaryRegular
+ //        label.attributedText = getAvailable(price: "--", volume: "")
+         return label
+@@ -116,19 +116,19 @@ class EXChangeMarginAmountSheet: UIView {
+     lazy var headerSeparateView : UIView = {
+         let view = UIView()
+         
+-        view.backgroundColor = UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = UIColor.ThemeView.bgGap
+         return view
+     }()
+     lazy var separateView : UIView = {
+         let view = UIView()
+         
+-        view.backgroundColor = UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = UIColor.ThemeView.bgGap
+         return view
+     }()
+     lazy var separateLabel : UILabel = {
+         let view = UILabel()
+         view.text = "cp_order_text24".ex_localized()
+-        view.textColor = UIColor.exs_ThemeLabel.colorMedium
++        view.textColor = UIColor.ThemeLabel.colorMedium
+         view.font = UIFont.ThemeFont.SecondaryRegular
+         view.backgroundColor = UIColor.white
+         view.textAlignment = .center
+@@ -159,8 +159,8 @@ class EXChangeMarginAmountSheet: UIView {
+     }()
+     private lazy var confirmButton: UIButton = {
+         let button = UIButton(buttonType: .custom, title: "cp_calculator_text16".ex_localized(), titleFont: UIFont.ThemeFont.HeadBold, titleColor: UIColor.white)
+-        button.ext_setBackgroundColor(backgroundColor: UIColor.exs_ThemeBtn.highlight, state: .normal)
+-        button.extsetBackgroundColor(backgroundColor: UIColor.exs_ThemeBtn.disable, state: .disabled)
++        button.ext_setBackgroundColor(backgroundColor: UIColor.ThemeBtn.highlight, state: .normal)
++        button.extsetBackgroundColor(backgroundColor: UIColor.ThemeBtn.disable, state: .disabled)
+         button.layer.cornerRadius = 4
+         button.layer.masksToBounds = true
+         button.ext_SetAddTarget(self, #selector(clickConfirmButton))
+@@ -169,11 +169,11 @@ class EXChangeMarginAmountSheet: UIView {
+     
+     /// 点击取消
+     @objc func clickCancelButton() {
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         exs_roundCorners(corners: [.topLeft, .topRight], radius: 10)
+ 
+         exs_addSubViews([addButton,decreaseButton,cancelButton,headerSeparateView])
+@@ -311,7 +311,7 @@ class EXChangeMarginAmountSheet: UIView {
+         }
+         volumeTextField.maxValue = maxValue
+         separateLabel.text = "cp_order_text24".ex_localized()
+-        separateLabel.backgroundColor = UIColor.exs_ThemeView.bg
++        separateLabel.backgroundColor = UIColor.ThemeView.bg
+ 
+     }
+     func configDecrease() {
+@@ -369,7 +369,7 @@ class EXChangeMarginAmountSheet: UIView {
+             let text = self.volumeTextField.input.text
+             im = im.toValuePrecision(withContract: positionModel!.instrument_id)
+             if text != nil,text!.isEmpty {
+-                EXSAlert.showFail(msg: "redpacket_send_inputAmount".ex_localized())
++                EXAlert.showFail(msg: "redpacket_send_inputAmount".ex_localized())
+                 return
+             }
+ 

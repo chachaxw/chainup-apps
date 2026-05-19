@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cp_bg_item_new_dialog"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp_16"
+    android:paddingVertical="@dimen/dp_12">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="调整价格基准"
+                style="@style/textstyle_dm_16_color1"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/cp_overview_text44"
+            style="@style/textstyle_dr_14_color2"
+            />
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rg_order_type"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/dp_28"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cp_close_order_type_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="最新价格"
+            android:layout_marginRight="6dp"
+            style="@style/textstyle_dm_14_color1"
+            />
+
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cp_close_order_type_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="标记价格"
+            tools:checked="true"
+            style="@style/textstyle_dm_14_color1"
+            />
+
+    </RadioGroup>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32">
+        <TextView
+            android:id="@+id/tv_cp_order_text28111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用最新成交价格预估未实现盈亏和回报率，可能与实际盈亏存在偏差"
+            style="@style/textstyle_dm_12_color2"
+            />
+    </RelativeLayout>
+
+
+    <com.chainup.contract.view.CpCommonlyUsedButton
+        android:id="@+id/btn_close_position"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_12"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:bgColor="@color/main_blue"
+        app:bottonTextContent="@string/cp_calculator_text29" />
+
+</LinearLayout>

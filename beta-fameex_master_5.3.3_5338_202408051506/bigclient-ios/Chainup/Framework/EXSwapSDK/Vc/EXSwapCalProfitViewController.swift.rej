@@ -1,0 +1,83 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSwapCalProfitViewController.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSwapCalProfitViewController.swift	(rejected hunks)
+@@ -23,7 +23,7 @@ class EXSwapCalProfitViewController: ListBaseViewController {
+         let btnBuy = UIButton.init(type: .custom)
+         btnBuy.titleLabel?.font = UIFont.ThemeFont.BodyMedium
+         btnBuy.setTitle("cp_overview_text13".ex_localized(), for: .normal)
+-        btnBuy.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        btnBuy.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         btnBuy.setTitleColor(UIColor.white, for: .selected)
+         btnBuy.setBackgroundImage(UIImage.exs_themeImageNamed(imageName: "coins_exchange_buy_grey"), for: .normal)
+ 
+@@ -38,7 +38,7 @@ class EXSwapCalProfitViewController: ListBaseViewController {
+         let btnSell = UIButton.init(type: .custom)
+         btnSell.titleLabel?.font = UIFont.ThemeFont.BodyMedium
+         btnSell.setTitle("cp_overview_text14".ex_localized(), for: .normal)
+-        btnSell.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        btnSell.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         btnSell.setTitleColor(UIColor.white, for: .selected)
+         btnSell.isSelected = false
+         btnSell.setBackgroundImage(UIImage.exs_themeImageNamed(imageName: "coins_exchange_sell_grey"), for: .normal)
+@@ -63,7 +63,7 @@ class EXSwapCalProfitViewController: ListBaseViewController {
+     lazy var openPriceField: EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.input.leftViewMode = .always
+         textField.maxLenth = 9
+         textField.bgView.layer.cornerRadius = 4
+@@ -82,7 +82,7 @@ class EXSwapCalProfitViewController: ListBaseViewController {
+     lazy var closePriceField: EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.input.leftViewMode = .always
+         textField.maxLenth = 9
+         textField.bgView.layer.cornerRadius = 4
+@@ -101,7 +101,7 @@ class EXSwapCalProfitViewController: ListBaseViewController {
+     lazy var volumeField: EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.input.leftViewMode = .always
+         textField.maxLenth = 9
+         textField.bgView.layer.cornerRadius = 4
+@@ -118,7 +118,7 @@ class EXSwapCalProfitViewController: ListBaseViewController {
+     }()
+     private lazy var carculateView: EXSwapCalculatorFootView = {
+         let view = EXSwapCalculatorFootView()
+-        view.backgroundColor = UIColor.exs_ThemeView.bg
++        view.backgroundColor = UIColor.ThemeView.bg
+         view.tipsContent.text = "cp_extra_text148".ex_localized()
+         view.carculateCallback = {[weak self] tag in
+             guard let mySelf = self else{return}
+@@ -210,15 +210,15 @@ class EXSwapCalProfitViewController: ListBaseViewController {
+     }
+     func validate() -> Bool {
+         if (openPriceField.input.text?.count == 0) {
+-            EXSAlert.showFail(msg:"cp_content_text31".ex_localized() + (openPriceField.leftLabel.text ?? ""))
++            EXAlert.showFail(msg:"cp_content_text31".ex_localized() + (openPriceField.leftLabel.text ?? ""))
+             return false
+         }
+         if (closePriceField.input.text?.count == 0) {
+-            EXSAlert.showFail(msg:"cp_content_text31".ex_localized() + (closePriceField.leftLabel.text ?? ""))
++            EXAlert.showFail(msg:"cp_content_text31".ex_localized() + (closePriceField.leftLabel.text ?? ""))
+             return false
+         }
+         if (volumeField.input.text?.count == 0) {
+-            EXSAlert.showFail(msg:"cp_content_text31".ex_localized() + (volumeField.leftLabel.text ?? ""))
++            EXAlert.showFail(msg:"cp_content_text31".ex_localized() + (volumeField.leftLabel.text ?? ""))
+             return false
+         }
+         return true
+@@ -244,7 +244,7 @@ class EXSwapCalProfitViewController: ListBaseViewController {
+         let tuple = calculateProftAndLoss()
+         alert.updataInfo(tuple.0 + viewModel.costUnit, "", tuple.1 + viewModel.costUnit, tuple.2, "")
+         
+-        EXSAlert.showAlert(alertView: alert)
++        EXAlert.showAlert(alertView: alert)
+     }
+     
+     func calculateProftAndLoss() -> (String,String,String) {

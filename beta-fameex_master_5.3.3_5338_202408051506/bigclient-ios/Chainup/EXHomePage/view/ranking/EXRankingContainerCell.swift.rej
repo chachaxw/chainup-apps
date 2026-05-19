@@ -1,0 +1,40 @@
+diff a/Chainup/EXHomePage/view/ranking/EXRankingContainerCell.swift b/Chainup/EXHomePage/view/ranking/EXRankingContainerCell.swift	(rejected hunks)
+@@ -18,7 +18,7 @@ class EXRankingContainerCell: EXHomeBaseCell {
+     var onIndexChanges:RankContainerIndexChange?
+     typealias ReloadTable = ()->()
+     var onReloadTable:ReloadTable?
+-    var rankTableSize:CGSize = CGSize(width: SCREEN_WIDTH, height:580 + 28)
++    var rankTableSize:CGSize = CGSize(width: SCREEN_WIDTH, height:EXHomePageHeightHelper.rankingH*10 + EXHomePageHeightHelper.rankingHeader)
+     var rankLayouts:UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+     var rankScrollIdx:Int = 0
+     var titles:[String] = []
+@@ -54,7 +54,7 @@ class EXRankingContainerCell: EXHomeBaseCell {
+     }()
+     
+     lazy var rankCollection : UICollectionView = {
+-        let collectionV = UICollectionView.init(frame: CGRect.init(x: 0, y: 45, width: rankTableSize.width, height: rankTableSize.height) , collectionViewLayout: getCollectionLayout())
++        let collectionV = UICollectionView.init(frame: CGRect.init(x: 0, y: EXHomePageHeightHelper.rankingMenu, width: rankTableSize.width, height: rankTableSize.height) , collectionViewLayout: getCollectionLayout())
+         collectionV.showsHorizontalScrollIndicator = false
+         collectionV.showsVerticalScrollIndicator = false
+         collectionV.register(EXRankingCollectionItem.classForCoder(), forCellWithReuseIdentifier: "EXRankingCollectionItem")
+@@ -134,17 +134,17 @@ class EXRankingContainerCell: EXHomeBaseCell {
+         self.keys = datas.map{ return $0.key }
+         self.rowDatas = datas
+         
+-        var maxHeight = 580
++        var maxHeight = EXHomePageHeightHelper.rankingH*10
+         //合约版本,有几个加几个.saas版本,固定10条高度
+         if EXHomeViewModel.isContractStatus() {
+             for item in datas {
+-                let heights = item.list.count * 58
++                let heights = CGFloat(item.list.count) * EXHomePageHeightHelper.rankingH
+                 if heights > maxHeight {
+                     maxHeight = heights
+                 }
+             }
++            self.rankTableSize = CGSize(width: SCREEN_WIDTH, height:CGFloat(maxHeight + EXHomePageHeightHelper.rankingHeader))
+         }
+-        self.rankTableSize = CGSize(width: SCREEN_WIDTH, height:CGFloat(maxHeight + 28))
+         if self.rankCollection.superview == nil {
+             self.contentView.addSubview(self.rankCollection)
+         }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/rl_pid"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv_tip"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:scaleType="fitXY"
+        android:src="@mipmap/public_instructions"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginRight="@dimen/dp_6"
+        />
+
+    <TextView
+        android:id="@+id/tv_trade_order_type"
+        style="@style/textstyle_dm_14_bold_color1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:gravity="center"
+        android:text="---"
+        />
+
+    <ImageView
+        android:id="@+id/tv_tag"
+        android:layout_width="@dimen/dp_8"
+        android:layout_height="@dimen/dp_8"
+        android:clickable="false"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:src="@mipmap/public_icon_arrow_down" />
+
+
+</LinearLayout>

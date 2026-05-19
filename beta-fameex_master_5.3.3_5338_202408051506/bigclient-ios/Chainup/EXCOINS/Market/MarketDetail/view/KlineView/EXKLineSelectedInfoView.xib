@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXKLineSelectedInfoView" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outletCollection property="titles" destination="8ph-bJ-TaT" collectionClass="NSMutableArray" id="fGt-70-UjB"/>
+                <outletCollection property="titles" destination="2VB-Ft-2DD" collectionClass="NSMutableArray" id="Vll-IA-ZHF"/>
+                <outletCollection property="titles" destination="quA-7J-HWi" collectionClass="NSMutableArray" id="d7F-Qm-P3b"/>
+                <outletCollection property="titles" destination="ndb-Ww-ThO" collectionClass="NSMutableArray" id="HCV-yU-O0t"/>
+                <outletCollection property="titles" destination="8j0-sc-o89" collectionClass="NSMutableArray" id="Sq6-y4-yzi"/>
+                <outletCollection property="titles" destination="355-lT-0nR" collectionClass="NSMutableArray" id="Ras-TS-xjg"/>
+                <outletCollection property="contents" destination="kGk-vN-l9A" collectionClass="NSMutableArray" id="lzX-86-3OB"/>
+                <outletCollection property="contents" destination="1CI-cU-rSk" collectionClass="NSMutableArray" id="2jY-vk-roh"/>
+                <outletCollection property="contents" destination="8Yj-Mj-Mma" collectionClass="NSMutableArray" id="BJp-MT-Qfw"/>
+                <outletCollection property="contents" destination="vcg-Q0-SSf" collectionClass="NSMutableArray" id="QDq-Ou-m58"/>
+                <outletCollection property="contents" destination="Po9-z1-Fvo" collectionClass="NSMutableArray" id="GD9-JX-zfj"/>
+                <outletCollection property="contents" destination="KAu-ai-Lgd" collectionClass="NSMutableArray" id="Sd5-if-SX2"/>
+                <outletCollection property="titles" destination="mVY-jn-wsd" collectionClass="NSMutableArray" id="gIa-u9-acz"/>
+                <outletCollection property="contents" destination="5NK-wg-SOi" collectionClass="NSMutableArray" id="Xa8-vX-Cbf"/>
+                <outletCollection property="titles" destination="B5F-lw-CXo" collectionClass="NSMutableArray" id="wQ9-kl-dSW"/>
+                <outletCollection property="contents" destination="iWi-45-KZG" collectionClass="NSMutableArray" id="Ftw-cH-Gqu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="256" height="107"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dbq-lJ-vSw">
+                    <rect key="frame" x="0.0" y="5" width="256" height="97"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1I-K6-Pxb">
+                            <rect key="frame" x="0.0" y="0.0" width="256" height="8"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ph-bJ-TaT">
+                                    <rect key="frame" x="5" y="-2" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorMedium"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGk-vN-l9A">
+                                    <rect key="frame" x="224.5" y="-2" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorLite"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="kGk-vN-l9A" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8ph-bJ-TaT" secondAttribute="trailing" id="EdK-Yq-GBP"/>
+                                <constraint firstItem="8ph-bJ-TaT" firstAttribute="centerY" secondItem="C1I-K6-Pxb" secondAttribute="centerY" id="ZUz-92-d20"/>
+                                <constraint firstItem="8ph-bJ-TaT" firstAttribute="leading" secondItem="C1I-K6-Pxb" secondAttribute="leading" constant="5" id="bPk-kG-NiA"/>
+                                <constraint firstItem="kGk-vN-l9A" firstAttribute="centerY" secondItem="C1I-K6-Pxb" secondAttribute="centerY" id="gDN-T4-H1c"/>
+                                <constraint firstAttribute="trailing" secondItem="kGk-vN-l9A" secondAttribute="trailing" constant="5" id="ohu-Ik-VSF"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABh-Y0-DVr">
+                            <rect key="frame" x="0.0" y="13" width="256" height="7.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VB-Ft-2DD">
+                                    <rect key="frame" x="5" y="-2.5" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorMedium"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CI-cU-rSk">
+                                    <rect key="frame" x="224.5" y="-2.5" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorLite"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="1CI-cU-rSk" firstAttribute="centerY" secondItem="ABh-Y0-DVr" secondAttribute="centerY" id="4bO-6G-Eko"/>
+                                <constraint firstItem="2VB-Ft-2DD" firstAttribute="leading" secondItem="ABh-Y0-DVr" secondAttribute="leading" constant="5" id="5ly-Ow-RmQ"/>
+                                <constraint firstItem="1CI-cU-rSk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2VB-Ft-2DD" secondAttribute="trailing" id="fyR-lL-q9L"/>
+                                <constraint firstItem="2VB-Ft-2DD" firstAttribute="centerY" secondItem="ABh-Y0-DVr" secondAttribute="centerY" id="nGJ-pB-jne"/>
+                                <constraint firstAttribute="trailing" secondItem="1CI-cU-rSk" secondAttribute="trailing" constant="5" id="nh4-2w-ChJ"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qi3-3C-cTA">
+                            <rect key="frame" x="0.0" y="25.5" width="256" height="8"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quA-7J-HWi">
+                                    <rect key="frame" x="5" y="-2" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorMedium"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yj-Mj-Mma">
+                                    <rect key="frame" x="224.5" y="-2" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorLite"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="quA-7J-HWi" firstAttribute="leading" secondItem="Qi3-3C-cTA" secondAttribute="leading" constant="5" id="9OY-l1-sZ0"/>
+                                <constraint firstItem="8Yj-Mj-Mma" firstAttribute="centerY" secondItem="Qi3-3C-cTA" secondAttribute="centerY" id="bct-XY-h4Z"/>
+                                <constraint firstItem="quA-7J-HWi" firstAttribute="centerY" secondItem="Qi3-3C-cTA" secondAttribute="centerY" id="cml-a0-EIk"/>
+                                <constraint firstAttribute="trailing" secondItem="8Yj-Mj-Mma" secondAttribute="trailing" constant="5" id="kFt-Te-bSr"/>
+                                <constraint firstItem="8Yj-Mj-Mma" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="quA-7J-HWi" secondAttribute="trailing" id="yxT-W0-5Sd"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWz-My-B6G">
+                            <rect key="frame" x="0.0" y="38.5" width="256" height="7.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndb-Ww-ThO">
+                                    <rect key="frame" x="5" y="-2.5" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorMedium"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcg-Q0-SSf">
+                                    <rect key="frame" x="224.5" y="-2.5" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorLite"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ndb-Ww-ThO" firstAttribute="leading" secondItem="mWz-My-B6G" secondAttribute="leading" constant="5" id="8US-0d-5lh"/>
+                                <constraint firstAttribute="trailing" secondItem="vcg-Q0-SSf" secondAttribute="trailing" constant="5" id="Dd4-Tl-YHN"/>
+                                <constraint firstItem="ndb-Ww-ThO" firstAttribute="centerY" secondItem="mWz-My-B6G" secondAttribute="centerY" id="Gn1-cg-pdL"/>
+                                <constraint firstItem="vcg-Q0-SSf" firstAttribute="centerY" secondItem="mWz-My-B6G" secondAttribute="centerY" id="YKi-j7-NfO"/>
+                                <constraint firstItem="vcg-Q0-SSf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ndb-Ww-ThO" secondAttribute="trailing" id="a3n-AY-OAG"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbP-xu-CgH">
+                            <rect key="frame" x="0.0" y="51" width="256" height="8"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8j0-sc-o89">
+                                    <rect key="frame" x="5" y="-2" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorMedium"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Po9-z1-Fvo">
+                                    <rect key="frame" x="224.5" y="-2" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorLite"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Po9-z1-Fvo" secondAttribute="trailing" constant="5" id="4t1-TE-irh"/>
+                                <constraint firstItem="8j0-sc-o89" firstAttribute="centerY" secondItem="rbP-xu-CgH" secondAttribute="centerY" id="EDE-mD-4Do"/>
+                                <constraint firstItem="Po9-z1-Fvo" firstAttribute="centerY" secondItem="rbP-xu-CgH" secondAttribute="centerY" id="JW2-Pu-YIz"/>
+                                <constraint firstItem="8j0-sc-o89" firstAttribute="leading" secondItem="rbP-xu-CgH" secondAttribute="leading" constant="5" id="VhR-Ke-mak"/>
+                                <constraint firstItem="Po9-z1-Fvo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8j0-sc-o89" secondAttribute="trailing" id="fgf-lM-ISV"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xdr-M4-hlC">
+                            <rect key="frame" x="0.0" y="64" width="256" height="7.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="355-lT-0nR">
+                                    <rect key="frame" x="5" y="-2.5" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorMedium"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAu-ai-Lgd">
+                                    <rect key="frame" x="224.5" y="-2.5" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorLite"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="KAu-ai-Lgd" secondAttribute="trailing" constant="5" id="4ma-Tg-hPC"/>
+                                <constraint firstItem="355-lT-0nR" firstAttribute="centerY" secondItem="Xdr-M4-hlC" secondAttribute="centerY" id="87F-Dd-ung"/>
+                                <constraint firstItem="KAu-ai-Lgd" firstAttribute="centerY" secondItem="Xdr-M4-hlC" secondAttribute="centerY" id="ENi-Sa-otC"/>
+                                <constraint firstItem="KAu-ai-Lgd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="355-lT-0nR" secondAttribute="trailing" id="Rb9-bG-pNt"/>
+                                <constraint firstItem="355-lT-0nR" firstAttribute="leading" secondItem="Xdr-M4-hlC" secondAttribute="leading" constant="5" id="uoB-o8-AIA"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDf-l5-6gM">
+                            <rect key="frame" x="0.0" y="76.5" width="256" height="8"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVY-jn-wsd">
+                                    <rect key="frame" x="5" y="-2" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorMedium"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NK-wg-SOi">
+                                    <rect key="frame" x="224.5" y="-2" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorLite"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="5NK-wg-SOi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mVY-jn-wsd" secondAttribute="trailing" id="2MQ-Ff-6kx"/>
+                                <constraint firstItem="mVY-jn-wsd" firstAttribute="leading" secondItem="kDf-l5-6gM" secondAttribute="leading" constant="5" id="kha-xB-BTc"/>
+                                <constraint firstItem="5NK-wg-SOi" firstAttribute="centerY" secondItem="kDf-l5-6gM" secondAttribute="centerY" id="lUA-Qg-xsf"/>
+                                <constraint firstItem="mVY-jn-wsd" firstAttribute="centerY" secondItem="kDf-l5-6gM" secondAttribute="centerY" id="sai-kj-4D2"/>
+                                <constraint firstAttribute="trailing" secondItem="5NK-wg-SOi" secondAttribute="trailing" constant="5" id="xQt-ML-3KM"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piq-IS-eXk">
+                            <rect key="frame" x="0.0" y="89.5" width="256" height="7.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5F-lw-CXo">
+                                    <rect key="frame" x="5" y="-2.5" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorMedium"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWi-45-KZG">
+                                    <rect key="frame" x="224.5" y="-2.5" width="26.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="kline.labelcolorLite"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="B5F-lw-CXo" firstAttribute="centerY" secondItem="piq-IS-eXk" secondAttribute="centerY" id="FgG-36-neC"/>
+                                <constraint firstAttribute="trailing" secondItem="iWi-45-KZG" secondAttribute="trailing" constant="5" id="Nbr-um-uCR"/>
+                                <constraint firstItem="iWi-45-KZG" firstAttribute="centerY" secondItem="piq-IS-eXk" secondAttribute="centerY" id="cKV-lE-lhf"/>
+                                <constraint firstItem="iWi-45-KZG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="B5F-lw-CXo" secondAttribute="trailing" id="kVE-KR-KQt"/>
+                                <constraint firstItem="B5F-lw-CXo" firstAttribute="leading" secondItem="piq-IS-eXk" secondAttribute="leading" constant="5" id="lU6-Md-kjW"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dbq-lJ-vSw" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-5" id="6fi-Of-Wvo"/>
+                <constraint firstItem="dbq-lJ-vSw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="NXd-Zt-5fy"/>
+                <constraint firstItem="dbq-lJ-vSw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Qdh-Au-9Zn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dbq-lJ-vSw" secondAttribute="trailing" id="euT-y5-i1a"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderW">
+                    <real key="value" value="0.5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="string" keyPath="borderC" value="kline.viewborder"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="corneradius">
+                    <real key="value" value="1.5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-499.19999999999999" y="-488.90554722638683"/>
+        </view>
+    </objects>
+</document>

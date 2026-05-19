@@ -1,0 +1,46 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSTransactionListView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSTransactionListView.swift	(rejected hunks)
+@@ -54,7 +54,7 @@ class EXSTransactionListView: UIView {
+         let tableView = UITableView(frame: self.bounds, style: UITableView.Style.plain)
+         tableView.ext_UseAutoLayout()
+         tableView.ext_SetTableView(self, self)
+-        tableView.backgroundColor = UIColor.exs_ThemeView.bg
++        tableView.backgroundColor = UIColor.ThemeView.bg
+         tableView.ext_RegistCell([EXSwapLimitTransactionCell.classForCoder(), EXSwapPlanTransactionCell.classForCoder()], [limitCellReUseID, planCellReUseID])
+         tableView.ext_RegistCell([EXSwapCurrentOrderTableViewCell.classForCoder()], [currentOrderCellReUseID])
+ 
+@@ -102,7 +102,7 @@ class EXSTransactionListView: UIView {
+         let content = model.liqPositionMsg.replacingOccurrences(of: "\\n", with: "\n")
+         alert.configSigleAlert(title: "cp_extra_text80".ex_localized(), message: content)
+       
+-        EXSAlert.showAlert(alertView: alert)
++        EXAlert.showAlert(alertView: alert)
+     }
+     /// 显示合并明细
+     private func showMergeDetailAlert(model: EXContractOrderModel) {
+@@ -111,7 +111,7 @@ class EXSTransactionListView: UIView {
+ 
+         alert.configSigleAlert(title: "cp_extra_text7".ex_localized(), message: content)
+       
+-        EXSAlert.showAlert(alertView: alert)
++        EXAlert.showAlert(alertView: alert)
+     }
+ }
+ 
+@@ -177,7 +177,7 @@ extension EXSTransactionListView: UITableViewDelegate, UITableViewDataSource {
+                         mySelf.cancelTransactionCallback?(orderModel, mySelf.transactionPriceType)
+ //                    }
+ //                }
+-//                EXSAlert.showAlert(alertView: alert)
++//                EXAlert.showAlert(alertView: alert)
+             }
+             cell.showDetailCallback = { [weak self] orderModel, detailType in
+                 self?.showDetailAlert(model: orderModel, detailType: detailType)
+@@ -203,7 +203,7 @@ extension EXSTransactionListView: UITableViewDelegate, UITableViewDataSource {
+                         mySelf.cancelTransactionCallback?(orderModel, mySelf.transactionPriceType)
+                     }
+                 }
+-                EXSAlert.showAlert(alertView: alert)
++                EXAlert.showAlert(alertView: alert)
+             }
+             return cell
+         }

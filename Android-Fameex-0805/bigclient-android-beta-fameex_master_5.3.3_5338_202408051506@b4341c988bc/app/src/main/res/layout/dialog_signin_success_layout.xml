@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="@dimen/dp_16"
+    android:paddingVertical="@dimen/dp_20"
+    android:background="@drawable/public_bg_dialog_corner12">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/task_successfully"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sign_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rewardCenter_text13"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        style="@style/textstyle_dm_16_color1"
+        android:layout_marginTop="@dimen/dp_24"
+        />
+
+    <TextView
+        android:id="@+id/tv_sign_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sign_success"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="12USDT"
+        style="@style/textstyle_dm"
+        android:layout_marginTop="@dimen/dp_16"
+        />
+
+    <com.chainup.kit.views.KKButtonKit
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        app:kk_buttonText="@string/rewardCenter_text14"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sign_value"
+        android:layout_marginTop="@dimen/dp_32"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

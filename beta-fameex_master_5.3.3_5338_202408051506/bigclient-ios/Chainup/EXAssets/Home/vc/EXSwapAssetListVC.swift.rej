@@ -1,0 +1,10 @@
+diff a/Chainup/EXAssets/Home/vc/EXSwapAssetListVC.swift b/Chainup/EXAssets/Home/vc/EXSwapAssetListVC.swift	(rejected hunks)
+@@ -125,7 +125,7 @@ class EXSwapAssetListVC: EXAssetBaseVc,StoryBoardLoadable {
+             currentDomain = EXNetworkDoctor.sharedManager.getAppAPIHost().hostStr()
+         }
+         urlString += currentDomain
+-        if (LanguageHandler.getPhoneLanguage() != ""){
++        if (LanguageHandler.phoneLanguage != ""){
+             urlString += ("/" + LanguageHandler.phoneLanguage)
+         }
+         urlString += "/app_operation/coProfitRecord"

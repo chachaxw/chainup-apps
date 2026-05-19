@@ -1,0 +1,24 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSBorderField.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSBorderField.swift	(rejected hunks)
+@@ -33,7 +33,7 @@ class EXSBorderField: EXSBaseField {
+         
+         
+         ret.font = UIFont.systemFont(ofSize: 14)
+-        ret.textColor = UIColor.exs_ThemeLabel.colorMedium
++        ret.textColor = UIColor.ThemeLabel.colorMedium
+ 
+         return ret
+     }()
+@@ -53,11 +53,11 @@ class EXSBorderField: EXSBaseField {
+         if input.leftViewMode == .always {
+             
+             leftLabel.text = placeHolder + "    "
+-            input.exs_setPlaceHolderAtt("cp_content_text31".ex_localized(), color: UIColor.exs_ThemeLabel.colorDark, font: font)
++            input.exs_setPlaceHolderAtt("cp_content_text31".ex_localized(), color: UIColor.ThemeLabel.colorDark, font: font)
+ 
+         }else {
+             
+-            input.exs_setPlaceHolderAtt(placeHolder, color: UIColor.exs_ThemeLabel.colorDark, font: font)
++            input.exs_setPlaceHolderAtt(placeHolder, color: UIColor.ThemeLabel.colorDark, font: font)
+         }
+ 
+     }

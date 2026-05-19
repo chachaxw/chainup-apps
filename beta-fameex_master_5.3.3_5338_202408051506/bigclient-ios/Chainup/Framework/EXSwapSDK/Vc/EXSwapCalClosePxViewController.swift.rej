@@ -1,0 +1,74 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSwapCalClosePxViewController.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSwapCalClosePxViewController.swift	(rejected hunks)
+@@ -23,7 +23,7 @@ class EXSwapCalClosePxViewController: ListBaseViewController {
+         let btnBuy = UIButton.init(type: .custom)
+         btnBuy.titleLabel?.font = UIFont.ThemeFont.BodyMedium
+         btnBuy.setTitle("cp_overview_text13".ex_localized(), for: .normal)
+-        btnBuy.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        btnBuy.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         btnBuy.setTitleColor(UIColor.white, for: .selected)
+         btnBuy.setBackgroundImage(UIImage.exs_themeImageNamed(imageName: "coins_exchange_buy_grey"), for: .normal)
+ 
+@@ -38,7 +38,7 @@ class EXSwapCalClosePxViewController: ListBaseViewController {
+         let btnSell = UIButton.init(type: .custom)
+         btnSell.titleLabel?.font = UIFont.ThemeFont.BodyMedium
+         btnSell.setTitle("cp_overview_text14".ex_localized(), for: .normal)
+-        btnSell.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        btnSell.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         btnSell.setTitleColor(UIColor.white, for: .selected)
+         btnSell.isSelected = false
+         btnSell.setBackgroundImage(UIImage.exs_themeImageNamed(imageName: "coins_exchange_sell_grey"), for: .normal)
+@@ -63,7 +63,7 @@ class EXSwapCalClosePxViewController: ListBaseViewController {
+     lazy var openPriceField: EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.input.leftViewMode = .always
+         textField.maxLenth = 9
+         textField.bgView.layer.cornerRadius = 4
+@@ -82,7 +82,7 @@ class EXSwapCalClosePxViewController: ListBaseViewController {
+     lazy var RIOField: EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.input.leftViewMode = .always
+         textField.maxLenth = 9
+         textField.bgView.layer.cornerRadius = 4
+@@ -102,7 +102,7 @@ class EXSwapCalClosePxViewController: ListBaseViewController {
+     
+     private lazy var carculateView: EXSwapCalculatorFootView = {
+         let view = EXSwapCalculatorFootView()
+-        view.backgroundColor = UIColor.exs_ThemeView.bg
++        view.backgroundColor = UIColor.ThemeView.bg
+         view.tipsContent.text = "cp_extra_text148".ex_localized()
+         view.carculateCallback = {[weak self] tag in
+             guard let mySelf = self else{return}
+@@ -187,11 +187,11 @@ class EXSwapCalClosePxViewController: ListBaseViewController {
+     }
+     func validate() -> Bool {
+         if (openPriceField.input.text?.count == 0) {
+-            EXSAlert.showFail(msg:"cp_content_text31".ex_localized() + (openPriceField.leftLabel.text ?? ""))
++            EXAlert.showFail(msg:"cp_content_text31".ex_localized() + (openPriceField.leftLabel.text ?? ""))
+             return false
+         }
+         if (RIOField.input.text?.count == 0) {
+-            EXSAlert.showFail(msg:"cp_content_text31".ex_localized() + (RIOField.leftLabel.text ?? ""))
++            EXAlert.showFail(msg:"cp_content_text31".ex_localized() + (RIOField.leftLabel.text ?? ""))
+             return false
+         }
+         return true
+@@ -218,11 +218,11 @@ class EXSwapCalClosePxViewController: ListBaseViewController {
+         var closePrice = EXFormula.calculateClosePrice(order, ROI: roi.bigMul("0.01"), contractInfo: viewModel.contractModel)
+         closePrice = closePrice.toPricePrecision(withContractID: viewModel.contractModel?.instrument_id ?? 0)
+         if closePrice.lessThanOrEqual(BTZERO) {
+-            EXSAlert.showFail(msg: "cp_extra_text118".ex_localized())
++            EXAlert.showFail(msg: "cp_extra_text118".ex_localized())
+             return
+         }
+         alert.updataInfo(closePrice, "", "", "", viewModel.priceUnit)
+-        EXSAlert.showAlert(alertView: alert)
++        EXAlert.showAlert(alertView: alert)
+ 
+     }
+ }

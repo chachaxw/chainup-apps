@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkeletonActivity"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_header_kit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:rightBtnText="more"
+        app:rightBtnType="text"
+        app:isShowRightBtn="true"
+        app:title="多状态页" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@color/line_color"
+        android:layout_height="0.5dp"/>
+
+    <com.chainup.kit.views.KKMultiStateView
+        android:id="@+id/ll_multi_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_enableAnimateChanges="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="content"
+            android:gravity="center"
+            style="@style/textstyle_dm_10_color1"
+            android:textSize="30sp"
+            android:layout_height="match_parent"/>
+
+
+    </com.chainup.kit.views.KKMultiStateView>
+</LinearLayout>

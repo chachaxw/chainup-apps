@@ -1,0 +1,10 @@
+diff a/Chainup/UI/ViewItems/EXNaviDrawerView.swift b/Chainup/UI/ViewItems/EXNaviDrawerView.swift	(rejected hunks)
+@@ -21,7 +21,7 @@ class EXNaviDrawerView: NibBaseView {
+     
+     override func onCreate() {
+         self.backgroundColor = UIColor.ThemeView.bg 
+-        iconBtn.setImage(UIImage.themeImageNamed(imageName: "contract_menu"), for: .normal)
++        iconBtn.setImage(UIImage.themeImageNamed(imageName: "coins_sidebar"), for: .normal)
+         titleLabel.font = UIFont.ThemeFont.H3Bold
+         titleLabel.textColor = fromKline ? UIColor.ThemekLine.labcolorLite : UIColor.ThemeLabel.colorLite
+         self.addSubview(tagView)

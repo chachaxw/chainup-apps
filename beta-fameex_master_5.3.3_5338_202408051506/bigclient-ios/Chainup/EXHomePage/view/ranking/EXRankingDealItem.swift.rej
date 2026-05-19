@@ -1,0 +1,21 @@
+diff a/Chainup/EXHomePage/view/ranking/EXRankingDealItem.swift b/Chainup/EXHomePage/view/ranking/EXRankingDealItem.swift	(rejected hunks)
+@@ -15,8 +15,9 @@ class EXRankingDealItem: UICollectionViewCell {
+     var rankIdx:Int = 0
+     
+     lazy var rankTable : UITableView = {
+-        let view = UITableView.init(frame: .zero, style:.grouped)
++        let view = UITableView.init(frame: .zero, style:.plain)
+         view.backgroundColor = UIColor.ThemeView.bg
++        view.contentInsetAdjustmentBehavior = .never
+         view.separatorStyle = .none
+         view.delegate = self
+         view.dataSource = self
+@@ -70,7 +71,7 @@ class EXRankingDealItem: UICollectionViewCell {
+ extension EXRankingDealItem : UITableViewDelegate,UITableViewDataSource {
+     
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+-        return 58
++        return EXHomePageHeightHelper.rankingH
+     }
+     
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

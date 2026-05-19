@@ -1,0 +1,1404 @@
+/*
+ Localizable.strings
+ Chainup
+ Created by zewu wang on 2023/8/6.
+ Copyright © 2023年 zewu wang. All rights reserved.
+ */
+//蒙语
+"common_guide_skip_hint"="Skip";
+"common_guide_search_hint"="Click to check the currency you care about";
+"common_guide_notice_hint"="Click for more announcements";
+"common_guide_top_24_hint"="Slide to see more content";
+"common_guide_coin_recommend_hint"="Click on a recommended crypto for a quick search";
+"common_guide_coin_edit_hint"="Click to edit the coin pair of your choice";
+"common_guide_asset_hint"="Click here to check your asset distribution";
+"tab_home" = "Нүүр хуудас";
+"tab_quotes" = "үнийн санал";
+"tab_transaction" = "арилжаа";
+"tab_fund" = "хөрөнгө";
+"tab_account" = "данс";
+"loading" = "уншиж байна…";
+"logging" = "нэвтэрч байна…";
+"show" = "илрэх";
+"not_show" = "илэрцгүй";
+"market" = "зах зээл";
+"symbol" = "валютын төрөл";
+"update" = "шинэчлэлт";
+"ignore" = "алгасах";
+"exit_remind" = "гарах товчлуурыг дахин дарах";
+"more" = "цааш нь";
+//
+"title_information" = "мэдээллийн цэс";
+"title_change_phone" = "утасны дугаараа өөрчлөх";
+"title_change_email" = "и-мэйл хаягаа өөрчлөх";
+"title_bind_phone" = "утастай холбох";
+"title_verification_phone" = "утасны дугаараа баталгаажуулах";
+"title_bind_email" = "и-мэйл хаягтай холбох";
+"title_verification_email" = "и-мэйл хаягаа баталгаажуулах";
+"title_change_nickname" = "хэрэглэгчийн нэр солих";
+"title_notification" = "мэдэгдэл";
+"title_personal_center" = "хувийн хэсэг";
+"title_recharge" = "цэнэглэх";
+"title_recharge_address" = "цэнэглэх хаяг";
+"title_recharge_record" = "цэнэглэлтийн түүх";
+"title_setting" = "тохиргоо";
+"title_reset_login_pass" = "нэвтрэх нууц үгээ шинэчлэх";
+"title_set_asset_pass" = "хөрөнгийн нууц үгийг тохируулах";
+"title_reset_asset_pass" = "хөрөнгийн нууц үгийг дахин оруулах";
+"title_rebind_phone" = "утсаа өөрчлөх";
+"title_rebind_email" = "и-мэйл хаягаа өөрчлөх";
+"title_asset_pass_setting" = "Засварын давтамж";
+"title_user_agreement" = "хэрэглэгчийн гэрээ";
+"title_feedback" = "санал хүсэлт";
+"title_choose_area" = "бүс нутгаа сонгох";
+"title_choose_symbol" = "крито валютын ханш сонгох";
+"title_transaction_details" = "арилжааны нарийвчилсан мэдээлэл";
+"title_asset_details" = "хөрөнгийн нарийвчилсан мэдээлэл";
+"title_industry_information" = "үйлдвэрийн мэдээлэл";
+"title_gesture_password" = "хурууны хээгээр нууц үг оруулах";
+"title_asset_setting" = "хөрөнгийн тохиргоо";
+
+"customSetting_action_changeHost"="Change Host";
+"customSetting_action_host"="Host";
+"customSetting_action_testing"="testing";
+"customSetting_action_response"="response";
+"customSetting_action_unusable"="disabled";
+"market_text_customZoneAdd"="Add Favorites";
+
+"safe_setting" = "аюулгүйн тохиргоо";
+"binding_phone" = "утсаа холбох";
+"binding_email" = "и-мэйл хаягаа холбох";
+"login_pass" = "нэвтрэх нууц үг";
+"funds_pass" = "хөрөнгийн нууц үг";
+"safe_tactics" = "аюулгүй байдлын бодлого";
+"login_validity" = "нэвтрэх хүчинтэй хугацаа";
+"version_update" = "хувилбар";
+"user_agreement" = "хэрэглэгчийн гэрээ";
+"hotline" = "харилцагчийн утас";
+"french_recharge" = "франц валютаар цэнэглэх";
+"USDT" = "USDT";
+"EUR" = "евроEUR";
+"token_recharge" = "төлөөлөх валютыг цэнэглэх";
+"BTC" = "BTC";
+"LTC" = "литкойнLTC";
+"BCC" = "биткойнBCC";
+"ETH" = "ETH";
+"recharge_record" = "цэнэглэлтийн түүх";
+"recharge_remind" = "валютын төрлийг сайтар нягталж шалгана уу，BTC хаягаар нэвтэрч BTC ээс гарах хөрөнгө цэнэглэхийг хориглоно，BTC хаягаар нэвтэрсэн BTC бус хөрөнгийг эргэн олж авах боломжгүй。";
+"important_hint" = "чухал захиалга";
+//
+//
+"asset_details" = "хөрөнгийн нарийвчилсан мэдээлэл";
+"recharge" = "цэнэглэх";
+"withdraw" = "бэлэн мөнгө болгох";
+"other" = "бусад";
+"cashFlow" = "хөрөнгийн урсгал";
+"address_management" = "хаягийн менежмент";
+"title_about" = "холбоотой";
+"versionCode" = "хувилбарын дугаар";
+"contactCall" = "холбогдох дугаар";
+//NEW холбоотой-- = "
+"title_help_center" = "тусламжийн төв";
+////бүртгүүлэх хуудас-- = "
+//
+//
+////арилжааны хуудас-- = "
+"buy_price" = "худалдан авах үнэ";
+"buy_quantity" = "худалдан авах хэмжээ";
+"sell_price" = "худалдаалах үнэ";
+"sell_quantity" = "худалдаалах хэмжээ";
+"hint_buy_amount" = "худалдан авах хэмжээ";
+"hint_sell_amount" = "худалдаалах хэмжээ";
+"tab_buy" = "худалдан авах";
+"tab_sell" = "худалдаалах";
+"deep_merger" = "сайтар нэгтгэх";
+"available_balance" = "боломжит үлдэгдэл";
+"remind_transaction_price" = "арилжаалсан бодит үнийг  жишиг болгох ";
+//
+//
+"deal_quantity" = "гүйлгээний хэмжээ";
+"limit_transaction" = "алрилжааны лимит";
+"market_transaction" = "зах зээлийн үнээр арилжах";
+"transaction_money" = "арилжааны дүн";
+//// NEW захиалгын нарийвчилсан мэдээлэл -- = "
+////NEW захиалгатай холбоотой-- = "
+"title_history_order" = "захиалгын түүх";
+"title_deal_detail" = "гүйлгээний нарийвчилсан мэдээлэл";
+"buy" = "худалдан авах";
+"sell" = "худалдаалах";
+"gmv" = "гүйлгээний нийт дүн";
+"trust_price" = "итгэмжлэгдсэн үнэ";
+"trust_quantity" = "итгэмжлэлийн тоо хэмжээ";
+"average_transaction_price" = "гүйлгээний дундаж үнэ";
+"real_deal" = "бодит гүйлгээ";
+"remain_volume" = "гүйлгээ амжилтгүй";
+"order_status_unfinished" = "гүйлгээ амжилтгүй";
+////тохиргоо-- = "
+"setting" = "тохиргоо";
+//зах зээлийн нарийвчилсан мэдээлэл-- = "
+"trust" = "итгэмжлэх";
+"price" = "үнэ";
+"quantity" = "тоо хэмжээ";
+"time" = "хугацаа";
+"deal" = "гүйлгээ";
+"orientation" = "чиглэл";
+"recent_deal" = "хамгийн сүүлд хийсэн гүйлгээ";
+"volume" = "арилжааны хэмжээ";
+"determine" = "баталгаажуулах";
+"feedback" = "санал хүсэлт";
+//хувийн мэдээлэл-- = "
+"account_info" = "дансны мэдээлэл";
+"personal_info" = "хувийн мэдээлэл";
+"name" = "нэр";
+"nickname" = "хэрэглэгчийн нэр";
+"certificate_type" = "баримт бичгийн төрөл";
+"identity_certificate" = "ID баталгаажуулалт";
+"certificate_num" = "үнэмлэхний дугаар";
+"certification_level" = "баталгаажуулалтын зэрэг";
+"phone" = "утасны дугаар";
+"funding_password" = "хөрөнгийн нууц үг";
+"verification" = "баталгаажуулах";
+"sign_out" = "гарах";
+"confirm" = "зөвшөөрөх";
+"hint_personal_info_name" = "та өөрийн жинхэнэ бөгөөд баримт бичгэн дээрх нэрээ оруулна уу，";
+"hint_personal_info_certificate_type" = "пасспорт";
+"hint_personal_info_certificate_num" = "баримт бичгийн дугаараа оруулна уу";
+"passport_cover" = "пасспортын хавтас";
+"image_example" = "зургийн жишээ";
+"passport_personal_info_page" = "пасспортын хувийн мэдээллийн нүүр";
+"phone_passport_person" = "пасспортын хувийн мэдээлэл болон хувь хүний гарын үсэгний зураг";
+"personal_info_prompt" = "таны ирэгний үнэмлэхний хяналтыг амжилттай батагаажуулахын тулд，зургийн тод гарсан эсэхийг шалгана уу，зөвхөн JPG зургийн загвар оруулна уу。 /зургийн шаардлага：нүүр тал нь тод，ID тод ，гарын үсэг тод，тухайн өдрийн он сарыг багтаасан байна";
+"submit_review" = "хяналтыг илгээх";
+"assets_pass_warning" = "таны дансны аюулгүй байдлын тулд，нууц үгээ шинээр болон дахин оруулсны 24 цагийн дотор бэлэн мөнгө болгох боломжгүй ба валютыг авна！";
+"original_pass" = "анхны нууц үг";
+"original_email" = "анхны и-мэйл хаяг";
+"nw_email" = "шинэ и-мэйл хаяг";
+"new_mobile" = "шинэ утасны дугаар";
+"original_mobile" = "анхны утасны дугаар";
+"save" = "хадгалах";
+"hint_nickname" = "хэрэглэгчийн нэрээ оруулна уу";
+"dialog_remind" = "албан ёсны вэб сайтад нэвтэрч холбогдох үйлдлийг хийнэ үү";
+"cancel" = "цуцлах";
+"take_a_photo" = "зураг авах";
+"select_from_album" = "зургийн хавтаснаас сонгоно уу";
+"submit" = "илгээх";
+"submiting" = "илгээж байна...";
+"determine_bind" = "холбох";
+"asset_pass_not_verification" = "хөрөнгийн нууц үг баталгаажаагүй байна";
+"asset_pass_verification_2hour" = "хоёр цаг тутамд нэг удаа хөрөнгийн нууц үгээ баталгаажуулна уу";
+"asset_pass_verification_every_time" = "хөрөнгийн нууц үгээ байнга баталгаажуулна уу";
+"reset" = "дахин тохируулах";
+"my_invitation_code" =  "миний урих код";
+"login_setting" = "нэвтрэх тохиргоо";
+"gesture_pass" = "утасны нууц үг";
+"pass_input_times" = "нууц үгээ дахин оруулна уу";
+"phone_verification" = "утасны баталгаажуулалт";
+"google_verification" = "Google баталгаажуулалт";
+"total_assets_valuation" = "нийт хөрөнгө";
+"verified" = "баталгаажсан";
+"not_certified" = "баталгаажаагүй";
+"confirm_changes" = "өөрчлөлтийг баталгаажуулах";
+//
+//
+////хөрөнгийн нууц үг-- = "
+"assets_pass" = "хөрөнгийн нууц үг";
+"original_assets_pass" = "өмнөх хөрөнгийн нууц үг";
+"reset_assets_pass" = "хөрөнгийн нууц үгээ дахин оруулна уу";
+"set_assets_pass" = "хөрөнгийн нууц үг хийх";
+"input_no" = "оруулах шаардлагагүй";
+"input_everytime" = "байнга нэвтрэх";
+"input_2hour" = "хоёр цаг тутамд орно уу";
+//
+////гүүглэ баталгаажуулалт-- = "
+"google_code_remind" = "Google баталгаажуулалтын кодыг уншуулж холбож болно";
+"copy_key" = "нууц үгийг хуулбарлах";
+"finish" = "дууслаа";
+//
+//
+////NEW ADD-- = "
+//
+"toast_email_error" = "и-мэйл хаягны загвар алдаатай";
+"toast_feedback_success" = "санал хүсэлт";
+"toast_trade_success" = "амжилттай илгээгдлээ";
+"toast_login_password_change_success" = "баталгаажуулсныг өөрчлөх";
+"toast_no_mobile_verification_code" = "та утасны баталгаажуулах кодоо оруулна уу";
+"toast_no_email_verification_code" = "та и-мэйл хаягныхаа баталгаажуулалтын кодоо оруулна уу";
+"toast_no_nickname" = "хэрэглэгчийн нэрээ оруулна уу";
+
+"toast_no_feedback" = "та асуулт болон саналаа оруулна уу";
+"toast_wrong_pass" = "та нууц үгээ зөв оруулна уу";
+"toast_wrong_asset_pass" = "та хөрөнгийн нууц үгээ үнэн зөв оруулна уу";
+"toast_funding_pass" = "та утас эсвэл Google баталгаажуулалт хийнэ үү";
+"toast_close_phone_verification" = "та Google баталгаажууллатыг хийгээгүй тул，таны дансны аюулгүй байдлын тулд，утасны баталгаажуулалтыг унтраах боломжгүй！";
+"toast_close_google_verification" = "та утасны баталгаажуулалт хийгээгүй тул，таны дансны аюулгүй байдлын тулд，гүүглэ баталгаажуулалтыг хаах боломжгүй！";
+"toast_reg_terms" = "уг нөхцлийг уншиж зөвшөөрнө үү";
+"toast_min_price" = "хамгийн бага үнэ";
+"toast_min_vol" = "хамгийн бага хэмжээ";
+"toast_not_set_asset_pass" = "та эхлээд хөрөнгийн нууц үгээ оруулна уу";
+"toast_asset_pass_format_error" = "нууц үгийн загвар буруу，8~16цифр，тоо болон үсэг багтаана";
+//
+//
+////захиалгын хэлбэр-- = "
+"order_status_unfinished" = "гүлйгээ амжилтгүй";
+"order_status_init" = "анхдагч захиалга";
+"order_status_new" = "шинэ захиалга";
+"order_status_complete_transaction" = "бүрэн гүйлгээ хийгдлээ";
+"order_status_part_transaction" = "гүйлгээний хэсэг";
+"order_status_has_withdrawn" = "цуцлагдсан";
+"order_status_to_be_withdrawn" = "цуцлагдахыг хүлээж байна";
+"order_status_error" = "захиалга алдаатай байна";
+//
+//
+////үнийн сануулга-- = "
+"hint_price_high" = "үнийн дээд хэмжээ";
+"hint_price_low" = "үнийн доод хэмжээ";
+//
+//
+//// Gesture code starting -- = "
+"setup_gesture_code" = "нууц үг оруулах";
+"setup_gesture_pattern" = "түгжээ тайлах зураг";
+"setup_gesture_pattern_again" = "түгжээ тайлах зургийг дахин оруулна уу";
+"forget_gesture_code" = "нууц үгээ мартсан уу?";
+"use_other_account_login" = "өөр дансаар бүртгүүлэх";
+"set_gesture_pattern" = "түгжээ тайлах зураг";
+"set_gesture_pattern_reason" = "нууц үгээ тохируулан，өөр хүн зөвшөөрөлгүйгээр харахыг урьдчилан сэргийлнэ үү";
+"reset_gesture_code" = "утасны нууц үгээ дахин оруулна уу";
+"gesture_error_remind" = "хамгийн багадаа 5 холбоос, та дахин нэвтэрнэ үү";
+"create_suc" = "амжилттай үүсгэгдлээ";
+"gesture_pass_differ" = "нууц үг өөр байна";
+"gesture_pass_error" = "нууц үг алдаатай байна";
+
+
+//санамж үгээ оруулна уу-- = "
+"hint_change_name" = "хэрэглэгчийн нэрээ оруулна уу";
+"hint_bind_mobile" = "та утсаа оруулна уу";
+"hint_certification_code" = "баталгаажуулах кодоо оруулна уу";
+"hint_bind_email" = "и-мэйл хаягаа оруулна уу";
+"hint_certification_code_email" = "та и-мэйл хаягт ирсэн баталгаажуулах код оруулна уу";
+"hint_certification_code_mobile" = "та утасны баталгаажуулах кодоо оруулна уу";
+"hint_change_login_pass" = "та анхны нэвтрэх нууц үгээ оруулна уу";
+"hint_google_certification_code" = "Google баталгаажуулалтын код оруулна уу";
+"hint_input_new_pwd" = "та шинэ нууц үгээ оруулна уу";
+"hint_pass_again" = "та шинэ нууц үгээ дахин оруулна уу";
+
+
+"hint_assets_pass_again" = "та хөрөнгөний нууц үгээ дахин оруулна уу";
+"hint_assets_pass" = "та хөрөнгийн нууц үгээ оруулна уу, 8~16цифр，тоо болон үсэг багтаана";
+"hint_assets_pass_old" = "анхны хөрөнгийн нууц үгээ оруулна уу";
+"hint_assets_pass_new" = "та хөрөнгийн нууц үгээ оруулна уу, 8~16цифр，тоо болон үсэг оруулна уу";
+"hint_assets_pass_dialog" = "хөрөнгийн нууц үгээ оруулна уу";
+"hint_input_login_pass" = "нэвтрэх нууц үгээ оруулна уу";
+"hint_feedback" = "та асуулт болон саналаа оруулна бичнэ үү";
+//
+//
+////K-- = "
+"high" = "өндөр";
+"low" = "нам";
+"open" = "нээх";
+"close" = "хаах";
+"vol" = "гүйлгээний хэмжээ";
+"quote_change" = "өсөлт бууралтын хувь";
+
+"kline_Line" = "Line";
+"kline_1min"= "1min";
+"kline_5min"= "5min";
+"kline_15min"= "15min";
+"kline_30min"= "30min";
+"kline_60min"= "1h";
+"kline_4h" = "4h";
+"kline_1day" = "1d";
+"kline_1week" = "1w";
+"kline_1month" = "1m";
+
+
+"no_data_available" = "одоогоор тоон мэдээлэл байхгүй байна";
+
+
+////NEW нэвтрэх хуудас-- = "
+"select_area" = "улс болон бүс нутгийн код оруулна уу";
+//
+"toast_no_mobile" = "утасны дугаараа оруулна уу";
+//
+//
+"toast_no_account" = "та утасны дугаар эсвэл и-мэйл хаягаа оруулна уу";
+//
+"toast_no_pass" = "нууц үгээ оруулна уу";
+"toast_no_email" = "та и-мэйл хаягаа оруулна уу";
+
+
+"email_login" = "и-мэйл хаягаар нэвтрэх";
+"phone_login" = "утсаар нэвтрэх";
+
+"now_register" = "одоо бүртгүүлнэ үү";
+"forget_pwd" = "нууц үгээ мартсан уу";
+
+"toast_no_verify_code" = "баталгаажуулалтын кодоо оруулна уу";
+
+"login_suc" = "амжилттай нэвтэрлээ";
+
+"login" = "нэвтрэх";
+
+
+//нэвтрэх хуудас-- = "
+"register" = "бүртгүүлэх";
+"regist_success" = "амжилттай бүртгэгдлээ";
+"no_account_yet" = "одоохондоо дансны дугаар байхгүй юу？";
+"default_area" = "Хятад улс(+86)";
+
+
+//NEW бүртгүүлэх хуудас-- = "
+"had_account" = "дансны дугаартай эсэх？";
+"register_by_email" = "и-мэйл хаягаар бүртгүүлэх";
+"register_by_phone" = "утсаар бүртгүүлэх";
+"toast_no_confirm_pass" = "та баталгаажсан нууц үгээ оруулна уу";
+"invite_code_hint" = "урилгын код (сонгож бөглөх)";
+"reg_term" = "уншаад зөвшөөрөх";
+"terms_service" = "үйлчилгээний нөхцөл";
+"privacy_protection" = "нууцлалыг хамгаалах";
+"disclaimer" = "хариуцлагаас чөлөөлөх мэдэгдэл";
+"go_login" = "нэвтрэх";
+"hint_new_pass" = "8~20цифр, тоо болон үсэг багтаана";
+"toast_pass_inconsistent" = "нууц үг өөр байна，та дахин нэвтэрнэ үү";
+
+
+"find_by_phone" = "утсаа сэргээх";
+"find_by_email" = "и-мэйл хаягаа сэргээх";
+"find_pwd" = "нууц үгээ сэргээх";
+"toast_no_idcard" = "иргэний үнэмлэхний дугаараа оруулна уу";
+"next" = "дараагийн алхам";
+
+
+"title_safty_valid" = "аюулгүй байдлын баталгаажуулалт";
+"google_code" = "Google баталгаажуулалтын код";
+"mobile_code" = "зурвасны баталгаажуулах код";
+"email_code" = "и-мэйл хаягны нууц үг";
+"toast_no_google_code" = "Google баталгаажуулалтын кодоо оруулна уу";
+"toast_no_mobile_code" = "зурвасны баталгаажуулалтаар нэвтэрнэ үү";
+"toast_no_email_code" = "та и-мэйл хаягныхаа баталгаажуулах кодыг оруулна уу";
+//
+//
+"resend" = "дахин шинээр явуулах";
+//
+//
+"choose_area" = "бүс нутгийг сонгох";
+//
+//
+"toast_pass_format_error" = "нууц үгийн загвар алдаатай，та дахин шинээр нэвтэрнэ үү";
+"toast_old_pass_format_error" = "анхны нууц үгийн загвар алдаатай，та дахин оруулна уу";
+"toast_new_pass_format_error" = "нууц үгийн загвар алдаатай，8~15цифр，тоо болон үсэг багтаана";
+
+
+"location" = "одоо байгаа газар";
+"phone_num" = "утасны дугаар";
+"verification_code" = "баталгаажуулалтын код";
+"confirm_pass" = "нууц үгээ баталгаажуулах";
+"find_pass" = "нууц үгээ сэргээх";
+"click_here" = "энд дарна уу";
+
+
+// NEW зарлалын интерфейс-- = "
+"title_notice" = "зарлал";
+
+
+"area_hint" = "улс/бүс нутаг";
+
+"verification_code_hint" = "баталгаажуулах кодоо оруулна уу";
+//
+//
+////цэнэглэх-- = "
+"copy_address" = "хаягаа хуулж оруулах";
+"recharge_warn" = "Дээрх хаягнаас орон нутгийн бус валютыг дахин цэнэглэх боломжгүй，эс бөгөөс хөрөнгө буцаагдахгүй";
+//
+//
+//NEW бодит нэр баталгаажуулах-- = "
+"title_verify" = "бодит нэр баталгаажуулах";
+"id_card_right_title" = "өөрийн иргэний үнэмлэхний эгц харсан зураг";
+"id_card_reverse_title" = "тухайн хүний иргэний үнэмлэхний хойт талын зураг";
+"id_card_title" = "иргэний үнэмлэхний зураг";
+"passport_cover_title" = "пасспортны хавтас";
+"passport_info_title" = "пасспортын нүүр хуудас";
+"passport_title" = "үнэмлэх болон хувь хүний гарын үсэг";
+"credentials_type" = "үнэмлэхний төрөл";
+"passport" = "пасспорт";
+"idcard" = "иргэний үнэмлэх";
+"verify_pic_warn" = "Зургийн агуулгыг бүрэн, тодорхой харагдахуйц гэдгийг баталгаажуулж, баримт бичиг хүчин төгөлдөр  хугацаанд байх ёстой гэдгийг баталгаажуулна уу.";
+"verify_pic_passport_warn_one" = "зургийн агуулга бүрэн тод харагдаж байгаа эсэхийг шалгана уу，пасспорт нь хүчинтэй байх хугацаанд зөвхөнjpg/png зургийн загвар болно";
+"verify_pic_idcard_warn_one" = "зургийн агуулга бүрэн тод харагдаж байгаа эсэхийг шалгана уу，пасспорт нь хүчинтэй байх хугацаанд зөвхөнjpg/png зургийн загвар болно";
+"verify_pic_passport_warn_two" = "ID картаа гартаа барина нүүрний зураг болон өөрийн гарын үсэгний зургийг байршуулна уу，Гарын үсэгний зурганд жинхэнэ нэр, одоогийн он сар өдөр, платформын нэр орно. Зураг, ID номер, гарын үсэгний зураг тодорхой сайн харагдуулахыг анхаарна уу. ";
+"verify_pic_idcard_warn_two" = "та иргэний үнэмлэхний зураг болон өөрийн гарын үсэгний зургийг оруулна уу，хувь хүний гарын үсэг нь жинхэнэ овог нэр болон тухайн өдрийн он сар багтаасан байна。зургийн болог гарын үсгийн агуулга нь тод байгаа эсэхийг шалгана уу。зургийн шаардлага：нүүр зураг тод, иргэний үнэмлэхний дугаар тод, хувь хүний гарын үсэг тухайн өдрийн он сар багтана";
+"verify_warn_text" = "таны хөрөнгийн аюулгүй байдлын тулд，таныг мөн эсэхийг шалгаснаар өөр үйлдэл хийх боломжтой； баталгаажуулалтын мэдээллийг өөрчлөх боломжгүй бөгөөд үнэн зөвөөр бөглөнө үү。";
+"warn_lastname_empty" = "овгоо хоосон орхиж болохгүй";
+"warn_firstname_empty" = "нэрээ хоосон орхиж болохгүй";
+"warn_certid_empty" = "үнэмлэхний дугаараа хоосон орхиж болохгүй";
+"warn_first_pic_empty" = "та эхний зургаа оруулна уу";
+"warn_second_pic_empty" = "та хоёр дахь зургаа оруулна уу";
+"warn_third_pic_empty" = "та гурав дахь зургаа оруулна уу";
+"toast_cert_summit_suc" = "жинхэнэ нэр амжилттай баталгаажлаа";
+"toast_upload_pic_suc" = "зураг амжилттай орлоо";
+"toast_upload_pic_failed" = "зураг амжилтгүй";
+"title" = "гарчиг";
+"subtitle_from_gallery" = "галлерейнаас сонгох";
+"subtitle_take_photo" = "зураг авах";
+"warn_storage_permission" = "хадгалалтын зөвшөөрөл байхгүй байна";
+"warn_camera_permission" = "камерын зөвшөөрөл байхгүй";
+
+
+
+
+
+
+"title_safety_setting" = "аюулгүй байдлын тохиргоо";
+"mobile" = "гар утас";
+"email" = "и-мэйл хаяг";
+"title_google_verified" = "Google баталгаажуулалт";
+"title_change_pwd" = "нууц үгээ өөрчлөх";
+"close_verify" = "баталгаажуулалтыг хаах";
+
+"title_dialog_close_google_verify" = "та google баталгаажуулалтаа хаах уу";
+"title_dialog_close_mobile_verify" = "та утасны баталгаажуулалтаа хаах уу";
+"dialog_verify_warn_text" = "хааснаар таны дансны аюулгүй байдал буурах болно";
+"unbind_verify_warn" = "та эхлээд утасны баталгаажууллат эсвэл Google баталгаажуулалт хийнэ үү";
+"not_bound" = "холбоо амжилтгүй";
+"change" = "засах";
+"toast_copy_addr_suc" = "хаяг давталт амжилттай";
+"toast_copy_addr_failed" = "хаяг хуулалт амжилтгүй боллоо";
+"title_invite_link" = "урилгын холбоос";
+"scan_qr_reg" = "кодыг хайж бүртгүүлэх";
+"invite_addr" = "урилгын хаяг:";
+"toast_chang_nick_suc" = "хэрэглэгчийн нэр амжилттай солигдлоо";
+"title_change_nick" = "хэрэглэгчийн нэрээ солих";
+"warn_logout_cur_account" = "одоогийн дансны дугаараа баталгаажуулах уу？";
+"state_normal" = "ихэвчлэн";
+"freeze_trade_withdraw" = "арилжааг зогсоох&amp;бэлэн мөнгө болгох";
+"freeze_trade" = "гүйлгээг зогсоох";
+"freeze_withdraw" = "бэлэн мөнгө болгох боломжгүй";
+"certify_not_pass" = "амжилтгүй боллоо";
+"certify_passed" = "батлагдлаа";
+"certify_passing" = "баталгаажуулж байна";
+"title_person_info" = "хувийн мэдээлэл";
+"invite_code" = "урилгын код";
+"account_state" = "дансны байдал";
+"subtitle_certifation_type" = "үнэмлэхний төрөл：";
+"subtitle_account" = "данс：";
+"subtitle_identity_info" = "хувийн мэдээлэл：";
+"lastname" = "овог";
+"firstname" = "нэр";
+"example" = "жишээ";
+"warn_net_disconnect" = "интернэт холболт амжилтгүй";
+"warn_net_exception" = "сүлжээний гажуудал";
+"warn_request_timeout" = "хүсэлтийн цаг хэтэрлээ";
+"warn_data_parse_failed" = "тоон өгөгдөл амжилтгүй";
+"toast_logout_suc" = "амжилттай гарлаа";
+"recharge_time" = "цэнэглэх хугацаа";
+"recharge_amount" = "цэнэглэх тоо хэмжээ";
+"recharge_state" = "цэнэглэх байдал";
+"withdraw_time" = "бэлэн мөнгө болгох хугацаа";
+"withdraw_amount" = "Иргэдийн тоо";
+"withdraw_state" = "бэлэн мөнгө болгох байдал";
+"other_time" = "хугацаа";
+"other_state" = "байдал";
+"subtitle_select_pic" = "энгийн зураг сонгох хэсэг：";
+"default_area_verify" = "+86 Хятад улс";
+"title_favorite" = "өөрөө сонгох";
+"toast_add_fav_suc" = "амжилттай нэмж хадгалагдлаа";
+"toast_del_fav_suc" = "хадгалалт амжилттай цуцлагдлаа";
+"subtitle_no_favorite" = "түр хугацаанд өөрөө сонгох боломжгүй нэмэх товчлуурыг дарна уу";
+"new_price" = "хамгийн сүүлийн үнэ";
+"name_and_volume" = "нэр/гүйлгээний хэмжээ";
+"price_limit_24h" = "24H өсөлт бууралтын хувь";
+"toast_bind_email_suc" = "и-мэйл хаяг амжилттай холбогдлоо";
+"toast_bind_mobile_suc" = "гар утсыг амжилттай холболоо";
+"toast_change_suc" = "амжилттай өөрчлөгдлөө";
+"title_cur_selected" = "одоогийн сонголт:";
+"toast_close_verify_suc" = "баталгаажуулалт амжилттай хаагдлаа";
+"title_close_verify" = "баталгаажуулалтыг цуцлах";
+"title_select_coinmap" = "валют солих";
+"order_state_cancel" = "цуцлагдах";
+"create_order_suc" = "амжилттай захиалагдлаа";
+"cancel_order_suc" = "амжилттай гарлаа";
+"add" = "нэмэх";
+"cancel_add" = "нэмэхийг цуцлах";
+"other_amount" = "шилжүүлгийн тоо хэмжээ";
+"search_coinmap" = "валютыг хайх";
+"recent_login_time" = "ойрын үед нэвтэрсэн хугацаа:";
+"temp_none" = "үгүй";
+"ip" = "IP:";
+"title_language" = "хэл";
+"title_mail" = "сайтын дотоод бичиг";
+"toast_withdraw_suc" = "амжилттай бэлэн мөнгө болголоо";
+"toast_no_withdraw_address" = "бэлэн мөнгө болгох хаяг хоосон байна";
+"toast_withdraw_too_max" = "бэлэн мөнгө болгох хэмжээ хөрөнгийн боломжит хэмжээнээс нэвтэрлээ";
+"subtitle_withdraw_min" = "бэлэн мөнгө болгох хамгийн бага хэмжээ";
+"title_withdraw" = "бэлэн мөнгө болгох";
+"confirm_withdraw" = "бэлэн мөнгө болгохыг баталгаажуулах";
+"subtitle_real_get_amount" = "бодит дансны хэмжээ：";
+"fee" = "бичиг баримтын зардал";
+"subtitle_fee" = "бичиг баримтын зардал：";
+"all" = "бүгд";
+"subtitle_amount" = "тоо хэмжээ：";
+"select_address" = "хаягаа сонгох";
+"hint_add_withdraw_address" = "бэлэн мөнгө болгох хаягаа нэмж оруулна уу";
+"subtitle_available_balance" = "боломжит үлдэгдэл：";
+"choose_other_coin" = "бусад валютын төрөл сонгох";
+"subtitle_withdraw_address" = "валют авах хаяг：";
+"temp_no_data" = "ямар ч агуулга байхгүй";
+"title_withdraw_address" = "бэлэн мөнгө болгох хаяг";
+"add_address" = "хаяг нэмэх";
+"bind_google_suc" = "Google баталгаажуулалт амжилттай холболоо";
+"subtitle_google_verify" = " Google баталгаажуулалтыг ашиглан QR кодыг хайна уу";
+"open_google_verify" = "Google баталгаажуулалтын нээх";
+"title_cur_entrust" = "одоогийн итгэмжлэл";
+"title_fund" = "хөрөнгө";
+"order_manager" = "захиалгын менежмэнт";
+"search_fund" = "хөрөнгө хайх";
+"hide_little_fund" = "бага хэмжээний хөрөнгийг нуух";
+"total_asset_btc" = "нийт хөрөнгө(BTC)";
+"select_all_coin" = "бүх валютын төрлөө сонгоно уу";
+"pic_uploading" = "зураг уншиж байна...";
+"stay_old_verison" = "хуучин хувилбарт үлдээх";
+"update_now" = "одоо шинэчлэнэ үү";
+"delay_upgrade" = "Later";
+"url_error" = "Link Error";
+"add_address_suc" = "хаяг нэмэлт амжилттай";
+"toast_no_address_label" = "хаягийн тэмдэглэл";
+"toast_scan_content_empty" = "идэвхитэй контентыг сканердсангүй";
+"aim_at_qrcode" = "QR кодоо холбоно уу";
+"subtitle_name" = "хаягийн тэмдэглэл：";
+"subtitle_address" = "хаяг：";
+"input_or_add_address" = "та хаягаа шинээр эсвэл нэмж оруулна уу";
+"warn_no_support_recharge" = "тус валют цэнэглэгдэх боломжгүй";
+"warn_no_support_withdraw" = "тухайн валютыг бэлэн мөнгө болгох боломжгүй";
+"warn_no_support_trade" = "тус валютыг арилжах болмжгүй";
+"available" = "боломжит";
+"freeze" = "зогсоох";
+"recharge_coin" = "валют цэнэглэх";
+"withdraw_coin" = "валют авах";
+"go_trade" = "гүйлгээ хийх";
+"subtitle_last_version" = "одоогоор хамгийн шинэ хувилбар";
+"title_software_update" = "шинэчлэгдсэн аппликейшн";
+"title_notice_detail" = "зарын нарийвчилсан мэдээлэл";
+"trust_order" = "итгэмжлэлийн хуудас";
+"vol_24h" = "24Hхэмжээ";
+//NEW сайтын дотоод бичиг-- = "
+//
+//
+"search_coin_symbol" = "валютын төрөл хайх";
+"save_qr_code" = "QR кодыг хадгалах";
+"withdraw_order" = "цуцлах";
+"withdraw_order_success" = "амжилттай цуцлагдлаа";
+"deal_price" = "гүйлгээний дүн";
+"deal_vol" = "гүйлгээний хэмжээ";
+"no_coin_data" = "өгөгдөл байхгүй байна，өөр валютын төрлийг оруулна уу";
+"choose_coin_symbol" = "валютын төрлөө сонгоно уу";
+"trust_order" = "итгэмжлэлийн хуудас";
+"no_symbol_data_change_other" = "валютын төрөл өгөгдөлгүй байгаа бөгөөд，өөр валютын төрлийг хийж үзнэ үү";
+"history_order" = "түүхэн итгэмжлэл";
+"go_to_cert" = "баталгаажуулах";
+"open_cert" = "баталгаажуулалтыг нээх";
+"close_cert" = "баталгаажуулалтыг хаах";
+"not_open" = "хаалттай";
+"bid_bid" = "худалдаж авах";
+"sell_sell" = "худалдаалах";
+"title_notice_detail" = "зарын нарийвчилсан мэдээлэл";
+"save_succcess" = "амжилттай хадгалагдлаа";
+"save_fail" = "хадгалалт амжилтгүй";
+"system_news" = "системийн мэдээлэл";
+
+
+"title_verify_result" = "Нэрийг баталгаажуулна уу";
+"resubmit_verify" = "Шинэ нэрээ дахин баталгаажуулна уу";
+"reason" = "Шалтгаанаа хэлнэ үү:";
+"current_verify_state" = "Одоогийн баталгаажуулалтын байдал:";
+"copy_tag" = "TAG ийг хуулах";
+"copy_success" = "Амжилттай хуулагдлаа";
+"copy_failed" = "Хуулалт амжилтгүй";
+"subtitle_tag" = "Шошго：";
+"toast_no_tag" = "Шошгоны мэдээлэл";
+"fee_section" = "Төлбөрийн газар:";
+"less_volume_amount" = "Үнэ бага байна";
+
+"asset_withdraw_too_low" = "Үнэ гаргалтын дүн бага байна";
+"toast_no_invitecode" = "Урилгын кодоо бичнэ үү";
+"warn_gesture_pwd_error" = "Код буруу байна, одоогоор хийж болох тоо:";
+"gesture_error_to_login" = "Код буруу байна, бүртгэлийн нэрээ дахин оруулна уу";
+
+
+
+"accept_server_pro" = "Үйлчилгээний нөхцлийг хүлээн зөвшөөрнө үү";
+"all_news" = "Бүх мэдээ";
+"open_seting" = "Тохиргоо руу орж камерын зөвшөөрлийг нээнэ үү";
+"success_pass" = "Батлагдсан бөгөөд өөрчлөгдөж болохгүй.";
+"please_choose" = "Сонгох уу";
+"small_num" = "Буцаах тоо хэмжээг оруулна уу";
+"not_xiao_yu" = "Бэлэн мөнгө авах хамгийн бага хэмжээ нь доороос бага байж болохгүй";
+"not_da_yu" = "Бэлэн мөнгө авах хамгийн бага хэмжээ нь бэлэн байгаа үлдэгдлийн хэмжээнээс ихгүй байж болно";
+"delete" = "Устгах";
+"not_more_money" = "Танд хангалттай хөрөнгө байхгүй";
+"pan_kou" = "Сонсгол";
+
+"no_data_available_click_refresh" = "Сүлжээний үл хамаарах зүйл, өгөгдлийг авахын тулд шинэчлэлтийг товшино уу";
+"depth" = "Гүн";
+"no_net" = "NoNet";
+
+
+
+//  otc
+
+//
+
+"otc_change_other" = "Өгөгдөл алга байна, бусад шүүлтүүрийг оролдоно уу ";
+// сангийн нууц үг
+"otc_reset_pwd_title" = "Сангийн нууц үгийг шинэчлэх ";
+"otc_set_pwd_title" = "Сангийн нууц үгийг тохируулах";
+
+"otc_pwd_alert" = "* Арилжааны хамгаалалт хийхийн тулд гүйлгээ хийхээсээ өмнө өөрийн хоч болон сангийн нууц үгийг тохируулна уу.";
+"otc_set_nickname" = "Нууц нэрээ оруулна уу";
+
+"otc_nickname_alert" = "Энэ нэр нь жинхэнэ нэртэй адил байх ёсгүй";
+"otc_set_pwd" = "Сангийн нууц үгийг тохируулах";
+"otc_input_pwd" = "Сангийн нууц үгээ оруулна уу";
+"otc_make_pwd" = "Сангийн нууц үгийг баталгаажуулах";
+"otc_finish" = "Бүрэн дуусгах ";
+"otc_not_input_emoj" = "Илэрхийлэлд оруулжээ болохгүй ";
+"otc_nickname_had" = " энэ нэр аль хэдийн байна";
+
+//Миний хөрөнгө
+"otc_recharge" = "мөнгөний цэнэг";
+"otc_transfer" = "зураас";
+"otc_trade" = "худалдаа руу яв";
+"otc_withdraw" = "мөнгө гаргаж авах ";
+
+"otc_fabi_account" = "Хөрөнгийн солилцооны  данс";
+"otc_bibi_account" = "Зоос данс";
+"otc_all_num" = "Нийт шилжүүлгийн дүн:";
+"otc_transfer_fee" ="Шилжүүлгийн тоо (0 харьцах төлбөр)";
+"otc_input_transfer_num" = "Шилжүүлгийн тоог оруулна уу";
+"otc_transfer_all" = "бүх шилжүүлсэн";
+
+"otc_not_open_transfer" = "Баталгаат зах зээл дээр валют нээгдээгүй";
+"otc_not_open_recharge" = "Энэ валют нь БДБ-д цэнэглэгдээгүй байна";
+"otc_not_open_withdraw" = "Баталгаат зах зээл дээр валют нээсэнгүй";
+"otc_canuse" = "боломжтой";
+"otc_notuse" = "хөлдөлт";
+"otc_all_money_num" = "Нийт хөрөнгийн хөрвүүлэлт (BTC)";
+"otc_mine_money" = "Миний хөрөнгө";
+
+////
+"otc_get_rid" = "Устгах";
+"otc_rid_people" = "Халхавчтай хүмүүс";
+"otc_remove_rid_confirm" ="Энэ хүнийг устгахгүй юу?";
+"otc_determine" = "батлах";
+"otc_cancel" = "цуцлах";
+"otc_black_list" = "Хаалттай бол та энэ хүний зарыг харахгүй";
+
+//order
+"otc_mine_order" ="Миний захиалга";
+"otc_order_all" = "бүгд";
+"otc_order_nopay" ="төлөөгүй";
+"otc_order_hadpay" = "төлсөн";
+"otc_order_ss" ="давж заалдах";
+"otc_order_cancel_1" = "цуцлагдсан";
+"otc_order_finish" = "дууссан";
+
+
+
+"otc_person_info" ="хувийн мэдээлэл";
+"otc_reg_time" = "бүртгэлийн  хугацаа";
+"otc_min" = "минут";
+"otc_phone_cert" ="Гар утасны баталгаажуулалт";
+"otc_name_cert" = "жинхэнэ нэрний баталгаажуулалт";
+"otc_order_num_1" ="нийт захиалга";
+
+"otc_30d_num" = "30 өдөр захиалга биелэх ";
+
+"otc_xinyong" = "итгэмж";
+"otc_shensu" = "Давж заалдах";
+"otc_shengsu" ="хэргийг ялж";
+"otc_fangxing" = "дундаж хувилбар";
+
+"otc_edit_payway" = "Төлбөрийн аргыг засварлах";
+"otc_user_name" = "нэр";
+
+"otc_input_user_name" = "Миний нэрийг оруулна уу";
+"otc_wx_a" = "WeChat данс";
+"otc_wx_a_input" = "WeChat данс оруулна уу";
+"otc_upload_wx_qr" = "WeChat Receipt QR Code байршуулах";
+"otc_alipay" = "Alipay данс";
+"otc_alipay_a" = "Alipay данс оруулна уу";
+"otc_alipay_qr" = "Alipay цуглуулга QR кодыг байршуулах";
+"otc_bank_name" = "банкны картын дугаар";
+"otc_bank_name_input" = "Банкны картын дугаарыг оруулна уу";
+"otc_bank_name_lit" = "Салбар нээх";
+"otc_bank_name_lit_in put" = "Данс нээх салбарыг оруулна уу";
+"otc_bank_num" = "Банкны картын дугаар";
+"otc_bank_num_input" = "Банкны картын дугаарыг оруулна уу";
+"otc_get_photo_error" = "Фото зураг худалдан авалт амжилтгүй болсон, дахин оролдоно уу";
+"otc_not_pay_way" = "Та төлбөрийн ямар ч аргууд алга байна \n Баруун дээд булан дээр дарна уу";
+"otc_edit"  = "Засварлах";
+"otc_not_use" ="Хориглох";
+"otc_can_use" ="эхлэж хэрэглэх";
+"otc_delete" = "устгах";
+"otc_delete_confirm" = "Та төлбөрийн аргыг устгахдаа итгэлтэй байна уу";
+
+"otc_shensu_success" = "Давж заалдах хүсэлт амжилттай явуулсан";
+"otc_shensu_result" = "Давж заалдах өргөдлийг хэрэглэгчийн үйлчилгээнд илгээснийхээ дараа танд буцааж өгөх болно";
+"otc_shensu_reason" = "Давж заалдах хүсэлтийг тайлбарлана уу";
+"otc_not_open_coin"  = "Худалдагч валютыг байршуулаагүй байна";
+"otc_not_open_pay"  = "Худалдан авагч төлөөгүй";
+"otc_shensu_reason_choose" ="Давж заалдах шалтгааныг Худалдан авагч төлөөгүй сонгоно уу";
+"otc_shensu_reason_input" ="Давж заалдах шалтгааныг оруулна уу";
+"otc_more_300" = "300 хүртэл үгс";
+"otc_more_500" = "500 хүртэл үгс";
+"otc_uplaod_error";
+"otc_uplaod_error" = "Илгээх ялагдах";
+
+
+
+"otc_choose_pay" = "Төлбөрийн арга сонгоно уу";
+"otc_choose_coin" = "валют сонгох";
+"otc_choose_contry" = "Улсаа сонго";
+"otc_all" = "Бүх";
+"otc_target_money" = "зорилтот дүн";
+"otc_input_target_money" = "зорилтот хэмжээг бөглөх";
+"otc_pay_way" = "Төлбөрийн арга";
+"otc_choose_pay_way" = "Төлбөрийн арга сонгоно уу";
+"otc_choose_shou_way" = "Төлбөрийн арга сонгоно уу";
+"otc_fabi" = "Францын валют";
+"otc_add_pay_way" = "Төлбөрийн арга нэмэх";
+"otc_add_shou_way" = "Төлбөрийн арга нэмэх";
+"otc_choose_fabi" ="валют сонгоно уу";
+"otc_all_reset" = "Бүх тохиргоог сэргээх";
+"otc_CNY" = "RMB";
+
+//home
+"otc_deal" = "ажил бүтээсэн ";
+"otc_credit" = " итгэмж ";
+"otc_price" = "нэгж үнэ";
+
+"otc_num" = "тоо хэмжээ";
+"otc_limit" = "хязгаар";
+"otc_buy" = "авах";
+"otc_sell" = "гарах";
+
+"otc_please_cert" ="Жинхэнэ нэрийг шалгаж үзнэ үү";
+"otc_goto_cert" = "итгэмжлэх хүрэх";
+"otc_please_real_name" ="Хоч нэр, санхүүжүүлэх нууц үгээ эхлээд өгнө үү!";
+"otc_goto_set" = "тохируулаарай";
+
+"oct_mine_black_list" = "Хаалттай жагсаалт";
+"otc_identity_certificate" = "Баталгаажуулалт";
+"otc_collect_money" = "Хүлээн авах арга";
+"otc_safe_setting" = "Аюулгүй байдлын тохиргоо";
+"otc_about_us" = "Бидний тухай";
+"otc_choose_language" = "хэл сонгох";
+"otc_please_set_pwd" = "Санхүүгийн Нууц үгээ эхлээд тохируулна уу!";
+
+"otc_not_set" = "Үгүй";
+
+
+// Худалдан авах, чатлах
+
+"otc_transaction_amount" = "гүйлгээний дүн";
+"otc_trading_currencies" ="гүйлгээний валют";
+"otc_state" = "байдал ";
+"otc_wait_ payment" ="Хүлээгдэж буй төлбөр";
+"otc_payed" = "төлсөн";
+"otc_transaction_successful" = "Гүйлгээ амжилттай болсон";
+"otc_transaction_cancelled" = "Гүйлгээг цуцлах";
+"otc_complaint" = "давж заалдах";
+"otc_sell_coin" = "валютаар";
+"otc_abnormal_orders" = "өөр захиалга";
+"otc_complaint_processed" ="Давж заалдах шатны боловсруулалт дууссан";
+"otc_complaint_cancel" = "Давж заалдах цуцлах";
+"otc_enter_text" = "Текст оруулна уу";
+"otc_send" = "илгээх";
+"otc_order_closed" ="Захиалга дууссан";
+"otc_put_coin" = "мөнгө оруулах";
+"otc_complaint" = "Давж заалдах";
+"otc_contact_ service" = "Харилцагчийн үйлчилгээнд холбогдох";
+"otc_cancel_complaint" = "Давж заалдах эрхийг цуцлах";
+"otc_place_order_time" = "захиалгын цаг";
+"otc_order_code" ="захиалгын дугаар";
+"otc_reference_code" = "лавлагааны дугаар";
+"otc_enter_fund_pw" = "Сангийн нууц үгээ оруулна уу";
+"otc_confirm_release" = "Ачааллыг батлах";
+
+"otc_ad_prompt" = "Төлбөрийг хүлээн авсныг баталгаажуулахын тулд онлайн банк эсвэл гуравдагч этгээдийн төлбөрийн дансанд нэвтрэн орно уу. Та энэ төлбөрийг хүлээн авсан эсэх?";
+"otc_think" = "Би дахиж бодож байна";
+"otc_confirm_put_money" = "валютыг баталгаажуул";
+"otc_confirm_receipt" = "Би баталсан";
+"otc_confirm_receipt_payment" = "Төлбөрийг хүлээн авсан гэдгийг баталгаажуулна уу";
+"otc_sell_order" = "зарах захиалга";
+
+"otc_receipt_qr_code" = "Хүлээн авах QR код";
+
+
+
+"otc_single_min" = "Хамгийн бага гүйлгээний нэгээс бага байж болохгүй";
+"otc_single_max" = "Хамгийн их гүйлгээний тооноос хэтрэхгүй";
+
+
+//---
+"otc_buy_order" = "Худалдан авах захиалга";
+"otc_please_payment" = "Та төлөх үү";
+"otc_waiting_payment" = "Худалдан авагчийн төлбөрийг хүлээх";
+"otc_waiting_put_coin" ="Худалдагчийг мөнгө төлбөрийг хүлээж байна";
+"otc_wait_coin" ="Мөнгө хүлээгдэж байна";
+
+"otc_complaint_password" = "Давж заалдах нууц үг:";
+"otc_complaint_processing" = "Давж заалдах боловсруулалт";
+"otc_seller" = "Худалдагч";
+"otc_buyer" = "Худалдан авагч:";
+"otc_minutes" = "минут";
+"otc_second" ="секунд";
+"otc_cancel" = "Цуцлах";
+"otc_have_payment" ="Би төлсөн";
+"otc_pay_following_account" = "Дараах дансанд төлнө үү:";
+"otc_order_price" ="ажил гүйлгээний нэгжийн үнэ:";
+"otc_order_num" = "Гүйлгээний тоо:";
+"otc_order_account" ="Данс ба захиалгын мэдээлэл";
+"otc_people" = "Хүлээн авагч";
+
+///------
+"otc_trading_remind" = "Гүйлгээний сануулга";
+"otc_deal_prompt" = "1. Гуйвуулга хийх үед тоон валюттай холбоотой агуулгыг анхаарч үздэггүй.\n 2. Хэрэв гүйлгээний дүн нь 50,000 CNY-ээс их байвал төлбөрийг хугацаанд нь төлж, төлбөрийг хугацаандаа хүлээн аваагүй тохиолдолд худалдагч нь гүйлгээг хүлээн авахаас татгалзах эрхтэй.\n 3. Гомдол үүссэний дараа утсыг нээлттэй байлгаж, шаардлагагүй алдагдлаас зайлсхий.\n 4. Санал гомдлын үр дүнд ямар нэг татгалзах зүйл байвал 72 цагийн дотор бидэнтэй холбоо барина уу, хугацаа дууссаны дараа татгалзах эрхгүй болно.\n 5. Хэрэв худалдагч захиалга 3 удаа захиалга цуцлуулсан бол тухайн өдрийн худалдан авах үйл ажиллагаанд хязгаарлалт тавина.";
+"otc_deal_cancel" = "хэлцлийг цуцлах";
+"otc_paid_seller_prompt" = "Хэрэв та худалдагчийн аль хэдийн төлсөн бол гүйлгээг цуцлах хэрэггүй. \ N Цуцлах дүрэм: Худалдан авагч нь тухайн өдрийн худалдан авалтын функцийг хязгаарлах 3 өдөр цуцлах болно";
+"otc_confirm_cancellation" ="Цуцлах гүйлгээг баталгаажуулах";
+"otc_no_pay" = "Би нөгөө талыг төлөөгүй гэдгийг батлах болно";
+"otc_payment_prompt" = "Нөгөө талаас төлбөр байхгүй гэдгийг баталгаажуулна уу";
+"otc_order_complete" ="Бүрэн захиалга";
+"otc_order_cancel" = "Захиалга цуцлагдсан";
+"otc_see_assets" ="Хөрөнгийг харах";
+
+"otc_transfer_coin" = "Валютын дансанд шилжүүлэх";
+"otc_price" = "нэгж үнэ";
+"otc_num" = "тоо хэмжээ";
+"otc_order_ reference_code" ="захиалгын лавлах дугаар";
+"otc_order_time" = "захиалгын цаг";
+
+"otc_supported_payment_methods" ="Төлбөрийн аргыг дэмжсэн";
+"otc_limit1" = "хязгаар";
+"otc_current_payment" ="одоогийн төлбөрийн арга";
+"otc_current_collection" = "одоогийн төлбөрийн арга";
+"otc_switching_payment_method" = "одоогийн төлбөрийн арга";
+"otc_switching_collection_method" = "одоогийн төлбөрийн арга";
+"otc_all_buy" = "авалт";
+"otc_all_sell" = "Гарах";
+"otc_place_order" ="Захиалга";
+"otc_can_buy" ="Хамгийн их худалдан авалт";
+
+"otc_can_sell" = "их борлуулалт";
+"otc_order" = "Захиалга";
+"otc_mine" = "миний";
+"otc_pay_find_account" = "та төлбөрийг шалгана уу";
+"otc_fund_pwd_alert_sample" = "тус хоёр нууц үг ижил байж болохгүй";
+"otc_choose_symbol" = "Шүүлтүүр";
+"otc_ad_prompt_one" = "[chainup] минутын төлөх хэрэгтэй";
+"otc_pay_prompt" = "Би төлсөн байна гэгэдэг дээр дарна эсвэл мөнгө алдагдаж байна ";
+"otc_exchange_prompt" = "арвалзаа нийх сануулах";
+"otc_exchange_prompt_value" = ", мөнгөн гуйвуулга, валютын тэмдэглэл худалдагчийн дансанд тоон контентын \ N таны мөнгийг шууд холбоотой бол, ажил гүйлгээний үйл явц тоног төхөөрөмж дижитал хөрөнгийг хамгаалах зохион байгуулсан платформ борлуулсан уу бэ байна гэсэн үг. \ N худалдан авагч өдөр захиалгыг цуцлах уу 3 удаа өдөр худалдан авах функцээр хязгаарлагдана. ";
+
+"otc_shensu_reason" = "Давж заалдах шатны шалтгаан";
+"otc_shensu_com" = "Давж заалдах үндэслэл";
+"otc_shensu_img" = "зураг оруулах";
+"otc_deal_alert" = "Арилжааны сануулах";
+"otc_deal_alert_all" = "Платформын хэвийн үйл ажиллагааны дарааллыг сүйрүүлэхийн тулд энэ хэсэг дансаа хаах болно";
+
+"otc_chat" = "Чатлах";
+"otc_online_service" = "Онлайн хэрэглэгчийн үйлчилгээ";
+"otc_picture_fail" = "Зургийг илгээж чадсангүй";
+"common_tip_albumPermission" = "Цомог нь дэмждэггүй";
+"otc_camera_fail" = "Камер дэмждэггүй";
+"otc_submit_shensu" = "гомдол гаргах";
+"otc_no_nickname" = "хоч хэрэггүй ";
+
+"credit_prompt1" = "При внебиржевой торговле, ваш кредит будет виден другими пользователями";
+"credit_prompt2" = "Кредит=（1-проигранные заказы/число заказов）*100%";
+"know" = "Понятно";
+"transfer_type" = "Тип";
+"otc_transfer_titlte" = "Внебиржевая торговля";
+"account_transfer" = "Передача учетной записи";
+"order_records" = "Запись заказа";
+"tab_coin2coin_trade" = "Валюта";
+"tab_otc_trade" = "Другие трансакции";
+"toast_no_sliding_block" = "Сначала выполните проверку ползунка";
+
+
+"Gainers" = "Ашиг орлогын жагсаалт";
+"Losers" = "Уналт орлогын жагсаалт";
+"Turnover" = "Гүйлгээний дүн";
+
+"eos_tips" = "зоосны хадгалах зэрэгцээ танд тэжээгдэл хаяг, шошго хэрэгтэй (мөн Tag гэж нэрлэдэг).Тоо нь таны зоосны онцгой хаягийг баталгаажуулах тооны дугаар бөгөөд зоосноос хосоороо гарч ирдэг.Зөв тэжээлтийн зөв алхмуудыг дагана уу, зоосыг татаж авахдаа бүрэн мэдээллийг оруулаарай. Тэгэхгүй бол зоосыг алдах шалтгаан бий.";
+
+"new_homepage_functional_service" = "үйлчилгээний онцлог";
+"new_cash_flow_begin_time" = "Эхлэх цаг";
+"new_cash_flow_end_time" = "Төгсгөлийн цаг";
+"new_cash_flow_show_more" = " Өргөтгөх";
+"new_cash_flow_pack_up" = "Нуралт";
+"input_touchId" = "Хурууны хээг оруулна уу";
+"fingerprint_login" = "Хурууны хээгээр нэвтрэх";
+"account_login" = "Нэвтрэх данс";
+"fingerprint_recognition" = "Хурууны хээ таних";
+"tap_to_fingerprint" = "Баталгаажуулахын тулд хурууны хээ таних товч дээр дарна уу";
+"face_recongnition" = "Нүүрийг таних";
+"tap_to_face" = "Нэвтрэхийн тулд нүүрний таних товч дээр дарна уу";
+"pwd" = "Нууц үг";
+"input_pwd_again" = "Нууц үгээ дахин оруулна уу";
+"pwd_setting" = "Нууц үг тохиргоо";
+"pwd_rule_new" = "Тоо, үсэг зэрэг 8 ~ 20 оронтой нууц үгээ оруулна уу";
+"bibao_account" = "Валютын  данс";
+"asset_check_the_details" = "Дэлгэрэнгүй мэдээллийг харах";
+"asset_into" = "Шилжүүлэх";
+"deposit_detail_amount" = "хэмжээг оруулна уу";
+"deposit_detail_release" = "гаргах";
+"deposit_detail_end_time" = "Дуусах цаг";
+"deposit_bibao_account" = "Валютын  данс";
+"resend_code" = "Баталгаажуулах кодыг дахин илгээх";
+"get_code" = "Баталгаажуулах кодыг авах";
+"mobile_or_email" = "Гар утасны дугаар / шуудан";
+"choose_mobile_verify" = "Утасны баталгаажуулалтыг солих";
+"choose_google_verify" = " Google-ийн баталгаажуулалтыг солих";
+"choose_email_verify" = "Шуудангийн  баталгаажуулалтыг солих";
+"face_login" = " хүний нүүрийг таних";
+"guide_gesture_login" = " хурдан, аюулгүй дохион нууц үгийг тохируулана уу";
+
+"Authorization_Failure" = "Зөвшөөрөл амжилтгүй болсон";
+"user_cancel_Auth" = "Хэрэглэгч хүчингүй болгох";
+"sys_cancel_Auth" = "Систем нь зөвшөөрлийг хүчингүй болгосон";
+"sys_not_set_pwd" = "Систем нь нууц үгийг тохируулахгүй";
+"device_not_use" = "Төхөөрөмж боломжгүй байна";
+"error_use_times" = "Баталгаажуулалт амжилтгүй болсон, олон хэрэглээ амжилтгүй болсон";
+"app_canel_auth" = "Баталгаажуулах хүсэлтийг цуцалсан Програм";
+"auth_success" = "Амжилттай баталгаажуулалт";
+"auth_fail_obj" = "Зөвшөөрөгдсөн обьект буруу байна";
+"app_start_fail" = "APP бүрэн ажиллаагүй, дуудлага амжилтгүй болсон";
+"fast_login" = "Хурдан нэвтрэх";
+"only_set_one_login_way" = "Зөвхөн 1 хурдан нэвтрэх аргыг нээж болно";
+"touchid_login" = "Хурууны хээ нэвтрэх";
+"faceId_login" = "Нүүрийг таних";
+"Fingerprint_identification" = "Хурууны хээ таних";
+
+"click_fingerprint_identification" = "Баталгаажуулахын тулд хурууны хээ таних товч дээр дарна уу";
+"Face_recognition" ="Нүүрийг таних";
+"click_face_recognition" = "Баталгаажуулалтыг эхлүүлэхийн тулд нүүрийг таних дээр дарна уу.";
+"login_account"="Акаунтаар нэвтрэх";
+"bibao_account"= "Маркны данс";
+"transfer_in" = "Шилжүүлэх";
+"check_detail" = "Дэлгэрэнгүй мэдээллийг харах";
+"cash_open" = "Өргөтгөсөн";
+"cash_close" = "Нуралт";
+"start_time" = "Эхлэх цаг";
+"end_time" = "Эцсийн хугацаа";
+"Current_currency_details" = "Валютын дэлгэрэнгүй мэдээлэл";
+"input_money_num" = "Хадгаламжийн хэмжээ";
+"output_money_num" = "Хуваарилах";
+"set_pwd_detail" = "Та мөн энэ модулийн хамгаалалтын тохиргоонд тохируулж болно.";
+"faceId_login_o" = "Нүүрний таниж нэвтрэх";
+"not_open_otc" = "OTC гүйлгээ нээгдээгүй";
+"not_coinmap" = "Түр хугацаагаар token pair үгүй ";
+"reset_password" = "Нууц үг шинэчлэх";
+"no_more" = "Үгүй";
+
+"name_dif_realname"="Нэр болон жинхэнэ нэрийг баталгаажуулах мэдээлэл нь нийцэхгүй байна";
+
+"recharge_tag_label" = "Дээрх шошго нь таны акаунтын өвөрмөц таних тэмдэг юм. Та мөнгө шилжүүлэхдээ зөв хэмжээг бөглөх хэрэгтэй, эс бөгөөс та дансаа дахин цэнэглэх боломжгүй, хөрөнгийг буцааж авах боломжгүй болно.";
+
+"pw_prompt" = "Тоо, үсэг хоёуланг багтаасан нууц үгээ оруулаад 8-20 тэмдэгтээс уртыг бичээд нийтлэг тусгай тэмдэгтүүдийг дэмждэг.";
+
+"Liq_price" = "Хүчтэй үнэ";
+"Liq_price_content" = "Хэрэв гэрээний гэрээний үнэ нь үнэ (олон албан тушаал) -аас доогуур эсвэл үнэ (хоосон байрлал) -аас доогуур байвал байрлалыг хаах шаардлагатай болно.";
+
+"wallet_balance" = "Дансны үлдэгдэл";
+"wallet_balance_content" = "Дансны үлдэгдэл = (Хадгаламж - Ашиглалт + Үр ашиг ба алдагдал)";
+
+"cost" = "Зардал";
+"cost_content" = "Гүйлгээ хийхэд шаардагдах маржин. Энэ нь таны сонгосон хөшүүрэг, одоо байгаа байр суурийг харгалзана. Хадгаламжийн нөөцийг багасгах шаардлагагүй.";
+
+"margin_balance" = "Дансны эрх";
+"margin_balance_content" = "Дансны давуу тал: Таны бирж дэх нийт сонирхол. Дансны өмч = (дансны үлдэгдэл + хэрэгжээгүй ашиг, алдагдал)";
+
+"mark_price" = "Tag үнэ";
+"mark_price_content" = "Энэ нь ашиг, алдагдал, ашгийг тооцоолоход ашиглагддаг гэрээний сүүлийн үнийн тэмдэг бөгөөд гэрээний хамгийн сүүлийн үеийн гүйлгээний үнийн дүнтэй бараг зөрчилдөхгүй бөгөөд зах зээлийн зохицуулалтаас зайлсхийх зорилгоор төлбөр тооцоо хийхэд нөлөөлөхгүй.";
+
+"available_balance_c" = "Боломжит тэнцэл";
+"available_balance_content" = "Та албан тушаалаа нээхдээ маржин ашиглаж болно. Боломжит тэнцэл = (Margin balance - ашигласан хадгаламж - байршлын барьцаа)";
+
+"margin_c" = "Тэнцүү";
+"margin_content" = "Ачаалал ба байрлалаар түгжигддэг. Хэрэв та албан тушаалд байрлалыг идэвхжүүлсэн бол энэ утга нь буурч байгаагаас буурах бөгөөд энэ нь таны бодит хөшүүрэг нэмэгдэнэ гэсэн үг юм. Слайд бүрийг байрлал бүрт хуваарилж өгсөн далайцыг тохируулах.";
+
+"market_c" = "Зах зээлийн үнэ";
+"market_content" = "Энд дарж зах зээлийн үнээр байршуулна.";
+
+"price_c" = "Үнэ";
+"price_content" = "Индексийн үнэ: үндсэн хөрөнгийн үнэ\nМаркын үнэ: Энэ бол одоогийн тэмдэгтийн үнэ юм.";
+"price_risk_content" = "Энэ үзүүлэлт автомат хурдны дараалалд хаана байгааг харуулж байна. Хэрвээ бүх үзүүлэлтүүд асаж байгаа бол хавтгай байрлалаас хойш таны байрлал буурч болно.";
+
+"position_margin" = "Албан тушаалын байршил";
+"position_margin_content" = "Position Margin: Албан тушаалаа хадгалахад шаардагдах хамгийн бага зөрүү. Энэ үнэ цэнэ нь таны барьж буй гэрээний нээлтийн үнэ, шаардлагатай засвар үйлчилгээний ашгийн харьцаагаар үржүүлсэн тоон нийлбэр юм.";
+
+"order_margin" = "Төлөвлөсөн хадгаламж";
+"order_margin_content" = "Эрх олгосон зах зээл: Таны итгэмжлэлд шаардагдах баталгааны хамгийн бага хэмжээ. Энэ үнэ цэнэ нь таны захиалсан утгуудын нийлбэрийг анхны шаардагдах ашгийн харьцаагаар үржүүлсэн дүн юм.";
+
+"unrealised_PNL" = "Хэрэгжээгүй ашиг";
+"unrealised_PNL_content" = "Хэрэгжээгүй ашиг, алдагдал: Бүх нээлттэй ажлын байрны ашиг, алдагдал.";
+
+"promptly_set" = "Одоо тохируулна уу";
+"next_remind" = "Дараагийн сануулга";
+
+"switch_currency" = "Валют солилцоо";
+"currency" = "Маркны нэр";
+"OTC" = "C2C";
+"contract" = "Гэрээ";
+"open_positions" = "Нээлттэй ажлын байрны тоо";
+"ealized_profit_loss" = "Үр ашиг, алдагдал";
+"unrealized_profit_loss" = "Хэрэгжээгүй ашиг, алдагдал";
+"contract_long" = "Илүү ихийг хий";
+"contract_short" = "Богино";
+"contract_open" = "Илүү нээлттэй болгох";
+"contract_open_space" = "Нээлттэй байна";
+"contract_account_balance" = "Дансны үлдэгдэл";
+"contract_account_equity" = "Дансны үлдэгдэл";
+"contract_position_margin" = "Албан тушаалын маржин";
+"contract_deposit_margin" = "Комиссын хадгаламж";
+"contract_margin_used" = "Энэ орд ашиглалтанд орсон";
+"contract_account" = "Гэрээ";
+"contract_historical_transactions" = "Түүхийн ажил гүйлгээ";
+"contract_time_buy" = "Цаг / борлуулалт";
+"contract_recent_transactions" = "Сүүлийн үеийн гүйлгээ";
+"contract_perpetual" = "Тэсвэр хатуужил";
+"contract_weekly_contracts" = "Долоо хоногийн гэрээ";
+"contract_subweeks" = "Дараагийн долоо хоногт";
+"contract_months" = "Сар";
+"contract_quarters" = "Улирал тутам";
+"contract_amounts" = "Хэмжээ";
+"contract_trust_transactions" = "итгэлцлийн гүйлгээ";
+"contract_position" = "албан тушаал";
+"contract_full_warehouse" = "бүрэн агуула";
+"contract_by_warehouse" = "агуулахад";
+"contract_by_close" = "Байршилыг хаах";
+"contract_deal_done" = "дууссан";
+"contract_historical_commission" = "Түүхийн комисс";
+"contract_value" = "утга";
+"contract_average_price" = "Дундаж үнэ";
+"contract_switching_contract" = "Гэрээ солилцох";
+"contract_transactions_number" = "гүйлгээний тоо";
+"contract_remaining" = "үлдсэн";
+"contract_positions_number" = "Албан тушаалын тоо";
+"contract_opening_price" = "Нээлтийн үнэ";
+"contract_revoked" = "хүчингүй болгох";
+"contract_deprecated" = "хуучирсан";
+"contract_some_transactions_cancel" = "Зарим гүйлгээ цуцлагдсан";
+"contract_trust_value" = "итгэлцлийн үнэ цэнэ";
+"contract_activity_commission" = "Үйл ажиллагааны комисс";
+"contract_total_amount" = "Нийт дүн";
+"contract_limit_price" = "хязгаар үнэ";
+"contract_response_rate" = "ROE";
+"contract_lever" = "хөшүүрэгтэй";
+"contract_actual_transaction_price" = "Гүйлгээний бодит үнэ цэнийн дагуу";
+"contract_enter_position" = "Байрлалаа оруулна уу";
+"contract_enter_amount" = "Үнийг оруулна уу";
+"contract_open_interest" = "Нээлттэй хүү";
+"position_margin_modify" = "Тохируулгын хэмжээ";
+"position_current"="Одоогийн гэрээний байдал";
+"position_assigned"="Хуваарилсан маржин";
+"position_available"="Боломжит хадгаламж";
+"position_increase"="Тохируулгын хэмжээ";
+"position_add"="Нэмэгдүүлэх";
+"position_remove"="Бууралт";
+"contract_modify_tip"="введите сумму маржи";
+"contract_market_closing"="Зах зээл хаагдах";
+"otc_asset_availableBalance"="Fiat Account Available Balance";
+"otc_tip_withdrawLimitTime"="为了保障资金安全，买入的资产将锁定至24h后支持出金,在此期间不影响交易业务";
+"otc_sting_buyerOnlyCan" = "Худалдан авагчид л дэмждэг";
+"otc_string_youNeedDo" = "Төлбөр хийхийн тулд та төлбөрийн аргыг нэмж оруулах хэрэгтэй";
+"otc_string_goActivate" = "Тохируулж байна";
+"link_name"="Network";
+
+"common_text_verifyInfoTitle"="Please complete the following information to ensure that it is operated by yourself:";
+"common_text_realnameVerifyTitle"="Real-name (hint: %@)";
+"common_text_realidVerifyTitle"="ID number (hint: %@)";
+"common_text_realnameVerifyPlaceholder"="Enter your name, up to 50 characters.";
+"common_text_realidVerifyPlaceholder"="Enter your ID number, up to 35 characters";
+"common_text_verifySuccessTitle"="Authentication passed!";
+"common_text_verifyAuthFailTitle"="Authentication failed!";
+"common_text_verifyAuthFailMsg"=" The system will freeze the withdrawal transaction for 24 hours!";
+"common_text_verifyAuthTimerMsg"=" Exit automatically in %@ second";
+"common_text_verifyAuthIdNumberError"=" Wrong ID number ";
+"common_text_verifyAuthNameError"="Wrong input name";
+"common_text_verifyAuthTryTimeDesc"=" %@ chance left! If you make 3 consecutive input errors, cash withdrawal will be frozen for 24 hours!";
+//sl_
+"contract_max_volume_limit" = "Please ensure that the quantity of the order is less than or equal to {%@}pcs!";
+"contract_profit_record" = "PnL record";
+"contract_stop_profit_loss" = "Take profit/stop loss";
+"contract_text_closeAveragePrice" = "Average close price";
+"contract_action_airdrop" = "Air drop";
+"contract_adjust_close_price" = "Adjusted Liquidation Price";
+"contract_deposit_range" = "Margin range";
+"contract_deposit_volume" = "Margin amount";
+"contract_after_adjust_leveage" = "Adjusted leverage";
+"contract_open_stop_profit" = "Take profit";
+"contract_open_stop_loss" = "Stop loss";
+"contract_stop_profitloss_tips" = "When %@ reaches TP/SL price, the position is fully closed at the setting price";
+"contract_stop_profit_long" = "Take-profit price needs to be higher than %@";
+"contract_stop_profit_short" = "Take-profit price needs to be lower than %@";
+"contract_stop_loss_long" = "Stop-loss price needs to be lower than %@";
+"contract_stop_loss_short" = "Stop-loss price needs to be higher than %@";
+"contract_normal_order_timeout" = "Liquidated order is timed out，be cancelled";
+"contract_normal_order_ASSETS" = "Insufficient margin, partial entrusted order is cancelled";
+"contract_normal_order_FREEZE" = "Insufficient frozen margin，partial entrusted order is cancelled";
+"contract_normal_order_UNDO" = "Unable to fill，partial entrusted order is cancelled";
+"contract_normal_order_CLOSE" = "The entursted order will cause forced liquidation，cancelled by system ";
+"contract_normal_order_reduce" = "Unfilled order of ADL process is cancelled";
+"contract_normal_order_compensate" = "Cancelled by system";
+"contract_normal_order_positionErr" = "Position mistake，cancelled by system";
+"contract_normal_order_FORBBIDN" = "Entrusted type illegal，cancelled by system";
+"contract_normal_order_OPPSITE" = "Unable to filled with traders own reverse order";
+"contract_normal_order_FOK" = "FOK Order, fully filled or cancelled by system ";
+"contract_normal_order_IOC" = "IOC order，filled immediately or cancelled by system";
+"contract_normal_order_MARKET" = "The filled price deviates from market order，partial order is cancelled by system";
+"contract_normal_order_PASSIVE" = "Post only, Taker order will be cancelled by system.";
+"contract_normal_order_FORCE" = "Liquidated，unfilled order is cancelled by system";
+"contract_normal_order_PLAY" = "play order，partial order is cancelled by system";
+"contract_normal_order_HANDOVER" = "Position is forced liquidated, partial order is cancelled by system";
+"contract_please_enter_tigger" = "Please enter tigger Price";
+"contract_please_enter_exten" = "Please enter Excutive Price";
+
+"send_invitation"="Send invitation";
+"invitee_complete_registration_transaction" ="Invitee complete registration and transaction";
+"receive_corresponding_ratio_commission"="Receive corresponding ratio of commission";
+"coAgent_text2" = "1st-level Rebate Rate";
+"coAgent_text3" = "2nd-level Rebate Rate";
+"coAgent_text_childReturn" = "Broker’s dividend";
+"coAgent_text_childTotal" = "Total clients(people)";
+"coAgent_text_childTotalUSDT" = "Accumulated profits(USDT)";
+"coAgent_text_yesterdayReturn" = "Profits of yesterday(USDT)";
+"coAgent_text_byesterdayReturn"= "Profits of the day before(USDT)";
+"coAgent_text_redpackInvite" = "Bonus";
+"coAgent_text_friendInvite" = "Invite friends";
+"coAgent_text_explain"="Instruction";
+
+"invitation_Link" = "Invitation Link";
+"my_invitation_code" = "My Invitation Code";
+"generate_invitation_poster"="Share";
+"face_to_face_invitation"="QR  Code";
+"invitation_register_rewards"=" Invitation History";
+"invitation_text_rules"="Rules and regulations";
+"invitation_share_poster" = "Share your tailored poster";
+"invitation_number_friends"="Number of friends";
+"invitation_rewards_amount"="Rewards Amt.";
+"invitation_ratio_commission"="Commission Rate";
+"invitation_spot_broker"="Spot trading broker";
+"invitation_register_account" = "Registered Account";
+"invitation_registed_date" = "Registration Date";
+"invitation_youtojoin" = "Invite you to join [%@], press the image to identify the QR code";
+"invitation_number_people" = "Invitations";
+"invitation_total_commission" = "Total commission";
+"invitation_my_invitation"="My invitation";
+"invitation_invite_rewards"="Invite rewards";
+"invitation_release_time"="Release time";
+
+"login_success_action_alert_title"="Risk disclaimer";
+"login_success_action_alert_message"="There are security risks in the account. Please change the password and GA in time";
+"login_success_action_alert_google"="Replace GA";
+
+"common_text_entrustListLimit"="All the transaction data of coin pairs only support the display of data in the past 180 days. Please filter a single coin pair to view all orders.";
+"etf_fund_rate" = "Funding Rate";
+
+"contract_swap_gift"="Bonus";
+"contract_tips_noExperience"="Bonus is not include";
+"contract_tips_experienceGold"="The trading bonus cannot be withdrawn directly, but the profitable part could.The trading bonus can be used for opening positions, paying trading fees, funding fee and the settlement for closing positions.
+The trading bonus will be deducted at the end for paying fee or position loss.";
+"contract_text_getBouns"="Bonus Issue";
+"contract_text_outBouns"="Bonus Recycle";
+"contract_string_leverageerror" = "The leverage does not match configuration";
+
+//login
+"password_reset_tips"="The withdrawal will be disabled for %s hours once password is changed.";
+"password_input_rule_tips"="8-20 numbers and letters";
+"please_check_with_google_auth"="Please check with google auth";
+"phone_didSendCode_to"="SMS Verification code has been sent to";
+"mail_didSendCode_to"="We sent a code to ";
+"assets_asset_allocation"="Asset Allocation";
+"assets_security_advice"="Security Advice";
+"assets_crypto_asset_value"="Crypto Asset Value";
+"assets_contract_value"="Equity Value";
+"assets_fiat_account_value"="Fiat Account Value";
+"assets_margin_account_value"="Margin Account Value";
+"assets_popular_crypto"="Popular Crypto";
+"assets_digital_assets"="Crypto Assets";
+"assets_suspend_deposit"="Suspend Deposit";
+"assets_suspend_withdraw"="Suspend Withdraw";
+"assets_suspend_deposit_Withdraw"="Suspend Deposit/Withdraw";
+"assets_less_than_0.0001BTC"="Less than %@ BTC";
+"assets_security_advice_tips"="Don't send your credential, SMS, email, or google authenticator code to anyone including our customer support staff. Anyone who declares to be our exchange’s stuff member is FRAUDULENT. Don't transfers any amount of your digital asset to anyone who claims to be our exchange’s staff member.";
+"alert_common_i_understand"="OK";
+"assets_balance_zero_tips"="Your balance is zero, make deposits or trade through the OTC market to obtain cryptocurrencies.";
+"assets_total_balances"="Total Amount";
+"onlyCo_assets_text_exchange"="Primary account";
+"onlyCo_redpacket_received_withdraw"="Red Packet transferred to your Primary account, can withdraw directly";
+"onlyCo_otc_tip_lessCoin"="Coins need to be transferred from Primary account to fiat account as selling";
+"onlyCo_redpacket_send_exchangeAccount"="Primary account";
+"onlyCo_otc_tip_lessCoin_forotc"="出售需将币从主账户划转至场外账户";
+
+//单独加的用户信息获取失败的提示
+"get_userinfo_failed_tip"="Get user info failed, please login again";
+"account_has_benn_registered_tip"="This account has been registered, please login.";
+"account_action_token_expire_tip"="Token has expired, please try again.";
+
+
+"customSetting_action_changeCo" = "Switch futures system";
+"customSetting_text_coDescNew" = "New futures now running";
+"customSetting_text_coDescOld" = "Old futures now running";
+"customSetting_text_coNew" = "New futures";
+"customSetting_text_coOld" = "Old futures";
+"customSetting_tip_coNewSuccess" = "New futures switch successfully";
+"customSetting_coAlert_title" = "New futures system is coming soon";
+"customSetting_coAlert_desc" = "Dear users, Hello:\nIn order to better serve users and provide more professional contract services, the new web version and APP version of the perpetual contract will be launched soon.\n1. Before the official switch, we provide a dual-version contract system for you to use. At the same time, when the new contract is just launched, there may be many imperfections. If you find a bug or any suggestion, please submit it through the link:\n2. At that time, the old contract system will stop accessing. Users of the old contract must close their positions in time and transfer their assets to the currency account before the corresponding time; if they fail to close and transfer out in time, the platform will be based on the market price at that time Automatic liquidation and settlement, and transfer of assets to currency accounts; unfilled orders will be automatically cancelled by the system.\n3. You can freely switch between old and new contracts through the navigation top floating layer. After you click [Switch new/old version], you will switch simultaneously when you access contract transactions, contract assets, contract orders, and contract-related operation functions; please note that the old and new versions of the contract Data is not interoperable;\nThe affected functions include but are not limited to: contract broker, contract experience fee, contract documentary, contract contest;\n4. Your contract assets need to be transferred to the currency account before being transferred to the contract account;";
+"newContract_changeCo_desc" = "
+The contract is about to be switched, click the confirm button and the app will close, please restart the app.";
+
+"newContract_force_changeCo_desc"="The current contract is offline. You will be automatically switched to the new contract.";
+
+"title_transfer_notice"="Transfer Notice";
+"content_transfer_notice"="Transactions can only be carried out when the assets are transferred to the corresponding account. There is no charge for transfer between accounts.";
+
+
+"market_title_edit_like"="Edit Favorites";
+"market_edit_like_type_top"="Top";
+"market_edit_like_type_drag"="Drag";
+"market_text_custom_add"="Add";
+"market_text_custom_finish"="Done";
+
+"quant_stop_high_price"="TP";
+"quant_stop_low_price"="Stop Loss";
+"quant_stop_hign_and_low"="TP&SL";
+"quant_high_price"="Upper";
+"quant_low_price"="Lower";
+"quant_ai_strategy"="AI Policy";
+"quant_custom_strategy"="Custom Policy";
+"quant_start_trade"="Open Policy";
+"quant_grid_line_type1"="Arithmetic";
+"quant_grid_line_type2"="Geometric";
+"quant_grid_title"="Grid";
+"quant_price_section"="Price range";
+"quant_grid_amount"="The number of grids";
+"quant_every_profit"="Profit per grid";
+"quant_seven_annualized_yield"="7D annualized yield";
+"quant_quote_amount"="Investment";
+"quant_stop_strategy"="Stop";
+"quant_view_detail"="Detial";
+"quant_ordering"="Running";
+"quant_ordered"="Completed";
+"quant_use_own_base"="Use the original ";
+"quant_grid_profit"="Realized profit";
+"quant_annualized_yield"="Annualized yield";
+"quant_position_profit"="Unrealized profit";
+"quant_grid_type"="Grid type";
+"quant_initial_quote_amount"="Initial investment";
+"quant_run_time"="Running:";
+"quant_entrust_date"="Time";
+"quant_entrust_historyList"="Grid History Orders";
+"quant_pending_detail"=" Grid details";
+"quant_title_buyPrice"="Buy price";
+"quant_title_sellPrice"="Sell price";
+"quant_alert_stopGrid"="After terminating the grid, all uncompleted orders will be cancelled. Are you sure you want to terminate this grid trading?";
+"quant_stop_high_error"="Take Profit Price must be greater than Upper Price";
+"quant_stop_low_error"="Stop Loss Price must be smaller than Lower Price";
+"quant_range_error"="Price range is too small. Please reset.";
+"quant_toast_saveSuccess"="The grid is being created, check the execution in the details later";
+"quant_gridLineNumber_error"="The range of number of grids 2 -100";
+"quant_everyProfitMin_error"="The profit per grid is too small, please reset it";
+"quant_minimumOrderQuantity_error"="The investment per grid is too small";
+"quant_stopMinPrice_error"="Stop loss price must be less than current price";
+"quant_stopMaxPrice_error"="Take profit price must be higher than current price";
+"quant_balance_error"=" Insufficient balance";
+"quant_baseBalance_error"="You need at least";
+"quant_profitNoFee_tip"="Fee deducted";
+"quant_entrustCancel_error"="The order is a grid strategy order,the order can't cancelled manually. Please stop the grid and operate again";
+"quant_profit_title"="Profit";
+"grid_need_least_tips"="need";
+"contract_win_rate"="Win rate";
+"contract_total_profit"="Total profit(USDT)";
+"contract_scan_code_start"="Scan the code to start";
+"contract_copy_trade"="Copy trade";
+"contract_following_trader"="Following trader";
+"customSetting_action_themeDay_KlineNight"="Daytime mode&K-line nighttime mode";
+"customSetting_action_testSpeed"="Retesting";
+"customSetting_title_apiSpeed"="API Speed";
+"customSetting_title_wsSpeed"="WS Speed";
+
+"etf_notes_explain"="%@ is an ETF product that tracks %@ the day %@ and is better suited for trading and holding on the current side of the market.";
+"etf_notes_multipleL"="Up %@ times";
+"etf_notes_multipleS"="down %@ times";
+
+"etf_multipleS"="X Short";
+"etf_multipleL"="X Long";
+"captcha_aliyun_title"="Sliding Verification";
+
+"etf_multipleS"="times short";
+"etf_multipleL"="times long";
+
+
+"etf_question_a"="What does the BTC3L leverage ETF mean?";
+"etf_question_b"="Leverage ETFs are tokens that track spot gains and falls using a certain multiple, compared to ordinary leverage products, what are the main features of leverage ETFs?";
+"etf_question_c"="Which of the following descriptions is inaccurate about leverage ETFs?";
+"etf_question_d"="The daily fund rate is not deducted from the user's assets, it is charged by deducting the net value, is this correct?";
+"etf_question_e"="Which of the following is not part of the platform ETF position adjustment mechanism?";
+
+"etf_question_anwsersa"="If the price of BTC increases by 1%, the net value of the leverage ETF will rise by about 3% & if the price of BTC decreases by 1%, the net value of the leverage ETF will fall by about 3%";
+"etf_question_anwsersb"="A pledge deposit is required, the product has an expiration date, there is a risk of position liquidation & no pledge deposit is required, no product expiration date, and no risk of position liquidation";
+"etf_question_anwsersc"="In a unilateral market, leverage ETFs may have compound interest gains & leverage ETFs are suitable for both long-term and short-term holdings, in volatile markets, the net value of leverage ETFs may be worn out";
+"etf_question_anwsersd"="Correct & Error";
+"etf_question_anwserse"="Timed position adjustment: Daily fixed time point to adjust the leverage multiple to the target multiple, to ensure that the net value of daily tracking spot of a certain multiple & timed position adjustment: daily fixed time point to adjust the leverage multiple to the target multiple, to ensure that the net value of daily tracking spot of a certain multiple & floating leverage adjustment position: when leverage ETF's actual leverage multiple exceeds the set floating leverage range to adjust the position";
+"etf_question_title"="Knowledge test";
+"etf_question_next"="Next question";
+"etf_notes_explain_tips"="Risk Tip: %@ is an ETF product that tracks %@'s %@ bar on the same day, which is more suitable for unilateral trading and short-term holding. The product fluctuates greatly and has the risk of net wear.";
+
+"assets_action_internalTransfer"="Internal Transfer";
+"internalTransfer_action_History"= "Transfer records";
+"internalTransfer_tip_bindGoogleFirst"="In order to ensure the safety of your assets, please transfer directly within the station after binding GA";
+"internalTransfer_text_address"="Reciprocal account";
+"common_tip_targetAccount"="Please enter reciprocal account";
+"transfer_tip_notice"="Transfer instructions";
+"transfer_transferAlert_contentA"="Minimum transfer amount";
+"transfer_transferAlert_contentB"="Maximum transfer amount";
+"transfer_transferAlert_contentC"="Today’s remaining amount";
+"internalTransfer_tip_minValueError"="The minimum number of transfers per time is";
+"internalTransfer_tip_maxValueError"="The maximum number of transfers per time is";
+"internalTransfer_tip_success"="Direct transfer in station succeed";
+"common_tip_todayRemaining"="Today’s remaining amount is";
+"scan_fail_erro"="No valid contents found by scan";
+
+"add_invite_code"="Add superior invite code or UID";
+"referral_superior_button"="Add";
+"referral_superior_pop_text"="Please enter superior invite code or UID";
+"referral_superior_toast_succ"="Your superior has been added successfully!";
+"referral_superior_toast_notexist"="Invite code or UID does not exist!";
+"referral_superior_toast_later"="The registration time of the superior user cannot be later than that of the current user";
+"referral_superior_toast_self"="Cannot add oneself as a superior";
+"referral_superior_toast_wrong"="Incorrect invite code or UID";
+"referral_inviteRewards_"="Invite Rewards";
+"referral_inviteRewards_rules"="Reward Rules";
+"referral_inviteRewards_number"="Number Of Friends";
+"referral_inviteRewards_amount"="Reward Amount (USDT)";
+"referral_inviteRewards_invitation"="My Invitations";
+"referral_inviteRewards_reward"="My Rewards";
+"referral_inviteRewards_invitation_UID"="UID";
+"referral_inviteRewards_invitation_account"="Registered Account";
+"referral_inviteRewards_invitation_type"="Type";
+"referral_inviteRewards_invitation_time"="Registration Date";
+"invite_reward_issue_date"="Release Date";
+"personal_center_FeeRate"="My Fee Rates";
+"invite_poster_tips"="Register Now, Earn Crypto!";
+"referral_inviteRewards_title"="Invite Reward Records";
+
+"pos_state_lockStart"="Locking Starts";
+"pos_state_InterestStart"="Interest Starts";
+"pos_state_InterestEnd"="Interest Ends";
+"pos_state_lockEnd"="Locking Ends";
+"pos_string_allEarn"="Tổng Phát Hành";
+
+
+"grid_share_title"="Grid Trading";
+"grid_share_desc"="24/12 Help me arbitrage and make money";

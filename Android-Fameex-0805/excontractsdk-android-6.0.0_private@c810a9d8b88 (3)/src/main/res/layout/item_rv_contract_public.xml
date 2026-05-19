@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_contract_public"
+    android:layout_marginHorizontal="@dimen/dp_16"
+    android:layout_marginBottom="@dimen/dp_16"
+    >
+
+    <TextView
+        android:id="@+id/tv_position_hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/PositionBraket"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        style="@style/textstyle_dm_12_color2"
+        android:paddingTop="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:background="@drawable/public_dotted_bottom_line"
+        android:paddingBottom="@dimen/dp_2"
+        />
+    <TextView
+        android:id="@+id/tv_position_hold_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0 - 150,000"
+        app:layout_constraintTop_toBottomOf="@id/tv_position_hold"
+        app:layout_constraintLeft_toLeftOf="@id/tv_position_hold"
+        android:layout_marginTop="@dimen/dp_4"
+        style="@style/textstyle_dm_18_color1"
+        />
+
+    <TextView
+        android:id="@+id/tv_lever_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MaxLeverage"
+        app:layout_constraintTop_toBottomOf="@id/tv_position_hold_value"
+        app:layout_constraintLeft_toLeftOf="@id/tv_position_hold"
+        android:layout_marginTop="@dimen/dp_24"
+        style="@style/textstyle_dm_12_color2"
+        android:background="@drawable/public_dotted_bottom_line"
+        android:paddingBottom="@dimen/dp_2"
+        />
+    <TextView
+        android:id="@+id/tv_lever_max_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0 - 150,000"
+        app:layout_constraintTop_toBottomOf="@id/tv_lever_max"
+        app:layout_constraintLeft_toLeftOf="@id/tv_position_hold"
+        android:layout_marginTop="@dimen/dp_4"
+        style="@style/textstyle_dm_18_color1"
+        />
+
+    <TextView
+        android:id="@+id/tv_keep_margin_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MtncMgRt"
+        app:layout_constraintTop_toBottomOf="@id/tv_lever_max_value"
+        app:layout_constraintLeft_toLeftOf="@id/tv_position_hold"
+        android:layout_marginTop="@dimen/dp_24"
+        style="@style/textstyle_dm_12_color2"
+        android:background="@drawable/public_dotted_bottom_line"
+        android:paddingBottom="@dimen/dp_2"
+        />
+    <TextView
+        android:id="@+id/tv_keep_margin_rate_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0 - 150,000"
+        app:layout_constraintTop_toBottomOf="@id/tv_keep_margin_rate"
+        app:layout_constraintLeft_toLeftOf="@id/tv_position_hold"
+        android:layout_marginTop="@dimen/dp_4"
+        style="@style/textstyle_dm_18_color1"
+        android:paddingBottom="@dimen/dp_16"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        style="@style/textstyle_db_14"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_5"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

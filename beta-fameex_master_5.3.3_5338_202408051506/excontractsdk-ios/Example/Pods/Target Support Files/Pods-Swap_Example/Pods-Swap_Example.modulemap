@@ -1,0 +1,6 @@
+framework module Pods_Swap_Example {
+  umbrella header "Pods-Swap_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

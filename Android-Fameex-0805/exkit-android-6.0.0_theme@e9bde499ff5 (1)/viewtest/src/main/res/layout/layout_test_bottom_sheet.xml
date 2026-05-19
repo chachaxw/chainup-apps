@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".SkeletonActivity"
+    tools:ignore="MissingDefaultResource">
+
+
+    <com.qmuiteam.qmui.layout.QMUILinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:qmui_topDividerColor="@color/line_color"
+        app:qmui_topDividerHeight="1dp">
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:text="通用list选择"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="列表选择（比如盘口深度选择）" />
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="列表选择（支持滑动关闭）" />
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="列表选择（比如多语言选择）" />
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_3_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="币种选择(可滑动关闭可折叠)" />
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_3_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="币种选择(可滑动关闭不折叠)" />
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_3_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonText="币种选择(默认)" />
+        <TextView
+            android:id="@+id/test_message"
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="定制类弹窗\n1222"
+            android:textStyle="bold" />
+
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+
+</LinearLayout>

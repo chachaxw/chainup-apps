@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SkeletonActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_header_kit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="Tab切换" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/card_bg_color_1">
+
+        <com.qmuiteam.qmui.layout.QMUILinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="50dp"
+            app:qmui_topDividerColor="@color/line_color"
+            app:qmui_topDividerHeight="1dp">
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="一级TAB（卡片）"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.KKCommonTabKit
+                android:id="@+id/tab_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp" />
+            <com.chainup.kit.views.KKCommonTabKit
+                android:id="@+id/tab_1_1"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+            <com.chainup.kit.views.KKCommonTabKit
+                android:id="@+id/tab_1_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="一级TAB（文字）"
+                android:textStyle="bold" />
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                style="@style/public_commontab_bline_16_style"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp" />
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab_2_1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                style="@style/public_commontab_bline_16_style" />
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab_2_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                style="@style/public_commontab_bline_16_style"
+                android:layout_marginBottom="12dp" />
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab_2_3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                style="@style/public_commontab_bline_16_style"
+                android:layout_marginBottom="12dp" />
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="二级TAB（卡片）"
+                android:textStyle="bold" />
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab_3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                style="@style/public_toolbartype_bar_home_tab"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp" />
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                style="@style/public_toolbartype_bar_home_tab"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab_3_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                style="@style/public_toolbartype_bar_home_tab"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab_3_3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                style="@style/public_toolbartype_bar_home_tab"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="二级TAB（文字）"
+                android:textStyle="bold" />
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab_4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                style="@style/public_commontab_bline_14_style"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp" />
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab_4_1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                style="@style/public_commontab_bline_14_style" />
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab_4_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                style="@style/public_commontab_bline_14_style"
+                android:layout_marginBottom="12dp" />
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab_4_3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                style="@style/public_commontab_bline_14_style"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="现货交易Tab"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.KKTradeTabBarKit
+                android:id="@+id/kk_trade_bibi"
+                android:layout_width="192dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                app:kk_tradeTabBar_text1="Buy"
+                app:kk_tradeTabBar_text2="Sell"
+                app:kk_tradeTabBar_selectColor1="@color/main_green"
+                app:kk_tradeTabBar_selectColor2="@color/main_red"
+                />
+
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="合约交易Tab"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.KKTradeTabBarKit
+                android:id="@+id/kk_trade_contract"
+                android:layout_width="192dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                app:kk_tradeTabBar_text1="Open"
+                app:kk_tradeTabBar_text2="Close"
+                app:kk_tradeTabBar_selectColor1="@color/main_color"
+                app:kk_tradeTabBar_selectColor2="@color/main_color"
+                />
+
+        </com.qmuiteam.qmui.layout.QMUILinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

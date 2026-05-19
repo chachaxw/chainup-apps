@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_card_color"
+    android:orientation="vertical"
+    tools:context="com.yjkj.chainup.new_contract.activity.CpContractSettingActivity">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="@string/cp_contract_setting_text13"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--持仓模式-->
+            <RelativeLayout
+                android:id="@+id/rl_position_mode_layout"
+                android:background="@color/bg_card_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_52">
+
+                <TextView
+                    android:id="@+id/tv_position_mode_label"
+                    style="@style/textstyle_dm_16_color1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:text="@string/cp_contract_setting_text14" />
+
+                <ImageView
+                    android:backgroundTint="@color/text_color_3"
+                    style="@style/contract_right_arrow_img_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_16" />
+
+                <TextView
+                    android:layout_marginRight="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/tv_position_mode_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    style="@style/textstyle_dm_14_color2"
+                    />
+            </RelativeLayout>
+            <!--仓位展示单位-->
+            <RelativeLayout
+                android:id="@+id/rl_display_unit_layout"
+                android:background="@color/bg_card_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_52">
+                <TextView
+                    android:id="@+id/tv_contracts_unit_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_centerVertical="true"
+                    android:text="@string/cp_contract_setting_text17"
+                    style="@style/textstyle_dm_16_color1"
+                    />
+
+                <ImageView
+                    android:backgroundTint="@color/text_color_3"
+                    style="@style/contract_right_arrow_img_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_16" />
+
+                <TextView
+                    android:layout_marginRight="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/tv_contracts_unit_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="@string/cp_overview_text9"
+                    style="@style/textstyle_dm_14_color2"
+                    />
+
+            </RelativeLayout>
+            <!--未实现盈亏计算-->
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_pnl_calculator_layout"
+                android:background="@color/bg_card_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_52">
+                <TextView
+                    android:id="@+id/tv_pnl_calculator_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_centerVertical="true"
+                    android:text="@string/cp_extra_text87"
+                    style="@style/textstyle_dm_16_color1"
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    style="@style/contract_right_arrow_img_style"
+                    android:layout_marginRight="@dimen/dp_16"/>
+
+                <TextView
+                    android:layout_marginRight="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/tv_pnl_calculator_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="@string/cp_extra_text83"
+                    style="@style/textstyle_dm_14_color2"
+                    />
+
+            </RelativeLayout>
+            <!--下单二次确认-->
+            <RelativeLayout
+                android:background="@color/bg_card_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_52">
+
+                <TextView
+                    android:id="@+id/tv_book_confirm_label"
+                    style="@style/textstyle_dm_16_color1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:text="@string/cp_contract_setting_text19" />
+
+
+                <Switch
+                    android:id="@+id/switch_book_again"
+                    android:layout_width="@dimen/dp_35"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:button="@drawable/public_switch_selector"
+                    android:background="@null"
+                    android:thumb="@drawable/icon_switch_default"
+                    android:track="@drawable/icon_switch_default" />
+
+            </RelativeLayout>
+
+
+            <!--交易区图表-->
+            <RelativeLayout
+                android:id="@+id/trade_area_layout"
+                android:background="@color/bg_card_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_52">
+
+                <TextView
+                    android:id="@+id/trade_area_label"
+                    style="@style/textstyle_dm_16_color1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:text="@string/cp_trading_area_chart_title" />
+
+                <ImageView
+                    android:backgroundTint="@color/text_color_3"
+                    style="@style/contract_right_arrow_img_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_16"
+
+                    />
+
+                <TextView
+                    android:layout_marginRight="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/trade_area_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    style="@style/textstyle_dm_14_color2"
+
+                    />
+            </RelativeLayout>
+
+
+
+
+            <!--有效时间-->
+            <RelativeLayout
+                android:id="@+id/rl_effective_time_layout"
+                android:background="@color/bg_card_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_72">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_effective_time_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_centerVertical="true"
+                        android:text="@string/cp_contract_setting_text21"
+                        style="@style/textstyle_dm_16_color1"
+                        />
+                    <!--         条件单和止盈止损有效期    pm 修改   -->
+                    <TextView
+                        android:id="@+id/tv_plan_settings_label"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:text="@string/cp_tip_text26"
+                        style="@style/textstyle_dm_12_color2"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:backgroundTint="@color/text_color_3"
+                    style="@style/contract_right_arrow_img_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_16" />
+
+                <TextView
+                    android:id="@+id/tv_effective_time_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="32dp"
+                    android:text="@string/cp_extra_text88"
+                    style="@style/textstyle_dm_14_color2"
+                    />
+
+            </RelativeLayout>
+            <!--触发类型-->
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_trigger_type_layout"
+                android:background="@color/bg_card_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_52">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_centerVertical="true"
+                    style="@style/textstyle_dm_16_color1"
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    style="@style/contract_right_arrow_img_style"
+                    android:layout_marginRight="@dimen/dp_16"/>
+
+                <TextView
+                    android:layout_marginRight="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/tv_trigger_type_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="@string/cp_order_text31"
+                    style="@style/textstyle_dm_14_color2"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

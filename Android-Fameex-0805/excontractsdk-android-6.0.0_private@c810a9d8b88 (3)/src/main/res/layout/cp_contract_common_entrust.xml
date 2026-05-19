@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card_color"
+    android:overScrollMode="never"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_sel_ctrl"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_sel_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_16"
+            >
+
+            <TextView
+                android:id="@+id/tv_coins_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部交易对"
+                style="@style/textstyle_dm_12_color2"
+                />
+
+            <ImageView
+                android:id="@+id/img_coins_name_arrow"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_8"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/public_icon_arrow_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_contract_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_16"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_contract_direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cp_order_text98"
+                style="@style/textstyle_dm_12_color2"
+                />
+
+            <ImageView
+                android:id="@+id/img_side_type_arrow"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_8"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/public_icon_arrow_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_hold_contract"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_card_color"
+            android:minHeight="@dimen/dp_200"
+            android:overScrollMode="never" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</LinearLayout>

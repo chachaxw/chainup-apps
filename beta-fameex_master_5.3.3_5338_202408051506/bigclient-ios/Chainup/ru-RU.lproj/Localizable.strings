@@ -1,0 +1,1514 @@
+"common_guide_skip_hint"="Skip";
+"common_guide_search_hint"="Click to check the currency you care about";
+"common_guide_notice_hint"="Click for more announcements";
+"common_guide_top_24_hint"="Slide to see more content";
+"common_guide_coin_recommend_hint"="Click on a recommended crypto for a quick search";
+"common_guide_coin_edit_hint"="Click to edit the coin pair of your choice";
+"common_guide_asset_hint"="Click here to check your asset distribution";
+"app_name" = "GBox";
+
+"tab_home" = "Главная";
+"tab_quotes" = "Ситуация на рынке";
+"tab_transaction" = "Сделка";
+"tab_fund" = "Активы";
+"tab_account" = "Аккаунт";
+
+
+"loading" = "Скачивается…";
+"logging" = "Вход…";
+
+
+"show" = "Показать";
+"not_show" = "Не показывать";
+"market" = "Рынок";
+"symbol" = "Валюта";
+"update" = "Обновить";
+"ignore" = "Игнорировать";
+"exit_remind" = "Нажмите ещё раз для выхода";
+"more" = "Больше";
+
+"title_information" = "Искать";
+"title_change_phone" = "Изменить номер  телефона";
+"title_change_email" = "Изменить почтовый адрес";
+"title_bind_phone" = "Привязать телефон";
+"title_verification_phone" = "Проверочный смс-код";
+"title_bind_email" = "Привязать почту";
+"title_verification_email" = "Проверка через почту";
+"title_change_nickname" = "Изменить ник";
+"title_notification" = "Оповещение";
+"title_personal_center" = "Личный кабинет";
+"title_recharge" = "Пополнить";
+"title_recharge_address" = "Добавить адрес";
+"title_recharge_record" = "Добавить заметку";
+"title_setting" = "Настройки";
+"title_reset_login_pass" = "Установить пароль";
+"title_set_asset_pass" = "Установить пароль активов";
+"title_reset_asset_pass" = "Установить пароль для средств";
+"title_rebind_phone" = "Изменить телефон";
+"title_rebind_email" = "Изменить почту";
+"title_asset_pass_setting" = "Изменить частоту";
+"title_user_agreement" = "Пользовательское соглашение";
+"title_feedback" = "Обратная связь";
+"title_choose_area" = "Выбрать адрес";
+"title_choose_symbol" = "Выбрать валютную пару";
+"title_transaction_details" = "Подробно о сделке";
+"title_asset_details" = "Подробно об активах";
+"title_industry_information" = "Информация о предприятии";
+"title_gesture_password" = "Пароль жестом";
+"title_asset_setting" = "Настройки капитала";
+
+"customSetting_action_changeHost"="Change Host";
+"customSetting_action_host"="Host";
+"customSetting_action_testing"="testing";
+"customSetting_action_response"="response";
+"customSetting_action_unusable"="disabled";
+
+"safe_setting" = "Безопасные настройки";
+"binding_phone" = "Привязать номер";
+"binding_email" = "Привязать почту";
+"login_pass" = "Пароль для входа";
+"funds_pass" = "Пароль активов";
+"safe_tactics" = "Безопасная стратегия";
+"login_validity" = "Срок действия для входа";
+"version_update" = "Версия";
+"user_agreement" = "Пользовательское соглашение";
+"hotline" = "Телефон клиентской службы";
+
+"french_recharge" = "Пополнить фаби";
+"USDT" = "USDT";
+"EUR" = "ЕвроEUR";
+"token_recharge" = "Пополнить жетоны";
+"BTC" = "BTC";
+"LTC" = "Litecoin LTC";
+"BCC" = "Бит наличныхBCC";
+"ETH" = "ETH";
+"recharge_record" = "Запись пополнения";
+"recharge_remind" = " Обязательно внимательно проверьте валюту пополнения баланса и запретите перезарядку активов, отличных от , на адрес . Любые активы, не связанные с , начисляемые на адрес , не будут восстановлены.。";
+"important_hint" = "Важное уведомление：";
+
+
+"asset_details" = "Подробно об активах";
+"recharge" = "Пополнить";
+"withdraw" = "Снять наличные";
+"other" = "Другое";
+"cashFlow" = "Поток капитала";
+"address_management" = "Управление адресом";
+
+"title_about" = "Об";
+"versionCode" = "Номер версии";
+"contactCall" = "Контактный телефон";
+
+"title_help_center" = "Центр поддержки";
+
+
+
+
+"buy_price" = "Курс покупки валюты";
+"buy_quantity" = "Объём покупки";
+"sell_price" = "Курс продажи валюты";
+"sell_quantity" = "Объём продаж";
+"hint_buy_amount" = " Сумма покупки ";
+"hint_sell_amount" = " Сумма продажи ";
+"tab_buy" = "Закупить";
+"tab_sell" = "Продать";
+"deep_merger" = " Глубокая консолидация ";
+"available_balance" = " Доступный баланс ";
+"remind_transaction_price" = " Исходя из фактической цены сделки ";
+
+
+"deal_quantity" = "Объём";
+"limit_transaction" = " Лимитная торговля ";
+"market_transaction" = " Рыночная сделка ";
+"transaction_money" = " Сумма транзакции ";
+
+
+"title_history_order" = "История заказов";
+"title_deal_detail" = " Сведения о транзакции ";
+"buy" = "Купить";
+"sell" = "Продать";
+"gmv" = " Общий оборот ";
+"trust_price" = " Цена поручителя ";
+"trust_quantity" = "Количество поручителей";
+"average_transaction_price" = " Средняя цена сделки ";
+"real_deal" = "Фактическая цена";
+"remain_volume" = "Не совершать сделку";
+"order_status_unfinished" = "Сделка не совершена ";
+
+
+"setting" = "Настройки";
+
+
+"trust" = "Поручитель";
+"price" = "Цена";
+"quantity" = "Количество";
+"time" = "Время";
+"deal" = "Сделка";
+"orientation" = "Направление";
+"recent_deal" = "Новые сделки";
+"volume" = "Количество сделок";
+"determine" = "Подтвердить";
+"feedback" = "Обратная связь";
+
+
+"account_info" = "Информация об аккаунте";
+"personal_info" = "Личная информация";
+"name" = "ФИО";
+"nickname" = "Ник";
+"certificate_type" = "Тип документа";
+"identity_certificate" = " идентификация ";
+"certificate_num" = "Номер документа";
+"certification_level" = " Уровень сертификации ";
+"phone" = "Номер телефона";
+"funding_password" = "Пароль активов";
+"verification" = "Проверка";
+"sign_out" = "Выйти из регистрации";
+"confirm" = "Подтвердить";
+"hint_personal_info_name" = " Введите свое настоящее имя, чтобы оно соответствовало вашему ID ";
+"hint_personal_info_certificate_type" = "Аккаунт";
+"hint_personal_info_certificate_num" = "Введите номер  удостоверения";
+"passport_cover" = "Лицевая сторона паспорта";
+"image_example" = "Изображение образца";
+"passport_personal_info_page" = "Страница личной информации паспорта";
+"phone_passport_person" = " Персональная информация личного персонального паспорта и персональная подпись ";
+"personal_info_prompt" = " Чтобы ваш документ прошел проверку, убедитесь, что содержимое фотографии завершено и хорошо видно.Поддерживаются только форматы изображений JPG. / n Требования к ручным фотографиям: чистый аватар, четкий идентификатор, четкая подпись, включая текущую дату ";
+"submit_review" = " Отправить отзыв ";
+"assets_pass_warning" = " Для обеспечения безопасности вашей учетной записи снятие или снятие монет не допускается в течение 24 часов после установки или сброса пароля!";
+"original_pass" = "Старый пароль";
+"original_email" = "Старый почтовый адрес";
+"new_email" = "Новый почтовый адрес";
+"new_mobile" = "Новый номер телефона";
+"original_mobile" = "Старый номер телефона";
+"save" = "Сохранить";
+"hint_nickname" = "Введите ник";
+"dialog_remind" = " Перейдите на официальный сайт, чтобы завершить соответствующие операции. ";
+"cancel" = "Отменить";
+"take_a_photo" = "Сфотографировать";
+"select_from_album" = " Выбрать из альбома ";
+"submit" = "Подать";
+"submiting" = "Подача...";
+"determine_bind" = "Привязать?";
+"asset_pass_not_verification" = " Не проверять пароль активов ";
+"asset_pass_verification_2hour" = " Проверять пароль активов каждые два часа ";
+"asset_pass_verification_every_time" = " Проверять пароль средств каждый раз ";
+"reset" = "Переустановка";
+"my_invitation_code" = "Мой номер приглашения";
+"login_setting" = " Настройки входа в систему ";
+"gesture_pass" = "Пароль жестов";
+"pass_input_times" = " Частота ввода пароля ";
+"phone_verification" = " Мобильная проверка ";
+"google_verification" = "Проверка Google";
+"total_assets_valuation" = "Все активы";
+"verified" = "Заверено";
+"not_certified" = "Не заверено";
+"confirm_changes" = "Изменить?";
+
+"assets_pass" = "Пароль активов";
+"original_assets_pass" = "Старый пароль активов";
+"reset_assets_pass" = " Сбросить пароль для средств ";
+"set_assets_pass" = " Задайте пароль активов ";
+"input_no" = "Ввод не требуется string";
+"input_everytime" = "Вводит  всегда";
+"input_2hour" = "Вводить каждые 2 часа";
+
+"google_code_remind" = " Вы можете использовать привязку к Google Captcha ";
+"copy_key" = " Копировать ключ ";
+"finish" = "Завершить";
+
+
+
+"toast_email_error" = " Неверный формат почтового ящика ";
+"toast_feedback_success" = "Успешный отклик";
+"toast_trade_success" = "Успешно подано";
+"toast_login_password_change_success" = "Успешно изменено";
+"toast_no_mobile_verification_code" = " Введите код подтверждения своего телефона ";
+"toast_no_email_verification_code" = " Введите код проверки электронной почты ";
+"toast_no_nickname" = "Введите ник";
+
+"toast_no_feedback" = " Пожалуйста, введите свой вопрос или предложение ";
+"toast_wrong_pass" = " Введите правильный пароль ";
+"toast_wrong_asset_pass" = " Введите правильный пароль для финансирования ";
+"toast_funding_pass" = " Включите, по крайней мере, мобильную проверку или сертификацию Google. ";
+"toast_close_phone_verification" = " Вы не включили Google Verified. Чтобы защитить свою учетную запись, вы не можете отключить проверку телефона!";
+"toast_close_google_verification" = " Вы не включили проверку телефона. Чтобы защитить свою учетную запись, вы не можете отключить проверку Google!";
+"toast_reg_terms" = " Прочтите и согласитесь с условиями ";
+"toast_min_price" = "Минимальная цена ";
+"toast_min_vol" = " Минимальное число ";
+"toast_not_set_asset_pass" = " Пожалуйста, сначала установите пароль фонда. ";
+"toast_asset_pass_format_error" = " Формат пароля неверен, длина составляет 8-16 знаков, включая, по крайней мере, числа + буквы ";
+
+
+"order_status_unfinished" = "Сделка не совершена";
+"order_status_init" = " Первоначальный заказ ";
+"order_status_new" = "Новый заказ";
+"order_status_complete_transaction" = " Полная транзакция ";
+"order_status_part_transaction" = "Частичная транзакция";
+"order_status_has_withdrawn" = "Снято";
+"order_status_to_be_withdrawn" = "Ожидание снятие";
+"order_status_error" = "Бракованный заказ";
+
+
+"hint_price_high" = "Предел цены";
+"hint_price_low" = "Минимум цены";
+
+
+"setup_gesture_code" = " Установить пароль жестов ";
+"setup_gesture_pattern" = " Рисование шаблона разблокировки ";
+"setup_gesture_pattern_again" = " Нарисуйте шаблон разблокировки снова ";
+"forget_gesture_code" = " Забыли пароль жестов?";
+"use_other_account_login" = " Войти с другой учетной записью ";
+"set_gesture_pattern" = " Рисование шаблона разблокировки ";
+"set_gesture_pattern_reason" = " Установите пароль жестов для предотвращения несанкционированного просмотра ";
+"reset_gesture_code" = " Сбросить пароль жестов ";
+"gesture_error_remind" = " Ссылка не менее 5 баллов, пожалуйста, введите повторно ";
+"create_suc" = "Успешно";
+"gesture_pass_differ" = "Пароли не совпадают";
+"gesture_pass_error" = "Ошибка пароля";
+
+
+"hint_change_name" = "Введите ник";
+"hint_bind_mobile" = "Введите номер телефона";
+"hint_certification_code" = " Введите проверочный код ";
+"hint_bind_email" = " Введите адрес электронной почты ";
+"hint_certification_code_email" = " Введите проверочный код в электронном письме ";
+"hint_certification_code_mobile" = " Введите код подтверждения своего телефона ";
+"hint_change_login_pass" = " Введите исходный пароль для входа ";
+"hint_google_certification_code" = " Введите код подтверждения Google ";
+"hint_input_new_pwd" = " Введите новый пароль ";
+"hint_pass_again" = " Введите новый пароль еще раз";
+
+
+"hint_assets_pass_again" = " Введите пароль еще раз";
+"hint_assets_pass" = " Введите пароль активов, предел составляет 8-16 знаков, включая хотя бы число + письмо ";
+"hint_assets_pass_old" = " Введите первоначальный пароль активов ";
+"hint_assets_pass_new" = " Введите пароль фонда, предел составляет 8-16 знаков, включая числа + буквы ";
+"hint_assets_pass_dialog" = " Введите пароль активов";
+"hint_input_login_pass" = " Введите пароль для входа ";
+"hint_feedback" = " Опишите свой вопрос или мнение ";
+
+
+"high" = "высокий";
+"low" = "низкий";
+"open" = "открыть";
+"close" = "закрывать";
+"vol" = "количество сделок";
+"quote_change" = " Взлеты и падения ";
+
+"kline_Line" = "Line";
+"kline_1min"= "1min";
+"kline_5min"= "5min";
+"kline_15min"= "15min";
+"kline_30min"= "30min";
+"kline_60min"= "1h";
+"kline_4h" = "4h";
+"kline_1day" = "1d";
+"kline_1week" = "1w";
+"kline_1month" = "1m";
+
+"no_data_available" = " Пока нет данных ";
+
+
+"select_area" = " Выберите код страны ";
+
+"toast_no_mobile" = " Введите номер мобильного телефона ";
+
+
+"toast_no_account" = " Введите свой номер мобильного телефона или адрес электронной почты ";
+
+"toast_no_pass" = " Введите пароль ";
+"toast_no_email" = " Введите адрес электронной почты ";
+
+
+"email_login" = " Электронная почта ";
+"phone_login" = " Мобильный логин ";
+
+"now_register" = "Зарегистрироваться";
+"forget_pwd" = "Забыли пароль";
+
+"toast_no_verify_code" = " Введите проверочный код ";
+
+"login_suc" = "Успешный вход";
+
+"login" = "Вход";
+
+
+"register" = "Регистрация";
+"regist_success" = "Успешная регистрация";
+"no_account_yet" = "Ещё нет аккаунта？";
+"default_area" = "Китай(+86)";
+
+
+"had_account" = "Уже есть аккаунт？";
+"register_by_email" = "Регистрация по почте";
+"register_by_phone" = "Регистрация через телефон";
+"toast_no_confirm_pass" = " Введите пароль для подтверждения ";
+"invite_code_hint" = "Номер приглашения(выбрать)";
+"reg_term" = "Прочтите и согласитесь";
+"terms_service" = " Условия обслуживания ";
+"privacy_protection" = " Защита личных данных ";
+"disclaimer" = " Дисклеймер ";
+"go_login" = "Войти";
+"hint_new_pass" = " Лимит 8 ~ 20 цифр, числа + буквы ";
+"toast_pass_inconsistent" = " Ввод пароля несовместим, повторите ввод ";
+
+
+"find_by_phone" = "Восстановление через телефон";
+"find_by_email" = "Восстановление через почту";
+"find_pwd" = "Восстановить пароль";
+"toast_no_idcard" = "Введите номер удостоверения";
+"next" = "Следующий шаг";
+
+
+"title_safty_valid" = " Проверка безопасности ";
+"google_code" = "Проверочный код Google";
+"mobile_code" = " Код подтверждения SMS ";
+"email_code" = " Код подтверждения электронной почты ";
+"toast_no_google_code" = " Введите код подтверждения Google ";
+"toast_no_mobile_code" = " Введите код подтверждения SMS ";
+"toast_no_email_code" = " Введите код проверки электронной почты ";
+
+
+"resend" = "Новые отправки";
+
+
+"choose_area" = "выбрать район";
+
+
+"toast_pass_format_error" = " Пароль находится в неправильном формате, пожалуйста, введите повторно ";
+"toast_old_pass_format_error" = " Исходный пароль находится в неправильном формате, повторите ввод ";
+"toast_new_pass_format_error" = " Формат пароля неверен, длина составляет 8-15 цифр, включая, по меньшей мере, цифры + буквы ";
+
+
+"location" = " Расположение ";
+"phone_num" = "Номер телефона";
+"verification_code" = " Код подтверждения ";
+"confirm_pass" = " Подтвердить пароль ";
+"find_pass" = "Восстановить пароль";
+"click_here" = "Нажать для получения";
+
+
+"title_notice" = "Объявление";
+
+
+"area_hint" = "Страна/регион";
+
+"verification_code_hint" = " Введите проверочный код ";
+
+
+"copy_address" = "Копировать адрес";
+"recharge_warn" = " Пожалуйста, не заряжайте ни один из выше упомянутых адресов для любых активов, не связанных с местной валютой, иначе активы не будут восстановлены. ";
+
+
+"title_verify" = " Реальная сертификация имени ";
+"id_card_right_title" = " Первая фотография моей удостоверения личности ";
+"id_card_reverse_title" = "Обратная сторона удостоверения личности";
+"id_card_title" = " Фотография с ручным удостоверением личности ";
+"passport_cover_title" = "Лицевая сторона паспорта";
+"passport_info_title" = "Страница личной информации паспорта";
+"passport_title" = " Ручные документы и личные подписи ";
+"credentials_type" = "Тип документа";
+"passport" = "Паспорта";
+"idcard" = "Удостоверение личности";
+"verify_pic_warn" = "Убедитесь, что фотография полна и различима, документ находится в пределах срока действия.";
+"verify_pic_passport_warn_one" = " Убедитесь, что содержимое фотографии завершено и хорошо видно. Паспорт должен поддерживать только формат jpg / png в течение срока действия. ";
+"verify_pic_idcard_warn_one" = " Убедитесь, что содержимое фотографии завершено и хорошо видно. Удостоверение должна поддерживать только формат jpg в течение срока действия. ";
+"verify_pic_passport_warn_two" = "Загрузите вашу фотографию с удостоверением личности и личной подписью, личная подпись должна включать реальное имя, текущую дату и название платформы. Проверьте номер удостоверения личности, личная подпись и т. д. , чтобы четко были видны.";
+"verify_pic_idcard_warn_two" = " Пожалуйста, загрузите фотографию передней и личной подписи вашей ручной карточки. Личная подпись включает настоящее имя и текущую дату. Убедитесь, что содержание фотографии и персональная подпись хорошо видны. Требования к фотографиям: чистый аватар, четкий идентификационный номер, включая личную подпись, включая сегодняшнюю дату ";
+"verify_warn_text" = " Чтобы защитить свои средства, вам необходимо подтвердить свою личность, прежде чем выполнять другие операции. После того, как информация о сертификации не может быть изменена, обязательно заполните ее.。";
+"warn_lastname_empty" = "Фамилия обязательна для заполнения";
+"warn_firstname_empty" = "Имя обязательно для заполнения";
+"warn_certid_empty" = "Номер удостоверения обязателен для заполнения";
+"warn_first_pic_empty" = "Загрузите первое изображение";
+"warn_second_pic_empty" = "Загрузите второе изображение";
+"warn_third_pic_empty" = "Загрузите третье изображение";
+"toast_cert_summit_suc" = " Действительная сертификация имени успешно отправлена ";
+"toast_upload_pic_suc" = "Изображение загружено";
+"toast_upload_pic_failed" = "Ошибка загрузки изображения";
+"title" = "Заголовок";
+"subtitle_from_gallery" = " Выбрать из альбома ";
+"subtitle_take_photo" = "Сфотографировать";
+"warn_storage_permission" = " Нет разрешений на хранение ";
+"warn_camera_permission" = " Нет разрешений для камеры ";
+
+
+
+
+
+
+"title_safety_setting" = "Настройки безопасности";
+"mobile" = "Телефон";
+"email" = "Почта";
+"title_google_verified" = "Проверка Google";
+"title_change_pwd" = "Изменить пароль";
+"close_verify" = "Закрыть проверку";
+
+"title_dialog_close_google_verify" = " Вы действительно хотите отключить проверку Google? ";
+"title_dialog_close_mobile_verify" = " Вы действительно хотите отключить проверку телефона? ";
+"dialog_verify_warn_text" = " Закрытие уменьшит безопасность вашей учетной записи. ";
+"unbind_verify_warn" = " Сначала необходимо установить подтверждение для мобильных устройств или проверку Google. ";
+"not_bound" = "Не привязывать";
+"change" = "Изменить";
+"toast_copy_addr_suc" = "Адрес скопирован";
+"toast_copy_addr_failed" = "Ошибка копирования адреса";
+"title_invite_link" = "Ссылка приглашения";
+"scan_qr_reg" = "Регистрация через скан ";
+"invite_addr" = "Адрес сканирования:";
+"toast_chang_nick_suc" = "Ник изменён";
+"title_change_nick" = "изменить ник";
+"warn_logout_cur_account" = " Подтвердить, чтобы выйти из текущей учетной записи?";
+"state_normal" = "Обычный";
+"freeze_trade_withdraw" = "Заморозить сделку, снятие наличных";
+"freeze_trade" = "Заморозить сделку";
+"freeze_withdraw" = "Заморозить снятие наличных";
+"certify_not_pass" = "Рассмотрение не прошло";
+"certify_passed" = "Рассмотрение прошло";
+"certify_passing" = "Рассмотрение";
+"title_person_info" = "Личные материалы";
+"invite_code" = "Пригласительный код";
+"account_state" = "Статус аккаунта";
+"subtitle_certifation_type" = "Тип документа：";
+"subtitle_account" = "Аккаунт：";
+"subtitle_identity_info" = "Информация ID：";
+"lastname" = "Фамилия";
+"firstname" = "Имя";
+"example" = "Образец";
+"warn_net_disconnect" = " Сетевое подключение отключено ";
+"warn_net_exception" = "Нестабильное соеденение";
+"warn_request_timeout" = " Время истекло на запроса ";
+"warn_data_parse_failed" = " Сбой анализа данных ";
+"toast_logout_suc" = "Успешный выход";
+"recharge_time" = "Время пополнения";
+"recharge_amount" = "количество пополнения";
+"recharge_state" = "Статус пополнения";
+"withdraw_time" = "время снятия наличных";
+"withdraw_amount" = "Количество перечисления";
+"withdraw_state" = "Статус снятия наличных";
+"other_time" = "Время";
+"other_state" = "Статус";
+"subtitle_select_pic" = " Простой компонент выбора изображения：";
+"default_area_verify" = "Китай";
+"title_favorite" = "Самостоятельный выбор";
+"toast_add_fav_suc" = "Успешно добавлено";
+"toast_del_fav_suc" = "Отменить добавление";
+"subtitle_no_favorite" = "Временно выбрать нельзя, нажмите чтобы добавить";
+"new_price" = "Новые цены";
+"name_and_volume" = "Имя/ количество транзакций";
+"price_limit_24h" = "24HРост повышения и понижения";
+"toast_bind_email_suc" = "Почта привязана";
+"toast_bind_mobile_suc" = "Телефон привязан";
+"toast_change_suc" = "Успешно изменено";
+"title_cur_selected" = "Выбрать сейчас:";
+"toast_close_verify_suc" = " Закрыть проверку ";
+"title_close_verify" = "снять проверку";
+"title_select_coinmap" = " Переключить валютную пару ";
+"order_state_cancel" = "Изъять";
+"create_order_suc" = " Успешный заказ ";
+"cancel_order_suc" = "Успешно";
+"add" = "Добавить";
+"cancel_add" = "Отменить добавление";
+"other_amount" = " Количество передач ";
+"search_coinmap" = "Найти парную валюту";
+"recent_login_time" = " Время последнего входа в систему:";
+"temp_none" = "Временно не доступно";
+"ip" = "IP:";
+"title_language" = "Язык";
+"title_mail" = "Личные сообщения";
+"toast_withdraw_suc" = "Снято успешно";
+"toast_no_withdraw_address" = "Адрес снятия пусто";
+"toast_withdraw_too_max" = " Предел снятия превышает доступные активы ";
+"subtitle_withdraw_min" = " Минимальная сумма снятия составляет ";
+"title_withdraw" = "Снятие ";
+"confirm_withdraw" = " Подтверждение снятие ";
+"subtitle_real_get_amount" = " Фактическая сумма прибытия：";
+"fee" = "Комиссия";
+"subtitle_fee" = "Комиссия：";
+"all" = "Всё";
+"subtitle_amount" = "количество：";
+"select_address" = "выбрать адрес";
+"hint_add_withdraw_address" = "Добавьте адрес снятия";
+"subtitle_available_balance" = "доступная сумма：";
+"choose_other_coin" = " Выберите другую валюту ";
+"subtitle_withdraw_address" = "Адрес валюты：";
+"temp_no_data" = " Нет содержимого ";
+"title_withdraw_address" = " Адрес выхода ";
+"add_address" = "Добавить адрес";
+"bind_google_suc" = "Привязка Google прошла успешно";
+"subtitle_google_verify" = " Сканирование привязок QR-кода с помощью Google Authenticator ";
+"open_google_verify" = " Включить проверку Google ";
+"title_cur_entrust" = " Текущая комиссия ";
+"title_fund" = "Средства";
+"order_manager" = "Управление заказом";
+"search_fund" = "Искать активы";
+"hide_little_fund" = " Скрыть небольшие активы ";
+"total_asset_btc" = "Все активы(BTC)";
+"select_all_coin" = "Выбрать все валюты";
+"pic_uploading" = "изображение загружается...";
+"stay_old_verison" = "Оставить в старой версии";
+"update_now" = "Обновить";
+"delay_upgrade" = "Later";
+"url_error" = "Link Error";
+"add_address_suc" = "Адрес добавлен";
+"toast_no_address_label" = "Адресная записка";
+"toast_scan_content_empty" = " Активный контент не сканируется ";
+"aim_at_qrcode" = "Наведите на QR-код";
+"subtitle_name" = "Адресная записка：";
+"subtitle_address" = "Адрес：";
+"input_or_add_address" = " Введите или добавьте адрес ";
+"warn_no_support_recharge" = " На данный момент валюта не поддерживает перезарядку. ";
+"warn_no_support_withdraw" = " Валюта не поддерживает снятие наличных ";
+"warn_no_support_trade" = " Валюта в настоящее время не поддерживает торговлю ";
+"available" = "Доступно";
+"freeze" = "Заморозить";
+"recharge_coin" = "Пополнить валюту";
+"withdraw_coin" = "Перемешать монету";
+"go_trade" = "Совершить сделку";
+"subtitle_last_version" = " В настоящее время установлена последняя версия ";
+"title_software_update" = "Обновить приложение";
+"title_notice_detail" = " Детали объявления ";
+"trust_order" = " заказ ";
+"vol_24h" = "24Hколичество";
+"save_success" = "Сохранено";
+"save_fail" = "Ошибка сохранения";
+"save_qr_code" = "сохранить QR-код";
+"withdraw_order_success" = "Аннулировано";
+"trend" = "Курс акций";
+"asset_withdraw_too_low" = " Слишком низкая наличность ";
+"open_cert" = " Включить проверку ";
+"close_cert" = "Закрыть проверку";
+"title_verify_result" = " Реальный сертификационный аудит ";
+"resubmit_verify" = "Повторно представить действующее удостоверение";
+"reason" = "Согласится:";
+"current_verify_state" = " Текущий статус отзыва:";
+"copy_tag" = "СкопироватьTAG";
+"copy_success" = "Скопировано";
+"copy_failed" = "Ошибка копирования";
+"subtitle_tag" = "Тег：";
+"toast_no_tag" = " Введите информацию о ярлыке ";
+"fee_section" = " Интервал оплаты:";
+"tag_info" = " Информация о ярлыках ";
+"toast_no_fee" = "Оплата пуста";
+"toast_fee_unreasonable" = " Необоснованный сбор за обработку ";
+"fee_min" = " Минимальная комиссия：";
+"less_volume_amount" = " Недостаточная сумма транзакции или объем транзакции ";
+
+
+
+"search_coin_symbol" = " Поиск валюты ";
+"save_qr_code" = "";
+"withdraw_order" = "Аннулировать";
+"withdraw_order_success" = "Аннулировано";
+"deal_price" = " Цена сделки ";
+"deal_vol" = "Оборот";
+"no_coin_data" = " Пока данных нет, попробуйте ввести другие валюты ";
+"choose_coin_symbol" = " Валютная пара экрана ";
+"trust_order" = "Заказ";
+"no_symbol_data_change_other" = " В валютной паре нет данных, вы можете попытаться переключить валютную пару. ";
+"history_order" = "История";
+"go_to_cert" = "Заверить";
+"not_open" = "Не включать";
+"bid_bid" = "Покупка";
+"sell_sell" = "Продажа";
+"title_notice_detail" = " Детали объявления ";
+"save_fail" = "Ошибка сохранения";
+"system_news" = "Информация о системе";
+"depth" = "глубина";
+"no_net" = "NoNet";
+
+
+"title_verify_result" = "Результат подтверждении названия";
+"resubmit_verify" = "Еще раз подтверждать";
+"reason" = "Причина:";
+"current_verify_state" = "Подтверждать текущее состояние:";
+"copy_tag" = "КопироватьTAG";
+"copy_success" = "Успешно копировано";
+"copy_failed" = "Не смог копировать";
+"subtitle_tag" = "Ярлык：";
+"toast_no_tag" = "Новости о ярлыке";
+"fee_section" = "Доплата за обслуживание:";
+"less_volume_amount" = "Число введено не достаточно";
+
+"asset_withdraw_too_low" = "Трансакция очень маленькое";
+"toast_no_invitecode" = "Впишите код  приглашении ";
+"warn_gesture_pwd_error" = "Пароль не правильный, число введении осталось :";
+"gesture_error_to_login" = "Пароль не правильный, внести новую пароль ";
+
+
+
+
+//  otc
+
+//
+
+"otc_change_other" = "Нет данных, введите другие фильтры";
+//пароль фонда
+"otc_reset_pwd_title" = "Изменить пароль фонда";
+"otc_set_pwd_title" = "Установить пароль фонда";
+
+"otc_pwd_alert" = "*Перед трансакцией, для вашей торговой защиты, установите ник и пароль для оплаты";
+"otc_set_nickname" = "Установите ник";
+
+"otc_nickname_alert" = "Ник и реальное имя не должны совпадать";
+"otc_set_pwd" = "Установите пароль фонда";
+"otc_input_pwd" = "Введите пароль фонда";
+"otc_make_pwd" = "Подтвердите пароль фонда";
+"otc_finish" = "Готово";
+"otc_not_input_emoj" = "Нельзя вводить смайл";
+"otc_nickname_had" = "Ник уже существует";
+
+//Мои активы
+"otc_recharge" = "Пополнить";
+"otc_transfer" = "Перевести";
+"otc_trade" = "К торговле";
+"otc_withdraw" = "Снять валюту";
+
+"otc_fabi_account" = "внебиржевый счет";
+"otc_bibi_account" = "Валютный счет";
+"otc_all_num" = "Общая сумма перевода：";
+"otc_transfer_fee" = "Количество переводов (комиссия 0)";
+"otc_input_transfer_num" = "Введите количество переводов";
+"otc_transfer_all" = "Перевести все";
+
+"otc_not_open_transfer" = "Перевод валюты не открыт в OTC";
+"otc_not_open_recharge" = "Пополнение валюты не открыто в OTC";
+"otc_not_open_withdraw" = "Снятие валюты не открыто в OTC";
+"otc_canuse" = "Доступно";
+"otc_notuse" = "Заморожено";
+"otc_all_money_num" = "Суммарные активы равны(BTC)";
+"otc_mine_money" = "Мои активы";
+
+//
+"otc_get_rid" = "Удалить";
+"otc_rid_people" = "Заблокированные лица";
+"otc_remove_rid_confirm" = "Разблокировать это лицо";
+"otc_determine" = "Да";
+"otc_cancel" = "Отмена";
+"otc_black_list" = "Блокировка объявлении этого человека";
+
+//order
+"otc_mine_order" = "Мои заказы";
+"otc_order_all" = "Все";
+"otc_order_nopay" = "Не оплачен";
+"otc_order_hadpay" = "Оплачен";
+"otc_order_ss" = "Апелляция";
+"otc_order_cancel_1" = "Отменено";
+"otc_order_finish" = "Завершено";
+
+
+//
+"otc_person_info" = "Личная информация";
+"otc_reg_time" = "Время регистрации ";
+"otc_min" = "Минута";
+"otc_phone_cert" = "Мобильная аутентификация";
+"otc_name_cert" = "Аутентификация реального имени";
+"otc_order_num_1" = "Всего сделок";
+"otc_30d_num" = "Сделок за 30 дней";
+"otc_xinyong" = "Кредит";
+"otc_shensu" = "Апелляция";
+"otc_shengsu" = "Выигрышные";
+"otc_fangxing" = "Средний выпуск";
+
+//
+"otc_edit_payway" = "Изменить способ оплаты";
+"otc_user_name" = "Имя";
+"otc_input_user_name" = "Введите имя";
+"otc_wx_a" = "WeChat";
+"otc_wx_a_input" = "Введите WeChat";
+"otc_upload_wx_qr" = "Загрузить QR-код WeChat";
+"otc_alipay" = "Alipay";
+"otc_alipay_a" = "Введите Alipay";
+"otc_alipay_qr" = "Загрузить QR-код Alipay";
+"otc_bank_name" = "Обслуживающий банк";
+"otc_bank_name_input" = "Введите обслуживающий банк";
+"otc_bank_name_lit" = "Филиал банка";
+"otc_bank_name_lit_input" = "Введите филиал банка";
+"otc_bank_num" = "Номер счета";
+"otc_bank_num_input" = "Введите номер счета";
+"otc_get_photo_error" = "Фото не загружено, повторите";
+
+//
+
+"otc_not_pay_way" = "Нет способов оплаты \n Нажмите на верхний правый угол, чтобы добавить";
+"otc_edit" = "Изменить";
+"otc_not_use" = "Запретить";
+"otc_can_use" = "Включить";
+"otc_delete" = "Удалить";
+"otc_delete_confirm" = "Подтвердите способ оплаты";
+"otc_shensu_success" = "Апелляция подана";
+"otc_shensu_result" = "Апелляция отправлена, ответ будет вам отправлен";
+"otc_shensu_reason" = "Укажите причину апелляции";
+"otc_not_open_coin"  = "Продавец не разместил валюту";
+"otc_not_open_pay"  = "Покупатель не заплатил";
+"otc_shensu_reason_choose" = "Выберите причину апелляции";
+"otc_shensu_reason_input" = "Укажите причину апелляции";
+"otc_more_300" = "до 300 слов";
+"otc_more_500" = "до 500 слов";
+"otc_uplaod_error" = "Не удалось отправить";
+
+
+//
+"otc_choose_pay" = "Выбрать способ оплаты";
+"otc_choose_coin" =  "Выбрать валюту";
+"otc_choose_contry" =  "Выбрать страну/регион";
+"otc_all" = "Все";
+"otc_target_money" = "Целевая сумма";
+"otc_input_target_money" = "Заполнить целевую сумму";
+"otc_pay_way" = "Способ оплаты";
+"otc_choose_pay_way" = "Выберите способ оплаты";
+"otc_choose_shou_way" = "Выберите способ оплаты";
+"otc_fabi" = "Юридическая валюта";
+"otc_add_pay_way" = "Добавить способ оплаты";
+"otc_add_shou_way" = "Добавить способ оплаты";
+"otc_choose_fabi" = "Добавить юридическую валюту";
+"otc_all_reset" = "Сбросить все";
+"otc_CNY" =  "Юань";
+
+//home
+"otc_deal" = "Завершено ";
+"otc_credit" = "Кредит";
+"otc_price" = "Цена за единицу";
+
+"otc_num" = "Количество";
+"otc_limit" = "Лимит";
+"otc_buy" = "Купить";
+"otc_sell" = "Продать";
+
+"otc_please_cert" = "Пройдите аутентификацию реального имени";
+"otc_goto_cert" = "Перейти";
+"otc_please_real_name" = " Укажите ник и пароль фонда!";
+"otc_goto_set" = "Перейти";
+
+"oct_mine_black_list" = "Список заблокированных";
+"otc_identity_certificate" = "Аутентификация";
+"otc_collect_money" = "Способ оплаты";
+"otc_safe_setting" = "Настройки безопасности";
+"otc_about_us" = "О нас";
+"otc_choose_language" = "Выбрать язык";
+"otc_please_set_pwd" = "Укажите пароль фонда!";
+
+"otc_not_set" = "Не установлено";
+
+
+//Покупка, чат
+
+"otc_transaction_amount" = "Сумма транзакции";
+"otc_trading_currencies" = "Валюта транзакции";
+"otc_state" = "Статус";
+"otc_wait_ payment" = "К оплате";
+"otc_payed" = "Оплачено";
+"otc_transaction_successful" = "Выполнено";
+"otc_transaction_cancelled" = "Отменено";
+"otc_complaint" = "Апелляция";
+"otc_sell_coin" = "Перевод";
+"otc_abnormal_orders" = "Аномальная сделка";
+"otc_complaint_processed" = "Конец обработки апелляции";
+"otc_complaint_cancel" = "Отмена апелляции";
+"otc_enter_text" = "Введите текст";
+"otc_send" = "Отправить";
+"otc_order_closed" = "Заказ закрыт";
+"otc_put_coin" = "Отпуск валюты";
+"otc_complaint" = "Апелляция";
+"otc_contact_ service" = "Связаться с оператором";
+"otc_cancel_complaint" = "Отменить апелляцию";
+"otc_place_order_time" = "Время заказа";
+"otc_order_code" = "Номер заказа";
+"otc_reference_code" = "Ссылочный номер";
+"otc_enter_fund_pw" = "Введите пароль фонда";
+"otc_confirm_release" = "Подтвердить выпуск";
+
+"otc_ad_prompt" = "Не забудьте войти в онлайн-банк или сторонний платежный аккаунт, для подтверждения получения платежа. Вы уверены что получили этот платеж?";
+"otc_think" = "Я подумаю";
+"otc_confirm_put_money" = "Подтвердить отпуск валюты";
+"otc_confirm_receipt" = "Я подтвердил получение";
+"otc_confirm_receipt_payment" = "Подтвердите получение платежа";
+"otc_sell_order" = "Заказ на продажу";
+
+"otc_receipt_qr_code" = "QR-код оплаты";
+
+
+
+"otc_single_min" = "Не менее минимальной суммы транзакции";
+"otc_single_max" = "Не более максимальной суммы транзакции";
+
+
+//---
+"otc_buy_order" = "Заказ на покупку";
+"otc_please_payment" = "Оплатите";
+"otc_waiting_payment" = "Подождите оплаты покупателя";
+"otc_waiting_put_coin" = "Подождите отпуска монеты";
+"otc_wait_coin" = "Ожидание отпуска";
+
+"otc_complaint_password" = "Пароль апелляции:";
+"otc_complaint_processing" = "Обработка апелляции";
+"otc_seller" = "Продавец: ";
+"otc_buyer" = "Покупатель: ";
+"otc_minutes" = "Минута";
+"otc_second" = "Секунда";
+"otc_cancel" = "Отмена";
+"otc_have_payment" = "Я оплатил";
+"otc_pay_following_account" = "Оплатите следующую учетную запись: ";
+"otc_order_price" = "Цена единицы сделки: ";
+"otc_order_num" = "Количество транзакций: ";
+"otc_order_account" = "Учетная записи и заказы";
+"otc_people" = "Получатель";
+
+///------
+"otc_trading_remind" = "Напоминание о транзакции";
+"otc_deal_prompt" = "1. Пожалуйста, не обращайте внимание на контент, связанный с цифровой валютой, при переводе.\n 2. Если сумма транзакции превышает 50 000 юаней, пожалуйста, платите партиями, чтобы обеспечить своевременный платеж. Если платеж не получен вовремя, продавец имеет право отказаться от транзакции.\n 3. После подачи жалобы держите телефон открытым и избегайте ненужных потерь.\n 4. Если есть какие-либо возражения против результата жалобы, пожалуйста, свяжитесь с нами в течение 72 часов, и после истечения срока действия возражение не будет принято.\n 5. Если продавец отменяет заказ 3 раза в один и тот же день, он будет ограничен функцией покупки дня.";
+"otc_deal_cancel" = "Отменить";
+"otc_paid_seller_prompt" = "Если вы уже заплатили продавцу, не отменяйте транзакцию.\n Правило отмены: если покупатель отменяет 3 раза в один день, он будет ограничен функцией покупки этого дня";
+"otc_confirm_cancellation" = "Подтвердить отмену";
+"otc_no_pay" = "Я подтверждаю, что еще не оплатил";
+"otc_payment_prompt" = "Подтвердите, что еще не оплатили";
+"otc_order_complete" = "Заказ выполнен";
+"otc_order_cancel" = "Заказ отменен";
+"otc_see_assets" = "Расмотр активов";
+
+"otc_transfer_coin" = "Перевод на валютный счет ";
+
+"otc_price" = "Цена за единицу";
+"otc_num" = "Количество";
+"otc_order_ reference_code" = "Ссылочный номер";
+"otc_order_time" = "Время заказа";
+
+"otc_supported_payment_methods" = "Поддерживаемые способы оплаты";
+"otc_limit1" = "Лимит ";
+"otc_current_payment" = "Текущий способ оплаты";
+"otc_current_collection" = "Текущий способ оплаты";
+"otc_switching_payment_method" = "Изменить способ оплаты";
+"otc_switching_collection_method" = "Изменить способ оплаты";
+"otc_all_buy" = "все";
+"otc_all_sell" = "все";
+"otc_place_order" = "Заказ";
+"otc_can_buy" = "Максимальная покупка";
+
+"otc_can_sell" = "Максимально можно продать";
+"otc_order" = "Заказ";
+"otc_mine" = "Мои";
+"otc_pay_find_account" = "Проверьте платеж другой стороны: ";
+"otc_fund_pwd_alert_sample" = "*Задайте разные пароли входа и фонда";
+"otc_choose_symbol" = "Фильтр";
+"otc_ad_prompt_one" = "Оплатите заказ в течении [chainup] минут";
+"otc_pay_prompt" = "После оплаты, во избежание убыток, нажмите “Оплатил”";
+"otc_exchange_prompt" = "Оповещение о тренсакции";
+"otc_exchange_prompt_value" = "При оплате не прилагайте данные о цифровой валюте\n ваш платеж будет прямо переведен продавцу, проданные цифровые активы продавца при транзакции, будут защищены платформой. \n Если покупатель отменяет заказ 3 раза в один день, он будет ограничен функцией покупки этого дня.";
+
+"otc_shensu_reason" = "причины подачи жалоб ";
+"otc_shensu_com" = "основания для жалобы";
+"otc_shensu_img" = "загрузка изображений ";
+"otc_deal_alert" = "напоминание о сделке ";
+"otc_deal_alert_all" = "При серьезных действиях мешающим нормальной работы платформы, счет будет заморожен. ";
+
+"otc_chat" = "Чат";
+"otc_online_service" = "Онлайн-администратор";
+"otc_picture_fail" = "Не удалось отобразить изображение, повторите попытку";
+"common_tip_albumPermission" = "Не поддерживается альбомом";
+"otc_camera_fail" = "Не поддерживается камерой";
+"otc_submit_shensu" = "подача жалобы ";
+"otc_no_nickname" = "непрозрачный прозвище ";
+
+"credit_prompt1" = "При внебиржевой торговле, ваш кредит будет виден другими пользователями";
+"credit_prompt2" = "Кредит=（1-проигранные заказы/число заказов）*100%";
+"know" = "Понятно";
+"transfer_type" = "Тип";
+"otc_transfer_titlte" = "Внебиржевая торговля";
+"account_transfer" = " Передача учетной записи";
+"order_records" = "Запись заказа";
+"tab_coin2coin_trade" = "Валюта";
+"tab_otc_trade" = "Другие трансакции";
+"toast_no_sliding_block" = "Сначала выполните проверку ползунка";
+
+"Gainers" = "Рост";
+"Losers" = "Спад";
+"Turnover" = "Объем";
+
+"eos_tips" = "При пополнении вам потребуются адрес и ярлык (также называемый тегом и т. д.).Тег представляет собой строку чисел, гарантирущий ваш уникальный адрес монет и отображается парами с адресом монет.Соблюдайте правильные этапы пополнения, вводите полную информацию при снятии, иначе это может привести к потере монет.";
+
+"new_homepage_functional_service" = "Функциональное обслуживание";
+"new_cash_flow_begin_time" = "Время начала";
+"new_cash_flow_end_time" = "Время окончания";
+"new_cash_flow_show_more" = "Развернуть";
+"new_cash_flow_pack_up" = "Свернуть";
+"input_touchId" = "Введите отпечаток пальца";
+"fingerprint_login" = "Вход по отпечатку пальца";
+"account_login" = "Вход через аккаунт";
+"fingerprint_recognition" = "Распознавание отпечатка пальца";
+"tap_to_fingerprint" = "Нажмите на распознавание отпечатка пальца для начала проверки";
+"face_recongnition" = "Распознавание лица";
+"tap_to_face" = "Нажмите на распознавание лица для начала проверки";
+"pwd" = "Пароль";
+"input_pwd_again" = "Повторите пароль";
+"pwd_setting" = "Настройки пароля";
+"pwd_rule_new" = "Введите 8-20-значный пароль, включающий цифры и буквы";
+"bibao_account" = "Счет Бибао";
+"asset_check_the_details" = "Подробности";
+"asset_into" = "Перевод";
+"deposit_detail_amount" = "Введите сумму";
+"deposit_detail_release" = "Отпустить";
+"deposit_detail_end_time" = "Срок до";
+"deposit_bibao_account" = "Счет Бибао";
+"resend_code" = "Отправить код подтверждения еще раз";
+"get_code" = "Получить код подтверждения";
+"mobile_or_email" = "Номер телефона/почта";
+"choose_mobile_verify" = "Перейти к подтверждению телефона";
+"choose_google_verify" = "Перейти к подтверждению Google";
+"choose_email_verify" = "Перейти к подтверждению почты";
+"face_login" = "Вход по распознаванию лица";
+"guide_gesture_login" = "Установка быстрого и безопасного пароля жестов";
+
+"Authorization_Failure" = "Ошибка авторизации";
+"user_cancel_Auth" = "Пользователь отменил проверку";
+"sys_cancel_Auth" = "Системная деавторизация";
+"sys_not_set_pwd" = "Система не устанавливала пароль";
+"device_not_use" = "Устройство недоступно";
+"error_use_times" = "Ошибка аутентификации несколько раз";
+"app_canel_auth" = "Приложения отменившие авторизацию";
+"auth_success" = "Авторизация успешна";
+"auth_fail_obj" = "Авторизация объекта неудачна";
+"app_start_fail" = "APP не полностью запущено, переход невыполнен";
+"fast_login" = "Быстрый вход";
+"only_set_one_login_way" = "Можно выбрать только один способ быстрого входа";
+"touchid_login" = "Вход по отпечатку пальцев";
+"faceId_login" = "Распознавание лиц";
+"Fingerprint_identification" = "Распознавание отпечатка пальца";
+
+"click_fingerprint_identification" = "Для начала проверки нажмите на распознавание отпечатков пальцев";
+"Face_recognition" ="Распознавание лиц";
+"click_face_recognition" = "Для начала проверки нажмите на распознавание лиц";
+"login_account"="Вход в аккаунт";
+"bibao_account"= "Счет Бибао";
+"transfer_in" = "Перевести";
+"check_detail" = "Подробнее";
+"cash_open" = "Развернуть";
+"cash_close" = "Свернуть";
+"start_time" = "Время начала";
+"end_time" = "Время окончания";
+"Current_currency_details" = "Подробная информация о текущей валюте";
+"input_money_num" = "Сумма вклада";
+"output_money_num" = "Отпустить";
+"set_pwd_detail" = "Вы также можете установить его в настройках безопасности модуля учетной записи";
+"faceId_login_o" = "Вход через распознавание лиц";
+"not_open_otc" = "Не открыты внебиржевые трансакции";
+"not_coinmap" = "ещё нет данной валютной пары";
+"reset_password" = "Перенастроить пароль";
+"no_more" = "Не более";
+
+"name_dif_realname"="Имя и подлинная информация об аутентификации не совпадают";
+
+"recharge_tag_label" = "Надпись выше является уникальным идентификатором вашей учетной записи. Пожалуйста, не забудьте указать правильную сумму при переводе денег, в противном случае вы не сможете пополнить счет и получить активы невозможно.";
+
+"pw_prompt" = "Пожалуйста, введите пароль, который состоит из цифр и букв и длиной от 8 до 20 символов. Поддерживает общие специальные символы.";
+
+"Liq_price" = "Сильная цена";
+"Liq_price_content" = "Если цена контракта ниже цены (несколько позиций) или выше цены (пустая позиция), вы будете вынуждены закрыть позицию.";
+
+"wallet_balance" = "Баланс счета";
+"wallet_balance_content" = "Баланс счета = (Депозит - Вывод средств + Реализованная прибыль и убыток)";
+
+"cost" = "расходы";
+"cost_content" = "Маржа, необходимая для транзакции. Он учитывает кредитное плечо, которое вы выбираете, и существующую позицию. Нет необходимости вносить депозит, чтобы осветлить.";
+
+"margin_balance" = "Средства на счете";
+"margin_balance_content" = "Преимущества учетной записи: Ваш общий интерес к бирже. Средства на счете = (остаток на счете + нереализованные прибыли и убытки)";
+
+"mark_price" = "Ценник";
+"mark_price_content" = "Это последняя цена метки для контракта, которая используется для расчета прибыли и убытков и маржи и может быть смещена по отношению к последней цене сделки по контракту, чтобы избежать манипулирования рынком, которое не повлияет на расчет.";
+
+"available_balance_c" = "Доступный баланс";
+"available_balance_content" = "Вы можете использовать маржу для открытия позиции. Доступный баланс = (маржинальный баланс - комиссионный депозит - маржинальная позиция)";
+
+"margin_c" = "Залоговая";
+"margin_content" = "Маржа, используемая и заблокированная позицией. Если вы включили позицию в позиции, это значение будет уменьшаться по мере уменьшения маржи, что также означает, что фактическое левередж увеличивается. Переместите ползунок, чтобы настроить поле, назначенное для каждой позиции.";
+
+"market_c" = "Рыночная цена";
+"market_content" = "Нажмите здесь, чтобы закрыть позицию по рыночной цене.";
+
+"price_c" = "цена";
+"price_content" = "Индексная цена: цена базового актива\nОтметить цену: это текущая отметка.";
+"price_risk_content" = "Этот индикатор показывает, где вы находитесь в очереди на автоматическую зажигалку. Если все индикаторы горят, ваша позиция может быть уменьшена после плоского события.";
+
+"position_margin" = "Позиция депозита";
+"position_margin_content" = "Маржа позиции: минимальная маржа, необходимая для удержания вашей позиции. Это значение представляет собой сумму начальной стоимости каждого имеющегося у вас контракта, умноженную на необходимый коэффициент маржи на обслуживание, плюс любые нереализованные прибыли и убытки.";
+
+"order_margin" = "Комиссионный депозит";
+"order_margin_content" = "Доверительная маржа: минимальная гарантированная сумма, необходимая для вашего поручения. Это значение является суммой каждого из ваших комиссионных значений, умноженных на требуемый начальный коэффициент маржи.";
+
+"unrealised_PNL" = "Нереализованная прибыль и убыток";
+"unrealised_PNL_content" = "Нереализованная прибыль и убыток: текущая прибыль и убыток по всем открытым позициям.";
+
+"promptly_set" = "Настроить сейчас";
+"next_remind" = "Следующее напоминание";
+
+"switch_currency" = "Поменять валюту";
+"currency" = "Валюта монеты";
+"OTC" = "C2C";
+"contract" = "Договор";
+"open_positions" = "Количество открытых позиций";
+"ealized_profit_loss" = "Реализованная прибыль и убыток";
+"unrealized_profit_loss" = "Нереализованные прибыли и убытки";
+"contract_long" = "Делай больше";
+"contract_short" = "Короткие";
+"contract_open" = "Открыть больше";
+"contract_open_space" = "под открытым небом";
+"contract_account_balance" = "Баланс счета";
+"contract_account_equity" = "Баланс счета";
+"contract_position_margin" = "Позиция позиции";
+"contract_deposit_margin" = "Комиссионный депозит";
+"contract_margin_used" = "Депозит был использован";
+"contract_account" = "Контокоррентный счет";
+"contract_historical_transactions" = "Исторические транзакции";
+"contract_time_buy" = "Время / продажа";
+"contract_recent_transactions" = "Последние транзакции";
+"contract_perpetual" = "Устойчивое";
+"contract_weekly_contracts" = "Недельный контракт";
+"contract_subweeks" = "На следующей неделе";
+"contract_months" = "месяц";
+"contract_quarters" = "Квартал";
+"contract_amounts" = "Сумма";
+"contract_trust_transactions" = "доверительная сделка";
+"contract_position" = "Позиция";
+"contract_full_warehouse" = "полный склад";
+"contract_by_warehouse" = "по складу";
+"contract_by_close" = "Закрыть позицию";
+"contract_deal_done" = "Выполненный";
+"contract_historical_commission" = "Историческая комиссия";
+"contract_value" = "Значение";
+"contract_average_price" = "Средняя цена";
+"contract_switching_contract" = "Договор переключения";
+"contract_transactions_number" = "количество транзакций";
+"contract_remaining" = "Излишки";
+"contract_positions_number" = "Количество позиций";
+"contract_opening_price" = "Цена открытия";
+"contract_revoked" = "быть отозванным";
+"contract_deprecated" = "Устаревшие";
+"contract_some_transactions_cancel" = "Некоторые транзакции были отменены";
+"contract_trust_value" = "ценность доверия";
+"contract_activity_commission" = "Деятельность комиссии";
+"contract_total_amount" = "Общая сумма";
+"contract_limit_price" = "Общая сумма";
+"contract_response_rate" = "ROE";
+"contract_lever" = "Плечо";
+"contract_actual_transaction_price" = "По фактической цене сделки";
+"contract_enter_position" = "Пожалуйста, введите позицию";
+"contract_enter_amount" = "Пожалуйста, введите сумму";
+"contract_open_interest" = "Открытый интерес";
+"position_margin_modify" = "Корректировка маржи";
+"position_current"="Текущая контрактная позиция";
+"position_assigned"="Выделенная маржа";
+"position_available"="Маржинальный депозит";
+"position_increase"="Корректировка маржи";
+"position_add"="прибавление";
+"position_remove"="снижение";
+"contract_modify_tip"="Пожалуйста";
+"contract_market_closing"="Зах зээл хаагдах";
+"otc_asset_availableBalance"="Fiat Account Available Balance";
+"otc_tip_withdrawLimitTime"="为了保障资金安全，买入的资产将锁定至24h后支持出金,在此期间不影响交易业务";
+"otc_sting_buyerOnlyCan" = "Покупатели только поддерживают";
+"otc_string_youNeedDo" = "Для оплаты вам необходимо добавить и активировать способ оплаты";
+"otc_string_goActivate" = "устанавливать";
+"link_name"="Network";
+
+"common_text_verifyInfoTitle"="Please complete the following information to ensure that it is operated by yourself:";
+"common_text_realnameVerifyTitle"="Real-name (hint: %@)";
+"common_text_realidVerifyTitle"="ID number (hint: %@)";
+"common_text_realnameVerifyPlaceholder"="Enter your name, up to 50 characters.";
+"common_text_realidVerifyPlaceholder"="Enter your ID number, up to 35 characters";
+"common_text_verifySuccessTitle"="Authentication passed!";
+"common_text_verifyAuthFailTitle"="Authentication failed!";
+"common_text_verifyAuthFailMsg"=" The system will freeze the withdrawal transaction for 24 hours!";
+"common_text_verifyAuthTimerMsg"=" Exit automatically in %@ second";
+"common_text_verifyAuthIdNumberError"=" Wrong ID number ";
+"common_text_verifyAuthNameError"="Wrong input name";
+"common_text_verifyAuthTryTimeDesc"=" %@ chance left! If you make 3 consecutive input errors, cash withdrawal will be frozen for 24 hours!";
+//sl_
+"contract_max_volume_limit" = "Please ensure that the quantity of the order is less than or equal to {%@}pcs!";
+"contract_profit_record" = "PNL Record";
+"contract_stop_profit_loss" = "Take profit/stop loss";
+"contract_text_closeAveragePrice" = "Average close price";
+"contract_action_airdrop" = "Air drop";
+"contract_adjust_close_price" = "Adjusted Liquidation Price";
+"contract_deposit_range" = "Margin range";
+"contract_deposit_volume" = "Margin amount";
+"contract_after_adjust_leveage" = "Adjusted leverage";
+"contract_open_stop_profit" = "Take profit";
+"contract_open_stop_loss" = "Stop loss";
+"contract_stop_profitloss_tips" = "When %@ reaches TP/SL price, the position is fully closed at the setting price";
+"contract_stop_profit_long" = "Take-profit price needs to be higher than %@";
+"contract_stop_profit_short" = "Take-profit price needs to be lower than %@";
+"contract_stop_loss_long" = "Stop-loss price needs to be lower than %@";
+"contract_stop_loss_short" = "Stop-loss price needs to be higher than %@";
+"contract_normal_order_timeout" = "Liquidated order is timed out，be cancelled";
+"contract_normal_order_ASSETS" = "Insufficient margin, partial entrusted order is cancelled";
+"contract_normal_order_FREEZE" = "Insufficient frozen margin，partial entrusted order is cancelled";
+"contract_normal_order_UNDO" = "Unable to fill，partial entrusted order is cancelled";
+"contract_normal_order_CLOSE" = "The entursted order will cause forced liquidation，cancelled by system ";
+"contract_normal_order_reduce" = "Unfilled order of ADL process is cancelled";
+"contract_normal_order_compensate" = "Cancelled by system";
+"contract_normal_order_positionErr" = "Position mistake，cancelled by system";
+"contract_normal_order_FORBBIDN" = "Entrusted type illegal，cancelled by system";
+"contract_normal_order_OPPSITE" = "Unable to filled with traders own reverse order";
+"contract_normal_order_FOK" = "FOK Order, fully filled or cancelled by system ";
+"contract_normal_order_IOC" = "IOC order，filled immediately or cancelled by system";
+"contract_normal_order_MARKET" = "The filled price deviates from market order，partial order is cancelled by system";
+"contract_normal_order_PASSIVE" = "Post only, Taker order will be cancelled by system.";
+"contract_normal_order_FORCE" = "Liquidated，unfilled order is cancelled by system";
+"contract_normal_order_PLAY" = "play order，partial order is cancelled by system";
+"contract_normal_order_HANDOVER" = "Position is forced liquidated, partial order is cancelled by system";
+"contract_please_enter_tigger" = "Please enter tigger Price";
+"contract_please_enter_exten" = "Please enter Excutive Price";
+
+"send_invitation"="Send invitation";
+"invitee_complete_registration_transaction" ="Invitee complete registration and transaction";
+"receive_corresponding_ratio_commission"="Receive corresponding ratio of commission";
+"coAgent_text2" = "1st-level Rebate Rate";
+"coAgent_text3" = "2nd-level Rebate Rate";
+"coAgent_text_childReturn" = "Broker’s dividend";
+"coAgent_text_childTotal" = "Total clients(people)";
+"coAgent_text_childTotalUSDT" = "Accumulated profits(USDT)";
+"coAgent_text_yesterdayReturn" = "Profits of yesterday(USDT)";
+"coAgent_text_byesterdayReturn"= "Profits of the day before(USDT)";
+"coAgent_text_redpackInvite" = "Bonus";
+"coAgent_text_friendInvite" = "Invite friends";
+"coAgent_text_explain"="Instruction";
+
+"invitation_Link" = "Invitation Link";
+"my_invitation_code" = "My Invitation Code";
+"generate_invitation_poster"="Share";
+"face_to_face_invitation"="QR  Code";
+"invitation_register_rewards"=" Invitation History";
+"invitation_text_rules"="Rules and regulations";
+"invitation_share_poster" = "Share your tailored poster";
+"invitation_number_friends"="Number of friends";
+"invitation_rewards_amount"="Rewards Amt.";
+"invitation_ratio_commission"="Commission Rate";
+"invitation_spot_broker"="Spot trading broker";
+"invitation_register_account" = "Registered Account";
+"invitation_registed_date" = "Registration Date";
+"invitation_youtojoin" = "Invite you to join [%@], press the image to identify the QR code";
+"invitation_number_people" = "Invitations";
+"invitation_total_commission" = "Total commission";
+"invitation_my_invitation"="My invitation";
+"invitation_invite_rewards"="Invite rewards";
+"invitation_release_time"="Release time";
+
+"login_success_action_alert_title"="Risk disclaimer";
+"login_success_action_alert_message"="There are security risks in the account. Please change the password and GA in time";
+"login_success_action_alert_google"="Replace GA";
+
+"common_text_entrustListLimit"="All the transaction data of coin pairs only support the display of data in the past 180 days. Please filter a single coin pair to view all orders.";
+"etf_fund_rate" = "Funding Rate";
+
+
+"contract_sting_newPriceMessage" = "When the latest price reaches %@, the commission shall be conducted at the market price.";
+"contract_sting_moreLossMessage" = "Trigger price and executive price of stop-loss order: must be higher than the forced liquidation price and less than the latest price.";
+"contract_sting_moreProfitMessage" = "Trigger price and executive price of take-profit order: must be higher than the latest price.";
+"contract_sting_lessLossMessage" = "Trigger price and executive price of stop-loss order: must be less than the forced liquidation price and higher than the latest price.";
+"contract_sting_lessProfitMessage" = "Trigger price and executive price of take-profit order: must be less than the latest price.";
+"contract_sting_moreProfitWaring" = "Trigger price or executive price below warning price %@ may result in stop-loss failure. Do you want to continue?";
+"contract_sting_lessLossWaring" = "Trigger price or executive price above warning price %@ may result in stop-loss failure. Do you want to continue?";
+
+
+"contract_swap_gift"="Bonus";
+"contract_tips_noExperience"="Bonus is not include";
+"contract_tips_experienceGold"="The trading bonus cannot be withdrawn directly, but the profitable part could.The trading bonus can be used for opening positions, paying trading fees, funding fee and the settlement for closing positions.
+The trading bonus will be deducted at the end for paying fee or position loss.";
+"contract_text_getBouns"="Bonus Issue";
+"contract_text_outBouns"="Bonus Recycle";
+"contract_string_leverageerror" = "The leverage does not match configuration";
+
+//login
+"password_reset_tips"="Cannot withdraw %s hours after changing password";
+"password_input_rule_tips"="8-20 numbers and letters";
+"please_check_with_google_auth"="Please check with google auth";
+"phone_didSendCode_to"="SMS Verification code has been sent to";
+"mail_didSendCode_to"="We sent a code to ";
+"assets_asset_allocation"="Asset Allocation";
+"assets_security_advice"="Security Advice";
+"assets_crypto_asset_value"="Crypto Asset Value";
+"assets_contract_value"="Equity Value";
+"assets_fiat_account_value"="Fiat Account Value";
+"assets_margin_account_value"="Margin Account Value";
+"assets_popular_crypto"="Popular Crypto";
+"assets_digital_assets"="Crypto Assets";
+"assets_suspend_deposit"="Suspend Deposit";
+"assets_suspend_withdraw"="Suspend Withdraw";
+"assets_suspend_deposit_Withdraw"="Suspend Deposit/Withdraw";
+"assets_less_than_0.0001BTC"="Less than %@ BTC";
+"assets_security_advice_tips"="Don't send your credential, SMS, email, or google authenticator code to anyone including our customer support staff. Anyone who declares to be our exchange’s stuff member is FRAUDULENT. Don't transfers any amount of your digital asset to anyone who claims to be our exchange’s staff member.";
+"alert_common_i_understand"="OK";
+"assets_balance_zero_tips"="Your balance is zero, make deposits or trade through the OTC market to obtain cryptocurrencies.";
+"assets_total_balances"="Total Amount";
+"onlyCo_assets_text_exchange"="Primary account";
+"onlyCo_redpacket_received_withdraw"="Red Packet transferred to your Primary account, can withdraw directly";
+"onlyCo_otc_tip_lessCoin"="Coins need to be transferred from Primary account to fiat account as selling";
+"onlyCo_redpacket_send_exchangeAccount"="Primary account";
+"onlyCo_otc_tip_lessCoin_forotc"="出售需将币从主账户划转至场外账户";
+//单独加的用户信息获取失败的提示
+"get_userinfo_failed_tip"="Get user info failed, please login again";
+"account_has_benn_registered_tip"="This account has been registered, please login.";
+"account_action_token_expire_tip"="Token has expired, please try again.";
+
+
+"customSetting_action_changeCo" = "Switch futures system";
+"customSetting_text_coDescNew" = "New futures now running";
+"customSetting_text_coDescOld" = "Old futures now running";
+"customSetting_text_coNew" = "New futures";
+"customSetting_text_coOld" = "Old futures";
+"customSetting_coAlert_title" = "New futures system is coming soon";
+"customSetting_coAlert_desc" = "Dear users, Hello:\nIn order to better serve users and provide more professional contract services, the new web version and APP version of the perpetual contract will be launched soon.\n1. Before the official switch, we provide a dual-version contract system for you to use. At the same time, when the new contract is just launched, there may be many imperfections. If you find a bug or any suggestion, please submit it through the link:\n2. At that time, the old contract system will stop accessing. Users of the old contract must close their positions in time and transfer their assets to the currency account before the corresponding time; if they fail to close and transfer out in time, the platform will be based on the market price at that time Automatic liquidation and settlement, and transfer of assets to currency accounts; unfilled orders will be automatically cancelled by the system.\n3. You can freely switch between old and new contracts through the navigation top floating layer. After you click [Switch new/old version], you will switch simultaneously when you access contract transactions, contract assets, contract orders, and contract-related operation functions; please note that the old and new versions of the contract Data is not interoperable;\nThe affected functions include but are not limited to: contract broker, contract experience fee, contract documentary, contract contest;\n4. Your contract assets need to be transferred to the currency account before being transferred to the contract account;";
+"newContract_changeCo_desc" = "
+The contract is about to be switched, click the confirm button and the app will close, please restart the app.";
+"newContract_force_changeCo_desc"="The current contract is offline. You will be automatically switched to the new contract.";
+
+//资产二期
+"common_text_address"="Address";
+"common_text_already_trust"="Trusted";
+"recharge_warning_tips"="Please don't recharge any non-%@ assets to the above address, otherwise the assets will not be retrieved. After you recharge to the above address, you need to confirm the entire network node, and %@ times network confirmation can be credited to your account. The top-up address will not change frequently, and you can repeat the top-up; if you change, we will try our best to notify you through website announcements or emails. Please make sure that your computer and browser are safe to prevent information from being tampered with or leaked.";
+"tag_warning_tips"="Please carefully check and fill in the address tag, if the tag is omitted, it will result in the loss of funds!";
+"title_history"="History";
+"withdraw_confirm_tips1"="You have already added trust to the current address, no security verification is required. Submit the withdrawal immediately after confirmation!";
+"withdraw_confirm_tips2"="Once your withdrawal operation is completed, all the corresponding assets will be changed from you to the account owner corresponding to the target address. Please confirm the withdrawal information before withdrawing to ensure that the withdrawal is voluntary, and Confirm that no pyramid schemes, illegal fundraising, fraud and other illegal situations are involved, beware of being deceived, and avoid unnecessary losses!";
+"title_select_account"="Select Account";
+"add_address_title"="Add %@ Address";
+"title_transfer_notice"="Transfer Notice";
+"content_transfer_notice"="Transactions can only be carried out when the assets are transferred to the corresponding account. There is no charge for transfer between accounts.";
+
+"market_title_edit_like"="Edit Favorites";
+"market_edit_like_type_top"="Top";
+"market_edit_like_type_drag"="Drag";
+"market_text_custom_add"="Add";
+"market_text_custom_finish"="Done";
+
+"exchange_order_normal_entrusts"="Limit order";
+"exchange_order_price_entrusts"="Market order";
+
+"quant_stop_high_price"="TP";
+"quant_stop_low_price"="Stop Loss";
+"quant_stop_hign_and_low"="TP&SL";
+"quant_high_price"="Upper";
+"quant_low_price"="Lower";
+"quant_ai_strategy"="AI Policy";
+"quant_custom_strategy"="Custom Policy";
+"quant_start_trade"="Open Policy";
+"quant_grid_line_type1"="Arithmetic";
+"quant_grid_line_type2"="Geometric";
+"quant_grid_title"="Grid";
+"quant_price_section"="Price range";
+"quant_grid_amount"="The number of grids";
+"quant_every_profit"="Profit per grid";
+"quant_seven_annualized_yield"="7D annualized yield";
+"quant_quote_amount"="Investment";
+"quant_stop_strategy"="Stop";
+"quant_view_detail"="Details";
+"quant_ordering"="Running";
+"quant_ordered"="Completed";
+"quant_use_own_base"="Use the original ";
+"quant_grid_profit"="Realized profit";
+"quant_annualized_yield"="Annualized yield";
+"quant_position_profit"="Unrealized profit";
+"quant_grid_type"="Grid type";
+"quant_initial_quote_amount"="Initial investment";
+"quant_run_time"="Running:";
+"quant_entrust_date"="Time";
+"quant_entrust_historyList"="Grid History Orders";
+"quant_pending_detail"=" Grid details";
+"quant_title_buyPrice"="Buy price";
+"quant_title_sellPrice"="Sell price";
+"quant_alert_stopGrid"="After terminating the grid, all uncompleted orders will be cancelled. Are you sure you want to terminate this grid trading?";
+"quant_stop_high_error"="Take Profit Price must be greater than Upper Price";
+"quant_stop_low_error"="Stop Loss Price must be smaller than Lower Price";
+"quant_range_error"="Price range is too small. Please reset.";
+"quant_toast_saveSuccess"="The grid is being created, check the execution in the details later";
+"quant_gridLineNumber_error"="The range of number of grids 2 -100";
+"quant_everyProfitMin_error"="The profit per grid is too small, please reset it";
+"quant_minimumOrderQuantity_error"="The investment per grid is too small";
+"quant_stopMinPrice_error"="Stop loss price must be less than current price";
+"quant_stopMaxPrice_error"="Take profit price must be higher than current price";
+"quant_balance_error"=" Insufficient balance";
+"quant_baseBalance_error"="You need at least";
+"quant_profitNoFee_tip"="Fee deducted";
+"quant_entrustCancel_error"="The order is a grid strategy order,the order can't cancelled manually. Please stop the grid and operate again";
+"quant_profit_title"="Profit";
+"quant_grid_guide"="Tutorial";
+"quant_grid_closeGreaterThanHigh"="The current price must be smaller than Upper Price";
+"quant_grid_closeLessThanLow"="The current price must be greater than Lower Price ";
+"contract_win_rate"="Win rate";
+"contract_total_profit"="Total profit(USDT)";
+"contract_scan_code_start"="Scan the code to start";
+"contract_copy_trade"="Copy trade";
+"contract_following_trader"="Following trader";
+"customSetting_title_apiSpeed"="API Speed";
+"customSetting_title_wsSpeed"="WS Speed";
+
+"etf_notes_explain"="%@ is an ETF product that tracks %@ the day %@ and is better suited for trading and holding on the current side of the market.";
+"etf_notes_multipleL"="Up %@ times";
+"etf_notes_multipleS"="down %@ times";
+"etf_multipleS"="X Short";
+"etf_multipleL"="X Long";
+"captcha_aliyun_title"="Sliding Verification";
+
+"etf_multipleS"="times short";
+"etf_multipleL"="times long";
+
+
+"etf_question_a"="What does the BTC3L leverage ETF mean?";
+"etf_question_b"="Leverage ETFs are tokens that track spot gains and falls using a certain multiple, compared to ordinary leverage products, what are the main features of leverage ETFs?";
+"etf_question_c"="Which of the following descriptions is inaccurate about leverage ETFs?";
+"etf_question_d"="The daily fund rate is not deducted from the user's assets, it is charged by deducting the net value, is this correct?";
+"etf_question_e"="Which of the following is not part of the platform ETF position adjustment mechanism?";
+
+"etf_question_anwsersa"="If the price of BTC increases by 1%, the net value of the leverage ETF will rise by about 3% & if the price of BTC decreases by 1%, the net value of the leverage ETF will fall by about 3%";
+"etf_question_anwsersb"="A pledge deposit is required, the product has an expiration date, there is a risk of position liquidation & no pledge deposit is required, no product expiration date, and no risk of position liquidation";
+"etf_question_anwsersc"="In a unilateral market, leverage ETFs may have compound interest gains & leverage ETFs are suitable for both long-term and short-term holdings, in volatile markets, the net value of leverage ETFs may be worn out";
+"etf_question_anwsersd"="Correct & Error";
+"etf_question_anwserse"="Timed position adjustment: Daily fixed time point to adjust the leverage multiple to the target multiple, to ensure that the net value of daily tracking spot of a certain multiple & timed position adjustment: daily fixed time point to adjust the leverage multiple to the target multiple, to ensure that the net value of daily tracking spot of a certain multiple & floating leverage adjustment position: when leverage ETF's actual leverage multiple exceeds the set floating leverage range to adjust the position";
+"etf_question_title"="Knowledge test";
+"etf_question_next"="Next question";
+"etf_notes_explain_tips"="Risk Tip: %@ is an ETF product that tracks %@'s %@ bar on the same day, which is more suitable for unilateral trading and short-term holding. The product fluctuates greatly and has the risk of net wear.";
+
+"pos_state_end"= "Законченный";
+"pos_state_processing"= "В ходе выполнения";
+"pos_type_staking"= "Разбивка";
+"pos_string_lockDateNumber"= "Период блокировки";
+"pos_string_lockProcess"= "Процесс блокировки";
+"pos_string_detail"= "подробность";
+"pos_string_process"= "Процесс";
+"pos_string_projectName"= "Название проекта";
+"pos_string_introduction"= "Краткое введение";
+"pos_string_toutalAmount"= "Общая сумма блокировки";
+"pos_string_lockNumber"= "Заблокированное количество";
+"pos_string_minLimit"= "Минимальное количество на замок";
+"pos_state_locked "= "Запертое количество";
+"pos_string_inputLockNumber"= "Пожалуйста, введите заблокированное
+количество";
+"pos_string_available"= "Доступные средства";
+"pos_string_all"= "Все";
+"pos_string_twoDaysEarn"= "Предполагаемый доход";
+
+"pos_string_myEarn"= "заработанный";
+"pos_sting_potocolTitle"= "Я полностью осознаю риски проекта";
+"pos_sting_agree"= "Согласен с PoS";
+
+
+"pos_state_release"= "Основной выпуск";
+"pos_string_timeEarn"= "Время на заработок получено";
+"pos_string_earnNumber"= "Количество по полученному доходу";
+"pos_string_earnDetail"= "Подробная информация о полученных доходах";
+"pos_string_lockNotAvailable"= "Количество блокировки должно быть меньше
+количества в вашем аккаунте";
+"pos_string_maxlockNumber"= "Максимальное накопленное количество замков";
+"pos_string_coinName"= "Монета";
+"pos_string_lockBeginTime"= "Блокировка начинается с";
+"pos_string_interestRate"= "Расчетная годовая процентная ставка";
+"pos_string_currentEran"= "Текущий заблокированный доход";
+"pos_string_coinName"= "Монета";
+"pos_string_dateEran"= "Дата получения дохода";
+"pos_string_principal"= "принципал";
+"pos_string_earnNumber"= "Количество получаемых заработков";
+"pos_string_posLock"= "PoS заблокирован";
+"pos_string_postionLock"= "ПОС позиция";
+"pos_state_start"= "в ожидании";
+"pos_state_waitInterest"= "В ожидании интереса";
+"pos_state_InterestIng"= "Начисление процентов";
+"pos_sting_faq"= "Вопросы-Ответы";
+
+"pos_string_minquantityperLock"= "Минимальное количество на замок";
+"pos_string_maxquantityLock"= "Максимальное накопленное количествозамков";
+"pos_buy_success" = "покупка прошла успешно";
+"pos_state_buying" = "Блокировка";
+"pos_state_fulled" = "Выполнил квоту";
+"pos_state_rules" = "правило";
+"pos_string_prodetail" = " подробность";
+"quant_stop_high_price"="TP";
+"quant_stop_low_price"="Stop Loss";
+"quant_stop_hign_and_low"="TP&SL";
+"quant_high_price"="Upper";
+"quant_low_price"="Lower";
+"quant_ai_strategy"="AI policy";
+"quant_custom_strategy"="Custom policy";
+"quant_start_trade"="Open policy";
+"quant_grid_line_type1"="Arithmetic";
+"quant_grid_line_type2"="Geometric";
+"quant_grid_title"="Grid";
+"quant_price_section"="Price range";
+"quant_grid_amount"="The number of grids";
+"quant_every_profit"="Profit per grid";
+"quant_seven_annualized_yield"="Seven-day annualized yield";
+"quant_quote_amount"="Investment";
+"quant_stop_strategy"="Stop";
+"quant_view_detail"="Details";
+"quant_ordering"="Processing";
+"quant_ordered"="Completed";
+"quant_use_own_base"="Use the original";
+"quant_grid_profit"="Grid profit";
+"quant_annualized_yield"="Annualized yield";
+"quant_position_profit"="Position Gain And Loss";
+"quant_grid_type"="Grid type";
+"quant_initial_quote_amount"="Initial investment";
+"quant_run_time"="Running:";
+"quant_entrust_date"="Commission time";
+"quant_entrust_historyList"="Grid History Orders";
+"quant_pending_detail"="Grid details";
+"quant_title_buyPrice"="Bid price";
+"quant_title_sellPrice"="Ask price";
+"quant_alert_stopGrid"="After terminating the grid, all uncompleted orders will be cancelled. Are you sure you want to terminate this grid trading?";
+"quant_stop_high_error"="Stop loss top price should not be less than grid upper price";
+"quant_stop_low_error"="Stop loss bottom price should not be higher than grid lower price";
+"quant_range_error"="Price range is too small. Please reset.";
+"quant_toast_saveSuccess"="The grid is being created, check the execution in the details later";
+"quant_gridLineNumber_error"="The range of number of grids 2 -100";
+"quant_everyProfitMin_error"="The profit per grid is too small, please reset it";
+"quant_minimumOrderQuantity_error"="The investment per grid is too small";
+"quant_stopMinPrice_error"="Stop loss price must be less than current price";
+"quant_stopMaxPrice_error"="Take profit price must be higher than current price";
+"quant_balance_error"="Insufficient balance";
+"quant_baseBalance_error"="You need at least";
+"quant_profitNoFee_tip"="Trading Fee deducted";
+"quant_entrustCancel_error"="The order is a grid strategy order,the order can't cancelled manually. Please stop the grid and operate again";
+"quant_profit_title"="Profit";
+
+"assets_action_internalTransfer"="Internal Transfer";
+"internalTransfer_action_History"= "Transfer records";
+"internalTransfer_tip_bindGoogleFirst"="In order to ensure the safety of your assets, please transfer directly within the station after binding GA";
+"internalTransfer_text_address"="Reciprocal account";
+"common_tip_targetAccount"="Please enter reciprocal account";
+"transfer_tip_notice"="Transfer instructions";
+"transfer_transferAlert_contentA"="Minimum transfer amount";
+"transfer_transferAlert_contentB"="Maximum transfer amount";
+"transfer_transferAlert_contentC"="Today’s remaining amount";
+"internalTransfer_tip_minValueError"="The minimum number of transfers per time is";
+"internalTransfer_tip_maxValueError"="The maximum number of transfers per time is";
+"internalTransfer_tip_success"="Direct transfer in station succeed";
+"common_tip_todayRemaining"="Today’s remaining amount is";
+"scan_fail_erro"="No valid contents found by scan";
+
+
+"add_invite_code"="Add superior invite code or UID";
+"referral_superior_button"="Add";
+"referral_superior_pop_text"="Please enter superior invite code or UID";
+"referral_superior_toast_succ"="Your superior has been added successfully!";
+"referral_superior_toast_notexist"="Invite code or UID does not exist!";
+"referral_superior_toast_later"="The registration time of the superior user cannot be later than that of the current user";
+"referral_superior_toast_self"="Cannot add oneself as a superior";
+"referral_superior_toast_wrong"="Incorrect invite code or UID";
+"referral_inviteRewards_"="Invite Rewards";
+"referral_inviteRewards_rules"="Reward Rules";
+"referral_inviteRewards_number"="Number Of Friends";
+"referral_inviteRewards_amount"="Reward Amount (USDT)";
+"referral_inviteRewards_invitation"="My Invitations";
+"referral_inviteRewards_reward"="My Rewards";
+"referral_inviteRewards_invitation_UID"="UID";
+"referral_inviteRewards_invitation_account"="Registered Account";
+"referral_inviteRewards_invitation_type"="Type";
+"referral_inviteRewards_invitation_time"="Registration Date";
+"invite_reward_issue_date"="Release Date";
+"personal_center_FeeRate"="My Fee Rates";
+"invite_poster_tips"="Register Now, Earn Crypto!";
+"referral_inviteRewards_title"="Invite Reward Records";
+
+"pos_state_lockStart"="Locking Starts";
+"pos_state_InterestStart"="Interest Starts";
+"pos_state_InterestEnd"="Interest Ends";
+"pos_state_lockEnd"="Locking Ends";
+"pos_string_allEarn"="Cumulative Distribution";
+
+"grid_share_title"="Grid Trading";
+"grid_share_desc"="24/16 Help me arbitrage and make money";

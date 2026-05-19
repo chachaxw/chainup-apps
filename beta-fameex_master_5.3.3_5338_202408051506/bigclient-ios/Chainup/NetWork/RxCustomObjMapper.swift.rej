@@ -1,0 +1,10 @@
+diff a/Chainup/NetWork/RxCustomObjMapper.swift b/Chainup/NetWork/RxCustomObjMapper.swift	(rejected hunks)
+@@ -65,7 +65,7 @@ public extension PrimitiveSequence where TraitType == SingleTrait, ElementType =
+             }
+ 
+             #if DEBUG
+-            debugPrint("返回：",try response.mapString())
++//            debugPrint("返回：",try response.mapString())
+             debugPrint("=======================================")
+             #endif
+ 

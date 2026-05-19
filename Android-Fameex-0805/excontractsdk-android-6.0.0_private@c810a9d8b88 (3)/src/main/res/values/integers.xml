@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_mediumAnimTime">100</integer>
+    <string-array name="array_items">
+        <item>10%</item>
+        <item>20%</item>
+        <item>50%</item>
+        <item>100%</item>
+    </string-array>
+
+    <string-array name="array_loss">
+        <item>市价</item>
+        <item>限价</item>
+    </string-array>
+    <item name="cp_sm_kline" type="id" />
+</resources>

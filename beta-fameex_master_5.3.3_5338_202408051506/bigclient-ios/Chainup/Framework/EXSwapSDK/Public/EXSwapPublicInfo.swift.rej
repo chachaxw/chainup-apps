@@ -1,0 +1,11 @@
+diff a/Chainup/Framework/EXSwapSDK/Public/EXSwapPublicInfo.swift b/Chainup/Framework/EXSwapSDK/Public/EXSwapPublicInfo.swift	(rejected hunks)
+@@ -72,6 +72,9 @@ class EXSwapPublicInfo {
+         }
+         var temp = [EXSwapItemModel]()
+         for id in ids {
++            if id.isEmpty {
++                continue
++            }
+             let swap = self.getTicker(Int64(id)!)
+             if swap != nil{
+                 temp.append(swap!)

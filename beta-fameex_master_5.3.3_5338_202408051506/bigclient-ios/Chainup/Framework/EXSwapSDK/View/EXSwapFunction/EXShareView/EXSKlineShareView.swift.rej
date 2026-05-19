@@ -1,0 +1,40 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXShareView/EXSKlineShareView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXShareView/EXSKlineShareView.swift	(rejected hunks)
+@@ -29,7 +29,7 @@ class EXSKlineShareView: UIView {
+     lazy var bottomView : UIView = {
+         let view = UIView()
+         view.extUseAutoLayout()
+-        view.backgroundColor = UIColor.exs_shareView.bgColor
++        view.backgroundColor = UIColor.ThemeView.alertBg
+         return view
+     }()
+     
+@@ -44,7 +44,7 @@ class EXSKlineShareView: UIView {
+         let label = UILabel()
+         label.extUseAutoLayout()
+         label.font = UIFont.ThemeFont.BodyRegular
+-        label.textColor = UIColor.exs_shareView.appname
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.text = EXKitStanders.getAppName()
+         return label
+     }()
+@@ -53,7 +53,7 @@ class EXSKlineShareView: UIView {
+         let label = UILabel()
+         label.extUseAutoLayout()
+         label.font = UIFont.ThemeFont.MinimumRegular
+-        label.textColor = UIColor.exs_shareView.tip
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.text = "common_share_detail".localized()
+         return label
+     }()
+@@ -78,9 +78,9 @@ class EXSKlineShareView: UIView {
+         let button = UIButton()
+         button.setTitle("cp_overview_text56".ex_localized(), for: .normal)
+         button.ext_SetAddTarget(self, #selector(clickCancel))
+-        button.setTitleColor(UIColor.exs_ThemeBtn.cancelTitleColor, for: .normal)
++        button.setTitleColor(UIColor.ThemeLabel.colorLite, for: .normal)
+         button.setBackgroundImage(UIImage(named: ""), for: .normal)
+-        button.backgroundColor = UIColor.exs_ThemeBtn.cancelBgColor
++        button.backgroundColor = UIColor.ThemeView.card2
+         button.titleLabel?.font = UIFont.ThemeFont.HeadBold
+         button.layer.cornerRadius = 4
+         button.layer.masksToBounds = true

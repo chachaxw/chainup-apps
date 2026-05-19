@@ -1,0 +1,10 @@
+diff a/Chainup/EXAssets/Search/vc/EXCoinSearchListVc.swift b/Chainup/EXAssets/Search/vc/EXCoinSearchListVc.swift	(rejected hunks)
+@@ -177,7 +177,7 @@ class EXCoinSearchListVc: BaseVC,StoryBoardLoadable,NavigationPlugin {
+                 }
+                 hotCoinView.insert(labels: temp)
+                 self.searchTable.tableHeaderView = hotCoinView
+-                hotCoinView.snp_makeConstraints { (maker) in
++                hotCoinView.snp.makeConstraints { (maker) in
+                     maker.width.equalToSuperview()
+                 }
+                 self.searchTable.tableHeaderView?.layoutIfNeeded()

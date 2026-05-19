@@ -1,0 +1,25 @@
+diff a/Chainup/Framework/EXSwapSDK/Public/EXSwapPlatformSDK.swift b/Chainup/Framework/EXSwapSDK/Public/EXSwapPlatformSDK.swift	(rejected hunks)
+@@ -6,7 +6,6 @@
+ //
+ 
+ import UIKit
+-
+ @objcMembers class EXSwapPlatformSDK: NSObject {
+     static let `manager` = EXSwapPlatformSDK()
+     open class var shared: EXSwapPlatformSDK {
+@@ -20,10 +19,10 @@ import UIKit
+     var loginCallBack:EXSwapSDKCallBack?
+     var transferOnClickedCallBack:EXSwapSDKTransferOnClickedCallBack?
+     
+-    func switchNight(theme: EXSThemeManager) {
+-        EXSThemeManager.switchNight(isToNight: theme)
+-    }
+-//    func switchToTheme(theme: EXSThemeManager){
+-//        EXSThemeManager.switchTo(theme: theme)
++//    func switchNight(theme: EXKLineManager) {
++//        EXKLineManager.switchNight(isToNight: theme)
++//    }
++//    func switchToTheme(theme: EXKLineManager){
++//        EXKLineManager.switchTo(theme: theme)
+ //    }
+ }

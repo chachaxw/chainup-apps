@@ -1,0 +1,19 @@
+diff a/Chainup/EXCOINS/Me/RealNameCertification/RealNameCertificationTwo/view/EXRealNameTwoView.swift b/Chainup/EXCOINS/Me/RealNameCertification/RealNameCertificationTwo/view/EXRealNameTwoView.swift	(rejected hunks)
+@@ -334,7 +334,7 @@ class RealNameMsgLabel :UIView {
+             make.bottom.equalToSuperview().offset(-5)
+         }
+         msgLabel.snp.makeConstraints { make in
+-            make.left.equalTo(icon.snp_right).offset(8)
++            make.left.equalTo(icon.snp.right).offset(8)
+             make.centerY.equalToSuperview()
+             make.right.equalToSuperview()
+         }
+@@ -372,7 +372,7 @@ class EXRealnameHeaderView :UIView {
+         self.addSubview(bg)
+         bg.addSubview(bgStack)
+ 
+-        bg.snp_makeConstraints { make in
++        bg.snp.makeConstraints { make in
+             make.left.equalTo(MARGIN_LEFT)
+             make.right.equalTo(-MARGIN_LEFT)
+             make.top.equalToSuperview()

@@ -1,0 +1,91 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+//apply plugin: 'com.alibaba.arouter'
+
+apply from: "config.gradle"
+apply from: "change.gradle"
+
+buildscript {
+    ext.kotlin_version = '1.6.10'
+    ext.anko_version = '0.10.8'
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://storage.googleapis.com/download.flutter.io" }
+//        maven { url "https://download.flutter.io" }
+        maven { url "https://jitpack.io" }
+//        jcenter{
+//            url 'https://jcenter.bintray.com'
+//        }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' } //gradle-plugin
+        maven { url 'https://maven.aliyun.com/repository/google' } //google
+        maven { url 'https://maven.aliyun.com/repository/public' } //public
+        maven { url 'https://maven.aliyun.com/repository/jcenter'} //jcenter
+        maven { url "https://maven.sumsub.com/repository/maven-public/" }
+        mavenLocal()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.4"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.alibaba:arouter-register:1.0.2"
+        classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.10'
+        classpath 'com.novoda:bintray-release:0.8.1'
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:1.4.30"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+
+        classpath 'com.google.gms:google-services:4.3.10'
+
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://storage.googleapis.com/download.flutter.io" }
+//        maven { url "https://download.flutter.io" }
+        maven { url "https://jitpack.io" }
+//        jcenter{
+//            url 'https://jcenter.bintray.com'
+//        }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' } //gradle-plugin
+        maven { url 'https://maven.aliyun.com/repository/google' } //google
+        maven { url 'https://maven.aliyun.com/repository/public' } //public
+        maven { url 'https://maven.aliyun.com/repository/jcenter'} //jcenter
+        maven { url "https://maven.sumsub.com/repository/maven-public/" }
+        maven {
+            allowInsecureProtocol = true
+            setUrl("http://lib.gcssloop.com/repository/gcssloop-central/")
+        }
+//        maven {
+//            allowInsecureProtocol = true
+//            setUrl("http://jcenter.bintray.com")
+//        }
+        maven {
+            allowInsecureProtocol = true
+            url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/"
+        }
+        mavenLocal()
+    }
+    allprojects {
+        tasks.withType(JavaCompile) {    //设置全局编码
+            options.encoding = "UTF-8"
+        }
+        tasks.withType(Javadoc) {  //设置文档编码
+            options {
+                encoding "UTF-8"
+                charSet 'UTF-8'
+                links "http://docs.oracle.com/javase/7/docs/api"
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>xxxhdpi/assets_capitalflow</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-375.000000, -250.000000)">
+            <g id="assets_capitalflow" transform="translate(375.000000, 250.000000)">
+                <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+                <g id="分组" transform="translate(3.112300, 4.000000)">
+                    <path d="M16.8067227,15.8074621 C16.8067227,16.3593385 16.3593385,16.8067227 15.8074621,16.8067227 L2,16.8067227 C0.8954305,16.8067227 1.3527075e-16,15.9112922 0,14.8067227 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 L15.8080636,0 C16.3596078,-8.7847314e-16 16.8067227,0.447114904 16.8067227,0.998659089 L16.8067227,0.998659089 L16.8067227,0.998659089" id="路径" stroke="#A0A2AA" stroke-width="2"></path>
+                    <g id="编组-9" transform="translate(7.843697, 5.000000)" fill="#2B61FF" fill-rule="nonzero">
+                        <rect id="矩形" x="2.5" y="4.375" width="7.5" height="2.1875"></rect>
+                        <rect id="矩形" x="0" y="0" width="10" height="2.1875"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

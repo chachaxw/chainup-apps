@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/rl_new_share_layout"
+        android:layout_width="164dp"
+        android:layout_height="260dp"
+        android:orientation="vertical"
+        android:src="@drawable/ic_share_cn_two"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_new_share_layout"
+        android:id="@+id/rl_share_content_layout"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:background="@color/fill_2">
+
+        <TextView
+            android:id="@+id/tv_share_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_6"
+            style="@style/textstyle_dr_10_color1"
+            tools:text="ssssss" />
+
+        <TextView
+            android:id="@+id/tv_share_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_share_account"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="@dimen/dp_6"
+            android:layout_marginBottom="7dp"
+            android:layout_toLeftOf="@+id/iv_new_share_qr"
+            style="@style/textstyle_dm_10_color2"
+            android:textSize="6sp"
+            tools:text="ajsdkaslkdalksjdlaksjdlkas" />
+
+        <ImageView
+            android:id="@+id/iv_new_share_qr"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_6"
+            android:layout_marginBottom="@dimen/dp_8" />
+    </RelativeLayout>
+</RelativeLayout>

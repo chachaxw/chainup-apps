@@ -1,0 +1,36 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/ActionSheet/EXSActionSheetView.swift b/Chainup/Framework/EXSwapSDK/Base/UI/ActionSheet/EXSActionSheetView.swift	(rejected hunks)
+@@ -64,7 +64,7 @@ class EXSActionSheetView: EXSNibBaseView {
+     
+     override func onCreate() {
+         actionTitle.font = UIFont.ThemeFont.HeadBold
+-        cancelBtn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        cancelBtn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         cancelBtn.exs_setEnlargeEdgeWithTop(10, left: 20, bottom: 10, right: 20)
+         footerCancelBtn.titleLabel?.font = UIFont.ThemeFont.HeadRegular
+         self.inputSheetFooterStyle(inputStyle: false)
+@@ -75,14 +75,14 @@ class EXSActionSheetView: EXSNibBaseView {
+         if inputStyle {
+             sheetFooterHeight.constant = 104
+             footerCancelBtn.setTitle("cp_calculator_text16".ex_localized(), for: .normal)
+-            footerCancelBtn.color = UIColor.exs_ThemeView.highlight
++            footerCancelBtn.color = UIColor.ThemeView.highlight
+             footerCancelBtn.setTitleColor(UIColor.white, for: .normal)
+         }else {
+             sheetFooterHeight.constant = 60
+             footerCancelBtn.color = UIColor.clear
+             footerCancelBtn.highlightedColor = UIColor.clear
+             footerCancelBtn.setTitle("cp_overview_text56".ex_localized(), for: .normal)
+-            footerCancelBtn.setTitleColor(UIColor.exs_ThemeLabel.colorLite, for: .normal)
++            footerCancelBtn.setTitleColor(UIColor.ThemeLabel.colorLite, for: .normal)
+         }
+     }
+     
+@@ -245,7 +245,7 @@ class EXSActionSheetView: EXSNibBaseView {
+     }
+     
+     func dismiss(){
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     
+ }

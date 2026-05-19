@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXAccountTableHeader" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="assetsInfoView" destination="q0w-ku-dVM" id="ZZt-zh-k4o"/>
+                <outlet property="toolBar" destination="RG8-ya-Fwn" id="31B-Uq-cvK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RG8-ya-Fwn" customClass="EXAssetToolBar" customModule="Chainup" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="113" width="375" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="l5a-iZ-PJY"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0w-ku-dVM" customClass="EXAssetsInfoView" customModule="Chainup" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrS-Qy-paT">
+                    <rect key="frame" x="0.0" y="193" width="375" height="10"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="BNw-me-C12"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="nav.bg"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NrS-Qy-paT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4Co-JC-E2w"/>
+                <constraint firstItem="RG8-ya-Fwn" firstAttribute="top" secondItem="q0w-ku-dVM" secondAttribute="bottom" id="5j8-A2-pJn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NrS-Qy-paT" secondAttribute="trailing" id="6MZ-dh-t2W"/>
+                <constraint firstItem="RG8-ya-Fwn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Cw8-xq-h58"/>
+                <constraint firstAttribute="bottom" secondItem="RG8-ya-Fwn" secondAttribute="bottom" constant="10" id="FZD-61-9yx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="q0w-ku-dVM" secondAttribute="trailing" id="Iz0-cW-zfd"/>
+                <constraint firstItem="q0w-ku-dVM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZO3-WT-b2g"/>
+                <constraint firstItem="q0w-ku-dVM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bc0-zR-tal"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RG8-ya-Fwn" secondAttribute="trailing" id="jA8-K8-LLI"/>
+                <constraint firstAttribute="bottom" secondItem="NrS-Qy-paT" secondAttribute="bottom" id="rdr-qB-Vdy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,95 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSwapAllTransactionsVC.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSwapAllTransactionsVC.swift	(rejected hunks)
+@@ -18,10 +18,10 @@ class EXSwapAllTransactionsVC: EXSNavCustomVC {
+     let menu : YDMenu = {
+         let retV = YDMenu(origin: CGPoint(x: 0, y: 55), menuheight: 35)
+         /// 横线
+-        retV.backgroundColor = UIColor.exs_ThemeView.bg
++        retV.backgroundColor = UIColor.ThemeView.bg
+         let horLineView = UIView()
+         horLineView.ext_UseAutoLayout()
+-        horLineView.backgroundColor = UIColor.exs_ThemeView.bgGap
++        horLineView.backgroundColor = UIColor.ThemeView.bgGap
+         
+         retV.addSubview(horLineView)
+ //
+@@ -33,7 +33,7 @@ class EXSwapAllTransactionsVC: EXSNavCustomVC {
+     }()
+     let profitMenu : YDMenu = {
+         let retV = YDMenu(origin: CGPoint(x: 0, y: 55), menuheight: 35)
+-        retV.backgroundColor = UIColor.exs_ThemeView.bg
++        retV.backgroundColor = UIColor.ThemeView.bg
+         return retV
+     }()
+     var type:EXSwapTransactionType = .current
+@@ -97,7 +97,7 @@ class EXSwapAllTransactionsVC: EXSNavCustomVC {
+        return ["cp_extra_text20".ex_localized(), "cp_order_text3".ex_localized()]
+     }()
+     lazy var cancelAllButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_order_text52".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.exs_ThemeLabel.colorMedium)
++        let button = UIButton(buttonType: .custom, title: "cp_order_text52".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.ThemeLabel.colorMedium)
+         button.ext_SetAddTarget(self, #selector(clickCancelAllButton))
+         return button
+     }()
+@@ -107,8 +107,8 @@ class EXSwapAllTransactionsVC: EXSNavCustomVC {
+         //配置数据源
+         let dataSource = EXTitltleLabelBottomAlighDateSoure()
+         dataSource.isTitleColorGradientEnabled = true
+-        dataSource.titleSelectedColor = UIColor.exs_ThemeLabel.colorBlack
+-        dataSource.titleNormalColor = UIColor.exs_ThemeLabel.colorMedium
++        dataSource.titleSelectedColor = UIColor.ThemeLabel.colorLite
++        dataSource.titleNormalColor = UIColor.ThemeLabel.colorMedium
+         dataSource.isTitleZoomEnabled = true
+         dataSource.titleNormalFont = UIFont.ThemeFont.HeadMedium
+         dataSource.titleSelectedFont = UIFont.ThemeFont.H1Medium
+@@ -132,12 +132,12 @@ class EXSwapAllTransactionsVC: EXSNavCustomVC {
+     lazy var line: UIView = {
+         let horLineView = UIView()
+         horLineView.ext_UseAutoLayout()
+-        horLineView.backgroundColor = UIColor.exs_ThemeView.bgGap
++        horLineView.backgroundColor = UIColor.ThemeView.bgGap
+         return horLineView
+     }()
+     lazy var marginView:UIView = {
+         let v = UIView()
+-        v.backgroundColor = UIColor.exs_ThemeNav.bg
++        v.backgroundColor = UIColor.ThemeNav.bg
+         return v
+     }()
+    
+@@ -494,12 +494,12 @@ extension EXSwapAllTransactionsVC {
+                                       orderId: orderId,
+                                       isConditionOrder: transactionPriceType == .plan) {
+             
+-            EXSAlert.showSuccess(msg: "cp_content_text3".ex_localized())
++            EXAlert.showSuccess(msg: "cp_content_text3".ex_localized())
+             self.page = 1
+             self.requestTransactionData(instrument_id: self.itemModel?.instrument_id ?? 0)
+         } failure: { (error) in
+             
+-            EXSAlert.showFail(msg: "cp_content_text4".ex_localized())
++            EXAlert.showFail(msg: "cp_content_text4".ex_localized())
+         }
+     }
+     
+@@ -528,7 +528,7 @@ extension EXSwapAllTransactionsVC {
+                 self.cancelAllTransactions()
+             }
+         }
+-        EXSAlert.showAlert(alertView: alert)
++        EXAlert.showAlert(alertView: alert)
+     }
+     
+     func resetSelectedType() {
+@@ -648,10 +648,10 @@ extension EXSwapAllTransactionsVC:YDMenuDelegate {
+     
+         if currentMenu != 0 {
+             menu.textAligment = .center
+-            menu.cellBgColor = UIColor.exs_ThemeView.bg
++            menu.cellBgColor = UIColor.ThemeView.bg
+         }else {
+             menu.textAligment = .left
+-            menu.cellBgColor = UIColor.exs_ThemeView.bgIconh
++            menu.cellBgColor = UIColor.ThemeView.bgIconh
+         }
+     }
+     func menu(_ menu: YDMenu, didSelectRowAtIndexPath indexPath: YDMenu.Index) {

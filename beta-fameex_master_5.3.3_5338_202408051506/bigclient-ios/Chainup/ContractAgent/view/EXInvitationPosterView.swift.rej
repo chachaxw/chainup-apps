@@ -1,0 +1,10 @@
+diff a/Chainup/ContractAgent/view/EXInvitationPosterView.swift b/Chainup/ContractAgent/view/EXInvitationPosterView.swift	(rejected hunks)
+@@ -126,7 +126,7 @@ class EXInvitationPosterView: UIView,NibLoadable {
+         
+         btn.setImage(UIImage.themeImageNamed(imageName: "fiat_unchecked"), for: .normal)
+         btn.setImage(UIImage.themeImageNamed(imageName: "fiat_selected"), for:.selected)
+-        btn.snp_makeConstraints { (make) in
++        btn.snp.makeConstraints { (make) in
+             make.size.equalTo(CGSize(width: 44, height: 44))
+         }
+        

@@ -1,0 +1,10 @@
+diff a/Chainup/EXRedPacket/EXRedPacketButton.swift b/Chainup/EXRedPacket/EXRedPacketButton.swift	(rejected hunks)
+@@ -41,7 +41,7 @@ class EXRedPacketButton: UIView {
+     }()
+     
+     func reloadView(){
+-        if LanguageHandler.isHan() == true{
++        if LanguageTools.isHan() == true{
+             redPacketBtn.setImage(UIImage.themeImageNamed(imageName: "redenvelope"), for: .normal)
+         }else{
+             redPacketBtn.setImage(UIImage.themeImageNamed(imageName: "redenvelope_english"), for: .normal)

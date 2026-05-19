@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXHorizonAssistantMenu" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="hideBtn" destination="s6y-bE-9gb" id="6KX-OE-jFy"/>
+                <outletCollection property="menus" destination="JjE-MD-62K" collectionClass="NSMutableArray" id="1mk-jO-cTc"/>
+                <outletCollection property="menus" destination="785-0M-aRa" collectionClass="NSMutableArray" id="Nfr-aa-dUn"/>
+                <outletCollection property="menus" destination="lVI-tv-0Qc" collectionClass="NSMutableArray" id="dOr-Ya-0rY"/>
+                <outletCollection property="menus" destination="K3t-6W-hsq" collectionClass="NSMutableArray" id="NJ3-Xd-haA"/>
+                <outletCollection property="menus" destination="enW-lh-Yhn" collectionClass="NSMutableArray" id="AvM-7x-Hsy"/>
+                <outletCollection property="menus" destination="s6y-bE-9gb" collectionClass="NSMutableArray" id="X3l-a5-gGZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="51" height="252"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HvF-e2-lww">
+                    <rect key="frame" x="0.0" y="0.0" width="51" height="252"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjE-MD-62K" customClass="CMLocalizedButton" customModule="EXKit">
+                            <rect key="frame" x="0.0" y="0.0" width="51" height="42"/>
+                            <state key="normal" title="kline_action_assistant"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleC" value="label.colorDark"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="785-0M-aRa" customClass="CMLocalizedButton" customModule="EXKit">
+                            <rect key="frame" x="0.0" y="42" width="51" height="42"/>
+                            <state key="normal" title="MACD"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleC" value="label.colorMedium"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="htitleC" value="label.colorLite"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didSelectAlgorithm:" destination="-1" eventType="touchUpInside" id="CBR-Nx-z6t"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVI-tv-0Qc" customClass="CMLocalizedButton" customModule="EXKit">
+                            <rect key="frame" x="0.0" y="84" width="51" height="42"/>
+                            <state key="normal" title="KDJ"/>
+                            <connections>
+                                <action selector="didSelectAlgorithm:" destination="-1" eventType="touchUpInside" id="jqn-iN-qbg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3t-6W-hsq" customClass="CMLocalizedButton" customModule="EXKit">
+                            <rect key="frame" x="0.0" y="126" width="51" height="42"/>
+                            <state key="normal" title="RSI"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleC" value="label.colorMedium"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="htitleC" value="label.colorLite"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didSelectAlgorithm:" destination="-1" eventType="touchUpInside" id="UZF-TX-c2D"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enW-lh-Yhn" customClass="CMLocalizedButton" customModule="EXKit">
+                            <rect key="frame" x="0.0" y="168" width="51" height="42"/>
+                            <state key="normal" title="WR"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleC" value="label.colorMedium"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="htitleC" value="label.colorLite"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didSelectAlgorithm:" destination="-1" eventType="touchUpInside" id="FdS-kJ-TF4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6y-bE-9gb" customClass="CMLocalizedButton" customModule="EXKit">
+                            <rect key="frame" x="0.0" y="210" width="51" height="42"/>
+                            <connections>
+                                <action selector="didSelectAlgorithm:" destination="-1" eventType="touchUpInside" id="wiK-Um-7IF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewbg"/>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HvF-e2-lww" secondAttribute="trailing" id="1AK-n8-6P3"/>
+                <constraint firstItem="HvF-e2-lww" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="21j-vM-zJo"/>
+                <constraint firstAttribute="bottom" secondItem="HvF-e2-lww" secondAttribute="bottom" id="84R-aO-Agr"/>
+                <constraint firstItem="HvF-e2-lww" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NM1-dl-98B"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="36" y="-140.32983508245877"/>
+        </view>
+    </objects>
+</document>

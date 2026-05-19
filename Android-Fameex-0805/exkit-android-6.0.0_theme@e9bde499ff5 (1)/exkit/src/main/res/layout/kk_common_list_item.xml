@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/group_list_item_imageView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/contract_transfers"
+            android:visibility="visible"
+            tool:visibility="visible" />
+
+        <TextView
+            android:id="@+id/group_list_item_textView"
+            style="@style/textstyle_dm_16_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="合约设置" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/group_list_item_tips_dot"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/shape_point"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/group_list_item_detailTextView"
+            style="@style/textstyle_dm_12_color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="币" />
+
+        <ImageView
+            android:id="@+id/group_list_item_right_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:scaleType="centerInside"
+            tool:visibility="visible"
+            android:src="@mipmap/icon_right_arrow" />
+        <com.chainup.kit.views.SwitchButtonView
+            android:id="@+id/iv_switch_on"
+            android:layout_width="34dp"
+            android:layout_marginLeft="12dp"
+            android:layout_height="18dp"
+            android:visibility="gone"
+            app:status="false" />
+
+    </LinearLayout>
+</RelativeLayout>

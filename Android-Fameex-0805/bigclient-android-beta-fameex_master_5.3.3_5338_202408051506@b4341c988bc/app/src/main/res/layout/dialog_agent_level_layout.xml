@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/public_bg_dialog_corner12"
+    android:paddingHorizontal="@dimen/dp_20">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/textStyle_dm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="返佣比例"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/dp_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rv_datalist"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_datalist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:listitem="@layout/item_agent_level"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:spanCount="2"
+        tools:itemCount="10"
+        android:layout_marginTop="@dimen/dp_16"
+        />
+
+
+    <com.yjkj.chainup.new_version.view.CommonlyUsedButton
+        android:id="@+id/cub_confirm"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_44"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@+id/rv_datalist"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp_20"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+diff a/Chainup/ContractAgent/view/EXhorizontalThreeLabelView.swift b/Chainup/ContractAgent/view/EXhorizontalThreeLabelView.swift	(rejected hunks)
+@@ -48,20 +48,20 @@ class EXhorizontalThreeLabelView: UIView {
+         thirdLabel.textAlignment = .right
+         addSubViews([firstLabel,secondLabel, thirdLabel])
+         
+-        firstLabel.snp_makeConstraints { (make) in
++        firstLabel.snp.makeConstraints { (make) in
+             make.leading.equalTo(15)
+             make.top.bottom.equalToSuperview()
+             make.width.equalTo(thirdLabel)
+         }
+         
+-        secondLabel.snp_makeConstraints { (make) in
++        secondLabel.snp.makeConstraints { (make) in
+             make.top.bottom.equalToSuperview()
+             make.leading.equalTo(firstLabel.snp_trailing)
+             make.trailing.equalTo(thirdLabel.snp_leading)
+             make.width.equalTo(thirdLabel)
+         }
+         
+-        thirdLabel.snp_makeConstraints { (make) in
++        thirdLabel.snp.makeConstraints { (make) in
+             make.trailing.equalTo(-15)
+             make.top.bottom.equalToSuperview()
+         }

@@ -1,0 +1,29 @@
+diff a/Chainup/Framework/EXSwapSDK/View/Calculate/EXCalculateProfitAndLossTC.swift b/Chainup/Framework/EXSwapSDK/View/Calculate/EXCalculateProfitAndLossTC.swift	(rejected hunks)
+@@ -43,7 +43,7 @@ class EXCalculateProfitAndLossTC: UITableViewCell {
+     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+         super.init(style: style, reuseIdentifier: reuseIdentifier)
+         self.selectionStyle = .none
+-        contentView.backgroundColor = UIColor.exs_ThemeView.bg
++        contentView.backgroundColor = UIColor.ThemeView.bg
+ 
+         contentView.exs_addSubViews([openPriceField,closePriceField,volumeField])
+         openPriceField.snp.makeConstraints { (make) in
+@@ -78,15 +78,15 @@ class EXCalculateProfitAndLossTC: UITableViewCell {
+     
+     func validate() -> Bool {
+         if (openPriceField.input.text?.count == 0) {
+-            EXSAlert.showFail(msg:"cp_content_text31".ex_localized() + (openPriceField.titleLabel.text ?? ""))
++            EXAlert.showFail(msg:"cp_content_text31".ex_localized() + (openPriceField.titleLabel.text ?? ""))
+             return false
+         }
+         if (closePriceField.input.text?.count == 0) {
+-            EXSAlert.showFail(msg:"cp_content_text31".ex_localized() + (closePriceField.titleLabel.text ?? ""))
++            EXAlert.showFail(msg:"cp_content_text31".ex_localized() + (closePriceField.titleLabel.text ?? ""))
+             return false
+         }
+         if (volumeField.input.text?.count == 0) {
+-            EXSAlert.showFail(msg:"cp_content_text31".ex_localized() + (volumeField.titleLabel.text ?? ""))
++            EXAlert.showFail(msg:"cp_content_text31".ex_localized() + (volumeField.titleLabel.text ?? ""))
+             return false
+         }
+         return true

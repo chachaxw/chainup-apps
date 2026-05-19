@@ -1,0 +1,50 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSwapSettingVc.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSwapSettingVc.swift	(rejected hunks)
+@@ -147,7 +147,7 @@ extension EXSwapSettingVc: UITableViewDelegate, UITableViewDataSource {
+         }
+         sheet.actionCancelCallback =  {() in
+         }
+-        EXSAlert.showSheet(sheetView: sheet)
++        EXAlert.showSheet(sheetView: sheet)
+     }
+     func introducedList() -> [String] {
+         let arr:[EXSwapPlanOrderValidityPeriod] = [.oneDay, .oneWeek, .twoWeek, .oneMonth]
+@@ -159,7 +159,7 @@ extension EXSwapSettingVc: UITableViewDelegate, UITableViewDataSource {
+             if !isPositionModeCanSwitch {
+                 let alert = EXSNormalAlert()
+                 alert.configSigleAlert(title: "cp_extra_text27".ex_localized(), message: "cp_contract_setting_text22".ex_localized())
+-                EXSAlert.showAlert(alertView: alert)
++                EXAlert.showAlert(alertView: alert)
+                 return
+             }
+             
+@@ -226,18 +226,18 @@ class EXSwapSettingTC: UITableViewCell {
+     
+     /// 选项名称
+     lazy var nameLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     lazy var nameDescLabel:UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     /// 类型种类
+     lazy var typeLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.right)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.right)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+@@ -263,7 +263,7 @@ class EXSwapSettingTC: UITableViewCell {
+     
+     lazy var lineView: UIView = {
+         let line = UIView()
+-        line.backgroundColor = UIColor.exs_ThemeView.seperator
++        line.backgroundColor = UIColor.ThemeView.seperator
+         line.ext_UseAutoLayout()
+         return line
+     }()

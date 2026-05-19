@@ -1,0 +1,321 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapPosition/EXSwapPositionCell.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapPosition/EXSwapPositionCell.swift	(rejected hunks)
+@@ -40,14 +40,14 @@ class EXSwapPositionCell : UITableViewCell {
+     
+     /// 持仓
+     private lazy var titleLabel: UILabel = {
+-        let label = UILabel(text: "--"+"cp_order_text1".ex_localized(), font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++        let label = UILabel(text: "--"+"cp_order_text1".ex_localized(), font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
+         label.isHidden = true
+         return label
+     }()
+     
+     private lazy var marginLine1: UIView = {
+         let view = UIView()
+-        view.backgroundColor = UIColor.exs_ThemeView.seperator
++        view.backgroundColor = UIColor.ThemeView.seperator
+         view.isHidden = true
+         return view
+     }()
+@@ -61,16 +61,16 @@ class EXSwapPositionCell : UITableViewCell {
+     
+     /// 合约名称
+     lazy var nameLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorBlack, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     /// 合约类型
+     lazy var contractTypeLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.exs_ThemeLabel.colorHighlight, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.ThemeLabel.colorHighlight, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+-        label.backgroundColor = UIColor.exs_ThemeLabel.colorHighlight.withAlphaComponent(0.15)
++        label.backgroundColor = UIColor.ThemeLabel.colorHighlight.withAlphaComponent(0.15)
+         label.layer.cornerRadius = 2
+         label.layer.masksToBounds = true
+         return label
+@@ -84,7 +84,7 @@ class EXSwapPositionCell : UITableViewCell {
+     }()
+     
+     lazy var shareLabel: UILabel = {
+-        let label = UILabel(text: "cp_extra_text116".ex_localized(), font: UIFont.ThemeFont.SecondaryMedium, textColor: UIColor.exs_ThemeLabel.colorHighlight, alignment: NSTextAlignment.right)
++        let label = UILabel(text: "cp_extra_text116".ex_localized(), font: UIFont.ThemeFont.SecondaryMedium, textColor: UIColor.ThemeLabel.colorHighlight, alignment: NSTextAlignment.right)
+         label.ext_UseAutoLayout()
+         label.isUserInteractionEnabled = true
+         let tap = UITapGestureRecognizer.init(target: self, action: #selector(clickShareButton))
+@@ -110,7 +110,7 @@ class EXSwapPositionCell : UITableViewCell {
+         view.isShowTipButton = true
+         view.clickMiddleBtnBlock = { [weak self] in
+             let alert = EXSPriceTypeAlertView(frame: CGRect(x: 0, y: 0, width:SCREEN_WIDTH, height: 260))
+-            EXSAlert.showSheet(sheetView: alert)
++            EXAlert.showSheet(sheetView: alert)
+             return
+         }
+         
+@@ -130,7 +130,7 @@ class EXSwapPositionCell : UITableViewCell {
+     lazy var dottedLineView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = UIColor.ThemeView.bgGap
+         return view
+     }()
+     
+@@ -170,7 +170,7 @@ class EXSwapPositionCell : UITableViewCell {
+             
+             let eranView = EXContractEranMoneyAlertView(frame: CGRect.zero, type: .position)
+             eranView.configPostionModle(positionModel: self?.positionModel)
+-            EXSAlert.showAlert(alertView: eranView,offset: 38)
++            EXAlert.showAlert(alertView: eranView,offset: 38)
+         }
+         return view
+     }()
+@@ -187,7 +187,7 @@ class EXSwapPositionCell : UITableViewCell {
+         view.clickMiddleBtnBlock = { [weak self] in
+             let alert = EXSNormalAlert()
+             alert.configSigleAlert(title: "cp_calculator_text4".ex_localized(), message: "cp_extra_text130".ex_localized())
+-            EXSAlert.showAlert(alertView: alert)
++            EXAlert.showAlert(alertView: alert)
+         }
+         return view
+     }()
+@@ -219,7 +219,7 @@ class EXSwapPositionCell : UITableViewCell {
+ 
+ //            alert.configSigleAlert(title: "cp_extra_text135".ex_localized(), message: "cp_extra_text129".ex_localized())
+ 
+-            EXSAlert.showAlert(alertView: alert)
++            EXAlert.showAlert(alertView: alert)
+         }
+         return view
+     }()
+@@ -228,7 +228,7 @@ class EXSwapPositionCell : UITableViewCell {
+     lazy var horLineView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = UIColor.ThemeView.bgGap
+         return view
+     }()
+     
+@@ -236,7 +236,7 @@ class EXSwapPositionCell : UITableViewCell {
+     lazy var verLineView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = UIColor.ThemeView.bgGap
+         return view
+     }()
+     
+@@ -244,47 +244,47 @@ class EXSwapPositionCell : UITableViewCell {
+     lazy var verLineView2: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = UIColor.ThemeView.bgGap
+         return view
+     }()
+     
+     /// 调整保证金
+     lazy var adjustDepositButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_order_text16".ex_localized(), titleFont: UIFont.ThemeFont.SecondaryBold, titleColor: UIColor.exs_ThemeBtn.highlight)
++        let button = UIButton(buttonType: .custom, title: "cp_order_text16".ex_localized(), titleFont: UIFont.ThemeFont.SecondaryBold, titleColor: UIColor.ThemeBtn.highlight)
+         button.ext_SetAddTarget(self, #selector(clickAdjustDepositButton))
+         button.layer.borderWidth = 0.5
+         button.layer.cornerRadius = 4
+-        button.layer.borderColor = UIColor.exs_ThemeBtn.highlight.cgColor
++        button.layer.borderColor = UIColor.ThemeBtn.highlight.cgColor
+         return button
+     }()
+     
+     /// 止盈止损
+     lazy var stopProfitOrLossButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_overview_text12".ex_localized(), titleFont: UIFont.ThemeFont.SecondaryBold, titleColor: UIColor.exs_ThemeBtn.highlight)
++        let button = UIButton(buttonType: .custom, title: "cp_overview_text12".ex_localized(), titleFont: UIFont.ThemeFont.SecondaryBold, titleColor: UIColor.ThemeBtn.highlight)
+         button.ext_SetAddTarget(self, #selector(clickStopProfitOrLossButton))
+         button.layer.borderWidth = 0.5
+         button.layer.cornerRadius = 4
+ 
+-        button.layer.borderColor = UIColor.exs_ThemeBtn.highlight.cgColor
++        button.layer.borderColor = UIColor.ThemeBtn.highlight.cgColor
+         return button
+     }()
+     lazy var speedClosePositionBtn: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_order_text18".ex_localized(), titleFont: UIFont.ThemeFont.SecondaryBold, titleColor: UIColor.exs_ThemeBtn.highlight)
++        let button = UIButton(buttonType: .custom, title: "cp_order_text18".ex_localized(), titleFont: UIFont.ThemeFont.SecondaryBold, titleColor: UIColor.ThemeBtn.highlight)
+         button.ext_UseAutoLayout()
+         button.ext_SetAddTarget(self, #selector(clickSpeedCloseBtn))
+         button.layer.cornerRadius = 4
+         button.layer.borderWidth = 0.5
+-        button.layer.borderColor = UIColor.exs_ThemeBtn.highlight.cgColor
++        button.layer.borderColor = UIColor.ThemeBtn.highlight.cgColor
+         return button
+     }()
+     /// 平仓
+     lazy var closeContractButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_overview_text2".ex_localized(), titleFont: UIFont.ThemeFont.SecondaryBold, titleColor: UIColor.exs_ThemeBtn.highlight)
++        let button = UIButton(buttonType: .custom, title: "cp_overview_text2".ex_localized(), titleFont: UIFont.ThemeFont.SecondaryBold, titleColor: UIColor.ThemeBtn.highlight)
+         button.ext_UseAutoLayout()
+         button.ext_SetAddTarget(self, #selector(clickCloseContractButton))
+         button.layer.cornerRadius = 4
+         button.layer.borderWidth = 0.5
+-        button.layer.borderColor = UIColor.exs_ThemeBtn.highlight.cgColor
++        button.layer.borderColor = UIColor.ThemeBtn.highlight.cgColor
+         return button
+     }()
+     
+@@ -292,7 +292,7 @@ class EXSwapPositionCell : UITableViewCell {
+     lazy var bottomMarginView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeNav.bg
++        view.backgroundColor = UIColor.ThemeNav.bg
+         return view
+     }()
+     
+@@ -470,7 +470,7 @@ extension EXSwapPositionCell {
+         sheet.positionModel = pm
+         sheet.clickAddButton()
+         sheet.transferBtn.rx.tap.subscribe { (_) in
+-            EXSAlert.dismiss()
++            EXAlert.dismiss()
+             let coin = self.cachesModel?.ex_contractInfo?.margin_coin ?? ""
+             if let vc = self.superview?.viewContainingController {
+                 
+@@ -479,12 +479,12 @@ extension EXSwapPositionCell {
+         }.disposed(by: self.exs_disposeBag)
+ 
+         sheet.confimModelCallBack = {
+-            EXSAlert.dismissEndDelay {
+-                EXSAlert.showSuccess(msg:  "cp_content_text24".ex_localized())
++            EXAlert.dismissEnd {
++                EXAlert.showSuccess(msg:  "cp_content_text24".ex_localized())
+             }
+             self.needReloadCellBlock?()
+         }
+-        EXSAlert.showSheet(sheetView: sheet)
++        EXAlert.showSheet(sheetView: sheet)
+ 
+ //        let adjustVc = EXChangeMarginAmountVc()
+ //        adjustVc.updatePositionModel(self.positionModel!)
+@@ -527,9 +527,9 @@ extension EXSwapPositionCell {
+                 way = .buy_CloseShort
+             }
+             networkApi.rx.request(.speedCloseOrder(contractId: pm.instrument_id, open:"CLOSE" , side: way.parmDescForSideWay(), positionType: pm.positionType)).exs_MJObjectMap(EXSVoidModel.self).subscribe { (_) in
+-                EXSAlert.dismissEndDelay {
++                EXAlert.dismissEnd(complete: {
+                     EXAlert.showSuccess(msg: "cp_extra_text109".ex_localized())
+-                }
++                })
+                 self.needReloadCellBlock?()
+                
+                 
+@@ -537,7 +537,7 @@ extension EXSwapPositionCell {
+               
+             }.disposed(by: self.exs_disposeBag)
+         }
+-        EXSAlert.showSheet(sheetView: sheet)
++        EXAlert.showSheet(sheetView: sheet)
+         EXTracking.shared.track(event: .swapPositionMarketPrice, info: [:])
+     }
+     /// 点击平仓
+@@ -557,7 +557,7 @@ extension EXSwapPositionCell {
+ //        }
+     
+         let sheet = EXSClosePositionSheet(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: 400))
+-        sheet.backgroundColor = UIColor.exs_ThemeView.bg
++        sheet.backgroundColor = UIColor.ThemeView.bg
+         sheet.positionM = pm
+         sheet.dealTypeLabel.text = self.dealTypeLabel.text
+         sheet.dealTypeLabel.textColor = self.dealTypeLabel.textColor
+@@ -572,7 +572,7 @@ extension EXSwapPositionCell {
+             guard let mySelf = self else { return }
+             mySelf.handleCloseOrder(price: price,priceType: priceType, volume: position)
+         }
+-        EXSAlert.showSheet(sheetView: sheet)
++        EXAlert.showSheet(sheetView: sheet)
+         EXTracking.shared.track(event: .swapPositionClose, info: [:])
+     }
+     
+@@ -581,14 +581,14 @@ extension EXSwapPositionCell {
+         
+         let attributes: [NSAttributedString.Key: Any] = [
+             .font: UIFont.ThemeFont.BodyRegular,
+-            .foregroundColor: UIColor.exs_ThemeLabel.colorMedium,
++            .foregroundColor: UIColor.ThemeLabel.colorMedium,
+         ]
+         let attr = NSMutableAttributedString.init(string: message, attributes: attributes)
+         let nsString = NSString(string: message)
+         let priceR = nsString.range(of: price)
+         let qtyR = nsString.range(of: qty)
+-        attr.addAttribute(.foregroundColor, value: UIColor.exs_ThemeState.warning, range:priceR)
+-        attr.addAttribute(.foregroundColor, value: UIColor.exs_ThemeState.warning, range:qtyR)
++        attr.addAttribute(.foregroundColor, value: UIColor.ThemeState.warning, range:priceR)
++        attr.addAttribute(.foregroundColor, value: UIColor.ThemeState.warning, range:qtyR)
+         return attr
+     }
+     
+@@ -597,12 +597,12 @@ extension EXSwapPositionCell {
+ 
+         let attributes: [NSAttributedString.Key: Any] = [
+             .font: UIFont.ThemeFont.BodyRegular,
+-            .foregroundColor: UIColor.exs_ThemeLabel.colorMedium,
++            .foregroundColor: UIColor.ThemeLabel.colorMedium,
+         ]
+         let attr = NSMutableAttributedString.init(string: message, attributes: attributes)
+         let nsString = NSString(string: message)
+         let qtyR = nsString.range(of: qty)
+-        attr.addAttribute(.foregroundColor, value: UIColor.exs_ThemeState.warning, range:qtyR)
++        attr.addAttribute(.foregroundColor, value: UIColor.ThemeState.warning, range:qtyR)
+         return attr
+     }
+     
+@@ -660,10 +660,10 @@ extension EXSwapPositionCell {
+     
+     @objc func saveImg(image:UIImage,didFinishSavingWithError error:NSError?,contextInfo:AnyObject) {
+         if error != nil{
+-            EXSAlert.showFail(msg: "common_tip_saveImgFail".ex_localized())
++            EXAlert.showFail(msg: "common_tip_saveImgFail".ex_localized())
+             return
+         }
+-        EXSAlert.showSuccess(msg: "common_tip_saveImgSuccess".ex_localized())
++        EXAlert.showSuccess(msg: "common_tip_saveImgSuccess".ex_localized())
+     }
+ 
+ }
+@@ -680,11 +680,11 @@ extension EXSwapPositionCell {
+     
+     func handleCloseOrder(price:String,priceType:EXSwapMarketOrderPriceType = .limitPrice,volume:String) {
+         if priceType == .limitPrice, price.lessThanOrEqual(BTZERO) {
+-            EXSAlert.showFail(msg:  "cp_extra_text181".ex_localized())
++            EXAlert.showFail(msg:  "cp_extra_text181".ex_localized())
+             return
+         }
+         if volume.lessThanOrEqual(BTZERO) {
+-            EXSAlert.showFail(msg:  "cp_extra_text182".ex_localized())
++            EXAlert.showFail(msg:  "cp_extra_text182".ex_localized())
+             return
+         }
+         var way : BTContractOrderWay
+@@ -714,7 +714,7 @@ extension EXSwapPositionCell {
+                 
+                 self?.submit(orderModel: orderModel)
+             }
+-            EXSAlert.showAlert(alertView: alert)
++            EXAlert.showAlert(alertView: alert)
+         }else {
+             
+             submit(orderModel: orderModel)
+@@ -722,9 +722,9 @@ extension EXSwapPositionCell {
+     }
+     func submit(orderModel:EXContractOrderModel) {
+             EXContractNetwork.creatOrder(order: orderModel) {
+-                EXSAlert.dismissEndDelay {
++                EXAlert.dismissEnd(complete: {
+                     EXAlert.showSuccess(msg: "cp_extra_text109".ex_localized())
+-                }
++                }) 
+                 self.needReloadCellBlock?()
+                    
+             } failure: { (error) in

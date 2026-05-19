@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@drawable/bg_item_center_dialog"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/update" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="@string/app_name"
+                style="@style/textstyle_dm_16_color1" />
+
+            <com.yjkj.chainup.wedegit.MaxHeightScrollView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:max_height="100dp"
+                android:scrollbarThumbVertical="@drawable/scrollbar"
+                android:layout_marginTop="@dimen/dp_16">
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:lineSpacingExtra="8dp"
+                    tools:text="1.首页添加币对推荐功能\n2.首页添加币对推荐功能对推荐功能\n3.首页添加币对推荐功能\n3.首页添加币对推荐功能\n3.首页添加币对推荐功能"
+                    style="@style/textstyle_dm_14_color2" />
+
+            </com.yjkj.chainup.wedegit.MaxHeightScrollView>
+
+            <LinearLayout
+                android:id="@+id/ll_ctrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_update_ctrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="visible">
+
+
+                    <com.chainup.kit.views.KKButtonKit
+                        android:id="@+id/btn_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_44"
+                        app:kk_buttonText="@string/update_now" />
+                    <com.chainup.kit.views.KKButtonKit
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_below="@id/btn_confirm"
+                        app:kk_buttonStyle="cancel"
+                        android:layout_marginTop="@dimen/dp_8"
+                        app:kk_buttonText="cancel" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_download_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_update_downloading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/update_downloading"
+                            style="@style/textstyle_dm_14_color1"/>
+
+                        <TextView
+                            android:id="@+id/tv_progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0%"
+                            android:layout_alignParentRight="true"
+                            style="@style/textstyle_dm_14_color2"/>
+                    </RelativeLayout>
+
+                    <ProgressBar
+                        android:id="@+id/pb_progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginBottom="8dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/update_progress_bg" />
+                    <com.chainup.kit.views.KKButtonKit
+                        android:id="@+id/btn_cancel_download"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_below="@id/btn_confirm"
+                        app:kk_buttonStyle="cancel"
+                        android:layout_marginTop="@dimen/dp_8"
+                        app:kk_buttonText="@string/cancel" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

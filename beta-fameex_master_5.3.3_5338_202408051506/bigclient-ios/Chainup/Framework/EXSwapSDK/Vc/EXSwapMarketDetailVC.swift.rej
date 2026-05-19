@@ -1,0 +1,19 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSwapMarketDetailVC.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSwapMarketDetailVC.swift	(rejected hunks)
+@@ -130,7 +130,7 @@ class EXCoinMapEntity:CoinMapEntity {
+         super.viewDidLoad()
+         handlekLineWs()
+         handleNotifi()
+-        self.view.backgroundColor = UIColor.exs_ThemeView.bg
++        self.view.backgroundColor = UIColor.ThemeView.bg
+ 
+         self.initNavigation()
+ 
+@@ -588,7 +588,7 @@ extension EXSwapMarketDetailVC: UITableViewDelegate, UITableViewDataSource {
+                     cell.setCell(time: "--",
+                                  volume: "--",
+                                  price: "--",
+-                                 priceTextColor: UIColor.exs_ThemeLabel.colorMedium)
++                                 priceTextColor: UIColor.ThemeLabel.colorMedium)
+                 }
+                 return cell
+             }

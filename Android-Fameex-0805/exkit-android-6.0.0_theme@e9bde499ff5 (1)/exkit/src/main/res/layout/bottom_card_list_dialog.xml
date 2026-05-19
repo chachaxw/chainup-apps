@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/public_bg_dialog_topcorner12"
+    android:minHeight="@dimen/dp_100"
+    android:paddingHorizontal="@dimen/dp_16"
+    android:layout_gravity="bottom">
+    <View
+        android:id="@+id/v_topLine"
+        android:layout_height="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        />
+    <include
+        android:id="@+id/kk_ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/public_dialog_header_layout"
+        android:layout_below="@id/v_topLine"
+        />
+
+    <com.chainup.kit.views.base.BaseMaxHeightRecyclerViewKit
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:kk_maxHeight="500dp"
+        android:layout_below="@id/kk_ll_header"
+        />
+</RelativeLayout>

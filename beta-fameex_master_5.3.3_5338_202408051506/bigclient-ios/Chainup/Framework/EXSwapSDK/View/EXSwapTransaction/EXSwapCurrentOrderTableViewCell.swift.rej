@@ -1,0 +1,82 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSwapCurrentOrderTableViewCell.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSwapCurrentOrderTableViewCell.swift	(rejected hunks)
+@@ -43,7 +43,7 @@ class EXSwapCurrentOrderTableViewCell: UITableViewCell {
+ //        view.ext_UseAutoLayout()
+ //        view.axis = .vertical
+ //        view.layoutIfNeeded()
+-//        view.backgroundColor = UIColor.exs_ThemeView.bg
++//        view.backgroundColor = UIColor.ThemeView.bg
+ //        return view
+ //    }()
+     
+@@ -55,30 +55,30 @@ class EXSwapCurrentOrderTableViewCell: UITableViewCell {
+     
+     /// 合约名称
+     lazy var nameLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorBlack, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     /// 创建时间
+     lazy var timeLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     /// 合约类型
+     lazy var contractTypeLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+-        label.backgroundColor = UIColor.exs_ThemeNav.bg
++        label.backgroundColor = UIColor.ThemeNav.bg
+         label.layer.cornerRadius = 2
+         label.layer.masksToBounds = true
+         return label
+     }()
+     /// 取消按钮
+     lazy var cancelButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_order_text68".ex_localized(), titleFont: UIFont.ThemeFont.BodyBold, titleColor: UIColor.exs_ThemeBtn.highlight)
+-        button.backgroundColor = UIColor.exs_ThemeNav.bg
++        let button = UIButton(buttonType: .custom, title: "cp_order_text68".ex_localized(), titleFont: UIFont.ThemeFont.BodyBold, titleColor: UIColor.ThemeBtn.highlight)
++        button.backgroundColor = UIColor.ThemeNav.bg
+         button.layer.cornerRadius = 1.5
+         button.ext_UseAutoLayout()
+         button.ext_SetAddTarget(self, #selector(clickCancelButton))
+@@ -88,7 +88,7 @@ class EXSwapCurrentOrderTableViewCell: UITableViewCell {
+     /// 历史委托 - 成交类型(已成交/未成交/部分成交)
+     lazy var dealTypeView: UIView = {
+         let view = UIView()
+-        let label = UILabel(text: "cp_order_text60".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .right)
++        let label = UILabel(text: "cp_order_text60".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .right)
+         let imageView = UIImageView(image: UIImage.exs_themeImageNamed(imageName: "contract_enter"))
+         imageView.contentMode = .scaleAspectFit
+         view.exs_addSubViews([label, imageView])
+@@ -108,7 +108,7 @@ class EXSwapCurrentOrderTableViewCell: UITableViewCell {
+     /// 减仓明细，强平明细
+     lazy var detailView: UIControl = {
+         let detail = UIControl()
+-        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
+         let imageView = UIImageView(image: UIImage.exs_themeImageNamed(imageName: "coins_explain"))
+         imageView.contentMode = .scaleAspectFit
+         detail.exs_addSubViews([label, imageView])
+@@ -194,7 +194,7 @@ class EXSwapCurrentOrderTableViewCell: UITableViewCell {
+     lazy var horLineView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.seperator
++        view.backgroundColor = UIColor.ThemeView.seperator
+         return view
+     }()
+ 
+@@ -384,6 +384,6 @@ extension EXSwapCurrentOrderTableViewCell {
+         let tipsStr = ""
+         let alert = EXSNormalAlert()
+         alert.configSigleAlert(title: "cp_content_text14".ex_localized(), message: tipsStr)
+-        EXSAlert.showAlert(alertView: alert)
++        EXAlert.showAlert(alertView: alert)
+     }
+ }

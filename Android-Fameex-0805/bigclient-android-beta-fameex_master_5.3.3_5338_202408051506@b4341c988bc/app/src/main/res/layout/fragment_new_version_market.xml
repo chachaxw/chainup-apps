@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_14"
+    android:orientation="vertical">
+
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/stl_market_loop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_28"
+        android:visibility="visible"
+        style="@style/ToolbarType_bar_home_tab"
+        app:tl_indicator_color="@color/card_bg_color_2"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_market"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+
+</LinearLayout>

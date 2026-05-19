@@ -1,0 +1,30 @@
+diff a/Chainup/EXHomePage/view/recommend/EXHomeNominateCell.swift b/Chainup/EXHomePage/view/recommend/EXHomeNominateCell.swift	(rejected hunks)
+@@ -45,22 +46,21 @@ class EXHomeNominateCell: EXHomeBaseCell {
+     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+         super.init(style: style, reuseIdentifier: reuseIdentifier)
+         contentView.addSubViews([collectionV])
+-        contentView.addSubview(pageControl)
+-        pageControl.bindScroll(scroll: collectionV)
+-
++        //        contentView.addSubview(pageControl)
++        //        pageControl.bindScroll(scroll: collectionV)
++        
+     }
+     
+     
+     lazy var collectionCCSize : (CGFloat,CGFloat) = {
+-        let width = SCREEN_WIDTH / 3
++        let width = SCREEN_WIDTH / 3 - 16
+         if EXHomeViewModel.isUIStatusNormal() {
+-
+             if EXHomeViewModel.homepageStyle() == .momo{
+                 return (width,107)
+             }
+-            return (width,92)
++            return (width,86)
+         }else if EXHomeViewModel.status() == .two{
+-            return (width,92)
++            return (width,86)
+         }
+         return (0,0)
+     }()

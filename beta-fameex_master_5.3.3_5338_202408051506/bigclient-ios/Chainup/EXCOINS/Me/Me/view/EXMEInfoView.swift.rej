@@ -1,0 +1,22 @@
+diff a/Chainup/EXCOINS/Me/Me/view/EXMEInfoView.swift b/Chainup/EXCOINS/Me/Me/view/EXMEInfoView.swift	(rejected hunks)
+@@ -179,16 +179,16 @@ class AuthenticationView : UIView {
+         self.type = type
+         switch type {
+         case "0":
+-            self.extSetBorderWidth(1, color: UIColor.ThemeState.warning)
++            self.extSetBorderWidth(0.5, color: UIColor.ThemeState.warning)
+             self.label.textColor = UIColor.ThemeState.warning
+             setView("personal_underreview", name: LanguageTools.getString(key: "noun_login_pending"))
+         case "1":
+-            self.extSetBorderWidth(1, color: UIColor.ThemeLabel.colorHighlight)
++            self.extSetBorderWidth(0.5, color: UIColor.ThemeLabel.colorHighlight)
+             self.label.textColor = UIColor.ThemeLabel.colorHighlight
+             setView("personal_certified", name:UserInfoEntity.sharedInstance().getAuthLevelDesc())
+         case "2" , "3":
+-            self.extSetBorderWidth(1, color: UIColor.ThemeView.mySign)
+-            self.label.textColor = UIColor.ThemeView.mySign
++            self.extSetBorderWidth(0.5, color: UIColor.ThemeLabel.colorMedium)
++            self.label.textColor = UIColor.ThemeLabel.colorMedium
+             setView("personal_notcertified", name:  LanguageTools.getString(key: "personal_text_unverified"))
+         default:
+             setView("personal_notcertified", name: LanguageTools.getString(key: "personal_text_unverified"))

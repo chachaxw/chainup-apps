@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name="com.chainup.kit.app.KitApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChainupEx">
+        <activity
+            android:name=".GuideActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ChainupEx" />
+        <activity
+            android:name=".DropDownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TagActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SwitchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InputActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ItemViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TabLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TitleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BottomSheetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SegmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BtnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SkeletonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RefreshActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CheckBoxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiStateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TestActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

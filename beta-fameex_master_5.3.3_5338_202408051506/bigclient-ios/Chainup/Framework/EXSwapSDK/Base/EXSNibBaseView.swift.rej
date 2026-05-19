@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/EXSNibBaseView.swift b/Chainup/Framework/EXSwapSDK/Base/EXSNibBaseView.swift	(rejected hunks)
+@@ -24,7 +24,7 @@ class EXSNibBaseView: UIView {
+         
+         let name = String(describing:type(of:self))
+         nibView = UINib.init(nibName: name, bundle: nil).instantiate(withOwner: self, options: nil).first as! UIView
+-//        self.backgroundColor = UIColor.exs_ThemeView.bg 
++//        self.backgroundColor = UIColor.ThemeView.bg 
+ //        nibView.translatesAutoresizingMaskIntoConstraints = false
+         self .addSubview(nibView)
+         nibView.snp.makeConstraints { (make) in

@@ -1,0 +1,45 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSwapLimitOrderDetailView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSwapLimitOrderDetailView.swift	(rejected hunks)
+@@ -23,14 +23,14 @@ class EXSwapLimitOrderDetailView: UIView {
+     }()
+     /// 合约名称
+     lazy var nameLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     
+     /// 创建时间
+     lazy var timeLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+@@ -39,7 +39,7 @@ class EXSwapLimitOrderDetailView: UIView {
+         let view = UIStackView()
+         view.axis = .horizontal
+         
+-        let label = UILabel(text: "cp_order_text60".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .right)
++        let label = UILabel(text: "cp_order_text60".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .right)
+         let imgContainer = UIView()
+         
+         let imageView = UIImageView(image: UIImage.exs_themeImageNamed(imageName: "contract_enter"))
+@@ -61,7 +61,7 @@ class EXSwapLimitOrderDetailView: UIView {
+     /// 减仓明细，强平明细
+     lazy var detailView: UIControl = {
+         let detail = UIControl()
+-        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++        let label = UILabel(text: "--", font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
+         let imageView = UIImageView(image: UIImage.exs_themeImageNamed(imageName: "coins_explain"))
+         imageView.contentMode = .scaleAspectFit
+         detail.exs_addSubViews([label, imageView])
+@@ -150,7 +150,7 @@ class EXSwapLimitOrderDetailView: UIView {
+     lazy var horLineView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.seperator
++        view.backgroundColor = UIColor.ThemeView.seperator
+         return view
+     }()
+     

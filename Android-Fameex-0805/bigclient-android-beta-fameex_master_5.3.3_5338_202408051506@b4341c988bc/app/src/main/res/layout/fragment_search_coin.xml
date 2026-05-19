@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+        <variable name="isblack" type="Boolean"/>
+    </data>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+        <com.chainup.kit.views.base.BaseEditTextKit
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_32"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            style="@style/etstyle_baseSearch"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp_16"
+            android:paddingVertical="0dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_46"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@color/dialog_bg_color"
+            android:drawableLeft="@{isblack ? @drawable/public_search_copy_night : @drawable/public_search_copy}"
+            android:drawablePadding="@dimen/dp_10"
+            android:hint="@string/assets_action_search"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/dp_10"
+            android:singleLine="true"
+            android:textColorHint="@{isblack ? @color/edit_hint_color_kline_night:@color/edit_hint_color}"
+            android:textColor="@{isblack ? @color/text_color_kline_night : @color/text_color }"
+            android:textSize="@dimen/sp_14"
+
+            />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_line_height"
+                android:visibility="gone"
+                android:background="@{isblack ? @color/line_color_kline_night : @color/line_color}"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_search_coin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</layout>
+

@@ -1,0 +1,27 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSBaseVC.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSBaseVC.swift	(rejected hunks)
+@@ -8,6 +8,7 @@
+ 
+ import UIKit
+ import RxSwift
++import EXKit
+ //
+ class EXSBaseVC: UIViewController {
+    
+@@ -28,7 +29,7 @@ class EXSBaseVC: UIViewController {
+     }
+     
+     override var preferredStatusBarStyle: UIStatusBarStyle{
+-        if EXSThemeManager.isNight() == true{
++        if EXThemeManager.isNight() == true{
+             return .lightContent
+         }else{
+             return .default
+@@ -41,7 +42,7 @@ class EXSBaseVC: UIViewController {
+     //
+     override func viewDidLoad() {
+         super.viewDidLoad()
+-        self.view.backgroundColor = UIColor.exs_ThemeView.bg 
++        self.view.backgroundColor = UIColor.ThemeView.bg 
+         addConstraint()
+         setDatas()
+ //        _ = LanguageBase.getSubjectAsobsever().subscribe({[weak self] (event) in

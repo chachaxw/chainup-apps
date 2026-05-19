@@ -1,0 +1,19 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSPositionShowAllView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSPositionShowAllView.swift	(rejected hunks)
+@@ -13,7 +13,7 @@ class EXSPositionShowAllView: UIView {
+     var closeAllPositionCallback: (() -> ())?
+     lazy var label:UILabel = {
+        let retV = UILabel()
+-        retV.textColor = UIColor.exs_ThemeLabel.colorMedium
++        retV.textColor = UIColor.ThemeLabel.colorMedium
+         retV.font = UIFont.ThemeFont.SecondaryMedium
+         retV.text = "cl_close_1".ex_localized()
+         return retV
+@@ -46,7 +46,7 @@ class EXSPositionShowAllView: UIView {
+     }
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+-        backgroundColor = UIColor.exs_ThemeView.bg
++        backgroundColor = UIColor.ThemeView.bg
+         exs_addSubViews([label,switchButton,allCloseButton])
+         label.snp.makeConstraints { (make) in
+             make.leading.equalTo(16)

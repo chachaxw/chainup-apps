@@ -1,0 +1,19 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSDirectionButton.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSDirectionButton.swift	(rejected hunks)
+@@ -103,14 +103,14 @@ class EXSDirectionButton: UIControl {
+     func config(){
+         self.alighment = .marginLeft
+         self.addSubview(container)
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
+-        container.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
++        container.backgroundColor = UIColor.ThemeView.bg
+         
+         container.addSubview(titleLabel)
+ //        container.addSubview(triangleView)
+         container.addSubview(imageView)
+         titleLabel.secondaryRegular()
+-        titleLabel.textColor = UIColor.exs_ThemeLabel.colorBlack
++        titleLabel.textColor = UIColor.ThemeLabel.colorLite
+         titleLabel.layoutIfNeeded()
+         
+         container.snp.remakeConstraints { (make) in

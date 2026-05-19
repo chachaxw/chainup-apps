@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card_color"
+    tools:context=".ui.fragment.CpContractParaFragment">
+
+    <LinearLayout
+        android:id="@+id/header_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52">
+
+            <TextView
+                android:id="@+id/tv_cp_contract_info_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/cp_contract_info_text5"
+                style="@style/textstyle_dm_16_color1"
+                />
+
+            <TextView
+                android:id="@+id/tv_contract_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="--"
+                tools:text="BCHUSDT永续"
+                style="@style/textstyle_dm_14_color2"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52">
+
+            <TextView
+                android:id="@+id/tv_cp_contract_info_text6"
+                style="@style/textstyle_dm_16_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/cp_contract_info_text6" />
+
+            <TextView
+                android:id="@+id/tv_contract_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="--"
+                tools:text="永续"
+                style="@style/textstyle_dm_14_color2"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52">
+
+            <TextView
+                android:id="@+id/tv_cp_contract_info_text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/cp_contract_info_text7"
+                style="@style/textstyle_dm_16_color1"
+                />
+
+            <TextView
+                android:id="@+id/tv_contract_subject_matter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="--"
+                tools:text="BTCUSDT指数"
+                style="@style/textstyle_dm_14_color2"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52">
+
+            <TextView
+                android:id="@+id/tv_cp_contract_info_text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/cp_contract_info_text8"
+
+                style="@style/textstyle_dm_16_color1"
+                />
+
+            <TextView
+                android:id="@+id/tv_margin_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="--"
+                tools:text="USDT"
+                style="@style/textstyle_dm_14_color2"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52">
+
+            <TextView
+                android:id="@+id/tv_cp_contract_info_text9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/cp_contract_info_text9"
+                style="@style/textstyle_dm_16_color1"
+                />
+
+            <TextView
+                android:id="@+id/tv_par_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="--"
+                tools:text="0.01 BTC"
+
+                style="@style/textstyle_dm_14_color2"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52">
+
+            <TextView
+                android:id="@+id/tv_cp_contract_info_text10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/cp_contract_info_text10"
+
+                style="@style/textstyle_dm_16_color1"
+                />
+
+            <TextView
+                android:id="@+id/tv_minimum_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="--"
+                tools:text="0.01 USDT"
+                style="@style/textstyle_dm_14_color2"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52">
+
+            <TextView
+                android:id="@+id/tv_cp_contract_info_text11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/cp_contract_info_text11"
+                style="@style/textstyle_dm_16_color1"
+                />
+
+            <TextView
+                android:id="@+id/tv_keep_margin_ratio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="--"
+                tools:text="1%"
+                style="@style/textstyle_dm_14_color2"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_cp_contract_info_text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/cp_contract_info_text12"
+                style="@style/textstyle_dm_16_color1"
+                />
+
+            <TextView
+                android:id="@+id/tv_settlement_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="--"
+                tools:text="1 Min"
+                style="@style/textstyle_dm_14_color2"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

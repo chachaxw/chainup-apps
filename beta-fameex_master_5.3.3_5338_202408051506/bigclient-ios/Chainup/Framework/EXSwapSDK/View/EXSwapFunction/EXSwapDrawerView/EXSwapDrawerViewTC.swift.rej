@@ -1,0 +1,37 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapDrawerView/EXSwapDrawerViewTC.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapDrawerView/EXSwapDrawerViewTC.swift	(rejected hunks)
+@@ -15,7 +15,7 @@ class EXSwapDrawerViewTC: UITableViewCell {
+     lazy var nameLabel : UILabel = {
+         let label = UILabel()
+         label.font = UIFont.ThemeFont.HeadBold
+-        label.textColor = UIColor.exs_ThemeLabel.colorLite
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.ext_UseAutoLayout()
+         label.layoutIfNeeded()
+         return label
+@@ -26,7 +26,7 @@ class EXSwapDrawerViewTC: UITableViewCell {
+         label.ext_UseAutoLayout()
+         label.font = UIFont.ThemeFont.BodyRegular
+         label.textAlignment = .right
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.text = "--"
+         return label
+     }()
+@@ -34,7 +34,7 @@ class EXSwapDrawerViewTC: UITableViewCell {
+     lazy var lineV : UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.seperator
++        view.backgroundColor = UIColor.ThemeView.seperator
+         return view
+     }()
+     
+@@ -43,7 +43,7 @@ class EXSwapDrawerViewTC: UITableViewCell {
+         label.ext_UseAutoLayout()
+         label.font = UIFont.ThemeFont.BodyRegular
+         label.textAlignment = .right
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.text = "--"
+         return label
+     }()

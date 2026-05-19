@@ -1,0 +1,25 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/Cell/EXSTwoByTwoContainer.swift b/Chainup/Framework/EXSwapSDK/Base/UI/Cell/EXSTwoByTwoContainer.swift	(rejected hunks)
+@@ -14,10 +14,10 @@ class EXSTwoByTwoItemModel:NSObject {
+     var rtitle:String = ""
+     var rcontent:String = ""
+     
+-    var ltitleColor:UIColor = UIColor.exs_ThemeLabel.colorDark
+-    var lcontentColor:UIColor = UIColor.exs_ThemeLabel.colorMedium
+-    var rtitleColor:UIColor = UIColor.exs_ThemeLabel.colorDark
+-    var rcontentColor:UIColor = UIColor.exs_ThemeLabel.colorMedium
++    var ltitleColor:UIColor = UIColor.ThemeLabel.colorDark
++    var lcontentColor:UIColor = UIColor.ThemeLabel.colorMedium
++    var rtitleColor:UIColor = UIColor.ThemeLabel.colorDark
++    var rcontentColor:UIColor = UIColor.ThemeLabel.colorMedium
+     var lcontentFont:UIFont = UIFont.ThemeFont.BodyBold
+     var rcontentFont:UIFont = UIFont.ThemeFont.BodyBold
+ 
+@@ -42,7 +42,7 @@ class EXSTwoByTwoContainer: UIView {
+             if addBlock == true {
+                 twoByTwoView.enableLeftRightTaps()
+             }
+-            twoByTwoView.backgroundColor = UIColor.exs_ThemeView.bg
++            twoByTwoView.backgroundColor = UIColor.ThemeView.bg
+             twoByTwoView.leftBottomLabel.font = item.lcontentFont
+             twoByTwoView.rightBottomLabel.font = item.rcontentFont
+ 

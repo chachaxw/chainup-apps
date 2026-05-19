@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card_color"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--设置-->
+        <com.yjkj.chainup.new_version.view.PersonalCenterView
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_card_color"
+            app:personalTitle="@string/personal_text_setting"
+            app:showRightIc="false"
+            app:showTitle="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_layout"
+            android:orientation="vertical">
+            <!--选择语言-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_change_language"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/bg_card_color"
+                app:isShowLeftIcon="false"
+                app:itemTitle="@string/customSetting_action_language"
+                app:showLine="false" />
+            <!--涨跌色-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_rise_and_fall_color"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/aiv_change_language"
+                android:background="@color/bg_card_color"
+                app:isShowLeftIcon="false"
+                app:itemTitle="@string/customSetting_action_kline"
+                app:showLine="false" />
+            <!--皮肤设置-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_skin_is_set"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/aiv_rise_and_fall_color"
+                android:background="@color/bg_card_color"
+                app:isShowLeftIcon="false"
+                app:itemTitle="@string/customSetting_action_theme"
+                app:showLine="false" />
+            <!--日志-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_log_upload"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/aiv_skin_is_set"
+                android:background="@color/bg_card_color"
+                app:StatusText="@string/customSetting_action_upload"
+                app:isShowLeftIcon="false"
+                app:itemTitle="@string/customSetting_action_title"
+                app:showLine="false" />
+
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_push"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/aiv_log_upload"
+                android:background="@color/bg_card_color"
+                app:isShowLeftIcon="false"
+                app:itemTitle="@string/customSetting_action_push"
+                app:showLine="false" />
+
+
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_change_contract"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/aiv_push"
+                android:background="@color/bg_card_color"
+                app:isShowLeftIcon="false"
+                app:itemTitle="@string/customSetting_action_changeContract"
+                app:showLine="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/line_color" />
+
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/aiv_change_contract"
+                android:background="@color/bg_card_color"
+                app:isShowLeftIcon="false"
+                app:StatusText="V5.0.0"
+                app:itemTitle="@string/personal_text_aboutus"
+                app:showLine="false" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.chainup.kit.views.KKCommonlyUsedButtonViewKit
+                    android:id="@+id/login_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_marginBottom="30dp"
+                    app:kk_textContent="@string/common_text_logout" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

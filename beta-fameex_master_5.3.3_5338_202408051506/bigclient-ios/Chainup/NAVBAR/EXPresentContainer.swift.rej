@@ -1,0 +1,17 @@
+diff a/Chainup/NAVBAR/EXPresentContainer.swift b/Chainup/NAVBAR/EXPresentContainer.swift	(rejected hunks)
+@@ -26,7 +32,15 @@ class EXPresentContainer: BaseVC {
+     
+     override func viewDidLoad() {
+         super.viewDidLoad()
++        self.view.addSubview(navi)
++        navi.snp.makeConstraints { make in
++            make.top.equalToSuperview()
++            make.leading.equalToSuperview()
++            make.trailing.equalToSuperview()
++            make.height.equalTo(NAV_SCREEN_HEIGHT)
++        }
+         if let vc = self.contentVC {
++            vc.view.frame = CGRect(x: 0, y: NAV_SCREEN_HEIGHT, width: SCREEN_WIDTH, height: CONTENTVIEW_HEIGHT)
+             self.addChild(vc)
+             view.addSubview(vc.view)
+             vc.didMove(toParent: self)

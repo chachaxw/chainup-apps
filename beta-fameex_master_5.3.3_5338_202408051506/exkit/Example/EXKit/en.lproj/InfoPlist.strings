@@ -1,0 +1,13 @@
+/* 
+  InfoPlist.strings
+  Chainup
+
+  Created by zewu wang on 2020/9/10.
+  Copyright © 2020年 zewu wang. All rights reserved.
+*/
+CFBundleDisplayName ="EXKit Example";
+NSCameraUsageDescription = "Use the camera to scan the QR code or take a photo for identity verification submission, please allow the camera permission";
+NSFaceIDUsageDescription = "Use FaceID for quick login, do you agree to open authorization?";
+NSPhotoLibraryUsageDescription = "Access to album photos will be used to upload QR codes or other photos, please allow album access permissions";
+NSPhotoLibraryAddUsageDescription = "Access to album photos will be used to upload QR codes or other photos, please allow album access permissions";
+

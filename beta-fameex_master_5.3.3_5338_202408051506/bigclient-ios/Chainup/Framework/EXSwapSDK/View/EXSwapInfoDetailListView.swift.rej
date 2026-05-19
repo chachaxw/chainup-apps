@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapInfoDetailListView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapInfoDetailListView.swift	(rejected hunks)
+@@ -159,7 +159,7 @@ extension EXSwapInfoDetailListView: UITableViewDelegate, UITableViewDataSource {
+                            right: "cp_overview_text33".ex_localized())
+         }
+         let headerView = UIView()
+-        headerView.backgroundColor = UIColor.exs_ThemeView.bg
++        headerView.backgroundColor = UIColor.ThemeView.bg
+ 
+         let label = UILabel()
+         label.font = UIFont.ThemeFont.H3Medium

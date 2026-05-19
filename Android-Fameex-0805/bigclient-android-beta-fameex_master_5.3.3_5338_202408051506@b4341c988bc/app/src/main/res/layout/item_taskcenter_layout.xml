@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_20"
+    android:background="@drawable/bg_taskcenter_shape"
+    android:padding="@dimen/dp_16">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:src="@mipmap/task_img_currency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/stv_reward_amount"
+        style="@style/textstyle_dr_12_color1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:text="4usdt"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/stv_reward_type"
+        app:layout_constraintTop_toTopOf="@+id/stv_reward_type"
+        app:stv_corner="@dimen/dp_2"
+        app:stv_solid="#010101" />
+
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/stv_reward_type"
+        style="@style/textstyle_dm_12_color1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:text="4usdt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:stv_corner="@dimen/dp_2"
+        app:stv_solid="@color/fill_3" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textstyle_dm_16_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:text="The first digital currency deposit ≥100 USDT" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            style="@style/textstyle_dr_12_color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:lineSpacingExtra="1.8dp"
+            android:text="Within 30 days after the new user registration, the first digital currency recharge or the first third-party purchase amount ≥ 500 USDT"
+            app:layout_constraintStart_toStartOf="@+id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@drawable/dotted_bottom_line"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_14"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/ll_content">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_8"
+            android:max="100"
+            android:progress="10"
+            android:progressDrawable="@drawable/progress_style_h_scene" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            style="@style/textstyle_dm_12_color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="20/100 USDT" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_content">
+
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_timeLabel"
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="Collection time:" />
+
+            <TextView
+                android:id="@+id/tv_time_value"
+                style="@style/textstyle_dm_16_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2022-08-08 18:00:00 (UTC+8)" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_13"
+            android:orientation="horizontal"
+
+
+            tools:layout_editor_absoluteX="16dp">
+
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/btn_action1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_40"
+                android:layout_weight="1" />
+
+            <!--        <com.chainup.kit.views.KKButtonKit-->
+            <!--            android:id="@+id/btn_action2"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="@dimen/dp_40"-->
+            <!--            android:layout_marginLeft="@dimen/dp_10"-->
+            <!--            android:layout_weight="1" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

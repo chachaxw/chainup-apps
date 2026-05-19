@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>xxxhdpi/assets_paymentmethod</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-592.000000, -252.000000)" fill-rule="nonzero">
+            <g id="分组-28" transform="translate(593.000000, 253.000000)">
+                <path d="M3.3,15.4 L3.3,3.55384615 C3.3,1.59111112 4.89111112,0 6.85384615,0 L15.1461538,0 C17.1088889,0 18.7,1.59111112 18.7,3.55384615 L18.7,15.4" id="路径" stroke="#A0A2AA" stroke-width="2"></path>
+                <rect id="矩形" fill="#2B61FF" x="7.7" y="5.5" width="6.6" height="2.23492063"></rect>
+                <rect id="矩形-copy-17" fill="#2B61FF" x="7.7" y="9.9" width="6.6" height="2.23492063"></rect>
+                <polyline id="路径-3" stroke="#A0A2AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="0 14.3 11.0478417 17.5058664 22 14.3"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

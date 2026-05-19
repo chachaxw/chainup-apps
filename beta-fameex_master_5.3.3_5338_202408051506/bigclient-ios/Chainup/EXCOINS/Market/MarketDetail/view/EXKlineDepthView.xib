@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXKlineDepthView" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="depthView" destination="Wyd-lA-a8T" id="vzV-yL-vxr"/>
+                <outlet property="leftLabel" destination="5hk-Vl-tGj" id="65e-JE-Mgx"/>
+                <outlet property="rightLabel" destination="FyQ-fG-yM2" id="cpd-GL-oKs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wyd-lA-a8T" customClass="CHDepthChartView" customModule="Chainup" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="8lD-Z1-0Au"/>
+                    </connections>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2YP-yN-4ng">
+                    <rect key="frame" x="151" y="19" width="73" height="14"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hk-Vl-tGj" customClass="DepthViewTitleLabel" customModule="Chainup" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="26.5" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyQ-fG-yM2" customClass="DepthViewTitleLabel" customModule="Chainup" customModuleProvider="target">
+                            <rect key="frame" x="46.5" y="0.0" width="26.5" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="Esx-na-jZA"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2YP-yN-4ng" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8Ui-B4-SZL"/>
+                <constraint firstItem="2YP-yN-4ng" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="19" id="MLp-wk-AGb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wyd-lA-a8T" secondAttribute="trailing" id="Om4-2z-EOu"/>
+                <constraint firstItem="Wyd-lA-a8T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TqC-Wc-g9G"/>
+                <constraint firstItem="Wyd-lA-a8T" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hfJ-1a-TDm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Wyd-lA-a8T" secondAttribute="bottom" id="ift-0G-zJI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="133.59999999999999" y="154.72263868065968"/>
+        </view>
+    </objects>
+</document>

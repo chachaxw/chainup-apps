@@ -1,0 +1,19 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/Button/EXSFlatBtn.swift b/Chainup/Framework/EXSwapSDK/Base/UI/Button/EXSFlatBtn.swift	(rejected hunks)
+@@ -10,7 +10,7 @@ import UIKit
+ 
+ class EXSFlatBtn: EXSButton {
+     
+-    var bgColor:UIColor = UIColor.exs_ThemeView.highlight {
++    var bgColor:UIColor = UIColor.ThemeView.highlight {
+         didSet {
+             self.color = bgColor
+             self.highlightedColor = bgColor.exs_overlayWhite()
+@@ -35,7 +35,7 @@ class EXSFlatBtn: EXSButton {
+     
+     fileprivate func configure() {
+         self.cornerRadius = 0
+-        self.bgColor = UIColor.exs_ThemeView.highlight
++        self.bgColor = UIColor.ThemeView.highlight
+         self.setTitleColor(UIColor.white, for: .normal)
+         adjustsImageWhenDisabled = false
+         adjustsImageWhenHighlighted = false

@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSEmptyDataSetable.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSEmptyDataSetable.swift	(rejected hunks)
+@@ -81,7 +81,7 @@
+ //        
+ //        attributeText.addAttributes([kCTFontAttributeName as NSAttributedString.Key: font], range: NSMakeRange(0, count))
+ //        
+-//        var color = UIColor.exs_ThemeLabel.colorMedium
++//        var color = UIColor.ThemeLabel.colorMedium
+ //        if let tipColor = scrollView.exemptyAttributeDict?[.tipColor] as? UIColor {
+ //            color = tipColor
+ //        }

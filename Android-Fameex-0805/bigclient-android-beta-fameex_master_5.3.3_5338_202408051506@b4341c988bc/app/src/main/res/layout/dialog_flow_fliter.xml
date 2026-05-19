@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_item_new_dialog">
+
+
+    <include
+        android:id="@+id/v_title"
+        layout="@layout/dialog_fliter_title" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/base_style_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_filter_time"
+                style="@style/textstyle_dm_12_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/charge_text_date" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_34"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_12"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pet_start_time"
+                        style="@style/textstyle_dm_14_bold_color1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_filter_coin"
+                        android:gravity="center"
+                        android:hint="@string/new_cash_flow_begin_time" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/tv_time_line"
+                    android:layout_width="@dimen/dp_12"
+                    android:layout_height="@dimen/dp_4"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:background="@color/btn_color_2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pet_end_time"
+                        style="@style/textstyle_dm_14_bold_color1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_filter_coin"
+                        android:gravity="center"
+                        android:hint="@string/new_cash_flow_end_time" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.chainup.kit.views.KKEditFormGroupKit
+                android:id="@+id/et_search"
+                style="@style/etstyle_baseFormGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_hint="@string/filter_Input_placeholder"
+                app:kk_title="@string/leverage_coinMap"
+                android:layout_marginTop="@dimen/dp_24" />
+
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/rl_lever_account_layout"-->
+<!--                style="@style/base_style_padd_16"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="@dimen/dp_12"-->
+<!--                android:background="@drawable/bg_asset_coin_type">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_symbol"-->
+<!--                    style="@style/textstyle_dm_14_color1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    tools:text="BTC/USDT" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ic_right"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginStart="@dimen/dp_6"-->
+<!--                    android:src="@mipmap/icon_right_arrow" />-->
+<!--            </RelativeLayout>-->
+
+            <TextView
+                android:id="@+id/item_filter_order_type"
+                style="@style/textstyle_dm_12_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:text="@string/transfer_type" />
+
+
+            <com.yjkj.chainup.wedegit.LabelsViewV2
+                android:id="@+id/labels_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:isIndicator="false"
+                app:labelBackground="@drawable/shape_tag_bg"
+                app:labelTextColor="@color/tag_bg_color"
+                app:labelTextPaddingBottom="4dp"
+                app:labelTextPaddingLeft="12dp"
+                app:labelTextPaddingRight="12dp"
+                app:labelTextPaddingTop="4dp"
+                app:labelTextSize="14sp"
+                app:lineMargin="12dp"
+                app:maxLines="-1"
+                android:layout_marginBottom="28dp"
+                app:selectType="MULTI"
+                app:wordMargin="12dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        style="@style/base_style_16"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_6"
+            android:layout_weight="1"
+            android:background="@drawable/kk_btn_2_bg"
+            android:gravity="center"
+            android:text="@string/common_text_btnCancel" />
+
+        <TextView
+            android:id="@+id/tv_confirm_btn"
+            style="@style/textstyle_dm_14_bold_color_while"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_option_selector"
+            android:gravity="center"
+            android:text="@string/common_text_btnConfirm" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

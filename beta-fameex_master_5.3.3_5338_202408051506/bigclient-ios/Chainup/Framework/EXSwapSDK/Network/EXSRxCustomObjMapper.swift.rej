@@ -1,0 +1,46 @@
+diff a/Chainup/Framework/EXSwapSDK/Network/EXSRxCustomObjMapper.swift b/Chainup/Framework/EXSwapSDK/Network/EXSRxCustomObjMapper.swift	(rejected hunks)
+@@ -58,21 +58,21 @@ public extension PrimitiveSequence where TraitType == SingleTrait, ElementType =
+ //                if let code = response.response?.statusCode{
+ //                    switch code{
+ //                    case NSURLErrorTimedOut , 408:
+-//                        EXSAlert.showFail(msg: EXLanguageTools.getString(key: "common_tip_networkTimeout"))
++//                        EXAlert.showFail(msg: EXLanguageTools.getString(key: "common_tip_networkTimeout"))
+ //                        throw EXSCustomNetworkError.ParseJSONError
+ //                    case 403:
+-//                        EXSAlert.showFail(msg: EXLanguageTools.getString(key: "common_tip_networkDisconnect") + "\n\(code)")
++//                        EXAlert.showFail(msg: EXLanguageTools.getString(key: "common_tip_networkDisconnect") + "\n\(code)")
+ //                        throw EXSCustomNetworkError.ParseJSONError
+ //                    case 404:
+-//                        EXSAlert.showFail(msg: EXLanguageTools.getString(key: "common_tip_networkDisconnect") + "\n\(code)")
++//                        EXAlert.showFail(msg: EXLanguageTools.getString(key: "common_tip_networkDisconnect") + "\n\(code)")
+ //                        throw EXSCustomNetworkError.ParseJSONError
+ //                    case NSURLErrorCannotConnectToHost , NSURLErrorNetworkConnectionLost , NSURLErrorNotConnectedToInternet:
+-//                        EXSAlert.showFail(msg: EXLanguageTools.getString(key: "common_tip_networkDisconnect") + "\n\(code)")
++//                        EXAlert.showFail(msg: EXLanguageTools.getString(key: "common_tip_networkDisconnect") + "\n\(code)")
+ //                        throw EXSCustomNetworkError.ParseJSONError
+ //                    default:
+ //
+ //                        if let code = response.response?.statusCode , code >= 500 ,code < 600{
+-//                            EXSAlert.showFail(msg: EXLanguageTools.getString(key: "common_tip_networkDisconnect") + "\n\(code)")
++//                            EXAlert.showFail(msg: EXLanguageTools.getString(key: "common_tip_networkDisconnect") + "\n\(code)")
+ //                            throw EXSCustomNetworkError.ParseJSONError
+ //                        }
+ //                    }
+@@ -131,7 +131,7 @@ public extension PrimitiveSequence where TraitType == SingleTrait, ElementType =
+                     let msg = json["msg"] as? String ?? ""
+                     let alert = EXSNormalAlert()
+                     alert.configSigleAlert(title: "cp_extra_text27".ex_localized(), message: msg)
+-                    EXSAlert.showAlert(alertView: alert)
++                    EXAlert.showAlert(alertView: alert)
+                     throw EXSCustomNetworkError.ExpireTokenError
+                 }else if strCode == "10002" || strCode == "10021" || strCode == "3" {//3是合约
+ 
+@@ -148,7 +148,7 @@ public extension PrimitiveSequence where TraitType == SingleTrait, ElementType =
+                     if let code = codeInt,let msg = json["msg"] as? String {
+                         let error = NSError(domain: "CustomNetworkError", code: code, userInfo:  [NSLocalizedDescriptionKey: msg])
+                         if shouldHandleErr {
+-                            EXSAlert.showFail(msg: error.localizedDescription )
++                            EXAlert.showFail(msg: error.localizedDescription )
+                         }
+                         throw error
+                     }else {

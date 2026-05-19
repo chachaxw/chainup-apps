@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="EXMarketDetailRecordCell" customModule="Chainup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygL-z5-bbj">
+                        <rect key="frame" x="15" y="10.5" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorDark"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AMX-Vm-qYs">
+                        <rect key="frame" x="144.5" y="10.5" width="31" height="15"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImG-UE-bCC">
+                                <rect key="frame" x="0.0" y="0.0" width="31" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorDark"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ImG-UE-bCC" firstAttribute="top" secondItem="AMX-Vm-qYs" secondAttribute="top" id="JWd-j2-vS9"/>
+                            <constraint firstAttribute="trailing" secondItem="ImG-UE-bCC" secondAttribute="trailing" id="Pji-tw-kMZ"/>
+                            <constraint firstItem="ImG-UE-bCC" firstAttribute="leading" secondItem="AMX-Vm-qYs" secondAttribute="leading" id="Pro-6Y-Y8y"/>
+                            <constraint firstAttribute="bottom" secondItem="ImG-UE-bCC" secondAttribute="bottom" id="pHZ-9S-ymp"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xew-A9-KT0">
+                        <rect key="frame" x="274" y="11" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorDark"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xew-A9-KT0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="W9p-IC-7d3"/>
+                    <constraint firstItem="ygL-z5-bbj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bOi-JA-APD"/>
+                    <constraint firstItem="AMX-Vm-qYs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fqs-4f-3Ne"/>
+                    <constraint firstItem="AMX-Vm-qYs" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="m9I-U6-mvv"/>
+                    <constraint firstAttribute="trailing" secondItem="xew-A9-KT0" secondAttribute="trailing" constant="15" id="xu2-Gt-mS3"/>
+                    <constraint firstItem="ygL-z5-bbj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ycx-ah-CgV"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="leftLabel" destination="ygL-z5-bbj" id="sHn-JC-ZQh"/>
+                <outlet property="middleLabel" destination="ImG-UE-bCC" id="iqt-qp-Off"/>
+                <outlet property="rightLabel" destination="xew-A9-KT0" id="dSN-hl-po3"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

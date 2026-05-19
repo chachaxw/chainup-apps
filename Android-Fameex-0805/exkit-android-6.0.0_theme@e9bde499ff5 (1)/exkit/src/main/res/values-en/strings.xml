@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kk_string_load_retry">Refresh</string>
+    <string name="kk_string_net_error_message">Loading failed, please check the network or refresh and try again</string>
+    <string name="kk_string_empty_data_message">No Records</string>
+    <string name="kk_guide_3">I see</string>
+    <string name="kk_common_text_btnCancel">Cancel</string>
+    <string name="kk_common_text_btnConfirm">Confirm</string>
+</resources>

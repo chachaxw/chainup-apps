@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/floatPopView"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:visibility="visible"
+        android:gravity="center"
+        android:paddingVertical="@dimen/dp_3"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/dp_5"
+        style="@style/textstyle_dr_10_color2"
+        app:stv_corner="@dimen/dp_4"
+        app:stv_solid="@color/main_color"
+        />
+</RelativeLayout>

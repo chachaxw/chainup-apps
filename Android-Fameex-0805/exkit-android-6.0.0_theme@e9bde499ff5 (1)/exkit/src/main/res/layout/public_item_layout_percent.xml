@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/rg_trade"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_1st"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="25%"
+            style="@style/textstyle_dr_12_color2"
+            tools:text="25%"
+            android:background="@drawable/bg_percent_selector"
+            />
+
+        <View
+            android:layout_width="@dimen/dp_4"
+            android:layout_height="match_parent"
+            android:background="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_2nd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="50%"
+            style="@style/textstyle_dr_12_color2"
+            android:background="@drawable/bg_percent_selector"
+            tools:text="25%" />
+
+        <View
+            android:layout_width="@dimen/dp_4"
+            android:layout_height="match_parent"
+            android:background="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_3rd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="75%"
+            style="@style/textstyle_dr_12_color2"
+            android:background="@drawable/bg_percent_selector"
+            tools:text="25%" />
+
+        <View
+            android:layout_width="@dimen/dp_4"
+            android:layout_height="match_parent"
+            android:background="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_4th"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="100%"
+            style="@style/textstyle_dr_12_color2"
+            android:background="@drawable/bg_percent_selector"
+            tools:text="25%" />
+
+    </RadioGroup>
+</RelativeLayout>

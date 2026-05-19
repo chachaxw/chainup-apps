@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EXAddressListCell" id="KGk-i7-Jjw" customClass="EXAddressListCell" customModule="Chainup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIc-hY-Z2a" customClass="EXAddressVerticalView" customModule="Chainup" customModuleProvider="target">
+                        <rect key="frame" x="45" y="15" width="260" height="66"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqV-a8-yVf">
+                        <rect key="frame" x="15" y="95.5" width="305" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="GTD-Iz-kuW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.seperator"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="assets_address_daytime" translatesAutoresizingMaskIntoConstraints="NO" id="Svq-RQ-gda">
+                        <rect key="frame" x="15" y="18" width="15" height="17"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="qqV-a8-yVf" secondAttribute="bottom" id="1SE-pE-7W0"/>
+                    <constraint firstAttribute="trailing" secondItem="WIc-hY-Z2a" secondAttribute="trailing" constant="15" id="2Wd-xg-34b"/>
+                    <constraint firstItem="Svq-RQ-gda" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="4pw-Ar-7VM"/>
+                    <constraint firstItem="WIc-hY-Z2a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="DsR-zi-3Aa"/>
+                    <constraint firstItem="qqV-a8-yVf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="XU2-Zu-m98"/>
+                    <constraint firstAttribute="bottom" secondItem="WIc-hY-Z2a" secondAttribute="bottom" constant="15" id="Z5C-gX-uuz"/>
+                    <constraint firstItem="WIc-hY-Z2a" firstAttribute="leading" secondItem="Svq-RQ-gda" secondAttribute="trailing" constant="15" id="dbI-oN-wXu"/>
+                    <constraint firstAttribute="trailing" secondItem="qqV-a8-yVf" secondAttribute="trailing" id="faP-gI-ljd"/>
+                    <constraint firstItem="Svq-RQ-gda" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="yCg-Qi-NaZ"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressIcon" destination="Svq-RQ-gda" id="8bx-T6-f7v"/>
+                <outlet property="verticalView" destination="WIc-hY-Z2a" id="qHL-vc-QPi"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="154.72263868065968"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="assets_address_daytime" width="15" height="17"/>
+    </resources>
+</document>

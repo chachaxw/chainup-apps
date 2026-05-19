@@ -1,0 +1,80 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSwapCalculatorVc.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSwapCalculatorVc.swift	(rejected hunks)
+@@ -103,7 +103,7 @@ class EXSwapCalculatorVc: EXSNavCustomVC {
+         style.titleFont = UIFont.ThemeFont.BodyMedium
+         style.indicatorWidth = 48
+         style.indicatorHeight = 2
+-        style.titleHighLightColor = UIColor.ThemeLabel.colorHighlight
++       // style.titleHighLightColor = UIColor.ThemeLabel.colorHighlight
+ 
+         view.style = style
+         
+@@ -119,7 +119,7 @@ class EXSwapCalculatorVc: EXSNavCustomVC {
+     
+     private lazy var carculateView: EXSwapCalculatorFootView = {
+         let view = EXSwapCalculatorFootView()
+-        view.backgroundColor = UIColor.exs_ThemeView.bg
++        view.backgroundColor = UIColor.ThemeView.bg
+         view.tipsLabel.text = "cp_extra_text27".ex_localized()
+         view.tipsContent.text = "cp_extra_text148".ex_localized()
+         view.carculateCallback = {[weak self] tag in
+@@ -243,11 +243,11 @@ class EXSwapCalculatorVc: EXSNavCustomVC {
+             let closePx = EXFormula.calculateOrderLiquidatePrice(order, assets: nil, contractInfo: contractModel)
+             if (order.side == .buy_OpenLong && closePx.greaterThan(order.px)) ||
+                 (order.side == .sell_OpenShort && closePx.lessThan(order.px)){
+-                EXSAlert.showFail(msg: "cp_extra_text38".ex_localized())
++                EXAlert.showFail(msg: "cp_extra_text38".ex_localized())
+                 return
+             }
+             if closePx.lessThanOrEqual(BTZERO) {
+-                EXSAlert.showFail(msg: "cp_extra_text39".ex_localized())
++                EXAlert.showFail(msg: "cp_extra_text39".ex_localized())
+                 return
+             }
+             alert.updataInfo(closePx, "", "", "",priceUnit)
+@@ -258,7 +258,7 @@ class EXSwapCalculatorVc: EXSNavCustomVC {
+             var closePrice = EXFormula.calculateClosePrice(order, ROI: roi.bigMul("0.01"), contractInfo: contractModel)
+             closePrice = closePrice.toPricePrecision(withContractID: contractModel?.instrument_id ?? 0)
+             if closePrice.lessThanOrEqual(BTZERO) {
+-                EXSAlert.showFail(msg: "cp_extra_text118".ex_localized())
++                EXAlert.showFail(msg: "cp_extra_text118".ex_localized())
+                 return
+             }
+             alert.updataInfo(closePrice, "", "", "", priceUnit)
+@@ -336,7 +336,7 @@ extension EXSwapCalculatorVc: UITableViewDelegate, UITableViewDataSource {
+     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+         if section == 0 {
+             let v = UIView()
+-            v.backgroundColor = UIColor.exs_ThemeNav.bg
++            v.backgroundColor = UIColor.ThemeNav.bg
+             return v
+         }
+         return nil
+@@ -406,7 +406,7 @@ extension EXSwapCalculatorVc: UITableViewDelegate, UITableViewDataSource {
+         sheet.actionCancelCallback =  {[weak self]() in
+             guard self != nil else{return}
+         }
+-        EXSAlert.showSheet(sheetView: sheet)
++        EXAlert.showSheet(sheetView: sheet)
+     }
+     
+     func fetchLadderInfo() {
+@@ -463,7 +463,7 @@ class EXSwapCalculatorFootView: UIView {
+     var carculateCallback : FooterCallback?
+     /// 温馨提示
+     lazy var tipsLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorDark, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorDark, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+@@ -493,8 +493,8 @@ class EXSwapCalculatorFootView: UIView {
+         btn.ext_UseAutoLayout()
+         btn.ext_SetAddTarget(self, #selector(clickStartCarculateBtn))
+         btn.setTitle("cp_calculator_text11".ex_localized(), for: .normal)
+-        btn.disabledColor = UIColor.exs_ThemeLabel.colorDark
+-        btn.color = UIColor.exs_ThemeBtn.highlight
++        btn.disabledColor = UIColor.ThemeLabel.colorDark
++        btn.color = UIColor.ThemeBtn.highlight
+         return btn
+     }()
+     

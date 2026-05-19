@@ -1,0 +1,51 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXPersentageSelectView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXPersentageSelectView.swift	(rejected hunks)
+@@ -53,7 +53,7 @@ class EXPersentageSelectView: EXSNibBaseView {
+ //    var clickBtnBlock:EXPersentageSelectViewBtnClickBlock?
+     override func onCreate() {
+         layer.borderWidth = 0.5
+-        layer.borderColor = UIColor.exs_ThemeView.border.cgColor
++        layer.borderColor = UIColor.ThemeView.border.cgColor
+         layer.cornerRadius = 2
+         for (index,btn) in steps.enumerated() {
+             if index > 0 {
+@@ -63,7 +63,7 @@ class EXPersentageSelectView: EXSNibBaseView {
+                 path.addLine(to:CGPoint(x:0, y:30))
+                 path.lineWidth = 0.5
+                 layer.path = path.cgPath
+-                layer.strokeColor = UIColor.exs_ThemeView.border.cgColor
++                layer.strokeColor = UIColor.ThemeView.border.cgColor
+                 btn.layer.addSublayer(layer)
+             }
+         }
+@@ -74,7 +74,7 @@ class EXPersentageSelectView: EXSNibBaseView {
+             btn.backgroundColor = UIColor.clear
+             btn.layer.cornerRadius = 2
+             btn.layer.masksToBounds = true
+-            btn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++            btn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         }
+         selectIdx = -1
+         
+@@ -93,11 +93,11 @@ class EXPersentageSelectView: EXSNibBaseView {
+         selectIdx = sender.tag
+         for btn in steps {
+             if btn == sender {
+-                btn.backgroundColor = UIColor.exs_ThemeLabel.colorHighlight.withAlphaComponent(0.15)
+-                btn.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .normal)
++                btn.backgroundColor = UIColor.ThemeLabel.colorHighlight.withAlphaComponent(0.15)
++                btn.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .normal)
+             }else {
+                 btn.backgroundColor = UIColor.clear
+-                btn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++                btn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+             }
+         }
+     }
+@@ -150,6 +150,6 @@ class EXPersentageSelectView: EXSNibBaseView {
+     }
+     
+     func setBorderColor(_ layer:CAShapeLayer){
+-        layer.strokeColor = UIColor.exs_ThemeView.border.cgColor
++        layer.strokeColor = UIColor.ThemeView.border.cgColor
+     }
+ }

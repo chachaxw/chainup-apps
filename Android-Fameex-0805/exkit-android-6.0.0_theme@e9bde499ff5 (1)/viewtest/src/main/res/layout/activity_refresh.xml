@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RefreshActivity"
+    android:orientation="vertical">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="刷新" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@color/line_color"
+            android:layout_height="0.5dp"/>
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_layout"
+            android:layout_width="match_parent"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_test_rv"
+            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

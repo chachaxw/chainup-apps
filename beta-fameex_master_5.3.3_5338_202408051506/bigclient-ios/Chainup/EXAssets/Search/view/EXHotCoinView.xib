@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXHotCoinView" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="stackView" destination="YPD-Up-Aj1" id="Fis-bl-LG5"/>
+                <outlet property="titleLabel" destination="MMg-dE-EGq" id="gIY-3g-doY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="526"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="assets_popular_crypto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMg-dE-EGq" customClass="CMLocalizedLabel" customModule="EXKit">
+                    <rect key="frame" x="15" y="15" width="148" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="3mi-Bh-34O"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorMedium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YPD-Up-Aj1">
+                    <rect key="frame" x="15" y="51" width="410" height="455"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YPD-Up-Aj1" secondAttribute="trailing" constant="15" id="326-uv-xbU"/>
+                <constraint firstItem="YPD-Up-Aj1" firstAttribute="top" secondItem="MMg-dE-EGq" secondAttribute="bottom" constant="15" id="BdE-sv-G6B"/>
+                <constraint firstAttribute="bottom" secondItem="YPD-Up-Aj1" secondAttribute="bottom" constant="20" id="FmE-oB-u6z"/>
+                <constraint firstItem="MMg-dE-EGq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="acd-I7-toX"/>
+                <constraint firstItem="MMg-dE-EGq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="fLK-aI-j8C"/>
+                <constraint firstItem="YPD-Up-Aj1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="sjw-Ae-6XD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="82.608695652173921" y="-23.4375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

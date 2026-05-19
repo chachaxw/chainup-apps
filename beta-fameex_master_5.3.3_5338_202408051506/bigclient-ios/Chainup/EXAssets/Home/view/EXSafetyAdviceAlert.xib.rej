@@ -1,0 +1,21 @@
+diff a/Chainup/EXAssets/Home/view/EXSafetyAdviceAlert.xib b/Chainup/EXAssets/Home/view/EXSafetyAdviceAlert.xib	(rejected hunks)
+@@ -14,6 +14,8 @@
+                 <outlet property="contentLabel1" destination="8SF-0P-tK0" id="p5v-uC-Ocf"/>
+                 <outlet property="contentLabel2" destination="Pgf-pQ-ID1" id="fkF-T3-kxk"/>
+                 <outlet property="contentLabel3" destination="n9z-eR-npF" id="XoB-1R-ST8"/>
++                <outlet property="iconBg" destination="Q0O-OD-aC1" id="3A8-sS-Emb"/>
++                <outlet property="iconImg" destination="hak-8W-MJc" id="nse-nb-cbA"/>
+             </connections>
+         </placeholder>
+         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+@@ -26,6 +28,10 @@
+                     <subviews>
+                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="assets_safetyadvice_daytime" translatesAutoresizingMaskIntoConstraints="NO" id="hak-8W-MJc">
+                             <rect key="frame" x="263.5" y="13.5" width="199" height="129"/>
++                            <constraints>
++                                <constraint firstAttribute="height" constant="129" id="4OQ-nd-0CU"/>
++                                <constraint firstAttribute="width" constant="199" id="xCU-XU-RMe"/>
++                            </constraints>
+                             <userDefinedRuntimeAttributes>
+                                 <userDefinedRuntimeAttribute type="string" keyPath="themeIcon" value="assets_safetyadvice"/>
+                             </userDefinedRuntimeAttributes>

@@ -1,0 +1,10 @@
+diff a/Chainup/NAVBAR/NavCustomView.swift b/Chainup/NAVBAR/NavCustomView.swift	(rejected hunks)
+@@ -41,7 +41,7 @@ class NavCustomView: UIView {
+     var popBtn : UIButton = {
+         let btn = UIButton()
+         btn.extUseAutoLayout()
+-        btn.setImage(UIImage.themeImageNamed(imageName:"return"), for: .normal)
++        btn.setImage(UIImage.themeImageNamed(imageName:"public_return"), for: .normal)
+         btn.setEnlargeEdgeWithTop(10, left: 20, bottom: 10, right: 20)
+         return btn
+     }()

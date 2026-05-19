@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_bg_color_1"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.viewtest.TestActivity">
+    <com.chainup.kit.views.PublicHeaderKit
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:isShowLeftBtn="false"
+        app:title="ChainUp-Kit" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="下拉刷新"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_refresh_24"
+                app:qmui_topDividerHeight="0.5dp"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:qmui_topDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="全局Loading"
+                app:kk_item_value_text="点击显示"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_360_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="骨架屏"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_tablet_android_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="标签"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_api_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="Drop Down 下拉框"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_arrow_downward_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="按钮"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_smart_button_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="switch开关"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_edit_attributes_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="对话框"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_markunread_mailbox_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="导航栏"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_subtitles_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="选项卡"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_tab_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="个人中心-设置-itemView"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_architecture_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="输入框"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_power_input_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="底部弹出框"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_border_bottom_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="分段选择器"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_autofps_select_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="多选-单选器"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_check_circle_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="多状态页"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_check_circle_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+
+            <com.chainup.kit.views.KKCommonListItemView
+                android:id="@+id/kkItemViewItem0_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_title_text="引导"
+                app:kk_item_value_text="前往"
+                app:qmui_alpha_pressed="0.2"
+                app:kk_item_title_icon="@drawable/ic_baseline_check_circle_24"
+                app:qmui_bottomDividerHeight="0.5dp"
+                app:qmui_bottomDividerColor="@color/line_color"
+                app:kk_accessory_type="chevron"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试虚线"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@drawable/public_dotted_bottom_line"
+                />
+
+            <EditText
+                android:id="@+id/et_pattern_filter"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:hint="测试InputPatternFilter"
+                />
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;KKEditNumberKit-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.chainup.kit.views.KKEditNumberKit-->
+<!--                android:id="@+id/kitView"-->
+<!--                style="@style/etstyle_baseEtNumber" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;BaseEditTextKit-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.chainup.kit.views.base.BaseEditTextKit-->
+<!--                android:id="@+id/baseview2"-->
+<!--                style="@style/BaseEditTextKitStyle"-->
+<!--                android:layout_marginTop="@dimen/dp_10"-->
+<!--                android:inputType="textPassword" />-->
+
+<!--            <com.chainup.kit.views.base.BaseEditTextKit-->
+<!--                android:id="@+id/baseview3"-->
+<!--                style="@style/BaseEditTextKitStyle"-->
+<!--                android:layout_marginTop="@dimen/dp_10"-->
+<!--                android:inputType="text" />-->
+
+<!--            <com.chainup.kit.views.base.BaseEditTextKit-->
+<!--                android:id="@+id/baseview4"-->
+<!--                style="@style/BaseEditTextKitStyle"-->
+<!--                android:layout_marginTop="@dimen/dp_10"-->
+<!--                android:inputType="text" />-->
+<!--            <com.chainup.kit.views.base.BaseEditTextKit-->
+<!--                android:id="@+id/baseview"-->
+<!--                style="@style/BaseEditTextKitStyle"-->
+<!--                android:layout_marginTop="@dimen/dp_10"-->
+<!--                android:inputType="numberPassword" />-->
+
+<!--            <com.chainup.kit.views.base.BaseEditTextKit-->
+<!--                android:id="@+id/searchView"-->
+<!--                style="@style/etstyle_baseSearch"-->
+<!--                android:layout_marginTop="@dimen/dp_10" />-->
+
+<!--            <com.chainup.kit.views.base.BaseEditTextKit-->
+<!--                android:id="@+id/searchView2"-->
+<!--                style="@style/etstyle_baseSearch"-->
+<!--                android:layout_marginTop="@dimen/dp_10"-->
+<!--                android:focusable="false"-->
+<!--                android:hint="只读可点击" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;KKEditFormGroupKit-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.chainup.kit.views.KKEditFormGroupKit-->
+<!--                style="@style/etstyle_baseFormGroup"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/dp_10" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;KKPercentKit-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.chainup.kit.views.KKPercentKit-->
+<!--                android:layout_width="192dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/dp_10" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;KKSelectRatioViewKit-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.chainup.kit.views.KKSelectRatioViewKit-->
+<!--                android:id="@+id/srv_view"-->
+<!--                android:layout_width="192dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/dp_10" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;IndicatorSeekBar-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.warkiz.widget.IndicatorSeekBar-->
+<!--                style="@style/IndicatorSeekBarStyle"-->
+<!--                android:layout_width="192dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/dp_10" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;KKEditFormGroupKit-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+
+<!--            <com.chainup.kit.views.KKEditFormGroupKit-->
+<!--                android:id="@+id/kfg_kit"-->
+<!--                style="@style/etstyle_baseFormGroup"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/dp_10"-->
+<!--                app:kk_isShowBtn="false"-->
+<!--                app:kk_isShowUnit="false" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;showBottomSheetList-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/kkbtn"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonText="风格-1 弹出bottomSheetDialog" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;KKCommonlyUsedButtonViewKit-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/lodingbtn"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonText="风格-1 点击loading" />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/enabledBtn"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonStyle="main"-->
+<!--                app:kk_buttonText="风格1-不可点击" />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/cancelBtn"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonStyle="cancel"-->
+<!--                app:kk_buttonText="取消" />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/cancelBtn2"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonText="风格-2" />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/cancelBtn3"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonStyle="green"-->
+<!--                app:kk_buttonText="风格-3" />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/cancelBtn4"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonStyle="red"-->
+<!--                app:kk_buttonText="风格-4"-->
+
+<!--                />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/cancelBtn4enabel"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonStyle="red"-->
+<!--                app:kk_buttonText="风格-4-不可点击"-->
+
+<!--                />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/textBtn5"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonStyle="text"-->
+<!--                app:kk_buttonText="风格-5-文字按钮"-->
+<!--                app:kk_buttonTextSize="@dimen/sp_16" />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/textBtn56"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonStyle="text"-->
+<!--                app:kk_buttonText="风格-5-文字按钮2"-->
+<!--                app:kk_buttonTextSize="@dimen/sp_14" />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/textBtn57"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonStyle="text"-->
+<!--                app:kk_buttonText="风格-5-文字按钮3"-->
+<!--                app:kk_buttonTextSize="@dimen/sp_12" />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonText="随便摆放" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;showCommonDialog-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/dialog_style1"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonText="点击弹窗 style-1"-->
+
+<!--                />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/dialog_style2"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonText="点击弹窗 style-2"-->
+
+<!--                />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/dialog_style3"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonText="点击弹窗 style-3"-->
+
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;ToastUtils.showToast&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/showtoast"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonStyle="cancel"-->
+<!--                app:kk_buttonText="Toast 轻提示" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;showGuide,showMultipleGuide&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/showGuide"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonStyle="cancel"-->
+<!--                app:kk_buttonText="显示引导guideComponent" />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/showGuide2"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonStyle="cancel"-->
+<!--                app:kk_buttonText="显示多个guideComponent" />-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;createMarketPop&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/showPopover"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:kk_buttonStyle="cancel"-->
+<!--                app:kk_buttonText="显示Popover" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;PublicHeaderKit&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.chainup.kit.views.PublicHeaderKit-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                app:title="Title"-->
+
+<!--                />-->
+
+<!--            <com.chainup.kit.views.PublicHeaderKit-->
+<!--                android:id="@+id/mHeaderKit"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                app:filterTitleVisible="true"-->
+<!--                app:title="Title"-->
+
+<!--                />-->
+
+<!--            <com.chainup.kit.views.PublicHeaderKit-->
+<!--                android:id="@+id/mHeaderKit2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                app:filterTitleVisible="true"-->
+<!--                app:isShowRightBtn="true"-->
+<!--                app:isShowSubRightBtn="true"-->
+<!--                app:title="Title" />-->
+
+<!--            <com.chainup.kit.views.PublicHeaderKit-->
+<!--                android:id="@+id/mHeaderKit3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                app:filterTitleVisible="true"-->
+<!--                app:isShowRightBtn="true"-->
+<!--                app:rightBtnText="Clear All"-->
+<!--                app:rightBtnTextColor="@color/main_color"-->
+<!--                app:rightBtnType="text"-->
+<!--                app:title="Title" />-->
+
+<!--            <com.chainup.kit.views.PublicHeaderKit-->
+<!--                android:id="@+id/mHeaderKit4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginBottom="@dimen/dp_10"-->
+<!--                app:filterTitleVisible="true"-->
+
+<!--                app:isShowRightBtn="true"-->
+
+<!--                app:isShowSubRightBtn="true"-->
+<!--                app:isShowSubRightBtn2="true"-->
+<!--                app:rightBtnRes="@mipmap/contract_transfers"-->
+
+<!--                app:rightBtnType="icon"-->
+<!--                app:subRightBtnRes="@mipmap/contract_transfers"-->
+<!--                app:subRightBtnRes2="@mipmap/contract_transfers"-->
+
+<!--                app:subRightBtnType="icon"-->
+<!--                app:subRightBtnType2="icon"-->
+<!--                app:title="Title"-->
+
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;showBottomCardSelectDialog&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/showBottomCardDialog"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginBottom="@dimen/dp_10"-->
+<!--                app:kk_buttonStyle="red"-->
+<!--                app:kk_buttonText="KKItemCardEntity.CARD_LAYOUT_TYPE_1" />-->
+
+<!--            <com.chainup.kit.views.KKButtonKit-->
+<!--                android:id="@+id/showBottomCardDialog2"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginBottom="@dimen/dp_10"-->
+<!--                app:kk_buttonStyle="red"-->
+<!--                app:kk_buttonText="KKItemCardEntity.CARD_LAYOUT_TYPE_2" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;SlidingTabLayout&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+
+<!--            <com.flyco.tablayout.SlidingTabLayout-->
+<!--                android:id="@+id/stl_tab"-->
+<!--                style="@style/public_slidingtab_layout_style"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginBottom="10dp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;CommonTabLayout&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.flyco.tablayout.CommonTabLayout-->
+<!--                android:id="@+id/stl_tab2"-->
+<!--                style="@style/public_commontab_bline_style"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="@dimen/dp_44"-->
+<!--                android:layout_marginBottom="10dp" />-->
+
+<!--            <com.chainup.kit.views.KKCommonTabKit-->
+<!--                android:id="@+id/tab_1"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_30"-->
+<!--                android:layout_marginBottom="@dimen/dp_20" />-->
+
+<!--            <com.chainup.kit.views.KKCommonTabKit-->
+<!--                android:id="@+id/tab_2"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_35"-->
+<!--                android:layout_marginBottom="@dimen/dp_20" />-->
+
+<!--            <com.chainup.kit.views.KKCommonTabKit-->
+<!--                android:id="@+id/tab_3"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="@dimen/dp_25"-->
+<!--                android:layout_marginBottom="@dimen/dp_20" />-->
+
+<!--            <com.chainup.kit.views.KKCommonTabKit-->
+<!--                android:id="@+id/tab_4"-->
+<!--                android:layout_width="172dp"-->
+<!--                android:layout_height="@dimen/dp_25"-->
+<!--                android:layout_marginBottom="@dimen/dp_20" />-->
+
+<!--            <com.chainup.kit.views.KKCommonTabKit-->
+<!--                android:id="@+id/tab_5"-->
+<!--                android:layout_width="138dp"-->
+<!--                android:layout_height="@dimen/dp_24"-->
+<!--                android:layout_marginBottom="@dimen/dp_20" />-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;KKPopupSelectKit&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+<!--                />-->
+<!--            <com.chainup.kit.views.KKPopupSelectKit-->
+<!--                android:id="@+id/mSelectView"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                />-->
+
+<!--            <com.chainup.kit.views.KKPopupSelectKit-->
+<!--                android:id="@+id/mSelectView2"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                />-->
+
+
+
+<!--            <CheckBox-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="click it"-->
+<!--                style="@style/OptionalCheck2Theme"-->
+<!--                />-->
+
+
+<!--            <RadioGroup-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                >-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/tes1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:button="@drawable/checkbox_style"-->
+<!--                    android:text="click it"-->
+<!--                    />-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/tes2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:button="@drawable/checkbox_style"-->
+<!--                    android:text="click it"-->
+<!--                    />-->
+<!--            </RadioGroup>-->
+
+
+<!--            <RadioGroup-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                >-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/www"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:button="@drawable/optional_checkbox_selected_selector"-->
+<!--                    android:text="click it"-->
+<!--                    />-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/www2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:button="@drawable/optional_checkbox_selected_selector"-->
+<!--                    android:text="click it"-->
+<!--                    />-->
+
+<!--            </RadioGroup>-->
+
+
+<!--            <com.chainup.kit.views.KKTradeTabBarKit-->
+<!--                android:layout_width="192dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                app:kk_tradeTabBar_text1="text1"-->
+<!--                app:kk_tradeTabBar_text2="text2"-->
+<!--                app:kk_tradeTabBar_selectColor1="@color/main_green"-->
+<!--                app:kk_tradeTabBar_selectColor2="@color/main_red"-->
+<!--                android:layout_marginBottom="100dp"-->
+<!--                />-->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

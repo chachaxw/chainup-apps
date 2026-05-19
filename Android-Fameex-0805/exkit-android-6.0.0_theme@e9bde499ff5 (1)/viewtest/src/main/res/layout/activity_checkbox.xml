@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SkeletonActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_header_kit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="单选" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@color/main_bg_color"
+        android:layout_height="match_parent">
+    <com.qmuiteam.qmui.layout.QMUILinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:qmui_topDividerColor="@color/line_color"
+        app:qmui_topDividerHeight="1dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这个注重看 button属性 的引用就可以了"
+            style="@style/textstyle_dm_14_color1"
+            />
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:text="单选-样式1"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="引用 @drawable/optional_checkbox_selected_selector"
+            style="@style/textstyle_dm_10_color1"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <RadioButton
+                android:id="@+id/www"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/optional_checkbox_selected_selector"
+                android:text="click it"
+                android:paddingLeft="@dimen/dp_4"
+                style="@style/textstyle_dm_12_color1"
+                />
+            <RadioButton
+                android:id="@+id/www2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/optional_checkbox_selected_selector"
+                android:text="click it"
+                android:paddingLeft="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_10"
+                style="@style/textstyle_dm_12_color1"
+                />
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="引用 @drawable/optional_checkbox_smail_style"
+            style="@style/textstyle_dm_10_color1"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <RadioButton
+                android:id="@+id/www4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/optional_checkbox_smail_style"
+                android:text="click it"
+                android:paddingLeft="@dimen/dp_4"
+                style="@style/textstyle_dm_12_color1"
+                />
+            <RadioButton
+                android:id="@+id/www5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/optional_checkbox_smail_style"
+                android:text="click it"
+                android:paddingLeft="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_10"
+                style="@style/textstyle_dm_12_color1"
+                />
+
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:text="单选-样式2"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="引用 @drawable/checkbox_style"
+            style="@style/textstyle_dm_10_color1"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/tes1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_style"
+                android:text="click it"
+                android:paddingLeft="@dimen/dp_4"
+                style="@style/textstyle_dm_12_color1"
+                />
+
+            <RadioButton
+                android:id="@+id/tes2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_style"
+                android:text="click it"
+                android:paddingLeft="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_10"
+                style="@style/textstyle_dm_12_color1"
+                />
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:text="复选框"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="引用 @drawable/optional_checkbox_2_style"
+            style="@style/textstyle_dm_10_color1"
+            />
+        <CheckBox
+            android:button="@drawable/optional_checkbox_2_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click it"
+            style="@style/textstyle_dm_12_color1"
+            android:paddingLeft="@dimen/dp_4"
+            />
+
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:text="多选"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="引用 @drawable/optional_checkbox_2_style"
+            style="@style/textstyle_dm_10_color1"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:button="@drawable/optional_checkbox_2_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="click it"
+                android:paddingLeft="@dimen/dp_4"
+                style="@style/textstyle_dm_12_color1"
+                />
+            <CheckBox
+                android:button="@drawable/optional_checkbox_2_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="click it"
+                android:paddingLeft="@dimen/dp_4"
+                android:layout_marginLeft="@dimen/dp_10"
+                style="@style/textstyle_dm_12_color1"
+                />
+        </LinearLayout>
+
+
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

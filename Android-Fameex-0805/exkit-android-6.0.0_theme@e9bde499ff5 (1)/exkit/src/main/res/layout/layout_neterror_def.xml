@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/iv_kk_exception"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/public_img_wifi"
+        />
+
+    <TextView
+        android:id="@+id/tv_kk_exception_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:paddingHorizontal="@dimen/dp_37"
+        android:text="@string/kk_string_net_error_message"
+        style="@style/textstyle_dm_14_color2"
+        android:gravity="center"
+        android:lineHeight="@dimen/dp_20"
+        />
+
+    <com.chainup.kit.views.KKButtonKit
+        android:id="@+id/kk_no_network_retry_btn"
+        android:layout_width="165dp"
+        android:layout_height="@dimen/dp_36"
+        android:layout_marginTop="@dimen/dp_16"
+        app:kk_buttonStyle="other"
+        app:kk_buttonText="@string/kk_string_load_retry"
+        />
+
+</LinearLayout>

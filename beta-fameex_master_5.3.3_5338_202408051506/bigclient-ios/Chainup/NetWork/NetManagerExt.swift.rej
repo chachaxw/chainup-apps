@@ -1,0 +1,10 @@
+diff a/Chainup/NetWork/NetManagerExt.swift b/Chainup/NetWork/NetManagerExt.swift	(rejected hunks)
+@@ -84,7 +84,7 @@ extension NetManager{
+         headParam["Mobile-Model-CU"] = deviceModel_CU
+         headParam["SysVersion-CU"] = deviceVersion
+         headParam["SysSDK-CU"] = deviceVersion
+-        headParam["Channel-CU"] = BasicParameter.getChannel()
++        headParam["Channel-CU"] = EXKitStanders.getChannel()
+         headParam["Mobile-Model-C"] = deviceModel_CU
+         headParam["Platform-CU"] = "ios"
+         headParam["UUID-CU"] = deviceId

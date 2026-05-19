@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cp_bg_item_new_dialog"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textstyle_dm_18_bold_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cp_order_text17"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_contract_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_title"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="LTC/USDT"
+            style="@style/textStyle_title_16"
+            />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/cp_overview_text56"
+            android:textColor="@color/normal_text_color"
+            android:textSize="@dimen/sp_14"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_contract_info"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="卖"
+            android:paddingHorizontal="@dimen/dp_6"
+            tools:textColor="@color/main_red"
+            app:stv_solid="@color/main_red_15"
+            app:stv_corner="@dimen/dp_2"
+            style="@style/textstyle_dm_12_color1" />
+
+
+        <TextView
+            android:id="@+id/tv_level_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/tv_contract_name"
+            style="@style/textstyle_dm_12_color1"
+            tools:text="全仓20X" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_default_color"
+        android:paddingHorizontal="@dimen/dp_10"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:paddingVertical="@dimen/dp_12"
+        >
+        <TextView
+            android:id="@+id/tv_cp_order_text42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cp_order_text42"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            style="@style/textstyle_dm_12_color2"
+            />
+
+        <TextView
+            android:id="@+id/tv_cp_order_text49"
+            style="@style/textstyle_dr_10_color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_order_tips_layout"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/cp_order_text49" />
+
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/tv_order_tips_layout"
+            style="@style/textstyle_dm_14_color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:paddingLeft="@dimen/dp_10"
+            android:text="@string/cp_order_text48"
+            android:visibility="visible"
+             />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_default_color"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        >
+
+        <RelativeLayout
+            android:id="@+id/labelQu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/dp_11"
+            android:paddingHorizontal="@dimen/dp_10"
+            >
+
+            <TextView
+                android:id="@+id/tv_cp_order_text43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cp_order_text43"
+                style="@style/textstyle_dm_12_color2"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+
+                />
+
+            <com.coorchice.library.SuperTextView
+                android:id="@+id/tv_position_amount"
+                style="@style/textstyle_dm_14_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="全部仓位：32张"
+                android:visibility="visible"
+
+                />
+        </RelativeLayout>
+
+
+<!--        todo：未完成-->
+        <RelativeLayout
+            android:layout_below="@id/labelQu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/dp_11"
+            android:paddingHorizontal="@dimen/dp_10"
+            >
+
+            <TextView
+                android:id="@+id/tv_estimated_pl_title"
+                style="@style/textstyle_dm_12_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/dotted_line"
+                android:paddingBottom="@dimen/dp_2"
+                android:text="@string/cp_expected_profit_and_loss" />
+
+            <com.coorchice.library.SuperTextView
+                android:id="@+id/tv_quick_estimated_pl_value"
+                style="@style/textstyle_dm_12_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="-- USDT"
+                android:textColor="@color/main_green"
+                android:visibility="visible"
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <com.chainup.contract.view.CpCommonlyUsedButton
+        android:id="@+id/btn_close_position"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:bgColor="@color/main_blue"
+        app:bottonTextContent="@string/cp_calculator_text29" />
+
+</LinearLayout>

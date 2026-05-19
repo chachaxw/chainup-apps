@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_20"
+            >
+            <TextView
+                android:id="@+id/tv_tip_title"
+                style="@style/textstyle_dm_14_color1"
+                tools:text="以设定的价格进行买卖的委托类型"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:id="@+id/tv_tip_content"
+                style="@style/textstyle_dr_14_color2"
+                tools:text="如果是买单，最终成交价格会小于或等于您的设定价格；如果是卖单，最终成交价格会大于或等于您的设定价格。注意：限价单提交后不一定会成交，可能会挂在盘口。"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineHeight="20dp"
+                android:layout_marginTop="@dimen/dp_12"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

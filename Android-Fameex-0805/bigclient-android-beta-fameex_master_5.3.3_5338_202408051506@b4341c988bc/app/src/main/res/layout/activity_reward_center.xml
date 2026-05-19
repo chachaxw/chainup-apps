@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fill_2"
+    tools:context=".new_version.activity.RewardCenterActivity">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/v_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:isShowRightBtn="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rightBtnText="@string/myReward_text2"
+        app:rightBtnTextColor="@color/main_color"
+        app:rightBtnType="text"
+        app:title="@string/menus_rewardCenter" />
+
+    <com.yjkj.chainup.new_version.view.CustomSwipeRefreshLayout
+        android:id="@+id/sfl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_header">
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fill_2"
+                app:layout_behavior="com.chainup.contract.view.AppBarLayoutBehavior">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlwaysCollapsed">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:src="@mipmap/task_banner_en"
+                            android:scaleType="fitXY"
+                            />
+
+                        <com.qmuiteam.qmui.layout.QMUILinearLayout
+                            android:id="@+id/qll_sign"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/dp_16"
+                            android:layout_marginVertical="@dimen/dp_20"
+                            android:background="@color/fill_3"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="@dimen/dp_8"
+                            app:qmui_radius="@dimen/dp_4"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv_sign_title"
+                                style="@style/textstyle_dm_18_color1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/dp_24"
+                                android:maxLines="2"
+                                android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:text="@string/rewardCenter_text2" />
+
+                            <TextView
+                                android:id="@+id/tv_sign_subtitle"
+                                style="@style/textstyle_dr_10_color3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/dp_8"
+                                android:maxWidth="181dp"
+                                android:gravity="center"
+                                android:text="@string/rewardCenter_text3" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_checklist"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_24"
+                                tools:itemCount="1"
+                                tools:listitem="@layout/item_check_view"
+                                />
+
+                            <com.chainup.kit.views.KKButtonKit
+                                android:id="@+id/btn_check"
+                                android:layout_width="wrap_content"
+                                android:layout_height="36dp"
+                                android:paddingLeft="24dp"
+                                android:paddingRight="24dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/dp_27"
+                                android:layout_marginBottom="@dimen/dp_19"
+                                app:kk_buttonText="@string/rewardCenter_text12" />
+                        </com.qmuiteam.qmui.layout.QMUILinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                <com.flyco.tablayout.SlidingTabLayout
+                    android:id="@+id/st_tab"
+                    style="@style/public_commontab_bline_16_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:paddingHorizontal="@dimen/dp_6"
+                    app:tl_textUnSelectSize="@dimen/sp_14"
+                    app:tl_textSelectSize="@dimen/sp_14"
+                    app:tl_tab_padding="@dimen/dp_10"
+                    />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.yjkj.chainup.new_version.view.CustomSwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

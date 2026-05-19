@@ -1,0 +1,87 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapAlertView/EXSwapDoubleComfirmAlertView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapAlertView/EXSwapDoubleComfirmAlertView.swift	(rejected hunks)
+@@ -18,13 +18,13 @@ class EXSwapDoubleComfirmAlertView: UIView {
+     var currentModel:EXContractOrderModel?
+     
+     lazy var typeLabel: UILabel = UILabel(text: "-", font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemekLine.up, alignment: .left)
+-    lazy var nameLabel: UILabel = UILabel(text: "-", font: UIFont.ThemeFont.HeadMedium, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++    lazy var nameLabel: UILabel = UILabel(text: "-", font: UIFont.ThemeFont.HeadMedium, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
+     
+     let tempHidProOrLoss:Bool = true
+     
+     lazy var headerbg : UIView = {
+         let view = UIView()
+-        view.backgroundColor = UIColor.exs_ThemeNav.bg
++        view.backgroundColor = UIColor.ThemeNav.bg
+ 
+         return view
+     }()
+@@ -65,9 +65,9 @@ class EXSwapDoubleComfirmAlertView: UIView {
+     }()
+     /// 合约类型
+     lazy var contractTypeLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.exs_ThemeLabel.colorHighlight, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.ThemeLabel.colorHighlight, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+-        label.backgroundColor = UIColor.exs_ThemeLabel.colorHighlight.withAlphaComponent(0.15)
++        label.backgroundColor = UIColor.ThemeLabel.colorHighlight.withAlphaComponent(0.15)
+         label.layer.cornerRadius = 2
+         label.layer.masksToBounds = true
+         return label
+@@ -109,12 +109,12 @@ class EXSwapDoubleComfirmAlertView: UIView {
+         return button
+     }()
+     
+-    lazy var nextComfirmLabel: UILabel = UILabel(text: "cp_overview_text31".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++    lazy var nextComfirmLabel: UILabel = UILabel(text: "cp_overview_text31".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .left)
+     
+     private lazy var cancelButton: UIButton = {
+-        let button = UIButton(buttonType: .custom, title: "cp_overview_text56".ex_localized(),titleFont: UIFont.ThemeFont.HeadBold, titleColor: UIColor.exs_ThemeBtn.highlight)
++        let button = UIButton(buttonType: .custom, title: "cp_overview_text56".ex_localized(),titleFont: UIFont.ThemeFont.HeadBold, titleColor: UIColor.ThemeBtn.highlight)
+         button.layer.borderWidth = 0.5
+-        button.layer.borderColor = UIColor.exs_ThemeLabel.colorHighlight.cgColor
++        button.layer.borderColor = UIColor.ThemeLabel.colorHighlight.cgColor
+         button.layer.cornerRadius = 4
+         button.ext_SetAddTarget(self, #selector(clickCancelButton))
+         return button
+@@ -124,12 +124,12 @@ class EXSwapDoubleComfirmAlertView: UIView {
+         view.ext_UseAutoLayout()
+         view.axis = .vertical
+         view.layoutIfNeeded()
+-        view.backgroundColor = UIColor.exs_ThemeView.bg
++        view.backgroundColor = UIColor.ThemeView.bg
+         return view
+     }()
+     private lazy var confirmButton: UIButton = {
+         let button = UIButton(buttonType: .custom, title: "cp_calculator_text16".ex_localized(), titleFont: UIFont.ThemeFont.HeadBold, titleColor: UIColor.white)
+-        button.ext_setBackgroundColor(backgroundColor: UIColor.exs_ThemeBtn.highlight, state: .normal)
++        button.ext_setBackgroundColor(backgroundColor: UIColor.ThemeBtn.highlight, state: .normal)
+         button.layer.cornerRadius = 4
+         button.layer.masksToBounds = true
+         button.ext_SetAddTarget(self, #selector(clickConfirmButton))
+@@ -139,7 +139,7 @@ class EXSwapDoubleComfirmAlertView: UIView {
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+         self.layer.cornerRadius = 4
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         self.tipsLabel.numberOfLines = 0
+         self.exs_addSubViews([typeLabel,
+                           nameLabel,
+@@ -332,7 +332,7 @@ class EXSwapDoubleComfirmAlertView: UIView {
+ // MARK: - Click Events
+ 
+     @objc func clickCancelButton() {
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     
+     @objc func clickConfirmButton() {
+@@ -341,7 +341,7 @@ class EXSwapDoubleComfirmAlertView: UIView {
+             EXStoreData.setComfirmSwapAlertStatus(false)
+         }
+         
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+         self.confimModelCallBack?()
+     }
+     

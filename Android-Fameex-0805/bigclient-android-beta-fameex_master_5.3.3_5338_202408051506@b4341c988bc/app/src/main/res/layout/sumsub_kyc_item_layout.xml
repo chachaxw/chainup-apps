@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_fill1_corners4"
+    android:paddingTop="@dimen/dp_12"
+    android:paddingBottom="@dimen/dp_16"
+    android:layout_marginHorizontal="@dimen/dp_16"
+    android:layout_marginBottom="@dimen/dp_16">
+
+    <TextView
+        android:id="@+id/tv_level_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未认证"
+        style="@style/textstyle_dm_16_color1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/dp_16"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_current_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kyc_page_current"
+        android:drawableLeft="@drawable/icon_current_flag_kyc"
+        android:drawablePadding="@dimen/dp_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="@dimen/dp_16"
+        style="@style/textstyle_dm_14_color1"
+        android:textColor="@color/rise_1"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/line_color"
+        app:layout_constraintTop_toBottomOf="@+id/tv_level_name" />
+
+    <TextView
+        android:id="@+id/tv_equity"
+        style="@style/textstyle_dm_14_color2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:drawableLeftCompat="@mipmap/individual_identity_equity"
+        android:drawablePadding="@dimen/dp_8"
+        android:gravity="center"
+        android:text="@string/kyc_page_benefits"
+        app:layout_constraintTop_toBottomOf="@+id/v_line"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_equity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/tv_current_flag"
+        app:layout_goneMarginRight="@dimen/dp_16"
+        app:layout_constraintStart_toStartOf="@+id/tv_equity"
+        app:layout_constraintTop_toBottomOf="@+id/tv_equity"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/tv_equity1_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kyc_page_benefits_withdrawal"
+                android:layout_alignParentLeft="true"
+                style="@style/textstyle_dm_12_color3"
+                />
+
+            <TextView
+                android:id="@+id/tv_equity1_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="禁止"
+                android:layout_alignParentRight="true"
+                style="@style/textstyle_dm_12_color2"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/tv_equity2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kyc_page_benefits_deposit"
+                android:layout_alignParentLeft="true"
+                style="@style/textstyle_dm_12_color3"
+                />
+
+            <TextView
+                android:id="@+id/tv_equity2_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="禁止"
+                android:layout_alignParentRight="true"
+                style="@style/textstyle_dm_12_color2"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/tv_equity3_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kyc_page_benefits_P2P"
+                android:layout_alignParentLeft="true"
+                style="@style/textstyle_dm_12_color3"
+                />
+
+            <TextView
+                android:id="@+id/tv_equity3_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="禁止"
+                android:layout_alignParentRight="true"
+                style="@style/textstyle_dm_12_color2"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_demand"
+        style="@style/textstyle_dm_14_color2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:drawableLeftCompat="@mipmap/individual_identity_demand"
+        android:gravity="center"
+        android:drawablePadding="@dimen/dp_8"
+        android:text="@string/kyc_page_require"
+        app:layout_constraintTop_toBottomOf="@+id/ll_equity"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_demand_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="要求1\n要求2\n要求3\n要求4"
+        app:layout_constraintStart_toStartOf="@+id/tv_demand"
+        app:layout_constraintTop_toBottomOf="@id/tv_demand"
+        style="@style/textstyle_dm_12_color3"
+        android:layout_marginTop="@dimen/dp_16"
+        android:lineHeight="@dimen/dp_30"
+        />
+
+    <com.chainup.kit.views.KKButtonKit
+        android:id="@+id/btn_auth"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_44"
+        app:layout_constraintEnd_toEndOf="@+id/tv_current_flag"
+        app:layout_constraintStart_toStartOf="@+id/tv_equity"
+        app:layout_goneMarginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        app:kk_buttonText="@string/kyc_page_button_verify"
+        app:layout_constraintTop_toBottomOf="@+id/tv_demand_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

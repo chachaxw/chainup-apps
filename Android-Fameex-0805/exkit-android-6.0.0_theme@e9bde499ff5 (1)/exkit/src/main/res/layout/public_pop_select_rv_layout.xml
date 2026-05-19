@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.qmuiteam.qmui.layout.QMUIFrameLayout
+        android:id="@+id/fl_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:qmui_shadowElevation="@dimen/dp_10"
+        app:qmui_shadowAlpha="0.8"
+        app:qmui_radius="@dimen/dp_4"
+        android:background="@color/dialog_bg_color"
+        >
+        <com.chainup.kit.views.base.BaseMaxHeightRecyclerViewKit
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:kk_maxHeight="300dp"
+            />
+    </com.qmuiteam.qmui.layout.QMUIFrameLayout>
+</FrameLayout>

@@ -1,0 +1,135 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXShareView/EXSShareSheet.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXShareView/EXSShareSheet.swift	(rejected hunks)
+@@ -81,16 +81,16 @@ class EXSShareSheet: UIView {
+         button.setTitle("cp_content_text34".ex_localized(), for: .normal)
+         button.ext_SetAddTarget(self, #selector(clickWechat))
+         button.setFont(UIFont.fontWithName(fontName: PingFangFaimly.medium.rawValue, size: 14)!~)
+-        button.setTitleColor(UIColor.exs_ThemeLabel.white, for: .normal)
++        button.setTitleColor(UIColor.ThemeLabel.white, for: .normal)
+         return button
+     }()
+     let cancelBtn : UIButton = {
+         let button = UIButton()
+         button.setTitle("cp_overview_text56".ex_localized(), for: .normal)
+         button.ext_SetAddTarget(self, #selector(clickCancel))
+-        button.setTitleColor(UIColor.exs_ThemeBtn.cancelTitleColor, for: .normal)
++        button.setTitleColor(UIColor.ThemeLabel.colorLite, for: .normal)
+         button.setBackgroundImage(UIImage(named: ""), for: .normal)
+-        button.backgroundColor = UIColor.exs_ThemeBtn.cancelBgColor
++        button.backgroundColor = UIColor.ThemeView.card2
+         button.titleLabel?.font = UIFont.fontWithName(fontName: PingFangFaimly.medium.rawValue, size: 14)!~
+         button.layer.cornerRadius = 4
+         button.layer.masksToBounds = true
+@@ -114,7 +114,7 @@ class EXSShareSheet: UIView {
+     }
+     
+     private func initLayout() {
+-        self.backgroundColor = UIColor.exs_ThemeView.mask
++        self.backgroundColor = UIColor.ThemeView.mask
+         let contentView = UIView()
+         contentView.backgroundColor = .clear
+         contentView.exs_addSubViews([shareV,cancelBtn,saveBtn])
+@@ -269,12 +269,12 @@ class EXSShareView: UIView {
+     
+     /// 自定义话术
+     let defineLabel: UILabel = {
+-        let label = UILabel(text: "", font: UIFont.ThemeFont.H3Bold~, textColor:  UIColor.exs_ThemeLabel.colorLite, alignment: .center)
++        let label = UILabel(text: "", font: UIFont.ThemeFont.H3Bold~, textColor:  UIColor.ThemeLabel.colorLite, alignment: .center)
+         return label
+     }()
+     
+     let titleLabel: UILabel = {
+-        let label = UILabel(text: EXSwapPlatformSDK.shared.appName, font: UIFont.systemFont(ofSize: 14, weight:.medium)~, textColor:  UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++        let label = UILabel(text: EXSwapPlatformSDK.shared.appName, font: UIFont.systemFont(ofSize: 14, weight:.medium)~, textColor:  UIColor.ThemeLabel.colorLite, alignment: .left)
+         return label
+     }()
+     
+@@ -292,13 +292,13 @@ class EXSShareView: UIView {
+     
+     /// 收益率
+     let profitRate: UILabel = {
+-        let label = UILabel(text: "cp_calculator_text15".ex_localized(), font: UIFont.ThemeFont.BodyRegular~, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .center)
++        let label = UILabel(text: "cp_calculator_text15".ex_localized(), font: UIFont.ThemeFont.BodyRegular~, textColor: UIColor.ThemeLabel.colorMedium, alignment: .center)
+         return label
+     }()
+     
+     /// 仓位方向
+     let directBtn: UIButton = {
+-        let btn = UIButton(buttonType: .custom, title: "cp_order_text6".ex_localized(), titleFont: UIFont.ThemeFont.MinimumRegular~, titleColor: UIColor.exs_ThemeLabel.white)
++        let btn = UIButton(buttonType: .custom, title: "cp_order_text6".ex_localized(), titleFont: UIFont.ThemeFont.MinimumRegular~, titleColor: UIColor.ThemeLabel.white)
+         btn.layer.cornerRadius = 1.5
+         btn.layer.masksToBounds = true
+         btn.isUserInteractionEnabled = false
+@@ -314,54 +314,54 @@ class EXSShareView: UIView {
+     
+     /// 合约名称
+     let nameLabel: UILabel = {
+-        let label = UILabel(text: "cp_overview_text35".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular~, textColor:  UIColor.exs_ThemeLabel.colorMedium, alignment: .center)
++        let label = UILabel(text: "cp_overview_text35".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular~, textColor:  UIColor.ThemeLabel.colorMedium, alignment: .center)
+         return label
+     }()
+     ///交易对
+     let swapName: UILabel = {
+-        let label = UILabel(text: "BTCUSDT", font: UIFont.ThemeFont.SecondaryBold~, textColor:  UIColor.exs_ThemeLabel.colorLite, alignment: .left)
++        let label = UILabel(text: "BTCUSDT", font: UIFont.ThemeFont.SecondaryBold~, textColor:  UIColor.ThemeLabel.colorLite, alignment: .left)
+         return label
+     }()
+     
+     /// 最新价格
+     let fairLabel: UILabel = {
+-        let label = UILabel(text: "cp_order_text31".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular~, textColor:  UIColor.exs_ThemeLabel.colorMedium, alignment: .right)
++        let label = UILabel(text: "cp_order_text31".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular~, textColor:  UIColor.ThemeLabel.colorMedium, alignment: .right)
+         return label
+     }()
+     
+     let fairPrice: UILabel = {
+-        let label = UILabel(text: "5249.00", font: UIFont.ThemeFont.SecondaryBold~, textColor:  UIColor.exs_ThemeLabel.colorLite, alignment: .right)
++        let label = UILabel(text: "5249.00", font: UIFont.ThemeFont.SecondaryBold~, textColor:  UIColor.ThemeLabel.colorLite, alignment: .right)
+         return label
+     }()
+     
+     /// 开仓价格
+     let openLabel: UILabel = {
+-        let label = UILabel(text: "cp_order_text7".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular~, textColor:  UIColor.exs_ThemeLabel.colorMedium, alignment: .right)
++        let label = UILabel(text: "cp_order_text7".ex_localized(), font: UIFont.ThemeFont.SecondaryRegular~, textColor:  UIColor.ThemeLabel.colorMedium, alignment: .right)
+         return label
+     }()
+     
+     let openPrice: UILabel = {
+-        let label = UILabel(text: "5230.00", font: UIFont.ThemeFont.SecondaryBold~, textColor:  UIColor.exs_ThemeLabel.colorLite, alignment: .right)
++        let label = UILabel(text: "5230.00", font: UIFont.ThemeFont.SecondaryBold~, textColor:  UIColor.ThemeLabel.colorLite, alignment: .right)
+         return label
+     }()
+     
+     let line: UIView = {
+         let v = UIView()
+-        v.backgroundColor = UIColor.exs_ThemeView.seperator
++        v.backgroundColor = UIColor.ThemeView.seperator
+         return v
+     }()
+     
+     /// 二维码
+     let qrView: UIImageView = {
+-        let qrIcon = LBXScanWrapper.createCode(codeType: "CIQRCodeGenerator", codeString: EXSwapPlatformSDK.shared.inviteUrl ?? UserInfoEntity.sharedInstance().inviteUrl, size: CGSize(width: 50, height: 50), qrColor: UIColor.exs_ThemeLabel.colorLite, bkColor: UIColor.exs_ThemeView.bg)
++        let qrIcon = LBXScanWrapper.createCode(codeType: "CIQRCodeGenerator", codeString: EXSwapPlatformSDK.shared.inviteUrl ?? UserInfoEntity.sharedInstance().inviteUrl, size: CGSize(width: 50, height: 50), qrColor: UIColor.ThemeLabel.colorLite, bkColor: UIColor.ThemeView.bg)
+         let bgV = UIImageView(image: qrIcon)
+-        bgV.backgroundColor = UIColor.exs_ThemeView.bg
++        bgV.backgroundColor = UIColor.ThemeView.bg
+         return bgV
+     }()
+     
+     /// 扫码提示
+     let qrTipsLabel: UILabel = {
+-        let label = UILabel(text: "cp_stoporder_text4".ex_localized(), font: UIFont.ThemeFont.MinimumRegular, textColor:  UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++        let label = UILabel(text: "cp_stoporder_text4".ex_localized(), font: UIFont.ThemeFont.MinimumRegular, textColor:  UIColor.ThemeLabel.colorMedium, alignment: .left)
+         return label
+     }()
+ 
+@@ -505,7 +505,7 @@ class EXSShareView: UIView {
+             make.height.equalTo(23~)
+         }
+ 
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+     }
+     
+ }

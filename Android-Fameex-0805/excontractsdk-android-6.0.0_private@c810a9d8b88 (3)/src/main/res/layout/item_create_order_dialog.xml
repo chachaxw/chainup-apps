@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="@dimen/dp_30"
+    android:layout_marginRight="@dimen/dp_30"
+    android:background="@drawable/cp_bg_item_dialog_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/tv_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/dp_18"
+            android:text="买入平空"
+            android:visibility="visible"
+            style="@style/textstyle_dm_18_bold_color1"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_contract_name"
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="BTC/USDT"
+                android:visibility="visible"
+                />
+
+            <com.coorchice.library.SuperTextView
+                android:id="@+id/tv_open_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_toRightOf="@id/tv_contract_name"
+                tools:text="全仓20X"
+                style="@style/contract_tag_style"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_cp_overview_text6"
+                style="@style/textstyle_dr_14_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cp_overview_text6" />
+
+            <TextView
+                android:id="@+id/tv_price_value"
+                style="@style/textstyle_dr_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="53242.87 USDT"
+
+                />
+
+        </RelativeLayout>
+        <!--触发价格-->
+        <RelativeLayout
+            android:id="@+id/ll_trigger_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_trigger_price_label"
+                style="@style/textstyle_dr_14_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/cp_overview_text29" />
+
+            <TextView
+                android:id="@+id/tv_trigger_price_value"
+                style="@style/textstyle_dr_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:text="0" />
+        </RelativeLayout>
+        <!--委托价格-->
+        <RelativeLayout
+            android:id="@+id/ll_commission_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_commission_price_label"
+                style="@style/textstyle_dr_14_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/cp_overview_text30" />
+
+            <TextView
+                android:id="@+id/tv_commission_price_value"
+                style="@style/textstyle_dr_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0" />
+        </RelativeLayout>
+        <!--数量-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_number_label"
+                style="@style/textstyle_dr_14_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/cp_overview_text8" />
+
+            <TextView
+                android:id="@+id/tv_number_value"
+                style="@style/textstyle_dr_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0" />
+        </RelativeLayout>
+
+        <!--成本-->
+        <RelativeLayout
+            android:id="@+id/ll_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_cost_label"
+                style="@style/textstyle_dr_14_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/cp_overview_text11" />
+
+            <TextView
+                android:id="@+id/tv_cost_value"
+                style="@style/textstyle_dr_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0" />
+
+
+        </RelativeLayout>
+        <!--止盈触发价-->
+        <RelativeLayout
+            android:id="@+id/ll_stop_profit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_cp_overview_text15"
+                style="@style/textstyle_dr_14_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/cp_overview_text15" />
+
+            <TextView
+                android:id="@+id/tv_stop_profit_entrust_price_value"
+                style="@style/textstyle_dr_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:text="0" />
+
+
+        </RelativeLayout>
+        <!--止损触发价-->
+        <RelativeLayout
+            android:id="@+id/ll_stop_loss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_cp_overview_text16"
+                style="@style/textstyle_dr_14_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/cp_overview_text16" />
+
+            <TextView
+                android:id="@+id/tv_stop_loss_trigger_price_value"
+                style="@style/textstyle_dr_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:text="0" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_not_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="20dp"
+            android:visibility="visible">
+
+            <CheckBox
+                android:id="@+id/cb_not_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@drawable/cp_trade_check_selector"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/tv_cp_overview_text31"
+                style="@style/textstyle_dm_12_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:text="@string/cp_overview_text31" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_below="@+id/tv_content_layout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tv_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_44"
+            android:layout_below="@+id/tv_content_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@drawable/bg_select_contract"
+            android:text="@string/cp_overview_text56"
+            android:textAllCaps="false"
+            style="@style/textstyle_dm_14_color1"
+            />
+
+        <Button
+            android:id="@+id/tv_confirm_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_44"
+            android:layout_below="@+id/tv_content_layout"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_select_button_blue"
+            android:text="@string/cp_calculator_text29"
+            android:textAllCaps="false"
+            style="@style/textstyle_dm_14_color1"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

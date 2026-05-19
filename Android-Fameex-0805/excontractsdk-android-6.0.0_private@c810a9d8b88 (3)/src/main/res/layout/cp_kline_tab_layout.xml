@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_36"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            >
+            <com.google.android.material.tabs.TabLayout
+                android:visibility="gone"
+                android:id="@+id/tb_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tabIndicatorHeight="@dimen/dp_4"
+                app:tabIndicator="@drawable/time_kline_bline"
+                app:tabBackground="@null"
+                app:tabRippleColor="@null"
+                app:tabIndicatorFullWidth="false"
+                app:tabTextAppearance="@style/GoogleTbStyle"
+                app:tabMaxWidth="100dp"
+                app:tabMinWidth="@dimen/dp_0"
+                app:tabPadding="@dimen/dp_8"
+                app:tabSelectedTextColor="@color/text_color_1"
+                >
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <TextView
+                android:id="@+id/symbolTitle"
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/cp_contract_perpetual_chart"
+                android:visibility="visible"
+                tools:visibility="visible"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/arrowBtn"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_8"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/public_icon_arrow_down" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_color"
+        android:id="@+id/bottom_border"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/Cell/EXSBaseInfoTC.swift b/Chainup/Framework/EXSwapSDK/Base/UI/Cell/EXSBaseInfoTC.swift	(rejected hunks)
+@@ -14,7 +14,7 @@ class EXSBaseInfoTC: UITableViewCell {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+         label.font = UIFont.ThemeFont.HeadRegular
+-        label.textColor = UIColor.exs_ThemeLabel.colorLite
++        label.textColor = UIColor.ThemeLabel.colorLite
+         return label
+     }()
+     
+@@ -22,14 +22,14 @@ class EXSBaseInfoTC: UITableViewCell {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+         label.font = UIFont.ThemeFont.SecondaryRegular
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         return label
+     }()
+     
+     lazy var lineV : UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.seperator
++        view.backgroundColor = UIColor.ThemeView.seperator
+         return view
+     }()
+     

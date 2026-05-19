@@ -1,0 +1,37 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSCalcuLeverView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSCalcuLeverView.swift	(rejected hunks)
+@@ -14,7 +14,7 @@ class EXSCalcuLeverView: UIView {
+     var minLevel:String = ""
+   
+     lazy var maxCoinTipLabel:UILabel = {
+-        let label = UILabel(text: "", font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++        let label = UILabel(text: "", font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .left)
+         label.numberOfLines = 0
+         return label
+     }()
+@@ -31,7 +31,7 @@ class EXSCalcuLeverView: UIView {
+         shaperLayer.path = path.cgPath
+         shaperLayer.lineWidth = 0.5
+         shaperLayer.fillColor = nil
+-        shaperLayer.strokeColor = UIColor.exs_ThemeView.border.cgColor
++        shaperLayer.strokeColor = UIColor.ThemeView.border.cgColor
+         btn.layer.addSublayer(shaperLayer)
+        
+         let path2 = UIBezierPath()
+@@ -41,7 +41,7 @@ class EXSCalcuLeverView: UIView {
+         shaperLayer2.path = path2.cgPath
+         shaperLayer2.lineWidth = 0.5
+         shaperLayer2.fillColor = nil
+-        shaperLayer2.strokeColor = UIColor.exs_ThemeView.border.cgColor
++        shaperLayer2.strokeColor = UIColor.ThemeView.border.cgColor
+         btn.layer.addSublayer(shaperLayer2)
+         return btn
+     }()
+@@ -57,7 +57,7 @@ class EXSCalcuLeverView: UIView {
+     lazy var input: EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.input.leftViewMode = .always
+         textField.maxLenth = 9
+         textField.bgView.layer.cornerRadius = 4

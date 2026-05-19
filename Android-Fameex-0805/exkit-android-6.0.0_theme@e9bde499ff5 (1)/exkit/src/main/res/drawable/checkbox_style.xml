@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    @mipmap/lineswitching_selected-->
+    <item android:drawable="@drawable/public_selected_rotundity" android:state_checked="true" android:state_enabled="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/public_unchecked_rotundity" android:state_checked="false" android:state_enabled="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/public_selected_rotundity" android:state_checked="true" android:state_enabled="true" />
+    <item android:drawable="@drawable/public_unchecked_rotundity" android:state_checked="false" android:state_enabled="true" />
+    <item android:drawable="@drawable/public_selected_rotundity" android:state_checked="true" android:state_enabled="false" />
+    <item android:drawable="@drawable/public_unchecked_rotundity" android:state_checked="false" android:state_enabled="false" />
+</selector>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/public_bg_dialog_topcorner12"
+    android:orientation="vertical">
+
+    <com.chainup.kit.views.base.BaseMaxHeightRecyclerViewKit
+        android:id="@+id/recycler_view"
+        app:kk_maxHeight="@dimen/dp_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:background="@color/bg_color" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center"
+        tools:text="Cancel"
+        style="@style/textstyle_dm_14_color2"
+        android:background="@drawable/bg_item_press_selector"
+        />
+
+</LinearLayout>

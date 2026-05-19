@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Public/EXContractSDK.swift b/Chainup/Framework/EXSwapSDK/Public/EXContractSDK.swift	(rejected hunks)
+@@ -17,7 +17,7 @@ typealias EXRequestCallBack = (Any,NSError?) -> ();
+         }
+ //        EXSwapPlatformSDK.shared.switchNight(isToNight: true)
+         EXSwapPlatformSDK.shared.appName = AppName
+-        EXSThemeManager.restoreLastTheme()
++//        EXKLineManager.restoreLastTheme()
+         EXLanguageTools.shareInstance.initUserLanguage()
+ 
+         EXContractNetwork.queryPublicInfo { (public) in

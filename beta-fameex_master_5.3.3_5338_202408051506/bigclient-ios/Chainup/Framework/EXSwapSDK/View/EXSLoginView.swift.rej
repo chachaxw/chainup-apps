@@ -1,0 +1,18 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSLoginView.swift b/Chainup/Framework/EXSwapSDK/View/EXSLoginView.swift	(rejected hunks)
+@@ -12,13 +12,13 @@ class EXSLoginView: EXSNibBaseView {
+     @IBOutlet weak var tipImageView: UIImageView!
+     @IBOutlet weak var tipLabel: UILabel!
+     override func onCreate() {
+-        backgroundColor = UIColor.exs_ThemeView.bg
+-        tipLabel.textColor = UIColor.exs_ThemeLabel.colorLite
++        backgroundColor = UIColor.ThemeView.bg
++        tipLabel.textColor = UIColor.ThemeLabel.colorLite
+         tipLabel.numberOfLines = 0
+         tipLabel.textAlignment = .left
+         tipLabel.font = UIFont.ThemeFont.BodyMedium
+         confirmButton.layer.cornerRadius = 4
+-        confirmButton.setTitleColor(UIColor.exs_ThemeView.bg, for: .normal)
++        confirmButton.setTitleColor(UIColor.ThemeView.bg, for: .normal)
+     }
+     func setupLoginUI() {
+         tipLabel.text = "cp_overview_text23".ex_localized()

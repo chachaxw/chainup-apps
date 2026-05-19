@@ -1,0 +1,6 @@
+framework module EXLookin {
+  umbrella header "EXLookin-umbrella.h"
+
+  export *
+  module * { export * }
+}

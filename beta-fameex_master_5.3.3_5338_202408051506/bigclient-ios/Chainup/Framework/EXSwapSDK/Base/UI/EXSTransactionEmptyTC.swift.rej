@@ -1,0 +1,26 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSTransactionEmptyTC.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSTransactionEmptyTC.swift	(rejected hunks)
+@@ -20,10 +20,10 @@ class EXSTransactionEmptyTC: UITableViewCell {
+     lazy var label : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-//        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++//        label.textColor = UIColor.ThemeLabel.colorMedium
+ //        label.font = UIFont.ThemeFont.SecondaryRegular
+ //        label.text = LanguageTools.getString(key: "cp_extra_text52")
+-        label.attributedText = NSMutableAttributedString().exs_add(string: "cp_extra_text52".ex_localized(), attrDic: [NSAttributedString.Key.font : UIFont.ThemeFont.BodyRegular , NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.colorMedium])
++        label.attributedText = NSMutableAttributedString().exs_add(string: "cp_extra_text52".ex_localized(), attrDic: [NSAttributedString.Key.font : UIFont.ThemeFont.BodyRegular , NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.colorMedium])
+         label.isUserInteractionEnabled = true
+         label.textAlignment = .center
+         return label
+@@ -58,9 +58,9 @@ class EXSTransactionEmptyTC: UITableViewCell {
+     
+     func reloadEmptyView(_ index : Int){
+         if index != 0{
+-            label.attributedText = NSMutableAttributedString().exs_add(string: "cp_extra_text52".ex_localized() + ",", attrDic: [NSAttributedString.Key.font : UIFont.ThemeFont.BodyRegular , NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.colorMedium]).exs_add(string: "common_text_refresh".ex_localized(), attrDic: [NSAttributedString.Key.font : UIFont.ThemeFont.BodyRegular , NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.colorHighlight])
++            label.attributedText = NSMutableAttributedString().exs_add(string: "cp_extra_text52".ex_localized() + ",", attrDic: [NSAttributedString.Key.font : UIFont.ThemeFont.BodyRegular , NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.colorMedium]).exs_add(string: "common_text_refresh".ex_localized(), attrDic: [NSAttributedString.Key.font : UIFont.ThemeFont.BodyRegular , NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.colorHighlight])
+         }else{
+-            label.attributedText = NSMutableAttributedString().exs_add(string: "cp_extra_text52".ex_localized(), attrDic: [NSAttributedString.Key.font : UIFont.ThemeFont.BodyRegular , NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.colorMedium])
++            label.attributedText = NSMutableAttributedString().exs_add(string: "cp_extra_text52".ex_localized(), attrDic: [NSAttributedString.Key.font : UIFont.ThemeFont.BodyRegular , NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.colorMedium])
+         }
+     }
+     

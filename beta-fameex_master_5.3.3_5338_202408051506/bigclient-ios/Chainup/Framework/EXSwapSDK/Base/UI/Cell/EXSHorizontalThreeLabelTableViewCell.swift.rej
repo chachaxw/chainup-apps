@@ -1,0 +1,19 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/Cell/EXSHorizontalThreeLabelTableViewCell.swift b/Chainup/Framework/EXSwapSDK/Base/UI/Cell/EXSHorizontalThreeLabelTableViewCell.swift	(rejected hunks)
+@@ -25,7 +25,7 @@ class EXSHorizontalThreeLabelTableViewCell: UITableViewCell {
+     lazy var horLineView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.seperator
++        view.backgroundColor = UIColor.ThemeView.seperator
+         view.isHidden = true
+         return view
+     }()
+@@ -78,7 +78,7 @@ class EXSwapTransactionDetailHeaderCell: UITableViewCell {
+  
+     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+         super.init(style: style, reuseIdentifier: reuseIdentifier)
+-        contentView.backgroundColor = UIColor.exs_ThemeView.bg
++        contentView.backgroundColor = UIColor.ThemeView.bg
+         contentView.exs_addSubViews([mainView])
+         mainView.snp.makeConstraints { (make) in
+             make.top.equalTo(12)

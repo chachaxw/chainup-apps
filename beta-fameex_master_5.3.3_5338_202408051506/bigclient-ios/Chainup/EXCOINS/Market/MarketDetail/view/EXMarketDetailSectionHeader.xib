@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXMarketDetailSectionHeader" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="depthLabel" destination="iH6-XC-R8B" id="OnB-1H-kx4"/>
+                <outlet property="introduceLabel" destination="sN2-Rt-GzR" id="uuv-ho-hnK"/>
+                <outlet property="orderLabel" destination="aVl-kd-O21" id="83e-wa-i7A"/>
+                <outlet property="topMenuView" destination="Y2O-kh-Roi" id="FuK-bb-90S"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lgm-hb-x6L">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="43"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2O-kh-Roi">
+                    <rect key="frame" x="0.0" y="0.0" width="395" height="43"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yIy-CS-LkO">
+                            <rect key="frame" x="15" y="0.0" width="365" height="43"/>
+                            <subviews>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iH6-XC-R8B" customClass="DepthMenuLabel" customModule="Chainup" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="121.5" height="43"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="43" id="ABT-hh-Muu"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorMedium"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="kET-UO-zQt" appends="YES" id="ybY-Bk-2lf"/>
+                                    </connections>
+                                </label>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVl-kd-O21" customClass="DepthMenuLabel" customModule="Chainup" customModuleProvider="target">
+                                    <rect key="frame" x="121.5" y="0.0" width="122" height="43"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="43" id="z3e-jt-D6Z"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorMedium"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="GQz-KJ-qv9" appends="YES" id="pNl-FW-BZD"/>
+                                    </connections>
+                                </label>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sN2-Rt-GzR" customClass="DepthMenuLabel" customModule="Chainup" customModuleProvider="target">
+                                    <rect key="frame" x="243.5" y="0.0" width="121.5" height="43"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="43" id="y1A-3s-rf7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorMedium"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="bV6-z4-cNO" appends="YES" id="Uf1-vM-TRt"/>
+                                    </connections>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vE-Mb-5bq">
+                            <rect key="frame" x="0.0" y="42.5" width="395" height="0.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="GNs-c3-6lM"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="kline.viewseperator"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="yIy-CS-LkO" firstAttribute="top" secondItem="Y2O-kh-Roi" secondAttribute="top" id="FcW-Ic-1wz"/>
+                        <constraint firstAttribute="trailing" secondItem="yIy-CS-LkO" secondAttribute="trailing" constant="15" id="TiV-Wm-ve6"/>
+                        <constraint firstItem="9vE-Mb-5bq" firstAttribute="leading" secondItem="Y2O-kh-Roi" secondAttribute="leading" id="UXl-DO-ftA"/>
+                        <constraint firstAttribute="bottom" secondItem="9vE-Mb-5bq" secondAttribute="bottom" id="cDR-dm-eyw"/>
+                        <constraint firstAttribute="height" constant="43" id="dZf-nw-UOu"/>
+                        <constraint firstAttribute="bottom" secondItem="yIy-CS-LkO" secondAttribute="bottom" id="fa2-I1-Ecb"/>
+                        <constraint firstAttribute="trailing" secondItem="9vE-Mb-5bq" secondAttribute="trailing" id="qeW-31-R6R"/>
+                        <constraint firstItem="yIy-CS-LkO" firstAttribute="leading" secondItem="Y2O-kh-Roi" secondAttribute="leading" constant="15" id="r7R-69-d7q"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lMy-EM-rc1"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Y2O-kh-Roi" firstAttribute="trailing" secondItem="lMy-EM-rc1" secondAttribute="trailing" id="UME-dD-GMm"/>
+                <constraint firstItem="Y2O-kh-Roi" firstAttribute="leading" secondItem="lMy-EM-rc1" secondAttribute="leading" id="h7h-cS-cch"/>
+                <constraint firstItem="lMy-EM-rc1" firstAttribute="bottom" secondItem="Y2O-kh-Roi" secondAttribute="bottom" id="qN1-VY-Nvb"/>
+                <constraint firstItem="Y2O-kh-Roi" firstAttribute="top" secondItem="lMy-EM-rc1" secondAttribute="top" id="qxj-sM-QC6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-564" y="-149.77511244377811"/>
+        </view>
+        <tapGestureRecognizer id="kET-UO-zQt">
+            <connections>
+                <action selector="depthLabelTapped:" destination="-1" id="YYe-jY-a7E"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="GQz-KJ-qv9">
+            <connections>
+                <action selector="recordLabelTapped:" destination="-1" id="PgB-oV-GW2"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="bV6-z4-cNO">
+            <connections>
+                <action selector="introduceLabelTapped:" destination="-1" id="Xkl-7Z-CrT"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

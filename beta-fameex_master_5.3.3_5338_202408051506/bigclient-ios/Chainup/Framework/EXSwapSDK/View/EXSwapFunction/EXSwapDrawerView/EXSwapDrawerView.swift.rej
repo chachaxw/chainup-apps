@@ -1,0 +1,73 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapDrawerView/EXSwapDrawerView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapDrawerView/EXSwapDrawerView.swift	(rejected hunks)
+@@ -94,15 +94,15 @@ class EXSwapDrawerView: UIView {
+         let searchBar = UISearchBar()
+         searchBar.ext_UseAutoLayout()
+         
+-        searchBar.tintColor = fromKline ? UIColor.exs_ThemekLine.labcolorMedium : UIColor.exs_ThemeLabel.colorMedium
++        searchBar.tintColor = fromKline ? UIColor.ThemekLine.labcolorMedium : UIColor.ThemeLabel.colorMedium
+         if let textfield = searchBar.value(forKey: "searchField") as? UITextField{
+-            textfield.exs_setPlaceHolderAtt( "cp_extra_text81".ex_localized(), color: (fromKline ? UIColor.exs_ThemekLine.labcolorDark : UIColor.exs_ThemeLabel.colorDark), font: 14)
+-            textfield.textColor = fromKline ? UIColor.exs_ThemekLine.labcolorMedium : UIColor.exs_ThemeLabel.colorMedium
++            textfield.exs_setPlaceHolderAtt( "cp_extra_text81".ex_localized(), color: (fromKline ? UIColor.ThemekLine.labcolorDark : UIColor.ThemeLabel.colorDark), font: 14)
++            textfield.textColor = fromKline ? UIColor.ThemekLine.labcolorMedium : UIColor.ThemeLabel.colorMedium
+             textfield.font = UIFont.ThemeFont.BodyRegular
+             textfield.exs_setModifyClearButton()
+-            textfield.backgroundColor = fromKline ? UIColor.exs_ThemekLine.viewBg : UIColor.exs_ThemeView.bg
++            textfield.backgroundColor = fromKline ? UIColor.ThemekLine.viewBg : UIColor.ThemeView.bg
+         }
+-        searchBar.barTintColor = fromKline ? UIColor.exs_ThemekLine.viewBg :  UIColor.exs_ThemeView.bg
++        searchBar.barTintColor = fromKline ? UIColor.ThemekLine.viewBg :  UIColor.ThemeView.bg
+         searchBar.delegate = self
+         searchBar.setImage(UIImage.themeImageNamed(imageName: "contract_search" ,kline:true), for: UISearchBar.Icon.search, state: .normal)
+         return searchBar
+@@ -111,7 +111,7 @@ class EXSwapDrawerView: UIView {
+     lazy var typeLabel:UILabel = {
+     
+         let label = UILabel()
+-        label.textColor = fromKline ? UIColor.exs_ThemekLine.labcolorLite : UIColor.exs_ThemeLabel.colorLite
++        label.textColor = fromKline ? UIColor.ThemekLine.labcolorLite : UIColor.ThemeLabel.colorLite
+         label.font = UIFont.ThemeFont.H2Medium
+         label.text = "cp_overview_text35".ex_localized()
+         return label
+@@ -122,7 +122,7 @@ class EXSwapDrawerView: UIView {
+         collectionV.num = 10
+         collectionV.ext_UseAutoLayout()
+         collectionV.F_width = exs_dr_Width
+-        collectionV.collectionV.backgroundColor = fromKline ? UIColor.exs_ThemekLine.viewBg : UIColor.exs_ThemeView.bg
++        collectionV.collectionV.backgroundColor = fromKline ? UIColor.ThemekLine.viewBg : UIColor.ThemeView.bg
+         collectionV.clickCellBlock = {[weak self](row) in
+             guard let mySelf = self else{return}
+             mySelf.index = row
+@@ -151,7 +151,7 @@ class EXSwapDrawerView: UIView {
+         style.titleFont = UIFont.ThemeFont.BodyMedium
+         style.indicatorWidth = 48
+         style.indicatorHeight = 2
+-        style.titleHighLightColor = fromKline ? UIColor.exs_ThemekLine.labcolorHighlight : UIColor.ThemeLabel.colorHighlight
++        style.titleHighLightColor = fromKline ? UIColor.ThemekLine.labcolorHighlight : UIColor.ThemeLabel.colorHighlight
+ 
+         view.style = style
+         view.setSelected(atIdx: 0)
+@@ -173,12 +173,12 @@ class EXSwapDrawerView: UIView {
+     }()
+     lazy var topLine : UIView = {
+         let view = UIView()
+-        view.backgroundColor = fromKline ? UIColor.exs_ThemekLine.viewbgGap : UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = fromKline ? UIColor.ThemekLine.viewbgGap : UIColor.ThemeView.bgGap
+         return view
+     }()
+     lazy var bottomLine : UIView = {
+         let view = UIView()
+-        view.backgroundColor = fromKline ? UIColor.exs_ThemekLine.viewbgGap : UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = fromKline ? UIColor.ThemekLine.viewbgGap : UIColor.ThemeView.bgGap
+         return view
+     }()
+     lazy var tableView : UITableView = {
+@@ -196,7 +196,7 @@ class EXSwapDrawerView: UIView {
+         
+     }
+     func initContentView(){
+-        self.backgroundColor = fromKline ?  UIColor.ThemekLine.viewBg : UIColor.exs_ThemeView.bg
++        self.backgroundColor = fromKline ?  UIColor.ThemekLine.viewBg : UIColor.ThemeView.bg
+         exs_addSubViews([typeLabel,searchBar1,tableView,selectionTitleBar,topLine,bottomLine])
+         typeLabel.snp.makeConstraints { (make) in
+             make.top.equalTo(EX_NAV_STATUS_HEIGHT)

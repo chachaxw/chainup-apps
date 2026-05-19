@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/cp_bg_item_dialog_bg"
+    android:id="@+id/ll_share_layout"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_isLossBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/cp_profit"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="357dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_contract_value"
+                style="@style/textstyle_dm_18_bold_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_37"
+                android:text="BTC-USDT"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4">
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/textstyle_dm_12_color1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cp_calculator_text22"
+                    android:textColor="@color/main_red" />
+
+                <TextView
+                    android:id="@+id/label_lever"
+                    style="@style/textstyle_dm_12_color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:text="| 10.00X" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_intro"
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="@null"
+                android:textColor="@color/main_color" />
+
+        </LinearLayout>
+
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/tv_intro"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_weight="1"-->
+        <!--        android:gravity="bottom"-->
+        <!--        android:text="&#45;&#45;"-->
+        <!--        android:textColor="@color/text_color"-->
+        <!--        android:textSize="18sp"-->
+        <!--        tools:text="小赚一笔！" />-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_40"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sl_str_profit_rate_label"
+                style="@style/textstyle_dm_14_color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cp_stoporder_text3" />
+
+            <TextView
+                android:id="@+id/tv_earned"
+                style="@style/textstyle_dm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="+0.00%"
+                android:textColor="@color/main_green"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_earned"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_open_price_label"
+                    style="@style/textstyle_dr_10_color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cp_order_text30" />
+
+                <TextView
+                    android:id="@+id/tv_open_price_value"
+                    style="@style/textstyle_dm_14_color1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:text="--"
+                    tools:text="5230.00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_latest_price"
+                    style="@style/textstyle_dr_10_color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cp_order_text31" />
+
+                <TextView
+                    android:id="@+id/tv_latest_price_value"
+                    style="@style/textstyle_dm_14_color1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:text="--"
+                    tools:text="5249.00"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--底部二维码-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="@drawable/contract_kline_share_bg_hold_position"
+            android:paddingHorizontal="@dimen/dp_16">
+
+
+            <ImageView
+                android:id="@+id/iv_app_icon"
+                android:layout_width="@dimen/dp_44"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="@dimen/dp_16"
+                android:src="@mipmap/contract_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_toRightOf="@id/iv_app_icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_down_app"
+                    style="@style/textstyle_dm_14_color1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_17"
+                    android:text="@string/cp_stoporder_text4" />
+
+                <TextView
+                    android:id="@+id/tv_scan_down_app"
+                    style="@style/textstyle_dr_12_color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/cp_stoporder_text5" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_qr_code"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/main_red"
+                android:scaleType="fitXY"
+                android:src="@mipmap/contract_logo" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

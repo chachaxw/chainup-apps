@@ -1,0 +1,16 @@
+diff a/Chainup/Framework/EXSwapSDK/Network/Models/EXSwapItemModel.swift b/Chainup/Framework/EXSwapSDK/Network/Models/EXSwapItemModel.swift	(rejected hunks)
+@@ -73,12 +73,12 @@ class EXSwapItemModel: EXBaseModel {
+         //获取法币symbol
+        let symbol = EXAppMarketManager.sharedInstance.getFiatCoinSymbol()
+         if symbol == "" {
+-            return "---"
++            return ""
+         }
+         
+        let rateModel = EXSwapPublicInfo.shared.symboRate
+         if rateModel.symbolRateList == nil {
+-            return "---"
++            return ""
+         }
+         
+         if self.ex_contractInfo?.quote_coin == "usd"{

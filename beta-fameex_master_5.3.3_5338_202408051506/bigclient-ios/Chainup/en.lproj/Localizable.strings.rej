@@ -1,0 +1,15 @@
+diff a/Chainup/en.lproj/Localizable.strings b/Chainup/en.lproj/Localizable.strings	(rejected hunks)
+@@ -2134,11 +2134,11 @@ Please make sure that the computer and browser are secure to prevent information
+ "sumsub_verification_withdrawLimitsTitle"="Crypto Withdraw Limt";
+ "sumsub_verification_depositLimitsTitle"="Crypto Deposit Limt";
+ "sumsub_verification_unlimited"="Unlimited";
+-"sumsub_verification_cryptoLimitsTitle"="Crypto Limt";
++"sumsub_verification_cryptoLimitsTitle"="Crypto Limit";
+ "sumsub_verification_cryptoRequirementsTitle"="Requirements";
+ 
+ "earnings_yesterday_title"="Yesterday's PNL";
+-"earnings_yesterday_instruction"="Yesterday's PNL = Yesterday asset total in spot account （24:00:00 UTC+8） - Today's initial asset total（00:00:00 UTC+8） - Yesterday's net transfer and deposit";
++"earnings_yesterday_instruction"="Yesterday's PNL = Yesterday asset total in spot account (24:00:00 UTC+8) - Today's initial asset total (00:00:00 UTC+8) - Yesterday's net transfer and deposit";
+ 
+ "sumsub_tob_verification_navtitle"="Entity Verification";
+ "kyc_verification_legal"="Rights and interests";

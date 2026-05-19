@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SkeletonActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_header_kit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="按钮" />
+
+    <com.qmuiteam.qmui.layout.QMUILinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:qmui_topDividerColor="@color/line_color"
+        app:qmui_topDividerHeight="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:background="@color/main_color" />
+
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="按钮样式占满宽度"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/kk_btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="10dp"
+                app:kk_buttonText="风格-主题" />
+
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/kk_btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="10dp"
+                app:kk_buttonStyle="green"
+                app:kk_buttonText="风格-Buy" />
+
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/kk_btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="10dp"
+                app:kk_buttonStyle="red"
+                app:kk_buttonText="风格-Sell" />
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/kk_btn_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="10dp"
+                app:kk_buttonStyle="cancel"
+                app:kk_buttonText="风格-取消" />
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/kk_btn_5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="10dp"
+                app:kk_buttonStyle="cancel"
+                app:kk_buttonText="风格-不可点击" />
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/kk_btn_6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="10dp"
+                app:kk_buttonStyle="text"
+                app:kk_buttonText="风格-单文字" />
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/kk_btn_9"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="10dp"
+                app:kk_buttonStyle="text"
+                app:kk_buttonText="风格-单文字-不可点击" />
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/kk_btn_7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="10dp"
+                app:kk_buttonStyle="main"
+                app:kk_buttonText="风格-Loading" />
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/kk_btn_8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="10dp"
+                app:kk_buttonStyle="other"
+                app:kk_buttonText="风格-辅助按钮" />
+
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/kk_btn_10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="10dp"
+                app:kk_buttonStyle="other_enable"
+                app:kk_buttonText="风格-辅助按钮-- 不可点击" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:background="@color/main_color" />
+
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="按钮指定宽度"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_confirm"
+            android:layout_width="165dp"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonStyle="main"
+            app:kk_buttonText="测试防连击" />
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/kk_btn_cancel"
+            android:layout_width="165dp"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="10dp"
+            app:kk_buttonStyle="other"
+            app:kk_buttonText="测试防连击" />
+
+
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+
+</LinearLayout>

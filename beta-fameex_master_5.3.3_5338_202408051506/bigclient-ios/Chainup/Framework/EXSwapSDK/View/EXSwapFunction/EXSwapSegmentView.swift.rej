@@ -1,0 +1,77 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapSegmentView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapSegmentView.swift	(rejected hunks)
+@@ -14,7 +14,7 @@ class EXSwapSegmentView: UIView {
+     
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+-        backgroundColor = UIColor.exs_ThemeNav.bg
++        backgroundColor = UIColor.ThemeNav.bg
+         exs_addSubViews([openBtn,closeBtn,positionBtn,priceLabel,rateLabel,lineV])
+         openBtn.snp.makeConstraints { (make) in
+             make.left.equalToSuperview().offset(10)
+@@ -113,7 +113,7 @@ class EXSwapSegmentView: UIView {
+     
+     func reloadView(){
+         priceLabel.text = "--"
+-        priceLabel.textColor = UIColor.exs_ThemeLabel.colorLite
++        priceLabel.textColor = UIColor.ThemeLabel.colorLite
+     }
+     
+     func updateHoldPositionNumber(_ volume : String) {
+@@ -123,11 +123,11 @@ class EXSwapSegmentView: UIView {
+             var attrString = NSMutableAttributedString()
+             var selectedAttrString = NSMutableAttributedString()
+             if volume == "0" {
+-                attrString = NSMutableAttributedString().exs_add(string:  "cp_order_text1".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.colorMedium, NSAttributedString.Key.font : UIFont.ThemeFont.HeadBold])
+-                selectedAttrString = NSMutableAttributedString().exs_add(string:  "cp_order_text1".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.colorLite, NSAttributedString.Key.font : UIFont.ThemeFont.HeadBold])
++                attrString = NSMutableAttributedString().exs_add(string:  "cp_order_text1".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.colorMedium, NSAttributedString.Key.font : UIFont.ThemeFont.HeadBold])
++                selectedAttrString = NSMutableAttributedString().exs_add(string:  "cp_order_text1".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.colorLite, NSAttributedString.Key.font : UIFont.ThemeFont.HeadBold])
+             } else {
+-                attrString = NSMutableAttributedString().exs_add(string:  "cp_order_text1".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.colorMedium, NSAttributedString.Key.font : UIFont.ThemeFont.HeadBold]).exs_add(string: String(format: "【%@】", volume), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.colorMedium, NSAttributedString.Key.font : UIFont.ThemeFont.SecondaryBold])
+-                selectedAttrString = NSMutableAttributedString().exs_add(string:  "cp_order_text1".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.colorLite, NSAttributedString.Key.font : UIFont.ThemeFont.HeadBold]).exs_add(string: String(format: "【%@】", volume), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.colorLite, NSAttributedString.Key.font : UIFont.ThemeFont.SecondaryBold])
++                attrString = NSMutableAttributedString().exs_add(string:  "cp_order_text1".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.colorMedium, NSAttributedString.Key.font : UIFont.ThemeFont.HeadBold]).exs_add(string: String(format: "【%@】", volume), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.colorMedium, NSAttributedString.Key.font : UIFont.ThemeFont.SecondaryBold])
++                selectedAttrString = NSMutableAttributedString().exs_add(string:  "cp_order_text1".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.colorLite, NSAttributedString.Key.font : UIFont.ThemeFont.HeadBold]).exs_add(string: String(format: "【%@】", volume), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.colorLite, NSAttributedString.Key.font : UIFont.ThemeFont.SecondaryBold])
+             }
+             
+             DispatchQueue.main.async {
+@@ -145,8 +145,8 @@ class EXSwapSegmentView: UIView {
+         btn.layoutIfNeeded()
+         btn.tag = 1000
+         btn.setTitle( "cp_overview_text1".ex_localized(), for: .normal)
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorLite, for:.selected)
++        btn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
++        btn.setTitleColor(UIColor.ThemeLabel.colorLite, for:.selected)
+         btn.titleLabel?.font = UIFont.ThemeFont.HeadBold
+         btn.isSelected = true
+         btn.ext_SetAddTarget(self, #selector(clickBtn(_:)))
+@@ -159,8 +159,8 @@ class EXSwapSegmentView: UIView {
+         btn.layoutIfNeeded()
+         btn.tag = 1001
+         btn.setTitle( "cp_overview_text2".ex_localized(), for: .normal)
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorLite, for:.selected)
++        btn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
++        btn.setTitleColor(UIColor.ThemeLabel.colorLite, for:.selected)
+         btn.titleLabel?.font = UIFont.ThemeFont.HeadBold
+         btn.ext_SetAddTarget(self, #selector(clickBtn(_:)))
+         return btn
+@@ -171,8 +171,8 @@ class EXSwapSegmentView: UIView {
+         btn.ext_UseAutoLayout()
+         btn.layoutIfNeeded()
+         btn.tag = 1002
+-        let attrString = NSMutableAttributedString().exs_add(string:  "cp_order_text1".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.colorMedium, NSAttributedString.Key.font : UIFont.ThemeFont.HeadBold])
+-        let selectedAttrString = NSMutableAttributedString().exs_add(string:  "cp_order_text1".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.exs_ThemeLabel.colorLite, NSAttributedString.Key.font : UIFont.ThemeFont.HeadBold])
++        let attrString = NSMutableAttributedString().exs_add(string:  "cp_order_text1".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.colorMedium, NSAttributedString.Key.font : UIFont.ThemeFont.HeadBold])
++        let selectedAttrString = NSMutableAttributedString().exs_add(string:  "cp_order_text1".ex_localized(), attrDic: [NSAttributedString.Key.foregroundColor : UIColor.ThemeLabel.colorLite, NSAttributedString.Key.font : UIFont.ThemeFont.HeadBold])
+         btn.setAttributedTitle(attrString, for: .normal)
+         btn.setAttributedTitle(selectedAttrString, for: .selected)
+         btn.ext_SetAddTarget(self, #selector(clickBtn(_:)))
+@@ -204,7 +204,7 @@ class EXSwapSegmentView: UIView {
+     lazy var lineV : UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.highlight
++        view.backgroundColor = UIColor.ThemeView.highlight
+         return view
+     }()
+     

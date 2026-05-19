@@ -1,0 +1,356 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXStopProfitLossVc.swift b/Chainup/Framework/EXSwapSDK/Vc/EXStopProfitLossVc.swift	(rejected hunks)
+@@ -77,7 +77,7 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+     /// 触发价格
+     lazy var tiggerType: UILabel = {
+         let text = "cp_extra_text174".ex_localized()
+-        let label = UILabel(text: text, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++        let label = UILabel(text: text, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .left)
+         label.isHidden = true
+         return label
+     }()
+@@ -91,7 +91,7 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+         btn.clearColors()
+         btn.setFont(UIFont.ThemeFont.SecondaryBold)
+         
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        btn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         btn.ext_SetImages([UIImage.exs_themeImageNamed(imageName: "contract_checkbox_default"),UIImage.exs_themeImageNamed(imageName: "contract_checkbox_Focus")], controlStates: [.normal,.selected])
+         btn.addTarget(self, action: #selector(openProfitOrLoss(sender:)), for: .touchUpInside)
+         btn.isSelected = true
+@@ -105,9 +105,9 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+     }()
+     /// 合约类型
+     lazy var contractTypeLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.exs_ThemeLabel.colorHighlight, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.MinimumRegular, textColor: UIColor.ThemeLabel.colorHighlight, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+-        label.backgroundColor = UIColor.exs_ThemeLabel.colorHighlight.withAlphaComponent(0.15)
++        label.backgroundColor = UIColor.ThemeLabel.colorHighlight.withAlphaComponent(0.15)
+         label.layer.cornerRadius = 2
+         label.layer.masksToBounds = true
+         return label
+@@ -115,7 +115,7 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+     
+     /// 合约名称
+     lazy var nameLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+@@ -125,7 +125,7 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+         btn.setTitle(String(format:" %@","cp_extra_text191".ex_localized()), for: .normal)
+         btn.clearColors()
+         btn.setFont(UIFont.ThemeFont.SecondaryBold)
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++        btn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         btn.ext_SetImages([UIImage.exs_themeImageNamed(imageName: "contract_checkbox_default"),UIImage.exs_themeImageNamed(imageName: "contract_checkbox_Focus")], controlStates: [.normal,.selected])
+         btn.addTarget(self, action: #selector(openProfitOrLoss(sender:)), for: .touchUpInside)
+         btn.isSelected = true
+@@ -136,7 +136,7 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+     lazy var profitTiggerInput: EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.bgView.layer.cornerRadius = 4
+         textField.maxLenth = 9
+         textField.input.leftViewMode = .always
+@@ -160,7 +160,7 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+         textField.input.leftViewMode = .always
+         textField.input.leftView = textField.leftLabel
+ 
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.setPlaceHolder(placeHolder: "cp_order_text36".ex_localized())
+        
+         textField.textfieldValueChangeBlock = {[weak self]str in
+@@ -198,7 +198,7 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+     lazy var canCloseLabel : UILabel = {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.BodyRegular
+         label.attributedText = self.getCloseMore(price: "-", volume: "-")
+         return label
+@@ -227,21 +227,21 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+         
+         let lable = UILabel()
+         lable.font = UIFont.ThemeFont.SecondaryRegular
+-        lable.textColor = UIColor.exs_ThemeState.warning
++        lable.textColor = UIColor.ThemeState.warning
+         return lable
+         
+     }()
+     
+     
+     lazy var profitMarketLabel : UILabel = {
+-        let marketLabel = UILabel.init(text: "cp_overview_text53".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorHighlight, alignment: .right)
++        let marketLabel = UILabel.init(text: "cp_overview_text53".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorHighlight, alignment: .right)
+             marketLabel.adjustsFontSizeToFitWidth = true
+         return marketLabel
+     }()
+     
+     lazy var profitMarketCover : UILabel = {
+-        let marketCover = UILabel.init(text: "cp_overview_text53".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
+-        marketCover.backgroundColor = UIColor.exs_ThemeView.bg
++        let marketCover = UILabel.init(text: "cp_overview_text53".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
++        marketCover.backgroundColor = UIColor.ThemeView.bg
+         marketCover.isHidden = true
+         return marketCover
+     }()
+@@ -251,7 +251,7 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+     lazy var lossTiggerInput: EXSBorderField = {
+         let textField = EXSBorderField()
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.input.leftViewMode = .always
+         textField.maxLenth = 9
+         textField.bgView.layer.cornerRadius = 4
+@@ -272,7 +272,7 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+         let textField = EXSBorderField()
+         textField.input.leftViewMode = .always
+         textField.ext_UseAutoLayout()
+-        textField.input.textColor = UIColor.exs_ThemeLabel.colorLite
++        textField.input.textColor = UIColor.ThemeLabel.colorLite
+         textField.setPlaceHolder(placeHolder: "cp_order_text37".ex_localized())
+         textField.bgView.layer.cornerRadius = 4
+         textField.textfieldDidBeginBlock = {[weak self] in
+@@ -296,31 +296,31 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+     
+     /// 执行市价
+     lazy var lossMarketPerformBtn : UIButton = {
+-        let btn = UIButton(buttonType: .custom, title: "cp_overview_text53".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.exs_ThemeLabel.colorLite)
++        let btn = UIButton(buttonType: .custom, title: "cp_overview_text53".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.ThemeLabel.colorLite)
+         btn.ext_UseAutoLayout()
+         btn.ext_SetAddTarget(self, #selector(clickLimitBtn))
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .selected)
+-        btn.ext_setBackgroundColor(backgroundColor: UIColor.exs_ThemeNav.bg, state: .normal)
++        btn.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .selected)
++        btn.ext_setBackgroundColor(backgroundColor: UIColor.ThemeNav.bg, state: .normal)
+         return btn
+     }()
+     /// 执行市价
+     lazy var profitMarketPerformBtn : UIButton = {
+-        let btn = UIButton(buttonType: .custom, title: "cp_overview_text53".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.exs_ThemeLabel.colorLite)
++        let btn = UIButton(buttonType: .custom, title: "cp_overview_text53".ex_localized(), titleFont: UIFont.ThemeFont.BodyRegular, titleColor: UIColor.ThemeLabel.colorLite)
+         btn.ext_UseAutoLayout()
+         btn.ext_SetAddTarget(self, #selector(clickMarketBtn))
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .selected)
+-        btn.ext_setBackgroundColor(backgroundColor: UIColor.exs_ThemeNav.bg, state: .normal)
++        btn.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .selected)
++        btn.ext_setBackgroundColor(backgroundColor: UIColor.ThemeNav.bg, state: .normal)
+         return btn
+     }()
+     lazy var lossMarketLabel : UILabel = {
+-        let marketLabel = UILabel.init(text: "cp_overview_text53".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorHighlight, alignment: .right)
++        let marketLabel = UILabel.init(text: "cp_overview_text53".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorHighlight, alignment: .right)
+            marketLabel.adjustsFontSizeToFitWidth = true
+         return marketLabel
+     }()
+     
+     lazy var lossMarketCover : UILabel = {
+-        let marketCover = UILabel.init(text: "cp_overview_text53".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: .left)
+-        marketCover.backgroundColor = UIColor.exs_ThemeView.bg
++        let marketCover = UILabel.init(text: "cp_overview_text53".ex_localized(), font: UIFont.ThemeFont.BodyRegular, textColor: UIColor.ThemeLabel.colorLite, alignment: .left)
++        marketCover.backgroundColor = UIColor.ThemeView.bg
+         marketCover.isHidden = true
+         return marketCover
+     }()
+@@ -328,7 +328,7 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+     /// 提示
+     lazy var tipsLabel: UILabel = {
+         
+-        let label = UILabel(text: "", font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeState.warning, alignment: .left)
++        let label = UILabel(text: "", font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeState.warning, alignment: .left)
+         
+         return label
+     }()
+@@ -361,7 +361,7 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+         let btn = EXSDirectionButton()
+         btn.ext_UseAutoLayout()
+         btn.titleLabel.font = UIFont.ThemeFont.SecondaryRegular
+-        btn.titleLabel.textColor = UIColor.exs_ThemeLabel.colorLite
++        btn.titleLabel.textColor = UIColor.ThemeLabel.colorLite
+         btn.rx.controlEvent(.touchUpInside).subscribe { (_) in
+             
+             self.clickPriceTypeBtn(sender: btn)
+@@ -437,10 +437,10 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+     
+     func getCommonStyle() -> ExThreeColumnStyle {
+         let style = ExThreeColumnStyle()
+-        style.topLabelColor = UIColor.exs_ThemeLabel.colorMedium
++        style.topLabelColor = UIColor.ThemeLabel.colorMedium
+         style.topLabelFont = self.themeHNFont(size: 12)
+         style.bottomLabelFont = self.themeHNFont(size: 14)
+-        style.bottomLabelColor = UIColor.exs_ThemeLabel.colorLite
++        style.bottomLabelColor = UIColor.ThemeLabel.colorLite
+         return style
+     }
+     func orderWaysModel() -> [EXSBouncedModel] {
+@@ -449,16 +449,16 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+         
+         let model = EXSBouncedModel()
+         model.name = "cp_overview_text53".ex_localized()
+-        model.selectedColor = (currentPriceType == .market) ? UIColor.exs_ThemeView.bgTab : UIColor.exs_ThemeView.bg
+-        model.titleColor = (currentPriceType == .market) ? UIColor.exs_ThemeView.highlight : UIColor.exs_ThemeLabel.colorLite
+-        model.bgColor = (currentPriceType == .market) ? UIColor.exs_ThemeView.bgIconh : UIColor.exs_ThemeView.bg
++        model.selectedColor = (currentPriceType == .market) ? UIColor.ThemeView.bgTab : UIColor.ThemeView.bg
++        model.titleColor = (currentPriceType == .market) ? UIColor.ThemeView.highlight : UIColor.ThemeLabel.colorLite
++        model.bgColor = (currentPriceType == .market) ? UIColor.ThemeView.bgIconh : UIColor.ThemeView.bg
+         models.append(model)
+         
+         let model1 = EXSBouncedModel()
+         model1.name = "cp_overview_text54".ex_localized()
+-        model1.selectedColor = (currentPriceType == .limit) ? UIColor.exs_ThemeView.bgTab : UIColor.exs_ThemeView.bg
+-        model1.titleColor = (currentPriceType == .limit) ? UIColor.exs_ThemeView.highlight : UIColor.exs_ThemeLabel.colorLite
+-        model1.bgColor = (currentPriceType == .limit) ? UIColor.exs_ThemeView.bgIconh : UIColor.exs_ThemeView.bg
++        model1.selectedColor = (currentPriceType == .limit) ? UIColor.ThemeView.bgTab : UIColor.ThemeView.bg
++        model1.titleColor = (currentPriceType == .limit) ? UIColor.ThemeView.highlight : UIColor.ThemeLabel.colorLite
++        model1.bgColor = (currentPriceType == .limit) ? UIColor.ThemeView.bgIconh : UIColor.ThemeView.bg
+ 
+         models.append(model1)
+         return models
+@@ -467,7 +467,7 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+         self.view.endEditing(true)
+         
+         let popover = EXPopover(options: EXPopover.commonTradePopOption, showHandler: nil, dismissHandler: nil)
+-        popover.popoverColor = UIColor.exs_ThemeView.bg
++        popover.popoverColor = UIColor.ThemeView.bg
+         let models = orderWaysModel()
+         let view = EXSBouncedView.init(frame: CGRect(x: 0, y: 0, width:130, height: CGFloat(models.count * 36)))
+         view.setData(models,cellHeight: 36)
+@@ -571,7 +571,7 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+             let para = NSMutableParagraphStyle()
+             para.lineSpacing = 3
+             para.paragraphSpacing = 5
+-            message.addAttribute(.foregroundColor, value: UIColor.exs_ThemeLabel.colorMedium, range: NSRange(location: 0, length: message.length))
++            message.addAttribute(.foregroundColor, value: UIColor.ThemeLabel.colorMedium, range: NSRange(location: 0, length: message.length))
+ 
+             message.addAttribute(.paragraphStyle, value: para, range: NSRange(location: 0, length: message.length))
+             message.addAttribute(.font, value: UIFont.ThemeFont.BodyRegular, range: NSRange(location: 0, length: message.length))
+@@ -580,14 +580,14 @@ class EXStopProfitLossVc : EXSNavCustomVC {
+             
+             for (index,string) in stringList.enumerated() {
+                 if index % 2 != 0 {
+-                    message.addAttribute(.foregroundColor, value: UIColor.exs_ThemeLabel.colorLite, range: nsStr.range(of: string))
++                    message.addAttribute(.foregroundColor, value: UIColor.ThemeLabel.colorLite, range: nsStr.range(of: string))
+ 
+                     message.addAttribute(.font, value: UIFont.ThemeFont.BodyBold, range: nsStr.range(of: string))
+                 }
+             }
+             alert.configAttributeAlert(title: "cp_tip_text15".ex_localized(), message: message, passiveBtnTitle: "", positiveBtnTitle: "cp_extra_text28".ex_localized())
+             
+-            EXSAlert.showAlert(alertView: alert)
++            EXAlert.showAlert(alertView: alert)
+             print("click")
+         }).disposed(by: self.exs_disposeBag)
+         
+@@ -896,30 +896,30 @@ extension EXStopProfitLossVc {
+         
+         if openProfitBtn.isSelected == true {
+             if self.profitTiggerInput.input.text?.count == 0 {
+-                EXSAlert.showFail(msg:  "cp_tip_text2".ex_localized())
++                EXAlert.showFail(msg:  "cp_tip_text2".ex_localized())
+                 return
+             }
+             if currentPriceType == .limit &&
+                 self.profitExcutiveInput.input.text?.count == 0 {
+-                EXSAlert.showFail(msg:  "cp_extra_text167".ex_localized())
++                EXAlert.showFail(msg:  "cp_extra_text167".ex_localized())
+                 return
+             }
+            
+         }
+         if openLossBtn.isSelected == true {
+             if self.lossTiggerInput.input.text?.count == 0 {
+-                EXSAlert.showFail(msg:  "cp_tip_text2".ex_localized())
++                EXAlert.showFail(msg:  "cp_tip_text2".ex_localized())
+                 return
+             }
+             if currentPriceType == .limit &&
+                 self.lossExcutiveInput.input.text?.count == 0 {
+-                EXSAlert.showFail(msg:  "cp_extra_text167".ex_localized())
++                EXAlert.showFail(msg:  "cp_extra_text167".ex_localized())
+                 return
+             }
+         }
+         
+         if self.volumeTextField.input.text?.count == 0 {
+-            EXSAlert.showFail(msg:  "cp_extra_text169".ex_localized())
++            EXAlert.showFail(msg:  "cp_extra_text169".ex_localized())
+             return
+         }
+         
+@@ -945,7 +945,7 @@ extension EXStopProfitLossVc {
+                 alert.configAlert(firstTitle: stringList[0], firstMessage: stringList[1], secondTitle: stringList[2], secondMessage: stringList[3])
+                 
+             }
+-            EXSAlert.showAlert(alertView: alert)
++            EXAlert.showAlert(alertView: alert)
+             
+             alert.confimModelCallBack = {
+                 
+@@ -967,7 +967,7 @@ extension EXStopProfitLossVc {
+                 mySelf.confirmButton.isEnabled = true
+                 mySelf.clickStopProfitLoss?(true)
+                 if mySelf.submitCount == 0 {
+-                    EXSAlert.showSuccess(msg:  "cp_extra_text109".ex_localized())
++                    EXAlert.showSuccess(msg:  "cp_extra_text109".ex_localized())
+                     mySelf.navigationController?.popViewController(animated: true)
+                 }
+             } failure: { (shouldRequest) in
+@@ -1031,7 +1031,7 @@ extension EXStopProfitLossVc {
+             volume = EXFormula.coin(toTicket: volume, price: p.index_px, contract: p.ex_contractInfo).toString(0)
+         }
+         if !tigg_px.greaterThan("0") {
+-            EXSAlert.showFail(msg: "cp_extra_text181".ex_localized())
++            EXAlert.showFail(msg: "cp_extra_text181".ex_localized())
+             return (nil,true)
+         }
+ 
+@@ -1064,7 +1064,7 @@ extension EXStopProfitLossVc {
+             volume = EXFormula.coin(toTicket: volume, price: p.index_px, contract: p.ex_contractInfo).toString(0)
+         }
+         if !tigg_px.greaterThan("0") {
+-            EXSAlert.showFail(msg: "cp_extra_text181".ex_localized())
++            EXAlert.showFail(msg: "cp_extra_text181".ex_localized())
+             return (nil,true)
+         }
+ 
+@@ -1103,7 +1103,7 @@ extension EXStopProfitLossVc {
+         revokeAllStopProfitOrderButton.isUserInteractionEnabled = false
+         EXContractNetwork.revokeOrderForStopProfitOrStopLoss(contractId: self.positionModel?.instrument_id ?? 0, orderIds: orderIds) {
+             self.revokeAllStopProfitOrderButton.isUserInteractionEnabled = true
+-            EXSAlert.showSuccess(msg:  "cp_extra_text180".ex_localized())
++            EXAlert.showSuccess(msg:  "cp_extra_text180".ex_localized())
+             self.requestProfitOrLossOrder()
+         } failure: { (_) in
+             
+@@ -1115,7 +1115,7 @@ extension EXStopProfitLossVc {
+         revokeAllStopLossOrderButton.isUserInteractionEnabled = false
+         EXContractNetwork.revokeOrderForStopProfitOrStopLoss(contractId: self.positionModel?.instrument_id ?? 0, orderIds: orderIds) {
+             self.revokeAllStopLossOrderButton.isUserInteractionEnabled = true
+-            EXSAlert.showSuccess(msg:  "cp_extra_text179".ex_localized())
++            EXAlert.showSuccess(msg:  "cp_extra_text179".ex_localized())
+             self.requestProfitOrLossOrder()
+         } failure: { (_) in
+             
+@@ -1133,13 +1133,13 @@ extension EXStopProfitLossVc {
+     func getAttr(title:String,fullStr:String) -> NSMutableAttributedString {
+         let attributes: [NSAttributedString.Key: Any] = [
+             .font: UIFont.ThemeFont.BodyMedium,
+-            .foregroundColor: UIColor.exs_ThemeLabel.colorMedium,
++            .foregroundColor: UIColor.ThemeLabel.colorMedium,
+         ]
+         
+         let attr = NSMutableAttributedString.init(string: fullStr, attributes: attributes)
+         let nsString = NSString(string: fullStr)
+         let titleRange = nsString.range(of: title)
+-        attr.addAttribute(.foregroundColor, value: UIColor.exs_ThemeLabel.colorMedium, range:titleRange)
++        attr.addAttribute(.foregroundColor, value: UIColor.ThemeLabel.colorMedium, range:titleRange)
+         attr.addAttribute(.font, value: UIFont.ThemeFont.BodyRegular, range:titleRange)
+ 
+         return attr

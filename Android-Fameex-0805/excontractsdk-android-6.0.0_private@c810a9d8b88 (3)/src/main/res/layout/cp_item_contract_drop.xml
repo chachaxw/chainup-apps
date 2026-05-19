@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chainup.contract.view.trade.LongPressRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/bg_market_contract_click"
+    >
+
+    <ImageView
+        android:id="@+id/ic_collect_like"
+        android:layout_width="@dimen/dp_8"
+        android:layout_height="@dimen/dp_8"
+        android:src="@drawable/ic_public_favorites_small"
+        android:layout_alignTop="@id/content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginTop="@dimen/dp_6"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_contract_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:singleLine="true"
+            style="@style/textstyle_dm_16_color1"
+            tools:text="dddd"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/dp_16"
+            >
+
+            <TextView
+                android:id="@+id/tv_last_price"
+                style="@style/textstyle_dm_16_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:text="--"
+                tools:text="--" />
+
+
+            <TextView
+                android:id="@+id/tv_contract_chg"
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_last_price"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_2"
+                android:clickable="false"
+                android:text="--"
+                tools:text="+0.45%"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</com.chainup.contract.view.trade.LongPressRelativeLayout>
+

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cp_bg_item_dialog_bg"
+    android:paddingHorizontal="@dimen/dp_20"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:gravity="start"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/cp_tip_text15"
+        android:visibility="visible"
+        style="@style/textstyle_dm_18_bold_color1"
+        />
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_below="@id/tv_title">
+        <com.chainup.kit.views.base.BaseMaxHeightScrollView
+            android:id="@+id/sv_max_height"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_profit_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cp_tip_text16"
+                    style="@style/textstyle_dm_14_color1"
+                    />
+                <TextView
+                    android:id="@+id/tv_profit_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/cp_tip_text17"
+                    style="@style/textstyle_dr_12_color2"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_color"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_loss_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cp_tip_text18"
+                    android:layout_marginTop="@dimen/dp_16"
+                    style="@style/textstyle_dm_14_color1"
+                    />
+                <TextView
+                    android:id="@+id/tv_loss_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:text="@string/cp_tip_text19"
+                    style="@style/textstyle_dr_12_color2"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_color"
+                    />
+                <TextView
+                    android:id="@+id/tv_cp_tip_text20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cp_tip_text20"
+                    android:layout_marginTop="@dimen/dp_16"
+                    style="@style/textstyle_dm_14_color1"
+                    />
+                <TextView
+                    android:id="@+id/tv_cp_tip_text21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:text="@string/cp_tip_text21"
+                    style="@style/textstyle_dr_12_color2"
+
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_color"
+                    />
+                <TextView
+                    android:id="@+id/tv_cp_tip_text22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cp_tip_text22"
+                    android:layout_marginTop="@dimen/dp_16"
+                    style="@style/textstyle_dm_14_color1"
+                    />
+                <TextView
+                    android:id="@+id/tv_cp_tip_text23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/cp_tip_text23"
+                    style="@style/textstyle_dr_12_color2"
+                    />
+
+            </LinearLayout>
+
+        </com.chainup.kit.views.base.BaseMaxHeightScrollView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_content">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_44"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_select_button_blue"
+            android:textAllCaps="false"
+            android:text="@string/cp_extra_text28"
+            style="@style/textstyle_dm_14_color1"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

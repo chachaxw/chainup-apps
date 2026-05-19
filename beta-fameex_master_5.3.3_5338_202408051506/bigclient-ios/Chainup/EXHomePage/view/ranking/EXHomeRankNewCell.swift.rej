@@ -1,0 +1,13 @@
+diff a/Chainup/EXHomePage/view/ranking/EXHomeRankNewCell.swift b/Chainup/EXHomePage/view/ranking/EXHomeRankNewCell.swift	(rejected hunks)
+@@ -72,9 +72,9 @@ class EXHomeRankNewCell: EXHomeBaseCell {
+     override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+         super.setHighlighted(highlighted, animated: animated)
+         if (highlighted) {
+-            self.contentView.backgroundColor = UIColor.ThemeNav.bg
++            self.contentView.backgroundColor = UIColor.ThemeView.card2
+         }else{
+-            self.contentView.backgroundColor = UIColor.ThemeView.bg
++            self.contentView.backgroundColor = UIColor.ThemeView.card1
+         }
+     }
+     

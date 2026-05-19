@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SkeletonActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_header_kit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="Drop Down 下拉框" />
+
+    <com.qmuiteam.qmui.layout.QMUILinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/dialog_bg_color"
+        android:padding="16dp"
+        app:qmui_topDividerColor="@color/line_color"
+        app:qmui_topDividerHeight="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:background="@color/main_color" />
+
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="KKPopupSelectKit"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="固定宽度"
+                />
+            <com.chainup.kit.views.KKPopupSelectKit
+                android:id="@+id/mSelectView"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_card2_corners4"
+                android:paddingHorizontal="@dimen/dp_10"
+
+                />
+            <com.chainup.kit.views.KKPopupSelectKit
+                android:id="@+id/mSelectView_sp1"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_card2_corners4"
+                android:paddingHorizontal="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动宽度"
+                />
+
+            <com.chainup.kit.views.KKPopupSelectKit
+                android:id="@+id/mSelectView2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@drawable/bg_card2_corners4"
+                android:paddingHorizontal="@dimen/dp_8"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义targetView"
+                />
+            <com.chainup.kit.views.KKPopupSelectKit
+                android:id="@+id/mSelectView3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@drawable/bg_card2_corners4"
+                />
+
+            <com.chainup.kit.views.KKPopupSelectKit
+                android:id="@+id/psk_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_18"
+                app:kk_psk_text_size="@dimen/sp_12"
+                app:kk_psk_dim_value="0.0"
+                app:kk_psk_show_tip_icon="false"
+                app:kk_psk_selector_drawable="@color/special_2"
+                app:kk_psk_selector_elevation="0.0"
+                android:background="@drawable/bg_sp2_corners4"
+                android:paddingHorizontal="@dimen/dp_8"
+                />
+
+            <com.chainup.kit.views.KKPopupSelectKit
+                android:id="@+id/psk_selector2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_18"
+                app:kk_psk_text_size="@dimen/sp_12"
+                app:kk_psk_dim_value="0.0"
+                app:kk_psk_show_tip_icon="false"
+                app:kk_psk_selector_drawable="@color/special_2"
+                app:kk_psk_selector_elevation="0.0"
+                android:background="@drawable/bg_sp2_corners4"
+                android:paddingHorizontal="@dimen/dp_8"
+                app:kk_psk_width_equal_targetView="true"
+                />
+
+            <com.chainup.kit.views.KKPopupSelectKit
+                android:id="@+id/psk_selector3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_18"
+                app:kk_psk_text_size="@dimen/sp_12"
+                app:kk_psk_dim_value="0.0"
+                app:kk_psk_show_tip_icon="false"
+                app:kk_psk_selector_drawable="@color/special_2"
+                app:kk_psk_selector_elevation="30.0"
+                android:background="@drawable/bg_sp2_corners4"
+                android:paddingHorizontal="@dimen/dp_8"
+                app:kk_psk_width_equal_targetView="true"
+                />
+
+            <com.chainup.kit.views.KKPopupSelectKit
+                android:id="@+id/mSelectView_2"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/bg_card2_corners4"
+                />
+
+            <com.chainup.kit.views.KKPopupSelectKit
+                android:id="@+id/mSelectView_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="20dp"
+                    android:background="@color/main_color" />
+
+                <TextView
+                    style="@style/textstyle_dm_14_color1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="KKDropDownView"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <com.chainup.kit.views.KKDropDownView
+                android:id="@+id/item_1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:kk_item_show_left_text="true"
+                app:kk_item_left_textColor="@color/text_2"
+                app:kk_item_left_hint="Please Choose"
+                app:kk_item_show_left_icon="true" />
+            <com.chainup.kit.views.KKDropDownView
+                android:id="@+id/item_2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_card_color"
+                app:kk_item_show_right_text="true"
+                app:kk_item_right_hint="Please Choose"
+                app:kk_item_show_right_down_icon="false"
+                app:kk_item_show_right_icon="false"/>
+            <com.chainup.kit.views.KKDropDownView
+                android:id="@+id/item_3"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_card_color"
+                app:kk_item_show_right_text="true"
+                app:kk_item_right_hint="Please Choose"
+                app:kk_item_show_right_icon="true"
+                app:kk_item_title="选择币种"/>
+            <com.chainup.kit.views.KKDropDownView
+                android:id="@+id/item_4"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_card_color"
+                app:kk_item_show_left_text="true"
+                app:kk_item_left_hint="Please Choose"
+                app:kk_item_left_text="ERC20"/>
+            <com.chainup.kit.views.KKDropDownView
+                android:id="@+id/item_5"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_card_color"
+                app:kk_item_show_left_text="true"
+                app:kk_item_left_text="中国"
+                app:kk_item_show_right_text="true"
+                app:kk_item_right_text="+86"
+                app:kk_item_title="选择国家"/>
+            <com.chainup.kit.views.KKDropDownView
+                android:id="@+id/item_6"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_card_color"
+                app:kk_item_show_left_text="true"
+                app:kk_item_left_hint="Currency"
+                app:kk_item_show_right_text="true"
+                app:kk_item_show_right_icon="true"
+                app:kk_item_right_text="BTC"/>
+        </LinearLayout>
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+
+</LinearLayout>

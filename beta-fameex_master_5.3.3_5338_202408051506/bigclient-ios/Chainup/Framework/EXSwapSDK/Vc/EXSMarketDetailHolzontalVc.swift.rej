@@ -1,0 +1,17 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSMarketDetailHolzontalVc.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSMarketDetailHolzontalVc.swift	(rejected hunks)
+@@ -71,12 +71,12 @@ class EXSMarketDetailHolzontalVc: UIViewController {
+         self.handleMenu()
+         self.handlekLineWs()
+         self.handlekLineScale()
+-        self.klineView.chartsView.backgroundColor = UIColor.exs_ThemeView.bg
++        self.klineView.chartsView.backgroundColor = UIColor.ThemeView.bg
+         self.klineView.priceDecimal = coinMapEntity.price
+         self.klineView.volumeDecimal = coinMapEntity.volume
+         closeBtn.setImage(UIImage.exs_themeImageNamed(imageName: "quotes_scaling"), for: .normal)
+-        topLeftHeader.backgroundColor = UIColor.exs_ThemeNav.bg
+-        topRightHeader.backgroundColor = UIColor.exs_ThemeNav.bg
++        topLeftHeader.backgroundColor = UIColor.ThemeNav.bg
++        topRightHeader.backgroundColor = UIColor.ThemeNav.bg
+         self.handleScale(key: self.menuModel.scaleKey)
+     }
+     

@@ -1,0 +1,10 @@
+diff a/Chainup/Tool/BasicnessTools/PublicInfo/EXAppConfigManager.swift b/Chainup/Tool/BasicnessTools/PublicInfo/EXAppConfigManager.swift	(rejected hunks)
+@@ -155,7 +155,7 @@ class EXAppConfigManager: NSObject {
+         //更新缓存
+         EXAppCache.sharedCache.updatePbV5Model(model: model)
+         //老逻辑,下载在线语言包
+-        LanguageTools.shareInstance.tryDownloadCurrentLan()
++        LanguageTools.shareInstance.tryDownloadCurrentLan(lanID:  LanguageHandler.phoneLanguage)
+         
+         self.onPbV5Publish.onNext(true)
+     }

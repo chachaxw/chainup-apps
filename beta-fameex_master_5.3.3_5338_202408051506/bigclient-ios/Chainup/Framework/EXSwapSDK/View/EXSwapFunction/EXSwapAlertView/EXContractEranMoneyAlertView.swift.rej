@@ -1,0 +1,82 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapAlertView/EXContractEranMoneyAlertView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapFunction/EXSwapAlertView/EXContractEranMoneyAlertView.swift	(rejected hunks)
+@@ -37,7 +37,7 @@ class EXContractEranMoneyAlertView: UIView {
+         
+         let label = UILabel()
+         label.textAlignment = .left
+-        label.textColor = UIColor.exs_ThemeLabel.colorLite
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.font = UIFont.ThemeFont.HeadBold
+         
+         return label
+@@ -47,7 +47,7 @@ class EXContractEranMoneyAlertView: UIView {
+         let label = UILabel()
+         label.numberOfLines = 0
+         label.textAlignment = .left
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.BodyRegular
+         
+         return label
+@@ -61,7 +61,7 @@ class EXContractEranMoneyAlertView: UIView {
+     }()
+     lazy var totalAmountCell:EXContractEranMoneyAlertViewCell = {
+        let cell = EXContractEranMoneyAlertViewCell()
+-        cell.leftLabel.textColor = UIColor.exs_ThemeLabel.colorLite
++        cell.leftLabel.textColor = UIColor.ThemeLabel.colorLite
+         cell.leftLabel.font = UIFont.ThemeFont.HeadMedium
+         
+         cell.rightLabel.font = UIFont.ThemeFont.BodyMedium
+@@ -113,7 +113,7 @@ class EXContractEranMoneyAlertView: UIView {
+   
+     private lazy var confirmButton: UIButton = {
+         let button = UIButton(buttonType: .custom, title: "cp_extra_text28".ex_localized(), titleFont: UIFont.ThemeFont.HeadBold, titleColor: UIColor.white)
+-        button.backgroundColor = UIColor.exs_ThemeBtn.highlight
++        button.backgroundColor = UIColor.ThemeBtn.highlight
+         button.corneradius = 4
+         button.ext_SetAddTarget(self, #selector(clickConfirmButton))
+         return button
+@@ -123,7 +123,7 @@ class EXContractEranMoneyAlertView: UIView {
+  
+         super.init(frame: frame)
+         self.layer.cornerRadius = 4
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         setUpViews()
+         titles.text = "cp_extra_text137".ex_localized()
+         totalAmountCell.leftLabel.text = type.introduce
+@@ -297,7 +297,7 @@ class EXContractEranMoneyAlertView: UIView {
+     
+     @objc func clickConfirmButton(){
+         
+-        EXSAlert.dismiss()
++        EXAlert.dismiss()
+     }
+     
+     
+@@ -349,7 +349,7 @@ class EXContractEranMoneyAlertViewCell:UIView {
+         let label = UILabel()
+         
+         label.textAlignment = .left
+-        label.textColor = UIColor.exs_ThemeLabel.colorMedium
++        label.textColor = UIColor.ThemeLabel.colorMedium
+         label.font = UIFont.ThemeFont.BodyMedium
+         return label
+         
+@@ -357,7 +357,7 @@ class EXContractEranMoneyAlertViewCell:UIView {
+     lazy var rightLabel:UILabel = {
+         let label = UILabel()
+         label.textAlignment = .right
+-        label.textColor = UIColor.exs_ThemeLabel.colorLite
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.font = UIFont.ThemeFont.BodyMedium
+         
+         return label
+@@ -365,7 +365,7 @@ class EXContractEranMoneyAlertViewCell:UIView {
+     lazy var valueUnitLabel:UILabel = {
+         let label = UILabel()
+         label.textAlignment = .right
+-        label.textColor = UIColor.exs_ThemeLabel.colorLite
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.font = UIFont.ThemeFont.SecondaryRegular
+         
+         return label

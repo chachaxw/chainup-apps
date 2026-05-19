@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--选择订单类型-->
+
+    <com.chainup.kit.views.KKPopupSelectKit
+        android:id="@+id/tv_order_type"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:paddingHorizontal="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:visibility="gone"
+        android:background="@drawable/bg_select_contract"
+        />
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tab_order_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tl_tab_space_equal="false"
+        android:layout_marginHorizontal="-16dp"
+        style="@style/public_commontab_bline_14_style"
+        android:layout_marginTop="@dimen/dp_12" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@color/line_color"
+        android:layout_marginBottom="12dp"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:id="@+id/ll_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--下单-->
+        <com.yjkj.chainup.new_version.view.depth.TradeView
+            android:id="@+id/trade_amount_view_buy_l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/dp_7" />
+
+        <com.yjkj.chainup.new_version.view.depth.TradeView
+            android:id="@+id/trade_amount_view_sell_l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/dp_7" />
+
+    </LinearLayout>
+    <!--下单-->
+    <com.chainup.kit.views.KKButtonKit
+        android:id="@+id/ktn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_12"
+        app:kk_buttonText="@string/login_action_login" />
+</LinearLayout>

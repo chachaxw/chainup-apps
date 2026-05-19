@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/v_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card_color"
+    android:fitsSystemWindows="true">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title=""
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout"
+        >
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/textstyle_dm_10_color1"
+            android:textSize="28sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/personal_tip_inputPhoneCode"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/dp_16"/>
+
+        <TextView
+            android:id="@+id/tv_send_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_top_title"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/login_tip_didSendCode"
+            android:textColor="@color/normal_text_color"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginLeft="@dimen/dp_16"
+            />
+
+        <com.yjkj.chainup.wedegit.VerificationCodeView
+            android:id="@+id/verificationcodeview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_send_verification_code"
+            android:layout_marginTop="26dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:vcv_et_bg="@drawable/et_login_code"
+            app:vcv_et_cursor="@drawable/et_cursor"
+            app:vcv_et_inputType="number"
+            app:vcv_et_number="6"
+            app:vcv_et_text_color="@color/text_color"
+            app:vcv_et_text_size="6sp"
+            app:vcv_et_width="@dimen/dp_50"
+            android:layout_marginHorizontal="@dimen/dp_16"/>
+
+        <TextView
+            android:id="@+id/tv_resend_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verificationcodeview"
+            android:layout_marginTop="19dp"
+            android:text="@string/login_action_resendCode"
+            android:textColor="@color/hint_color"
+            android:textSize="14sp"
+            android:layout_marginLeft="@dimen/dp_16"/>
+
+        <TextView
+            android:id="@+id/tv_paste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verificationcodeview"
+            android:layout_marginTop="19dp"
+            android:text="@string/common_action_paste"
+            android:textColor="@color/hint_color"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_16"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

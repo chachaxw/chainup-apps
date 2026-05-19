@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXPersentageSelectView" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="stepStacks" destination="qjV-Zr-UtB" id="nTo-RN-BM1"/>
+                <outletCollection property="steps" destination="QyH-b1-HEF" collectionClass="NSMutableArray" id="bw8-jr-SDK"/>
+                <outletCollection property="steps" destination="EFd-cv-r8n" collectionClass="NSMutableArray" id="R3b-gG-QCG"/>
+                <outletCollection property="steps" destination="PiH-hw-0fh" collectionClass="NSMutableArray" id="goz-QY-xvT"/>
+                <outletCollection property="steps" destination="X5m-Rt-pPq" collectionClass="NSMutableArray" id="W4z-yP-pRq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3tE-GQ-sbz" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="119"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qjV-Zr-UtB">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="119"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyH-b1-HEF">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="119"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="10%"/>
+                            <connections>
+                                <action selector="onTapStep:" destination="-1" eventType="touchUpInside" id="Wr0-TF-n6A"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFd-cv-r8n">
+                            <rect key="frame" x="120" y="0.0" width="120" height="119"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="20%"/>
+                            <connections>
+                                <action selector="onTapStep:" destination="-1" eventType="touchUpInside" id="Ca9-KN-rfi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiH-hw-0fh">
+                            <rect key="frame" x="240" y="0.0" width="120" height="119"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="50%"/>
+                            <connections>
+                                <action selector="onTapStep:" destination="-1" eventType="touchUpInside" id="8Om-ip-pbo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5m-Rt-pPq">
+                            <rect key="frame" x="360" y="0.0" width="120" height="119"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="100%"/>
+                            <connections>
+                                <action selector="onTapStep:" destination="-1" eventType="touchUpInside" id="wxh-kD-CaP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qjV-Zr-UtB" secondAttribute="bottom" id="9nw-TG-Lra"/>
+                <constraint firstItem="qjV-Zr-UtB" firstAttribute="top" secondItem="3tE-GQ-sbz" secondAttribute="top" id="OCd-Lb-zAc"/>
+                <constraint firstItem="qjV-Zr-UtB" firstAttribute="leading" secondItem="3tE-GQ-sbz" secondAttribute="leading" id="hjI-AG-nsH"/>
+                <constraint firstAttribute="trailing" secondItem="qjV-Zr-UtB" secondAttribute="trailing" id="nBv-7j-Dmk"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-279.71014492753625" y="-726.89732142857144"/>
+        </view>
+    </objects>
+</document>

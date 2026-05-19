@@ -1,0 +1,27 @@
+diff a/Chainup/EXOTC/Home/view/EXOTCHomeCell.swift b/Chainup/EXOTC/Home/view/EXOTCHomeCell.swift	(rejected hunks)
+@@ -155,21 +155,21 @@ class EXPaymentV:UIView {
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+         self.addSubViews([iconV,titleLabel,touchBtn])
+-        iconV.snp_makeConstraints { make in
++        iconV.snp.makeConstraints { make in
+             make.width.equalTo(4)
+             make.left.equalToSuperview()
+             make.height.equalTo(12)
+             make.centerY.equalToSuperview()
+         }
+-        titleLabel.snp_makeConstraints { make in
+-            make.left.equalTo(iconV.snp_right).offset(4)
++        titleLabel.snp.makeConstraints { make in
++            make.left.equalTo(iconV.snp.right).offset(4)
+             make.top.equalToSuperview()
+             make.bottom.equalToSuperview()
+             make.height.equalTo(18)
+             make.right.equalToSuperview()
+         }
+         
+-        touchBtn.snp_makeConstraints { make in
++        touchBtn.snp.makeConstraints { make in
+             make.edges.equalToSuperview()
+         }
+     }

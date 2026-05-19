@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--style = 2-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="312dp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/dialog_bg_color"
+    app:cardCornerRadius="@dimen/dp_12">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/tv_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_24">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_horizontal"
+                style="@style/textstyle_dm_16_bold_color1"
+                android:gravity="center"
+                tools:text="温馨提示" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:gravity="start"
+                android:lineSpacingExtra="3dp"
+                android:lineHeight="@dimen/dp_20"
+                style="@style/textstyle_dr_14_color2"
+                tools:text="这是文案这是文案这是文案这是文案这是文案这是文案这是文案这是文案这是文案这是文案这是文案" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_content_layout"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/tv_confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <com.chainup.kit.views.KKButtonKit
+                android:id="@+id/tv_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:kk_buttonStyle="text"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

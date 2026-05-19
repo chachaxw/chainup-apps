@@ -1,0 +1,33 @@
+diff a/Chainup/EXCOINS/Leverage&Exchange/view/EXLeverDropDownPanel.swift b/Chainup/EXCOINS/Leverage&Exchange/view/EXLeverDropDownPanel.swift	(rejected hunks)
+@@ -60,13 +60,13 @@ class EXLeverRiskPanel:UIView {
+             make.height.equalTo(26)
+         }
+         titleLabel.snp.makeConstraints { (make) in
+-            make.centerY.equalTo(riskDial.snp_centerY)
++            make.centerY.equalTo(riskDial.snp.centerY)
+             make.left.equalTo(riskDial.snp.right).offset(10)
+             make.right.equalTo(subTitleLabel.snp.left)
+         }
+         
+         subTitleLabel.snp.makeConstraints { (make) in
+-            make.centerY.equalTo(riskDial.snp_centerY)
++            make.centerY.equalTo(riskDial.snp.centerY)
+             make.left.equalTo(titleLabel.snp.right)
+             make.right.lessThanOrEqualToSuperview().offset(-16)
+         }
+@@ -258,13 +258,13 @@ class EXLeverDropDownPanel: UIView {
+         }
+         
+         returnBtn.snp.makeConstraints { (make) in
+-            make.centerY.equalTo(borrowBtn.snp_centerY)
++            make.centerY.equalTo(borrowBtn.snp.centerY)
+             make.right.equalTo(transferBtn.snp.left).offset(-9)
+             make.width.equalTo(transferBtn.snp_width)
+         }
+         
+         transferBtn.snp.makeConstraints { (make) in
+-            make.centerY.equalTo(borrowBtn.snp_centerY)
++            make.centerY.equalTo(borrowBtn.snp.centerY)
+             make.right.equalToSuperview().offset(-15)
+             make.width.equalTo(borrowBtn.snp_width)
+         }

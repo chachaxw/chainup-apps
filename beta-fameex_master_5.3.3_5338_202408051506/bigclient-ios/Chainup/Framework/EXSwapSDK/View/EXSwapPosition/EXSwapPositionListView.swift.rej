@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapPosition/EXSwapPositionListView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapPosition/EXSwapPositionListView.swift	(rejected hunks)
+@@ -25,7 +25,7 @@ import UIKit
+ //        let tableView = UITableView(frame: self.bounds, style: UITableViewStyle.plain)
+ //        tableView.ext_UseAutoLayout()
+ //        tableView.ext_SetTableView(self, self)
+-//        tableView.backgroundColor = UIColor.exs_ThemeView.bg
++//        tableView.backgroundColor = UIColor.ThemeView.bg
+ //        tableView.rowHeight = 315
+ //        tableView.ext_RegistCell([EXSwapPositionCell.classForCoder()], [cellReUseID])
+ //        tableView.mj_header = EXSRefreshHeaderView(refreshingBlock: {

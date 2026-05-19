@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSwapDetailViewController.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSwapDetailViewController.swift	(rejected hunks)
+@@ -22,7 +22,7 @@ class EXSwapDetailViewController: ContentBaseViewController {
+         menu.delegate = self
+         menu.dataSource = self
+         menu.titleFontSize = 12
+-        menu.textColor = UIColor.exs_ThemeLabel.colorBlack
++        menu.textColor = UIColor.ThemeLabel.colorLite
+        return menu
+     }()
+     override func setNavCustomV() {

@@ -1,0 +1,160 @@
+diff a/Chainup/Framework/EXSwapSDK/Utility/EXSThemeManager.swift b/Chainup/Framework/EXSwapSDK/Utility/EXSThemeManager.swift	(rejected hunks)
+@@ -1,158 +1,3 @@
+-//
+-//  EXThemeManager.swift
+-//  Chainup
+-//
+-//  Created by liuxuan on 2019/3/30.
+-//  Copyright © 2019 zewu wang. All rights reserved.
+-//
+-
+-import UIKit
+-import SwiftTheme
+-
+-let EXS_THEME_CHANGE_NOTI = "EXS_THEME_CHANGE_NOTI"
+-let EXS_KLINE_CHANGE_NOTI = "EXS_KLINE_CHANGE_NOTI"
+-
+-private let lastThemeIndexKey = "lastedThemeIndex"
+-private let lastedKlineIndex = "lastedKlineIndex"
+-
+-private let defaults = UserDefaults.standard
+-
+-enum EXSThemeManager: Int {
+-    
+-    case day   = 0
+-    case night = 1
+-    case dayKlinenight = 2
+-    // MARK: -
+-    static var excurrent = EXSThemeManager.day
+-    static var exbefore = EXSThemeManager.day
+-    
+-    // MARK: - Switch Theme
+-    static func switchTo(theme: EXSThemeManager) {
+-        exbefore = excurrent
+-        excurrent = theme
+-     if let bundlePath = EXSTools.getLocalBundlePath(),let url = URL(string: bundlePath) {
+-            
+-            switch theme {
+-            case .day:
+-                EXSwapColorThemeManager.setTheme(plistName: "DayTheme", path: .sandbox(url))
+-            case .night:
+-                EXSwapColorThemeManager.setTheme(plistName: "NightTheme", path: .sandbox(url))
+-            case .dayKlinenight:
+-                EXSwapColorThemeManager.setTheme(plistName: "DayKlineNightTheme", path: .mainBundle)
+-            }
+-        }
+-        saveLastTheme()
+-        NotificationCenter.default.post(name: NSNotification.Name.init(EXS_THEME_CHANGE_NOTI),object: nil)
+-    }
+-    
+-//    static func switchNight(isToNight: Bool) {
+-//        if current.rawValue != isToNight.rawValue{
+-//            switchTo(theme: isToNight)
+-//        }
+-////        switchTo(theme: isToNight ? .night : exbefore)
+-//    }
+-    static func switchNight(isToNight: EXSThemeManager) {
+-        if excurrent.rawValue != isToNight.rawValue{
+-            switchTo(theme: isToNight)
+-        }
+-    }
+-
+-    static func isNight() -> Bool {
+-        return excurrent == .night
+-    }
+-    
+-    static func restoreLastTheme() {
+-        let idx = defaults.integer(forKey: lastThemeIndexKey)
+-        let temptheme = EXSThemeManager(rawValue: idx)
+-        if let themem = temptheme {
+-            switchTo(theme:themem)
+-        }else {
+-            switchTo(theme: .day)
+-        }
+-        EXSKLineManager.restoreLastKline()
+-    }
+-    
+-    static func saveLastTheme() {
+-        defaults.set(excurrent.rawValue, forKey: lastThemeIndexKey)
+-    }
+-}
+-
+-@objc public final class EXSwapColorThemeManager: NSObject {
+-    
+-    @objc public static var animationDuration = 0.3
+-    
+-    @objc public fileprivate(set) static var currentTheme: NSDictionary?
+-    @objc public fileprivate(set) static var currentThemeIndex: Int = 0
+-    
+-    public fileprivate(set) static var currentThemePath: ThemePath?
+-
+-}
+-public extension EXSwapColorThemeManager {
+-    
+-    @objc class func setTheme(index: Int) {
+-        currentThemeIndex = index
+-        NotificationCenter.default.post(name: Notification.Name(rawValue: ThemeUpdateNotification), object: nil)
+-    }
+-    
+-    class func setTheme(plistName: String, path: ThemePath) {
+-        guard let plistPath = path.plistPath(name: plistName)         else {
+-            print("SwiftTheme WARNING: Can't find plist '\(plistName)' at: \(path)")
+-            return
+-        }
+-        guard let plistDict = NSDictionary(contentsOfFile: plistPath) else {
+-            print("SwiftTheme WARNING: Can't read plist '\(plistName)' at: \(plistPath)")
+-            return
+-        }
+-        self.setTheme(dict: plistDict, path: path)
+-    }
+-    
+-    class func setTheme(dict: NSDictionary, path: ThemePath) {
+-        currentTheme = dict
+-        currentThemePath = path
+-        NotificationCenter.default.post(name: Notification.Name(rawValue: ThemeUpdateNotification), object: nil)
+-    }
+-    
+-}
+-enum EXSKLineManager: Int {
+-    case green = 0
+-    case red = 1
+-    // MARK: -
+-    static var lineCurrent = EXSKLineManager.green
+-    static var linebefore = EXSKLineManager.green
+-    
+-    // MARK: - Switch Theme
+-    static func switchTo(theme: EXSKLineManager) {
+-        linebefore = lineCurrent
+-        lineCurrent = theme
+-        switch theme {
+-        case .green:
+-            break
+-        case .red:
+-            break
+-        }
+-        saveLastKline()
+-        NotificationCenter.default.post(name: NSNotification.Name.init(EXS_KLINE_CHANGE_NOTI),object: nil)
+-    }
+-
+-    static func isGreen() -> Bool {
+-        return lineCurrent == .green
+-    }
+-    
+-    static func restoreLastKline() {
+-        let idx = defaults.integer(forKey: lastedKlineIndex)
+-        let temptheme = EXSKLineManager(rawValue: idx)
+-        if let themem = temptheme {
+-            switchTo(theme:themem)
+-        }else {
+-            switchTo(theme: .green)
+-        }
+-    }
+-    
+-    static func saveLastKline() {
+-        defaults.set(lineCurrent.rawValue, forKey: lastedKlineIndex)
+-    }
+-    
+-}
+ 
+ extension Bundle {
+     static func exs_localBundle() -> Bundle? {

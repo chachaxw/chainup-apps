@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:state_enabled="true">
+        <layer-list>
+            <item
+                android:drawable="@drawable/bg_select_contract"
+                />
+            <item>
+                <shape>
+                    <corners android:radius="@dimen/dp_3"/>
+                    <stroke android:width="@dimen/dp_2" android:color="@color/main_color"/>
+                </shape>
+            </item>
+            <item android:right="@dimen/dp_2" android:top="@dimen/dp_2"
+                android:bottom="@dimen/dp_2" android:left="@dimen/dp_2">
+                <bitmap android:src="@drawable/public_klineontop"/>
+            </item>
+
+            <item
+                android:drawable="@drawable/ic_public_selecteds"
+                android:height="@dimen/dp_24"
+                android:width="@dimen/dp_24"
+                android:gravity="right"
+                />
+        </layer-list>
+    </item>
+
+    <item android:state_selected="false" android:state_enabled="true">
+        <layer-list>
+            <item
+                android:drawable="@drawable/bg_select_contract"
+                />
+            <item android:right="@dimen/dp_2" android:top="@dimen/dp_2"
+                android:bottom="@dimen/dp_2" android:left="@dimen/dp_2">
+                <bitmap android:src="@drawable/public_klineontop"/>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_enabled="false">
+        <layer-list>
+            <item android:right="@dimen/dp_2" android:top="@dimen/dp_2"
+                android:bottom="@dimen/dp_2" android:left="@dimen/dp_2">
+                <bitmap android:src="@drawable/public_klineontop"/>
+            </item>
+            <item
+                android:drawable="@drawable/bg_unselect_contract"
+                />
+        </layer-list>
+    </item>
+
+</selector>

@@ -1,0 +1,12 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSDirectionTriangle.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSDirectionTriangle.swift	(rejected hunks)
+@@ -10,8 +10,8 @@ import UIKit
+ 
+ class EXSDirectionTriangle: UIView {
+     
+-    var fillColor:UIColor = UIColor.exs_ThemeView.bgIcon
+-    var highlight:UIColor = UIColor.exs_ThemeLabel.colorLite
++    var fillColor:UIColor = UIColor.ThemeView.bgIcon
++    var highlight:UIColor = UIColor.ThemeLabel.colorLite
+     var triangleWidth :CGFloat = 8
+     var triangleHeight :CGFloat = 5
+     

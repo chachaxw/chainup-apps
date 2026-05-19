@@ -1,0 +1,10 @@
+diff a/Chainup/EXCOINS/Transaction/CurrentEntrust/view/cell/EXCurrentEntrustTC.swift b/Chainup/EXCOINS/Transaction/CurrentEntrust/view/cell/EXCurrentEntrustTC.swift	(rejected hunks)
+@@ -107,7 +107,7 @@ class EXCurrentEntrustTC: UITableViewCell {
+         tradeBtn.snp.makeConstraints { make in
+             make.top.equalToSuperview()
+             make.left.equalToSuperview()
+-            make.bottom.equalTo(priceView.snp_top)
++            make.bottom.equalTo(priceView.snp.top)
+             make.right.equalTo(nameLabel.snp.right)
+         }
+         

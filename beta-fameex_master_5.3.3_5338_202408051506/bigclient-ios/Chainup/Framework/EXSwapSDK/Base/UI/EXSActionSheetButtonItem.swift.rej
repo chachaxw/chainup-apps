@@ -1,0 +1,13 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSActionSheetButtonItem.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSActionSheetButtonItem.swift	(rejected hunks)
+@@ -19,8 +19,8 @@ class EXSActionSheetButtonItem: EXSNibBaseView {
+     
+     func configure() {
+         self.actionBtn.clearColors()
+-        self.actionBtn.setTitleColor(UIColor.exs_ThemeLabel.colorLite, for: .normal)
+-        self.actionBtn.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .highlighted)
+-        self.actionBtn.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .selected)
++        self.actionBtn.setTitleColor(UIColor.ThemeLabel.colorLite, for: .normal)
++        self.actionBtn.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .highlighted)
++        self.actionBtn.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .selected)
+     }
+ }

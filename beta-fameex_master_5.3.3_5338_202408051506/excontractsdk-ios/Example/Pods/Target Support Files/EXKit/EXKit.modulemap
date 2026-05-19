@@ -1,0 +1,6 @@
+framework module EXKit {
+  umbrella header "EXKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

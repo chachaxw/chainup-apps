@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/v_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card_color"
+    android:fitsSystemWindows="true">
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:isShowLeftBtn="false"
+        app:rightBtnRes="@mipmap/public_close"
+        app:isShowRightBtn="true"
+        app:title=""
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout">
+
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_action_login"
+            style="@style/textstyle_dm"
+            android:textSize="@dimen/sp_28"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textColor="@color/text_1"
+            android:layout_marginLeft="@dimen/dp_16"
+            />
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="160dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8" />
+
+        <com.chainup.kit.views.KKEditFormGroupKit
+            android:id="@+id/ce_account"
+            style="@style/etstyle_baseFormGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_logo"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="@dimen/dp_32"
+            android:layout_marginRight="16dp"
+            app:kk_hint="@string/common_tip_inputPhoneOrMail"
+            app:kk_title="@string/userinfo_text_account" />
+
+        <com.chainup.kit.views.KKEditFormGroupKit
+            android:id="@+id/pws_view"
+            style="@style/etstyle_baseFormGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ce_account"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="@dimen/dp_28"
+            android:layout_marginRight="16dp"
+            app:kk_hint="@string/register_tip_inputPassword"
+            app:kk_input_type="textPassword"
+            app:kk_title="@string/login_text_pwd" />
+
+
+        <com.chainup.kit.views.KKButtonKit
+            android:id="@+id/cbtn_view"
+            style="@style/NewVersionCommonlyUsedButtonStyle"
+            android:layout_below="@id/pws_view"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_28"
+            android:layout_marginRight="@dimen/dp_16"
+            app:kk_buttonText="@string/login_action_login" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbtn_view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:id="@+id/tv_forget_pwd"
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_action_fogotPassword"
+                android:textColor="@color/main_blue" />
+
+
+            <TextView
+                android:id="@+id/tv_to_register"
+                style="@style/textstyle_dm_12_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_forget_pwd"
+                android:layout_marginTop="@dimen/dp_24"
+                android:text="@string/login_action_register"
+                android:textColor="@color/main_blue" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

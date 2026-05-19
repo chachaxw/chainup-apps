@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/bg_search_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/stl_search_tab_list"
+        style="@style/ToolbarType_bar_home_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fragment_search_page_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+</LinearLayout>

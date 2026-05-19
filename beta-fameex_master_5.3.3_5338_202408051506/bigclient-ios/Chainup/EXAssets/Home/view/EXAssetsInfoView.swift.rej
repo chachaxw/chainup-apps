@@ -1,0 +1,10 @@
+diff a/Chainup/EXAssets/Home/view/EXAssetsInfoView.swift b/Chainup/EXAssets/Home/view/EXAssetsInfoView.swift	(rejected hunks)
+@@ -56,7 +56,7 @@ class EXAssetsInfoView: NibBaseView {
+         if assetModel.yesterdayProfit.isSmallerThan("0") {
+             earnings.setTitleColor(UIColor.ThemekLine.down, for: .normal)
+         }else if assetModel.yesterdayProfit.isEquals("0"){
+-            earnings.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
++            earnings.setTitleColor(UIColor.ThemeLabel.colorDark, for: .normal)
+         }else {
+             earnings.setTitleColor(UIColor.ThemekLine.up, for: .normal)
+         }

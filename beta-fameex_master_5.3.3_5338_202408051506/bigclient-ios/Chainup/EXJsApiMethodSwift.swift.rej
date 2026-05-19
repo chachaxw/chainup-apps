@@ -1,0 +1,17 @@
+diff a/Chainup/EXJsApiMethodSwift.swift b/Chainup/EXJsApiMethodSwift.swift	(rejected hunks)
+@@ -64,12 +64,12 @@ class EXJsApiMethodSwift: NSObject {
+         }else {
+             if model.routerName == "singpasscancel" {
+                 //singpass不授权
+-                BasicParameter.firstVCDismiss()
++                EXAppUIDefines.firstVCDismiss()
+                 EXAlert.showWarning(msg: "common_text_cancelkyc".localized())
+             }else if model.routerName ==  "kyccomplete" {
+                 //kyc完成认证
+-                BasicParameter.firstVCDismiss()
+-                if let topVc = BasicParameter.getFirstVC(){
++                EXAppUIDefines.firstVCDismiss()
++                if let topVc = EXAppUIDefines.getFirstVC(){
+                     let userInfo = EXRealNameThreeVC()
+                     topVc.navigationController?.pushViewController(userInfo, animated: true)
+                 }

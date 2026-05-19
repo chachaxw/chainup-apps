@@ -1,0 +1,41 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXMarginVc.swift b/Chainup/Framework/EXSwapSDK/Vc/EXMarginVc.swift	(rejected hunks)
+@@ -18,8 +18,8 @@ class EXMarginVc: EXSNavCustomVC {
+         let button = SLLeveageBtn()
+         button.setTitle("cp_contract_setting_text2".ex_localized(), for: .normal)
+         button.titleLabel?.font = UIFont.ThemeFont.BodyRegular
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .selected)
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorLite, for: .normal)
++        button.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .selected)
++        button.setTitleColor(UIColor.ThemeLabel.colorLite, for: .normal)
+         button.setBackgroundImage(UIImage.exs_themeImageNamed(imageName: "contract_cross_normal"), for: .normal)
+         button.setBackgroundImage(UIImage.exs_themeImageNamed(imageName: "contract_cross_select"), for: .selected)
+         button.addTarget(self, action: #selector(clickPositionTypeButton), for: .touchUpInside)
+@@ -32,8 +32,8 @@ class EXMarginVc: EXSNavCustomVC {
+         let button = SLLeveageBtn()
+         button.setTitle("cp_contract_setting_text1".ex_localized(), for: .normal)
+         button.titleLabel?.font = UIFont.ThemeFont.BodyRegular
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .selected)
+-        button.setTitleColor(UIColor.exs_ThemeLabel.colorLite, for: .normal)
++        button.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .selected)
++        button.setTitleColor(UIColor.ThemeLabel.colorLite, for: .normal)
+         button.setBackgroundImage(UIImage.exs_themeImageNamed(imageName: "contract_fixed_normal"), for: .normal)
+         button.setBackgroundImage(UIImage.exs_themeImageNamed(imageName: "contract_fixed_select"), for: .selected)
+         button.addTarget(self, action: #selector(clickPositionTypeButton), for: .touchUpInside)
+@@ -45,7 +45,7 @@ class EXMarginVc: EXSNavCustomVC {
+         let style = NSMutableParagraphStyle()
+         style.lineSpacing = 12
+         let attributes = [NSAttributedString.Key.paragraphStyle : style,
+-                          .foregroundColor:UIColor.exs_ThemeLabel.colorLite,
++                          .foregroundColor:UIColor.ThemeLabel.colorLite,
+                           .font:UIFont.ThemeFont.BodyRegular]
+         return attributes
+     }()
+@@ -53,7 +53,7 @@ class EXMarginVc: EXSNavCustomVC {
+     /// 全仓提示
+     lazy var tipLabel: UILabel = {
+         let text = "cp_extra_text170".ex_localized()
+-        let label = UILabel(text: text, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: .left)
++        let label = UILabel(text: text, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: .left)
+         label.numberOfLines = 0
+         label.text = ""
+ 

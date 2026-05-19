@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>otc_collection</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-290.000000, -1494.000000)">
+            <g id="分组" transform="translate(291.523750, 1495.294118)">
+                <path d="M12.3578843,11.6231339 C12.3578843,12.0289253 12.0289253,12.3578843 11.6231339,12.3578843 L3,12.3578843 C1.34314575,12.3578843 6.46995335e-16,11.0147386 0,9.35788433 L0,3 C2.41183085e-16,1.34314575 1.34314575,3.04359188e-16 3,0 L11.6235762,0 C12.0291234,-4.48695864e-17 12.3578843,0.328760959 12.3578843,0.734308154 L12.3578843,0.734308154 L12.3578843,0.734308154" id="路径" stroke="#FFFFFF" stroke-width="2"></path>
+                <g id="编组-9" transform="translate(5.767424, 3.676471)" fill="#2B61FF" fill-rule="nonzero">
+                    <rect id="矩形" x="1.83823529" y="3.21691176" width="5.51470588" height="1.60845588"></rect>
+                    <rect id="矩形" x="0" y="0" width="7.35294118" height="1.60845588"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSwapInsuranceFundViewController.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSwapInsuranceFundViewController.swift	(rejected hunks)
+@@ -64,7 +64,7 @@ class EXSwapInsuranceFundViewController: ListBaseViewController {
+         }
+         balanceView.layoutIfNeeded()
+         balanceView.layer.cornerRadius = 8
+-        balanceView.backgroundColor = UIColor.exs_GradientColor.InSurancefundBlanceView(frame: balanceView.bounds)
++        balanceView.backgroundColor = UIColor.GradientColor.InSurancefundBlanceView(frame: balanceView.bounds)
+         
+         self.view.addSubview(chartView)
+         chartView.snp.makeConstraints { make in

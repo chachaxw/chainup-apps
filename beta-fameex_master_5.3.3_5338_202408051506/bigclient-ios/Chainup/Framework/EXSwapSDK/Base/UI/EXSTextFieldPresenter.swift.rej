@@ -1,0 +1,13 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSTextFieldPresenter.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSTextFieldPresenter.swift	(rejected hunks)
+@@ -34,9 +34,9 @@ public extension EXSTextFieldConfigurable where Self:UIView {
+     }
+     
+     func showError(){
+-        self.baseHighlight.backgroundColor = UIColor.exs_ThemeState.fail
++        self.baseHighlight.backgroundColor = UIColor.ThemeState.fail
+         if let placeHolder = self.baseField.placeholder {
+-            self.baseField.exs_setPlaceHolderAtt(placeHolder,color:UIColor.exs_ThemeState.fail)
++            self.baseField.exs_setPlaceHolderAtt(placeHolder,color:UIColor.ThemeState.fail)
+         }
+     }
+ }

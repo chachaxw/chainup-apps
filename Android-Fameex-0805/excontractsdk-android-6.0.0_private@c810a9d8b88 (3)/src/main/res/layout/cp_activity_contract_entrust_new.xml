@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/mHeaderKit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:rightBtnType="text"
+        app:rightBtnText="@string/cp_order_text52"
+        app:rightBtnTextColor="@color/main_color"
+        />
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/sub_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tl_tab_vertical_gravity="Bottom"
+        app:tl_tab_padding="@dimen/dp_16"
+        app:tl_indicator_height="@dimen/dp_4"
+        app:tl_indicator_color="@color/main_color"
+        app:tl_indicator_width="@dimen/dp_22"
+        app:tl_textSelectColor="@color/text_color_1"
+        app:tl_textUnSelectColor="@color/text_color_2"
+        app:tl_textUnSelectSize="@dimen/sp_16"
+        app:tl_textSelectSize="@dimen/sp_16"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_sel_ctrl"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_sel_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_16"
+            >
+
+            <TextView
+                android:id="@+id/tv_coins_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/OpenOrder_text1"
+                style="@style/textstyle_dm_12_color2"
+                />
+
+            <ImageView
+                android:id="@+id/img_coins_name_arrow"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_8"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/public_icon_arrow_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_entrust_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_16"
+            >
+
+            <TextView
+                android:id="@+id/tv_entrust_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cp_extra_text20"
+                style="@style/textstyle_dm_12_color2"
+                />
+
+            <ImageView
+                android:id="@+id/img_entrust_type_arrow"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_8"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/public_icon_arrow_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_contract_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_16"
+            >
+
+            <TextView
+                android:id="@+id/tv_order_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/OpenOrder_text2"
+                style="@style/textstyle_dm_12_color2"
+                />
+
+            <ImageView
+                android:id="@+id/img_order_type_arrow"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_8"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/public_icon_arrow_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_contract_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_16"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_contract_direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cp_order_text98"
+                style="@style/textstyle_dm_12_color2"
+                />
+
+            <ImageView
+                android:id="@+id/img_side_type_arrow"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_8"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/public_icon_arrow_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"></androidx.viewpager.widget.ViewPager>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_common_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#50000000"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cp_bg_layout_pop_top"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dissmiss"
+                android:layout_width="match_parent"
+                android:layout_height="1200dp"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_coin_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="#50000000"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@drawable/cp_bg_layout_pop_top"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:itemCount="4"
+                        android:background="@color/trade_search_radius_color"
+                        tools:listitem="@layout/item_select_coins_left" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:itemCount="6"
+                        tools:listitem="@layout/item_select_coins_right" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dissmiss"
+                android:layout_width="match_parent"
+                android:layout_height="1200dp"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXContractAssetRecordHeaderCell.swift b/Chainup/Framework/EXSwapSDK/View/EXContractAssetRecordHeaderCell.swift	(rejected hunks)
+@@ -22,7 +22,7 @@ class EXContractAssetRecordHeaderCell: UITableViewCell {
+     lazy var horLineView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeView.seperator
++        view.backgroundColor = UIColor.ThemeView.seperator
+         view.isHidden = true
+         return view
+     }()

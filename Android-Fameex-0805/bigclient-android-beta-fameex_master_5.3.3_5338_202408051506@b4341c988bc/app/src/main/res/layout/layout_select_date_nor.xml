@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_34"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_34"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textstyle_dm_14_bold_color1"
+                android:id="@+id/pet_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/selector_time_tab_text_color"
+                android:background="@drawable/shape_filter_coin"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/tv_time_line"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_3"
+            android:layout_gravity="center"
+            android:background="@color/btn_color_2"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pet_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_filter_coin"
+                android:text="--"
+                android:gravity="center"
+                style="@style/textstyle_dm_14_bold_color1"
+                android:textColor="@color/selector_time_tab_text_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/date_time"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dp_32"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

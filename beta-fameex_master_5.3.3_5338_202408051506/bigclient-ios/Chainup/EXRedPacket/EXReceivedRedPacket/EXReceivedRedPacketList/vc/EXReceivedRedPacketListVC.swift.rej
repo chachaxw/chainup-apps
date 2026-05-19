@@ -1,0 +1,10 @@
+diff a/Chainup/EXRedPacket/EXReceivedRedPacket/EXReceivedRedPacketList/vc/EXReceivedRedPacketListVC.swift b/Chainup/EXRedPacket/EXReceivedRedPacket/EXReceivedRedPacketList/vc/EXReceivedRedPacketListVC.swift	(rejected hunks)
+@@ -20,7 +20,7 @@ class EXReceivedRedPacketListVC: NavCustomVC {
+         btn.extUseAutoLayout()
+         btn.setEnlargeEdgeWithTop(10, left: 10, bottom: 10, right: 10)
+         btn.extSetAddTarget(self, #selector(clickRightBtn))
+-        btn.setImage(UIImage.themeImageNamed(imageName: "menu"), for:.normal)
++        btn.setImage(UIImage.themeImageNamed(imageName: "coins_more"), for:.normal)
+         return btn
+     }()
+ 

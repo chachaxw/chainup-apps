@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SkeletonActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_header_kit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="分段选择器" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@color/main_bg_color"
+        android:layout_height="match_parent">
+    <com.qmuiteam.qmui.layout.QMUILinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:qmui_topDividerColor="@color/line_color"
+        app:qmui_topDividerHeight="1dp">
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:text="百分比块状"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <com.chainup.kit.views.KKPercentKit
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10" />
+
+
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:text="百分比条状"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <com.chainup.kit.views.KKSelectRatioViewKit
+            android:id="@+id/srv_view"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10" />
+        <com.chainup.kit.views.KKSelectRatioViewKit
+            android:id="@+id/srv_view_sell"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10" />
+        <com.chainup.kit.views.KKSelectRatioViewKit
+            android:id="@+id/srv_view_buy"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10" />
+
+        <TextView
+            style="@style/textstyle_dm_14_color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom= "12dp"
+            android:text="百分比滑块"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shape_tag_title"
+            android:textStyle="bold" />
+        <com.warkiz.widget.IndicatorSeekBar
+            style="@style/IndicatorSeekBarStyle"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10" />
+
+   </com.qmuiteam.qmui.layout.QMUILinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

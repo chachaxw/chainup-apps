@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InputActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/title_header_kit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:title="输入框" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/card_bg_color_1">
+
+        <com.qmuiteam.qmui.layout.QMUILinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="50dp"
+            app:qmui_topDividerColor="@color/line_color"
+            app:qmui_topDividerHeight="1dp">
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="普通输入框（输入缺少焦点的处理）"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.base.BaseEditTextKit
+                android:id="@+id/edt_1"
+                style="@style/BaseEditTextKitStyle"
+                android:layout_height="@dimen/dp_32"
+                app:kk_et_fillColor="@color/special_2"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/red_new_5_0"
+                android:hint="数字密码输入框" />
+
+            <com.chainup.kit.views.base.BaseEditTextKit
+                android:id="@+id/edt_1_1"
+                style="@style/BaseEditTextKitStyle"
+                app:kk_et_fillColor="@color/special_2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_height="@dimen/dp_32"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="数字密码输入框" />
+
+            <EditText
+                android:id="@+id/edt_111"
+                style="@style/BaseEditTextKitStyle"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/special_2"
+                android:hint="数字密码输入框" />
+
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="数字密码输入框（输入缺少异常报错的处理）"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.base.BaseEditTextKit
+                android:id="@+id/edt_2"
+                style="@style/BaseEditTextKitStyle"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="Please enter your pwd"
+                android:inputType="numberPassword" />
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="文字输入框"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.base.BaseEditTextKit
+                android:id="@+id/edt_3"
+                style="@style/BaseEditTextKitStyle"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:hint="Please enter your number"
+                android:inputType="text" />
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="搜索框"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.base.BaseEditTextKit
+                android:id="@+id/edt_4"
+                style="@style/BaseEditTextKitStyle"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="中文"
+                android:textSize="12sp"
+                app:kk_isSearch="true"
+                android:gravity="center_vertical"
+                android:inputType="text" />
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="带title输入框(自定义action✅)"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.KKEditFormGroupKit
+                android:id="@+id/kk_edt_group_1"
+                style="@style/etstyle_baseFormGroup"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content"
+                app:kk_action2="123"
+                app:kk_input_type="textPassword"
+                app:kk_hint="Please enter your number"
+                android:layout_marginTop="@dimen/dp_10" />
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="带title输入框-提现"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.KKEditFormGroupKit
+                style="@style/etstyle_baseFormGroup"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content"
+                app:kk_title="Withdrawal Amount"
+                app:kk_hint="Please enter your number"
+                android:layout_marginTop="@dimen/dp_10" />
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="交易面板数量输入框\n精度设置 = void KKEditNumberKit.setPrecision(int) 或者\n void EditText.numberFilter()"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.KKEditNumberKit
+                android:id="@+id/kitView"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="200dp"
+                style="@style/etstyle_baseEtNumber"
+                />
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="手机号输入框（带地区选择 ）"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.KKEditFormGroupKit
+                android:id="@+id/kk_phone_area"
+                style="@style/etstyle_baseFormGroup"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content"
+                app:kk_hint="Please enter your number"
+                android:layout_marginTop="@dimen/dp_10" />
+            <TextView
+                style="@style/textstyle_dm_14_color1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:drawableLeft="@drawable/shape_tag_title"
+                android:drawablePadding="10dp"
+                android:text="缺少右侧自定义ICON输入框（提现部分 ）"
+                android:textStyle="bold" />
+            <com.chainup.kit.views.KKEditFormGroupKit
+                android:id="@+id/kk_constom_icon"
+                style="@style/etstyle_baseFormGroup"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content"
+                app:kk_hint="Please enter your number"
+                android:layout_marginTop="@dimen/dp_10" />
+
+            <com.chainup.kit.views.KKEditFormGroupKit
+                style="@style/etstyle_baseFormGroup"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content"
+                app:kk_hint="触发条件"
+                app:kk_action_line="true"
+                app:kk_action1="123"
+                app:kk_action_textColor="@color/text_2"
+                app:kk_action2="125123"
+                android:layout_marginTop="@dimen/dp_10" />
+            <com.chainup.kit.views.KKEditFormGroupKit
+                style="@style/etstyle_baseFormGroup"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content"
+                app:kk_hint="Please enter your number"
+                app:kk_action2="125123"
+                android:layout_marginTop="@dimen/dp_10" />
+
+            <com.chainup.kit.views.KKEditFormGroupKit
+                android:id="@+id/testShow"
+                style="@style/etstyle_baseFormGroup"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_height="wrap_content"
+                app:kk_hint="触发条件"
+                app:kk_action1="545"
+                android:layout_marginTop="@dimen/dp_10" />
+
+        </com.qmuiteam.qmui.layout.QMUILinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_card_color"
+    android:orientation="vertical">
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/v_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        app:title="@string/cp_assets_text8"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_card_color"
+        android:orientation="horizontal">
+        <!--选择合约-->
+        <LinearLayout
+            android:id="@+id/ll_tab_contract"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_tab_contract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USDT"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img_tab_contract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/contract_thedropdownclosed" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="37dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:background="@color/bg_color" />
+        <!--选择类型-->
+        <LinearLayout
+            android:id="@+id/ll_tab_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_tab_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cp_order_text4"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img_tab_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/contract_thedropdownclosed" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:background="@color/bg_card_color"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_type_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|start"
+            tools:text="类型"
+            style="@style/textstyle_dm_12_color2"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_amount_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            tools:text="金额"
+            style="@style/textstyle_dm_12_color2"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_card_color"
+        android:minHeight="500dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:itemCount="20"
+        tools:listitem="@layout/cp_item_asset_record" />
+</LinearLayout>
+

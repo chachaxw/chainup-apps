@@ -1,0 +1,64 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/SLSwapScreeningView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/SLSwapScreeningView.swift	(rejected hunks)
+@@ -103,7 +103,7 @@ class SLSwapScreeningView: UIView {
+     
+     lazy var horLineView: UIView = {
+         let view = UIView()
+-        view.backgroundColor = UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = UIColor.ThemeView.bgGap
+         return view
+     }()
+     
+@@ -119,7 +119,7 @@ class SLSwapScreeningView: UIView {
+     
+     lazy var verLineView1: UIView = {
+         let view = UIView()
+-        view.backgroundColor = UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = UIColor.ThemeView.bgGap
+         return view
+     }()
+     
+@@ -135,7 +135,7 @@ class SLSwapScreeningView: UIView {
+     
+     lazy var verLineView2: UIView = {
+         let view = UIView()
+-        view.backgroundColor = UIColor.exs_ThemeView.bgGap
++        view.backgroundColor = UIColor.ThemeView.bgGap
+         return view
+     }()
+     
+@@ -151,7 +151,7 @@ class SLSwapScreeningView: UIView {
+     
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         self.exs_addSubViews([horLineView, nameButton, limitPriceButton, orderTypeButton, verLineView1, verLineView2])
+         
+         self.initLayout()
+@@ -218,7 +218,7 @@ extension SLSwapScreeningView {
+             mySelf.nameButton.checked(check: false)
+         }
+         sheet.configButtonTitles(buttons: self.swapNameArray, selectedIdx: self.swapNameIndex)
+-        EXSAlert.showSheet(sheetView: sheet)
++        EXAlert.showSheet(sheetView: sheet)
+     }
+     
+     /// 点击限价类型
+@@ -235,7 +235,7 @@ extension SLSwapScreeningView {
+             mySelf.limitPriceButton.checked(check: false)
+         }
+         sheet.configButtonTitles(buttons: self.priceTypeArray, selectedIdx: self.priceTypeIndex)
+-        EXSAlert.showSheet(sheetView: sheet)
++        EXAlert.showSheet(sheetView: sheet)
+     }
+     
+     /// 点击交易方向
+@@ -252,7 +252,7 @@ extension SLSwapScreeningView {
+             mySelf.orderTypeButton.checked(check: false)
+         }
+         sheet.configButtonTitles(buttons: self.orderTypeArray, selectedIdx: self.orderTypeIndex)
+-        EXSAlert.showSheet(sheetView: sheet)
++        EXAlert.showSheet(sheetView: sheet)
+     }
+     
+     private func valueChanged() {

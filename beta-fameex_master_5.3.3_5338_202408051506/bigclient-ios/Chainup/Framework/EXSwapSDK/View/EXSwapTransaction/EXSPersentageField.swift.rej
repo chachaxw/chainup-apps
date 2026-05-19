@@ -1,0 +1,64 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSPersentageField.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapTransaction/EXSPersentageField.swift	(rejected hunks)
+@@ -27,7 +27,7 @@ class EXSPersentageField: EXSBaseField {
+     let style = EXSTextFieldStyle.commonStyle
+     typealias EXPersentageSelectViewBtnClickBlock = (String)->()
+ 
+-    var color = UIColor.exs_ThemeLabel.colorHighlight
++    var color = UIColor.ThemeLabel.colorHighlight
+     var clickBtnBlock:EXPersentageSelectViewBtnClickBlock?
+ 
+     var maxValue:String = ""
+@@ -35,7 +35,7 @@ class EXSPersentageField: EXSBaseField {
+     
+     let disposebg = DisposeBag()
+     
+-    var highLightColor:UIColor = UIColor.exs_ThemeView.highlight {
++    var highLightColor:UIColor = UIColor.ThemeView.highlight {
+         didSet {
+             bgView.highLightColor = highLightColor
+         }
+@@ -53,7 +53,7 @@ class EXSPersentageField: EXSBaseField {
+     }
+     
+     override func setPlaceHolder(placeHolder: String,font : CGFloat = 14) {
+-        input.exs_setPlaceHolderAtt(placeHolder, color: UIColor.exs_ThemeLabel.colorDark, font: font)
++        input.exs_setPlaceHolderAtt(placeHolder, color: UIColor.ThemeLabel.colorDark, font: font)
+     }
+     
+     override func setText(text: String) {
+@@ -79,7 +79,7 @@ class EXSPersentageField: EXSBaseField {
+     func emptyPersentage() {
+         for btn in steps {
+             btn.backgroundColor = UIColor.clear
+-            btn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++            btn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+         }
+         bottomView.selectIdx = -1
+     }
+@@ -124,7 +124,7 @@ class EXSPersentageField: EXSBaseField {
+                 btn.setTitleColor(color, for: .normal)
+             }else {
+                 btn.backgroundColor = UIColor.clear
+-                btn.setTitleColor(UIColor.exs_ThemeLabel.colorMedium, for: .normal)
++                btn.setTitleColor(UIColor.ThemeLabel.colorMedium, for: .normal)
+             }
+         }
+         switch sender.tag {
+@@ -160,7 +160,7 @@ extension EXSPersentageField :EXSTextFieldProtocol {
+ 
+ class EXSPersentBg:UIView {
+     
+-    var highLightColor:UIColor = UIColor.exs_ThemeView.highlight
++    var highLightColor:UIColor = UIColor.ThemeView.highlight
+     
+     var highlightMode :Bool = false {
+         didSet {
+@@ -175,7 +175,7 @@ class EXSPersentBg:UIView {
+         if highlightMode {
+             highLightColor .setStroke()
+         }else {
+-            UIColor.exs_ThemeView.border .setStroke()
++            UIColor.ThemeView.border .setStroke()
+         }
+         path.stroke()
+     }

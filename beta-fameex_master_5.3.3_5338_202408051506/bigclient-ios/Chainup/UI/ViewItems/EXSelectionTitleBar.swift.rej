@@ -1,0 +1,9 @@
+diff a/Chainup/UI/ViewItems/EXSelectionTitleBar.swift b/Chainup/UI/ViewItems/EXSelectionTitleBar.swift	(rejected hunks)
+@@ -32,6 +32,7 @@ class EXSelectionTitleBar: NibBaseView {
+     var style:EXSelectionBarStyle = EXSelectionBarStyle()
+     override func onCreate() {
+         themeNoti()
++        self.baseScroll.showsHorizontalScrollIndicator = false
+     }
+     
+     func hideSeperator() {

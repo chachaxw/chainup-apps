@@ -1,0 +1,10 @@
+diff a/Chainup/EXCOINS/LoginAndRegist/region/view/cell/RegionTC.swift b/Chainup/EXCOINS/LoginAndRegist/region/view/cell/RegionTC.swift	(rejected hunks)
+@@ -72,7 +72,7 @@ class RegionTC: UITableViewCell {
+     }
+     
+     func setCellWithEntity(_ entity : RegionEntity){
+-        if LanguageHandler.isHan(){
++        if LanguageTools.isHan(){
+             if entity.cnName == "@"{
+                 
+                 nameLabel.text = "common_action_sendall".localized()

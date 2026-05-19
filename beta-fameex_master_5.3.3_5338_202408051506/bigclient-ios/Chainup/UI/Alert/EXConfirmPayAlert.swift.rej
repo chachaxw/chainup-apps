@@ -1,0 +1,10 @@
+diff a/Chainup/UI/Alert/EXConfirmPayAlert.swift b/Chainup/UI/Alert/EXConfirmPayAlert.swift	(rejected hunks)
+@@ -27,7 +27,7 @@ class EXConfirmPayAlert: NibBaseView {
+     var alertCallback : AlertCallback?
+     
+     override func onCreate() {
+-
++        self.backgroundColor = UIColor.ThemeView.alertBg
+     }
+     
+     @IBAction func onBtnClicked(_ sender: EXButton) {

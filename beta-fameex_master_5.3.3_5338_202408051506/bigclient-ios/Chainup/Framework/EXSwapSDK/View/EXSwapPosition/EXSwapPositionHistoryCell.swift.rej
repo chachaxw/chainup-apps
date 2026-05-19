@@ -1,0 +1,47 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapPosition/EXSwapPositionHistoryCell.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapPosition/EXSwapPositionHistoryCell.swift	(rejected hunks)
+@@ -19,13 +19,13 @@ class EXSwapPositionHistoryCell: UITableViewCell {
+     }()
+     /// 合约名称
+     lazy var nameLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.exs_ThemeLabel.colorLite, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.HeadBold, textColor: UIColor.ThemeLabel.colorLite, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+     /// 创建时间
+     lazy var timeLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+         return label
+     }()
+@@ -54,7 +54,7 @@ class EXSwapPositionHistoryCell: UITableViewCell {
+             let alert = EXSNormalAlert()
+             let eranView = EXContractEranMoneyAlertView(frame: CGRect.zero, type: .position)
+             eranView.configPostionModle(positionModel: self?.positionModel)
+-            EXSAlert.showAlert(alertView: eranView)
++            EXAlert.showAlert(alertView: eranView)
+         }
+         return view
+     }()
+@@ -66,9 +66,9 @@ class EXSwapPositionHistoryCell: UITableViewCell {
+     }()
+     /// 合约类型
+     lazy var contractTypeLabel: UILabel = {
+-        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.exs_ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
++        let label = UILabel(text: nil, font: UIFont.ThemeFont.SecondaryRegular, textColor: UIColor.ThemeLabel.colorMedium, alignment: NSTextAlignment.left)
+         label.ext_UseAutoLayout()
+-        label.backgroundColor = UIColor.exs_ThemeNav.bg
++        label.backgroundColor = UIColor.ThemeNav.bg
+         label.layer.cornerRadius = 2
+         label.layer.masksToBounds = true
+         return label
+@@ -77,7 +77,7 @@ class EXSwapPositionHistoryCell: UITableViewCell {
+     lazy var bottomMarginView: UIView = {
+         let view = UIView()
+         view.ext_UseAutoLayout()
+-        view.backgroundColor = UIColor.exs_ThemeNav.bg
++        view.backgroundColor = UIColor.ThemeNav.bg
+         return view
+     }()
+     

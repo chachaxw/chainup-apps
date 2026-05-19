@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/public_bg_dialog_topcorner12"
+    android:layout_gravity="bottom"
+    android:paddingHorizontal="@dimen/dp_16">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/public_dialog_header_layout"
+        />
+
+    <FrameLayout
+        android:id="@+id/fl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        />
+</RelativeLayout>

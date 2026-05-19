@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tv_complainCommand_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        style="@style/textstyle_dm"
+        android:visibility="visible"
+        tools:text="KKCommonlyUsedButtonKit" />
+
+    <ProgressBar
+        android:id="@+id/pb_view"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/bg_commonly_loading"
+        android:indeterminateOnly="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

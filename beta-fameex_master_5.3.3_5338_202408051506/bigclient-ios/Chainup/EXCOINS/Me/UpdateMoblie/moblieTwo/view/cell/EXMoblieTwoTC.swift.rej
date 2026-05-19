@@ -1,0 +1,10 @@
+diff a/Chainup/EXCOINS/Me/UpdateMoblie/moblieTwo/view/cell/EXMoblieTwoTC.swift b/Chainup/EXCOINS/Me/UpdateMoblie/moblieTwo/view/cell/EXMoblieTwoTC.swift	(rejected hunks)
+@@ -44,7 +44,7 @@ class EXMoblieTwoTC: UITableViewCell {
+         contentView.addSubViews([selectionText,textField])
+         selectionText.snp.makeConstraints { (make) in
+             make.left.equalToSuperview().offset(15)
+-            make.height.equalTo(27)
++//            make.height.equalTo(27)
+             make.bottom.equalToSuperview()
+             make.right.equalToSuperview().offset(-15)
+         }

@@ -1,0 +1,16 @@
+diff a/Chainup/NetWork/NetDefine.swift b/Chainup/NetWork/NetDefine.swift	(rejected hunks)
+@@ -10,10 +10,10 @@ import UIKit
+ 
+ 
+ public class NetDefine: NSObject {
+-//    static let http_host_url = "http://appapi.creaverse.online/"
+-//    static let http_host_url_otc = "http://otcappapi.creaverse.online/"
+-    static let http_host_url = "https://appapi0001317.chainsprince.me/"
+-    static let http_host_url_otc = "https://otcappapi0001317.chainsprince.me/"
++    static let http_host_url = "http://appapi.creaverse.online/"
++    static let http_host_url_otc = "http://otcappapi.creaverse.online/"
++//    static let http_host_url = "https://appapi0001317.chainsprince.me/"
++//    static let http_host_url_otc = "https://otcappapi0001317.chainsprince.me/"
+     static let http_host_url_redpacket = "http://service.creaverse.online/hongbaoapi/"//红包
+     static let wss_host_url = "ws://ws.creaverse.online/kline-api/ws"//币币ws
+     static let wss_host_url2 = "ws://ws2.creaverse.online/otc-chat/chatServer/"//otc聊天ws

@@ -1,0 +1,426 @@
+PODS:
+  - Alamofire (5.0.0)
+  - AliyunOSSiOS (2.10.18)
+  - Blueprints (0.13.1)
+  - CYLTabBarController (1.29.2):
+    - CYLTabBarController/Core (= 1.29.2)
+  - CYLTabBarController/Core (1.29.2)
+  - DeepDiff (2.3.1)
+  - dsBridge (3.0.6)
+  - DZNEmptyDataSet (1.8.1)
+  - EXFlutterKLineKit (0.0.5)
+  - EXKit (1.4.1):
+    - EXKit/Analytics (= 1.4.1)
+    - EXKit/Foundation (= 1.4.1)
+    - EXKit/Images (= 1.4.1)
+    - EXKit/Logger (= 1.4.1)
+    - EXKit/Theme (= 1.4.1)
+    - EXKit/UI (= 1.4.1)
+  - EXKit/Analytics (1.4.1):
+    - EXKit/Foundation (= 1.4.1)
+    - Reachability (>= 3.2)
+  - EXKit/Foundation (1.4.1):
+    - EXKit/Theme (= 1.4.1)
+    - IQKeyboardManagerSwift (>= 6.5.0)
+    - MJExtension (= 3.0.15.1)
+    - RxCocoa (>= 6.5.0)
+    - RxSwift (>= 6.5.0)
+    - SKPhotoBrowser (>= 7.0.0)
+    - SnapKit (>= 5.6.0)
+    - SwiftEntryKit (>= 2.0.0)
+    - SwiftEventBus (>= 5.0.0)
+    - YYText (>= 1.0.7)
+    - YYWebImage (>= 1.0.5)
+  - EXKit/Images (1.4.1)
+  - EXKit/Logger (1.4.1):
+    - EXKit/Foundation (= 1.4.1)
+  - EXKit/Theme (1.4.1):
+    - EXKit/Theme/Core (= 1.4.1)
+    - EXKit/Theme/Deprecated (= 1.4.1)
+  - EXKit/Theme/Core (1.4.1):
+    - SwiftDraw (>= 0.14.0)
+  - EXKit/Theme/Deprecated (1.4.1):
+    - EXKit/Theme/Core (= 1.4.1)
+  - EXKit/UI (1.4.1):
+    - Blueprints (>= 0.13.1)
+    - DZNEmptyDataSet (>= 1.8.1)
+    - EXKit/Foundation (= 1.4.1)
+    - JXSegmentedView (>= 1.3.0)
+    - lottie-ios (~> 4.2.0)
+    - MJRefresh (= 3.1.15.7)
+    - SkeletonView (~> 1.30.4)
+  - EXLookin (1.2.0):
+    - EXKit/Theme (>= 1.2.0)
+    - LookinServer/Swift (>= 1.1.4)
+  - Firebase/Analytics (8.13.0):
+    - Firebase/Core
+  - Firebase/Core (8.13.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (~> 8.13.0)
+  - Firebase/CoreOnly (8.13.0):
+    - FirebaseCore (= 8.13.0)
+  - Firebase/Crashlytics (8.13.0):
+    - Firebase/CoreOnly
+    - FirebaseCrashlytics (~> 8.13.0)
+  - FirebaseAnalytics (8.13.0):
+    - FirebaseAnalytics/AdIdSupport (= 8.13.0)
+    - FirebaseCore (~> 8.0)
+    - FirebaseInstallations (~> 8.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (~> 2.30908.0)
+  - FirebaseAnalytics/AdIdSupport (8.13.0):
+    - FirebaseCore (~> 8.0)
+    - FirebaseInstallations (~> 8.0)
+    - GoogleAppMeasurement (= 8.13.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (~> 2.30908.0)
+  - FirebaseCore (8.13.0):
+    - FirebaseCoreDiagnostics (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Logger (~> 7.7)
+  - FirebaseCoreDiagnostics (8.15.0):
+    - GoogleDataTransport (~> 9.1)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Logger (~> 7.7)
+    - nanopb (~> 2.30908.0)
+  - FirebaseCrashlytics (8.13.0):
+    - FirebaseCore (~> 8.0)
+    - FirebaseInstallations (~> 8.0)
+    - GoogleDataTransport (~> 9.1)
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (~> 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - FirebaseInstallations (8.15.0):
+    - FirebaseCore (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/UserDefaults (~> 7.7)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - FSPagerView (0.8.3)
+  - GoogleAppMeasurement (8.13.0):
+    - GoogleAppMeasurement/AdIdSupport (= 8.13.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (~> 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (8.13.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 8.13.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (~> 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (8.13.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (~> 2.30908.0)
+  - GoogleDataTransport (9.3.0):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.12.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.12.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.12.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.12.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.12.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.12.0)"
+  - GoogleUtilities/Reachability (7.12.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.12.0):
+    - GoogleUtilities/Logger
+  - GTSDK (2.4.4.0)
+  - HandyJSON (5.0.2)
+  - IdensicMobileSDK (1.27.0):
+    - IdensicMobileSDK/Default (= 1.27.0)
+  - IdensicMobileSDK/Core (1.27.0)
+  - IdensicMobileSDK/Default (1.27.0):
+    - IdensicMobileSDK/Core
+  - IQKeyboardManagerSwift (6.5.11)
+  - JXPagingView (2.1.2):
+    - JXPagingView/Pager (= 2.1.2)
+    - JXPagingView/Paging (= 2.1.2)
+  - JXPagingView/Pager (2.1.2)
+  - JXPagingView/Paging (2.1.2)
+  - JXSegmentedView (1.3.0)
+  - LookinServer/Core (1.2.6)
+  - LookinServer/Swift (1.2.6):
+    - LookinServer/Core
+  - lottie-ios (4.2.0)
+  - MJExtension (3.0.15.1)
+  - MJRefresh (3.1.15.7)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - nanopb (2.30908.0):
+    - nanopb/decode (= 2.30908.0)
+    - nanopb/encode (= 2.30908.0)
+  - nanopb/decode (2.30908.0)
+  - nanopb/encode (2.30908.0)
+  - PieCharts (0.0.7)
+  - PromisesObjC (2.3.1)
+  - Reachability (3.2)
+  - Reusable (4.1.2):
+    - Reusable/Storyboard (= 4.1.2)
+    - Reusable/View (= 4.1.2)
+  - Reusable/Storyboard (4.1.2)
+  - Reusable/View (4.1.2)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SkeletonView (1.30.4)
+  - SKPhotoBrowser (7.1.0)
+  - SnapKit (5.6.0)
+  - Starscream (3.1.1)
+  - Swap (0.2.0):
+    - DeepDiff (= 2.3.1)
+    - EXFlutterKLineKit
+    - EXKit (>= 1.3.4)
+    - HandyJSON (= 5.0.2)
+    - JXPagingView/Paging (= 2.1.2)
+    - Moya/RxSwift (= 15.0.0)
+    - Reachability (= 3.2)
+    - Reusable (= 4.1.2)
+    - Starscream (~> 3.1.1)
+    - YYModel (= 1.0.4)
+  - SwiftDraw (0.16.2)
+  - SwiftEntryKit (2.0.0)
+  - SwiftEventBus (5.0.0)
+  - TableViewDragger (2.0.0)
+  - Tiercel (3.2.5)
+  - URLNavigator (2.1.0)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - Alamofire (= 5.0)
+  - AliyunOSSiOS (~> 2.10.7)
+  - Blueprints (= 0.13.1)
+  - CYLTabBarController
+  - DeepDiff (~> 2.3.1)
+  - dsBridge (= 3.0.6)
+  - DZNEmptyDataSet (= 1.8.1)
+  - EXFlutterKLineKit (from `ssh://stash.dw2nn.com:7999/app/exflutterklinekit.git`, commit `a76bcb83016890736bdc059534a85e83cdd762ea`)
+  - "EXKit (from `ssh://git@stash.dw2nn.com:7999/app/exkit.git`, commit `a973e3715e3b3e4d16b44c7f83295c6bba83519b`)"
+  - "EXLookin (from `ssh://git@stash.dw2nn.com:7999/app/exkit.git`, tag `1.2.0`)"
+  - Firebase/Analytics (= 8.13.0)
+  - Firebase/Crashlytics (= 8.13.0)
+  - FMDB (= 2.7.5)
+  - FSPagerView
+  - GTSDK (~> 2.4.4.0)
+  - HandyJSON (= 5.0.2)
+  - IdensicMobileSDK (= 1.27.0)
+  - IQKeyboardManagerSwift (= 6.5.11)
+  - JXPagingView (= 2.1.2)
+  - JXSegmentedView (= 1.3.0)
+  - LookinServer/Swift (= 1.2.6)
+  - lottie-ios (= 4.2.0)
+  - MJExtension (= 3.0.15.1)
+  - MJRefresh (= 3.1.15.7)
+  - Moya (= 15.0.0)
+  - PieCharts (from `https://github.com/yozoe/PieCharts.git`, branch `custom`)
+  - Reachability (= 3.2)
+  - Reusable (~> 4.1.1)
+  - RxCocoa (= 6.5.0)
+  - RxRelay (= 6.5.0)
+  - RxSwift (= 6.5.0)
+  - SkeletonView (~> 1.30.4)
+  - SKPhotoBrowser (= 7.1.0)
+  - SnapKit (= 5.6.0)
+  - Starscream (= 3.1.1)
+  - "Swap (from `ssh://git@stash.dw2nn.com:7999/app/excontractsdk-ios.git`, commit `c69650d61976fc9bc0efd14d0dad0d47637849db`)"
+  - SwiftEntryKit (= 2.0.0)
+  - SwiftEventBus (= 5.0.0)
+  - TableViewDragger
+  - Tiercel (~> 3.2.0)
+  - URLNavigator (= 2.1.0)
+  - YYCache (= 1.0.4)
+  - YYImage (= 1.0.4)
+  - YYModel (= 1.0.4)
+  - YYText (from `./YYText-1.0.7`)
+  - YYWebImage (= 1.0.5)
+
+SPEC REPOS:
+  https://github.com/SumSubstance/Specs.git:
+    - IdensicMobileSDK
+  trunk:
+    - Alamofire
+    - AliyunOSSiOS
+    - Blueprints
+    - CYLTabBarController
+    - DeepDiff
+    - dsBridge
+    - DZNEmptyDataSet
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCrashlytics
+    - FirebaseInstallations
+    - FMDB
+    - FSPagerView
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleUtilities
+    - GTSDK
+    - HandyJSON
+    - IQKeyboardManagerSwift
+    - JXPagingView
+    - JXSegmentedView
+    - LookinServer
+    - lottie-ios
+    - MJExtension
+    - MJRefresh
+    - Moya
+    - nanopb
+    - PromisesObjC
+    - Reachability
+    - Reusable
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SkeletonView
+    - SKPhotoBrowser
+    - SnapKit
+    - Starscream
+    - SwiftDraw
+    - SwiftEntryKit
+    - SwiftEventBus
+    - TableViewDragger
+    - Tiercel
+    - URLNavigator
+    - YYCache
+    - YYImage
+    - YYModel
+    - YYWebImage
+
+EXTERNAL SOURCES:
+  EXFlutterKLineKit:
+    :commit: a76bcb83016890736bdc059534a85e83cdd762ea
+    :git: ssh://stash.dw2nn.com:7999/app/exflutterklinekit.git
+  EXKit:
+    :commit: a973e3715e3b3e4d16b44c7f83295c6bba83519b
+    :git: "ssh://git@stash.dw2nn.com:7999/app/exkit.git"
+  EXLookin:
+    :git: "ssh://git@stash.dw2nn.com:7999/app/exkit.git"
+    :tag: 1.2.0
+  PieCharts:
+    :branch: custom
+    :git: https://github.com/yozoe/PieCharts.git
+  Swap:
+    :commit: c69650d61976fc9bc0efd14d0dad0d47637849db
+    :git: "ssh://git@stash.dw2nn.com:7999/app/excontractsdk-ios.git"
+  YYText:
+    :path: "./YYText-1.0.7"
+
+CHECKOUT OPTIONS:
+  EXFlutterKLineKit:
+    :commit: a76bcb83016890736bdc059534a85e83cdd762ea
+    :git: ssh://stash.dw2nn.com:7999/app/exflutterklinekit.git
+  EXKit:
+    :commit: a973e3715e3b3e4d16b44c7f83295c6bba83519b
+    :git: "ssh://git@stash.dw2nn.com:7999/app/exkit.git"
+  EXLookin:
+    :git: "ssh://git@stash.dw2nn.com:7999/app/exkit.git"
+    :tag: 1.2.0
+  PieCharts:
+    :commit: 82c0a9e4d683a2bbbbcfe31811912f5c7fb9f777
+    :git: https://github.com/yozoe/PieCharts.git
+  Swap:
+    :commit: c69650d61976fc9bc0efd14d0dad0d47637849db
+    :git: "ssh://git@stash.dw2nn.com:7999/app/excontractsdk-ios.git"
+
+SPEC CHECKSUMS:
+  Alamofire: 58ff2bfb8daaacaa233d5c36e37b10a5248f59b1
+  AliyunOSSiOS: e683c1b1faa0657b5cd02de733628cf996f4cd93
+  Blueprints: ddd6ab1e455c98471aaef2fdd0b09b5f9b53af5b
+  CYLTabBarController: db44b5901a28693a8a4279e4721b3aafdd36c178
+  DeepDiff: e5ae6c50d0321568e4508cec5930b9f10bb293fc
+  dsBridge: 48b62ee8a411ad601a88d6f6c8cf6cb634b206b7
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  EXFlutterKLineKit: 662a4b0f62a4b297f2e778788204f052264a10b5
+  EXKit: 3d3a46e3776f617fe46b654f9662b37a9c5b06bc
+  EXLookin: 4c2eaea818a3ea9d1b85be20fcc7e9c2da8906d6
+  Firebase: ee9b1d9b1801371e29f5591eda89eb5a314ab599
+  FirebaseAnalytics: 2be3cc52ac310759f28861aec9d459c851370cdb
+  FirebaseCore: c7e3fa30492e50ccdeef280bf0d5584af38da3e1
+  FirebaseCoreDiagnostics: 92e07a649aeb66352b319d43bdd2ee3942af84cb
+  FirebaseCrashlytics: 3b6eafb7e508c26d37ff7a256d0f74406f7e47bd
+  FirebaseInstallations: 40bd9054049b2eae9a2c38ef1c3dd213df3605cd
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  GoogleAppMeasurement: 135c2fbcf5038e0f37dbce04fa641a702fc275d1
+  GoogleDataTransport: 57c22343ab29bc686febbf7cbb13bad167c2d8fe
+  GoogleUtilities: 0759d1a57ebb953965c2dfe0ba4c82e95ccc2e34
+  GTSDK: 2d7b906892fe7800c72e193e59d92067ed105e80
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  IdensicMobileSDK: 1afd4990b228e8c93d9d768c12c59940c4e36a03
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  JXPagingView: 90924b364a2ff7e94db534fad1fa50925ff69ee4
+  JXSegmentedView: fec0d335355b6e019c494fe2e030bde8a36d2df6
+  LookinServer: de929b55f8fa2e241c18c39af3f900eaa9166389
+  lottie-ios: 809ecf2d460ed650a6aed7aa88b2ec45fab4779c
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  PieCharts: 30e50dfa7dc19e5b84e9878d32089673ef5d0453
+  PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
+  SKPhotoBrowser: cd95b95a6f352fc2a50992721299f75ead77f9ab
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  Swap: 1257fb1b612e6b2906164fa9c5ab19ee7ae20973
+  SwiftDraw: 14c968321475e0267068dc0e291d5213f0769875
+  SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
+  SwiftEventBus: b30f617a6aca5a9336464b4d3f5931034762f2d5
+  TableViewDragger: c05bd46d8495bb5294233661b6ac46c2e4d6e63a
+  Tiercel: c0a73f876a72800333b15f4e7e48791f4ad21e90
+  URLNavigator: e8cea3835b3456d7876eb728831e742273c8d209
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: fad73384eb32fd04fdd7d0c87efd7ac1281004ad
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+
+PODFILE CHECKSUM: 5dda3e314a91460fe8cc0db6bcdfdd5cb05c2a4c
+
+COCOAPODS: 1.15.2

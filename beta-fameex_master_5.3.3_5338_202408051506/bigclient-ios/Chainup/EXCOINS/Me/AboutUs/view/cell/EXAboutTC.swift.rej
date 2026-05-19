@@ -1,0 +1,16 @@
+diff a/Chainup/EXCOINS/Me/AboutUs/view/cell/EXAboutTC.swift b/Chainup/EXCOINS/Me/AboutUs/view/cell/EXAboutTC.swift	(rejected hunks)
+@@ -59,12 +59,12 @@ class EXAboutTC: UITableViewCell {
+         nameLabel.snp.makeConstraints { (make) in
+             make.left.equalToSuperview().offset(15)
+             make.top.equalToSuperview().offset(18)
+-            make.right.equalTo(infoLabel.snp_left).offset(-5)
++            make.right.equalTo(infoLabel.snp.left).offset(-5)
+             make.height.equalTo(20)
+         }
+         
+         infoLabel.snp.makeConstraints { (make) in
+-            make.left.equalTo(nameLabel.snp_right).offset(5)
++            make.left.equalTo(nameLabel.snp.right).offset(5)
+             make.right.equalToSuperview().offset(-15)
+             make.top.equalToSuperview().offset(18)
+             make.bottom.equalToSuperview().offset(-18)

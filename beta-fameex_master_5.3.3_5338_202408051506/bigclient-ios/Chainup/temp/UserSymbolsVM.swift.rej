@@ -1,0 +1,36 @@
+diff a/Chainup/temp/UserSymbolsVM.swift b/Chainup/temp/UserSymbolsVM.swift	(rejected hunks)
+@@ -66,24 +66,27 @@ class UserSymbolsVM: NSObject {
+                 }
+             }
+             if XUserDefault.isOffLine() {
++                tip(actionType: actionType)
+                 callback?(true)
+                 return
+             }
+             appApi.rx.request(.update_symbol(operationType: operationType, symbols:symbol))
+                 .MJObjectMap(EXVoidModel.self,false)
+-                .subscribe(onSuccess: {(arr) in
+-                    if actionType == .singleDelete {
+-                        EXAlert.showSuccess(msg: "kline_tip_removeCollectionSuccess".localized())
+-                    }else {
+-                        EXAlert.showSuccess(msg: "kline_tip_addCollectionSuccess".localized())
+-                    }
++                .subscribe(onSuccess: { [weak self](arr) in
++                    self?.tip(actionType: actionType)
+                     callback?(true)
+                 }) { (error) in
+                     callback?(false)
+                 }.disposed(by: disposBag)
+         }
+     }
+-    
++    func tip(actionType:EXFavoritesActionType){
++        if actionType == .singleDelete {
++            EXAlert.showSuccess(msg: "kline_tip_removeCollectionSuccess".localized())
++        }else {
++            EXAlert.showSuccess(msg: "kline_tip_addCollectionSuccess".localized())
++        }
++    }
+     func syncUserSysmbols()  {
+         
+         if XUserDefault.getToken() == nil { return }

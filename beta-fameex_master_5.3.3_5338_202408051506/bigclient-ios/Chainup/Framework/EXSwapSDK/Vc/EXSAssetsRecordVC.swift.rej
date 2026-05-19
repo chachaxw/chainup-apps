@@ -1,0 +1,23 @@
+diff a/Chainup/Framework/EXSwapSDK/Vc/EXSAssetsRecordVC.swift b/Chainup/Framework/EXSwapSDK/Vc/EXSAssetsRecordVC.swift	(rejected hunks)
+@@ -40,10 +40,10 @@ class EXSAssetsRecordVC: EXSNavCustomVC {
+     let menu : YDMenu = {
+         let retV = YDMenu(origin: CGPoint(x: 0, y: 0), menuheight: 35)
+         /// 横线
+-        retV.backgroundColor = UIColor.exs_ThemeView.bg
++        retV.backgroundColor = UIColor.ThemeView.bg
+         let horLineView = UIView()
+         horLineView.ext_UseAutoLayout()
+-        horLineView.backgroundColor = UIColor.exs_ThemeView.bgGap
++        horLineView.backgroundColor = UIColor.ThemeView.bgGap
+         retV.addSubview(horLineView)
+         horLineView.snp.makeConstraints { (make) in
+             make.left.right.top.equalToSuperview()
+@@ -94,7 +94,7 @@ class EXSAssetsRecordVC: EXSNavCustomVC {
+         self.setTitle("cp_assets_text8".ex_localized())
+         self.lastVC = true
+         self.xscrollView = self.contentTableView
+-        self.navCustomView.backgroundColor = UIColor.exs_ThemeNav.bg
++        self.navCustomView.backgroundColor = UIColor.ThemeNav.bg
+     }
+     
+     private func setSubView() {

@@ -1,0 +1,10 @@
+diff a/Chainup/EXCOINS/Me/RealNameCertification/RealNameCertificationOne/view/EXRealNameOneView.swift b/Chainup/EXCOINS/Me/RealNameCertification/RealNameCertificationOne/view/EXRealNameOneView.swift	(rejected hunks)
+@@ -110,7 +110,7 @@ class EXRealNameOneView: UIView {
+             case LanguageTools.getString(key: "kyc_text_country"):
+                 entity.placeholder = LanguageTools.getString(key: "common_action_select")
+                 entity.type = "2"
+-                if LanguageHandler.isHan() {
++                if LanguageTools.isHan() {
+                     entity.text = self.regionEntity.cnName
+                 }else{
+                     entity.text = self.regionEntity.enName

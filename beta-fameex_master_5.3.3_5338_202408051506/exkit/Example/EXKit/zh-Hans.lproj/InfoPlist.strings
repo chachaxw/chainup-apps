@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  Chainup
+
+  Created by zewu wang on 2020/9/10.
+  Copyright © 2020年 zewu wang. All rights reserved.
+*/
+CFBundleDisplayName ="EXKit 测试";
+NSCameraUsageDescription = "扫描二维码或拍照用于身份认证提交，是否允许打开相机？";
+NSFaceIDUsageDescription = "使用FaceID用于快捷登录，是否同意打开授权？";
+NSPhotoLibraryUsageDescription = "访问相册照片将用于上传二维码或其他照片，是否允许访问相册？";
+NSPhotoLibraryAddUsageDescription = "访问相册照片将用于上传二维码或其他照片，是否允许访问相册？";

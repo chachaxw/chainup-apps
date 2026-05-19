@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PublicHeaderKit">
+        <attr name="title" format="string"/>
+        <attr name="isShowLeftBtn" format="boolean" />
+        <attr name="isShowRightBtn" format="boolean" />
+        <attr name="isShowSubRightBtn" format="boolean" />
+        <attr name="isShowSubRightBtn2" format="boolean" />
+
+        <attr name="rightBtnType" format="enum">
+            <enum name="icon" value="1"/>
+            <enum name="text" value="2"/>
+        </attr>
+        <attr name="subRightBtnType" format="enum">
+            <enum name="icon" value="1"/>
+            <enum name="text" value="2"/>
+        </attr>
+
+        <attr name="subRightBtnType2" format="enum">
+            <enum name="icon" value="1"/>
+            <enum name="text" value="2"/>
+        </attr>
+
+        <attr name="rightBtnText" format="string" />
+        <attr name="subRightBtnText" format="string" />
+        <attr name="subRightBtnText2" format="string" />
+
+        <attr name="titleRes" format="reference" />
+
+        <attr name="rightBtnRes" format="reference" />
+        <attr name="subRightBtnRes" format="reference" />
+        <attr name="subRightBtnRes2" format="reference" />
+        <attr name="rightBtnTextColor" format="reference" />
+
+        <attr name="filterTitleVisible" format="boolean" />
+        <attr name="isShowTitleDown" format="boolean" />
+        <attr name="isShowChgTag" format="boolean" />
+        <attr name="isShowCoinTypeTag" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseEditTextKit">
+        <attr name="kk_isSearch" format="boolean"/>
+        <attr name="kk_isHasBackground" format="boolean"/>
+        <attr name="kk_et_fillColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="KKEditFormGroupKit">
+        <attr name="kk_title" format="string"/>
+        <attr name="kk_action1" format="string"/>
+        <attr name="kk_action2" format="string"/>
+        <attr name="kk_action_line" format="boolean"/>
+        <attr name="kk_efg_fillColor" format="color"/>
+        <attr name="kk_action_textColor" format="color"/>
+        <attr name="kk_hint" format="string"/>
+        <attr format="enum" name="kk_input_type">
+            <enum name="text" value="0x00000001"/>
+            <enum name="numberDecimal" value="0x00002002"/>
+            <enum name="number" value="0x00000002"/>
+            <enum name="textPassword" value="0x00000081"/>
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="BaseMaxHeightRecyclerView">
+        <attr name="kk_maxHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="AutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension" />
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float" />
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean" />
+    </declare-styleable>
+
+
+    <!--6.0版本 button-->
+    <declare-styleable name="KKButtonKitAttr">
+        <attr name="kk_buttonText" format="string" />
+        <attr name="kk_buttonStyle" format="flags">
+            <flag name="main" value="1"/>
+            <flag name="cancel" value="2"/>
+            <flag name="green" value="3"/>
+            <flag name="red" value="4"/>
+            <flag name="text" value="5"/>
+            <flag name="other" value="6"/>
+            <flag name="other_enable" value="7"/>
+        </attr>
+        <attr name="kk_buttonTextSize" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="KKPopupSelectKit">
+        <attr name="kk_psk_show_tip_icon" format="boolean" />
+        <attr name="kk_psk_text_size" format="dimension" />
+        <attr name="kk_psk_dim_value" format="float" />
+        <attr name="kk_psk_selector_drawable" format="reference" />
+        <attr name="kk_psk_selector_elevation" format="float" />
+        <attr name="kk_psk_width_equal_targetView" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="KKTradeTabBarKit">
+        <attr name="kk_tradeTabBar_text1" format="string" />
+        <attr name="kk_tradeTabBar_text2" format="string" />
+        <attr name="kk_tradeTabBar_selectColor1" format="color" />
+        <attr name="kk_tradeTabBar_selectColor2" format="color" />
+        <attr name="kk_tradeTabBar_unSelectColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="KKCommonListItemView">
+        <attr format="enum" name="kk_accessory_type">
+            <enum name="none" value="0"/>
+            <enum name="chevron" value="1"/>
+            <enum name="switcher" value="2"/>
+            <enum name="custom" value="3"/>
+        </attr>
+        <attr format="reference|color" name="kk_common_list_title_color"/>
+        <attr format="reference|color" name="kk_common_list_detail_color"/>
+        <attr name="kk_item_title_text" format="string" />
+        <attr name="kk_item_value_text" format="string" />
+        <attr name="kk_item_title_icon" format="reference" />
+        <attr name="kk_item_show_red" format="boolean" />
+        <attr name="kk_item_show_line" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SwitchButtonView">
+        <!--开关状态-->
+        <attr name="status" format="boolean"/>
+        <!--关-背景颜色-->
+        <attr name="switch_off_color" format="color"/>
+        <!--开-背景颜色-->
+        <attr name="switch_on_color" format="color"/>
+    </declare-styleable>
+    <dimen name="qmui_content_padding_horizontal">0dp</dimen>
+    <dimen name="qmui_content_spacing_horizontal">0dp</dimen>
+
+    <declare-styleable name="KKTagView">
+        <attr format="enum" name="kk_tag_type">
+            <enum name="none" value="0"/>
+            <enum name="person" value="1"/>
+            <enum name="rise" value="2"/>
+            <enum name="fall" value="3"/>
+            <enum name="defi" value="4"/>
+            <enum name="fill" value="5"/>
+            <enum name="level" value="6"/>
+            <enum name="tag_convention" value="7"/>
+            <enum name="defi_new" value="8"/>
+            <enum name="rise_zero" value="9"/>
+            <enum name="fill3" value="10"/>
+        </attr>
+        <attr format="enum" name="kk_tag_state">
+            <enum name="Unauthrzed" value="0"/>
+            <enum name="Review" value="1"/>
+            <enum name="Certified" value="2"/>
+            <enum name="NotThrough" value="3"/>
+        </attr>
+        <attr name="kk_tag_title_text" format="string" />
+    </declare-styleable>
+    <declare-styleable name="KKDropDownView">
+        <attr name="kk_item_right_text" format="string" />
+        <attr name="kk_item_right_icon" format="reference" />
+        <attr name="kk_item_right_hint" format="string" />
+
+        <attr name="kk_item_left_text" format="string" />
+        <attr name="kk_item_left_textColor" format="color" />
+        <attr name="kk_item_left_icon" format="reference" />
+        <attr name="kk_item_left_hint" format="string" />
+
+        <attr name="kk_item_title" format="string" />
+
+        <attr name="kk_item_show_right_text" format="boolean" />
+        <attr name="kk_item_show_right_icon" format="boolean" />
+        <attr name="kk_item_show_right_down_icon" format="boolean" />
+
+        <attr name="kk_item_show_left_text" format="boolean" />
+        <attr name="kk_item_show_left_icon" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="KKCommonlyUsedButtonViewKit">
+        <attr name="kk_textContent" format="string" />
+        <attr name="kk_style" format="flags">
+            <flag name="main" value="1"/>
+            <flag name="cancel" value="2"/>
+            <flag name="green" value="3"/>
+            <flag name="red" value="4"/>
+            <flag name="text" value="5"/>
+        </attr>
+        <attr name="kk_textSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="KKMultiStateView">
+        <!-- 设置当前view状态 -->
+        <attr name="msv_currentViewState" format="enum">
+            <enum name="content" value="0" />
+            <enum name="loading" value="1" />
+            <enum name="empty" value="2" />
+            <enum name="net_error" value="3" />
+        </attr>
+        <!-- view切换时是否使用默认动画 -->
+        <attr name="msv_enableAnimateChanges" format="boolean" />
+    </declare-styleable>
+</resources>

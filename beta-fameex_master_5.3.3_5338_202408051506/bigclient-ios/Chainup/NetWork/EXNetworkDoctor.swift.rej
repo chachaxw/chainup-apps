@@ -1,0 +1,10 @@
+diff a/Chainup/NetWork/EXNetworkDoctor.swift b/Chainup/NetWork/EXNetworkDoctor.swift	(rejected hunks)
+@@ -76,7 +77,7 @@ class EXNetworkDoctor: NSObject {
+         #endif
+         
+         //海外版不用修改任何值
+-        if BasicParameter.isOverSeasVersion() {
++        if EXKitStanders.isOverSeasVersion() {
+             return
+         }
+         if let historyDomain = self.ud[.domainCfg],

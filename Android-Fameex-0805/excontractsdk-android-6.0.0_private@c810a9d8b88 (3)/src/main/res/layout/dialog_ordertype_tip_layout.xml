@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="316dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/cp_bg_item_new_dialog">
+
+    <LinearLayout
+        android:id="@+id/mTipHeaderTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_6"
+        >
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/mTypeTab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            style="@style/contract_slidinglayout_style"
+            app:tl_textUnSelectSize="@dimen/sp_16"
+            app:tl_textSelectSize="@dimen/sp_16"
+            app:tl_tab_padding="@dimen/dp_10"
+            />
+
+        <TextView
+            android:id="@+id/bd_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cp_overview_text56"
+            android:paddingRight="@dimen/dp_16"
+            style="@style/textstyle_dm_14_color2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_16"
+            />
+
+    </LinearLayout>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mTipVp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mTipHeaderTab"
+        />
+</RelativeLayout>

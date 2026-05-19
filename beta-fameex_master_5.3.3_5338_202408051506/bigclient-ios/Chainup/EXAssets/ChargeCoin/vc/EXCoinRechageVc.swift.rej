@@ -1,0 +1,19 @@
+diff a/Chainup/EXAssets/ChargeCoin/vc/EXCoinRechageVc.swift b/Chainup/EXAssets/ChargeCoin/vc/EXCoinRechageVc.swift	(rejected hunks)
+@@ -173,7 +173,8 @@ class EXCoinRechageVc: BaseVC,StoryBoardLoadable,NavigationPlugin {
+             tagTipsView.isHidden = true
+         }
+         
+-        addressView.addressLabel.text = model.addressStr
++        
++        addressView.addressLabel.text =  model.addressStr
+         addressView.setCopyBtnTitle(title: "charge_action_copyAddress".localized())
+ 
+         if model.addressStr.count > 0 {
+@@ -184,6 +185,7 @@ class EXCoinRechageVc: BaseVC,StoryBoardLoadable,NavigationPlugin {
+             self.updateTagHeight(model.addressStr)
+         }else {
+             qrCodeView.qrImage.image = nil
++            addressView.addressLabel.text =  "---"
+         }
+         
+         if !model.depositConfirm.isEmpty {

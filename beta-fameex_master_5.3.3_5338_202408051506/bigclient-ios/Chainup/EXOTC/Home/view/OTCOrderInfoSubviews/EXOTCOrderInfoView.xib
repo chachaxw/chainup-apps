@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXOTCOrderInfoView" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="actionBtn" destination="Jbh-1j-bCL" id="s5b-EV-VYE"/>
+                <outlet property="contentLabel" destination="nck-kq-gNt" id="5zt-W2-NNA"/>
+                <outlet property="rightIconWidth" destination="fi5-KU-6sG" id="WTn-ZO-HaB"/>
+                <outlet property="titleLabel" destination="9It-0w-SJM" id="ak2-iK-b8e"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="41"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9It-0w-SJM">
+                    <rect key="frame" x="15" y="12" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorMedium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbh-1j-bCL">
+                    <rect key="frame" x="336" y="10.5" width="17" height="20"/>
+                    <color key="backgroundColor" red="0.17515406010000001" green="0.54810881609999995" blue="0.80160886050000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="17" id="fi5-KU-6sG"/>
+                        <constraint firstAttribute="height" constant="20" id="juh-sw-dce"/>
+                    </constraints>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nck-kq-gNt">
+                    <rect key="frame" x="300.5" y="12" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeTxtColor" value="label.colorLite"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9It-0w-SJM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="4Ag-bB-2P3"/>
+                <constraint firstItem="9It-0w-SJM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DSi-i3-4VH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Jbh-1j-bCL" secondAttribute="trailing" constant="15" id="Ebq-29-5DO"/>
+                <constraint firstItem="nck-kq-gNt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9It-0w-SJM" secondAttribute="trailing" id="FSi-M4-9M8"/>
+                <constraint firstItem="Jbh-1j-bCL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UZB-gn-PpC"/>
+                <constraint firstItem="Jbh-1j-bCL" firstAttribute="leading" secondItem="nck-kq-gNt" secondAttribute="trailing" id="dBn-04-l4P"/>
+                <constraint firstItem="nck-kq-gNt" firstAttribute="centerY" secondItem="Jbh-1j-bCL" secondAttribute="centerY" id="gxf-sq-a3f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="11.199999999999999" y="-80.50974512743629"/>
+        </view>
+    </objects>
+</document>

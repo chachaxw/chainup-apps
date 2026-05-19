@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_16"
+    android:layout_marginRight="@dimen/dp_16"
+    android:fitsSystemWindows="true">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:text="@string/otc_choose_symbol"
+        style="@style/textstyle_dm_16_color1" />
+
+    <TextView
+        android:id="@+id/tv_cancel_btn"
+        style="@style/textstyle_dm_14_color2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/common_text_btnCancel" />
+
+
+</RelativeLayout>

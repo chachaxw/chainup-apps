@@ -1,0 +1,12 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/ActionSheet/EXSActionTitleView.swift b/Chainup/Framework/EXSwapSDK/Base/UI/ActionSheet/EXSActionTitleView.swift	(rejected hunks)
+@@ -15,8 +15,8 @@ class EXSActionTitleView: UIView {
+                                      byRoundingCorners: [.topLeft,.topRight],
+                                      cornerRadii: CGSize(width: 10, height: 10))
+ 
+-        UIColor.exs_ThemeView.bgCard.setStroke()
+-        UIColor.exs_ThemeView.bg.setFill()
++        UIColor.ThemeView.bgCard.setStroke()
++        UIColor.ThemeView.bg.setFill()
+         self.layer.masksToBounds = true
+         self.clipsToBounds = true
+         path.fill()

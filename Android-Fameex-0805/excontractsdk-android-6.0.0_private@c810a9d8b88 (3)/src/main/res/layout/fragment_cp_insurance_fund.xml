@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.CpCapitalRateFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_card_color">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlwaysCollapsed">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_88"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    android:gravity="center"
+                    android:background="@mipmap/trade_public_insurance"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_coin_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_margin_balance_msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="USDT 合约保险基金余额"
+                            style="@style/textstyle_dm_12_color1"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/dp_8"
+                            android:layout_height="@dimen/dp_8"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/public_icon_arrow_down"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            />
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/tv_margin_balance"
+                        style="@style/textstyle_dm_16_color1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12800 USDT"
+                        android:layout_marginTop="@dimen/dp_10"
+                        />
+
+                </LinearLayout>
+                <com.chainup.contract.view.CpLineChart
+                    android:id="@+id/lineChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+            </LinearLayout>
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_16"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_cp_contract_data_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/cp_contract_data_text5"
+                android:textStyle="bold"
+                style="@style/textstyle_dm_16_color1"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/tv_cp_contract_data_text20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cp_contract_data_text20"
+                    style="@style/textstyle_dr_10_color2"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_cp_contract_info_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/cp_contract_info_text4"
+                    style="@style/textstyle_dr_10_color2"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="20"
+        tools:listitem="@layout/cp_item_contract_capital_rate"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

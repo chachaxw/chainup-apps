@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fill_2"
+    tools:context=".new_version.activity.MyRewardActivity">
+
+    <com.chainup.kit.views.PublicHeaderKit
+        android:id="@+id/v_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/myReward_text2"
+
+        />
+
+    <com.yjkj.chainup.new_version.view.CustomSwipeRefreshLayout
+        android:id="@+id/sfl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_header">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fill_2"
+                app:layout_behavior="com.chainup.contract.view.AppBarLayoutBehavior">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_32"
+                        android:layout_marginBottom="@dimen/dp_24"
+                        android:paddingHorizontal="@dimen/dp_16">
+
+                        <TextView
+                            android:id="@+id/tv_total_reward_money_label"
+                            style="@style/textstyle_dm_14_color1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/myReward_text3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_total_reward_money"
+                            style="@style/textstyle_dm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_4"
+                            app:layout_constraintStart_toStartOf="@+id/tv_total_reward_money_label"
+                            app:layout_constraintTop_toBottomOf="@id/tv_total_reward_money_label"
+                            android:text="0.0 USDT" />
+
+                        <TextView
+                            android:id="@+id/tv_total_tip"
+                            style="@style/textstyle_dm_12_color2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:text="@string/myReward_text4"
+                            android:visibility="gone"
+                            app:layout_constraintStart_toStartOf="@+id/tv_total_reward_money_label"
+                            app:layout_constraintTop_toBottomOf="@id/tv_total_reward_money" />
+
+                        <com.chainup.kit.views.KKButtonKit
+                            android:id="@+id/btn_withdraw"
+                            android:layout_width="87dp"
+                            android:layout_height="@dimen/dp_32"
+                            app:kk_buttonText="@string/myReward_text6"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv_total_reward_money"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/tv_total_reward_money_label" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                <com.flyco.tablayout.SlidingTabLayout
+                    android:id="@+id/st_tab"
+                    style="@style/public_commontab_bline_16_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:paddingHorizontal="@dimen/dp_6"
+                    app:tl_textUnSelectSize="@dimen/sp_14"
+                    app:tl_textSelectSize="@dimen/sp_14"
+                    app:tl_tab_padding="@dimen/dp_10"
+                    />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_container"
+                android:layout_width="match_parent"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </com.yjkj.chainup.new_version.view.CustomSwipeRefreshLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

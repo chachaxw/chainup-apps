@@ -1,0 +1,63 @@
+diff a/Chainup/Framework/EXSwapSDK/View/EXSwapAssetAlertView.swift b/Chainup/Framework/EXSwapSDK/View/EXSwapAssetAlertView.swift	(rejected hunks)
+@@ -7,6 +7,7 @@
+ //
+ 
+ import UIKit
++import EXKit
+ 
+ class EXSwapAssetAlertView: UIView {
+ 
+@@ -15,7 +16,7 @@ class EXSwapAssetAlertView: UIView {
+     
+     lazy var mainView : UIView = {
+         let view = UIView()
+-        view.backgroundColor = UIColor.exs_ThemeView.bg
++        view.backgroundColor = UIColor.ThemeView.bg
+         self.addSubview(view)
+         return view
+     }()
+@@ -24,7 +25,7 @@ class EXSwapAssetAlertView: UIView {
+         let label = UILabel()
+         label.ext_UseAutoLayout()
+         label.textAlignment = .left
+-        label.textColor = UIColor.exs_ThemeLabel.colorLite
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.font = UIFont.ThemeFont.BodyRegular
+         label.numberOfLines = 0
+         return label
+@@ -32,7 +33,7 @@ class EXSwapAssetAlertView: UIView {
+     
+     lazy var headBg : UIView = {
+         let view = UIView()
+-        if EXSThemeManager.isNight() {
++        if EXThemeManager.isNight() {
+             view.backgroundColor = UIColor.extColorWithHex("0F192A")
+         } else {
+             view.backgroundColor = UIColor.extColorWithHex("F0F7FF")
+@@ -51,7 +52,7 @@ class EXSwapAssetAlertView: UIView {
+         btn.titleLabel?.textAlignment = .right
+         btn.ext_SetAddTarget(self, #selector(clickBuyCoin))
+         btn.setTitle("cp_content_text24".ex_localized(), for: .normal)
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorHighlight, for: .normal)
++        btn.setTitleColor(UIColor.ThemeLabel.colorHighlight, for: .normal)
+         btn.titleLabel!.font = UIFont.ThemeFont.BodyBold
+         btn.titleLabel?.textAlignment = .right
+         return btn
+@@ -63,7 +64,7 @@ class EXSwapAssetAlertView: UIView {
+         btn.titleLabel?.textAlignment = .right
+         btn.ext_SetAddTarget(self, #selector(clickCancel))
+         btn.setTitle("cp_overview_text56".ex_localized(), for: .normal)
+-        btn.setTitleColor(UIColor.exs_ThemeLabel.colorDark, for: .normal)
++        btn.setTitleColor(UIColor.ThemeLabel.colorDark, for: .normal)
+         btn.titleLabel!.font = UIFont.ThemeFont.BodyBold
+         btn.titleLabel?.textAlignment = .right
+         return btn
+@@ -85,7 +86,7 @@ class EXSwapAssetAlertView: UIView {
+     
+     override init(frame: CGRect) {
+         super.init(frame: CGRect.init(x: 0, y: 0, width: EXSCREEN_WIDTH, height: EXS_SCREEN_HEIGHT))
+-        self.backgroundColor = UIColor.exs_ThemeView.mask
++        self.backgroundColor = UIColor.ThemeView.mask
+         mainView.frame = frame
+         mainView.center = self.center
+         mainView.layer.cornerRadius = 3

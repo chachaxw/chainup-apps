@@ -1,0 +1,65 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSBouncedView.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSBouncedView.swift	(rejected hunks)
+@@ -36,9 +36,9 @@ class EXSBouncedModel : NSObject{
+     var showSeperator:Bool = false
+     var showArrow:Bool = false
+     var alignment:NSTextAlignment = .left
+-    var selectedColor:UIColor = UIColor.exs_ThemeView.bg
+-    var bgColor = UIColor.exs_ThemeView.bg
+-    var titleColor:UIColor = UIColor.exs_ThemeLabel.colorLite
++    var selectedColor:UIColor = UIColor.ThemeView.bg
++    var bgColor = UIColor.ThemeView.bg
++    var titleColor:UIColor = UIColor.ThemeLabel.colorLite
+ }
+ 
+ class EXSBouncedView: UIView {
+@@ -50,7 +50,7 @@ class EXSBouncedView: UIView {
+     lazy var struckView : UIStackView = {
+         let view = UIStackView()
+         view.axis = .vertical
+-        view.backgroundColor = UIColor.exs_ThemeView.bg
++        view.backgroundColor = UIColor.ThemeView.bg
+         view.layer.cornerRadius = 4
+         view.clipsToBounds = true
+         return view
+@@ -110,14 +110,14 @@ class EXSBouncedDetailView: UIView {
+         
+     lazy var bgBtn : UIButton = {
+         let v = UIButton()
+-        v.backgroundColor = UIColor.exs_ThemeView.bg
++        v.backgroundColor = UIColor.ThemeView.bg
+         v.addTarget(self, action: #selector(clickView), for: .touchUpInside)
+         return v
+     }()
+     
+     lazy var seprator : UIView = {
+         let v = UIView()
+-        v.backgroundColor = UIColor.exs_ThemeView.seperator
++        v.backgroundColor = UIColor.ThemeView.seperator
+         return v
+     }()
+     
+@@ -140,7 +140,7 @@ class EXSBouncedDetailView: UIView {
+         let label = UILabel()
+         label.minimumScaleFactor = 0.8
+         label.adjustsFontSizeToFitWidth = true
+-        label.textColor = UIColor.exs_ThemeLabel.colorLite
++        label.textColor = UIColor.ThemeLabel.colorLite
+         label.font = UIFont.ThemeFont.BodyMedium
+         return label
+     }()
+@@ -149,13 +149,13 @@ class EXSBouncedDetailView: UIView {
+     required init(bouncedModel:EXSBouncedModel){
+         self.bounceModel = bouncedModel
+         super.init(frame: .zero)
+-        self.backgroundColor = UIColor.exs_ThemeView.bg
++        self.backgroundColor = UIColor.ThemeView.bg
+         onCreate()
+     }
+     
+     func onCreate() {
+         
+-        bgBtn.ext_setBackgroundColor(backgroundColor: UIColor.exs_ThemeView.bgTab, state: .highlighted)
++        bgBtn.ext_setBackgroundColor(backgroundColor: UIColor.ThemeView.bgTab, state: .highlighted)
+         exs_addSubViews([bgBtn,seprator,imgV,label,arrowIcon])
+         seprator.isHidden = !bounceModel.showSeperator
+         arrowIcon.isHidden = !bounceModel.showArrow

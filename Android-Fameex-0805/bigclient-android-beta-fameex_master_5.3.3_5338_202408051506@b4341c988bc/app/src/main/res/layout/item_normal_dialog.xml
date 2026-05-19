@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:layout_marginRight="@dimen/dp_20"
+    app:cardBackgroundColor="@color/dialog_bg_color"
+    app:cardCornerRadius="@dimen/dp_12">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/tv_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_32"
+                style="@style/textstyle_dm_16_bold_color1"
+                android:visibility="visible"
+                tool:text="确认修改手机号？" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_20"
+                style="@style/textstyle_dm_14_color2"
+                tool:text="这是文案这是文案这是文案这是文案这是文案这是文案这是文案这是文案这是文案这是文案这是文案" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_below="@+id/tv_content_layout"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_weight="1"
+                android:background="@drawable/kk_btn_2_bg"
+                android:gravity="center"
+                android:text="@string/common_text_btnCancel"
+                style="@style/textstyle_dm_14_color1" />
+
+            <TextView
+                android:id="@+id/tv_confirm_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_option_selector"
+                android:gravity="center"
+                android:text="@string/common_text_btnConfirm"
+                style="@style/textstyle_dm_14_bold_color_while" />
+            <TextView
+                android:id="@+id/tv_confirm_btn_single"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_option_selector"
+                android:gravity="center"
+                android:text="@string/common_text_btnConfirm"
+                style="@style/textstyle_dm_14_bold_color_while" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

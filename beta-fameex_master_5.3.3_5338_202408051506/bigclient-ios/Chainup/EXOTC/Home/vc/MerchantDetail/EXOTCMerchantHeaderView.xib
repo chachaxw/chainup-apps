@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EXOTCMerchantHeaderView" customModule="Chainup" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarView" destination="1zO-nF-m4l" id="54Y-1M-AUd"/>
+                <outlet property="horizontalView" destination="ckg-Qh-Pay" id="U1R-BU-RiP"/>
+                <outlet property="mutiView" destination="Cvc-vN-a4b" id="8uF-0n-xLm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yWS-uD-qau">
+                    <rect key="frame" x="0.0" y="160" width="375" height="10"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="6CG-9w-YZp"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="nav.bg"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckg-Qh-Pay" customClass="EXHorizontalColumnView" customModule="Chainup" customModuleProvider="target">
+                    <rect key="frame" x="15" y="112" width="345" height="48"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="PEC-QN-NkH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oap-op-mWP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FrI-TJ-cGU" userLabel="line">
+                            <rect key="frame" x="0.0" y="111.5" width="375" height="0.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="DNJ-ac-Oxg"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.seperator"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zO-nF-m4l" customClass="EXAvatarView" customModule="Chainup" customModuleProvider="target">
+                            <rect key="frame" x="15" y="15" width="345" height="26"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="wgc-0E-fkI"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cvc-vN-a4b" customClass="EXFourColumnView" customModule="Chainup" customModuleProvider="target">
+                            <rect key="frame" x="15" y="60" width="345" height="36.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1zO-nF-m4l" firstAttribute="top" secondItem="oap-op-mWP" secondAttribute="top" constant="15" id="9ks-9S-v1O"/>
+                        <constraint firstAttribute="bottom" secondItem="FrI-TJ-cGU" secondAttribute="bottom" id="HAn-Hh-LpA"/>
+                        <constraint firstAttribute="height" constant="112" id="IoS-cD-d03"/>
+                        <constraint firstItem="FrI-TJ-cGU" firstAttribute="top" secondItem="Cvc-vN-a4b" secondAttribute="bottom" constant="15" id="LUb-Bz-g5B"/>
+                        <constraint firstItem="1zO-nF-m4l" firstAttribute="leading" secondItem="oap-op-mWP" secondAttribute="leading" constant="15" id="OK1-JN-ZXi"/>
+                        <constraint firstItem="FrI-TJ-cGU" firstAttribute="leading" secondItem="oap-op-mWP" secondAttribute="leading" id="TQ1-7D-8Qh"/>
+                        <constraint firstAttribute="trailing" secondItem="1zO-nF-m4l" secondAttribute="trailing" constant="15" id="Zps-aR-Ym9"/>
+                        <constraint firstItem="Cvc-vN-a4b" firstAttribute="leading" secondItem="oap-op-mWP" secondAttribute="leading" constant="15" id="fD3-Ki-Zqy"/>
+                        <constraint firstItem="Cvc-vN-a4b" firstAttribute="top" secondItem="1zO-nF-m4l" secondAttribute="bottom" constant="19" id="jH4-lf-44F"/>
+                        <constraint firstAttribute="trailing" secondItem="Cvc-vN-a4b" secondAttribute="trailing" constant="15" id="tPW-Ol-YHP"/>
+                        <constraint firstAttribute="trailing" secondItem="FrI-TJ-cGU" secondAttribute="trailing" id="x4P-Q2-chF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ckg-Qh-Pay" secondAttribute="trailing" constant="15" id="6eH-wK-gc2"/>
+                <constraint firstItem="ckg-Qh-Pay" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="8Pe-zy-FIF"/>
+                <constraint firstItem="yWS-uD-qau" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9ir-dT-ie7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oap-op-mWP" secondAttribute="trailing" id="LJA-WH-Kdv"/>
+                <constraint firstItem="oap-op-mWP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NNG-rt-pvb"/>
+                <constraint firstItem="ckg-Qh-Pay" firstAttribute="top" secondItem="oap-op-mWP" secondAttribute="bottom" id="ZMA-JI-LQ2"/>
+                <constraint firstItem="oap-op-mWP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bfs-lr-huu"/>
+                <constraint firstItem="yWS-uD-qau" firstAttribute="top" secondItem="ckg-Qh-Pay" secondAttribute="bottom" id="e5x-Jr-g8g"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yWS-uD-qau" secondAttribute="trailing" id="ibA-eN-xhn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yWS-uD-qau" secondAttribute="bottom" id="k5I-Iy-2kk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="themebg" value="view.bg"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="12" y="15.292353823088456"/>
+        </view>
+    </objects>
+</document>

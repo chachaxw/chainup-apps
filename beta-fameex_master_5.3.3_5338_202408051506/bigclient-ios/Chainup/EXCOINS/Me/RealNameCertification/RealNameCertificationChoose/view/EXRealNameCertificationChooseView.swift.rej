@@ -1,0 +1,19 @@
+diff a/Chainup/EXCOINS/Me/RealNameCertification/RealNameCertificationChoose/view/EXRealNameCertificationChooseView.swift b/Chainup/EXCOINS/Me/RealNameCertification/RealNameCertificationChoose/view/EXRealNameCertificationChooseView.swift	(rejected hunks)
+@@ -78,7 +78,7 @@ class EXRealNameCertificationChooseView: UIView {
+                 if let rentity =  EXAppConfigManager.sharedInstance.getDefaultCountry(limitFlag){
+                     
+                     regionEntity = rentity
+-                    if LanguageHandler.isHan() {
++                    if LanguageTools.isHan() {
+                         entity.text = regionEntity.cnName
+                     }else{
+                         entity.text = regionEntity.enName
+@@ -90,7 +90,7 @@ class EXRealNameCertificationChooseView: UIView {
+                 } else {
+                     
+                     if let rentity = EXAppConfigManager.sharedInstance.getDefaultCountry(limitFlag) {
+-                        if LanguageHandler.isHan() {
++                        if LanguageTools.isHan() {
+                             entity.text = rentity.cnName
+                         } else {
+                             entity.text = rentity.enName

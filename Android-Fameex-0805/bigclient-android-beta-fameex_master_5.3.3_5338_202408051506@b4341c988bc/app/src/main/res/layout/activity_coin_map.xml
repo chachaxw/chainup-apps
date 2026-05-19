@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fill_2"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.yjkj.chainup.new_version.activity.CoinMapActivity">
+
+    <LinearLayout
+        style="@style/base_style_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_search_height_32"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_6"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.chainup.kit.views.base.BaseEditTextKit
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingVertical="0dp"
+            style="@style/etstyle_baseSearch"
+            app:kk_et_fillColor="@color/fill_3"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/textStyle_high_14"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_16"
+            android:gravity="center_vertical"
+            android:text="@string/common_text_btnCancel" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <com.yjkj.chainup.new_version.activity.like.view.SearchTopView
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                />
+
+            <include
+                android:id="@+id/layout_list_hot"
+                layout="@layout/activity_viewpage_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layout_list_search"
+            layout="@layout/fragment_search_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

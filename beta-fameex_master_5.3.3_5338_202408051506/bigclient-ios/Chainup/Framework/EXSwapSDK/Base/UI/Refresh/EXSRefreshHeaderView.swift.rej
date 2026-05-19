@@ -1,0 +1,10 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/Refresh/EXSRefreshHeaderView.swift b/Chainup/Framework/EXSwapSDK/Base/UI/Refresh/EXSRefreshHeaderView.swift	(rejected hunks)
+@@ -37,7 +37,7 @@ class EXSRefreshHeaderView: MJRefreshHeader {
+         container.addSubview(titleLabel)
+         container.addSubview(logo)
+         logo.image = UIImage.init(named: "refresh")
+-        titleLabel.textColor = UIColor.exs_ThemeLabel.colorMedium
++        titleLabel.textColor = UIColor.ThemeLabel.colorMedium
+         titleLabel.bodyRegular()
+     }
+     

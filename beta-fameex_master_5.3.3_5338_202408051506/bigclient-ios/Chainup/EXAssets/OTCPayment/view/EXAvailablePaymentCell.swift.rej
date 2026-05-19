@@ -1,0 +1,28 @@
+diff a/Chainup/EXAssets/OTCPayment/view/EXAvailablePaymentCell.swift b/Chainup/EXAssets/OTCPayment/view/EXAvailablePaymentCell.swift	(rejected hunks)
+@@ -86,7 +86,7 @@ class EXAvailablePaymentCell: UITableViewCell {
+                     btn.btn.tag = idx
+                     btn.btn.addTarget(self, action: #selector(qrcodeClicked(sender:)), for: .touchUpInside)
+                     self.stacker.addArrangedSubview(btn)
+-                    btn.snp_makeConstraints { make in
++                    btn.snp.makeConstraints { make in
+                         make.height.equalTo(20)
+                     }
+                 }else {
+@@ -101,7 +101,7 @@ class EXAvailablePaymentCell: UITableViewCell {
+                     }
+                     label.text = field.fieldValue
+                     self.stacker.addArrangedSubview(label)
+-//                    label.snp_makeConstraints { make in
++//                    label.snp.makeConstraints { make in
+ //                        make.height.equalTo(20)
+ //                    }
+                 }
+@@ -235,7 +235,7 @@ class EXQrCodeView:UIView {
+     override init(frame: CGRect) {
+         super.init(frame: frame)
+         self.addSubview(btn)
+-        btn.snp_makeConstraints { make in
++        btn.snp.makeConstraints { make in
+             make.left.equalToSuperview()
+             make.top.equalToSuperview().offset(8)
+             make.width.equalTo(12)

@@ -1,0 +1,43 @@
+diff a/Chainup/Framework/EXSwapSDK/Base/UI/EXSButton.swift b/Chainup/Framework/EXSwapSDK/Base/UI/EXSButton.swift	(rejected hunks)
+@@ -18,33 +18,33 @@ class EXSButton: UIButton {
+ 
+     //默认高亮按钮,须使用customtype
+     public enum EXColors {
+-        public static var color = UIColor.exs_ThemeLabel.colorHighlight
+-        public static var highlightedColor =  UIColor.exs_ThemeLabel.colorHighlight.exs_overlayWhite()
+-        public static var selectedColor =  UIColor.exs_ThemeLabel.colorHighlight
+-        public static var disabledColor = UIColor.exs_ThemeBtn.disable
++        public static var color = UIColor.ThemeLabel.colorHighlight
++        public static var highlightedColor =  UIColor.ThemeLabel.colorHighlight.exs_overlayWhite()
++        public static var selectedColor =  UIColor.ThemeLabel.colorHighlight
++        public static var disabledColor = UIColor.ThemeBtn.disable
+         public static var cornerRadius: CGFloat = 4
+     }
+     
+-    public var color: UIColor = UIColor.exs_ThemeLabel.colorHighlight {
++    public var color: UIColor = UIColor.ThemeLabel.colorHighlight {
+         didSet {
+             self.updateBackgroundImages()
+             setNeedsDisplay()
+         }
+     }
+     
+-    public var highlightedColor: UIColor = UIColor.exs_ThemeLabel.colorHighlight.exs_overlayWhite() {
++    public var highlightedColor: UIColor = UIColor.ThemeLabel.colorHighlight.exs_overlayWhite() {
+         didSet {
+             setNeedsDisplay()
+         }
+     }
+     
+-    public var selectedColor: UIColor = UIColor.exs_ThemeLabel.colorHighlight {
++    public var selectedColor: UIColor = UIColor.ThemeLabel.colorHighlight {
+         didSet {
+             setNeedsDisplay()
+         }
+     }
+     
+-    public var disabledColor: UIColor = UIColor.exs_ThemeBtn.disable {
++    public var disabledColor: UIColor = UIColor.ThemeBtn.disable {
+         didSet {
+             setNeedsDisplay()
+         }

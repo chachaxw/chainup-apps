@@ -1,0 +1,9 @@
+diff a/Chainup/UI/Alert/EXOTCSafetyAlert.swift b/Chainup/UI/Alert/EXOTCSafetyAlert.swift	(rejected hunks)
+@@ -41,6 +41,7 @@ class EXOTCSafetyAlert: NibBaseView {
+         titleLabel.headBold()
+         titleLabel.textColor = UIColor.ThemeLabel.colorLite
+         contentLabel.textColor = UIColor.ThemeLabel.colorLite
++        self.backgroundColor = UIColor.ThemeView.alertBg
+     }
+     
+     func configAlert(title:String,

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_card_color"
+    android:fitsSystemWindows="true">
+
+<!--        <com.yjkj.chainup.new_version.view.PersonalCenterView-->
+<!--            android:id="@+id/title_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/bg_color"-->
+<!--            app:personalTitle=""-->
+<!--            android:visibility="gone"-->
+<!--            app:showRightIc="false"-->
+<!--            app:showTitle="false" />-->
+
+    <com.yjkj.chainup.new_version.view.PersonalCenterViewTx2
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:id="@+id/newHeaderPersonal" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner_looper"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:banner_indicator_height="2dp"
+                app:banner_indicator_margin="6dp"
+                android:visibility="gone"
+                app:banner_indicator_normal_color="#5D6D89"
+                app:banner_indicator_normal_width="@dimen/dp_6"
+                app:banner_indicator_selected_color="#D8e1F0"
+                app:banner_indicator_selected_width="@dimen/dp_10"
+                app:banner_indicator_space="@dimen/dp_6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:banner_radius="@dimen/dp_8" />
+            <!--安全中心-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_safe_enter"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/bg_card_color"
+                app:icon="@mipmap/personal_security"
+                app:itemTitle="@string/personal_text_safetycenter"
+                app:showLine="false" />
+
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_rewardCenter"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/bg_card_color"
+                app:icon="@mipmap/personal_taskcenter"
+                app:itemTitle="@string/menus_rewardCenter"
+                app:showLine="false" />
+
+            <!--邀请好友-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_invite_friends_enter"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/bg_card_color"
+                app:icon="@mipmap/personal_invitefriends"
+                app:itemTitle="@string/common_action_inviteFriend"
+                app:showLine="false" />
+            <!--费率折扣-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_level_rate"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/bg_card_color"
+                app:icon="@mipmap/personal_ratediscount"
+                app:itemTitle="@string/personal_Center_text3"
+                app:StatusText=""
+                android:visibility="gone"
+                app:showLine="false" />
+
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_level_rate_my"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/bg_card_color"
+                app:icon="@mipmap/personal_ratediscount"
+                app:itemTitle="@string/personal_center_FeeRate"
+                app:StatusText=""
+                android:visibility="gone"
+                app:showLine="false" />
+            <!--设置-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_setting"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/bg_card_color"
+                app:icon="@mipmap/personal_setup"
+                app:itemTitle="@string/personal_text_setting"
+                app:showLine="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/line_color" />
+
+
+
+            <!--公告-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_announcement"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/bg_card_color"
+                android:visibility="gone"
+                app:icon="@mipmap/personal_notice"
+                app:itemTitle="@string/personal_text_notice"
+                app:showLine="false" />
+
+            <!--客服-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_service"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/bg_card_color"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:showLine="false"
+                app:icon="@mipmap/personal_onlineservice"
+                app:itemTitle="@string/personal_text_onlineservice" />
+
+
+            <!--帮助中心-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_help_center"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/bg_card_color"
+                app:icon="@mipmap/personal_help"
+                app:itemTitle="@string/personal_text_helpcenter"
+                app:showLine="false" />
+            <!--站内信-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_mail"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/bg_card_color"
+                app:icon="@mipmap/personal_notice"
+                app:itemTitle="@string/personal_text_message"
+                app:showLine="false" />
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_freeStaking"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/bg_card_color"
+                app:icon="@drawable/personal_freestaking"
+                app:showLine="false"
+                android:visibility="gone"
+                />
+
+
+
+            <!--屏蔽名单-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_mine_black_list"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/bg_card_color"
+                app:icon="@mipmap/personal_blacklist"
+                app:itemTitle="@string/personal_text_blacklist"
+                app:showLine="false" />
+
+            <!--关于我们-->
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:visibility="gone"
+                android:background="@color/bg_card_color"
+                app:icon="@mipmap/personal_about"
+                app:itemTitle="@string/personal_text_aboutus"
+                app:showLine="false" />
+
+            <com.yjkj.chainup.new_version.view.AccountItemView
+                android:id="@+id/aiv_change_newwork"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:visibility="gone"
+                android:background="@color/bg_card_color"
+                app:icon="@mipmap/personal_lineswitching"
+                app:itemTitle="@string/customSetting_action_changeHost"
+                app:showLine="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
